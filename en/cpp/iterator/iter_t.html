@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="client-nojs">
 <head>
-<title>std::iter_value_t, std::iter_reference_t, std::iter_difference_t, std::iter_rvalue_reference_t, std::iter_common_reference_t - cppreference.com</title>
+<title>std::iter_value_t, std::iter_reference_t, std::iter_const_reference_t, std::iter_difference_t, std::iter_rvalue_reference_t, std::iter_common_reference_t - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
 <link rel="shortcut icon" href="../../../common/favicon.ico">
@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/iterator/iter_t","wgTitle":"cpp/iterator/iter t","wgCurRevisionId":137565,"wgArticleId":18238,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/iterator/iter_t","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/iterator/iter_t","wgTitle":"cpp/iterator/iter t","wgCurRevisionId":141496,"wgArticleId":18238,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/iterator/iter_t","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -84,7 +84,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>iter_value_t, <span style="font-size:0.7em; line-height:130%">std::</span>iter_reference_t, <span style="font-size:0.7em; line-height:130%">std::</span>iter_difference_t, <span style="font-size:0.7em; line-height:130%">std::</span>iter_rvalue_reference_t, <span style="font-size:0.7em; line-height:130%">std::</span>iter_common_reference_t</h1>
+<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>iter_value_t, <span style="font-size:0.7em; line-height:130%">std::</span>iter_reference_t, <span style="font-size:0.7em; line-height:130%">std::</span>iter_const_reference_t, <span style="font-size:0.7em; line-height:130%">std::</span>iter_difference_t, <span style="font-size:0.7em; line-height:130%">std::</span>iter_rvalue_reference_t, <span style="font-size:0.7em; line-height:130%">std::</span>iter_common_reference_t</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -149,14 +149,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="incrementable_traits.html" title="cpp/iterator/incrementable traits"><span class="t-lines"><span>incrementable_traits</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="indirectly_readable_traits.html" title="cpp/iterator/indirectly readable traits"><span class="t-lines"><span>indirectly_readable_traits</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>iter_value_t</span><span>iter_difference_t</span><span>iter_reference_t</span><span>iter_rvalue_reference_t</span><span>iter_common_reference_t</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>iter_value_t</span><span>iter_difference_t</span><span>iter_reference_t</span><span>iter_const_reference_t</span><span>iter_rvalue_reference_t</span><span>iter_common_reference_t</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Algorithm concepts and utilities</td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Indirect callable concepts</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="indirectly_unary_invocable.html" title="cpp/iterator/indirectly unary invocable"><span class="t-lines"><span>indirectly_unary_invocable</span><span>indirectly_regular_unary_invocable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="indirectly_unary_invocable.html" title="cpp/iterator/indirectly unary invocable"><span class="t-lines"><span>indirectly_unary_invocable</span><span>indirectly_regular_unary_invocable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span>  </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="indirect_unary_predicate.html" title="cpp/iterator/indirect unary predicate"><span class="t-lines"><span>indirect_unary_predicate</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="indirect_binary_predicate.html" title="cpp/iterator/indirect binary predicate"><span class="t-lines"><span>indirect_binary_predicate</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
@@ -191,6 +191,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="counted_iterator.html" title="cpp/iterator/counted iterator"><span class="t-lines"><span>counted_iterator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/basic_const_iterator&amp;action=edit&amp;redlink=1" class="new" title="cpp/iterator/basic const iterator (page does not exist)"><span class="t-lines"><span>basic_const_iterator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/const_iterator&amp;action=edit&amp;redlink=1" class="new" title="cpp/iterator/const iterator (page does not exist)"><span class="t-lines"><span>const_iterator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/const_sentinel&amp;action=edit&amp;redlink=1" class="new" title="cpp/iterator/const sentinel (page does not exist)"><span class="t-lines"><span>const_sentinel</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="back_insert_iterator.html" title="cpp/iterator/back insert iterator"><span class="t-lines"><span>back_insert_iterator</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="front_insert_iterator.html" title="cpp/iterator/front insert iterator"><span class="t-lines"><span>front_insert_iterator</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert_iterator.html" title="cpp/iterator/insert iterator"><span class="t-lines"><span>insert_iterator</span></span></a></div></div></td></tr>
@@ -199,6 +202,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="make_move_iterator.html" title="cpp/iterator/make move iterator"><span class="t-lines"><span>make_move_iterator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="default_sentinel.html" title="cpp/iterator/default sentinel t"><span class="t-lines"><span>default_sentinel_t</span><span>default_sentinel</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unreachable_sentinel_t.html" title="cpp/iterator/unreachable sentinel t"><span class="t-lines"><span>unreachable_sentinel_t</span><span>unreachable_sentinel</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/make_const_iterator&amp;action=edit&amp;redlink=1" class="new" title="cpp/iterator/make const iterator (page does not exist)"><span class="t-lines"><span>make_const_iterator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/make_const_sentinel&amp;action=edit&amp;redlink=1" class="new" title="cpp/iterator/make const sentinel (page does not exist)"><span class="t-lines"><span>make_const_sentinel</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="back_inserter.html" title="cpp/iterator/back inserter"><span class="t-lines"><span>back_inserter</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="front_inserter.html" title="cpp/iterator/front inserter"><span class="t-lines"><span>front_inserter</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="inserter.html" title="cpp/iterator/inserter"><span class="t-lines"><span>inserter</span></span></a></div></div></td></tr>
@@ -263,10 +270,18 @@ concept <span class="coMULTI">/*dereferenceable*/</span> <span class="sy1">=</sp
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
+<tr class="t-dcl t-since-cxx23">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <a href="indirectly_readable.html"><span class="kw2860">std::<span class="me2">indirectly_readable</span></span></a> T <span class="sy1">&gt;</span><br>
+<p><span class="kw1">using</span> iter_const_reference_t <span class="sy1">=</span> <a href="../types/common_reference.html"><span class="kw2713">std::<span class="me2">common_reference_t</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> std<span class="sy4">::</span><span class="me2">iter_value_t</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy3">&amp;&amp;</span>,<br>
+</p>
+                                                       std<span class="sy4">::</span><span class="me2">iter_reference_t</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span><span class="sy4">;</span></span></div></td>
+<td> (3) </td>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
+</tr>
 <tr class="t-dcl t-since-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
 <span class="kw1">using</span> iter_difference_t <span class="sy1">=</span> <span class="coMULTI">/* see below */</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> (4) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
@@ -274,7 +289,7 @@ concept <span class="coMULTI">/*dereferenceable*/</span> <span class="sy1">=</sp
 <p>    requires <span class="coMULTI">/* see below */</span><br>
 </p>
 <span class="kw1">using</span> iter_rvalue_reference_t <span class="sy1">=</span> decltype<span class="br0">(</span><a href="ranges/iter_move.html"><span class="kw3138">ranges::<span class="me2">iter_move</span></span></a><span class="br0">(</span><a href="../utility/declval.html"><span class="kw1123">std::<span class="me2">declval</span></span></a><span class="sy1">&lt;</span>T<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (4) </td>
+<td> (5) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
@@ -282,7 +297,7 @@ concept <span class="coMULTI">/*dereferenceable*/</span> <span class="sy1">=</sp
 <p><span class="kw1">using</span> iter_common_reference_t <span class="sy1">=</span> <a href="../types/common_reference.html"><span class="kw2713">std::<span class="me2">common_reference_t</span></span></a><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">iter_reference_t</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span>,<br>
 </p>
                                                         std<span class="sy4">::</span><span class="me2">iter_value_t</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="sy4">;</span></span></div></td>
-<td> (5) </td>
+<td> (6) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
@@ -291,9 +306,10 @@ concept <span class="coMULTI">/*dereferenceable*/</span> <span class="sy1">=</sp
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Computes the <i>value type</i> of <code>T</code>. If <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span></span></span> is not specialized, then <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">iter_value_t</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="indirectly_readable_traits.html"><span class="kw2874">std::<span class="me2">indirectly_readable_traits</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">value_type</span></span></span>. Otherwise, it is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">value_type</span></span></span>.</div>
 <div class="t-li1"><span class="t-li">2)</span> Computes the <i>reference type</i> of <code>T</code>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Computes the <i>difference type</i> of <code>T</code>. If <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span></span></span> is not specialized, then <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">iter_difference_t</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="incrementable_traits.html"><span class="kw2873">std::<span class="me2">incrementable_traits</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span></span></span>. Otherwise, it is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span></span></span>.</div>
-<div class="t-li1"><span class="t-li">4)</span> Computes the <i>rvalue reference type</i> of <code>T</code>. The "see below" portion of the constraint on this alias template is satisfied if and only if the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="ranges/iter_move.html"><span class="kw3138">ranges::<span class="me2">iter_move</span></span></a><span class="br0">(</span><a href="../utility/declval.html"><span class="kw1123">std::<span class="me2">declval</span></span></a><span class="sy1">&lt;</span>T<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span> is valid and has a referenceable type (in particular, not <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span>).</div>
-<div class="t-li1"><span class="t-li">5)</span> Computes the <i>common reference type</i> of <code>T</code>. This is the common reference type between its reference type and an lvalue reference to its value type.</div>
+<div class="t-li1"><span class="t-li">3)</span> Computes the <i>const reference type</i> of <code>T</code>.</div>
+<div class="t-li1"><span class="t-li">4)</span> Computes the <i>difference type</i> of <code>T</code>. If <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span></span></span> is not specialized, then <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">iter_difference_t</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="incrementable_traits.html"><span class="kw2873">std::<span class="me2">incrementable_traits</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span></span></span>. Otherwise, it is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">5)</span> Computes the <i>rvalue reference type</i> of <code>T</code>. The "see below" portion of the constraint on this alias template is satisfied if and only if the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="ranges/iter_move.html"><span class="kw3138">ranges::<span class="me2">iter_move</span></span></a><span class="br0">(</span><a href="../utility/declval.html"><span class="kw1123">std::<span class="me2">declval</span></span></a><span class="sy1">&lt;</span>T<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span> is valid and has a referenceable type (in particular, not <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span>).</div>
+<div class="t-li1"><span class="t-li">6)</span> Computes the <i>common reference type</i> of <code>T</code>. This is the common reference type between its reference type and an lvalue reference to its value type.</div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -325,19 +341,19 @@ concept <span class="coMULTI">/*dereferenceable*/</span> <span class="sy1">=</sp
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7998/1000000
-Preprocessor generated node count: 9905/1000000
-Post‐expand include size: 247768/2097152 bytes
-Template argument size: 48545/2097152 bytes
+Preprocessor visited node count: 8575/1000000
+Preprocessor generated node count: 10204/1000000
+Post‐expand include size: 263141/2097152 bytes
+Template argument size: 52367/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18238-0!*!0!*!*!*!* and timestamp 20220127115757 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18238-0!*!0!*!*!*!* and timestamp 20220729053335 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/iter_t&amp;oldid=137565">https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/iter_t&amp;oldid=137565</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/iter_t&amp;oldid=141496">https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/iter_t&amp;oldid=141496</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -354,10 +370,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/iterator/iter_t">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/iterator/iter_t">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 27 January 2022, at 03:57.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 21,860 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 28 July 2022, at 03:24.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 29,080 times.</li>
                             </ul>
                     </div>
         </div>
@@ -375,7 +391,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.030 secs. -->
+</script><!-- Served in 0.038 secs. -->
 	</body>
-<!-- Cached 20220127121120 -->
+<!-- Cached 20220729065245 -->
 </html>

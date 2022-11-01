@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,14 +141,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../algorithm.html" title="cpp/algorithm"> Algorithm library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> <a href="ranges.html" title="cpp/algorithm/ranges">Constrained algorithms and algorithms on ranges</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <span class="t-lc">std::ranges::copy</span>, <span class="t-lc">std::ranges::sort</span>, ... </td></tr>
+<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <a href="ranges/copy.html" title="cpp/algorithm/ranges/copy"><tt>ranges::copy</tt></a>, <a href="ranges/sort.html" title="cpp/algorithm/ranges/sort"><tt>ranges::sort</tt></a>, ... </td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="../algorithm.html#Execution_policies" title="cpp/algorithm">Execution policies <span class="t-mark-rev t-since-cxx17">(C++17)</span></a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="is_execution_policy.html" title="cpp/algorithm/is execution policy"><span class="t-lines"><span>is_execution_policy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span>  </span></span></div></div></td></tr>
@@ -576,15 +576,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10235/1000000
-Preprocessor generated node count: 13477/1000000
-Post‐expand include size: 295588/2097152 bytes
-Template argument size: 56855/2097152 bytes
+Preprocessor visited node count: 10287/1000000
+Preprocessor generated node count: 13662/1000000
+Post‐expand include size: 295932/2097152 bytes
+Template argument size: 57138/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:771-0!*!0!!en!*!* and timestamp 20220114093511 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:771-0!*!0!!en!*!* and timestamp 20220410090054 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -605,10 +605,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/replace">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/replace">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 9 January 2021, at 06:21.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 215,651 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 9 January 2021, at 07:21.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 225,038 times.</li>
                             </ul>
                     </div>
         </div>
@@ -626,7 +626,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.717 secs. -->
+</script><!-- Served in 2.380 secs. -->
 	</body>
-<!-- Cached 20220114093511 -->
+<!-- Cached 20220410090054 -->
 </html>

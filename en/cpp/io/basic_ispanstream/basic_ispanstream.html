@@ -108,6 +108,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -120,8 +121,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -205,7 +205,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Constructs a new <code>basic_ispanstream</code>.
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Uses the storage referenced by <code>s</code> as initial underlying buffer of the wrapped <span class="t-lc">std::basic_spanbuf</span> device. The wrapped <span class="t-lc">std::basic_spanbuf</span> object is constructed as <span class="t-c"><span class="mw-geshi cpp source-cpp">basic_spanbuf<span class="sy1">&lt;</span>Char, Traits<span class="sy1">&gt;</span><span class="br0">(</span>s, mode <span class="sy3">|</span> <a href="../ios_base/openmode.html"><span class="kw1678">std::<span class="me2">ios_base</span><span class="sy4">::</span><span class="me2">in</span></span></a><span class="br0">)</span></span></span>.</div>
-<div class="t-li1"><span class="t-li">2)</span> Uses the storage referenced by <code>r</code> after converted to <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> CharT<span class="sy1">&gt;</span></span></span> as initial underlying buffer of the wrapped <span class="t-lc">std::basic_spanbuf</span> device. The wrapped <span class="t-lc">std::basic_spanbuf</span> object is opened in mode <span class="t-lc"><a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode">std::ios_base::in</a></span>. This overload participates in overload resolution only if <code>ROS</code> models <a href="../../ranges/borrowed_range.html" title="cpp/ranges/borrowed range"><code>borrowed_range</code></a>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../concepts/convertible_to.html"><span class="kw3006">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span>ROS, <a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span>CharT<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../concepts/convertible_to.html"><span class="kw3006">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span>ROS, <a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> CharT<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">2)</span> Uses the storage referenced by <code>r</code> after converted to <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> CharT<span class="sy1">&gt;</span></span></span> as initial underlying buffer of the wrapped <span class="t-lc">std::basic_spanbuf</span> device. The wrapped <span class="t-lc">std::basic_spanbuf</span> object is opened in mode <span class="t-lc"><a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode">std::ios_base::in</a></span>. This overload participates in overload resolution only if <code>ROS</code> models <a href="../../ranges/borrowed_range.html" title="cpp/ranges/borrowed range"><code>borrowed_range</code></a>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../concepts/convertible_to.html"><span class="kw2938">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span>ROS, <a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span>CharT<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../concepts/convertible_to.html"><span class="kw2938">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span>ROS, <a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> CharT<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.</div>
 <div class="t-li1"><span class="t-li">3)</span> Move constructor. Move constructs the <span class="t-lc"><a href="../basic_istream.html" title="cpp/io/basic istream">std::basic_istream</a></span> base subobject and the wrapped <span class="t-lc">std::basic_spanbuf</span> from those of <code>rhs</code>, and then calls <span class="t-lc"><a href="../basic_ios/set_rdbuf.html" title="cpp/io/basic ios/set rdbuf">set_rdbuf</a></span> with the address of the wrapped <span class="t-lc">std::basic_spanbuf</span> in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> to install it.</div>
 <div class="t-li1"><span class="t-li">4)</span> Copy constructor is deleted. <code>basic_ispanstream</code> is not copyable.</div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -307,15 +307,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4948/1000000
-Preprocessor generated node count: 13533/1000000
-Post‐expand include size: 171496/2097152 bytes
-Template argument size: 22543/2097152 bytes
+Preprocessor visited node count: 4950/1000000
+Preprocessor generated node count: 13538/1000000
+Post‐expand include size: 171505/2097152 bytes
+Template argument size: 22544/2097152 bytes
 Highest expansion depth: 35/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:20491-0!*!0!!en!*!* and timestamp 20210918131128 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:20491-0!*!0!!en!*!* and timestamp 20220729081058 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -336,10 +336,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_ispanstream/basic_ispanstream">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_ispanstream/basic_ispanstream">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
                                     <li id="footer-info-lastmod"> This page was last modified on 28 June 2021, at 06:49.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 219 times.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,232 times.</li>
                             </ul>
                     </div>
         </div>
@@ -357,7 +357,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.158 secs. -->
+</script><!-- Served in 1.203 secs. -->
 	</body>
-<!-- Cached 20210918131128 -->
+<!-- Cached 20220729081058 -->
 </html>

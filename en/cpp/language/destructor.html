@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/destructor","wgTitle":"cpp/language/destructor","wgCurRevisionId":137407,"wgArticleId":6540,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/destructor","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/destructor","wgTitle":"cpp/language/destructor","wgCurRevisionId":140545,"wgArticleId":6540,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/destructor","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -419,41 +419,41 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
-<div class="t-li1"><span class="t-li">1)</span> Typical declaration of a <span class="t-rev-inl t-since-cxx20"><span>prospective </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>destructor</div>
+<div class="t-li1"><span class="t-li">1)</span> Typical declaration of a <span class="t-rev-inl t-since-cxx20"><span>prospective</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> destructor</div>
 <div class="t-li1"><span class="t-li">2)</span> Virtual destructor is usually required in a base class</div>
 <div class="t-li1"><span class="t-li">3)</span> Forcing a destructor to be generated by the compiler</div>
 <div class="t-li1"><span class="t-li">4)</span> Disabling the implicit destructor</div>
-<div class="t-li1"><span class="t-li">5)</span> Formal syntax of a <span class="t-rev-inl t-since-cxx20"><span>prospective </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>destructor declaration</div>
+<div class="t-li1"><span class="t-li">5)</span> Formal syntax of a <span class="t-rev-inl t-since-cxx20"><span>prospective</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> destructor declaration</div>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">decl-specifier-seq</span>
+<td> <span class="t-spar">decl-specifier-seq</span>
 </td>
 <td> -
 </td>
-<td>  <code>friend</code>, <code>inline</code>, <code>virtual</code><span class="t-rev-inl t-since-cxx20"><span>, <code>constexpr</code>, <code>consteval</code></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>
+<td> <code>friend</code>, <code>inline</code>, <code>virtual</code><span class="t-rev-inl t-since-cxx20"><span>, <code>constexpr</code>, <code>consteval</code></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">id-expression</span>
+<td> <span class="t-spar">id-expression</span>
 </td>
 <td> -
 </td>
-<td>  within a class definition, the symbol <code><b>~</b></code> followed by the <span class="t-spar">class-name</span>. Within a class template, the symbol <code><b>~</b></code> followed by the name of the current instantiation of the template. At namespace scope or in a <a href="friend.html" title="cpp/language/friend">friend</a> declaration within a different class, <i>nested-name-specifier</i> followed by the symbol <code><b>~</b></code> followed by the <span class="t-spar">class-name</span> which is the same class as the one named by the nested-name-specifier. In any case, the name must be the actual name of the class or template, and not a typedef. The entire id-expression may be surrounded by parentheses which do not change its meaning.
+<td> within a class definition, the symbol <code><b>~</b></code> followed by the <span class="t-spar">class-name</span>. Within a class template, the symbol <code><b>~</b></code> followed by the name of the current instantiation of the template. At namespace scope or in a <a href="friend.html" title="cpp/language/friend">friend</a> declaration within a different class, <i>nested-name-specifier</i> followed by the symbol <code><b>~</b></code> followed by the <span class="t-spar">class-name</span> which is the same class as the one named by the nested-name-specifier. In any case, the name must be the actual name of the class or template, and not a typedef. The entire id-expression may be surrounded by parentheses which do not change its meaning.
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">attr</span>
+<td> <span class="t-spar">attr</span>
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-cxx11">(since C++11)</span> optional sequence of any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> optional sequence of any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">except</span>
+<td> <span class="t-spar">except</span>
 </td>
 <td> -
 </td>
-<td>  exception specification as in any function declaration (either <span class="t-rev-inl t-until-cxx17"><span><a href="except_spec.html" title="cpp/language/except spec">dynamic exception specification</a></span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span> or <span class="t-rev-inl t-since-cxx11"><span><a href="noexcept_spec.html" title="cpp/language/noexcept spec">noexcept specification</a></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>)
+<td> exception specification as in any <a href="function.html" title="cpp/language/function">function declaration</a>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
 <p>Except that if no exception specification is explicitly provided, the exception specification is considered to be one that would be used by the implicitly-declared destructor (see below). In most cases, this is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span><span class="kw2">true</span><span class="br0">)</span></span></span>. Thus a throwing destructor must be explicitly declared <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span><span class="kw2">false</span><span class="br0">)</span></span></span>.
@@ -463,11 +463,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">requires-clause</span>
+<td> <span class="t-spar">requires-clause</span>
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-cxx20">(since C++20)</span> requires-clause that declares the associated <a href="constraints.html" title="cpp/language/constraints">constraints</a> for the prospective destructor, which must be satisfied in order for the prospective destructor to be selected as the destructor
+<td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> requires-clause that declares the associated <a href="constraints.html" title="cpp/language/constraints">constraints</a> for the prospective destructor, which must be satisfied in order for the prospective destructor to be selected as the destructor
 </td></tr></table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
 <p>The destructor is called whenever an object's <a href="lifetime.html" title="cpp/language/lifetime">lifetime</a> ends, which includes 
@@ -500,7 +500,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
 <h3><span class="mw-headline" id="Implicitly-declared_destructor">Implicitly-declared destructor</span></h3>
-<p>If no user-declared <span class="t-rev-inl t-since-cxx20"><span>prospective </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>destructor is provided for a <a href="class.html" title="cpp/language/class">class type</a> (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">struct</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">class</span></span></span>, or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">union</span></span></span>), the compiler will always declare a destructor as an <code>inline public</code> member of its class.
+<p>If no user-declared <span class="t-rev-inl t-since-cxx20"><span>prospective</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> destructor is provided for a <a href="class.html" title="cpp/language/class">class type</a> (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">struct</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">class</span></span></span>, or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">union</span></span></span>), the compiler will always declare a destructor as an <code>inline public</code> member of its class.
 </p><p>As with any implicitly-declared special member function, the exception specification of the implicitly-declared destructor is non-throwing unless <span class="t-rev-inl t-since-cxx17"><span>the destructor of any potentially-constructed base or member is <a href="noexcept_spec.html" title="cpp/language/noexcept spec">potentially-throwing</a></span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span><span class="t-rev-inl t-until-cxx17"><span>implicit definition would directly invoke a function with a different exception specification</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span>. In practice, implicit destructors are <code>noexcept</code> unless the class is "poisoned" by a base or member whose destructor is <code>noexcept(false)</code>.
 </p>
 <h3><span class="mw-headline" id="Deleted_implicitly-declared_destructor">Deleted implicitly-declared destructor</span></h3>
@@ -539,7 +539,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>If an implicitly-declared destructor is not deleted, it is implicitly defined (that is, a function body is generated and compiled) by the compiler when it is <a href="definition.html#ODR-use" title="cpp/language/definition">odr-used</a>. This implicitly-defined destructor has an empty body. <span class="t-rev-inl t-since-cxx20"><span>If this satisfies the requirements of a <a href="constexpr.html" title="cpp/language/constexpr">constexpr destructor</a>, the generated destructor is <code>constexpr</code>.</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>
 </p>
 <h3><span class="mw-headline" id="Destruction_sequence">Destruction sequence</span></h3>
-<p>For both user-defined or implicitly-defined destructors, after executing the body of the destructor and destroying any automatic objects allocated within the body, the compiler calls the destructors for all non-static non-variant members of the class, in reverse order of declaration, then it calls the destructors of all direct non-virtual base classes in <a href="initializer_list.html#Initialization_order" title="cpp/language/initializer list" class="mw-redirect">reverse order of construction</a> (which in turn call the destructors of their members and their base classes, etc), and then, if this object is of most-derived class, it calls the destructors of all virtual bases.
+<p>For both user-defined or implicitly-defined destructors, after executing the body of the destructor and destroying any automatic objects allocated within the body, the compiler calls the destructors for all non-static non-variant data members of the class, in reverse order of declaration, then it calls the destructors of all direct non-virtual base classes in <a href="initializer_list.html#Initialization_order" title="cpp/language/initializer list" class="mw-redirect">reverse order of construction</a> (which in turn call the destructors of their members and their base classes, etc), and then, if this object is of most-derived class, it calls the destructors of all virtual bases.
 </p><p>Even when the destructor is called directly (e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">obj.~Foo<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></span></span>), the return statement in <span class="t-c"><span class="mw-geshi cpp source-cpp">~Foo<span class="br0">(</span><span class="br0">)</span></span></span> does not return control to the caller immediately: it calls all those member and base destructors first.
 </p>
 <h3><span class="mw-headline" id="Virtual_destructors">Virtual destructors</span></h3>
@@ -558,7 +558,7 @@ delete b<span class="sy4">;</span> <span class="co1">// safe</span></pre></div><
 <p>A common guideline is that a destructor for a base class must be <a rel="nofollow" class="external text" href="http://www.gotw.ca/publications/mill18.htm">either public and virtual or protected and nonvirtual</a>
 </p>
 <h3><span class="mw-headline" id="Pure_virtual_destructors">Pure virtual destructors</span></h3>
-<p>A <span class="t-rev-inl t-since-cxx20"><span>prospective </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>destructor may be declared <a href="abstract_class.html" title="cpp/language/abstract class">pure virtual</a>, for example in a base class which needs to be made abstract, but has no other suitable functions that could be declared pure virtual. A pure virtual destructor must have a definition, since all base class destructors are always called when the derived class is destroyed:
+<p>A <span class="t-rev-inl t-since-cxx20"><span>prospective</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> destructor may be declared <a href="abstract_class.html" title="cpp/language/abstract class">pure virtual</a>, for example in a base class which needs to be made abstract, but has no other suitable functions that could be declared pure virtual. A pure virtual destructor must have a definition, since all base class destructors are always called when the derived class is destroyed:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> AbstractBase
 <span class="br0">{</span>
@@ -634,35 +634,62 @@ dtor a0</pre></div></div>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue193">CWG 193</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/193.html">CWG 193</a>
 </td>
 <td> C++98
 </td>
-<td> whether automatic objects in a destructor are destroyed before or after<br>the destruction of the class's base and member subobjects was unspecified
+<td> whether automatic objects in a destructor are<br>destroyed before or after the destruction of the<br>class's base and member subobjects was unspecified
 </td>
-<td> they are destroyed before<br>destroying those subobjects
+<td> they are destroyed<br>before destroying<br>those subobjects
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/344.html">CWG 344</a>
+</td>
+<td> C++98
+</td>
+<td> the declarator syntax of destructor was defective (had the<br>same problem as <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/194.html">CWG issue 194</a> and <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/263.html">CWG issue 263</a>
+</td>
+<td> changed the syntax to a specialized<br>function declarator syntax
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1241.html">CWG 1241</a>
+</td>
+<td> C++98
+</td>
+<td> static members might be destroyed<br>right after destructor execution
+</td>
+<td> only destroy non-<br>static members
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2180.html">CWG 2180</a>
+</td>
+<td> C++98
+</td>
+<td> a destructor for class <code>X</code> calls the destructors<br>for X's virtual direct base classes
+</td>
+<td> those destructors are not called
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
-<ul><li> <a href="copy_elision.html" title="cpp/language/copy elision"> copy elision</a>
-</li><li> <a href="new.html" title="cpp/language/new"><code> new</code></a>
-</li><li> <a href="delete.html" title="cpp/language/delete"><code> delete</code></a>
+<ul><li> <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a>
+</li><li> <a href="new.html" title="cpp/language/new"><code>new</code></a>
+</li><li> <a href="delete.html" title="cpp/language/delete"><code>delete</code></a>
 </li></ul>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4532/1000000
-Preprocessor generated node count: 9769/1000000
-Post‐expand include size: 157214/2097152 bytes
-Template argument size: 26441/2097152 bytes
+Preprocessor visited node count: 4546/1000000
+Preprocessor generated node count: 9932/1000000
+Post‐expand include size: 157331/2097152 bytes
+Template argument size: 26407/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6540-0!*!0!!en!*!* and timestamp 20220120141802 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6540-0!*!0!!en!*!* and timestamp 20220624091430 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/destructor&amp;oldid=137407">https://en.cppreference.com/mwiki/index.php?title=cpp/language/destructor&amp;oldid=137407</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/destructor&amp;oldid=140545">https://en.cppreference.com/mwiki/index.php?title=cpp/language/destructor&amp;oldid=140545</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -679,10 +706,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/destructor">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/destructor">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 January 2022, at 06:18.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 734,448 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 24 June 2022, at 02:14.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 778,929 times.</li>
                             </ul>
                     </div>
         </div>
@@ -700,7 +727,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.037 secs. -->
+</script><!-- Served in 0.040 secs. -->
 	</body>
-<!-- Cached 20220120141820 -->
+<!-- Cached 20220624091446 -->
 </html>

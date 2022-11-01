@@ -127,15 +127,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../variadic.html" title="c/variadic"> Variadic function support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="c/error"> Error handling</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../memory.html" title="c/memory"> Dynamic memory management</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="c/string"> Strings library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="c/algorithm"> Algorithms</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="c/numeric"> Numerics</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="c/io"> Input/output support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="c/locale"> Localization support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="c/atomic"> Atomic operations</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="c/thread"> Thread support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="c/thread"> Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="c/experimental"> Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../index.html" title="c/symbol index"> Symbol index</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../string.html" title="c/string"> Strings library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="../byte.html" title="c/string/byte"> Byte strings</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../multibyte.html" title="c/string/multibyte"> Multibyte strings</a> </td></tr>
@@ -144,17 +144,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv-h2"><td colspan="5"> Wide/multibyte conversions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbsinit.html" title="c/string/multibyte/mbsinit"><span class="t-lines"><span>mbsinit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbtowc.html" title="c/string/multibyte/mbtowc"><span class="t-lines"><span>mbtowc</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>mbstowcs</span><span>mbstowcs_s</span></span></strong></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="btowc.html" title="c/string/multibyte/btowc"><span class="t-lines"><span>btowc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbrtowc.html" title="c/string/multibyte/mbrtowc"><span class="t-lines"><span>mbrtowc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbsrtowcs.html" title="c/string/multibyte/mbsrtowcs"><span class="t-lines"><span>mbsrtowcs</span><span>mbsrtowcs_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbrtoc8.html" title="c/string/multibyte/mbrtoc8"><span class="t-lines"><span>mbrtoc8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="c8rtomb.html" title="c/string/multibyte/c8rtomb"><span class="t-lines"><span>c8rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbrtoc16.html" title="c/string/multibyte/mbrtoc16"><span class="t-lines"><span>mbrtoc16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="c16rtomb.html" title="c/string/multibyte/c16rtomb"><span class="t-lines"><span>c16rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="c32rtomb.html" title="c/string/multibyte/c32rtomb"><span class="t-lines"><span>c32rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbrtoc32.html" title="c/string/multibyte/mbrtoc32"><span class="t-lines"><span>mbrtoc32</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mblen.html" title="c/string/multibyte/mblen"><span class="t-lines"><span>mblen</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="mbtowc.html" title="c/string/multibyte/mbtowc"><span class="t-lines"><span>mbtowc</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wctomb.html" title="c/string/multibyte/wctomb"><span class="t-lines"><span>wctomb</span><span>wctomb_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wcstombs.html" title="c/string/multibyte/wcstombs"><span class="t-lines"><span>wcstombs</span><span>wcstombs_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wctob.html" title="c/string/multibyte/wctob"><span class="t-lines"><span>wctob</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div></td></tr>
@@ -216,7 +218,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> <code>dstsz</code> is not zero (unless <code>dst</code> is null)
 </li><li> There is no null character in the first <code>dstsz</code> multibyte characters in the <code>src</code> array and <code>len</code> is greater than <code>dstsz</code> (unless <code>dst</code> is null)
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>mbstowcs_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant 1 before including <code>stdlib.h</code>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>mbstowcs_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;stdlib.h&gt;</code>.</dd></dl></div>
 
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>In most implementations, <code>mbstowcs</code> updates a global static object of type <span class="t-lc"><a href="mbstate_t.html" title="c/string/multibyte/mbstate t">mbstate_t</a></span> as it processes through the string, and cannot be called simultaneously by two threads, <span class="t-lc"><a href="mbsrtowcs.html" title="c/string/multibyte/mbsrtowcs">mbsrtowcs</a></span> should be used in such cases.
@@ -326,15 +328,15 @@ Wide string: zß水🍌</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3381/1000000
-Preprocessor generated node count: 9158/1000000
-Post‐expand include size: 82685/2097152 bytes
-Template argument size: 16052/2097152 bytes
+Preprocessor visited node count: 3584/1000000
+Preprocessor generated node count: 9363/1000000
+Post‐expand include size: 87317/2097152 bytes
+Template argument size: 16961/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6113-0!*!0!!en!*!* and timestamp 20220114102946 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6113-0!*!0!!en!*!* and timestamp 20220704181225 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -355,10 +357,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/string/multibyte/mbstowcs">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/c/string/multibyte/mbstowcs">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 May 2018, at 01:17.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 43,105 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 16 May 2018, at 02:17.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 46,470 times.</li>
                             </ul>
                     </div>
         </div>
@@ -376,7 +378,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.809 secs. -->
+</script><!-- Served in 0.677 secs. -->
 	</body>
-<!-- Cached 20220114102946 -->
+<!-- Cached 20220704181225 -->
 </html>

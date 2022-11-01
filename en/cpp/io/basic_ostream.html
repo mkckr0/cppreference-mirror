@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -212,7 +212,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The class template <code>basic_ostream</code> provides support for high level output operations on character streams. The supported operations include formatted output (e.g. integer values) and unformatted output (e.g. raw characters and character arrays). This functionality is implemented in terms of the interface provided by the <code>basic_streambuf</code> class, accessed through the <code>basic_ios</code> base class. In typical implementations, <code>basic_ostream</code> has no non-inherited data members.
 </p>
 <div class="t-inheritance-diagram">
-<div class="center"><div class="noresize"><map name="ImageMap_1_1727778482"><area href="ios_base.html" shape="rect" coords="5,6,107,39" alt="cpp/io/ios base" title="cpp/io/ios base"><area href="basic_ios.html" shape="rect" coords="135,4,252,42" alt="cpp/io/basic ios" title="cpp/io/basic ios"></map><img alt="std-basic ostream-inheritance.svg" src="../../../common/images/1/12/std-basic_ostream-inheritance.svg" width="399" height="45" usemap="#ImageMap_1_1727778482"></div></div>
+<div class="center"><div class="noresize"><map name="ImageMap_1_443530264"><area href="ios_base.html" shape="rect" coords="5,6,107,39" alt="cpp/io/ios base" title="cpp/io/ios base"><area href="basic_ios.html" shape="rect" coords="135,4,252,42" alt="cpp/io/basic ios" title="cpp/io/basic ios"></map><img alt="std-basic ostream-inheritance.svg" src="../../../common/images/1/12/std-basic_ostream-inheritance.svg" width="399" height="45" usemap="#ImageMap_1_443530264"></div></div>
 <div style="text-align:center;">
 <p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
 </p>
@@ -393,7 +393,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="basic_ostream/operator_ltlt2.html" title="cpp/io/basic ostream/operator ltlt2"> <span class="t-lines"><span>operator&lt;&lt;<span class="t-dsc-small">(std::basic_ostream)</span></span></span></a></div></div>
 </td>
-<td>   inserts character data <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>   inserts character data or insert into rvalue stream <br> <span class="t-mark">(function template)</span> </td></tr>
 </table>
 <div class="t-inherited">
 <h2> <span class="mw-headline" id="Inherited_from_std::basic_ios">Inherited from  <a href="basic_ios.html" title="cpp/io/basic ios"> <span style="font-size:0.7em; line-height:130%">std::</span>basic_ios</a> </span></h2>
@@ -920,13 +920,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 NewPP limit report
 Preprocessor visited node count: 15331/1000000
 Preprocessor generated node count: 15083/1000000
-Post‐expand include size: 565810/2097152 bytes
-Template argument size: 152240/2097152 bytes
+Post‐expand include size: 565990/2097152 bytes
+Template argument size: 152328/2097152 bytes
 Highest expansion depth: 35/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:547-0!*!0!!en!2!* and timestamp 20220114093632 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:547-0!*!0!!en!2!* and timestamp 20220718133856 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -947,10 +947,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_ostream">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_ostream">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 31 May 2013, at 21:58.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 534,060 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 31 May 2013, at 22:58.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 578,061 times.</li>
                             </ul>
                     </div>
         </div>
@@ -968,7 +968,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.386 secs. -->
+</script><!-- Served in 3.056 secs. -->
 	</body>
-<!-- Cached 20220114093633 -->
+<!-- Cached 20220718133856 -->
 </html>

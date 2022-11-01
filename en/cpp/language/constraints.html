@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/constraints","wgTitle":"cpp/language/constraints","wgCurRevisionId":136700,"wgArticleId":17699,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/constraints","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/constraints","wgTitle":"cpp/language/constraints","wgCurRevisionId":141072,"wgArticleId":17699,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/constraints","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -294,9 +294,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5">   <a href="fold.html" title="cpp/language/fold"> Fold-expressions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="sfinae.html" title="cpp/language/sfinae"> SFINAE</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> Constraints and concepts</strong> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="requires.html" title="cpp/language/requires"> Requires expression</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <dl><dd><i>This page describes the core language feature adopted for C++20. For named type requirements used in the specification of the standard library, see <a href="../named_req.html" title="cpp/named req">named requirements</a>. For the Concepts TS version of this feature, see <a href="../experimental/constraints.html" title="cpp/experimental/constraints">here</a>.</i>
+</dd></dl>
+<dl><dd><i> <b>Temporary notice</b>: the <span class="t-lc">requires</span> expression section has been moved to <a href="requires.html" title="cpp/language/requires">its own page</a></i>
 </dd></dl>
 <p><a href="class_template.html" title="cpp/language/class template">Class templates</a>, <a href="function_template.html" title="cpp/language/function template">function templates</a>, and non-template functions (typically members of class templates) may be associated with a <i>constraint</i>, which specifies the requirements on template arguments, which can be used to select the most appropriate function overloads and template specializations.
 </p><p>Named sets of such requirements are called <i>concepts</i>. Each concept is a predicate, evaluated at compile time, and becomes a part of the interface of a template where it is used as a constraint:
@@ -328,6 +331,8 @@ concept Hashable <span class="sy1">=</span> requires<span class="br0">(</span>T 
 <span class="co1">//</span>
 <span class="co1">// template&lt;typename T&gt;</span>
 <span class="co1">// void f(T) requires Hashable&lt;T&gt; {}</span>
+<span class="co1">//</span>
+<span class="co1">// void f(Hashable auto /*parameterName*/) {}</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
@@ -407,7 +412,7 @@ concept Derived <span class="sy1">=</span> <a href="../types/is_base_of.html"><s
 <span class="kw1">template</span><span class="sy1">&lt;</span>Derived<span class="sy1">&lt;</span>Base<span class="sy1">&gt;</span> T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// T is constrained by Derived&lt;T, Base&gt;</span></pre></div></div>
 <h3><span class="mw-headline" id="Constraints">Constraints</span></h3>
-<p>A constraint is a sequence of logical operations and operands that specifies requirements on template arguments. They can appear within <i>requires-expression</i>s (see below) and directly as bodies of concepts.
+<p>A constraint is a sequence of logical operations and operands that specifies requirements on template arguments. They can appear within <a href="requires.html" title="cpp/language/requires">requires expressions</a> or directly as bodies of concepts.
 </p><p>There are three types of constraints:
 </p>
 <div class="t-li1"><span class="t-li">1)</span> conjunctions</div>
@@ -592,218 +597,6 @@ T add<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="b
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> h<span class="br0">(</span>T<span class="br0">)</span> requires <span class="br0">(</span>is_purrable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span></pre></div></div>
-<h3><span class="mw-headline" id="Requires_expressions"> Requires expressions </span></h3>
-<p>The keyword <span class="t-c"><span class="mw-geshi cpp source-cpp">requires</span></span> is also used to begin a <i>requires-expression</i>, which is a prvalue expression of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> that describes the constraints on some template arguments. Such an expression is <code>true</code> if the constraints are satisfied, and <code>false</code> otherwise:
-</p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-concept Addable <span class="sy1">=</span> requires <span class="br0">(</span>T x<span class="br0">)</span> <span class="br0">{</span> x <span class="sy2">+</span> x<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// requires-expression</span>
- 
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span> requires Addable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="co1">// requires-clause, not requires-expression</span>
-T add<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> a <span class="sy2">+</span> b<span class="sy4">;</span> <span class="br0">}</span>
- 
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-    requires requires <span class="br0">(</span>T x<span class="br0">)</span> <span class="br0">{</span> x <span class="sy2">+</span> x<span class="sy4">;</span> <span class="br0">}</span> <span class="co1">// ad-hoc constraint, note keyword used twice</span>
-T add<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> a <span class="sy2">+</span> b<span class="sy4">;</span> <span class="br0">}</span></pre></div></div>
-<p>The syntax of <i>requires-expression</i> is as follows:
-</p>
-<table class="t-sdsc-begin">
-
-<tr>
-<td colspan="10" class="t-sdsc-sep">
-</td></tr>
-<tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <code><b>requires</b></code> <code><b>{</b></code> <span class="t-spar">requirement-seq</span> <code><b>}</b></code>
-</td>
-<td class="t-sdsc-nopad">
-</td>
-<td class="t-sdsc-nopad">
-</td></tr>
-
-
-
-<tr>
-<td colspan="10" class="t-sdsc-sep">
-</td></tr>
-<tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <code><b>requires</b></code> <code><b>(</b></code> <span class="t-spar">parameter-list</span><span class="t-mark">(optional)</span> <code><b>)</b></code> <code><b>{</b></code> <span class="t-spar">requirement-seq</span> <code><b>}</b></code>
-</td>
-<td class="t-sdsc-nopad">
-</td>
-<td class="t-sdsc-nopad">
-</td></tr>
-
-
-
-<tr>
-<td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
-<table class="t-par-begin">
-
-
-<tr class="t-par">
-<td>  <span class="t-spar">parameter-list</span>
-</td>
-<td> -
-</td>
-<td>  a comma-separated list of parameters like in a function declaration, except that default arguments are not allowed and it cannot end with an ellipsis (other than one signifying a pack expansion). These parameters have no storage, linkage or lifetime, and are only used to assist in specifying requirements. These parameters are in scope until the closing <code><b>}</b></code> of the <span class="t-spar">requirement-seq</span>.
-</td></tr>
-<tr class="t-par">
-<td>  <span class="t-spar">requirement-seq</span>
-</td>
-<td> -
-</td>
-<td>  sequence of <i>requirements</i>, described below (each requirement ends with a semicolon).
-</td></tr></table>
-<p>Each requirement in the <span class="t-spar">requirements-seq</span> is one of the following:
-</p>
-<ul><li> simple requirement
-</li><li> type requirements
-</li><li> compound requirements
-</li><li> nested requirements
-</li></ul>
-<p>Requirements may refer to the template parameters that are in scope, to the local parameters introduced in the <span class="t-spar">parameter-list</span>, and to any other declarations that are visible from the enclosing context.
-</p><p>The substitution of template arguments into a requires-expression used in a declaration of a <a href="templates.html#Templated_entity" title="cpp/language/templates">templated entity</a> may result in the formation
-of invalid types or expressions in its requirements, or the violation of semantic constraints of those requirements. In such cases, the requires-expression evaluates to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> and does not cause the program to be ill-formed. The substitution and semantic constraint checking proceeds in lexical order and stops when a condition that determines the result of the requires-expression is encountered. If substitution (if any) and semantic constraint checking succeed, the requires-expression evaluates to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
-</p><p>If a substitution failure would occur in a requires-expression for every possible template argument, the program is ill-formed, no diagnostic required:
-</p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-concept C <span class="sy1">=</span> requires
-<span class="br0">{</span>
-    new <span class="kw4">int</span><span class="br0">[</span><span class="sy2">-</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>sizeof<span class="br0">(</span>T<span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// invalid for every T: ill-formed, no diagnostic required</span>
-<span class="br0">}</span><span class="sy4">;</span></pre></div></div>
-<p>If a requires-expression contains invalid types or expressions in its requirements, and it does not appear within the declaration of a <a href="templates.html#Templated_entity" title="cpp/language/templates">templated entity</a>, then the program is ill-formed.
-</p>
-<h4><span class="mw-headline" id="Simple_requirements">Simple requirements</span></h4>
-<p>A simple requirement is an arbitrary expression statement that does not start with the keyword <code>requires</code>. It asserts that the expression is valid. The expression is an unevaluated operand; only language correctness is checked.
-</p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-concept Addable <span class="sy1">=</span> requires <span class="br0">(</span>T a, T b<span class="br0">)</span>
-<span class="br0">{</span>
-    a <span class="sy2">+</span> b<span class="sy4">;</span> <span class="co1">// "the expression a+b is a valid expression that will compile"</span>
-<span class="br0">}</span><span class="sy4">;</span>
- 
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U <span class="sy1">=</span> T<span class="sy1">&gt;</span>
-concept Swappable <span class="sy1">=</span> requires<span class="br0">(</span>T<span class="sy3">&amp;&amp;</span> t, U<span class="sy3">&amp;&amp;</span> u<span class="br0">)</span>
-<span class="br0">{</span>
-    swap<span class="br0">(</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span>, <a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    swap<span class="br0">(</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span>, <a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-<span class="br0">}</span><span class="sy4">;</span></pre></div></div>
-<p>A requirement that starts with the keyword <code>requires</code> is always interpreted as a nested requirement. Thus a simple requirement cannot start with an unparenthesized requires-expression.
-</p>
-<h4><span class="mw-headline" id="Type_requirements">Type requirements</span></h4>
-<p>A type requirement is the keyword <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span></span></span> followed by a type name, optionally qualified. The requirement is that the named type is valid: this can be used to verify that a certain named nested type exists, or that a class template specialization names a type, or that an alias template specialization names a type. A type requirement naming a class template specialization does not require the type to be complete.
-</p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-<span class="kw1">using</span> Ref <span class="sy1">=</span> T<span class="sy3">&amp;</span><span class="sy4">;</span>
- 
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-concept C <span class="sy1">=</span> requires
-<span class="br0">{</span>
-    <span class="kw1">typename</span> T<span class="sy4">::</span><span class="me2">inner</span><span class="sy4">;</span> <span class="co1">// required nested member name</span>
-    <span class="kw1">typename</span> S<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span>     <span class="co1">// required class template specialization</span>
-    <span class="kw1">typename</span> Ref<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span>   <span class="co1">// required alias template substitution</span>
-<span class="br0">}</span><span class="sy4">;</span>
- 
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U<span class="sy1">&gt;</span>
-<span class="kw1">using</span> CommonType <span class="sy1">=</span> <a href="../types/common_type.html"><span class="kw638">std::<span class="me2">common_type_t</span></span></a><span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="sy4">;</span>
- 
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U<span class="sy1">&gt;</span>
-concept Common <span class="sy1">=</span> requires <span class="br0">(</span>T<span class="sy3">&amp;&amp;</span> t, U<span class="sy3">&amp;&amp;</span> u<span class="br0">)</span>
-<span class="br0">{</span>
-    <span class="kw1">typename</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// CommonType&lt;T, U&gt; is valid and names a type</span>
-    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span> 
-    <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span> 
-<span class="br0">}</span><span class="sy4">;</span></pre></div></div>
-<h4><span class="mw-headline" id="Compound_Requirements">Compound Requirements</span></h4>
-<p>A compound requirement has the form 
-</p>
-<table class="t-sdsc-begin">
-
-<tr>
-<td colspan="10" class="t-sdsc-sep">
-</td></tr>
-<tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <code><b>{</b></code> <span class="t-spar">expression</span> <code><b>}</b></code> <code><b>noexcept</b></code><span class="t-mark">(optional)</span> <span class="t-spar">return-type-requirement</span><span class="t-mark">(optional)</span> <code><b>;</b></code>
-</td>
-<td class="t-sdsc-nopad">
-</td>
-<td class="t-sdsc-nopad">
-</td></tr>
-
-
-
-<tr>
-<td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
-<table class="t-par-begin">
-
-
-<tr class="t-par">
-<td> <span class="t-spar">return-type-requirement</span>
-</td>
-<td> -
-</td>
-<td>  <code><b>-&gt;</b></code> <span class="t-spar">type-constraint</span>
-</td></tr></table>
-<p>and asserts properties of the named expression. Substitution and semantic constraint checking proceeds in the following order:
-</p>
-<div class="t-li1"><span class="t-li">1)</span> Template arguments (if any) are substituted into <span class="t-spar">expression</span>;</div>
-<div class="t-li1"><span class="t-li">2)</span> If <code>noexcept</code> is used, <span class="t-spar">expression</span> must not be <a href="noexcept.html" title="cpp/language/noexcept">potentially throwing</a>;</div>
-<div class="t-li1"><span class="t-li">3)</span> If <span class="t-spar">return-type-requirement</span> is present, then:</div>
-<div class="t-li2"><span class="t-li">a)</span> Template arguments are substituted into the <span class="t-spar">return-type-requirement</span>;</div>
-<div class="t-li2"><span class="t-li">b)</span> <span class="t-c"><span class="mw-geshi cpp source-cpp">decltype<span class="br0">(</span><span class="br0">(</span>expression<span class="br0">)</span><span class="br0">)</span></span></span> must satisfy the constraint imposed by the <span class="t-spar">type-constraint</span>. Otherwise, the enclosing requires-expression is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>.</div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-concept C2 <span class="sy1">=</span> requires<span class="br0">(</span>T x<span class="br0">)</span>
-<span class="br0">{</span>
-    <span class="co1">// the expression *x must be valid</span>
-    <span class="co1">// AND the type T::inner must be valid</span>
-    <span class="co1">// AND the result of *x must be convertible to T::inner</span>
-    <span class="br0">{</span><span class="sy2">*</span>x<span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../concepts/convertible_to.html"><span class="kw2938">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy4">::</span><span class="me2">inner</span><span class="sy1">&gt;</span><span class="sy4">;</span>
- 
-    <span class="co1">// the expression x + 1 must be valid</span>
-    <span class="co1">// AND std::same_as&lt;decltype((x + 1)), int&gt; must be satisfied</span>
-    <span class="co1">// i.e., (x + 1) must be a prvalue of type int</span>
-    <span class="br0">{</span>x <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../concepts/same_as.html"><span class="kw2936">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">;</span>
- 
-    <span class="co1">// the expression x * 1 must be valid</span>
-    <span class="co1">// AND its result must be convertible to T</span>
-    <span class="br0">{</span>x <span class="sy2">*</span> <span class="nu0">1</span><span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../concepts/convertible_to.html"><span class="kw2938">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span>
-<span class="br0">}</span><span class="sy4">;</span></pre></div></div>
-<h4><span class="mw-headline" id="Nested_requirements">Nested requirements</span></h4>
-<p>A nested requirement has the form 
-</p>
-<table class="t-sdsc-begin">
-
-<tr>
-<td colspan="10" class="t-sdsc-sep">
-</td></tr>
-<tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <code><b>requires</b></code> <span class="t-spar">constraint-expression</span> <code><b>;</b></code>
-</td>
-<td class="t-sdsc-nopad">
-</td>
-<td class="t-sdsc-nopad">
-</td></tr>
-
-
-
-<tr>
-<td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
-<p>It can be used to specify additional constraints in terms of local parameters. The <span class="t-spar">constraint-expression</span> must be satisfied by the substituted template arguments, if any. Substitution of template arguments into a nested requirement causes substitution into the <span class="t-spar">constraint-expression</span> only to the extent needed to determine whether the <span class="t-spar">constraint-expression</span> is satisfied.
-</p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-concept Semiregular <span class="sy1">=</span> DefaultConstructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
-    CopyConstructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> Destructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> CopyAssignable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
-requires<span class="br0">(</span>T a, size_t n<span class="br0">)</span>
-<span class="br0">{</span>  
-    requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span><span class="sy3">&amp;</span>a<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// nested: "Same&lt;...&gt; evaluates to true"</span>
-    <span class="br0">{</span> a.~T<span class="br0">(</span><span class="br0">)</span> <span class="br0">}</span> <span class="kw1">noexcept</span><span class="sy4">;</span> <span class="co1">// compound: "a.~T()" is a valid expression that doesn't throw</span>
-    requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span>new T<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// nested: "Same&lt;...&gt; evaluates to true"</span>
-    requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span>new T<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// nested</span>
-    <span class="br0">{</span> delete new T <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// compound</span>
-    <span class="br0">{</span> delete new T<span class="br0">[</span>n<span class="br0">]</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// compound</span>
-<span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <h3><span class="mw-headline" id="Partial_ordering_of_constraints">Partial ordering of constraints</span></h3>
 <p>Before any further analysis, constraints are <a href="constraints.html#Constraint_normalization">normalized</a> by substituting the body of every named concept and every requires expression until what is left is a sequence of conjunctions and disjunctions on atomic constraints.
 </p><p>A constraint <code>P</code> is said to <i>subsume</i> constraint <code>Q</code> if it can be proven that <code>P</code> <a href="https://en.wikipedia.org/wiki/Logical_consequence" class="extiw" title="enwiki:Logical consequence">implies</a> <code>Q</code> up to the identity of atomic constraints in P and Q. (Types and expressions are not analyzed for equivalence: <code>N &gt; 0</code> does not subsume <code>N &gt;= 0</code>).
@@ -863,21 +656,30 @@ h<span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span
 <p><a href="../keyword/concept.html" title="cpp/keyword/concept"><tt>concept</tt></a>,
 <a href="../keyword/requires.html" title="cpp/keyword/requires"><tt>requires</tt></a>
 </p>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tr class="t-dsc">
+<td>  <a href="requires.html" title="cpp/language/requires"> Requires expression</a><span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</td>
+<td>  yields a prvalue expression of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> that describes the constraints</td></tr>
+</table>
+
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4563/1000000
-Preprocessor generated node count: 11962/1000000
-Post‐expand include size: 140844/2097152 bytes
-Template argument size: 29051/2097152 bytes
+Preprocessor visited node count: 3733/1000000
+Preprocessor generated node count: 10823/1000000
+Post‐expand include size: 135535/2097152 bytes
+Template argument size: 23152/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17699-0!*!0!!en!*!* and timestamp 20220105150412 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17699-0!*!0!!en!*!* and timestamp 20220714094645 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/constraints&amp;oldid=136700">https://en.cppreference.com/mwiki/index.php?title=cpp/language/constraints&amp;oldid=136700</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/constraints&amp;oldid=141072">https://en.cppreference.com/mwiki/index.php?title=cpp/language/constraints&amp;oldid=141072</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -894,10 +696,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/constraints">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/constraints">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 27 December 2021, at 13:13.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 527,180 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 14 July 2022, at 02:46.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 647,468 times.</li>
                             </ul>
                     </div>
         </div>
@@ -915,7 +717,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 5.037 secs. -->
+</script><!-- Served in 0.066 secs. -->
 	</body>
-<!-- Cached 20220105150412 -->
+<!-- Cached 20220714094856 -->
 </html>

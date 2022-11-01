@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/preprocessor/include","wgTitle":"cpp/preprocessor/include","wgCurRevisionId":135508,"wgArticleId":1383,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/preprocessor/include","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/preprocessor/include","wgTitle":"cpp/preprocessor/include","wgCurRevisionId":139455,"wgArticleId":1383,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/preprocessor/include","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../language/enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language/function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="../language/class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../language/class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language/union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -302,11 +302,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div></td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../preprocessor.html" title="cpp/preprocessor"> Preprocessor</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="conditional.html" title="cpp/preprocessor/conditional"><span class="t-lines"><span>#if</span><span>#ifdef</span><span>#ifndef</span><span>#else</span><span>#elif</span><span>#endif</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="conditional.html" title="cpp/preprocessor/conditional"><span class="t-lines"><span>#if</span><span>#ifdef</span><span>#ifndef</span><span>#else</span><span>#elif</span><span>#elifdef</span><span>#elifndef</span><span>#endif</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span></span><span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="replace.html" title="cpp/preprocessor/replace"><span class="t-lines"><span>#define</span><span>#undef</span><span>#,## operators</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>#include<br>__has_include</span></span></strong></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="error.html" title="cpp/preprocessor/error"><span class="t-lines"><span>#error</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="impl.html" title="cpp/preprocessor/impl"><span class="t-lines"><span>#pragma<br>_Pragma</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>#include</span><span>__has_include</span></span></strong></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="error.html" title="cpp/preprocessor/error"><span class="t-lines"><span>#error</span><span>#warning</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="impl.html" title="cpp/preprocessor/impl"><span class="t-lines"><span>#pragma</span><span>_Pragma</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="line.html" title="cpp/preprocessor/line"><span class="t-lines"><span>#line</span></span></a></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>Includes other source file into current source file at the line immediately after the directive.
@@ -391,60 +391,71 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">new-line</span>
+<td> <span class="t-spar">new-line</span>
 </td>
 <td> -
 </td>
-<td>  The new-line character
+<td> The new-line character
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">h-char-sequence</span>
+<td> <span class="t-spar">h-char-sequence</span>
 </td>
 <td> -
 </td>
-<td>  A sequence of one or more <span class="t-spar">h-char</span>s
+<td> A sequence of one or more <span class="t-spar">h-char</span>s, where the appearance of any of the following is conditionally-supported with implementation-defined semantics:
+<ul><li> the character <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'</span></span></span>
+</li><li> the character <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"</span></span></span>
+</li><li> the character <span class="t-c"><span class="mw-geshi cpp source-cpp">\</span></span>
+</li><li> the character sequence <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="co1">//</span></span></span>
+</li><li> the character sequence <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="coMULTI">/*</span></span></span>
+</li></ul>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">h-char</span>
+<td> <span class="t-spar">h-char</span>
 </td>
 <td> -
 </td>
-<td>  Any member of the <span class="t-rev-inl t-until-cxx23"><span><a href="../language/translation_phases.html#Phase_5" title="cpp/language/translation phases">source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="../language/charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span> except new-line and <code>&gt;</code>
+<td> Any member of the <span class="t-rev-inl t-until-cxx23"><span><a href="../language/translation_phases.html#Phase_5" title="cpp/language/translation phases">source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="../language/charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span> except new-line and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;</span></span></span>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">q-char-sequence</span>
+<td> <span class="t-spar">q-char-sequence</span>
 </td>
 <td> -
 </td>
-<td>  A sequence of one or more <span class="t-spar">q-char</span>s
+<td> A sequence of one or more <span class="t-spar">q-char</span>s, where the appearance of any of the following is conditionally-supported with implementation-defined semantics:
+<ul><li> the character <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'</span></span></span>
+</li><li> the character <span class="t-c"><span class="mw-geshi cpp source-cpp">\</span></span>
+</li><li> the character sequence <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="co1">//</span></span></span>
+</li><li> the character sequence <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="coMULTI">/*</span></span></span>
+</li></ul>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">q-char</span>
+<td> <span class="t-spar">q-char</span>
 </td>
 <td> -
 </td>
-<td>  Any member of the <span class="t-rev-inl t-until-cxx23"><span><a href="../language/translation_phases.html#Phase_5" title="cpp/language/translation phases">source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="../language/charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span> except new-line and <code>"</code>
+<td> Any member of the <span class="t-rev-inl t-until-cxx23"><span><a href="../language/translation_phases.html#Phase_5" title="cpp/language/translation phases">source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="../language/charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span> except new-line and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"</span></span></span>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">pp-tokens</span>
+<td> <span class="t-spar">pp-tokens</span>
 </td>
 <td> -
 </td>
-<td>  A sequence of one or more <a href="../language/translation_phases.html#Phase_3" title="cpp/language/translation phases">preprocessing tokens</a>
+<td> A sequence of one or more <a href="../language/translation_phases.html#Phase_3" title="cpp/language/translation phases">preprocessing tokens</a>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">string-literal</span>
+<td> <span class="t-spar">string-literal</span>
 </td>
 <td> -
 </td>
-<td>  A <a href="../language/string_literal.html" title="cpp/language/string literal">string literal</a>
+<td> A <a href="../language/string_literal.html" title="cpp/language/string literal">string literal</a>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">h-pp-tokens</span>
+<td> <span class="t-spar">h-pp-tokens</span>
 </td>
 <td> -
 </td>
-<td>  A sequence of one or more <a href="../language/translation_phases.html#Phase_3" title="cpp/language/translation phases">preprocessing tokens</a> except <code>&gt;</code>
+<td> A sequence of one or more <a href="../language/translation_phases.html#Phase_3" title="cpp/language/translation phases">preprocessing tokens</a> except <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;</span></span></span>
 </td></tr></table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
 <div class="t-li1"><span class="t-li">1)</span> Searches a sequence of implementation-defined places for a header identified uniquely by <span class="t-spar">h-char-sequence</span>, and causes the replacement of that directive by the entire contents of the header. How the places are specified or the header identified is implementation-defined.</div>
@@ -481,6 +492,7 @@ syntactic requirements of an <code>#include</code> directive, the program is ill
 <span class="co1">// contents of the file are here</span>
 <span class="co2">#endif</span></pre></div></div>
 <p>Many compilers also implement the non-standard <a href="impl.html" title="cpp/preprocessor/impl"><tt>pragma</tt></a> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="co2">#pragma once</span></span></span> with similar effects: it disables processing of a file if the same file (where file identity is determined in OS-specific way) has already been included.
+</p><p>A sequence of characters that resembles an escape sequence in <span class="t-spar">q-char-sequence</span> or <span class="t-spar">h-char-sequence</span> might result in an error, be interpreted as the character corresponding to the escape sequence, or have a completely different meaning, depending on the implementation. 
 </p><p>A <code>__has_include</code> result of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> only means that a header or source file with the specified name exists. It does not mean that the header or source file, when included, would not cause an error or would contain anything useful. For example, on a C++ implementation that supports both C++14 and C++17 modes (and provides <span class="t-c"><span class="mw-geshi cpp source-cpp">__has_include</span></span> in its C++14 mode as a conforming extension), <span class="t-c"><span class="mw-geshi cpp source-cpp">__has_include<span class="br0">(</span><span class="sy1">&lt;</span>optional<span class="sy1">&gt;</span><span class="br0">)</span></span></span> may be <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> in C++14 mode, but actually <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="co2">#include &lt;optional&gt;</span></span></span> may cause an error.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
@@ -496,9 +508,12 @@ syntactic requirements of an <code>#include</code> directive, the program is ill
 <span class="co2">#else</span>
 <span class="co2">#  define has_optional 0</span>
 <span class="co2">#  include &lt;utility&gt;</span>
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> V<span class="sy1">&gt;</span> <span class="kw1">class</span> optional_t <span class="br0">{</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> V<span class="sy1">&gt;</span>
+<span class="kw1">class</span> optional_t
+<span class="br0">{</span>
     V v_<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="kw4">bool</span> has_<span class="br0">{</span><span class="kw2">false</span><span class="br0">}</span><span class="sy4">;</span>
-  <span class="kw1">public</span><span class="sy4">:</span>
+<span class="kw1">public</span><span class="sy4">:</span>
     optional_t<span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
     optional_t<span class="br0">(</span>V<span class="sy3">&amp;&amp;</span> v<span class="br0">)</span> <span class="sy4">:</span> v_<span class="br0">(</span>v<span class="br0">)</span>, has_<span class="br0">{</span><span class="kw2">true</span><span class="br0">}</span> <span class="br0">{</span><span class="br0">}</span>
     V value_or<span class="br0">(</span>V<span class="sy3">&amp;&amp;</span> alt<span class="br0">)</span> <span class="kw4">const</span><span class="sy3">&amp;</span> <span class="br0">{</span> <span class="kw1">return</span> has_ <span class="sy4">?</span> v_ <span class="sy4">:</span> alt<span class="sy4">;</span> <span class="br0">}</span>
@@ -528,11 +543,33 @@ syntactic requirements of an <code>#include</code> directive, the program is ill
 op = -1
 op = 42</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/787.html">CWG 787</a>
+</td>
+<td> C++98
+</td>
+<td> the behavior is undefined if an escape sequence is<br>resembled in <span class="t-spar">q-char-sequence</span> or <span class="t-spar">h-char-sequence</span>
+</td>
+<td> it is conditionally-supported
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td colspan="2">  <a href="../header.html" title="cpp/header"> A list of C++ Standard Library header files</a>
+<td colspan="2"> <a href="../header.html" title="cpp/header">A list of C++ Standard Library header files</a>
 </td></tr>
 
 
@@ -540,19 +577,19 @@ op = 42</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3887/1000000
-Preprocessor generated node count: 9216/1000000
-Post‐expand include size: 138007/2097152 bytes
-Template argument size: 23850/2097152 bytes
-Highest expansion depth: 15/40
+Preprocessor visited node count: 4341/1000000
+Preprocessor generated node count: 9855/1000000
+Post‐expand include size: 146414/2097152 bytes
+Template argument size: 26543/2097152 bytes
+Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1383-0!*!0!!en!*!* and timestamp 20220105151127 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1383-0!*!0!!en!*!* and timestamp 20220718011428 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/preprocessor/include&amp;oldid=135508">https://en.cppreference.com/mwiki/index.php?title=cpp/preprocessor/include&amp;oldid=135508</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/preprocessor/include&amp;oldid=139455">https://en.cppreference.com/mwiki/index.php?title=cpp/preprocessor/include&amp;oldid=139455</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -569,10 +606,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/preprocessor/include">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/preprocessor/include">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 22 November 2021, at 18:31.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 240,261 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 27 April 2022, at 23:05.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 259,343 times.</li>
                             </ul>
                     </div>
         </div>
@@ -590,7 +627,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.252 secs. -->
+</script><!-- Served in 1.788 secs. -->
 	</body>
-<!-- Cached 20220105151127 -->
+<!-- Cached 20220718011428 -->
 </html>

@@ -105,6 +105,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -117,8 +118,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -152,11 +152,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co1">// any type T such that for values a and b of type T,</span>
 <span class="co1">// the expression a==b compiles and its result is convertible to bool</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-concept <span class="kw4">bool</span> <a href="../concepts/EqualityComparable.html"><span class="kw2694">EqualityComparable</span></a> <span class="sy1">=</span> requires<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="br0">{</span>
+concept <span class="kw4">bool</span> EqualityComparable <span class="sy1">=</span> requires<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="br0">{</span>
     <span class="br0">{</span> a <span class="sy1">==</span> b <span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <span class="kw4">bool</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw4">void</span> f<span class="br0">(</span><a href="../concepts/EqualityComparable.html"><span class="kw2694">EqualityComparable</span></a><span class="sy3">&amp;&amp;</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// declaration of a constrained function template</span>
+<span class="kw4">void</span> f<span class="br0">(</span>EqualityComparable<span class="sy3">&amp;&amp;</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// declaration of a constrained function template</span>
 <span class="co1">// template&lt;typename T&gt;</span>
 <span class="co1">// void f(T&amp;&amp;) requires EqualityComparable&lt;T&gt;; // long form of the same</span>
  
@@ -189,18 +189,18 @@ concept <span class="kw4">bool</span> <a href="../concepts/EqualityComparable.ht
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">auto</span>, <span class="kw4">auto</span><span class="sy1">&gt;</span> p2 <span class="sy1">=</span> <a href="../utility/pair/make_pair.html"><span class="kw1100">std::<span class="me2">make_pair</span></span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// first auto is int,</span>
                                                    <span class="co1">// second auto is char</span>
  
-<a href="../iterator/Sortable.html"><span class="kw2738">Sortable</span></a> x <span class="sy1">=</span> f<span class="br0">(</span>y<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// the type of x is deduced from the return type of f, </span>
+Sortable x <span class="sy1">=</span> f<span class="br0">(</span>y<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// the type of x is deduced from the return type of f, </span>
                    <span class="co1">// only compiles if the type satisfies the constraint Sortable</span>
  
-<span class="kw4">auto</span> f<span class="br0">(</span>Container<span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../iterator/Sortable.html"><span class="kw2738">Sortable</span></a><span class="sy4">;</span> <span class="co1">// return type is deduced from the return statement</span>
+<span class="kw4">auto</span> f<span class="br0">(</span>Container<span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> Sortable<span class="sy4">;</span> <span class="co1">// return type is deduced from the return statement</span>
                                <span class="co1">// only compiles if the type satisfies Sortable</span></pre></div></div>
 <p>Placeholders may also appear in parameters, in which case they turn function declarations into template declarations (constrained if the placeholder is constrained)
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">auto</span>, <a href="../concepts/EqualityComparable.html"><span class="kw2694">EqualityComparable</span></a><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// this is a template with two parameters:</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">auto</span>, EqualityComparable<span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// this is a template with two parameters:</span>
        <span class="co1">// unconstrained type parameter and a constrained non-type parameter</span></pre></div></div>
 <p>Constrained placeholders may be used anywhere <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">auto</span></span></span> may be used, for example, in generic lambda declarations
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">auto</span> gl <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><a href="../concepts/Assignable.html"><span class="kw2689">Assignable</span></a><span class="sy3">&amp;</span> a, <span class="kw4">auto</span><span class="sy2">*</span> b<span class="br0">)</span> <span class="br0">{</span> a <span class="sy1">=</span> <span class="sy2">*</span>b<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">auto</span> gl <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span>Assignable<span class="sy3">&amp;</span> a, <span class="kw4">auto</span><span class="sy2">*</span> b<span class="br0">)</span> <span class="br0">{</span> a <span class="sy1">=</span> <span class="sy2">*</span>b<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <p>If constrained type specifier designates a non-type or a template, but is used as a constrained placeholder, the program is ill-formed:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span>size_t N<span class="sy1">&gt;</span> concept <span class="kw4">bool</span> Even <span class="sy1">=</span> <span class="br0">(</span>N<span class="sy2">%</span><span class="nu19">2</span> <span class="sy1">==</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
@@ -212,7 +212,7 @@ concept <span class="kw4">bool</span> <a href="../concepts/EqualityComparable.ht
 <p>If one or more placeholders appears in a function parameter list, the function declaration is actually a function template declaration, whose template parameter list includes one invented parameter for every unique placeholder, in order of appearance
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// short form</span>
-<span class="kw4">void</span> g1<span class="br0">(</span><span class="kw4">const</span> <a href="../concepts/EqualityComparable.html"><span class="kw2694">EqualityComparable</span></a><span class="sy2">*</span>, <a href="../iterator/Incrementable.html"><span class="kw2716">Incrementable</span></a><span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> g1<span class="br0">(</span><span class="kw4">const</span> EqualityComparable<span class="sy2">*</span>, Incrementable<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co1">// long form:</span>
 <span class="co1">// template&lt;EqualityComparable T, Incrementable U&gt; void g1(const T*, U&amp;);</span>
 <span class="co1">// longer form:</span>
@@ -234,7 +234,7 @@ concept <span class="kw4">bool</span> <a href="../concepts/EqualityComparable.ht
 <p>Both function templates and class templates can be declared using a <i>template introduction</i>, which has the syntax <span class="t-spar">concept-name</span> <code><b>{</b></code> <span class="t-spar">parameter-list</span><span class="t-mark">(optional)</span><code><b>} </b></code>, in which case the keyword <code>template</code> is not needed: each parameter from the <span class="t-spar">parameter-list</span> of the template introduction becomes a template parameter whose kind (type, non-type, template) is determined by the kind of the corresponding parameter in the named concept.
 </p><p>Besides declaring a template, template introduction associates a <i>predicate constraint</i> (see below) that names (for variable concepts) or invokes (for function concepts) the concept named by the introduction.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><a href="../concepts/EqualityComparable.html"><span class="kw2694">EqualityComparable</span></a><span class="br0">{</span>T<span class="br0">}</span> <span class="kw1">class</span> Foo<span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">EqualityComparable<span class="br0">{</span>T<span class="br0">}</span> <span class="kw1">class</span> Foo<span class="sy4">;</span>
 <span class="co1">// long form: template&lt;EqualityComparable T&gt; class Foo;</span>
 <span class="co1">// longer form: template&lt;typename T&gt; requires EqualityComparable&lt;T&gt; class Foo;</span>
  
@@ -243,7 +243,7 @@ Example<span class="br0">{</span>A, B, ...<span class="me1">C</span><span class=
 <span class="co1">// long form template&lt;class A, int B, class... C&gt; requires Example&lt;A,B,C...&gt; struct S1;</span></pre></div></div>
 <p>For function templates, template introduction can be combined with placeholders:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><a href="../iterator/Sortable.html"><span class="kw2738">Sortable</span></a><span class="br0">{</span>T<span class="br0">}</span> <span class="kw4">void</span> f<span class="br0">(</span>T, <span class="kw4">auto</span><span class="br0">)</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">Sortable<span class="br0">{</span>T<span class="br0">}</span> <span class="kw4">void</span> f<span class="br0">(</span>T, <span class="kw4">auto</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co1">// long form: template&lt;Sortable T, typename U&gt; void f(T, U);</span>
 <span class="co1">// alternative using only placeholders: void f(Sortable, auto);</span></pre></div></div>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: touch up template declaration pages to link here </td></tr></table>
@@ -256,8 +256,8 @@ concept <span class="kw4">bool</span> Derived <span class="sy1">=</span> <a href
  
 <span class="co1">// function concept from the standard library (Ranges TS)</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-concept <span class="kw4">bool</span> <a href="../concepts/EqualityComparable.html"><span class="kw2694">EqualityComparable</span></a><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> 
-    <span class="kw1">return</span> requires<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="br0">{</span> <span class="br0">{</span>a <span class="sy1">==</span> b<span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../concepts/Boolean.html"><span class="kw2692">Boolean</span></a><span class="sy4">;</span> <span class="br0">{</span>a <span class="sy3">!</span><span class="sy1">=</span> b<span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="../concepts/Boolean.html"><span class="kw2692">Boolean</span></a><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+concept <span class="kw4">bool</span> EqualityComparable<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> 
+    <span class="kw1">return</span> requires<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="br0">{</span> <span class="br0">{</span>a <span class="sy1">==</span> b<span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> Boolean<span class="sy4">;</span> <span class="br0">{</span>a <span class="sy3">!</span><span class="sy1">=</span> b<span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> Boolean<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>The following restrictions apply to function concepts:
 </p>
@@ -309,8 +309,8 @@ sizeof<span class="br0">(</span>T<span class="br0">)</span> <span class="sy1">&g
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// the declarations declare the same constrained function template </span>
 <span class="co1">// with the constraint Incrementable&lt;T&gt; &amp;&amp; Decrementable&lt;T&gt;</span>
-<span class="kw1">template</span><span class="sy1">&lt;</span><a href="../iterator/Incrementable.html"><span class="kw2716">Incrementable</span></a> T<span class="sy1">&gt;</span> <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span> requires Decrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span>
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span> requires <a href="../iterator/Incrementable.html"><span class="kw2716">Incrementable</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> Decrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// ok</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span>Incrementable T<span class="sy1">&gt;</span> <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span> requires Decrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span> requires Incrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> Decrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// ok</span>
  
 <span class="co1">// the following two declarations have different constraints:</span>
 <span class="co1">// the first declaration has Incrementable&lt;T&gt; &amp;&amp; Decrementable&lt;T&gt;</span>
@@ -318,18 +318,18 @@ sizeof<span class="br0">(</span>T<span class="br0">)</span> <span class="sy1">&g
 <span class="co1">// Even though they are logically equivalent.</span>
 <span class="co1">// The second declaration is ill-formed, no diagnostic required</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><a href="../iterator/Incrementable.html"><span class="kw2716">Incrementable</span></a> T<span class="sy1">&gt;</span> requires Decrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-<span class="kw1">template</span><span class="sy1">&lt;</span>Decrementable T<span class="sy1">&gt;</span> requires <a href="../iterator/Incrementable.html"><span class="kw2716">Incrementable</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// error</span></pre></div></div>
+<span class="kw1">template</span><span class="sy1">&lt;</span>Incrementable T<span class="sy1">&gt;</span> requires Decrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span>Decrementable T<span class="sy1">&gt;</span> requires Incrementable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// error</span></pre></div></div>
 <h4><span class="mw-headline" id="Conjunctions">Conjunctions</span></h4>
 <p>Conjunction of constraints <code>P</code> and <code>Q</code> is specified as <span class="t-c"><span class="mw-geshi cpp source-cpp">P <span class="sy3">&amp;&amp;</span> Q</span></span>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// example concepts from the standard library (Ranges TS)</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-concept <span class="kw4">bool</span> <a href="../concepts/Integral.html"><span class="kw2686">Integral</span></a> <span class="sy1">=</span> <a href="../types/is_integral.html"><span class="kw462">std::<span class="me2">is_integral</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
+concept <span class="kw4">bool</span> Integral <span class="sy1">=</span> <a href="../types/is_integral.html"><span class="kw462">std::<span class="me2">is_integral</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-concept <span class="kw4">bool</span> <a href="../concepts/SignedIntegral.html"><span class="kw2687">SignedIntegral</span></a> <span class="sy1">=</span> <a href="../concepts/Integral.html"><span class="kw2686">Integral</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <a href="../types/is_signed.html"><span class="kw522">std::<span class="me2">is_signed</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
+concept <span class="kw4">bool</span> SignedIntegral <span class="sy1">=</span> Integral<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <a href="../types/is_signed.html"><span class="kw522">std::<span class="me2">is_signed</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-concept <span class="kw4">bool</span> <a href="../concepts/UnsignedIntegral.html"><span class="kw2688">UnsignedIntegral</span></a> <span class="sy1">=</span> <a href="../concepts/Integral.html"><span class="kw2686">Integral</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><a href="../concepts/SignedIntegral.html"><span class="kw2687">SignedIntegral</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span></pre></div></div>
+concept <span class="kw4">bool</span> UnsignedIntegral <span class="sy1">=</span> Integral<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span>SignedIntegral<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span></pre></div></div>
 <p>A conjunction of two constraints is satisfied only if both constraints are satisfied. Conjunctions are evaluated left to right and short-circuited (if the left constraint is not satisfied, template argument substitution into the right constraint is not attempted: this prevents failures due to substitution outside of immediate context). User-defined overloads of <code>operator&amp;&amp;</code> are not allowed in constraint conjunctions.
 </p>
 <h4><span class="mw-headline" id="Disjunctions">Disjunctions</span></h4>
@@ -338,7 +338,7 @@ concept <span class="kw4">bool</span> <a href="../concepts/UnsignedIntegral.html
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// example constraint from the standard library (Ranges TS)</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T <span class="sy1">=</span> <span class="kw4">void</span><span class="sy1">&gt;</span>
-requires <a href="../concepts/EqualityComparable.html"><span class="kw2694">EqualityComparable</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">||</span> <a href="../concepts/Same.html"><span class="kw2681">Same</span></a><span class="sy1">&lt;</span>T, <span class="kw4">void</span><span class="sy1">&gt;</span>
+requires EqualityComparable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">||</span> Same<span class="sy1">&lt;</span>T, <span class="kw4">void</span><span class="sy1">&gt;</span>
 <span class="kw1">struct</span> equal_to<span class="sy4">;</span></pre></div></div>
 <h4><span class="mw-headline" id="Predicate_constraints">Predicate constraints</span></h4>
 <p>A predicate constraint is a constant expression of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>. It is satisfied only if it evaluates to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>
@@ -440,7 +440,7 @@ requires <span class="br0">(</span>T a, T b<span class="br0">)</span> <span clas
  
 <span class="co1">// example constraint from the standard library (ranges TS)</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U <span class="sy1">=</span> T<span class="sy1">&gt;</span>
-concept <span class="kw4">bool</span> <a href="../concepts/Swappable.html"><span class="kw2690">Swappable</span></a> <span class="sy1">=</span> requires<span class="br0">(</span>T<span class="sy3">&amp;&amp;</span> t, U<span class="sy3">&amp;&amp;</span> u<span class="br0">)</span> <span class="br0">{</span>
+concept <span class="kw4">bool</span> Swappable <span class="sy1">=</span> requires<span class="br0">(</span>T<span class="sy3">&amp;&amp;</span> t, U<span class="sy3">&amp;&amp;</span> u<span class="br0">)</span> <span class="br0">{</span>
     swap<span class="br0">(</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span>, <a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     swap<span class="br0">(</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span>, <a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
@@ -457,7 +457,7 @@ requires <span class="br0">{</span>
  
 <span class="co1">//Example concept from the standard library (Ranges TS)</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U<span class="sy1">&gt;</span> <span class="kw1">using</span> CommonType <span class="sy1">=</span> <a href="../types/common_type.html"><span class="kw638">std::<span class="me2">common_type_t</span></span></a><span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="sy4">;</span>
-<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U<span class="sy1">&gt;</span> concept <span class="kw4">bool</span> <a href="../concepts/Common.html"><span class="kw2685">Common</span></a> <span class="sy1">=</span>
+<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U<span class="sy1">&gt;</span> concept <span class="kw4">bool</span> Common <span class="sy1">=</span>
 requires <span class="br0">(</span>T t, U u<span class="br0">)</span> <span class="br0">{</span>
     <span class="kw1">typename</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// CommonType&lt;T, U&gt; is valid and names a type</span>
     <span class="br0">{</span> CommonType<span class="sy1">&lt;</span>T, U<span class="sy1">&gt;</span><span class="br0">{</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>t<span class="br0">)</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span> 
@@ -500,26 +500,26 @@ requires<span class="br0">(</span>T x<span class="br0">)</span> <span class="br0
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="co1">// Example concept from the standard library (Ranges TS)</span>
-<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U<span class="sy1">&gt;</span> concept <span class="kw4">bool</span> <a href="../concepts/Same.html"><span class="kw2681">Same</span></a> <span class="sy1">=</span> <a href="../types/is_same.html"><span class="kw590">std::<span class="me2">is_same</span></span></a><span class="sy1">&lt;</span>T,U<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
-<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> B<span class="sy1">&gt;</span> concept <span class="kw4">bool</span> <a href="../concepts/Boolean.html"><span class="kw2692">Boolean</span></a> <span class="sy1">=</span>
+<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U<span class="sy1">&gt;</span> concept <span class="kw4">bool</span> Same <span class="sy1">=</span> <a href="../types/is_same.html"><span class="kw590">std::<span class="me2">is_same</span></span></a><span class="sy1">&lt;</span>T,U<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span><span class="sy4">;</span>
+<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> B<span class="sy1">&gt;</span> concept <span class="kw4">bool</span> Boolean <span class="sy1">=</span>
 requires<span class="br0">(</span>B b1, B b2<span class="br0">)</span> <span class="br0">{</span>
     <span class="br0">{</span> <span class="kw4">bool</span><span class="br0">(</span>b1<span class="br0">)</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// direct initialization constraint has to use expression</span>
     <span class="br0">{</span> <span class="sy3">!</span>b1 <span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <span class="kw4">bool</span><span class="sy4">;</span> <span class="co1">// compound constraint</span>
-    requires <a href="../concepts/Same.html"><span class="kw2681">Same</span></a><span class="sy1">&lt;</span>decltype<span class="br0">(</span>b1 <span class="sy3">&amp;&amp;</span> b2<span class="br0">)</span>, <span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// nested constraint, see below</span>
-    requires <a href="../concepts/Same.html"><span class="kw2681">Same</span></a><span class="sy1">&lt;</span>decltype<span class="br0">(</span>b1 <span class="sy3">||</span> b2<span class="br0">)</span>, <span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy4">;</span>
+    requires Same<span class="sy1">&lt;</span>decltype<span class="br0">(</span>b1 <span class="sy3">&amp;&amp;</span> b2<span class="br0">)</span>, <span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// nested constraint, see below</span>
+    requires Same<span class="sy1">&lt;</span>decltype<span class="br0">(</span>b1 <span class="sy3">||</span> b2<span class="br0">)</span>, <span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <h4><span class="mw-headline" id="Nested_requirements">Nested requirements</span></h4>
 <p>A nested requirement is another <i>requires-clause</i>, terminated with a semicolon. This is used to introduce <i>predicate constraints</i> (see above) expressed in terms of other named concepts applied to the local parameters (outside a requires clause, predicate constraints can't use parameters, and placing an expression directly in a requires clause makes it an expression constraint which means it is not evaluated)
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// example constraint from Ranges TS</span>
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-concept <span class="kw4">bool</span> <a href="../concepts/Semiregular.html"><span class="kw2705">Semiregular</span></a> <span class="sy1">=</span> <a href="../concepts/DefaultConstructible.html"><span class="kw2700">DefaultConstructible</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
-    <a href="../concepts/CopyConstructible.html"><span class="kw2702">CopyConstructible</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <a href="../concepts/Destructible.html"><span class="kw2698">Destructible</span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> CopyAssignable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
+concept <span class="kw4">bool</span> Semiregular <span class="sy1">=</span> DefaultConstructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
+    CopyConstructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> Destructible<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> CopyAssignable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
 requires<span class="br0">(</span>T a, size_t n<span class="br0">)</span> <span class="br0">{</span>  
-    requires <a href="../concepts/Same.html"><span class="kw2681">Same</span></a><span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span><span class="sy3">&amp;</span>a<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span>  <span class="co1">// nested: "Same&lt;...&gt; evaluates to true"</span>
+    requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span><span class="sy3">&amp;</span>a<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span>  <span class="co1">// nested: "Same&lt;...&gt; evaluates to true"</span>
     <span class="br0">{</span> a.~T<span class="br0">(</span><span class="br0">)</span> <span class="br0">}</span> <span class="kw1">noexcept</span><span class="sy4">;</span>  <span class="co1">// compound: "a.~T()" is a valid expression that doesn't throw</span>
-    requires <a href="../concepts/Same.html"><span class="kw2681">Same</span></a><span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span>new T<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// nested: "Same&lt;...&gt; evaluates to true"</span>
-    requires <a href="../concepts/Same.html"><span class="kw2681">Same</span></a><span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span>new T<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// nested</span>
+    requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span>new T<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// nested: "Same&lt;...&gt; evaluates to true"</span>
+    requires Same<span class="sy1">&lt;</span>T<span class="sy2">*</span>, decltype<span class="br0">(</span>new T<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// nested</span>
     <span class="br0">{</span> delete new T <span class="br0">}</span><span class="sy4">;</span>  <span class="co1">// compound</span>
     <span class="br0">{</span> delete new T<span class="br0">[</span>n<span class="br0">]</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// compound</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
@@ -616,13 +616,13 @@ g<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><
 NewPP limit report
 Preprocessor visited node count: 3241/1000000
 Preprocessor generated node count: 9248/1000000
-Post‐expand include size: 54031/2097152 bytes
-Template argument size: 21250/2097152 bytes
+Post‐expand include size: 54037/2097152 bytes
+Template argument size: 21251/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17698-0!*!0!!en!2!* and timestamp 20210917155725 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17698-0!*!0!!en!2!* and timestamp 20220410102728 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -643,10 +643,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/experimental/constraints">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/experimental/constraints">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
                                     <li id="footer-info-lastmod"> This page was last modified on 5 June 2021, at 14:03.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 61,664 times.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 66,604 times.</li>
                             </ul>
                     </div>
         </div>
@@ -664,7 +664,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 5.759 secs. -->
+</script><!-- Served in 5.101 secs. -->
 	</body>
-<!-- Cached 20210917155725 -->
+<!-- Cached 20220410102729 -->
 </html>

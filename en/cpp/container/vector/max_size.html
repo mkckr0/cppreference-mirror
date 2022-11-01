@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -251,32 +251,18 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;locale&gt;</span>
 <span class="co2">#include &lt;vector&gt;</span>
- 
-<span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> separate<span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span> n<span class="br0">)</span>
-<span class="br0">{</span>
-    <span class="kw4">static</span> <span class="kw4">char</span> buf<span class="br0">[</span><span class="nu0">64</span><span class="br0">]</span><span class="sy4">;</span>
- 
-    <span class="kw4">int</span> i<span class="br0">{</span>sizeof<span class="br0">(</span>buf<span class="br0">)</span> <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">}</span>, j<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
-    buf<span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">=</span> <span class="st0">'<span class="es5">\0</span>'</span><span class="sy4">;</span>
- 
-    <span class="kw1">do</span> <span class="br0">{</span>
-        buf<span class="br0">[</span><span class="sy2">--</span>i<span class="br0">]</span> <span class="sy1">=</span> <span class="st0">'0'</span> <span class="sy2">+</span> <span class="br0">(</span>n <span class="sy2">%</span> <span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">if</span> <span class="br0">(</span>j<span class="sy2">++</span> <span class="sy2">%</span> <span class="nu0">3</span> <span class="sy1">==</span> <span class="nu0">2</span><span class="br0">)</span>
-            buf<span class="br0">[</span><span class="sy2">--</span>i<span class="br0">]</span> <span class="sy1">=</span> <span class="st0">'<span class="es1">\'</span>'</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">while</span> <span class="br0">(</span>n <span class="sy2">/</span><span class="sy1">=</span> <span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span>
- 
-    <span class="kw1">return</span> buf <span class="sy2">+</span> i <span class="sy2">+</span> <span class="br0">(</span>buf<span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">==</span> <span class="st0">'<span class="es1">\'</span>'</span> <span class="sy4">?</span> <span class="nu0">1</span> <span class="sy4">:</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
-<span class="br0">}</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> s<span class="sy4">;</span>
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Maximum size of a 'vector' is "</span> <span class="sy1">&lt;&lt;</span> separate<span class="br0">(</span>s.<span class="me1">max_size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <a href="../vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> q<span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a>.<span class="me1">imbue</span><span class="br0">(</span><a href="../../locale/locale.html"><span class="kw1898">std::<span class="me2">locale</span></span></a><span class="br0">(</span><span class="st0">"en_US.UTF-8"</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>    
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Maximum size of a std::vector is "</span> <span class="sy1">&lt;&lt;</span> q.<span class="me1">max_size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Maximum size of a 'vector' is 9'223'372'036'854'775'807</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Maximum size of a std::vector is 9,223,372,036,854,775,807</pre></div></div> 
 </div>
 <h3> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -294,15 +280,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5208/1000000
-Preprocessor generated node count: 10987/1000000
-Post‐expand include size: 190982/2097152 bytes
-Template argument size: 25116/2097152 bytes
+Preprocessor visited node count: 5200/1000000
+Preprocessor generated node count: 10978/1000000
+Post‐expand include size: 190991/2097152 bytes
+Template argument size: 24427/2097152 bytes
 Highest expansion depth: 25/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:459-0!*!0!!en!*!* and timestamp 20211107151348 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:459-0!*!0!!en!*!* and timestamp 20220506201927 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -323,10 +309,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/container/vector/max_size">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/vector/max_size">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 7 November 2021, at 07:13.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 67,722 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 7 November 2021, at 08:13.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 75,596 times.</li>
                             </ul>
                     </div>
         </div>
@@ -344,7 +330,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.037 secs. -->
+</script><!-- Served in 0.931 secs. -->
 	</body>
-<!-- Cached 20211107153645 -->
+<!-- Cached 20220506201927 -->
 </html>

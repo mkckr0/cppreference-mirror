@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/static_cast","wgTitle":"cpp/language/static cast","wgCurRevisionId":137051,"wgArticleId":2740,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/static_cast","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/static_cast","wgTitle":"cpp/language/static cast","wgCurRevisionId":141562,"wgArticleId":2740,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/static_cast","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -375,22 +375,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Returns a value of type <span class="t-spar">new-type</span>.
 </p>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: Put the cv-qualification requirement in each point rather than a general requirement. A user reading the items at later positions can easily ignore this restriction. </td></tr></table>
 <p>Only the following conversions can be done with <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span>, except when such conversions would cast away <i>constness</i> or <i>volatility</i>.
 </p>
-<div class="t-li1"><span class="t-li">1)</span> If there is an <a href="implicit_cast.html" title="cpp/language/implicit conversion">implicit conversion sequence</a> from <span class="t-spar">expression</span> to <span class="t-spar">new-type</span>, or if overload resolution for a <a href="direct_initialization.html" title="cpp/language/direct initialization">direct initialization</a> of an object or reference of type <span class="t-spar">new-type</span> from <span class="t-spar">expression</span> would find at least one viable function, then <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span><span class="sy1">&lt;</span></span><span class="t-spar">new-type</span><code>&gt;(</code><span class="t-spar">expression</span><code>)</code></span> returns the imaginary variable <code>Temp</code> initialized as if by <span class="t-c"><span class="t-spar">new-type</span> <span class="mw-geshi cpp source-cpp">Temp<span class="br0">(</span></span><span class="t-spar">expression</span><code>);</code></span>, which may involve <a href="implicit_cast.html" title="cpp/language/implicit conversion">implicit conversions</a>, a call to the <a href="initializer_list.html" title="cpp/language/constructor">constructor</a> of <span class="t-spar">new-type</span> or a call to a <a href="cast_operator.html" title="cpp/language/cast operator">user-defined conversion operator</a>. <span class="t-rev-inl t-since-cxx17"><span>For non-reference <span class="t-spar">new-type</span>, the result object of the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> prvalue expression is what's direct-initialized.</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span></div>
-<div class="t-li1"><span class="t-li">2)</span> If <span class="t-spar">new-type</span> is a reference or pointer to some class <code>D</code> and  <span class="t-spar">expression</span> is lvalue of its non-virtual base <code>B</code> or prvalue pointer to it, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> performs a <i>downcast</i>. (This downcast is ill-formed if <code>B</code> is ambiguous, inaccessible, or virtual base (or a base of a virtual base) of <code>D</code>.) Such a downcast makes no runtime checks to ensure that the object's runtime type is actually <code>D</code>, and may only be used safely if this precondition is guaranteed by other means, such as when implementing <a href="https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern#Static_polymorphism" class="extiw" title="enwiki:Curiously recurring template pattern">static polymorphism</a>. Safe downcast may be done with <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a>.
+<div class="t-li1"><span class="t-li">1)</span> If <span class="t-spar">new-type</span> is a reference to some class <code>D</code> and <span class="t-spar">expression</span> is an lvalue of its non-virtual base <code>B</code>, or <span class="t-spar">new-type</span> is a pointer to some complete class <code>D</code> and <span class="t-spar">expression</span> is a prvalue pointer to its non-virtual base <code>B</code>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> performs a <i>downcast</i>. (This downcast is ill-formed if <code>B</code> is ambiguous, inaccessible, or virtual base (or a base of a virtual base) of <code>D</code>.)
+<p>Such a downcast makes no runtime checks to ensure that the object's runtime type is actually <code>D</code>, and may only be used safely if this precondition is guaranteed by other means, such as when implementing <a href="https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern#Static_polymorphism" class="extiw" title="enwiki:Curiously recurring template pattern">static polymorphism</a>. Safe downcast may be done with <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a>.
+If the object <span class="t-spar">expression</span> refers or points to is actually a base class subobject of an object of type <code>D</code>, the result refers to the enclosing object of type <code>D</code>. Otherwise, the behavior is undefined:
+</p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> D <span class="sy4">:</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> D <span class="sy4">:</span> B <span class="br0">{</span> B b<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+ 
 D d<span class="sy4">;</span>
-B<span class="sy3">&amp;</span> br <span class="sy1">=</span> d<span class="sy4">;</span>
-<span class="kw1">static_cast</span><span class="sy1">&lt;</span>D<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>br<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// lvalue denoting the original d object</span></pre></div></div></div>
+B<span class="sy3">&amp;</span> br1 <span class="sy1">=</span> d<span class="sy4">;</span>
+B<span class="sy3">&amp;</span> br2 <span class="sy1">=</span> d.<span class="me1">b</span><span class="sy4">;</span>
+ 
+<span class="kw1">static_cast</span><span class="sy1">&lt;</span>D<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>br1<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: lvalue denoting the original d object</span>
+<span class="kw1">static_cast</span><span class="sy1">&lt;</span>D<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>br2<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// UB: the b subobject is not a base class subobject</span></pre></div></div></div>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
-<div class="t-li1"><span class="t-li">3)</span> If <span class="t-spar">new-type</span> is an rvalue reference type, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> converts the value of <span class="t-rev-inl t-until-cxx17"><span>glvalue, class prvalue, or array prvalue</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>any lvalue</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> <span class="t-spar">expression</span> to <i>xvalue</i> referring to the same object as the expression, or to its base sub-object (depending on <span class="t-spar">new-type</span>). If the target type is an inaccessible or ambiguous base of the type of the expression, the program is ill-formed. If the expression is a <a href="bitfield.html" title="cpp/language/bit field">bit field</a> lvalue, it is first converted to prvalue of the underlying type. This type of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> is used to implement move semantics in <span class="t-lc">std::move</span>.</div>
+<div class="t-li1"><span class="t-li">2)</span> If <span class="t-spar">new-type</span> is an rvalue reference type, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> converts the value of <span class="t-rev-inl t-until-cxx17"><span>glvalue, class prvalue, or array prvalue</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>any lvalue</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> <span class="t-spar">expression</span> to <i>xvalue</i> referring to the same object as the expression, or to its base sub-object (depending on <span class="t-spar">new-type</span>). If the target type is an inaccessible or ambiguous base of the type of the expression, the program is ill-formed. If the expression is a <a href="bitfield.html" title="cpp/language/bit field">bit-field</a> lvalue, it is first converted to prvalue of the underlying type. This type of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> is used to implement move semantics in <span class="t-lc">std::move</span>.</div>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
+<div class="t-li1"><span class="t-li">3)</span> If there is an <a href="implicit_cast.html" title="cpp/language/implicit conversion">implicit conversion sequence</a> from <span class="t-spar">expression</span> to <span class="t-spar">new-type</span>, or if overload resolution for a <a href="direct_initialization.html" title="cpp/language/direct initialization">direct initialization</a> of an object or reference of type <span class="t-spar">new-type</span> from <span class="t-spar">expression</span> would find at least one viable function, then <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span><span class="sy1">&lt;</span></span><span class="t-spar">new-type</span><code>&gt;(</code><span class="t-spar">expression</span><code>)</code></span> returns the imaginary variable <code>Temp</code> initialized as if by <span class="t-c"><span class="t-spar">new-type</span> <span class="mw-geshi cpp source-cpp">Temp<span class="br0">(</span></span><span class="t-spar">expression</span><code>);</code></span>, which may involve <a href="implicit_cast.html" title="cpp/language/implicit conversion">implicit conversions</a>, a call to the <a href="initializer_list.html" title="cpp/language/constructor">constructor</a> of <span class="t-spar">new-type</span> or a call to a <a href="cast_operator.html" title="cpp/language/cast operator">user-defined conversion operator</a>. <span class="t-rev-inl t-since-cxx17"><span>For non-reference <span class="t-spar">new-type</span>, the result object of the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> prvalue expression is what's direct-initialized.</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span></div>
 <div class="t-li1"><span class="t-li">4)</span> If <span class="t-spar">new-type</span> is the type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> (possibly cv-qualified), <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> discards the value of <span class="t-spar">expression</span> after evaluating it.</div>
 <div class="t-li1"><span class="t-li">5)</span> If a <a href="implicit_cast.html" title="cpp/language/implicit conversion">standard conversion</a> sequence from <span class="t-spar">new-type</span> to the type of <span class="t-spar">expression</span> exists, that does not include lvalue-to-rvalue, array-to-pointer, function-to-pointer, null pointer, null member pointer, <span class="t-rev-inl t-since-cxx17"><span>function pointer,</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> or boolean conversion, then <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> can perform the inverse of that implicit conversion.</div>
 <div class="t-li1"><span class="t-li">6)</span> If conversion of <span class="t-spar">expression</span> to <span class="t-spar">new-type</span> involves lvalue-to-rvalue, array-to-pointer, or function-to-pointer conversion, it can be performed explicitly by <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span>.</div>
@@ -414,26 +420,37 @@ B<span class="sy3">&amp;</span> br <span class="sy1">=</span> d<span class="sy4"
 </table>
 <div class="t-li1"><span class="t-li">8)</span> A value of integer or enumeration type can be converted to any complete <a href="enum_class.html" title="cpp/language/enum">enumeration type</a>.
 <dl><dd><ul><li> If the underlying type is not fixed, the behavior is undefined if the value of <span class="t-spar">expression</span> is out of range (the range is all values possible for the smallest bit field large enough to hold all enumerators of the target enumeration).
-</li><li>  If the underlying type is fixed, the result is the same as <a href="implicit_cast.html#Integral_conversions" title="cpp/language/implicit conversion">converting</a> the original value first to the underlying type of the enumeration and then to the enumeration type.</li></ul></dd></dl></div>
+</li><li> If the underlying type is fixed, the result is the same as <a href="implicit_cast.html#Integral_conversions" title="cpp/language/implicit conversion">converting</a> the original value first to the underlying type of the enumeration and then to the enumeration type.</li></ul></dd></dl></div>
 
 
 <div class="t-li1"><span class="t-li"></span> A value of a floating-point type can also be converted to any complete enumeration type.
 <dl><dd><ul><li> The result is the same as <a href="implicit_cast.html#Floating.E2.80.93integral_conversions" title="cpp/language/implicit conversion">converting</a> the original value first to the underlying type of the enumeration, and then to the enumeration type.</li></ul></dd></dl></div>
 
 
-<div class="t-li1"><span class="t-li">9)</span> A pointer to member of some class <code>D</code> can be upcast to a pointer to member of its unambiguous, accessible base class <code>B</code>. This <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> makes no checks to ensure the member actually exists in the runtime type of the pointed-to object.</div>
+<div class="t-li1"><span class="t-li">9)</span> A pointer to member of some complete class <code>D</code> can be upcast to a pointer to member of its unambiguous, accessible base class <code>B</code>. This <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> makes no checks to ensure the member actually exists in the runtime type of the pointed-to object.</div>
 <div class="t-li1"><span class="t-li">10)</span> A prvalue of type pointer to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> (possibly cv-qualified) can be converted to pointer to any object type. If the original <a href="pointer.html#Pointers" title="cpp/language/pointer">pointer value</a> represents an address of a byte in memory that does not satisfy the alignment requirement of the target type, then the resulting pointer value is unspecified. Otherwise, if the original pointer value points to an object <i>a</i>, and there is an object <i>b</i> of the target type (ignoring cv-qualification) that is <i>pointer-interconvertible</i> (as defined below) with <i>a</i>, the result is a pointer to <i>b</i>. Otherwise the pointer value is unchanged. Conversion of any pointer to pointer to void and back to pointer to the original (or more cv-qualified) type preserves its original value.</div>
 <p>As with all cast expressions, the result is:
 </p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx11"><td>
+<ul><li> an lvalue if <span class="t-spar">new-type</span> is a reference type;
+</li><li> an rvalue otherwise.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
+<tr class="t-rev t-since-cxx11"><td>
 <ul><li> an lvalue if <span class="t-spar">new-type</span> is an lvalue reference type or an rvalue reference to function type;
 </li><li> an xvalue if <span class="t-spar">new-type</span> is an rvalue reference to object type; 
 </li><li> a prvalue otherwise.
 </li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
 <p><span id="pointer-interconvertible"></span>Two objects <i>a</i> and <i>b</i> are <i>pointer-interconvertible</i> if:
 </p>
 <ul><li> they are the same object, or
 </li><li> one is a union object and the other is a non-static data member of that object, or
-</li><li> one is a <a href="data_members.html#Standard_layout" title="cpp/language/data members">standard-layout</a> class object and the other is the first non-static data member of that object, or, if the object has no non-static data members, any base class subobject of that object, or
+</li><li> one is a <a href="data_members.html#Standard_layout" title="cpp/language/data members">standard-layout</a> class object and the other is the first non-static data member of that object or any base class subobject of that object, or
 </li><li> there exists an object <i>c</i> such that <i>a</i> and <i>c</i> are pointer-interconvertible, and <i>c</i> and <i>b</i> are pointer-interconvertible.
 </li></ul>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">union</span> U <span class="br0">{</span> <span class="kw4">int</span> a<span class="sy4">;</span> <span class="kw4">double</span> b<span class="sy4">;</span> <span class="br0">}</span> u<span class="sy4">;</span>
@@ -475,22 +492,23 @@ B<span class="sy3">&amp;</span> br <span class="sy1">=</span> d<span class="sy4"
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="co1">// 1. initializing conversion</span>
-    <span class="kw4">int</span> n <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="nu16">3.14</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"1) n = "</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;&gt;</span><span class="br0">(</span><span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"1) v.size() = "</span> <span class="sy1">&lt;&lt;</span> v.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
- 
-    <span class="co1">// 2. static downcast</span>
+    <span class="co1">// 1. static downcast</span>
     D d<span class="sy4">;</span>
     B<span class="sy3">&amp;</span> br <span class="sy1">=</span> d<span class="sy4">;</span> <span class="co1">// upcast via implicit conversion</span>
-    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"2) "</span> <span class="sy1">&lt;&lt;</span> br.<span class="me1">hello</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"1) "</span> <span class="sy1">&lt;&lt;</span> br.<span class="me1">hello</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     D<span class="sy3">&amp;</span> another_d <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span>D<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>br<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// downcast</span>
-    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"2) "</span> <span class="sy1">&lt;&lt;</span> another_d.<span class="me1">hello</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"1) "</span> <span class="sy1">&lt;&lt;</span> another_d.<span class="me1">hello</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="co1">// 3. lvalue to xvalue</span>
-    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v2 <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy3">&amp;&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"3) after move, v.size() = "</span> <span class="sy1">&lt;&lt;</span> v.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="co1">// 2. lvalue to xvalue</span>
+    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v0<span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span>
+    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v2 <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy3">&amp;&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>v0<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"2) after move, v0.size() = "</span> <span class="sy1">&lt;&lt;</span> v0.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+ 
+    <span class="co1">// 3. initializing conversion</span>
+    <span class="kw4">int</span> n <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="nu16">3.14</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"3) n = "</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;&gt;</span><span class="br0">(</span><span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"3) v.size() = "</span> <span class="sy1">&lt;&lt;</span> v.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
     <span class="co1">// 4. discarded-value expression</span>
     <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">void</span><span class="sy1">&gt;</span><span class="br0">(</span>v2.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
@@ -526,11 +544,11 @@ B<span class="sy3">&amp;</span> br <span class="sy1">=</span> d<span class="sy4"
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1) n = 3
-1) v.size() = 10
-2) Hello world, this is B!
-2) Hello world, this is D!
-3) after move, v.size() = 0
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1) Hello world, this is B!
+1) Hello world, this is D!
+2) after move, v0.size() = 0
+3) n = 3
+3) v.size() = 10
 4) *ni = 3
 7) 2
 9) 42</pre></div></div> 
@@ -549,7 +567,7 @@ B<span class="sy3">&amp;</span> br <span class="sy1">=</span> d<span class="sy4"
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue137">CWG 137</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/137.html">CWG 137</a>
 </td>
 <td> C++98
 </td>
@@ -558,17 +576,112 @@ B<span class="sy3">&amp;</span> br <span class="sy1">=</span> d<span class="sy4"
 <td> cv-qualifications cannot be<br>casted away in such cases
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2254">CWG 2254</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/439.html">CWG 439</a>
+</td>
+<td> C++98
+</td>
+<td> when converting a 'pointer to object' to 'pointer to<br>void' then back to itself, it could only preserve its<br>value if the result type has the same cv-qualifiction
+</td>
+<td> cv-qualification<br>may be different
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1094.html">CWG 1094</a>
+</td>
+<td> C++98
+</td>
+<td> the conversion from floating-point values<br>to enumeration values was unspecified
+</td>
+<td> specified
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1320.html">CWG 1320</a>
 </td>
 <td> C++11
 </td>
-<td> standard-layout class object with no data members<br>
-<p>was <i>pointer-interconvertible</i> to its first base class
-</p>
+<td> the conversion from scoped enumeration<br>values to bool was unspecified
 </td>
-<td> is <i>pointer-interconvertible</i><br>
-<p>to any of its base classes
-</p>
+<td> specified
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1447.html">CWG 1447</a>
+</td>
+<td> C++11
+</td>
+<td> the conversion from bit-fields to rvalue references<br>was unspecified (cannot bind references to bit-fields)
+</td>
+<td> specified
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1766.html">CWG 1766</a>
+</td>
+<td> C++98
+</td>
+<td> the conversion from integral or enumeration values to enumeration<br>values yielded unspecified result if <span class="t-spar">expression</span> is out of range
+</td>
+<td> the behavior is<br>undefined in this case
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1832.html">CWG 1832</a>
+</td>
+<td> C++98
+</td>
+<td> the conversion from integral or enumeration values to<br>enumeration values allowed <span class="t-spar">new-type</span> to be incomplete
+</td>
+<td> not allowed
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2224.html">CWG 2224</a>
+</td>
+<td> C++98
+</td>
+<td> the conversion from a member of base class type to<br>its complete object of derived class type was valid
+</td>
+<td> the behavior is<br>undefined in this case
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2254.html">CWG 2254</a>
+</td>
+<td> C++11
+</td>
+<td> a standard-layout class object with no data members<br>was pointer-interconvertible to its first base class
+</td>
+<td> it is pointer-interconvertible<br>to any of its base classes
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2284.html">CWG 2284</a>
+</td>
+<td> C++11
+</td>
+<td> a non-standard-layout union object and a non-static data<br>member of that object were not pointer-interconvertible
+</td>
+<td> they are
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2310.html">CWG 2310</a>
+</td>
+<td> C++98
+</td>
+<td> for base-to-derived pointer conversions and<br>derived-to-base pointer-to-member conversions,<br>the derived class type could be incomplete
+</td>
+<td> must be complete
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2338.html">CWG 2338</a>
+</td>
+<td> C++11
+</td>
+<td> the conversion to enumeration types with fixed underlying type<br>resulted in undefined behavior if <span class="t-spar">expression</span> is out of range
+</td>
+<td> convert to the underlying type<br>first (no undefined behavior)
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2499.html">CWG 2499</a>
+</td>
+<td> C++11
+</td>
+<td> a standard-layout class might have a non-pointer-interconvertible<br>base class, even though all base subobjects have the same address
+</td>
+<td> it does not have
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <ul><li> <a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a>
@@ -580,19 +693,19 @@ B<span class="sy3">&amp;</span> br <span class="sy1">=</span> d<span class="sy4"
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4448/1000000
-Preprocessor generated node count: 13231/1000000
-Post‐expand include size: 165158/2097152 bytes
-Template argument size: 30191/2097152 bytes
-Highest expansion depth: 17/40
+Preprocessor visited node count: 4702/1000000
+Preprocessor generated node count: 11259/1000000
+Post‐expand include size: 168898/2097152 bytes
+Template argument size: 31902/2097152 bytes
+Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2740-0!*!0!!en!*!* and timestamp 20220110201805 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2740-0!*!0!!en!*!* and timestamp 20220729095225 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/static_cast&amp;oldid=137051">https://en.cppreference.com/mwiki/index.php?title=cpp/language/static_cast&amp;oldid=137051</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/static_cast&amp;oldid=141562">https://en.cppreference.com/mwiki/index.php?title=cpp/language/static_cast&amp;oldid=141562</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -609,10 +722,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/static_cast">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/static_cast">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 10 January 2022, at 12:18.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,399,736 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 29 July 2022, at 02:52.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,523,176 times.</li>
                             </ul>
                     </div>
         </div>
@@ -632,5 +745,5 @@ _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
 </script><!-- Served in 0.034 secs. -->
 	</body>
-<!-- Cached 20220110201846 -->
+<!-- Cached 20220729095226 -->
 </html>

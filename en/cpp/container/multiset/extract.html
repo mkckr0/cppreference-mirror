@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -234,7 +234,7 @@ node_type extract<span class="br0">(</span> K<span class="sy3">&amp;&amp;</span>
 <div class="t-li1"><span class="t-li">1)</span> Unlinks the node that contains the element pointed to by <code>position</code> and returns a <a href="../node_handle.html" title="cpp/container/node handle">node handle</a> that owns it.</div>
 <div class="t-li1"><span class="t-li">2)</span> If the container has an element with key equivalent to <code>k</code>, unlinks the node that contains the first such element from the container and returns a <a href="../node_handle.html" title="cpp/container/node handle">node handle</a> that owns it. Otherwise, returns an empty node handle.</div>
 <div class="t-li1"><span class="t-li">3)</span> Same as <span class="t-v">(2)</span>. This overload participates in overload resolution only if the qualified-id <span class="t-c"><span class="mw-geshi cpp source-cpp">Compare<span class="sy4">::</span><span class="me2">is_transparent</span></span></span> is valid and denotes a type, and neither <code>iterator</code> nor <code>const_iterator</code> is implicitly convertible from <code>K</code>. It allows calling this function without constructing an instance of <code>Key</code>.</div>
-<p>In either case, no elements are copied or moved, only the internal pointers of the container nodes are repointed (rebalancing may occur, as with <span class="t-lc"><a href="erase.html" title="cpp/container/multiset/erase">erase()</a></span>)
+<p>In either case, no elements are copied or moved, only the internal pointers of the container nodes are repointed (rebalancing may occur, as with <span class="t-lc"><a href="erase.html" title="cpp/container/multiset/erase">erase()</a></span>).
 </p><p>Extracting a node invalidates only the iterators to the extracted element. Pointers and references to the extracted element remain valid, but cannot be used while element is owned by a node handle: they become usable if the element is inserted into a container.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -274,39 +274,47 @@ node_type extract<span class="br0">(</span> K<span class="sy3">&amp;&amp;</span>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>extract is the only way to take a move-only object out of a set
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">set<span class="sy1">&lt;</span>move_only_type<span class="sy1">&gt;</span> s<span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><a href="../set.html"><span class="kw1280">std::<span class="me2">set</span></span></a><span class="sy1">&lt;</span>move_only_type<span class="sy1">&gt;</span> s<span class="sy4">;</span>
 s.<span class="me1">emplace</span><span class="br0">(</span>...<span class="br0">)</span><span class="sy4">;</span>
-move_only_type mot <span class="sy1">=</span> move<span class="br0">(</span>s.<span class="me1">extract</span><span class="br0">(</span>s.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>.<span class="me1">value</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+move_only_type mot <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>s.<span class="me1">extract</span><span class="br0">(</span>s.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>.<span class="me1">value</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+<table class="wikitable">
+<tr>
+<td> <a href="../../feature_test.html#Library_features" title="cpp/feature test">Feature-test</a> macro:
+</td>
+<td> <a href="../../utility/feature_test.html" title="cpp/utility/feature test"><tt>__cpp_lib_associative_heterogeneous_erasure</tt></a> (for overload <span class="t-v">(3)</span>)
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;algorithm&gt;</span>
 <span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;string_view&gt;</span>
 <span class="co2">#include &lt;set&gt;</span>
+ 
+<span class="kw4">void</span> print<span class="br0">(</span><a href="../../string/basic_string_view.html"><span class="kw1251">std::<span class="me2">string_view</span></span></a> comment, <span class="kw4">const</span> <span class="kw4">auto</span><span class="sy3">&amp;</span> data<span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> comment<span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> datum <span class="sy4">:</span> data<span class="br0">)</span>
+        <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy1">&lt;&lt;</span> datum<span class="sy4">;</span>
+ 
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+<span class="br0">}</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../multiset.html"><span class="kw1282">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> cont<span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span>
  
-    <span class="kw4">auto</span> print <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">int</span><span class="sy3">&amp;</span> n<span class="br0">)</span> <span class="br0">{</span> <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">" "</span> <span class="sy1">&lt;&lt;</span> n<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
- 
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Start:"</span><span class="sy4">;</span>
-    <a href="../../algorithm/for_each.html"><span class="kw1572">std::<span class="me2">for_each</span></span></a><span class="br0">(</span>cont.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, cont.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, print<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"Start:"</span>, cont<span class="br0">)</span><span class="sy4">;</span>
  
     <span class="co1">// Extract node handle and change key</span>
     <span class="kw4">auto</span> nh <span class="sy1">=</span> cont.<span class="me1">extract</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
     nh.<span class="me1">value</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> <span class="nu0">4</span><span class="sy4">;</span> 
  
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"After extract and before insert:"</span><span class="sy4">;</span>
-    <a href="../../algorithm/for_each.html"><span class="kw1572">std::<span class="me2">for_each</span></span></a><span class="br0">(</span>cont.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, cont.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, print<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"After extract and before insert:"</span>, cont<span class="br0">)</span><span class="sy4">;</span>
  
     <span class="co1">// Insert node handle back</span>
-    cont.<span class="me1">insert</span><span class="br0">(</span>move<span class="br0">(</span>nh<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    cont.<span class="me1">insert</span><span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>nh<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"End:"</span><span class="sy4">;</span>
-    <a href="../../algorithm/for_each.html"><span class="kw1572">std::<span class="me2">for_each</span></span></a><span class="br0">(</span>cont.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, cont.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, print<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"End:"</span>, cont<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -335,15 +343,15 @@ End: 2 3 4</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5382/1000000
-Preprocessor generated node count: 10827/1000000
-Post‐expand include size: 202811/2097152 bytes
-Template argument size: 28671/2097152 bytes
+Preprocessor visited node count: 5432/1000000
+Preprocessor generated node count: 10987/1000000
+Post‐expand include size: 203875/2097152 bytes
+Template argument size: 28800/2097152 bytes
 Highest expansion depth: 23/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15665-0!*!0!!en!*!* and timestamp 20211031002911 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15665-0!*!0!!en!*!* and timestamp 20220724011745 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -364,10 +372,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/container/multiset/extract">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/multiset/extract">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
                                     <li id="footer-info-lastmod"> This page was last modified on 12 October 2021, at 01:46.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 13,644 times.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 16,786 times.</li>
                             </ul>
                     </div>
         </div>
@@ -385,7 +393,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.978 secs. -->
+</script><!-- Served in 1.321 secs. -->
 	</body>
-<!-- Cached 20211031002911 -->
+<!-- Cached 20220724011745 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/string_literal","wgTitle":"cpp/language/string literal","wgCurRevisionId":135354,"wgArticleId":5078,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/string_literal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/string_literal","wgTitle":"cpp/language/string literal","wgCurRevisionId":140088,"wgArticleId":5078,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/string_literal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -440,64 +440,64 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">s-char-sequence</span>
+<td> <span class="t-spar">s-char-sequence</span>
 </td>
 <td> -
 </td>
-<td>  A sequence of one or more <span class="t-spar">s-char</span>s
+<td> A sequence of one or more <span class="t-spar">s-char</span>s
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">s-char</span>
+<td> <span class="t-spar">s-char</span>
 </td>
 <td> -
 </td>
-<td>  One of
+<td> One of
 <ul><li> a <span class="t-spar">basic-s-char</span>
 </li><li> an escape sequence, as defined in <a href="escape.html" title="cpp/language/escape">escape sequences</a>
 </li><li> a universal character name, as defined in <a href="escape.html" title="cpp/language/escape">escape sequences</a>
 </li></ul>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">basic-s-char</span>
+<td> <span class="t-spar">basic-s-char</span>
 </td>
 <td> -
 </td>
-<td>  A character from the <span class="t-rev-inl t-until-cxx23"><span><a href="translation_phases.html#Phase_5" title="cpp/language/translation phases">source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>, except the double-quote <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"</span></span></span>, backslash <span class="t-c"><span class="mw-geshi cpp source-cpp">\</span></span>, or new-line character
+<td> A character from the <span class="t-rev-inl t-until-cxx23"><span><a href="translation_phases.html#Phase_5" title="cpp/language/translation phases">source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>, except the double-quote <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"</span></span></span>, backslash <span class="t-c"><span class="mw-geshi cpp source-cpp">\</span></span>, or new-line character
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">prefix</span>
+<td> <span class="t-spar">prefix</span>
 </td>
 <td> -
 </td>
 <td> One of <code><b>L</b></code>, <code><b>u8</b></code>, <code><b>u</b></code>, <code><b>U</b></code>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">d-char-sequence</span>
+<td> <span class="t-spar">d-char-sequence</span>
 </td>
 <td> -
 </td>
-<td>  A sequence of one or more <span class="t-spar">d-char</span>s, at most 16 characters long
+<td> A sequence of one or more <span class="t-spar">d-char</span>s, at most 16 characters long
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">d-char</span>
+<td> <span class="t-spar">d-char</span>
 </td>
 <td> -
 </td>
-<td>  A character from the <span class="t-rev-inl t-until-cxx23"><span><a href="charset.html#Basic_source_character_set" title="cpp/language/charset">basic source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="charset.html#Basic_character_set" title="cpp/language/charset">basic character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>, except parentheses, backslash and <a href="../string/byte/isspace.html" title="cpp/string/byte/isspace">spaces</a>
+<td> A character from the <span class="t-rev-inl t-until-cxx23"><span><a href="charset.html#Basic_source_character_set" title="cpp/language/charset">basic source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="charset.html#Basic_character_set" title="cpp/language/charset">basic character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>, except parentheses, backslash and <a href="../string/byte/isspace.html" title="cpp/string/byte/isspace">spaces</a>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">r-char-sequence</span>
+<td> <span class="t-spar">r-char-sequence</span>
 </td>
 <td> -
 </td>
-<td>  A sequence of one or more <span class="t-spar">r-char</span>s, except that it must not contain the closing sequence<br><code><b>)</b></code><span class="t-spar">d-char-sequence</span><code><b>"</b></code>
+<td> A sequence of one or more <span class="t-spar">r-char</span>s, except that it must not contain the closing sequence<br><code><b>)</b></code><span class="t-spar">d-char-sequence</span><code><b>"</b></code>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">r-char</span>
+<td> <span class="t-spar">r-char</span>
 </td>
 <td> -
 </td>
-<td>  A character from the <span class="t-rev-inl t-until-cxx23"><span><a href="translation_phases.html#Phase_5" title="cpp/language/translation phases">source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>
+<td> A character from the <span class="t-rev-inl t-until-cxx23"><span><a href="translation_phases.html#Phase_5" title="cpp/language/translation phases">source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>
 </td></tr></table>
 <p><br>
 </p>
@@ -522,7 +522,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Each numeric escape sequence corresponds to a single element. <span class="t-rev-inl t-since-cxx23"><span>If the value specified by the escape sequence fits within the unsigned version of the element type, the element has the specified value (possibly after conversion to the element type); otherwise (the specified value is out of range), the string literal is ill-formed.</span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>
 </p>
 <h4><span class="mw-headline" id="Concatenation">Concatenation</span></h4>
-<p>String literals placed side-by-side are concatenated at <a href="translation_phases.html" title="cpp/language/translation phases">translation phase 6</a> (after the preprocessor).  That is, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"Hello,"</span>  <span class="st0">" world!"</span></span></span> yields the (single) string <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"Hello, world!"</span></span></span>. If the two strings have the same encoding prefix (or neither has one), the resulting string will have the same encoding prefix (or no prefix).
+<p>String literals placed side-by-side are concatenated at <a href="translation_phases.html#Phase_6" title="cpp/language/translation phases">translation phase 6</a> (after the preprocessor).  That is, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"Hello,"</span>  <span class="st0">" world!"</span></span></span> yields the (single) string <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"Hello, world!"</span></span></span>. If the two strings have the same encoding prefix (or neither has one), the resulting string will have the same encoding prefix (or no prefix).
 </p>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
@@ -554,7 +554,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>String literals can be used to <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">initialize character arrays</a>. If an array is initialized like <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span> str<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"foo"</span><span class="sy4">;</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">str</span></span> will contain a copy of the string <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"foo"</span></span></span>.
 </p><p>Whether string literals can overlap and whether successive evaluations of a string-literal yield the same object is unspecified. That means that identical string literals may or may not compare equal when compared by pointer.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">bool</span> b <span class="sy1">=</span> <span class="st0">"bar"</span> <span class="sy1">==</span> <span class="nu0">3</span><span class="sy2">+</span><span class="st0">"foobar"</span> <span class="co1">// could be true or false, implementation-defined</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">bool</span> b <span class="sy1">=</span> <span class="st0">"bar"</span> <span class="sy1">==</span> <span class="nu0">3</span><span class="sy2">+</span><span class="st0">"foobar"</span><span class="sy4">;</span> <span class="co1">// could be true or false, implementation-defined</span></pre></div></div>
 <p>Attempting to modify a string literal results in <i>undefined behavior</i>: they may be stored in read-only storage (such as <code>.rodata</code>) or combined with other string literals:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> pc <span class="sy1">=</span> <span class="st0">"Hello"</span><span class="sy4">;</span>
@@ -649,11 +649,20 @@ ABCDEF ABCDEF STUV</pre></div></div>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1823">CWG 1823</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1759.html">CWG 1759</a>
+</td>
+<td> C++11
+</td>
+<td> A UTF-8 string literal might have code<br>units that are not representable in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span>
+</td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> can represent all UTF-8 code units
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1823.html">CWG 1823</a>
 </td>
 <td> C++98
 </td>
-<td> whether string literals are distinct<br>is implementation-defined
+<td> whether string literals are distinct<br>was implementation-defined
 </td>
 <td> distinctness is unspecified, and same<br>string literal can yield different object
 </td></tr></table>
@@ -669,19 +678,19 @@ ABCDEF ABCDEF STUV</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5359/1000000
-Preprocessor generated node count: 12157/1000000
-Post‐expand include size: 177934/2097152 bytes
-Template argument size: 30889/2097152 bytes
+Preprocessor visited node count: 5419/1000000
+Preprocessor generated node count: 12237/1000000
+Post‐expand include size: 178647/2097152 bytes
+Template argument size: 31132/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5078-0!*!0!!en!*!* and timestamp 20220105150431 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5078-0!*!0!!en!*!* and timestamp 20220624073907 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/string_literal&amp;oldid=135354">https://en.cppreference.com/mwiki/index.php?title=cpp/language/string_literal&amp;oldid=135354</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/string_literal&amp;oldid=140088">https://en.cppreference.com/mwiki/index.php?title=cpp/language/string_literal&amp;oldid=140088</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -698,10 +707,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/string_literal">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/string_literal">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 18 November 2021, at 23:19.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 956,784 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 24 June 2022, at 00:39.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,039,492 times.</li>
                             </ul>
                     </div>
         </div>
@@ -719,7 +728,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 5.581 secs. -->
+</script><!-- Served in 0.037 secs. -->
 	</body>
-<!-- Cached 20220105150431 -->
+<!-- Cached 20220624074212 -->
 </html>

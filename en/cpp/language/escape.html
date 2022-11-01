@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/escape","wgTitle":"cpp/language/escape","wgCurRevisionId":135284,"wgArticleId":694,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/escape","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/escape","wgTitle":"cpp/language/escape","wgCurRevisionId":140172,"wgArticleId":694,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/escape","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -476,14 +476,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td> <code><b>\u<span style="font-size:0.7em; line-height:130%"><i>nnnn</i></span></b></code>
 </td>
-<td> arbitrary <a href="https://en.wikipedia.org/wiki/Unicode" class="extiw" title="enwiki:Unicode"> Unicode</a> value;<br>may result in several code units
+<td> arbitrary <a href="https://en.wikipedia.org/wiki/Unicode" class="extiw" title="enwiki:Unicode">Unicode</a> value;<br>may result in several code units
 </td>
 <td> code point <code>U+<i>nnnn</i></code>
 </td></tr>
 <tr>
 <td> <code><b>\U<span style="font-size:0.7em; line-height:130%"><i>nnnnnnnn</i></span></b></code>
 </td>
-<td> arbitrary <a href="https://en.wikipedia.org/wiki/Unicode" class="extiw" title="enwiki:Unicode"> Unicode</a> value;<br>may result in several code units
+<td> arbitrary <a href="https://en.wikipedia.org/wiki/Unicode" class="extiw" title="enwiki:Unicode">Unicode</a> value;<br>may result in several code units
 </td>
 <td> code point <code>U+<i>nnnnnnnn</i></code>
 </td></tr></table>
@@ -519,8 +519,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
 </table>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p><code><b>\0</b></code> is the most commonly used octal escape sequence, because it represents the terminating null character in <a href="../string.html#Null-terminated_strings" title="cpp/string">null-terminated strings</a>.
-</p><p>The new-line character <code><b>\n</b></code> has special meaning when used in <a href="../io/c.html" title="cpp/io/c">text mode I/O</a>: it is converted to the OS-specific newline representation, usually a byte or byte sequence. Some systems mark their lines with length fields instead.
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp">\<span class="nu0">0</span></span></span> is the most commonly used octal escape sequence, because it represents the terminating null character in <a href="../string.html#Null-terminated_strings" title="cpp/string">null-terminated strings</a>.
+</p><p>The new-line character <span class="t-c"><span class="mw-geshi cpp source-cpp">\n</span></span> has special meaning when used in <a href="../io/c.html" title="cpp/io/c">text mode I/O</a>: it is converted to the OS-specific newline representation, usually a byte or byte sequence. Some systems mark their lines with length fields instead.
 </p><p>Octal escape sequences have a limit of three octal digits, but terminate at the first character that is not a valid octal digit if encountered sooner.
 </p><p>Hexadecimal escape sequences have no length limit and terminate at the first character that is not a valid hexadecimal digit. If the value represented by a single hexadecimal escape sequence does not fit the range of values represented by the character type used in this string literal (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span>, <span class="t-rev-inl t-since-cxx20"><span><span class="t-c"><span class="mw-geshi cpp source-cpp">char8_t</span></span></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>, <span class="t-rev-inl t-since-cxx11"><span><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span></span></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>, or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span>), the result is unspecified.
 </p>
@@ -550,8 +550,30 @@ test
  
 She said, "Sells she seashells on the seashore?"</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_Reports">Defect Reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/505.html">CWG 505</a>
+</td>
+<td> C++98
+</td>
+<td> the behavior was undefined if the character following<br>a backslash was not one of those specified in the table
+</td>
+<td> made conditionally supported<br>(semantic is implementation-defined)
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
-<ul><li> <a href="ascii.html" title="cpp/language/ascii"> ASCII chart</a>
+<ul><li> <a href="ascii.html" title="cpp/language/ascii">ASCII chart</a>
 </li></ul>
 <table class="t-dsc-begin">
 
@@ -559,19 +581,19 @@ She said, "Sells she seashells on the seashore?"</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3894/1000000
-Preprocessor generated node count: 9650/1000000
-Post‐expand include size: 165918/2097152 bytes
-Template argument size: 24607/2097152 bytes
+Preprocessor visited node count: 3973/1000000
+Preprocessor generated node count: 9949/1000000
+Post‐expand include size: 166738/2097152 bytes
+Template argument size: 24806/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:694-0!*!0!!en!*!* and timestamp 20220105151101 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:694-0!*!0!!en!*!* and timestamp 20220610152830 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/escape&amp;oldid=135284">https://en.cppreference.com/mwiki/index.php?title=cpp/language/escape&amp;oldid=135284</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/escape&amp;oldid=140172">https://en.cppreference.com/mwiki/index.php?title=cpp/language/escape&amp;oldid=140172</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -588,10 +610,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/escape">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/escape">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 November 2021, at 19:01.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 817,769 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 10 June 2022, at 08:28.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 864,836 times.</li>
                             </ul>
                     </div>
         </div>
@@ -609,7 +631,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.695 secs. -->
+</script><!-- Served in 0.048 secs. -->
 	</body>
-<!-- Cached 20220105151101 -->
+<!-- Cached 20220610152928 -->
 </html>

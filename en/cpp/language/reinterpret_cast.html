@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/reinterpret_cast","wgTitle":"cpp/language/reinterpret cast","wgCurRevisionId":137207,"wgArticleId":2742,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/reinterpret_cast","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/reinterpret_cast","wgTitle":"cpp/language/reinterpret cast","wgCurRevisionId":140728,"wgArticleId":2742,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/reinterpret_cast","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -388,7 +388,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
 <div class="t-li1"><span class="t-li">5)</span> Any object pointer type <code>T1*</code> can be converted to another object pointer type <code><i>cv</i> T2*</code>. This is exactly equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span><span class="sy1">&lt;</span></span><i>cv</i><span class="mw-geshi cpp source-cpp"> T2<span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="kw1">static_cast</span><span class="sy1">&lt;</span></span><i>cv</i><span class="mw-geshi cpp source-cpp"> <span class="kw4">void</span><span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span></span><span class="t-spar">expression</span><code>))</code></span> (which implies that if <code>T2</code>'s alignment requirement is not stricter than <code>T1</code>'s, the value of the pointer does not change and conversion of the resulting pointer back to its original type yields the original value). In any case, the resulting pointer may only be dereferenced safely if allowed by the <i>type aliasing</i> rules (see below) </div>
-<div class="t-li1"><span class="t-li">6)</span> An lvalue expression of type <code>T1</code> can be converted to reference to another type <code>T2</code>. The result is an lvalue or xvalue referring to the same object as the original lvalue, but with a different type. No temporary is created, no copy is made, no constructors or conversion functions are called. The resulting reference can only be accessed safely if allowed by the <i>type aliasing</i> rules (see below)</div>
+<div class="t-li1"><span class="t-li">6)</span> An <span class="t-rev-inl t-until-cxx11"><span><a href="value_category.html#lvalue" title="cpp/language/value category">lvalue</a></span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span><a href="value_category.html#glvalue" title="cpp/language/value category">glvalue</a></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> expression of type <code>T1</code> can be converted to reference to another type <code>T2</code>. The result is that of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span><span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span>T2<span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span>p<span class="br0">)</span></span></span>, where <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span> is a pointer of type “pointer to <code>T1</code>” to the object designated by <span class="t-spar">expression</span>. No temporary is created, no copy is made, no constructors or conversion functions are called. The resulting reference can only be accessed safely if allowed by the <i>type aliasing</i> rules (see below)</div>
 <div class="t-li1"><span class="t-li">7)</span> Any pointer to function can be converted to a pointer to a different function type. Calling the function through a pointer to a different function type is undefined, but converting such pointer back to pointer to the original function type yields the pointer to the original function.</div>
 <div class="t-li1"><span class="t-li">8)</span> On some implementations (in particular, on any POSIX compatible system as required by <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/dlsym.html"><code>dlsym</code></a>), a function pointer can be converted to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="sy2">*</span></span></span> or any other object pointer, or vice versa. If the implementation supports conversion in both directions, conversion to the original type yields the original value, otherwise the resulting pointer cannot be dereferenced or called safely. </div>
 <div class="t-li1"><span class="t-li">9)</span> The null pointer value of any pointer type can be converted to any other pointer type, resulting in the null pointer value of that type. Note that the null pointer constant <span class="t-c"><span class="mw-geshi cpp source-cpp">nullptr</span></span> or any other value of type <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> cannot be converted to a pointer with <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">reinterpret_cast</span></span></span>: implicit conversion or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">static_cast</span></span></span> should be used for this purpose.</div>
@@ -396,10 +396,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">11)</span> A pointer to member object of some class <code>T1</code> can be converted to a pointer to another member object of another class <code>T2</code>. If <code>T2</code>'s alignment is not stricter than <code>T1</code>'s, conversion back to the original type <code>T1</code> yields the original value, otherwise the resulting pointer cannot be used safely.</div>
 <p>As with all cast expressions, the result is:
 </p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx11"><td>
+<ul><li> an lvalue if <span class="t-spar">new-type</span> is a reference type;
+</li><li> an rvalue otherwise.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
+<tr class="t-rev t-since-cxx11"><td>
 <ul><li> an lvalue if <span class="t-spar">new-type</span> is an lvalue reference type or an rvalue reference to function type;
 </li><li> an xvalue if <span class="t-spar">new-type</span> is an rvalue reference to object type; 
 </li><li> a prvalue otherwise.
 </li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
 <h3><span class="mw-headline" id="Keywords">Keywords</span></h3>
 <p><a href="../keyword/reinterpret_cast.html" title="cpp/keyword/reinterpret cast"><tt>reinterpret_cast</tt></a>
 </p>
@@ -442,28 +453,22 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>This rule enables type-based alias analysis, in which a compiler assumes that the value read through a glvalue of one type is not modified by a write to a glvalue of a different type (subject to the exceptions noted above).
 </p><p>Note that many C++ compilers relax this rule, as a non-standard language extension, to allow wrong-type access through the inactive member of a <a href="union.html" title="cpp/language/union">union</a> (such access is not undefined in C).
 </p>
-<h3><span class="mw-headline" id="Notes"> Notes </span></h3>
-<p>The paragraph defining the strict aliasing rule in the standard contains two additional bullets partially inherited from C:
-</p>
-<ul><li> <code>AliasedType</code> is an <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">aggregate type</a> or a <a href="union.html" title="cpp/language/union">union</a> type which holds one of the aforementioned types as an element or non-static member (including, recursively, elements of subaggregates and non-static data members of the contained unions).
-</li><li> <code>AliasedType</code> is a (possibly <a href="cv.html" title="cpp/language/cv">cv</a>-qualified) <a href="derived_class.html" title="cpp/language/derived class">base class</a> of <code>DynamicType</code>.
-</li></ul>
-<p>These bullets describe situations that cannot arise in C++ and therefore are omitted from the discussion above. In C, aggregate copy and assignment access the aggregate object as a whole. But in C++ such actions are always performed through a member function call, which accesses the individual subobjects rather than the entire object (or, in the case of unions, copies the object representation, i.e., via <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span>). See <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_active.html#2051">core issue 2051</a>.
-</p><p>Assuming that alignment requirements are met, a <code>reinterpret_cast</code> does not change the <a href="pointer.html#Pointers" title="cpp/language/pointer">value of a pointer</a> outside of a few limited cases dealing with <a href="static_cast.html#pointer-interconvertible" title="cpp/language/static cast"><i>pointer-interconvertible</i></a> objects:
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<p>Assuming that alignment requirements are met, a <code>reinterpret_cast</code> does not change the <a href="pointer.html#Pointers" title="cpp/language/pointer">value of a pointer</a> outside of a few limited cases dealing with <a href="static_cast.html#pointer-interconvertible" title="cpp/language/static cast"><i>pointer-interconvertible</i></a> objects:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> S1 <span class="br0">{</span> <span class="kw4">int</span> a<span class="sy4">;</span> <span class="br0">}</span> s1<span class="sy4">;</span>
 <span class="kw1">struct</span> S2 <span class="br0">{</span> <span class="kw4">int</span> a<span class="sy4">;</span> <span class="kw1">private</span><span class="sy4">:</span> <span class="kw4">int</span> b<span class="sy4">;</span> <span class="br0">}</span> s2<span class="sy4">;</span> <span class="co1">// not standard-layout</span>
 <span class="kw1">union</span> U <span class="br0">{</span> <span class="kw4">int</span> a<span class="sy4">;</span> <span class="kw4">double</span> b<span class="sy4">;</span> <span class="br0">}</span> u <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">0</span><span class="br0">}</span><span class="sy4">;</span>
 <span class="kw4">int</span> arr<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
  
-<span class="kw4">int</span><span class="sy2">*</span> p1 <span class="sy1">=</span> <span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>s1<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// value of p1 is "pointer to s1.a" because s1.a</span>
-                                       <span class="co1">// and s1 are pointer-interconvertible</span>
+<span class="kw4">int</span><span class="sy2">*</span> p1 <span class="sy1">=</span> <span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>s1<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// value of p1 is "pointer to s1.a" because</span>
+                                       <span class="co1">// s1.a and s1 are pointer-interconvertible</span>
  
 <span class="kw4">int</span><span class="sy2">*</span> p2 <span class="sy1">=</span> <span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>s2<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// value of p2 is unchanged by reinterpret_cast</span>
                                        <span class="co1">// and is "pointer to s2". </span>
  
-<span class="kw4">int</span><span class="sy2">*</span> p3 <span class="sy1">=</span> <span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>u<span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// value of p3 is "pointer to u.a": u.a and u are</span>
-                                       <span class="co1">// pointer-interconvertible</span>
+<span class="kw4">int</span><span class="sy2">*</span> p3 <span class="sy1">=</span> <span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>u<span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// value of p3 is "pointer to u.a":</span>
+                                       <span class="co1">// u.a and u are pointer-interconvertible</span>
  
 <span class="kw4">double</span><span class="sy2">*</span> p4 <span class="sy1">=</span> <span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span>p3<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// value of p4 is "pointer to u.b": u.a and</span>
                                             <span class="co1">// u.b are pointer-interconvertible because</span>
@@ -511,6 +516,13 @@ n <span class="sy1">=</span> <a href="../numeric/bit_cast.html"><span class="kw2
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
+<p>The paragraph defining the strict aliasing rule in the standard used to contain two additional bullets partially inherited from C:
+</p>
+<ul><li> <code>AliasedType</code> is an <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">aggregate type</a> or a <a href="union.html" title="cpp/language/union">union</a> type which holds one of the aforementioned types as an element or non-static member (including, recursively, elements of subaggregates and non-static data members of the contained unions).
+</li><li> <code>AliasedType</code> is a (possibly <a href="cv.html" title="cpp/language/cv">cv</a>-qualified) <a href="derived_class.html" title="cpp/language/derived class">base class</a> of <code>DynamicType</code>.
+</li></ul>
+<p>These bullets describe situations that cannot arise in C++ and therefore are omitted from the discussion above. In C, aggregate copy and assignment access the aggregate object as a whole. But in C++ such actions are always performed through a member function call, which accesses the individual subobjects rather than the entire object (or, in the case of unions, copies the object representation, i.e., via <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span>). These bullets were eventually removed via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2051.html">CWG2051</a>.
+</p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>Demonstrates some uses of <code>reinterpret_cast</code>:</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cstdint&gt;</span>
@@ -570,22 +582,40 @@ This system is little-endian
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue195">CWG 195</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/195.html">CWG 195</a>
 </td>
 <td> C++98
 </td>
-<td> conversion between function pointers and object pointers not allowed
+<td> conversion between function pointers<br>and object pointers not allowed
 </td>
 <td> made conditionally-supported
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue799">CWG 799</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/658.html">CWG 658</a>
 </td>
 <td> C++98
 </td>
-<td> it was unclear which identity conversion can be done by <code>reinterpret_cast</code>
+<td> the result of pointer conversions was unspecified<br>(except for conversions back to the original type)
+</td>
+<td> specification provided for pointers<br>whose pointed-to types satisfy<br>the alignment requirements
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/799.html">CWG 799</a>
+</td>
+<td> C++98
+</td>
+<td> it was unclear which identity conversion<br>can be done by <code>reinterpret_cast</code>
 </td>
 <td> made clear
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1268.html">CWG 1268</a>
+</td>
+<td> C++11
+</td>
+<td> <code>reinterpret_cast</code> could only cast lvalues to reference types
+</td>
+<td> xvalues also allowed
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -623,19 +653,19 @@ This system is little-endian
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4766/1000000
-Preprocessor generated node count: 11242/1000000
-Post‐expand include size: 178048/2097152 bytes
-Template argument size: 28094/2097152 bytes
+Preprocessor visited node count: 5076/1000000
+Preprocessor generated node count: 11856/1000000
+Post‐expand include size: 181572/2097152 bytes
+Template argument size: 29188/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2742-0!*!0!!en!*!* and timestamp 20220115151116 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2742-0!*!0!!en!*!* and timestamp 20220630221619 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/reinterpret_cast&amp;oldid=137207">https://en.cppreference.com/mwiki/index.php?title=cpp/language/reinterpret_cast&amp;oldid=137207</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/reinterpret_cast&amp;oldid=140728">https://en.cppreference.com/mwiki/index.php?title=cpp/language/reinterpret_cast&amp;oldid=140728</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -652,10 +682,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/reinterpret_cast">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/reinterpret_cast">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 January 2022, at 07:11.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,036,575 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 30 June 2022, at 00:21.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,120,437 times.</li>
                             </ul>
                     </div>
         </div>
@@ -673,7 +703,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.037 secs. -->
+</script><!-- Served in 3.870 secs. -->
 	</body>
-<!-- Cached 20220115151620 -->
+<!-- Cached 20220630221620 -->
 </html>

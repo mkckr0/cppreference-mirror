@@ -108,6 +108,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -120,8 +121,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -199,7 +199,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">1)</span> Gets a <code>span</code> referencing the written area if <span class="t-lc"><a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode">std::ios_base::out</a></span> is set in the open mode of the wrapped <span class="t-lc">std::basic_spanbuf</span>, or a <code>span</code> referencing the underlying buffer otherwise.</div>
 <div class="t-li1"><span class="t-li">2)</span> Makes the wrapped <span class="t-lc">std::basic_spanbuf</span> perform I/O on the buffer referenced by <code>s</code>.</div>
 <div class="t-li1"><span class="t-li">3)</span> Same as <span class="t-v">(2)</span>, except that <code>s</code> is obtained as if by<br><span class="t-cc"><span class="mw-geshi cpp source-cpp"><a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> CharT<span class="sy1">&gt;</span> cs<span class="br0">{</span><a href="../../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>ROS<span class="sy1">&gt;</span><span class="br0">(</span>r<span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span><br>
-<a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span>CharT<span class="sy1">&gt;</span> s<span class="br0">{</span><span class="kw1">const_cast</span><span class="sy1">&lt;</span>CharT<span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span>cs.<span class="me1">data</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>, cs.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span></span></span><br>. This overload participates in overload resolution only if <code>ROS</code> models <a href="../../ranges/borrowed_range.html" title="cpp/ranges/borrowed range"><code>borrowed_range</code></a>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../concepts/convertible_to.html"><span class="kw3006">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span>ROS, <a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span>CharT<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../concepts/convertible_to.html"><span class="kw3006">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span>ROS, <a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> CharT<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.</div>
+<a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span>CharT<span class="sy1">&gt;</span> s<span class="br0">{</span><span class="kw1">const_cast</span><span class="sy1">&lt;</span>CharT<span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span>cs.<span class="me1">data</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>, cs.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span></span></span><br>. This overload participates in overload resolution only if <code>ROS</code> models <a href="../../ranges/borrowed_range.html" title="cpp/ranges/borrowed range"><code>borrowed_range</code></a>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../concepts/convertible_to.html"><span class="kw2938">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span>ROS, <a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span>CharT<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../concepts/convertible_to.html"><span class="kw2938">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span>ROS, <a href="../../container/span.html"><span class="kw2634">std::<span class="me2">span</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> CharT<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.</div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
@@ -234,15 +234,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4423/1000000
-Preprocessor generated node count: 12846/1000000
-Post‐expand include size: 159607/2097152 bytes
-Template argument size: 19234/2097152 bytes
+Preprocessor visited node count: 4425/1000000
+Preprocessor generated node count: 12851/1000000
+Post‐expand include size: 159616/2097152 bytes
+Template argument size: 19235/2097152 bytes
 Highest expansion depth: 35/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:20507-0!*!0!!en!*!* and timestamp 20210918131131 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:20507-0!*!0!!en!*!* and timestamp 20220729062743 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -263,10 +263,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_ispanstream/span">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_ispanstream/span">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
                                     <li id="footer-info-lastmod"> This page was last modified on 28 June 2021, at 09:50.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 211 times.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,043 times.</li>
                             </ul>
                     </div>
         </div>
@@ -284,7 +284,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.857 secs. -->
+</script><!-- Served in 1.109 secs. -->
 	</body>
-<!-- Cached 20210918131131 -->
+<!-- Cached 20220729062743 -->
 </html>

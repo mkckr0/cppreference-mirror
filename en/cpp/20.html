@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -834,7 +834,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.1">19.21*</span>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="Full C99 compatible superset of P0329, missing brace initializers">(partial)*</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
 </td>
@@ -1016,7 +1018,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.8">19.28 (16.8)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span> (partial)
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1196,8 +1200,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.6">19.26*</span>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
-<p><span title="Xcode 10.2 (10E125), 10.2.1 (10E1001), 10.3 (10G8)">10.0.1*</span> (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 14.0 (14A5228q)">14.0.0*</span>
 </p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
@@ -1258,7 +1262,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="The implementation is sufficient to support the C++20 Standard Library."><span title="VS 2019 16.7">19.27*</span> (partial)*</span><br><span title="VS 2022 17.1">19.31*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 11.0 beta (11M336w), 11.0 (11A420a), 11.1 (11A1027), 11.2 (11B52), 11.2.1 (11B500), 11.3 (11C29), 11.3.1 (11C504)">11.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1288,7 +1294,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.6">19.26*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
-<p><span title="Xcode 13.0 beta (13A5154h)">13.0.0*</span>
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
 </p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
@@ -1469,7 +1475,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.5">19.25*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 11.0 beta (11M336w), 11.0 (11A420a), 11.1 (11A1027), 11.2 (11B52), 11.2.1 (11B500), 11.3 (11C29), 11.3.1 (11C504)">11.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
 </td>
@@ -1560,7 +1568,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="no proposed changes for User-defined Literals"><span title="VS 2019 16.6">19.26*</span>(partial)*</span><br><span title="VS 2019 16.9">19.28 (16.9)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span> (partial)
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.2
 </td>
@@ -1589,7 +1599,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.2">19.22*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 10.2 (10E125), 10.2.1 (10E1001), 10.3 (10G8)">10.0.1*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
 </td>
@@ -1740,8 +1752,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.2">19.22*</span>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
-<p><span title="Xcode 10.2 (10E125), 10.2.1 (10E1001), 10.3 (10G8)">10.0.1*</span> (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
 </p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
@@ -1864,7 +1876,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.8">19.28 (16.8)*</span><span title="no constant-folding immediate invocations">*</span><br>(partial)<br><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
+<p><span title="Xcode 11.4 (11E146), 11.4.1 (11E503a), 11.5 (11E608c)">11.0.3*</span> (partial)
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
 </td>
@@ -1924,7 +1938,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.6">19.26*</span> (partial)<br><span title="VS 2019 16.9">19.28 (16.9)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.5 (12E262), 12.5.1 (12E507)">12.0.5*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
@@ -2197,7 +2213,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.2">19.22*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
 </td>
@@ -2288,7 +2306,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.7">19.27*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 14.0 (14A5228q)">14.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.0
 </td>
@@ -2317,7 +2337,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.9">19.28 (16.9)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.0
 </td>
@@ -2346,7 +2368,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.7">19.27*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.0
 </td>
@@ -2375,7 +2399,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
@@ -2466,7 +2492,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.7">19.27*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
@@ -2495,7 +2523,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.9">19.28 (16.9)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
@@ -2524,7 +2554,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.4">19.24*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.3
 </td>
@@ -2553,7 +2585,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.4">19.24*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.0
 </td>
@@ -2644,7 +2678,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.3
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2671,7 +2705,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.4">19.24*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.0
 </td>
@@ -2700,7 +2736,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.5">19.25*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
@@ -2729,7 +2767,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.5">19.25*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
@@ -2758,7 +2798,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.6">19.26*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span> (partial)
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.2
 </td>
@@ -2787,7 +2829,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.5 (12E262), 12.5.1 (12E507)">12.0.5*</span>
+</p>
 </td>
 <td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
 </td>
@@ -2816,7 +2860,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.7">19.27*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.5 (12E262), 12.5.1 (12E507)">12.0.5*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
@@ -2915,7 +2961,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.7">19.27*</span>
 </td>
@@ -2978,7 +3024,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
 <p><span title="Xcode 10.2 (10E125), 10.2.1 (10E1001), 10.3 (10G8)">10.0.1*</span> (partial)<br>
-<span title="Xcode 12.5 (12E262), 12.5.1 (12E507)">12.0.5*</span>
+<span title="Xcode 13.0 (13A233)">13.0.0*</span>
 </p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
@@ -3062,8 +3108,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.0">19.20*</span> (partial)<br><span title="VS 2019 16.9">19.28 (16.9)*</span>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
-<p><span title="Xcode 10.0 beta (10L176w), 10.0 (10A255), 10.1 (10B61)">10.0.0*</span> (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
 </p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
@@ -3125,7 +3171,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.3">19.23*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3264,7 +3312,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2017 15.3">19.11*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3298,7 +3348,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0528R3">P0528R3</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">11
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3338,12 +3388,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="Missing heterogeneous lookup for ordered containers">9 (partial)*</span><br>13
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.1">19.21*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
-<p><span title="Xcode 11.4 (11E146), 11.4.1 (11E503a), 11.5 (11E608c)">11.0.3*</span>
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
 </p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
@@ -3406,7 +3456,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.5">19.25*</span> (P0556R3)<span title="with Clang">*</span><br><span title="VS 2019 16.7">19.27*</span> (P1956R1)<span title="with Clang">*</span><br><span title="VS 2019 16.8">19.28 (16.8)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 11.4 (11E146), 11.4.1 (11E503a), 11.5 (11E608c)">11.0.3*</span> (P0556R3)<br>
+<span title="Xcode 13.0 (13A233)">13.0.0*</span> (P1956R1)
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3425,7 +3478,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.1">19.21*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3434,7 +3489,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="memory/new/destroying_delete_t.html" title="cpp/memory/new/destroying delete t"><tt>std::destroying_delete</tt></a>
+<td> <a href="memory/new/destroying_delete_t.html" title="cpp/memory/new/destroying delete t" class="mw-redirect"><tt>std::destroying_delete</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0722R3">P0722R3</a>
 </td>
@@ -3486,7 +3541,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.1">19.21*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3501,11 +3558,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12 (partial)<br>13
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.6">19.26*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3545,8 +3604,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.3">19.23*</span>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
-<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span> (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
 </p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
@@ -3608,7 +3667,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.5">19.25*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3669,7 +3730,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.2">19.22*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
+<p><span title="Xcode 10.2 (10E125), 10.2.1 (10E1001), 10.3 (10G8)">10.0.1*</span> (partial)
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3762,7 +3825,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0896R4">P0896R4</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">10 <span title="Some algorithms like std::ranges::sort do not support proxy references">(partial)*</span><br>
 </td>
 <td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">13 (partial)
 </td>
@@ -3787,7 +3850,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.3">19.23*</span> (P0919R3)<br><span title="VS 2019 16.5">19.25*</span> (P1690R1)
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3844,7 +3909,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="not constexpr until 9.4 and 10.3">9*</span><br>11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.9">19.28 (16.9)*</span>
 </td>
@@ -3886,7 +3951,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.8">19.28 (16.8)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3922,7 +3989,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.6">19.26*</span>
 </td>
@@ -3945,8 +4012,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.5">19.25*</span> (P1209R0)<br><span title="VS 2019 16.7">19.27*</span> (P1115R3)
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
-<p><span title="Xcode 10.2 (10E125), 10.2.1 (10E1001), 10.3 (10G8)">10.0.1*</span> (P1209R0)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 10.2 (10E125), 10.2.1 (10E1001), 10.3 (10G8)">10.0.1*</span> (P1209R0)<br>
+<span title="Xcode 12.5 (12E262), 12.5.1 (12E507)">12.0.5*</span> (P1115R3)
 </p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
@@ -4065,7 +4133,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.0">19.20*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4126,7 +4196,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.5">19.25*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4212,7 +4284,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.5">19.25*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.5 (12E262), 12.5.1 (12E507)">12.0.5*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4227,7 +4301,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="The paper is implemented but still marked as an incomplete feature. Not yet implemented LWG-issues will cause API and ABI breakage.">14*</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="The paper is implemented but still marked as an incomplete feature. Not yet implemented LWG-issues will cause API and ABI breakage. Support is disabled by default and can be enabled with -DLIBCXX_ENABLE_INCOMPLETE_FEATURES=ON when building LLVM">14*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -4269,7 +4343,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4284,7 +4360,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span><br><span title="Enabled for Clang 12+"><span title="VS 2022 17.0">19.30*</span>*</span>
 </td>
@@ -4305,7 +4381,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span><br><span title="Enabled for Clang 12+"><span title="VS 2022 17.0">19.30*</span>*</span>
 </td>
@@ -4349,7 +4425,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.8">19.28 (16.8)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4368,7 +4446,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.8">19.28 (16.8)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4383,7 +4463,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="__builtin_source_location implemented, missing libstdc++ implementation (https://reviews.llvm.org/D120159, https://reviews.llvm.org/D120634)">15 (partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -4396,17 +4476,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Adding <a href="language/operator_comparison.html#Three-way_comparison" title="cpp/language/operator comparison"><tt><code>&lt;=&gt;</code></tt></a> to the standard library
+<td> Adding <a href="language/operator_comparison.html#Three-way_comparison" title="cpp/language/operator comparison"><tt>&lt;=&gt;</tt></a> to the standard library
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1614R2">P1614R2</a>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">14
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="Essential parts implemented, various operator implementations missing.">14 (partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span> (partial)
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4425,7 +4507,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.6">19.26*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4444,7 +4528,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.6">19.26*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.0 (13A233)">13.0.0*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4463,7 +4549,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.7">19.27*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 13.3 (13E113)">13.1.6*</span>
+</p>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4490,22 +4578,22 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </th>
 <th> <div class="t-vertical"><div>Cray C++<br>Standard Library</div></div>
 </th></tr></table>
-<p><i>*</i> - hover over the version number to see notes
+<p><i>*</i> - hover over a cell with the version number to see notes
 </p>
 <ul><li> <a rel="nofollow" class="external text" href="https://github.com/makelinux/examples/blob/HEAD/cpp/20.cpp">Working C++20 examples</a></li></ul></div>
 
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 38963/1000000
-Preprocessor generated node count: 29476/1000000
-Post‐expand include size: 874538/2097152 bytes
-Template argument size: 344620/2097152 bytes
+Preprocessor visited node count: 42134/1000000
+Preprocessor generated node count: 30795/1000000
+Post‐expand include size: 899134/2097152 bytes
+Template argument size: 362144/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18869-0!*!0!!en!*!* and timestamp 20220201102955 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18869-0!*!0!!en!*!* and timestamp 20220729150227 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -4526,10 +4614,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/20">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/20">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 September 2021, at 01:23.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 382,216 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 20 September 2021, at 02:23.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 461,996 times.</li>
                             </ul>
                     </div>
         </div>
@@ -4547,7 +4635,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.494 secs. -->
+</script><!-- Served in 2.833 secs. -->
 	</body>
-<!-- Cached 20220201102955 -->
+<!-- Cached 20220729150227 -->
 </html>

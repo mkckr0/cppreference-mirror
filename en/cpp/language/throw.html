@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/throw","wgTitle":"cpp/language/throw","wgCurRevisionId":136342,"wgArticleId":714,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/throw","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/throw","wgTitle":"cpp/language/throw","wgCurRevisionId":141101,"wgArticleId":714,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/throw","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -346,11 +346,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<dl><dd><span style="font-size:0.7em; line-height:130%">See <a href="try_catch.html" title="cpp/language/try catch"> try-catch block</a> for more information about <i>try</i> and <i>catch</i> (exception handler) blocks</span> 
+<dl><dd><span style="font-size:0.7em; line-height:130%">See <a href="try_catch.html" title="cpp/language/try catch">try-catch block</a> for more information about <i>try</i> and <i>catch</i> (exception handler) blocks</span> 
 </dd></dl>
 <div class="t-li1"><span class="t-li">1)</span> First, <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initializes</a> the <i>exception object</i> from <span class="t-spar">expression</span>
-<ul><li> This may call the move constructor for rvalue expression
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<ul><li> This may call the move constructor for rvalue expression. Even if copy initialization selects the move constructor, copy initialization from lvalue must be well-formed, and the destructor must be accessible
 </li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx17"><td>
 <ul><li> This may also call the move constructor for lvalue expressions if they name local variables or function or catch-clause parameters whose scope does not extend past the innermost enclosing try-block (if any), by same two-step overload resolution as in <a href="return.html" title="cpp/language/return">return statement</a>
@@ -358,33 +363,29 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
-<ul><li> The copy/move may be subject to <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a>
-</li></ul>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx14"><td>
-<ul><li> Even if copy initialization selects the move constructor, copy initialization from lvalue must be well-formed, and the destructor must be accessible
-</li></ul>
-</td>
-<td><span class="t-mark-rev t-since-cxx14">(since C++14)</span></td></tr>
-</table></div>
-<dl><dd> then transfers control to the  <a href="try_catch.html" title="cpp/language/try catch">exception handler</a> with the matching type whose compound statement or member initializer list was most recently entered and not exited by this thread of execution.
+<ul><li> The copy<span class="t-rev-inl t-since-cxx11"><span>/move</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> may be subject to <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a></li></ul></div>
+
+<dl><dd> then transfers control to the <a href="try_catch.html" title="cpp/language/try catch">exception handler</a> with the matching type for which the compound statement or member initializer list that follows the keyword <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span></span> was most recently entered and not exited by this thread of execution.
 </dd></dl>
 <div class="t-li1"><span class="t-li">2)</span> Rethrows the currently handled exception. Abandons the execution of the current catch block and passes control to the next matching exception handler (but not to another catch clause after the same try block: its compound-statement is considered to have been 'exited'), reusing the existing exception object: no new objects are made. This form is only allowed when an exception is presently being handled (it calls <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> if used otherwise). The catch clause associated with a <a href="function-try-block.html" title="cpp/language/function-try-block">function-try-block</a> must exit via rethrowing if used on a constructor.</div>
-<p>See <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span><span class="t-rev-inl t-until-cxx17"><span> and <span class="t-lc"><a href="../error/exception/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span></span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span> for the handling of errors that arise during exception handling.
+<p>See <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span><span class="t-rev-inl t-until-cxx17"><span> and <span class="t-lc"><a href="../error/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span></span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span> for the handling of errors that arise during exception handling.
 </p>
 <h3><span class="mw-headline" id="The_exception_object">The exception object</span></h3>
 <p>The exception object is a temporary object in unspecified storage that is constructed by the <code>throw</code> expression. 
-</p><p>The type of the <i>exception object</i> is the static type of <span class="t-spar">expression</span> with top-level <a href="cv.html" title="cpp/language/cv">cv-qualifiers</a> removed. Array and function types are adjusted to pointer and pointer to function types, respectively. If the type of the exception object would be an <a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">incomplete type</a>, an <a href="abstract_class.html" title="cpp/language/abstract class">abstract class</a> type, or pointer to incomplete type other than pointer to (cv-qualified) void, the throw-expression is a compile-time error. If the type of <span class="t-spar">expression</span> is a class type, its copy/move constructor and destructor must be accessible even if <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a> takes place.
+</p><p>The type of the <i>exception object</i> is the static type of <span class="t-spar">expression</span> with top-level <a href="cv.html" title="cpp/language/cv">cv-qualifiers</a> removed. Array and function types are adjusted to pointer and pointer to function types, respectively. If the type of the exception object would be an <a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">incomplete type</a>, an <a href="abstract_class.html" title="cpp/language/abstract class">abstract class</a> type, or pointer to incomplete type other than pointer to (cv-qualified) void, the throw-expression is a compile-time error. If the type of <span class="t-spar">expression</span> is a class type, its copy<span class="t-rev-inl t-since-cxx11"><span>/move</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> constructor and destructor must be accessible even if <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a> takes place.
 </p><p>Unlike other temporary objects, the exception object is considered to be an lvalue argument when initializing the catch clause parameters, so it can be caught by lvalue reference, modified, and rethrown.
 </p><p>The exception object persists until the last catch clause exits other than by rethrowing (if not by rethrowing, it is destroyed immediately after the destruction of the catch clause's parameter), or until the last <span class="t-lc"><a href="../error/exception_ptr.html" title="cpp/error/exception ptr">std::exception_ptr</a></span> that references this object is destroyed (in which case the exception object is destroyed just before the destructor of <span class="t-lc"><a href="../error/exception_ptr.html" title="cpp/error/exception ptr">std::exception_ptr</a></span> returns.
 </p>
 <h3><span class="mw-headline" id="Stack_unwinding">Stack unwinding</span></h3>
 <p>Once the exception object is constructed, the control flow works backwards (up the call stack) until it reaches the start of a <a href="try_catch.html" title="cpp/language/try catch">try block</a>, at which point the parameters of all associated <code>catch</code> blocks are compared, in order of appearance, with the type of the exception object to find a match (see <a href="try_catch.html" title="cpp/language/try catch">try-catch</a> for details on this process). If no match is found, the control flow continues to unwind the stack until the next <code>try</code> block, and so on. If a match is found, the control flow jumps to the matching <code>catch</code> block.
-</p><p>As the control flow moves up the call stack, destructors are invoked for all objects with <a href="storage_duration.html" title="cpp/language/storage duration">automatic storage duration</a> that are constructed, but not yet destroyed, since the corresponding try-block was entered, in reverse order of completion of their constructors. <span class="t-rev-inl t-since-cxx14"><span> If an exception is thrown from a destructor of a local variable or of a temporary used in a <a href="return.html" title="cpp/language/return">return</a> statement, the destructor for the object returned from the function is also invoked.</span> <span><span class="t-mark-rev t-since-cxx14">(since C++14)</span></span></span>
-</p><p>If an exception is thrown from a constructor or (rare) from a destructor of an object (regardless of the object's storage duration), destructors are called for all fully-constructed non-static <span class="t-rev-inl t-until-cxx14"><span>non-variant </span> <span><span class="t-mark-rev t-until-cxx14">(until C++14)</span></span></span>members and base classes, in reverse order of completion of their constructors. <span class="t-rev-inl t-since-cxx14"><span> Variant members of union-like classes are only destroyed in the case of unwinding from constructor, and if the active member changed between initialization and destruction, the behavior is undefined.</span> <span><span class="t-mark-rev t-since-cxx14">(since C++14)</span></span></span>
+</p><p>As the control flow moves up the call stack, destructors are invoked for all objects with <a href="storage_duration.html" title="cpp/language/storage duration">automatic storage duration</a> that are constructed, but not yet destroyed, since the corresponding try-block was entered, in reverse order of completion of their constructors. If an exception is thrown from a destructor of a local variable or of a temporary used in a <a href="return.html" title="cpp/language/return">return</a> statement, the destructor for the object returned from the function is also invoked.
+</p><p>If an exception is thrown from a constructor or (rare) from a destructor of an object (regardless of the object's storage duration), destructors are called for all fully-constructed non-static non-variant members and base classes, in reverse order of completion of their constructors. Variant members of <a href="union.html#Union-like_classes" title="cpp/language/union">union-like classes</a> are only destroyed in the case of unwinding from constructor, and if the active member changed between initialization and destruction, the behavior is undefined.
 </p>
  <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx11"><td> If a delegating constructor exits with an exception after the non-delegating constructor successfully completed, the destructor for this object is called.</td>
+<tr class="t-rev t-since-cxx11"><td>
+<p>If a delegating constructor exits with an exception after the non-delegating constructor successfully completed, the destructor for this object is called.
+</p>
+</td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
 <p>If the exception is thrown from a constructor that is invoked by a <a href="new.html" title="cpp/language/new">new-expression</a>, the matching <a href="../memory/new/operator_delete.html" title="cpp/memory/new/operator delete">deallocation function</a> is called, if available.
@@ -395,9 +396,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>When rethrowing exceptions, the second form must be used to avoid object slicing in the (typical) case where exception objects use inheritance:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">try</span> <span class="br0">{</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">try</span>
+<span class="br0">{</span>
     <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="br0">(</span><span class="st0">"abc"</span><span class="br0">)</span>.<span class="me1">substr</span><span class="br0">(</span><span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// throws std::length_error</span>
-<span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
+<span class="br0">}</span>
+<span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span>
+<span class="br0">{</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="co1">//  throw e; // copy-initializes a new exception object of type std::exception</span>
     <span class="kw1">throw</span><span class="sy4">;</span>   <span class="co1">// rethrows the exception object of type std::length_error</span>
@@ -411,9 +415,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>  
 <span class="br0">{</span>
-    <span class="kw1">try</span> <span class="br0">{</span>
+    <span class="kw1">try</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> f<span class="br0">(</span><span class="nu19">1e10</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/overflow_error.html"><span class="kw773">std::<span class="me2">overflow_error</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
+    <span class="br0">}</span>
+    <span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/overflow_error.html"><span class="kw773">std::<span class="me2">overflow_error</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
@@ -428,6 +435,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">struct</span> A
 <span class="br0">{</span>
     <span class="kw4">int</span> n<span class="sy4">;</span>
+ 
     A<span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">:</span> n<span class="br0">(</span>n<span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"A("</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">") constructed successfully<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
     ~A<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"A("</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">") destroyed<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
@@ -440,21 +448,30 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">struct</span> B
 <span class="br0">{</span>
     A a1, a2, a3<span class="sy4">;</span>
-    B<span class="br0">(</span><span class="br0">)</span> <span class="kw1">try</span> <span class="sy4">:</span> a1<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>, a2<span class="br0">(</span>foo<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>, a3<span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+    B<span class="br0">(</span><span class="br0">)</span> <span class="kw1">try</span> <span class="sy4">:</span> a1<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>, a2<span class="br0">(</span>foo<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>, a3<span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"B constructed successfully<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span> <span class="br0">{</span>
+    <span class="br0">}</span>
+    <span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span>
+    <span class="br0">{</span>
     	<a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"B::B() exiting with exception<span class="es1">\n</span>"</span><span class="sy4">;</span>
     <span class="br0">}</span>
+ 
     ~B<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"B destroyed<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw1">struct</span> C <span class="sy4">:</span> A, B
 <span class="br0">{</span>
-    C<span class="br0">(</span><span class="br0">)</span> <span class="kw1">try</span> <span class="br0">{</span>
+    C<span class="br0">(</span><span class="br0">)</span> <span class="kw1">try</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"C::C() completed successfully<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span> <span class="br0">{</span>
+    <span class="br0">}</span>
+    <span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"C::C() exiting with exception<span class="es1">\n</span>"</span><span class="sy4">;</span>
     <span class="br0">}</span>
+ 
     ~C<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"C destroyed<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
@@ -466,7 +483,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="co1">// unwinding destroys the a1 member of B</span>
     <span class="co1">// unwinding destroys the A base subobject</span>
     C c<span class="sy4">;</span>
-<span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
+<span class="br0">}</span>
+<span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span>
+<span class="br0">{</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"main() failed to create C with: "</span> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
@@ -493,54 +512,72 @@ main() failed to create C with: error</pre></div></div>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1863">CWG 1863</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/499.html">CWG 499</a>
 </td>
-<td> C++14
+<td> C++98
 </td>
-<td> copy constructor was not required for move-only exception<br>objects when thrown, but copying allowed later
+<td> an array with unknown bound could not be thrown becuase<br>its type is incomplete, but an exception object can be<br>created from the decayed pointer without any problem
+</td>
+<td> apply the type completion<br>requirement to the<br>exception object instead
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/668.html">CWG 668</a>
+</td>
+<td> C++98
+</td>
+<td> <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> was not called if an exception is thrown<br>from the destructor of a local non-automatic object
+</td>
+<td> call <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span><br>in this case
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1863.html">CWG 1863</a>
+</td>
+<td> C++11
+</td>
+<td> copy constructor was not required for move-only<br>exception objects when thrown, but copying allowed later
 </td>
 <td> copy constructor required
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1866">CWG 1866</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1866.html">CWG 1866</a>
 </td>
-<td> C++14
+<td> C++98
 </td>
 <td> variant members were leaked on stack unwinding from constructor
 </td>
 <td> variant members destroyed
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2176">CWG 2176</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2176.html">CWG 2176</a>
 </td>
-<td> C++14
+<td> C++98
 </td>
 <td> throw from a local variable destructor<br>could skip return value destructor
 </td>
 <td> function return value<br>added to unwinding
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
-<ul><li> <a href="copy_elision.html" title="cpp/language/copy elision"> copy elision</a>
-</li><li> <a href="try_catch.html" title="cpp/language/try catch"> try-catch block</a>
-</li><li> <a href="noexcept_spec.html" title="cpp/language/noexcept spec"> noexcept specifier</a>
-</li><li> <a href="except_spec.html" title="cpp/language/except spec"> exception specifications</a>
+<ul><li> <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a>
+</li><li> <a href="try_catch.html" title="cpp/language/try catch">try-catch block</a>
+</li><li> <a href="noexcept_spec.html" title="cpp/language/noexcept spec"><code>noexcept</code> specifier</a>
+</li><li> <a href="except_spec.html" title="cpp/language/except spec">dynamic exception specifications</a>
 </li></ul>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3189/1000000
-Preprocessor generated node count: 7505/1000000
-Post‐expand include size: 125351/2097152 bytes
-Template argument size: 19177/2097152 bytes
+Preprocessor visited node count: 3201/1000000
+Preprocessor generated node count: 7454/1000000
+Post‐expand include size: 125860/2097152 bytes
+Template argument size: 19527/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:714-0!*!0!!en!*!* and timestamp 20220105151110 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:714-0!*!0!!en!*!* and timestamp 20220715092130 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/throw&amp;oldid=136342">https://en.cppreference.com/mwiki/index.php?title=cpp/language/throw&amp;oldid=136342</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/throw&amp;oldid=141101">https://en.cppreference.com/mwiki/index.php?title=cpp/language/throw&amp;oldid=141101</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -557,10 +594,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/throw">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/throw">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 14 December 2021, at 18:38.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 524,936 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 15 July 2022, at 02:21.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 582,883 times.</li>
                             </ul>
                     </div>
         </div>
@@ -578,7 +615,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.209 secs. -->
+</script><!-- Served in 0.038 secs. -->
 	</body>
-<!-- Cached 20220105151110 -->
+<!-- Cached 20220715092552 -->
 </html>

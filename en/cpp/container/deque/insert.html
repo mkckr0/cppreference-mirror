@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -439,19 +439,24 @@ The behavior is undefined if <code>first</code> and <code>last</code> are iterat
 <td>  <div class="t-dsc-member-div"><div><a href="push_back.html" title="cpp/container/deque/push back"> <span class="t-lines"><span>push_back</span></span></a></div></div>
 </td>
 <td>   adds an element to the end <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../../iterator/inserter.html" title="cpp/iterator/inserter"> <span class="t-lines"><span>inserter</span></span></a></div></div>
+</td>
+<td>   creates a <span class="t-lc"><a href="../../iterator/insert_iterator.html" title="cpp/iterator/insert iterator">std::insert_iterator</a></span> of type inferred from the argument <br> <span class="t-mark">(function template)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7261/1000000
-Preprocessor generated node count: 14376/1000000
-Post‐expand include size: 242360/2097152 bytes
-Template argument size: 36216/2097152 bytes
+Preprocessor visited node count: 7378/1000000
+Preprocessor generated node count: 14528/1000000
+Post‐expand include size: 248364/2097152 bytes
+Template argument size: 37104/2097152 bytes
 Highest expansion depth: 24/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:880-0!*!0!!en!*!* and timestamp 20220129180816 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:880-0!*!0!!en!*!* and timestamp 20220530142750 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -472,10 +477,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/container/deque/insert">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/deque/insert">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 11 November 2021, at 17:53.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 71,945 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 11 November 2021, at 18:53.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 76,472 times.</li>
                             </ul>
                     </div>
         </div>
@@ -493,7 +498,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.033 secs. -->
+</script><!-- Served in 0.038 secs. -->
 	</body>
-<!-- Cached 20220129193359 -->
+<!-- Cached 20220530145851 -->
 </html>

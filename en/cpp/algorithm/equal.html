@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/equal","wgTitle":"cpp/algorithm/equal","wgCurRevisionId":127125,"wgArticleId":731,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/equal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/equal","wgTitle":"cpp/algorithm/equal","wgCurRevisionId":141430,"wgArticleId":731,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/equal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,14 +141,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../algorithm.html" title="cpp/algorithm"> Algorithm library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> <a href="ranges.html" title="cpp/algorithm/ranges">Constrained algorithms and algorithms on ranges</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <span class="t-lc">std::ranges::copy</span>, <span class="t-lc">std::ranges::sort</span>, ... </td></tr>
+<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <a href="ranges/copy.html" title="cpp/algorithm/ranges/copy"><tt>ranges::copy</tt></a>, <a href="ranges/sort.html" title="cpp/algorithm/ranges/sort"><tt>ranges::sort</tt></a>, ... </td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="../algorithm.html#Execution_policies" title="cpp/algorithm">Execution policies <span class="t-mark-rev t-since-cxx17">(C++17)</span></a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="is_execution_policy.html" title="cpp/algorithm/is execution policy"><span class="t-lines"><span>is_execution_policy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span>  </span></span></div></div></td></tr>
@@ -384,8 +384,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2 <span class="sy1">&gt;</span><br>
-<p><span class="kw4">bool</span> equal<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt1 first1, ForwardIt1 last1, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy,<br>
+<p>          <span class="kw1">class</span> ForwardIt1,<br>
+          <span class="kw1">class</span> ForwardIt2 <span class="sy1">&gt;</span><br>
+<span class="kw4">bool</span> equal<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
+            ForwardIt1 first1,<br>
+            ForwardIt1 last1, <br>
 </p>
             ForwardIt2 first2 <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
@@ -398,28 +402,41 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
-<p><span class="kw4">bool</span> equal<span class="br0">(</span> InputIt1 first1, InputIt1 last1, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1,<br>
+<p>          <span class="kw1">class</span> InputIt2,<br>
+          <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
+<span class="kw4">bool</span> equal<span class="br0">(</span> InputIt1 first1,<br>
+            InputIt1 last1, <br>
+            InputIt2 first2,<br>
 </p>
-            InputIt2 first2, BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+            BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
-<p><span class="kw4">constexpr</span> <span class="kw4">bool</span> equal<span class="br0">(</span> InputIt1 first1, InputIt1 last1, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1,<br>
+<p>          <span class="kw1">class</span> InputIt2,<br>
+          <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
+<span class="kw4">constexpr</span> <span class="kw4">bool</span> equal<span class="br0">(</span> InputIt1 first1,<br>
+                      InputIt1 last1, <br>
+                      InputIt2 first2,<br>
 </p>
-                      InputIt2 first2, BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                      BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2,<br>
-<p>          <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
-<span class="kw4">bool</span> equal<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt1 first1, ForwardIt1 last1, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy,<br>
+<p>          <span class="kw1">class</span> ForwardIt1,<br>
+          <span class="kw1">class</span> ForwardIt2,<br>
+          <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
+<span class="kw4">bool</span> equal<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
+            ForwardIt1 first1,<br>
+            ForwardIt1 last1, <br>
+            ForwardIt2 first2,<br>
 </p>
-            ForwardIt2 first2, BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+            BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (4) </td>
 <td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
 </tr>
@@ -447,8 +464,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2 <span class="sy1">&gt;</span><br>
-<p><span class="kw4">bool</span> equal<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt1 first1, ForwardIt1 last1, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy,<br>
+<p>          <span class="kw1">class</span> ForwardIt1,<br>
+          <span class="kw1">class</span> ForwardIt2 <span class="sy1">&gt;</span><br>
+<span class="kw4">bool</span> equal<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
+            ForwardIt1 first1, ForwardIt1 last1, <br>
 </p>
             ForwardIt2 first2, ForwardIt2 last2 <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (6) </td>
@@ -461,8 +481,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-since-cxx14 t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
-<p><span class="kw4">bool</span> equal<span class="br0">(</span> InputIt1 first1, InputIt1 last1, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1,<br>
+<p>          <span class="kw1">class</span> InputIt2,<br>
+          <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
+<span class="kw4">bool</span> equal<span class="br0">(</span> InputIt1 first1, InputIt1 last1, <br>
             InputIt2 first2, InputIt2 last2,<br>
 </p>
             BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -470,8 +492,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> <span class="t-mark-rev t-since-cxx14">(since C++14)</span> <br><span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
-<p><span class="kw4">constexpr</span> <span class="kw4">bool</span> equal<span class="br0">(</span> InputIt1 first1, InputIt1 last1, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1,<br>
+<p>          <span class="kw1">class</span> InputIt2,<br>
+          <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
+<span class="kw4">constexpr</span> <span class="kw4">bool</span> equal<span class="br0">(</span> InputIt1 first1, InputIt1 last1, <br>
                       InputIt2 first2, InputIt2 last2,<br>
 </p>
                       BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -480,9 +504,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2,<br>
-<p>          <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
-<span class="kw4">bool</span> equal<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt1 first1, ForwardIt1 last1, <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy,<br>
+<p>          <span class="kw1">class</span> ForwardIt1,<br>
+          <span class="kw1">class</span> ForwardIt2,<br>
+          <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
+<span class="kw4">bool</span> equal<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
+            ForwardIt1 first1, ForwardIt1 last1, <br>
             ForwardIt2 first2, ForwardIt2 last2,<br>
 </p>
             BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -491,7 +518,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<div class="t-li1"><span class="t-li">1,3)</span> Returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the range <code>[first1, last1)</code> is equal to the range <code>[first2, first2 + (last1 - first1))</code>, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> otherwise</div>
+<div class="t-li1"><span class="t-li">1,3)</span> Returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the range <code>[first1, last1)</code> is equal to the range <code>[first2, first2 + (last1 - first1))</code>, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> otherwise.</div>
 <div class="t-li1"><span class="t-li">5,7)</span> Returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the range <code>[first1, last1)</code> is equal to the range <code>[first2, last2)</code>, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> otherwise.</div>
 <div class="t-li1"><span class="t-li">2,4,6,8)</span> Same as <span class="t-v">(1,3,5,7)</span>, but executed according to <code>policy</code>. These overloads do not participate in overload resolution unless <span class="t-rev-inl t-until-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span> <span class="t-rev-inl t-since-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> is true.</div>
 <p>Two ranges are considered equal if they have the same number of elements and, for every iterator <code>i</code> in the range <code>[first1,last1)</code>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>i</span></span> equals <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span><span class="br0">(</span>first2 <span class="sy2">+</span> <span class="br0">(</span>i <span class="sy2">-</span> first1<span class="br0">)</span><span class="br0">)</span></span></span>. The overloads <span class="t-v">(1,2,5,6)</span> use <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">==</span></span></span> to determine if two elements are equal, whereas overloads <span class="t-v">(3,4,7,8)</span> use the given binary predicate <code>p</code>.
@@ -669,19 +696,19 @@ However, if <code>InputIt1</code> and <code>InputIt2</code> meet the requirement
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 12168/1000000
-Preprocessor generated node count: 15540/1000000
-Post‐expand include size: 331125/2097152 bytes
-Template argument size: 65349/2097152 bytes
+Preprocessor visited node count: 12220/1000000
+Preprocessor generated node count: 15725/1000000
+Post‐expand include size: 332093/2097152 bytes
+Template argument size: 66800/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:731-0!*!0!!en!*!* and timestamp 20220114093341 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:731-0!*!0!!en!*!* and timestamp 20220727141223 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/equal&amp;oldid=127125">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/equal&amp;oldid=127125</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/equal&amp;oldid=141430">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/equal&amp;oldid=141430</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -698,10 +725,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/equal">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/equal">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 22 February 2021, at 23:45.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 378,565 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 27 July 2022, at 07:12.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 416,040 times.</li>
                             </ul>
                     </div>
         </div>
@@ -719,7 +746,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 4.315 secs. -->
+</script><!-- Served in 0.040 secs. -->
 	</body>
-<!-- Cached 20220114093343 -->
+<!-- Cached 20220727141224 -->
 </html>

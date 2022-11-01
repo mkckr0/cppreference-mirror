@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -466,7 +466,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
 </table></div>
 <div class="t-li1"><span class="t-li">8)</span> Move constructor. Constructs the container with the contents of <code>other</code> using move semantics. Allocator is obtained by move-construction from the allocator belonging to <code>other</code>. After the move, <code>other</code> is guaranteed to be <span class="t-lc"><a href="empty.html" title="cpp/container/vector/empty">empty()</a></span>.</div>
-<div class="t-li1"><span class="t-li">9)</span> Allocator-extended move constructor. Using <code>alloc</code> as the allocator for the new container, moving the contents from <code>other</code>; if <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>, this results in an element-wise move. (in that case, <code>other</code> is not guaranteed to be empty after the move)
+<div class="t-li1"><span class="t-li">9)</span> Allocator-extended move constructor. Using <code>alloc</code> as the allocator for the new container, moving the contents from <code>other</code>; if <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>, this results in an element-wise move. (In that case, <code>other</code> is not guaranteed to be empty after the move.)
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx23"><td>
 <p>The template parameter <code>Allocator</code> is only deduced from the first argument while used in <a href="../../language/deduction_guide.html" title="cpp/language/class template argument deduction">class template argument deduction</a>.
@@ -535,7 +535,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>After container move construction (overload <span class="t-v">(8)</span>), references, pointers, and iterators (other than the end iterator) to <code>other</code> remain valid, but refer to elements that are now in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The current standard makes this guarantee via the blanket statement in <a rel="nofollow" class="external text" href="https://eel.is/c++draft/container.requirements.general#12">[container.requirements.general]/12</a>, and a more direct guarantee is under consideration via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2321">LWG 2321</a>.
 </p><p>The overload <span class="t-v">(4)</span> zeroes out elements of non-class types such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>, which is different from the behavior of <a href="../../language/new.html" title="cpp/language/new"><tt>new[]</tt></a>, which leaves them uninitialized. To match the behavior of <code>new[]</code>, a <a rel="nofollow" class="external text" href="http://stackoverflow.com/a/21028912/273767">custom <code>Allocator::construct</code></a> can be provided which leaves such elements uninitialized.
+</p><p>Note that the presence of list-initializing constructor <span class="t-v">(10)</span> means <a href="../../language/list_initialization.html" title="cpp/language/list initialization">list initialization</a> and <a href="../../language/direct_initialization.html" title="cpp/language/direct initialization">direct initialization</a> do different things: 
 </p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><a href="../vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> b<span class="br0">{</span><span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// creates a 1-element vector holding {3}</span>
+<a href="../vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> a<span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// creates a 3-element vector holding {0, 0, 0}</span>
+ 
+<a href="../vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> d<span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// creates a 2-element vector holding {1, 2}</span>
+<a href="../vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> c<span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// creates a 1-element vector holding {2}</span></pre></div></div>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;vector&gt;</span>
@@ -617,15 +623,15 @@ words4: [Mo, Mo, Mo, Mo, Mo]</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 9901/1000000
-Preprocessor generated node count: 14386/1000000
-Post‐expand include size: 271324/2097152 bytes
-Template argument size: 39673/2097152 bytes
+Preprocessor visited node count: 9971/1000000
+Preprocessor generated node count: 14496/1000000
+Post‐expand include size: 273063/2097152 bytes
+Template argument size: 40283/2097152 bytes
 Highest expansion depth: 23/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:471-0!*!0!!en!*!* and timestamp 20220130144429 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:471-0!*!0!!en!*!* and timestamp 20220729111715 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -646,10 +652,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/container/vector/vector">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/vector/vector">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 January 2018, at 05:42.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,538,928 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 20 January 2018, at 06:42.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,689,806 times.</li>
                             </ul>
                     </div>
         </div>
@@ -667,7 +673,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.225 secs. -->
+</script><!-- Served in 3.420 secs. -->
 	</body>
-<!-- Cached 20220130144429 -->
+<!-- Cached 20220729111715 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/dependent_name","wgTitle":"cpp/language/dependent name","wgCurRevisionId":137391,"wgArticleId":9611,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker","Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/dependent_name","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/dependent_name","wgTitle":"cpp/language/dependent name","wgCurRevisionId":141213,"wgArticleId":9611,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker","Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/dependent_name","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -294,6 +294,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5">   <a href="fold.html" title="cpp/language/fold"> Fold-expressions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="sfinae.html" title="cpp/language/sfinae"> SFINAE</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="constraints.html" title="cpp/language/constraints"> Constraints and concepts</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="requires.html" title="cpp/language/requires"> Requires expression</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>Inside the definition of a <a href="templates.html" title="cpp/language/templates">template</a> (both <a href="class_template.html" title="cpp/language/class template">class template</a> and <a href="function_template.html" title="cpp/language/function template">function template</a>), the meaning of some constructs may differ from one instantiation to another. In particular, types and expressions may depend on types of type template parameters and values of non-type template parameters.
@@ -303,19 +304,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     <span class="kw1">typename</span> T<span class="sy4">::</span><span class="me2">A</span><span class="sy2">*</span> pa<span class="sy4">;</span> <span class="co1">// "T::A" is dependent on T</span>
                        <span class="co1">// (see below for the meaning of this use of "typename")</span>
+ 
     <span class="kw4">void</span> f<span class="br0">(</span>B<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy2">*</span> pb<span class="br0">)</span>
     <span class="br0">{</span>
         <span class="kw4">static</span> <span class="kw4">int</span> i <span class="sy1">=</span> B<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">i</span><span class="sy4">;</span> <span class="co1">// "B&lt;T&gt;::i" is dependent on T</span>
         pb<span class="sy2">-</span><span class="sy1">&gt;</span>j<span class="sy2">++</span><span class="sy4">;</span> <span class="co1">// "pb-&gt;j" is dependent on T</span>
     <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
-<p>Name lookup and binding are different for <i>dependent names</i> and non-<i>dependent names</i>
+<p>Name lookup and binding are different for <i>dependent names</i> and non-<i>dependent names</i>.
 </p>
 <h3><span class="mw-headline" id="Binding_rules">Binding rules</span></h3>
 <p>Non-dependent names are looked up and bound at the point of template definition. This binding holds even if at the point of template instantiation there is a better match: 
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+ 
 <span class="kw4">void</span> g<span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"g(double)<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
@@ -475,14 +478,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx17"><td>
 <ul><li> a function type whose exception specification is value-dependent
-</li></ul>
-</td>
-<td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
-</table>
-<ul><li> a <a href="templates.html#template-id" title="cpp/language/templates">template-id</a> where either
+</li><li> a <a href="templates.html#template-id" title="cpp/language/templates">template-id</a> where either
 </li></ul>
 <dl><dd><ul><li> the template name is a template parameter, or
 </li><li> any of template arguments is type-dependent, or value-dependent<span class="t-rev-inl t-since-cxx11"><span>, or is a pack expansion</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> (even if the template-id is used without its argument list, as <a href="injected-class-name.html" title="cpp/language/injected-class-name">injected-class-name</a>)
@@ -500,7 +497,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Note: a typedef member of a current instantiation is only dependent when the type it refers to is.
 </p>
 <h3><span class="mw-headline" id="Type-dependent_expressions">Type-dependent expressions</span></h3>
-<p>The following expressions are type-dependent
+<p>The following expressions are type-dependent:
 </p>
 <ul><li> an expression whose any subexpression is a type-dependent expression
 </li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">this</span></span>, if the class is a dependent type.
@@ -584,31 +581,40 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
-<h3><span class="mw-headline" id="Dependent_names"> Dependent names </span></h3>
+<h3><span class="mw-headline" id="Dependent_names">Dependent names</span></h3>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: the lede from [temp.dep], which is missing (id-expression followed by parenthesized list... </td></tr></table>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: reword to maybe make it more clear (or at least less intimidating), and while at ait, apply CWG issue 591 </td></tr></table>
-<h3><span class="mw-headline" id="Current_instantiation"> Current instantiation </span></h3>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: reword to maybe make it more clear (or at least less intimidating), and while at it, apply <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/591.html">CWG issue 591</a> </td></tr></table>
+<h3><span class="mw-headline" id="Current_instantiation">Current instantiation</span></h3>
 <p>Within a class template definition (including its member functions and nested classes) some names may be deduced to refer to the <i>current instantiation</i>. This allows certain errors to be detected at the point of definition, rather than instantiation, and removes the requirement on the <code>typename</code> and <code>template</code> disambiguators for dependent names, see below. 
 </p><p>Only the following names can refer to the current instantiation:
 </p>
 <ul><li> in a class template definition:
 </li></ul>
-<dl><dd><ul><li> a nested class, a member of class template, a member of a nested class, the injected-class-name of the template, the injected-class-name of a nested class
+<dl><dd><ul><li> a nested class, a member of class template, a member of a nested class, the injected-class-name of the template, the injected-class-name of a nested class.
 </li></ul>
 </dd></dl>
 <ul><li> in a primary class template definition or in the definition of its member: 
 </li></ul>
-<dl><dd><ul><li> name of the class template followed by template argument list (or an equivalent alias template specialization) for the primary template where each argument is equivalent to its corresponding parameter. Note that if an expression is used as a non-type template argument (e.g. N+0 where N is the parameter), it does not name the current instantiation even if its value matches.
+<dl><dd><ul><li> name of the class template followed by template argument list (or an equivalent alias template specialization) for the primary template where each argument is equivalent (defined below) to its corresponding parameter.
 </li></ul>
 </dd></dl>
 <ul><li> in the definition of a nested class or class template:
 </li></ul>
-<dl><dd><ul><li> name of the nested class used as a member of the current instantiation
+<dl><dd><ul><li> name of the nested class used as a member of the current instantiation.
 </li></ul>
 </dd></dl>
-<ul><li> in the definition of a partial specialization or of a member of a partial specialization
+<ul><li> in the definition of a partial specialization or of a member of a partial specialization:
 </li></ul>
-<dl><dd><ul><li> the name of the class template followed by template argument list for the partial specialization, where each argument is equivalent to its corresponding parameter
+<dl><dd><ul><li> the name of the class template followed by template argument list for the partial specialization, where each argument is equivalent to its corresponding parameter.
+</li></ul>
+</dd></dl>
+<p>A template argument is equivalent to a template parameter if
+</p>
+<ul><li> for a <a href="template_parameters.html#Type_template_parameter" title="cpp/language/template parameters">type parameter</a>, the template argument denotes the same type as the template parameter.
+</li><li> for a <a href="template_parameters.html#Non-type_template_parameter" title="cpp/language/template parameters">non-type parameter</a>, the template argument is an <a href="name.html" title="cpp/language/identifiers">identifier</a> that names a variable that is equivalent to the template parameter. A variable is equivalent to a template parameter if
+</li></ul>
+<dl><dd><ul><li> it has the same type as the template parameter (ignoring cv-qualification) and
+</li><li> its initializer consists of a single identifier that names the template parameter or, recursively, such a variable.
 </li></ul>
 </dd></dl>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
@@ -627,23 +633,34 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="br0">}</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw1">class</span> A<span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span>
 <span class="br0">{</span>
     A<span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span><span class="sy2">*</span> p1<span class="sy4">;</span> <span class="co1">// A&lt;T*&gt; is the current instantiation</span>
     A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy2">*</span> p2<span class="sy4">;</span>  <span class="co1">// A&lt;T&gt; is not the current instantiation</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw4">int</span> I<span class="sy1">&gt;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">int</span> I<span class="sy1">&gt;</span>
 <span class="kw1">struct</span> B
 <span class="br0">{</span>
     <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">int</span> my_I <span class="sy1">=</span> I<span class="sy4">;</span>
-    <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">int</span> my_I2 <span class="sy1">=</span> I<span class="sy2">+</span><span class="nu0">0</span><span class="sy4">;</span>
+    <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">int</span> my_I2 <span class="sy1">=</span> I <span class="sy2">+</span> <span class="nu0">0</span><span class="sy4">;</span>
     <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">int</span> my_I3 <span class="sy1">=</span> my_I<span class="sy4">;</span>
+    <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">long</span> my_I4 <span class="sy1">=</span> I<span class="sy4">;</span>
+    <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">int</span> my_I5 <span class="sy1">=</span> <span class="br0">(</span>I<span class="br0">)</span><span class="sy4">;</span>
  
-    B<span class="sy1">&lt;</span>my_I<span class="sy1">&gt;</span><span class="sy2">*</span> b3<span class="sy4">;</span>  <span class="co1">// B&lt;my_I&gt; is the current instantiation</span>
-    B<span class="sy1">&lt;</span>my_I2<span class="sy1">&gt;</span><span class="sy2">*</span> b4<span class="sy4">;</span> <span class="co1">// B&lt;my_I2&gt; is not the current instantiation</span>
-    B<span class="sy1">&lt;</span>my_I3<span class="sy1">&gt;</span><span class="sy2">*</span> b5<span class="sy4">;</span> <span class="co1">// B&lt;my_I3&gt; is the current instantiation</span>
+    B<span class="sy1">&lt;</span>my_I<span class="sy1">&gt;</span><span class="sy2">*</span> b1<span class="sy4">;</span>  <span class="co1">// B&lt;my_I&gt; is the current instantiation:</span>
+                  <span class="co1">//   my_I has the same type as I,</span>
+                  <span class="co1">//   and it is initialized with only I</span>
+    B<span class="sy1">&lt;</span>my_I2<span class="sy1">&gt;</span><span class="sy2">*</span> b2<span class="sy4">;</span> <span class="co1">// B&lt;my_I2&gt; is not the current instantiation:</span>
+                  <span class="co1">//   I + 0 is not a single identifier</span>
+    B<span class="sy1">&lt;</span>my_I3<span class="sy1">&gt;</span><span class="sy2">*</span> b3<span class="sy4">;</span> <span class="co1">// B&lt;my_I3&gt; is the current instantiation:</span>
+                  <span class="co1">//   my_I3 has the same type as I,</span>
+                  <span class="co1">//   and it is initialized with only my_I (which is equivalent to I)</span>
+    B<span class="sy1">&lt;</span>my_I4<span class="sy1">&gt;</span><span class="sy2">*</span> b4<span class="sy4">;</span> <span class="co1">// B&lt;my_I4&gt; is not the current instantiation:</span>
+                  <span class="co1">//   the type of my_I4 (long) is not the same as the type of I (int)</span>
+    B<span class="sy1">&lt;</span>my_I5<span class="sy1">&gt;</span><span class="sy2">*</span> b5<span class="sy4">;</span> <span class="co1">// B&lt;my_I5&gt; is not the current instantiation:</span>
+                  <span class="co1">//   (I) is not a single identifier</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <p>Note that a base class can be the current instantiation if a nested class derives from its enclosing class template. Base classes that are dependent types but aren't the current instantiation are <i>dependent base classes</i>:
 </p>
@@ -651,9 +668,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">struct</span> A
 <span class="br0">{</span>
     <span class="kw1">typedef</span> <span class="kw4">int</span> M<span class="sy4">;</span>
+ 
     <span class="kw1">struct</span> B
     <span class="br0">{</span>
         <span class="kw1">typedef</span> <span class="kw4">void</span> M<span class="sy4">;</span>
+ 
         <span class="kw1">struct</span> C<span class="sy4">;</span>
     <span class="br0">}</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
@@ -672,17 +691,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw1">class</span> A
 <span class="br0">{</span>
-   <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">5</span><span class="sy4">;</span>
-   <span class="kw4">int</span> n1<span class="br0">[</span>i<span class="br0">]</span><span class="sy4">;</span>       <span class="co1">// i refers to a member of the current instantiation</span>
-   <span class="kw4">int</span> n2<span class="br0">[</span>A<span class="sy4">::</span><span class="me2">i</span><span class="br0">]</span><span class="sy4">;</span>    <span class="co1">// A::i refers to a member of the current instantiation</span>
-   <span class="kw4">int</span> n3<span class="br0">[</span>A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">i</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// A&lt;T&gt;::i refers to a member of the current instantiation</span>
-   <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">5</span><span class="sy4">;</span>
+ 
+    <span class="kw4">int</span> n1<span class="br0">[</span>i<span class="br0">]</span><span class="sy4">;</span>       <span class="co1">// i refers to a member of the current instantiation</span>
+    <span class="kw4">int</span> n2<span class="br0">[</span>A<span class="sy4">::</span><span class="me2">i</span><span class="br0">]</span><span class="sy4">;</span>    <span class="co1">// A::i refers to a member of the current instantiation</span>
+    <span class="kw4">int</span> n3<span class="br0">[</span>A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">i</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// A&lt;T&gt;::i refers to a member of the current instantiation</span>
+ 
+    <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw4">int</span> A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">f</span><span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-   <span class="kw1">return</span> i<span class="sy4">;</span> <span class="co1">// i refers to a member of the current instantiation</span>
+    <span class="kw1">return</span> i<span class="sy4">;</span> <span class="co1">// i refers to a member of the current instantiation</span>
 <span class="br0">}</span></pre></div></div>
 <p>Members of the current instantiation may be both dependent and non-dependent.
 </p><p>If the lookup of a member of current instantiation gives a different result between the point of instantiation and the point of definition, the lookup is ambiguous. Note however that when a member name is used, it is not automatically converted to a class member access expression, only explicit member access expressions indicate members of current instantiation:
@@ -693,15 +714,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
 <span class="kw1">struct</span> C <span class="sy4">:</span> A, T
 <span class="br0">{</span>
-  <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> this<span class="sy2">-</span><span class="sy1">&gt;</span>m<span class="sy4">;</span> <span class="br0">}</span> <span class="co1">// finds A::m in the template definition context</span>
-  <span class="kw4">int</span> g<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> m<span class="sy4">;</span> <span class="br0">}</span>       <span class="co1">// finds A::m in the template definition context</span>
+    <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> this<span class="sy2">-</span><span class="sy1">&gt;</span>m<span class="sy4">;</span> <span class="br0">}</span> <span class="co1">// finds A::m in the template definition context</span>
+    <span class="kw4">int</span> g<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> m<span class="sy4">;</span> <span class="br0">}</span>       <span class="co1">// finds A::m in the template definition context</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw1">template</span> <span class="kw4">int</span> C<span class="sy1">&lt;</span>B<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">f</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// error: finds both A::m and B::m</span>
  
 <span class="kw1">template</span> <span class="kw4">int</span> C<span class="sy1">&lt;</span>B<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">g</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: transformation to class member access syntax</span>
                         <span class="co1">// does not occur in the template definition context</span></pre></div></div>
-<h3><span class="mw-headline" id="Unknown_specializations"> Unknown specializations </span></h3>
+<h3><span class="mw-headline" id="Unknown_specializations">Unknown specializations</span></h3>
 <p>Within a template definition, certain names are deduced to belong to an <i>unknown specialization</i>, in particular,
 </p>
 <ul><li> a <a href="qualified_lookup.html" title="cpp/language/qualified lookup">qualified name</a>, if any name that appears to the left of <code><b>::</b></code> is a <i>dependent type</i> that is not a member of the <i>current instantiation</i>
@@ -709,7 +730,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> a name of a member in a class member access expression (the <code>y</code> in <code>x.y</code> or <code>xp-&gt;y</code>), if the type of the object expression (<code>x</code> or <code>*xp</code>) is a <i>dependent type</i> and is not the <i>current instantiation</i>
 </li><li> a name of a member in a class member access expression (the <code>y</code> in <code>x.y</code> or <code>xp-&gt;y</code>), if the type of the object expression  (<code>x</code> or <code>*xp</code>) is the <i>current instantiation</i>, and the name is not found in the current instantiation or any of its non-dependent base classes, and there is a dependent base class
 </li></ul>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span> <span class="kw1">struct</span> Base <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
+<span class="kw1">struct</span> Base <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
 <span class="kw1">struct</span> Derived <span class="sy4">:</span> Base<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span>
@@ -738,6 +760,7 @@ This classification allows the following errors to be detected at the point of t
 <span class="kw1">class</span> A
 <span class="br0">{</span>
     <span class="kw1">typedef</span> <span class="kw4">int</span> type<span class="sy4">;</span>
+ 
     <span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span>
     <span class="br0">{</span>
         A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">type</span> i<span class="sy4">;</span> <span class="co1">// OK: 'type' is a member of the current instantiation</span>
@@ -752,6 +775,7 @@ This classification allows the following errors to be detected at the point of t
 <ul><li> If any template definition has a member acess expression where the object expression is the <i>current instantiation</i>, but the name is neither a member of <i>current instantiation</i> nor a member of <i>unknown specialization</i>, the program is ill-formed even if the template is never instantiated.
 </li></ul>
 <p>Members of unknown specialization are always dependent, and are looked up and bound at the point of instantiation as all dependent names (see above)
+</p><p><span id="typename_disambiguator"></span>
 </p>
 <h3><span class="mw-headline" id="The_typename_disambiguator_for_dependent_names">The <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span></span></span> disambiguator for dependent names</span></h3>
 <p>In a declaration or a definition of a template, including alias template, a name that is not a member of the <i>current instantiation</i> and is dependent on a template parameter is not considered to be a type unless the keyword <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span></span></span> is used or unless it was already established as a type name, e.g. with a typedef declaration or by being used to name a base class.
@@ -761,7 +785,8 @@ This classification allows the following errors to be detected at the point of t
 <span class="co2">#include &lt;vector&gt;</span>
  
 <span class="kw4">int</span> p <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> foo<span class="br0">(</span><span class="kw4">const</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="sy3">&amp;</span>v<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="co1">// std::vector&lt;T&gt;::const_iterator is a dependent name,</span>
@@ -781,6 +806,7 @@ This classification allows the following errors to be detected at the point of t
 <span class="kw1">struct</span> S
 <span class="br0">{</span>
     <span class="kw1">typedef</span> <span class="kw4">int</span> value_t<span class="sy4">;</span> <span class="co1">// member of current instantiation</span>
+ 
     <span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span>
     <span class="br0">{</span>
         S<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value_t</span> n<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// S&lt;T&gt; is dependent, but 'typename' not needed</span>
@@ -824,25 +850,16 @@ This classification allows the following errors to be detected at the point of t
     f<span class="br0">(</span>a<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// error: cannot instantiate f&lt;A&gt;:</span>
           <span class="co1">// because qualified name lookup for A::X finds the data member</span>
 <span class="br0">}</span></pre></div></div>
- <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx11"><td>
-<p>The keyword <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span></span></span> must only be used in template declarations and definitions and only in contexts in which dependent names can be used. This excludes explicit specialization declarations and explicit instantiation declarations. 
-</p>
-</td>
-<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
-<tr class="t-rev t-since-cxx11"><td>
 <p>The keyword <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span></span></span> can be used even outside of templates.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;vector&gt;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">typedef</span> <span class="kw1">typename</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">const_iterator</span> iter_t<span class="sy4">;</span> <span class="co1">// OK in C++11</span>
-    <span class="kw1">typename</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="sy4">;</span>                              <span class="co1">// also OK in C++11</span>
+    <span class="co1">// Both OK (after resolving CWG 382)</span>
+    <span class="kw1">typedef</span> <span class="kw1">typename</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">const_iterator</span> iter_t<span class="sy4">;</span>
+    <span class="kw1">typename</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
-</td>
-<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
-</table>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
 <p>In some contexts, only type names can validly appear. In these contexts, a dependent qualified name is assumed to name a type and no <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span></span></span> is required:
@@ -870,6 +887,8 @@ This classification allows the following errors to be detected at the point of t
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
+<p><span id="template_disambiguator"></span>
+</p>
 <h3><span class="mw-headline" id="The_template_disambiguator_for_dependent_names">The <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span></span></span> disambiguator for dependent names</span></h3>
 <p>Similarly, in a template definition, a dependent name that is not a member of the <i>current instantiation</i> is not considered to be a template name unless the disambiguation keyword <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span></span></span> is used or unless it was already established as a template name:
 </p>
@@ -877,7 +896,8 @@ This classification allows the following errors to be detected at the point of t
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
 <span class="kw1">struct</span> S
 <span class="br0">{</span>
-    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> U<span class="sy1">&gt;</span> <span class="kw4">void</span> foo<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> U<span class="sy1">&gt;</span>
+    <span class="kw4">void</span> foo<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
@@ -895,19 +915,13 @@ This classification allows the following errors to be detected at the point of t
 </li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">this<span class="sy2">-</span><span class="sy1">&gt;</span><span class="kw1">template</span> foo<span class="sy1">&lt;</span>X<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></span></span>
 </li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span> T<span class="sy4">::</span><span class="kw1">template</span> iterator<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value_type</span> v<span class="sy4">;</span></span></span>
 </li></ul>
-<p>As is the case with <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span></span></span>, the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span></span></span> prefix is allowed even if the name is not dependent<span class="t-rev-inl t-since-cxx11"><span> or the use does not appear in the scope of a template</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>.
-</p>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx17"><td>
-<p>Even if the name to the left of <code><b>::</b></code> refers to a namespace, the template disambiguator is allowed:
+<p>As is the case with <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span></span></span>, the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span></span></span> prefix is allowed even if the name is not dependent or the use does not appear in the scope of a template.
+</p><p>Even if the name to the left of <code><b>::</b></code> refers to a namespace, the template disambiguator is allowed:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span><span class="sy1">&gt;</span>
-<span class="kw1">struct</span> s <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> S <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
  
-<span class="sy4">::</span><span class="kw1">template</span> s<span class="sy1">&lt;</span><span class="kw4">void</span><span class="sy1">&gt;</span> q<span class="sy4">;</span> <span class="co1">// allowed, but unnecessary</span></pre></div></div>
-</td>
-<td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
-</table>
+<span class="sy4">::</span><span class="kw1">template</span> S<span class="sy1">&lt;</span><span class="kw4">void</span><span class="sy1">&gt;</span> q<span class="sy4">;</span> <span class="co1">// allowed, but unnecessary</span></pre></div></div>
  <table class="t-rev-begin">
 <tr class="t-rev t-until-cxx23"><td>
 <p>Due to the special rules for <a href="unqualified_lookup.html" title="cpp/language/unqualified lookup">unqualified name lookup</a> for template names in member access expressions, when a non-dependent template name appears in a member access expression (after <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="sy1">&gt;</span></span></span> or after <span class="t-c"><span class="mw-geshi cpp source-cpp">.</span></span>), the disambiguator is unnecessary if there is a <span class="t-rev-inl t-since-cxx11"><span>class or alias</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> template with the same name found by ordinary lookup in the context of the expression. <span class="t-rev-inl t-until-cxx11"><span>However, if the template found by lookup in the context of the expression differs from the one found in the context of the class, the program is ill-formed</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span>
@@ -939,16 +953,16 @@ This classification allows the following errors to be detected at the point of t
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue206">CWG 206</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/206.html">CWG 206</a>
 </td>
 <td> C++98
 </td>
-<td> it was unspecified at what point semantic constraints are applied when a type<br>used in a non-dependent name is incomplete at the point at which a template<br>is defined but is complete at the point at which an instantiation is performed
+<td> it was unspecified at what point semantic constraints are<br>applied when a type used in a non-dependent name is<br>incomplete at the point at which a template is defined but is<br>complete at the point at which an instantiation is performed
 </td>
 <td> the program is ill-formed<br>and no diagnostic is<br>required in this case
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue224">CWG 224</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/224.html">CWG 224</a>
 </td>
 <td> C++98
 </td>
@@ -957,7 +971,52 @@ This classification allows the following errors to be detected at the point of t
 <td> definition revamped
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1413">CWG 1413</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/382.html">CWG 382</a>
+</td>
+<td> C++98
+</td>
+<td> the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">typename</span></span></span> disambiguator was only allowed in template scope
+</td>
+<td> also allowed outside<br>of templates
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/468.html">CWG 468</a>
+</td>
+<td> C++98
+</td>
+<td> the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span></span></span> disambiguator was only allowed in template scope
+</td>
+<td> also allowed outside<br>of templates
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/502.html">CWG 502</a>
+</td>
+<td> C++98
+</td>
+<td> it was unspecified whether nested enumerations are dependent
+</td>
+<td> dependent as nested classes
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1047.html">CWG 1047</a>
+</td>
+<td> C++98
+</td>
+<td> <code>typeid</code> expressions were never value-dependent
+</td>
+<td> value-dependent if the<br>operand is type-dependent
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1160.html">CWG 1160</a>
+</td>
+<td> C++98
+</td>
+<td> it was unspecified whether a name refers to the current instantiation<br>when a template-id matching a primary template or partial<br>specialization appears in the definition of a member of the template
+</td>
+<td> specified
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1413.html">CWG 1413</a>
 </td>
 <td> C++98
 </td>
@@ -966,7 +1025,16 @@ This classification allows the following errors to be detected at the point of t
 <td> listed
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1850">CWG 1850</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1471.html">CWG 1471</a>
+</td>
+<td> C++98
+</td>
+<td> a nested type of a non-dependent base of<br>the current instantiation was dependent
+</td>
+<td> it is not dependent
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1850.html">CWG 1850</a>
 </td>
 <td> C++98
 </td>
@@ -975,39 +1043,66 @@ This classification allows the following errors to be detected at the point of t
 <td> made complete
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2100">CWG 2100</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1929.html">CWG 1929</a>
 </td>
 <td> C++98
 </td>
-<td> address of a static data member of class template wasn't listed as value-dependent
+<td> it was not clear whether the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span></span></span> disambiguator can<br>follow a <code>::</code> where the name to its left refers to a namespace
+</td>
+<td> allowed
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2100.html">CWG 2100</a>
+</td>
+<td> C++98
+</td>
+<td> address of a static data member of class<br>template wasn't listed as value-dependent
 </td>
 <td> listed
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2457">CWG 2457</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2276.html">CWG 2276</a>
+</td>
+<td> C++98
+</td>
+<td> a function type whose exception specification<br>is value-dependent was not a dependent type
+</td>
+<td> it is
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2307.html">CWG 2307</a>
+</td>
+<td> C++98
+</td>
+<td> a parenthesized non-type template parameter used as a<br>template argument was equivalent to that template parameter
+</td>
+<td> not equivalent anymore
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2457.html">CWG 2457</a>
 </td>
 <td> C++11
 </td>
-<td> a function type with function parameter pack wasn't listed as dependent type
+<td> a function type with function parameter pack was not a dependent type
 </td>
-<td> listed
+<td> it is
 </td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6188/1000000
-Preprocessor generated node count: 13453/1000000
-Post‐expand include size: 162453/2097152 bytes
-Template argument size: 43285/2097152 bytes
+Preprocessor visited node count: 6346/1000000
+Preprocessor generated node count: 14436/1000000
+Post‐expand include size: 165074/2097152 bytes
+Template argument size: 45078/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9611-0!*!0!!en!*!* and timestamp 20220120024031 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9611-0!*!0!!en!*!* and timestamp 20220721024957 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/dependent_name&amp;oldid=137391">https://en.cppreference.com/mwiki/index.php?title=cpp/language/dependent_name&amp;oldid=137391</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/dependent_name&amp;oldid=141213">https://en.cppreference.com/mwiki/index.php?title=cpp/language/dependent_name&amp;oldid=141213</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1024,10 +1119,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/dependent_name">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/dependent_name">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 19 January 2022, at 18:40.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 227,714 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 20 July 2022, at 19:49.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 247,656 times.</li>
                             </ul>
                     </div>
         </div>
@@ -1045,7 +1140,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.037 secs. -->
+</script><!-- Served in 0.038 secs. -->
 	</body>
-<!-- Cached 20220120034757 -->
+<!-- Cached 20220721032824 -->
 </html>

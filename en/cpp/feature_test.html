@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/feature_test","wgTitle":"cpp/feature test","wgCurRevisionId":130325,"wgArticleId":14049,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/feature_test","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/feature_test","wgTitle":"cpp/feature test","wgCurRevisionId":141269,"wgArticleId":14049,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/feature_test","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> Feature test macros </strong> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -288,7 +288,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 </th>
 <th> Value
 </th>
-<th> <abbr title="Standard in which the feature is introduced">Std</abbr>
+<th> <abbr title="Standard in which the feature is introduced; DR means defect report against that revision">Std</abbr>
 </th></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_aggregate_bases</span></span> </td>
@@ -345,9 +345,14 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_concepts</span></span> </td>
+<td rowspan="2"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_concepts</span></span> </td>
 <td> <a href="language/constraints.html" title="cpp/language/constraints">Concepts</a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201907L</span></span></span> </td>
+<td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</td></tr>
+<tr>
+<td> Conditional trivial special member functions </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202002L</span></span></span> </td>
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
@@ -363,7 +368,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
-<td rowspan="5"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_constexpr</span></span> </td>
+<td rowspan="6"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_constexpr</span></span> </td>
 <td> <a href="language/constexpr.html" title="cpp/language/constexpr"><tt>constexpr</tt></a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">200704L</span></span></span> </td>
 <td> <span class="t-mark-rev t-since-cxx11">(C++11)</span>
@@ -384,6 +389,11 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
+<td> Changing the active member of a union in constant evaluation </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202002L</span></span></span> </td>
+<td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</td></tr>
+<tr>
 <td> Non-<a href="named_req/LiteralType.html" title="cpp/named req/LiteralType">literal</a> variables, labels, and <a href="language.html" title="cpp/language"><tt>goto</tt></a> statements in constexpr functions </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202110L</span></span></span> </td>
 <td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
@@ -398,7 +408,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_constexpr_in_decltype</span></span> </td>
 <td> Generation of function and variable definitions when <a href="language/constant_expression.html#Functions_and_variables_needed_for_constant_evaluation" title="cpp/language/constant expression">needed for constant evaluation</a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201711L</span></span></span> </td>
-<td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+<td> <span class="t-mark-rev t-since-cxx11">(C++11)</span><span class="t-mark">(DR)</span>
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_constinit</span></span> </td>
@@ -521,7 +531,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <tr>
 <td> Rewording inheriting constructors </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201511L</span></span></span> </td>
-<td> <span class="t-mark-rev t-since-cxx17">(C++17)</span>
+<td> <span class="t-mark-rev t-since-cxx11">(C++11)</span><span class="t-mark">(DR)</span>
 </td></tr>
 <tr>
 <td rowspan="2"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_init_captures</span></span> </td>
@@ -736,7 +746,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 </th>
 <th> Header
 </th>
-<th> <abbr title="Standard in which the feature is introduced">Std</abbr>
+<th> <abbr title="Standard in which the feature is introduced; DR means defect report against that revision">Std</abbr>
 </th></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_adaptor_iterator_</span></span><span class="t-c"><span class="mw-geshi cpp source-cpp">pair_constructor</span></span> </td>
@@ -878,6 +888,13 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_bind_back</span></span> </td>
+<td> <span class="t-lc">std::bind_back</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_bind_front</span></span> </td>
 <td> <a href="utility/functional/bind_front.html" title="cpp/utility/functional/bind front"><tt>std::bind_front</tt></a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201907L</span></span></span> </td>
@@ -914,7 +931,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_boyer_moore_searcher</span></span> </td>
-<td> <span class="t-lc"><a href="utility/functional/boyer_moore_searcher.html" title="cpp/utility/functional/boyer moore searcher">Searchers</a></span> </td>
+<td> <a href="utility/functional.html#Searchers" title="cpp/utility/functional">Searchers</a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201603L</span></span></span> </td>
 <td> <a href="header/functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx17">(C++17)</span>
@@ -995,6 +1012,13 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_constexpr_cmath</span></span> </td>
+<td> Constexpr for mathematical functions in <a href="header/cmath.html" title="cpp/header/cmath"><tt>&lt;cmath&gt;</tt></a> and <a href="header/cstdlib.html" title="cpp/header/cstdlib"><tt>&lt;cstdlib&gt;</tt></a> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/cmath.html" title="cpp/header/cmath"><tt>&lt;cmath&gt;</tt></a> <a href="header/cstdlib.html" title="cpp/header/cstdlib"><tt>&lt;cstdlib&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_constexpr_complex</span></span> </td>
 <td> Constexpr for <span class="t-lc"><a href="numeric/complex.html" title="cpp/numeric/complex">std::complex</a></span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201711L</span></span></span> </td>
@@ -1010,7 +1034,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_constexpr_functional</span></span> </td>
-<td> Misc constexpr bits (<span class="t-lc"><a href="utility/functional/default_searcher.html" title="cpp/utility/functional/default searcher">std::default_searcher</a></span>); constexpr INVOKE </td>
+<td> Misc constexpr bits (<span class="t-lc"><a href="utility/functional/default_searcher.html" title="cpp/utility/functional/default searcher">std::default_searcher</a></span>); constexpr <code>INVOKE</code> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201907L</span></span></span> </td>
 <td> <a href="header/functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
@@ -1023,15 +1047,21 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_constexpr_memory</span></span> </td>
+<td rowspan="2"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_constexpr_memory</span></span> </td>
 <td> Constexpr in <span class="t-lc"><a href="memory/pointer_traits.html" title="cpp/memory/pointer traits">std::pointer_traits</a></span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201811L</span></span></span> </td>
 <td> <a href="header/memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
+<td> Constexpr <span class="t-lc"><a href="memory/unique_ptr.html" title="cpp/memory/unique ptr">std::unique_ptr</a></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_constexpr_numeric</span></span> </td>
-<td> Constexpr for <a href="algorithm.html#Numeric_operations" title="cpp/algorithm">&lt;numeric&gt; algorithms</a> </td>
+<td> Constexpr for <a href="algorithm.html#Numeric_operations" title="cpp/algorithm">algorithms</a> in <a href="header/numeric.html" title="cpp/header/numeric"><tt>&lt;numeric&gt;</tt></a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201911L</span></span></span> </td>
 <td> <a href="header/numeric.html" title="cpp/header/numeric"><tt>&lt;numeric&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
@@ -1077,6 +1107,13 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201907L</span></span></span> </td>
 <td> <a href="header/vector.html" title="cpp/header/vector"><tt>&lt;vector&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_containers_ranges</span></span> </td>
+<td> Ranges construction and insertion for containers </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/vector.html" title="cpp/header/vector"><tt>&lt;vector&gt;</tt></a> <a href="header/list.html" title="cpp/header/list"><tt>&lt;list&gt;</tt></a> <a href="header/forward_list.html" title="cpp/header/forward list"><tt>&lt;forward_list&gt;</tt></a> <a href="header/map.html" title="cpp/header/map"><tt>&lt;map&gt;</tt></a> <a href="header/set.html" title="cpp/header/set"><tt>&lt;set&gt;</tt></a> <a href="header/unordered_map.html" title="cpp/header/unordered map"><tt>&lt;unordered_map&gt;</tt></a> <a href="header/unordered_set.html" title="cpp/header/unordered set"><tt>&lt;unordered_set&gt;</tt></a> <a href="header/deque.html" title="cpp/header/deque"><tt>&lt;deque&gt;</tt></a> <a href="header/queue.html" title="cpp/header/queue"><tt>&lt;queue&gt;</tt></a> <a href="header/stack.html" title="cpp/header/stack"><tt>&lt;stack&gt;</tt></a> <a href="header/string.html" title="cpp/header/string"><tt>&lt;string&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_coroutine</span></span> </td>
@@ -1134,6 +1171,13 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_expected</span></span> </td>
+<td> class template <span class="t-lc">std::expected</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/expected.html" title="cpp/header/expected"><tt>&lt;expected&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_filesystem</span></span> </td>
 <td> <a href="filesystem.html" title="cpp/filesystem">Filesystem library</a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201703L</span></span></span> </td>
@@ -1151,13 +1195,13 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> Compile-time format string checks; Reducing parameterization of <span class="t-lc"><a href="utility/format/vformat_to.html" title="cpp/utility/format/vformat to">std::vformat_to</a></span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202106L</span></span></span> </td>
 <td> <a href="header/format.html" title="cpp/header/format"><tt>&lt;format&gt;</tt></a> </td>
-<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+<td> <span class="t-mark-rev t-since-cxx20">(C++20)</span><span class="t-mark">(DR)</span>
 </td></tr>
 <tr>
-<td> Fixing locale handling in chrono formatters; Use of forwarding references in format arguments </td>
+<td> Fixing locale handling in chrono formatters; Supporting non-const-formattable types </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202110L</span></span></span> </td>
 <td> <a href="header/format.html" title="cpp/header/format"><tt>&lt;format&gt;</tt></a> </td>
-<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+<td> <span class="t-mark-rev t-since-cxx20">(C++20)</span><span class="t-mark">(DR)</span>
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_gcd_lcm</span></span> </td>
@@ -1203,7 +1247,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_incomplete_</span></span><span class="t-c"><span class="mw-geshi cpp source-cpp">container_elements</span></span> </td>
-<td> Minimal incomplete type support for standard containers </td>
+<td> Minimal incomplete type support for <a href="container/forward_list.html#Template_parameters" title="cpp/container/forward list">std::forward_list</a>, <a href="container/list.html#Template_parameters" title="cpp/container/list">std::list</a>, and <a href="container/vector.html#Template_parameters" title="cpp/container/vector">std::vector</a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201505L</span></span></span> </td>
 <td> <a href="header/forward_list.html" title="cpp/header/forward list"><tt>&lt;forward_list&gt;</tt></a> <a href="header/list.html" title="cpp/header/list"><tt>&lt;list&gt;</tt></a> <a href="header/vector.html" title="cpp/header/vector"><tt>&lt;vector&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx17">(C++17)</span>
@@ -1308,7 +1352,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_is_pointer_</span></span><span class="t-c"><span class="mw-geshi cpp source-cpp">interconvertible</span></span> </td>
-<td> Pointer-interconvertibility traits </td>
+<td> Pointer-interconvertibility traits: <a href="types/is_pointer_interconvertible_with_class.html" title="cpp/types/is pointer interconvertible with class"><tt>std::is_pointer_interconvertible_with_class</tt></a>, <a href="types/is_pointer_interconvertible_base_of.html" title="cpp/types/is pointer interconvertible base of"><tt>std::is_pointer_interconvertible_base_of</tt></a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201907L</span></span></span> </td>
 <td> <a href="header/type_traits.html" title="cpp/header/type traits"><tt>&lt;type_traits&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
@@ -1412,13 +1456,6 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx17">(C++17)</span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_monadic_optional</span></span> </td>
-<td> <a href="utility/optional.html#Monadic_operations" title="cpp/utility/optional">Monadic Operations</a> in <span class="t-lc"><a href="utility/optional.html" title="cpp/utility/optional">std::optional</a></span> </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202110L</span></span></span> </td>
-<td> <a href="header/optional.html" title="cpp/header/optional"><tt>&lt;optional&gt;</tt></a> </td>
-<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
-</td></tr>
-<tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_move_only_function</span></span> </td>
 <td> <span class="t-lc">std::move_only_function</span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202110L</span></span></span> </td>
@@ -1454,7 +1491,7 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx14">(C++14)</span>
 </td></tr>
 <tr>
-<td rowspan="2"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_optional</span></span> </td>
+<td rowspan="3"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_optional</span></span> </td>
 <td> <span class="t-lc"><a href="utility/optional.html" title="cpp/utility/optional">std::optional</a></span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201606L</span></span></span> </td>
 <td> <a href="header/optional.html" title="cpp/header/optional"><tt>&lt;optional&gt;</tt></a> </td>
@@ -1463,6 +1500,12 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <tr>
 <td> Fully <code>constexpr</code> <span class="t-lc"><a href="utility/optional.html" title="cpp/utility/optional">std::optional</a></span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202106L</span></span></span> </td>
+<td> <a href="header/optional.html" title="cpp/header/optional"><tt>&lt;optional&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx20">(C++20)</span><span class="t-mark">(DR)</span>
+</td></tr>
+<tr>
+<td> <a href="utility/optional.html#Monadic_operations" title="cpp/utility/optional">Monadic operations</a> in <span class="t-lc"><a href="utility/optional.html" title="cpp/utility/optional">std::optional</a></span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202110L</span></span></span> </td>
 <td> <a href="header/optional.html" title="cpp/header/optional"><tt>&lt;optional&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
 </td></tr>
@@ -1495,20 +1538,60 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx14">(C++14)</span>
 </td></tr>
 <tr>
-<td rowspan="3"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_ranges</span></span> </td>
+<td rowspan="4"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_ranges</span></span> </td>
 <td> <a href="ranges.html" title="cpp/ranges">Ranges library</a> and <a href="algorithm/ranges.html" title="cpp/algorithm/ranges">constrained algorithms</a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201911L</span></span></span> </td>
-<td rowspan="3"> <a href="header/algorithm.html" title="cpp/header/algorithm"><tt>&lt;algorithm&gt;</tt></a> <a href="header/functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a> <a href="header/iterator.html" title="cpp/header/iterator"><tt>&lt;iterator&gt;</tt></a> <a href="header/memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> </td>
+<td rowspan="4"> <a href="header/algorithm.html" title="cpp/header/algorithm"><tt>&lt;algorithm&gt;</tt></a> <a href="header/functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a> <a href="header/iterator.html" title="cpp/header/iterator"><tt>&lt;iterator&gt;</tt></a> <a href="header/memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </td></tr>
 <tr>
 <td> Non-<a href="concepts/default_initializable.html" title="cpp/concepts/default initializable">default-initializable</a> <a href="ranges/view.html" title="cpp/ranges/view">views</a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202106L</span></span></span> </td>
-<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+<td> <span class="t-mark-rev t-since-cxx20">(C++20)</span><span class="t-mark">(DR)</span>
 </td></tr>
 <tr>
 <td> <a href="ranges/view.html" title="cpp/ranges/view">Views</a> with <a href="ranges/owning_view.html" title="cpp/ranges/owning view">ownership</a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202110L</span></span></span> </td>
+<td> <span class="t-mark-rev t-since-cxx20">(C++20)</span><span class="t-mark">(DR)</span>
+</td></tr>
+<tr>
+<td> <span class="t-lc">std::ranges::range_adaptor_closure</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_ranges_chunk</span></span> </td>
+<td> <span class="t-lc">std::ranges::chunk_view</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_ranges_chunk_by</span></span> </td>
+<td> <span class="t-lc">std::ranges::chunk_by_view</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_ranges_iota</span></span> </td>
+<td> <span class="t-lc">std::ranges::iota</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/numeric.html" title="cpp/header/numeric"><tt>&lt;numeric&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_ranges_join_with</span></span> </td>
+<td> <span class="t-lc">std::ranges::join_with_view</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_ranges_slide</span></span> </td>
+<td> <span class="t-lc">std::ranges::slide_view</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
 </td></tr>
 <tr>
@@ -1516,6 +1599,13 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-lc">std::ranges::starts_with</span>, <span class="t-lc">std::ranges::ends_with</span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202106L</span></span></span> </td>
 <td> <a href="header/algorithm.html" title="cpp/header/algorithm"><tt>&lt;algorithm&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_ranges_to_container</span></span> </td>
+<td> <span class="t-lc">std::ranges::to</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
 </td></tr>
 <tr>
@@ -1531,6 +1621,13 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201606L</span></span></span> </td>
 <td> <a href="header/memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx17">(C++17)</span>
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_reference_</span></span><span class="t-c"><span class="mw-geshi cpp source-cpp">from_temporary</span></span> </td>
+<td> <span class="t-lc">std::reference_constructs_from_temporary</span> and <span class="t-lc">std::reference_converts_from_temporary</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/type_traits.html" title="cpp/header/type traits"><tt>&lt;type_traits&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_remove_cvref</span></span> </td>
@@ -1609,11 +1706,17 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx14">(C++14)</span>
 </td></tr>
 <tr>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_shift</span></span> </td>
+<td rowspan="2"> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_shift</span></span> </td>
 <td> <a href="algorithm/shift.html" title="cpp/algorithm/shift"><tt>std::shift_left</tt></a> and <a href="algorithm/shift.html" title="cpp/algorithm/shift"><tt>std::shift_right</tt></a> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201806L</span></span></span> </td>
 <td> <a href="header/algorithm.html" title="cpp/header/algorithm"><tt>&lt;algorithm&gt;</tt></a> </td>
 <td> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+</td></tr>
+<tr>
+<td> <span class="t-lc">std::ranges::shift_left</span> and <span class="t-lc">std::ranges::shift_right</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/algorithm.html" title="cpp/header/algorithm"><tt>&lt;algorithm&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_smart_</span></span><span class="t-c"><span class="mw-geshi cpp source-cpp">ptr_for_overwrite</span></span> </td>
@@ -1810,6 +1913,13 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-mark-rev t-since-cxx17">(C++17)</span>
 </td></tr>
 <tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_unreachable</span></span> </td>
+<td> <span class="t-lc">std::unreachable</span> </td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202202L</span></span></span> </td>
+<td> <a href="header/utility.html" title="cpp/header/utility"><tt>&lt;utility&gt;</tt></a> </td>
+<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td></tr>
+<tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_unwrap_ref</span></span> </td>
 <td> <span class="t-lc"><a href="utility/functional/unwrap_reference.html" title="cpp/utility/functional/unwrap reference">std::unwrap_ref_decay</a></span> and <span class="t-lc"><a href="utility/functional/unwrap_reference.html" title="cpp/utility/functional/unwrap reference">std::unwrap_reference</a></span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201811L</span></span></span> </td>
@@ -1827,13 +1937,13 @@ It is treated as a defined macro by <a href="preprocessor/conditional.html" titl
 <td> <span class="t-lc"><a href="utility/variant/visit.html" title="cpp/utility/variant/visit">std::visit</a></span> for classes derived from <span class="t-lc"><a href="utility/variant.html" title="cpp/utility/variant">std::variant</a></span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202102L</span></span></span> </td>
 <td> <a href="header/variant.html" title="cpp/header/variant"><tt>&lt;variant&gt;</tt></a> </td>
-<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+<td> <span class="t-mark-rev t-since-cxx17">(C++17)</span><span class="t-mark">(DR)</span>
 </td></tr>
 <tr>
 <td> Fully <code>constexpr</code> <span class="t-lc"><a href="utility/variant.html" title="cpp/utility/variant">std::variant</a></span> </td>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202106L</span></span></span> </td>
 <td> <a href="header/variant.html" title="cpp/header/variant"><tt>&lt;variant&gt;</tt></a> </td>
-<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+<td> <span class="t-mark-rev t-since-cxx20">(C++20)</span><span class="t-mark">(DR)</span>
 </td></tr>
 <tr>
 <td> <span class="t-c"><span class="mw-geshi cpp source-cpp">__cpp_lib_void_t</span></span> </td>
@@ -1898,7 +2008,27 @@ CONSTEXPR <span class="kw4">int</span> bar<span class="br0">(</span><span class=
 <div class="t-template-editlink" style="">
 </div>
 <div class="t-example"><p>The following program dumps C++ compiler features and attributes.</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#if __cplusplus &lt; 201100</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// Change these options to print out only necessary info.</span>
+<span class="kw4">static</span> <span class="kw1">struct</span> PrintOptions <span class="br0">{</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> titles               <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> counters             <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> attributes           <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> general_features     <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> core_features        <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> lib_features         <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> supported_features   <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> unsupported_features <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> sort_by_date         <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> separate_year_month  <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx11                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx14                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx17                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx20                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx23                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx26                <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">}</span>   print<span class="sy4">;</span>
+ 
+<span class="co2">#if __cplusplus &lt; 201100</span>
 <span class="co2">#  error "C++11 or better is required"</span>
 <span class="co2">#endif</span>
  
@@ -1926,30 +2056,13 @@ CONSTEXPR <span class="kw4">int</span> bar<span class="br0">(</span><span class=
 <span class="co2"># define COMPILER_ATTRIBUTE_ENTRY(attr) { #attr, "_" },</span>
 <span class="co2">#endif</span>
  
-<span class="co1">// Change these options to print out only necessary info.</span>
-<span class="kw4">static</span> <span class="kw1">struct</span> PrintOptions <span class="br0">{</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> titles               <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> attributes           <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> general_features     <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> core_features        <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> lib_features         <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> supported_features   <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> unsupported_features <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> sorted_by_value      <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx11                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx14                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx17                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx20                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">bool</span> cxx23                <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-<span class="br0">}</span>   print<span class="sy4">;</span>
- 
 <span class="kw1">struct</span> CompilerFeature <span class="br0">{</span>
     CompilerFeature<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> name <span class="sy1">=</span> nullptr, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> value <span class="sy1">=</span> nullptr<span class="br0">)</span>
         <span class="sy4">:</span> name<span class="br0">(</span>name<span class="br0">)</span>, value<span class="br0">(</span>value<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> name<span class="sy4">;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> value<span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw4">static</span> CompilerFeature cxx<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx_core<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cplusplus<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_exceptions<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_rtti<span class="br0">)</span>
@@ -1964,7 +2077,7 @@ COMPILER_FEATURE_ENTRY<span class="br0">(</span>__clang_minor__<span class="br0"
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__clang_patchlevel__<span class="br0">)</span>
 <span class="co2">#endif</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw4">static</span> CompilerFeature cxx11<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx11_core<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_alias_templates<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_attributes<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_constexpr<span class="br0">)</span>
@@ -1985,7 +2098,7 @@ COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_unicode_literals<span clas
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_user_defined_literals<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_variadic_templates<span class="br0">)</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw4">static</span> CompilerFeature cxx14<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx14_core<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_aggregate_nsdmi<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_binary_literals<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_constexpr<span class="br0">)</span>
@@ -1996,7 +2109,7 @@ COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_return_type_deduction<span
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_sized_deallocation<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_variable_templates<span class="br0">)</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw4">static</span> CompilerFeature cxx14lib<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx14_lib<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_chrono_udls<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_complex_udls<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_exchange_function<span class="br0">)</span>
@@ -2019,7 +2132,7 @@ COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_tuple_element_t<span c
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_tuples_by_type<span class="br0">)</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw4">static</span> CompilerFeature cxx17<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx17_core<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_aggregate_bases<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_aligned_new<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_capture_star_this<span class="br0">)</span>
@@ -2042,7 +2155,7 @@ COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_structured_bindings<span c
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_template_template_args<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_variadic_using<span class="br0">)</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw4">static</span> CompilerFeature cxx17lib<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx17_lib<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_addressof_constexpr<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_allocator_traits_is_always_equal<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_any<span class="br0">)</span>
@@ -2094,7 +2207,7 @@ COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_variant<span class="br
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_void_t<span class="br0">)</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw4">static</span> CompilerFeature cxx20<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx20_core<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_aggregate_paren_init<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_char8_t<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_concepts<span class="br0">)</span>
@@ -2115,7 +2228,7 @@ COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_modules<span class="br0">)
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_nontype_template_args<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_using_enum<span class="br0">)</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw4">static</span> CompilerFeature cxx20lib<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx20_lib<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_array_constexpr<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_assume_aligned<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_atomic_flag_test<span class="br0">)</span>
@@ -2183,41 +2296,90 @@ COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_type_identity<span cla
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_unwrap_ref<span class="br0">)</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw4">static</span> CompilerFeature cxx23<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx23_core<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 <span class="co1">//&lt; Continue to Populate</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_char8_t<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_concepts<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_constexpr<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_explicit_this_parameter<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_if_consteval<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_implicit_move<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_multidimensional_subscript<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_named_character_escapes<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_size_t_suffix<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_static_call_operator<span class="br0">)</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw4">static</span> CompilerFeature cxx23lib<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="kw4">static</span> CompilerFeature cxx23_lib<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
 <span class="co1">//&lt; Continue to Populate</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_adaptor_iterator_pair_constructor<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_algorithm_iterator_requirements<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_allocate_at_least<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_associative_heterogeneous_erasure<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_bind_back<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_byteswap<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_concepts<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_constexpr_bitset<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_constexpr_charconv<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_constexpr_cmath<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_constexpr_memory<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_constexpr_typeinfo<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_containers_ranges<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_expected<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_find_last<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_flat_map<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_format<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_forward_like<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_generator<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_invoke_r<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ios_noreplace<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_is_scoped_enum<span class="br0">)</span>
-COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_monadic_optional<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_mdspan<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_move_iterator_concept<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_move_only_function<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_optional<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_out_ptr<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_print<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_as_const<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_as_rvalue<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_cartesian_product<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_chunk<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_chunk_by<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_contains<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_iota<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_join_with<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_repeat<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_slide<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_starts_ends_with<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_stride<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_to_container<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_ranges_zip<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_reference_from_temporary<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_shift<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_spanstream<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_stacktrace<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_start_lifetime_as<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_stdatomic_h<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_string_contains<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_string_resize_and_overwrite<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_to_underlying<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_tuple_like<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_unreachable<span class="br0">)</span>
 COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_variant<span class="br0">)</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_fold<span class="br0">)</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw4">static</span> CompilerFeature cxx26_core<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="co1">//&lt; Populate</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_core_TODO<span class="br0">)</span>
+<span class="br0">}</span><span class="sy4">;</span>
+<span class="kw4">static</span> CompilerFeature cxx26_lib<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+<span class="co1">//&lt; Populate</span>
+COMPILER_FEATURE_ENTRY<span class="br0">(</span>__cpp_lib_TODO<span class="br0">)</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">static</span> CompilerFeature attributes<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span>
+COMPILER_ATTRIBUTE_ENTRY<span class="br0">(</span>assume<span class="br0">)</span>
 COMPILER_ATTRIBUTE_ENTRY<span class="br0">(</span>carries_dependency<span class="br0">)</span>
 COMPILER_ATTRIBUTE_ENTRY<span class="br0">(</span>deprecated<span class="br0">)</span>
 COMPILER_ATTRIBUTE_ENTRY<span class="br0">(</span>fallthrough<span class="br0">)</span>
@@ -2230,14 +2392,14 @@ COMPILER_ATTRIBUTE_ENTRY<span class="br0">(</span>unlikely<span class="br0">)</s
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">constexpr</span> <span class="kw4">bool</span> is_feature_supported<span class="br0">(</span><span class="kw4">const</span> CompilerFeature<span class="sy3">&amp;</span> x<span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">return</span> x.<span class="me1">value</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="st0">'_'</span> <span class="sy3">&amp;&amp;</span> x.<span class="me1">value</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="st0">'0'</span> <span class="sy4">;</span>
+    <span class="kw1">return</span> x.<span class="me1">value</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="st0">'_'</span> <span class="sy3">&amp;&amp;</span> x.<span class="me1">value</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="st0">'0'</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
 <span class="kw1">inline</span> <span class="kw4">void</span> print_compiler_feature<span class="br0">(</span><span class="kw4">const</span> CompilerFeature<span class="sy3">&amp;</span> x<span class="br0">)</span> <span class="br0">{</span>
     <span class="kw4">constexpr</span> <span class="kw4">static</span> <span class="kw4">int</span> max_name_length <span class="sy1">=</span> <span class="nu0">44</span><span class="sy4">;</span> <span class="co1">//&lt; Update if necessary</span>
     <a href="string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> value<span class="br0">{</span> is_feature_supported<span class="br0">(</span>x<span class="br0">)</span> <span class="sy4">?</span> x.<span class="me1">value</span> <span class="sy4">:</span> <span class="st0">"------"</span> <span class="br0">}</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>value.<span class="me1">back</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="st0">'L'</span><span class="br0">)</span> value.<span class="me1">pop_back</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">//~ 201603L -&gt; 201603</span>
-    <span class="co1">// value.insert(4, 1, '-'); //~ 201603 -&gt; 2016-03</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">separate_year_month</span><span class="br0">)</span> value.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">4</span>, <span class="nu0">1</span>, <span class="st0">'-'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">//~ 201603 -&gt; 2016-03</span>
     <span class="kw1">if</span> <span class="br0">(</span> <span class="br0">(</span>print.<span class="me1">supported_features</span> <span class="sy3">&amp;&amp;</span> is_feature_supported<span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span>
         or <span class="br0">(</span>print.<span class="me1">unsupported_features</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span>is_feature_supported<span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
             <a href="io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="io/manip/left.html"><span class="kw1783">std::<span class="me2">left</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="io/manip/setw.html"><span class="kw1801">std::<span class="me2">setw</span></span></a><span class="br0">(</span>max_name_length<span class="br0">)</span>
@@ -2248,9 +2410,13 @@ COMPILER_ATTRIBUTE_ENTRY<span class="br0">(</span>unlikely<span class="br0">)</s
 <span class="kw1">template</span><span class="sy1">&lt;</span>size_t N<span class="sy1">&gt;</span>
 <span class="kw1">inline</span> <span class="kw4">void</span> show<span class="br0">(</span><span class="kw4">char</span> <span class="kw4">const</span><span class="sy2">*</span> title, CompilerFeature <span class="br0">(</span><span class="sy3">&amp;</span>features<span class="br0">)</span><span class="br0">[</span>N<span class="br0">]</span><span class="br0">)</span> <span class="br0">{</span>
     <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">titles</span><span class="br0">)</span> <span class="br0">{</span>
-        <a href="io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span> <span class="sy1">&lt;&lt;</span> <a href="io/manip/left.html"><span class="kw1783">std::<span class="me2">left</span></span></a> <span class="sy1">&lt;&lt;</span> title <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+        <a href="io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="io/manip/left.html"><span class="kw1783">std::<span class="me2">left</span></span></a> <span class="sy1">&lt;&lt;</span> title <span class="sy1">&lt;&lt;</span> <span class="st0">" ("</span><span class="sy4">;</span>
+        <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">counters</span><span class="br0">)</span>
+            <a href="io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="algorithm/count.html"><span class="kw1575">std::<span class="me2">count_if</span></span></a><span class="br0">(</span>
+                <a href="iterator/begin.html"><span class="kw678">std::<span class="me2">begin</span></span></a><span class="br0">(</span>features<span class="br0">)</span>, <a href="iterator/end.html"><span class="kw682">std::<span class="me2">end</span></span></a><span class="br0">(</span>features<span class="br0">)</span>, is_feature_supported<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'/'</span><span class="sy4">;</span>
+        <a href="io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> N <span class="sy1">&lt;&lt;</span> <span class="st0">")<span class="es1">\n</span>"</span><span class="sy4">;</span>
     <span class="br0">}</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">sorted_by_value</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">sort_by_date</span><span class="br0">)</span> <span class="br0">{</span>
         <a href="algorithm/sort.html"><span class="kw1622">std::<span class="me2">sort</span></span></a><span class="br0">(</span><a href="iterator/begin.html"><span class="kw678">std::<span class="me2">begin</span></span></a><span class="br0">(</span>features<span class="br0">)</span>, <a href="iterator/end.html"><span class="kw682">std::<span class="me2">end</span></span></a><span class="br0">(</span>features<span class="br0">)</span>,
             <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span>CompilerFeature <span class="kw4">const</span><span class="sy3">&amp;</span> lhs, CompilerFeature <span class="kw4">const</span><span class="sy3">&amp;</span> rhs<span class="br0">)</span> <span class="br0">{</span>
                 <span class="kw1">return</span> <a href="string/byte/strcmp.html"><span class="kw1149">std::<span class="me2">strcmp</span></span></a><span class="br0">(</span>lhs.<span class="me1">value</span>, rhs.<span class="me1">value</span><span class="br0">)</span> <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="sy4">;</span>
@@ -2259,29 +2425,32 @@ COMPILER_ATTRIBUTE_ENTRY<span class="br0">(</span>unlikely<span class="br0">)</s
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> CompilerFeature<span class="sy3">&amp;</span> x <span class="sy4">:</span> features<span class="br0">)</span> <span class="br0">{</span>
         print_compiler_feature<span class="br0">(</span>x<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
+    <a href="io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">general_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++ GENERAL"</span>, cxx<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx11</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++11 CORE"</span>, cxx11<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx14</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++14 CORE"</span>, cxx14<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx14</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">lib_features</span> <span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++14 LIB"</span> , cxx14lib<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx17</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++17 CORE"</span>, cxx17<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx17</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">lib_features</span> <span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++17 LIB"</span> , cxx17lib<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx20</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++20 CORE"</span>, cxx20<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx20</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">lib_features</span> <span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++20 LIB"</span> , cxx20lib<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx23</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++23 CORE"</span>, cxx23<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx23</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">lib_features</span> <span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++23 LIB"</span> , cxx23lib<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">general_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++ GENERAL"</span>, cxx_core<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx11</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++11 CORE"</span>, cxx11_core<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx14</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++14 CORE"</span>, cxx14_core<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx14</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">lib_features</span> <span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++14 LIB"</span> , cxx14_lib<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx17</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++17 CORE"</span>, cxx17_core<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx17</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">lib_features</span> <span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++17 LIB"</span> , cxx17_lib<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx20</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++20 CORE"</span>, cxx20_core<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx20</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">lib_features</span> <span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++20 LIB"</span> , cxx20_lib<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx23</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++23 CORE"</span>, cxx23_core<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx23</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">lib_features</span> <span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++23 LIB"</span> , cxx23_lib<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx26</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">core_features</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++26 CORE"</span>, cxx26_core<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">cxx26</span> <span class="sy3">&amp;&amp;</span> print.<span class="me1">lib_features</span> <span class="br0">)</span> show<span class="br0">(</span><span class="st0">"C++26 LIB"</span> , cxx26_lib<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>print.<span class="me1">attributes</span><span class="br0">)</span> show<span class="br0">(</span><span class="st0">"ATTRIBUTES"</span>, attributes<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">C++ GENERAL
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">C++ GENERAL (3/3)
 __cplusplus                                  202002
 __cpp_exceptions                             199711
 __cpp_rtti                                   199711
  
-C++11 CORE
+C++11 CORE (19/19)
 __cpp_alias_templates                        200704
 __cpp_attributes                             200809
 __cpp_constexpr                              201907
@@ -2302,7 +2471,7 @@ __cpp_unicode_literals                       200710
 __cpp_user_defined_literals                  200809
 __cpp_variadic_templates                     200704
  
-C++14 CORE
+C++14 CORE (9/9)
 __cpp_aggregate_nsdmi                        201304
 __cpp_binary_literals                        201304
 __cpp_constexpr                              201907
@@ -2330,7 +2499,7 @@ __cpp_variable_templates                     201304
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td colspan="2">  <a rel="nofollow" class="external text" href="http://isocpp.org/std/standing-documents/sd-6-sg10-feature-test-recommendations">The official document on Feature Test Recommendations</a>
+<td colspan="2">  <a rel="nofollow" class="external text" href="http://isocpp.org/std/standing-documents/sd-6-sg10-feature-test-recommendations">The official document on Feature-Test Recommendations</a>
 </td></tr>
 
 
@@ -2342,19 +2511,19 @@ __cpp_variable_templates                     201304
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 24534/1000000
-Preprocessor generated node count: 15443/1000000
-Post‐expand include size: 273802/2097152 bytes
-Template argument size: 116157/2097152 bytes
-Highest expansion depth: 13/40
+Preprocessor visited node count: 27963/1000000
+Preprocessor generated node count: 16494/1000000
+Post‐expand include size: 306823/2097152 bytes
+Template argument size: 129502/2097152 bytes
+Highest expansion depth: 14/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:14049-0!*!0!!en!*!* and timestamp 20220131232050 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:14049-0!*!0!!en!*!* and timestamp 20220724131418 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/feature_test&amp;oldid=130325">https://en.cppreference.com/mwiki/index.php?title=cpp/feature_test&amp;oldid=130325</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/feature_test&amp;oldid=141269">https://en.cppreference.com/mwiki/index.php?title=cpp/feature_test&amp;oldid=141269</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -2371,10 +2540,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/feature_test">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/feature_test">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 19 June 2021, at 22:02.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 210,514 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 23 July 2022, at 13:14.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 241,746 times.</li>
                             </ul>
                     </div>
         </div>
@@ -2392,7 +2561,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.050 secs. -->
+</script><!-- Served in 36.970 secs. -->
 	</body>
-<!-- Cached 20220131232307 -->
+<!-- Cached 20220724131418 -->
 </html>

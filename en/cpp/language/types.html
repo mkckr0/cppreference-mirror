@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/types","wgTitle":"cpp/language/types","wgCurRevisionId":137438,"wgArticleId":716,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/types","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/types","wgTitle":"cpp/language/types","wgCurRevisionId":141154,"wgArticleId":716,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/types","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -284,7 +284,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="translation_phases.html" title="cpp/language/translation phases"> Phases of translation</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../comments.html" title="cpp/comment"> Comments</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="main_function.html" title="cpp/language/main function"> The main() function</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="punctuators.html" title="cpp/language/punctuators"> Punctuators</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="punctuators.html" title="cpp/language/punctuators"> Punctuation</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="name.html" title="cpp/language/identifiers"> Names and identifiers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="type-id.html" title="cpp/language/type"> Types</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> Fundamental types</strong> </td></tr>
@@ -547,7 +547,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <dl><dd><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">char</span></span></span> - type for signed character representation.
 </dd><dd><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span> - type for unsigned character representation. Also used to inspect <a href="objects.html" title="cpp/language/object">object representations</a> (raw memory).
 </dd><dd><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> - type for character representation which can be most efficiently processed on the target system (has the same representation and alignment as either <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">char</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span>, but is always a distinct type). <a href="../string/multibyte.html" title="cpp/string/multibyte">Multibyte characters strings</a> use this type to represent code units. <span class="t-rev-inl t-since-cxx11"><span>For every value of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span> in range [0, 255], converting the value to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> and then back to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span> produces the original value.</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> The signedness of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> depends on the compiler and the target platform: the defaults for ARM and PowerPC are typically unsigned, the defaults for x86 and x64 are typically signed.
-</dd><dd><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> - type for wide character representation (see <a href="../string/wide.html" title="cpp/string/wide">wide strings</a>). Required to be large enough to represent any supported character code point (32 bits on systems that support Unicode. A notable exception is Windows, where wchar_t is 16 bits and holds UTF-16 code units) It has the same size, signedness, and alignment as one of the integer types, but is a distinct type.
+</dd><dd><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> - type for wide character representation (see <a href="../string/wide.html" title="cpp/string/wide">wide strings</a>). <span class="t-rev-inl t-until-cxx23"><span>Required to be large enough to represent any supported character code point</span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span>. It has the same size, signedness, and alignment as one of the integer types, but is a distinct type. In practice, it is 32 bits and holds UTF-32 on Linux and many other non-Windows systems, but 16 bits and holds UTF-16 code units on Windows.
 </dd></dl>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
@@ -605,7 +605,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The following table provides a reference for the limits of common numeric representations.
 </p><p>Prior to C++20, the C++ Standard allowed any signed integer representation, and the minimum guaranteed range of N-bit signed integers was from <span class="mjax" style="display:none">\(\scriptsize -(2^{N-1}-1)\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">-(2<span class="t-su">N-1<br></span>-1)</span> to <span class="mjax" style="display:none">\(\scriptsize +2^{N-1}-1\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">+2<span class="t-su">N-1<br></span>-1</span> (e.g. <b>-127</b> to <b>127</b> for a signed 8-bit type), which corresponds to the limits of <a href="https://en.wikipedia.org/wiki/Ones%27_complement" class="extiw" title="enwiki:Ones' complement">ones' complement</a> or <a href="https://en.wikipedia.org/wiki/Signed_number_representations#Sign-and-magnitude_method" class="extiw" title="enwiki:Signed number representations">sign-and-magnitude</a>.
 </p><p>However, all C++ compilers use <a href="https://en.wikipedia.org/wiki/Two%27s_complement" class="extiw" title="enwiki:Two's complement">two's complement</a> representation, and as of C++20, it is the only representation allowed by the standard, with the guaranteed range from <span class="mjax" style="display:none">\(\scriptsize -2^{N-1}\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">-2<span class="t-su">N-1<br></span></span> to <span class="mjax" style="display:none">\(\scriptsize +2^{N-1}-1\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">+2<span class="t-su">N-1<br></span>-1</span> (e.g. <b>-128</b> to <b>127</b> for a signed 8-bit type).
-</p><p>8-bit ones' complement and sign-and-magnitude representations for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> have been disallowed since C++11 (via CWG 1759), because a UTF-8 code unit of value 0x80 used in a <a href="string_literal.html" title="cpp/language/string literal">UTF-8 string literal</a> must be storable in a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> element object.
+</p><p>8-bit ones' complement and sign-and-magnitude representations for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> have been disallowed since C++11 (via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1759.html">CWG  1759</a>), because a UTF-8 code unit of value 0x80 used in a <a href="string_literal.html" title="cpp/language/string literal">UTF-8 string literal</a> must be storable in a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> element object.
 </p>
 <table class="wikitable" style="text-align:center;">
 
@@ -827,7 +827,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue238">CWG 238</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/238.html">CWG 238</a>
 </td>
 <td> C++98
 </td>
@@ -836,7 +836,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> specified as no constraint
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1759">CWG 1759</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1759.html">CWG 1759</a>
 </td>
 <td> C++11
 </td>
@@ -855,19 +855,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5986/1000000
-Preprocessor generated node count: 11945/1000000
-Post‐expand include size: 155745/2097152 bytes
-Template argument size: 22839/2097152 bytes
+Preprocessor visited node count: 6031/1000000
+Preprocessor generated node count: 12128/1000000
+Post‐expand include size: 156291/2097152 bytes
+Template argument size: 22969/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:716-0!*!0!!en!*!* and timestamp 20220121120801 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:716-0!*!0!!en!*!* and timestamp 20220718042927 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/types&amp;oldid=137438">https://en.cppreference.com/mwiki/index.php?title=cpp/language/types&amp;oldid=137438</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/types&amp;oldid=141154">https://en.cppreference.com/mwiki/index.php?title=cpp/language/types&amp;oldid=141154</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -884,10 +884,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/types">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/types">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 21 January 2022, at 04:08.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 2,399,368 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 17 July 2022, at 21:29.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 2,609,745 times.</li>
                             </ul>
                     </div>
         </div>
@@ -905,7 +905,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.031 secs. -->
+</script><!-- Served in 0.038 secs. -->
 	</body>
-<!-- Cached 20220121120913 -->
+<!-- Cached 20220718043126 -->
 </html>

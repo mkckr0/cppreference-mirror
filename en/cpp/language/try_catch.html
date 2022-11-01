@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/try_catch","wgTitle":"cpp/language/try catch","wgCurRevisionId":137314,"wgArticleId":5203,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/try_catch","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/try_catch","wgTitle":"cpp/language/try catch","wgCurRevisionId":140465,"wgArticleId":5203,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/try_catch","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -382,39 +382,39 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">compound-statement</span>
+<td> <span class="t-spar">compound-statement</span>
 </td>
 <td> -
 </td>
-<td>  brace-enclosed <a href="statements.html#Compound_statements" title="cpp/language/statements">sequence of statements</a>
+<td> brace-enclosed <a href="statements.html#Compound_statements" title="cpp/language/statements">sequence of statements</a>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">attr</span>
+<td> <span class="t-spar">attr</span>
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-cxx11">(since C++11)</span> any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>, applies to the formal parameter
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>, applies to the formal parameter
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">type-specifier-seq</span>
+<td> <span class="t-spar">type-specifier-seq</span>
 </td>
 <td> -
 </td>
-<td>  part of a formal parameter declaration, same as in a <a href="function.html" title="cpp/language/function">function</a> parameter list
+<td> part of a formal parameter declaration, same as in a <a href="function.html" title="cpp/language/function">function</a> parameter list
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">declarator</span>
+<td> <span class="t-spar">declarator</span>
 </td>
 <td> -
 </td>
-<td>  part of a formal parameter declaration, same as in a <a href="function.html" title="cpp/language/function">function</a> parameter list
+<td> part of a formal parameter declaration, same as in a <a href="function.html" title="cpp/language/function">function</a> parameter list
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">abstract-declarator</span>
+<td> <span class="t-spar">abstract-declarator</span>
 </td>
 <td> -
 </td>
-<td>  part of an unnamed formal parameter declaration, same as in <a href="function.html" title="cpp/language/function">function</a> parameter list
+<td> part of an unnamed formal parameter declaration, same as in <a href="function.html" title="cpp/language/function">function</a> parameter list
 </td></tr></table>
 <div class="t-li1"><span class="t-li">1)</span> Catch-clause that declares a named formal parameter
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">try</span> <span class="br0">{</span> <span class="coMULTI">/* */</span> <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span> <span class="coMULTI">/* */</span> <span class="br0">}</span></pre></div></div></div>
@@ -423,17 +423,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">3)</span> Catch-all handler, which is activated for any exception
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">try</span> <span class="br0">{</span> <span class="coMULTI">/* */</span> <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span>...<span class="br0">)</span> <span class="br0">{</span> <span class="coMULTI">/* */</span> <span class="br0">}</span></pre></div></div></div>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<dl><dd><span style="font-size:0.7em; line-height:130%">See <a href="throw.html" title="cpp/language/throw"> throw exceptions</a> for more information about throw-expressions</span>
+<dl><dd><span style="font-size:0.7em; line-height:130%">See <a href="throw.html" title="cpp/language/throw">throw exceptions</a> for more information about throw-expressions</span>
 </dd></dl>
 <p>A try-block is a <a href="statements.html" title="cpp/language/statements">statement</a>, and as such, can appear anywhere a statement can appear (that is, as one of the statements in a compound statement, including the function body compound statement). See <a href="function-try-block.html" title="cpp/language/function-try-block">function-try-block</a> for the try blocks around function bodies. The following description applies to both try-blocks and <a href="function-try-block.html" title="cpp/language/function-try-block">function-try-blocks</a>.
-</p><p>The formal parameter of the catch clause (<span class="t-spar">type-specifier-seq</span> and <span class="t-spar">declarator</span> or <span class="t-spar">type-specifier-seq</span> and <span class="t-spar">abstract-declarator</span>) determines which types of exceptions cause this catch clause to be entered. It cannot be an <a href="reference.html" title="cpp/language/reference">rvalue reference type</a>, <a href="abstract_class.html" title="cpp/language/abstract class">abstract class</a>, <a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">incomplete type</a>, or pointer to incomplete type (except that pointers to (possibly <a href="cv.html" title="cpp/language/cv">cv</a>-qualified) <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> are allowed). If the type of the formal parameter is array type or function type, it is treated as the corresponding pointer type (similar to a <a href="function.html" title="cpp/language/function">function declaration</a>).
+</p><p>The formal parameter of the catch clause (<span class="t-spar">type-specifier-seq</span> and <span class="t-spar">declarator</span> or <span class="t-spar">type-specifier-seq</span> and <span class="t-spar">abstract-declarator</span>) determines which types of exceptions cause this catch clause to be entered. It cannot be an <a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">incomplete type</a>, <a href="abstract_class.html" title="cpp/language/abstract class">abstract class</a> type,<span class="t-rev-inl t-since-cxx11"><span> <a href="reference.html" title="cpp/language/reference">rvalue reference</a> type,</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> or pointer to incomplete type (except that pointers to (possibly <a href="cv.html" title="cpp/language/cv">cv</a>-qualified) <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> are allowed). If the type of the formal parameter is array type or function type, it is treated as the corresponding pointer type (similar to a <a href="function.html" title="cpp/language/function">function declaration</a>).
 </p><p>When an exception is thrown by any statement in <span class="t-spar">compound-statement</span>, the <a href="throw.html#The_exception_object" title="cpp/language/throw">exception object</a> of type <code>E</code> is matched against the types of the formal parameters <code>T</code> of each catch-clause in <span class="t-spar">handler-seq</span>, in the order in which the catch clauses are listed. The exception is a match if any of the following is true:
 </p>
 <ul><li> <code>E</code> and <code>T</code> are the same type (ignoring top-level cv-qualifiers on <code>T</code>)
 </li><li> <code>T</code> is an lvalue-reference to (possibly cv-qualified) <code>E</code>
 </li><li> <code>T</code> is an unambiguous public base class of <code>E</code>
 </li><li> <code>T</code> is a reference to an unambiguous public base class of <code>E</code>
-</li><li> <code>T</code> is (possibly cv-qualified) <code>U</code> <span class="t-rev-inl t-since-cxx14"><span>or <code>const U&amp;</code></span> <span><span class="t-mark-rev t-since-cxx14">(since C++14)</span></span></span>, and <code>U</code> is a pointer <span class="t-rev-inl t-since-cxx17"><span>or pointer to member</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> type, and <code>E</code> is also a pointer <span class="t-rev-inl t-since-cxx17"><span>or pointer to member</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> type that is implicitly convertible to <code>U</code> by one or more of
+</li><li> <code>T</code> is (possibly cv-qualified) <code>U</code> <span class="t-rev-inl t-since-cxx14"><span>or <code>const U&amp;</code></span> <span><span class="t-mark-rev t-since-cxx14">(since C++14)</span></span></span>, and <code>U</code> is a pointer or pointer to member type, and <code>E</code> is also a pointer or pointer to member type that is implicitly convertible to <code>U</code> by one or more of
 </li></ul>
 <dl><dd><ul><li> a standard <a href="implicit_cast.html#Pointer_conversions" title="cpp/language/implicit cast" class="mw-redirect">pointer conversion</a> other than one to a private, protected, or ambiguous base class
 </li><li> a <a href="implicit_cast.html#Qualification_conversions" title="cpp/language/implicit cast" class="mw-redirect">qualification conversion</a>
@@ -447,8 +447,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
 <ul><li> <code>T</code> is a pointer or a pointer to member <span class="t-rev-inl t-since-cxx14"><span>or a reference to a const pointer</span> <span><span class="t-mark-rev t-since-cxx14">(since C++14)</span></span></span>, while <code>E</code> is <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span>.
 </li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">try</span>
 <span class="br0">{</span>
     f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
@@ -571,39 +576,66 @@ Accessing the 11th element of the vector...
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue98">CWG 98</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/98.html">CWG 98</a>
 </td>
 <td> C++98
 </td>
-<td> a switch statement can transfer control into a try block or into a handler
+<td> a switch statement can transfer control<br>into a try block or into a handler
 </td>
 <td> prohibited
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue210">CWG 210</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/210.html">CWG 210</a>
 </td>
 <td> C++98
 </td>
 <td> the throw expression was matched against the catch clauses
 </td>
 <td> the exception object is matched<br>against the catch clauses
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1166.html">CWG 1166</a>
+</td>
+<td> C++98
+</td>
+<td> the behavior was unspecified when a catch clause whose<br>exception type is a reference to an abstract class type is matched
+</td>
+<td> abstract class types are not<br>allowed for catch clauses
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1769.html">CWG 1769</a>
+</td>
+<td> C++98
+</td>
+<td> when the type of the exception declared in the catch-clause is a<br>base of the type of the exception object, a converting constructor<br>might be used for the initialization of the catch-clause parameter
+</td>
+<td> the parameter is copy-initialized<br>from the corresponding base class<br>subobject of the exception object
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2093.html">CWG 2093</a>
+</td>
+<td> C++98
+</td>
+<td> an exception object of pointer to object type could not match a<br>handler of pointer to object type through qualification conversion
+</td>
+<td> allowed
 </td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3950/1000000
-Preprocessor generated node count: 8706/1000000
-Post‐expand include size: 131274/2097152 bytes
-Template argument size: 21591/2097152 bytes
+Preprocessor visited node count: 4010/1000000
+Preprocessor generated node count: 8961/1000000
+Post‐expand include size: 133300/2097152 bytes
+Template argument size: 22868/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5203-0!*!0!!en!*!* and timestamp 20220118073121 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5203-0!*!0!!en!*!* and timestamp 20220622095405 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/try_catch&amp;oldid=137314">https://en.cppreference.com/mwiki/index.php?title=cpp/language/try_catch&amp;oldid=137314</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/try_catch&amp;oldid=140465">https://en.cppreference.com/mwiki/index.php?title=cpp/language/try_catch&amp;oldid=140465</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -620,10 +652,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/try_catch">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/try_catch">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 17 January 2022, at 23:31.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 824,502 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 22 June 2022, at 02:54.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 891,929 times.</li>
                             </ul>
                     </div>
         </div>
@@ -641,7 +673,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.225 secs. -->
+</script><!-- Served in 0.030 secs. -->
 	</body>
-<!-- Cached 20220118073605 -->
+<!-- Cached 20220622095459 -->
 </html>

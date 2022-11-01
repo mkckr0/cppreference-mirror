@@ -127,15 +127,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../variadic.html" title="c/variadic"> Variadic function support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="c/error"> Error handling</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../memory.html" title="c/memory"> Dynamic memory management</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="c/string"> Strings library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../algorithm.html" title="c/algorithm"> Algorithms</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../numeric.html" title="c/numeric"> Numerics</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="c/io"> Input/output support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../locale.html" title="c/locale"> Localization support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="c/atomic"> Atomic operations</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="c/thread"> Thread support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="c/thread"> Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="c/experimental"> Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../index.html" title="c/symbol index"> Symbol index</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../string.html" title="c/string"> Strings library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="../byte.html" title="c/string/byte"> Byte strings</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../multibyte.html" title="c/string/multibyte"> Multibyte strings</a> </td></tr>
@@ -244,7 +244,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> <code>count</code> is greater or equal <code>destsz</code>, but <code>destsz</code> is less or equal <span class="t-c"><span class="mw-geshi c source-c">wcsnlen_s<span class="br0">(</span>src, count<span class="br0">)</span></span></span>, in other words, truncation would occur
 </li><li> overlap would occur between the source and the destination strings
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>wcsncpy_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant 1 before including <code>wchar.h</code>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>wcsncpy_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;wchar.h&gt;</code>.</dd></dl></div>
 
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -362,15 +362,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5515/1000000
-Preprocessor generated node count: 10338/1000000
-Post‐expand include size: 160538/2097152 bytes
-Template argument size: 31122/2097152 bytes
+Preprocessor visited node count: 5551/1000000
+Preprocessor generated node count: 10462/1000000
+Post‐expand include size: 160501/2097152 bytes
+Template argument size: 31102/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6081-0!*!0!!en!*!* and timestamp 20220114103836 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6081-0!*!0!!en!*!* and timestamp 20220704174244 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -391,10 +391,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/string/wide/wcsncpy">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/c/string/wide/wcsncpy">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 22 October 2021, at 16:07.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 50,814 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 22 October 2021, at 17:07.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 54,795 times.</li>
                             </ul>
                     </div>
         </div>
@@ -412,7 +412,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.682 secs. -->
+</script><!-- Served in 0.834 secs. -->
 	</body>
-<!-- Cached 20220114103836 -->
+<!-- Cached 20220704174244 -->
 </html>

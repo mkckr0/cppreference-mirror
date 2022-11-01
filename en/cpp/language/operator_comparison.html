@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/operator_comparison","wgTitle":"cpp/language/operator comparison","wgCurRevisionId":130939,"wgArticleId":705,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/operator_comparison","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/operator_comparison","wgTitle":"cpp/language/operator comparison","wgCurRevisionId":141461,"wgArticleId":705,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/operator_comparison","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -358,7 +358,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <th rowspan="2"> Operator name
 </th>
-<th rowspan="2"> Syntax
+<th rowspan="2">    Syntax   
 </th>
 <th rowspan="2"> <a href="operators.html" title="cpp/language/operators">Over​load​able</a>
 </th>
@@ -442,9 +442,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="coMULTI">/*see below*/</span> T<span class="sy4">::</span><span class="me2">operator</span> <span class="sy1">&lt;=&gt;</span><span class="br0">(</span><span class="kw4">const</span> T2 <span class="sy3">&amp;</span>b<span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="coMULTI">/*R*/</span> T<span class="sy4">::</span><span class="me2">operator</span> <span class="sy1">&lt;=&gt;</span><span class="br0">(</span><span class="kw4">const</span> T2 <span class="sy3">&amp;</span>b<span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span></span></span>
 </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="coMULTI">/*see below*/</span> operator <span class="sy1">&lt;=&gt;</span><span class="br0">(</span><span class="kw4">const</span> T <span class="sy3">&amp;</span>a, <span class="kw4">const</span> T2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="coMULTI">/*R*/</span> operator <span class="sy1">&lt;=&gt;</span><span class="br0">(</span><span class="kw4">const</span> T <span class="sy3">&amp;</span>a, <span class="kw4">const</span> T2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
 </td></tr>
 <tr>
 <td colspan="5">
@@ -452,6 +452,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </dd></dl>
 <ul><li> Where built-in operators return <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>, most <a href="operators.html" title="cpp/language/operators">user-defined overloads</a> also return <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> so that the user-defined operators can be used in the same manner as the built-ins. However, in a user-defined operator overload, any type can be used as return type (including <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span>).
 </li><li> <code>T2</code> can be any type including <code>T</code>.
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="coMULTI">/*R*/</span></span></span> is the return type of <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="sy1">&lt;=&gt;</span></span></span> (<a href="operator_comparison.html#Three-way_comparison">see below</a>).
 </li></ul>
 </td></tr></table>
 <h3><span class="mw-headline" id="Two-way_comparison">Two-way comparison</span></h3>
@@ -658,7 +659,7 @@ and if <code>T1</code> is the same as or derived from <code>T2</code>, then the 
 <p>The result of equality comparison of two pointers (after conversions) is defined as follows:
 </p>
 <div class="t-li1"><span class="t-li">1)</span> If the pointers are both null pointer values, they <i>compare equal</i></div>
-<div class="t-li1"><span class="t-li">2)</span> If the pointers are pointers to function and point to the same function, then <i>compare equal</i></div>
+<div class="t-li1"><span class="t-li">2)</span> If the pointers are pointers to function and point to the same function, they <i>compare equal</i></div>
 <div class="t-li1"><span class="t-li">3)</span> If the pointers are pointers to object and represent the same address, they <i>compare equal</i> (this includes two pointers to non-static members of the same union, pointers to standard-layout struct and to its first member, pointers related by <a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a>, etc)</div>
 <div class="t-li1"><span class="t-li">4)</span> All other pointers compare unequal</div>
 <p>The result of comparing two pointers to members (after conversions) is defined as follows:
@@ -666,8 +667,34 @@ and if <code>T1</code> is the same as or derived from <code>T2</code>, then the 
 <div class="t-li1"><span class="t-li">1)</span> If both pointers to member are null member pointer values, they <i>compare equal</i>.</div>
 <div class="t-li1"><span class="t-li">2)</span> Otherwise, if only one of two pointers to member is the null member pointer value, they compare unequal.</div>
 <div class="t-li1"><span class="t-li">3)</span> Otherwise, if either is a pointer to a virtual member function, the result is unspecified.</div>
-<div class="t-li1"><span class="t-li">4)</span> Otherwise, two pointers to member compare equal if and only if they would refer to the same member of the same most derived object or the same subobject if they were dereferenced with a hypothetical object of the associated class type.</div>
-<div class="t-li1"><span class="t-li">5)</span> Otherwise they compare unequal.</div>
+<div class="t-li1"><span class="t-li">4)</span> Otherwise, if one refers to a member of class <code>C1</code> and the other refers to a member of a different class <code>C2</code>, where neither is a base class of the other, the result is unspecified.
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> B <span class="sy4">:</span> A <span class="br0">{</span> <span class="kw4">int</span> x<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> C <span class="sy4">:</span> A <span class="br0">{</span> <span class="kw4">int</span> x<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> A<span class="sy4">::</span><span class="sy2">*</span>bx <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">(</span>A<span class="sy4">::</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">)</span> <span class="sy3">&amp;</span>B<span class="sy4">::</span><span class="me2">x</span><span class="sy4">;</span>
+<span class="kw4">int</span> A<span class="sy4">::</span><span class="sy2">*</span>cx <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">(</span>A<span class="sy4">::</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">)</span> <span class="sy3">&amp;</span>C<span class="sy4">::</span><span class="me2">x</span><span class="sy4">;</span>
+ 
+<span class="kw4">bool</span> b1 <span class="sy1">=</span> <span class="br0">(</span>bx <span class="sy1">==</span> cx<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// unspecified</span></pre></div></div></div>
+<div class="t-li1"><span class="t-li">5)</span> Otherwise, if both refer to (possibly different) members of the same union, they compare equal.</div>
+<div class="t-li1"><span class="t-li">6)</span> Otherwise, two pointers to member compare equal if and only if they would refer to the same member of the same most derived object or the same subobject if they were dereferenced with a hypothetical object of the associated class type.</div>
+<div class="t-li1"><span class="t-li">7)</span> Otherwise they compare unequal.
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> B
+<span class="br0">{</span>
+    <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> L <span class="sy4">:</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> R <span class="sy4">:</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> D <span class="sy4">:</span> L, R <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> <span class="br0">(</span>B<span class="sy4">::</span><span class="sy2">*</span>pb<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> <span class="sy3">&amp;</span>B<span class="sy4">::</span><span class="me2">f</span><span class="sy4">;</span>
+<span class="kw4">int</span> <span class="br0">(</span>L<span class="sy4">::</span><span class="sy2">*</span>pl<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> pb<span class="sy4">;</span>
+<span class="kw4">int</span> <span class="br0">(</span>R<span class="sy4">::</span><span class="sy2">*</span>pr<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> pb<span class="sy4">;</span>
+<span class="kw4">int</span> <span class="br0">(</span>D<span class="sy4">::</span><span class="sy2">*</span>pdl<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> pl<span class="sy4">;</span>
+<span class="kw4">int</span> <span class="br0">(</span>D<span class="sy4">::</span><span class="sy2">*</span>pdr<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> pr<span class="sy4">;</span>
+ 
+<span class="kw4">bool</span> x <span class="sy1">=</span> <span class="br0">(</span>pdl <span class="sy1">==</span> pdr<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// false</span>
+<span class="kw4">bool</span> y <span class="sy1">=</span> <span class="br0">(</span>pb <span class="sy1">==</span> pl<span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// true</span></pre></div></div></div>
 <p>If a pointer <code>p</code> <i>compare equal</i> to pointer <code>q</code>, <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="sy1">&lt;=</span>q</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="sy1">&gt;=</span>q</span></span> both yield <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="sy1">&lt;</span>q</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="sy1">&gt;</span>q</span></span> both yield <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>.
 </p><p>If a pointer <code>p</code> <i>compares greater</i> than a pointer <code>q</code>, then <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="sy1">&gt;=</span>q</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="sy1">&gt;</span>q</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">q<span class="sy1">&lt;=</span>p</span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">q<span class="sy1">&lt;</span>p</span></span> all yield <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="sy1">&lt;=</span>q</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="sy1">&lt;</span>q</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">q<span class="sy1">&gt;=</span>p</span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">q<span class="sy1">&gt;</span>p</span></span> all yield <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>.
 </p><p>If two pointers are not specified to compare greater or compare equal, the result of the comparison is unspecified. An unspecified result may be nondeterministic, and need not be consistent even for multiple evaluations of the same expression with the same operands in the same execution of the program:
@@ -765,25 +792,28 @@ and if <code>T1</code> is the same as or derived from <code>T2</code>, then the 
 <h5><span class="mw-headline" id="Example_2">Example</span></h5>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+ 
 <span class="kw1">struct</span> Foo  <span class="br0">{</span> <span class="kw4">int</span> n1<span class="sy4">;</span> <span class="kw4">int</span> n2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">union</span> Union <span class="br0">{</span> <span class="kw4">int</span> n<span class="sy4">;</span> <span class="kw4">double</span> d<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/boolalpha.html"><span class="kw1768">std::<span class="me2">boolalpha</span></span></a><span class="sy4">;</span>
  
     <span class="kw4">char</span> a<span class="br0">[</span><span class="nu0">4</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"abc"</span><span class="sy4">;</span>
- 
     <span class="kw4">char</span><span class="sy2">*</span> p1 <span class="sy1">=</span> <span class="sy3">&amp;</span>a<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="sy4">;</span>
     <span class="kw4">char</span><span class="sy2">*</span> p2 <span class="sy1">=</span> <span class="sy3">&amp;</span>a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Pointers to array elements:<span class="es1">\n</span>"</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">"p1 == p2? "</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>p1 <span class="sy1">==</span> p2<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">"p1 &lt;  p2? "</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>p1 <span class="sy1">&lt;</span>  p2<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+ 
     Foo f<span class="sy4">;</span>
     <span class="kw4">int</span><span class="sy2">*</span> p3 <span class="sy1">=</span> <span class="sy3">&amp;</span>f.<span class="me1">n1</span><span class="sy4">;</span>
     <span class="kw4">int</span><span class="sy2">*</span> p4 <span class="sy1">=</span> <span class="sy3">&amp;</span>f.<span class="me1">n2</span><span class="sy4">;</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Pointers to members of a class:<span class="es1">\n</span>"</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">"p3 == p4? "</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>p3 <span class="sy1">==</span> p4<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">"p3 &lt;  p4? "</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>p3 <span class="sy1">&lt;</span>  p4<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+ 
     Union u<span class="sy4">;</span>
     <span class="kw4">int</span><span class="sy2">*</span> p5 <span class="sy1">=</span> <span class="sy3">&amp;</span>u.<span class="me1">n</span><span class="sy4">;</span>
     <span class="kw4">double</span><span class="sy2">*</span> p6 <span class="sy1">=</span> <span class="sy3">&amp;</span>u.<span class="me1">d</span><span class="sy4">;</span>
@@ -808,8 +838,11 @@ p5 &lt;  (void*)p6? false</pre></div></div>
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="kw4">int</span> a <span class="sy1">=</span> <span class="nu0">3</span>, b <span class="sy1">=</span> <span class="nu0">2</span>, c <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+ 
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/boolalpha.html"><span class="kw1768">std::<span class="me2">boolalpha</span></span></a>
         <span class="sy1">&lt;&lt;</span> <span class="br0">(</span> a <span class="sy1">&lt;</span> b <span class="sy1">&lt;</span> c <span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span> <span class="co1">// true; maybe warning</span>
         <span class="sy1">&lt;&lt;</span> <span class="br0">(</span> <span class="br0">(</span> a <span class="sy1">&lt;</span> b <span class="br0">)</span> <span class="sy1">&lt;</span> c <span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span> <span class="co1">// true</span>
@@ -820,15 +853,16 @@ p5 &lt;  (void*)p6? false</pre></div></div>
 <p>A common requirement for <a href="operators.html#Comparison_operators" title="cpp/language/operators">user-defined operator&lt;</a> is <a href="https://en.wikipedia.org/wiki/Strict_weak_ordering" class="extiw" title="enwiki:Strict weak ordering">strict weak ordering</a>. In particular, this is required by the standard algorithms and containers that work with <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a> types: <span class="t-lc"><a href="../algorithm/sort.html" title="cpp/algorithm/sort">std::sort</a></span>, <span class="t-lc"><a href="../algorithm/max_element.html" title="cpp/algorithm/max element">std::max_element</a></span>, <span class="t-lc"><a href="../container/map.html" title="cpp/container/map">std::map</a></span>, etc.
 </p><p>Although the results of comparing pointers of random origin (e.g. not all pointing to members of the same array) is unspecified, many implementations provide <a href="https://en.wikipedia.org/wiki/Total_order#Strict_total_order" class="extiw" title="enwiki:Total order">strict total ordering</a> of pointers, e.g. if they are implemented as addresses within continuous virtual address space. Those implementations that do not (e.g. where not all bits of the pointer are part of a memory address and have to be ignored for comparison, or an additional calculation is required or otherwise pointer and integer is not a 1 to 1 relationship), provide a specialization of <span class="t-lc"><a href="../utility/functional/less.html" title="cpp/utility/functional/less">std::less</a></span> for pointers that has that guarantee. This makes it possible to use all pointers of random origin as keys in standard associative containers such as <span class="t-lc"><a href="../container/set.html" title="cpp/container/set">std::set</a></span> or <span class="t-lc"><a href="../container/map.html" title="cpp/container/map">std::map</a></span>.
 </p><p>For the types that are both <a href="../named_req/EqualityComparable.html" title="cpp/named req/EqualityComparable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">EqualityComparable</span></a> and <a href="../named_req/LessThanComparable.html" title="cpp/named req/LessThanComparable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LessThanComparable</span></a>, the C++ standard library makes a distinction between <i>equality</i>, which is the value of the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">a <span class="sy1">==</span> b</span></span> and <i>equivalence</i>, which is the value of the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span><span class="br0">(</span>a <span class="sy1">&lt;</span> b<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><span class="br0">(</span>b <span class="sy1">&lt;</span> a<span class="br0">)</span></span></span>.
-</p><p>Comparison between pointers and null pointer constants was removed by the resolution of CWG583 included in <a rel="nofollow" class="external text" href="https://wg21.link/N3624">N3624</a>
+</p><p>Comparison between pointers and null pointer constants was removed by the resolution of <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/583.html">CWG issue 583</a> included in <a rel="nofollow" class="external text" href="https://wg21.link/N3624">N3624</a>
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">char</span> <span class="sy2">*</span> p<span class="br0">)</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> p<span class="br0">)</span>
 <span class="br0">{</span>
-  <span class="kw1">if</span> <span class="br0">(</span>p <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span> <span class="coMULTI">/*...*/</span> <span class="br0">}</span> <span class="co1">// Error with N3624, compiled before N3624</span>
-  <span class="kw1">if</span> <span class="br0">(</span>p <span class="sy1">&gt;</span> nullptr<span class="br0">)</span> <span class="br0">{</span> <span class="coMULTI">/*...*/</span> <span class="br0">}</span> <span class="co1">// Error with N3624, compiled before N3624</span>
+    <span class="kw1">if</span> <span class="br0">(</span>p <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span> <span class="coMULTI">/*...*/</span> <span class="br0">}</span> <span class="co1">// Error with N3624, compiled before N3624</span>
+    <span class="kw1">if</span> <span class="br0">(</span>p <span class="sy1">&gt;</span> nullptr<span class="br0">)</span> <span class="br0">{</span> <span class="coMULTI">/*...*/</span> <span class="br0">}</span> <span class="co1">// Error with N3624, compiled before N3624</span>
 <span class="br0">}</span>
-<span class="kw4">int</span> main<span class="br0">(</span> <span class="br0">)</span><span class="br0">{</span> <span class="br0">}</span></pre></div></div>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></pre></div></div>
 </div>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
@@ -915,8 +949,10 @@ p5 &lt;  (void*)p6? false</pre></div></div>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"-0 is less than 0"</span><span class="sy4">;</span>
     <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>res <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"-0 is greater than 0"</span><span class="sy4">;</span>
-    <span class="kw1">else</span> <span class="co1">// (res == 0)</span>
+    <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>res <span class="sy1">==</span> <span class="nu0">0</span><span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"-0 and 0 are equal"</span><span class="sy4">;</span>
+    <span class="kw1">else</span>
+        <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"-0 and 0 are unordered"</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -927,10 +963,14 @@ p5 &lt;  (void*)p6? false</pre></div></div>
 </p><p>If both of the operands are arrays, three-way comparison is ill-formed.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-<span class="kw4">auto</span> r <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span> <span class="sy1">&lt;</span> i<span class="sy4">;</span> <span class="co1">// existing pitfall: returns ‘false’</span>
+<span class="kw4">auto</span> r <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span> <span class="sy1">&lt;</span> i<span class="sy4">;</span>    <span class="co1">// existing pitfall: returns ‘false’</span>
 <span class="kw4">auto</span> r2 <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span> <span class="sy1">&lt;=&gt;</span> i<span class="sy4">;</span> <span class="co1">// Error: narrowing conversion required</span></pre></div></div>
-<p><br>
-</p>
+<table class="wikitable">
+<tr>
+<td> <a href="../feature_test.html#Library_features" title="cpp/feature test">Feature-test</a> macro:
+</td>
+<td> <a href="../utility/feature_test.html" title="cpp/utility/feature test"><tt>__cpp_lib_three_way_comparison</tt></a>
+</td></tr></table>
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
@@ -1002,7 +1042,7 @@ p5 &lt;  (void*)p6? false</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../memory/scoped_allocator_adaptor/operator_cmp.html" title="cpp/memory/scoped allocator adaptor/operator cmp"> <span class="t-lines"><span>operator==</span><span>operator!=</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-until-cxx20">(removed in C++20)</span></span></span></div></div>
 </td>
-<td>  compares two scoped_allocator_adaptor instances <br> <span class="t-mark">(public member function of <code>std::scoped_allocator_adaptor&lt;OuterAlloc,InnerAlloc...&gt;</code>)</span> </td></tr>
+<td>  compares two scoped_allocator_adaptor instances <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../types/type_index/operator_cmp.html" title="cpp/types/type index/operator cmp"> <span class="t-lines"><span>operator==</span><span>operator!=</span><span>operator&lt;</span><span>operator&lt;=</span><span>operator&gt;</span><span>operator&gt;=</span><span>operator&lt;=&gt;</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-until-cxx20">(removed in C++20)</span></span><span></span><span></span><span></span><span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div>
@@ -1159,7 +1199,7 @@ p5 &lt;  (void*)p6? false</pre></div></div>
 </td>
 <td>   compares two <code>thread::id</code> objects  <br> <span class="t-mark">(function)</span> </td></tr>
 </table>
-<p>The namespace <a href="../utility/rel_ops/operator_cmp.html" title="cpp/utility/rel ops/operator cmp"><tt>std::rel_ops</tt></a> provides generic operators <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span><span class="sy1">=</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;=</span></span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;=</span></span></span>
+<p>The namespace <a href="../utility/rel_ops/operator_cmp.html" title="cpp/utility/rel ops/operator cmp"><tt>std::rel_ops</tt></a> provides generic operators <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span><span class="sy1">=</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;=</span></span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;=</span></span></span>:
 </p>
 <table class="t-dsc-begin">
 
@@ -1190,16 +1230,34 @@ p5 &lt;  (void*)p6? false</pre></div></div>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue583">CWG 583</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/583.html">CWG 583</a>
 </td>
-<td> C++98<br>C++11
+<td> C++98
 </td>
-<td> all six comparison operators could be used to compare a pointer<br>with <code>nullptr</code> (C++11) or another null pointer constant (C++98)
+<td> all six comparison operators could be used to<br>compare a pointer with a null pointer constant
 </td>
 <td> only equality operators allowed
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1512">CWG 1512</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/661.html">CWG 661</a>
+</td>
+<td> C++98
+</td>
+<td> the actual semantics of arithmetic comparisons (e.g.<br>whether 1 &lt; 2 yields <code>true</code> or <code>false</code>) were unspecified
+</td>
+<td> specification added
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/879.html">CWG 879</a>
+</td>
+<td> C++98
+</td>
+<td> pointers to function types and pointers<br>to void did not have built-in comparisons
+</td>
+<td> added comparison specification<br>for these pointers
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1512.html">CWG 1512</a>
 </td>
 <td> C++98
 </td>
@@ -1208,18 +1266,45 @@ p5 &lt;  (void*)p6? false</pre></div></div>
 <td> made complete
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1596">CWG 1596</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1596.html">CWG 1596</a>
 </td>
 <td> C++98
 </td>
 <td> non-array objects were considered to belong to arrays with<br>one element only for the purpose of pointer arithmetic
 </td>
-<td> the rule is also applied to comparison
+<td> the rule is also<br>applied to comparison
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1598.html">CWG 1598</a>
+</td>
+<td> C++98
+</td>
+<td> two pointers to members of classes that are different and<br>neither is the base class of the other did not compare equal<br>even if the offsets of the pointed members can be the same
+</td>
+<td> the result is<br>unspecified<br>in this case
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1858.html">CWG 1858</a>
+</td>
+<td> C++98
+</td>
+<td> it was not clear whether two pointers to members<br>that refer to different members of the same union<br>compare equal as if they refer to the same member
+</td>
+<td> they compare<br>equal in this case
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2419.html">CWG 2419</a>
+</td>
+<td> C++98
+</td>
+<td> a pointer to non-array object was only treated as a<br>pointer to the first element of an array with size 1<br>in pointer comparison if the pointer is obtained by <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span></span></span>
+</td>
+<td> applies to all pointers<br>to non-array objects
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
-<ul><li> <a href="operator_precedence.html" title="cpp/language/operator precedence"> Operator precedence</a>
+<ul><li> <a href="operator_precedence.html" title="cpp/language/operator precedence">Operator precedence</a>
 </li></ul>
-<ul><li> <a href="operators.html" title="cpp/language/operators"> Operator overloading</a>
+<ul><li> <a href="operators.html" title="cpp/language/operators">Operator overloading</a>
 </li></ul>
 <ul><li> <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a> (named requirements)
 </li></ul>
@@ -1338,19 +1423,19 @@ a <span class="sy4">?</span> b <span class="sy4">:</span> c</span></span>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 18317/1000000
-Preprocessor generated node count: 22188/1000000
-Post‐expand include size: 645193/2097152 bytes
-Template argument size: 157201/2097152 bytes
+Preprocessor visited node count: 18549/1000000
+Preprocessor generated node count: 22943/1000000
+Post‐expand include size: 647429/2097152 bytes
+Template argument size: 158692/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:705-0!*!0!!en!*!* and timestamp 20220114093541 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:705-0!*!0!!en!*!* and timestamp 20220728032046 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/operator_comparison&amp;oldid=130939">https://en.cppreference.com/mwiki/index.php?title=cpp/language/operator_comparison&amp;oldid=130939</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/operator_comparison&amp;oldid=141461">https://en.cppreference.com/mwiki/index.php?title=cpp/language/operator_comparison&amp;oldid=141461</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1367,10 +1452,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/operator_comparison">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/operator_comparison">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 29 June 2021, at 05:37.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 782,299 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 27 July 2022, at 20:20.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 856,040 times.</li>
                             </ul>
                     </div>
         </div>
@@ -1388,7 +1473,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 10.967 secs. -->
+</script><!-- Served in 0.044 secs. -->
 	</body>
-<!-- Cached 20220114093541 -->
+<!-- Cached 20220728032901 -->
 </html>

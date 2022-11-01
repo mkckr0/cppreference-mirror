@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/restrict","wgTitle":"c/language/restrict","wgCurRevisionId":133359,"wgArticleId":13816,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/restrict","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/restrict","wgTitle":"c/language/restrict","wgCurRevisionId":140147,"wgArticleId":13816,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/restrict","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -75,27 +75,39 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 /*]]>*/
 </style><style type="text/css">/*<![CDATA[*/
-.source-text {line-height: normal;}
-.source-text li, .source-text pre {
+.source-asm {line-height: normal;}
+.source-asm li, .source-asm pre {
 	line-height: normal; border: 0px none white;
 }
 /**
  * GeSHi Dynamically Generated Stylesheet
  * --------------------------------------
- * Dynamically generated stylesheet for text
- * CSS class: source-text, CSS id: 
+ * Dynamically generated stylesheet for asm
+ * CSS class: source-asm, CSS id: 
  * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
  * (http://qbnz.com/highlighter/ and http://geshi.org/)
  * --------------------------------------
  */
-.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
-.text.source-text  {font-family:monospace;}
-.text.source-text .imp {font-weight: bold; color: red;}
-.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
-.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
-.text.source-text .li2 {font-weight: bold; vertical-align:top;}
-.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
-.text.source-text span.xtra { display:block; }
+.asm.source-asm .de1, .asm.source-asm .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.asm.source-asm  {font-family:monospace;}
+.asm.source-asm .imp {font-weight: bold; color: red;}
+.asm.source-asm li, .asm.source-asm .li1 {font-weight: normal; vertical-align:top;}
+.asm.source-asm .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.asm.source-asm .li2 {font-weight: bold; vertical-align:top;}
+.asm.source-asm .kw1 {color: #00007f; font-weight: bold;}
+.asm.source-asm .kw2 {color: #0000ff; font-weight: bold;}
+.asm.source-asm .kw3 {color: #00007f;}
+.asm.source-asm .kw4 {color: #000000; font-weight: bold;}
+.asm.source-asm .kw5 {color: #000000; font-weight: bold;}
+.asm.source-asm .co1 {color: #666666; font-style: italic;}
+.asm.source-asm .co2 {color: #adadad; font-style: italic;}
+.asm.source-asm .es0 {color: #000099; font-weight: bold;}
+.asm.source-asm .br0 {color: #009900; font-weight: bold;}
+.asm.source-asm .sy0 {color: #339933;}
+.asm.source-asm .st0 {color: #7f007f;}
+.asm.source-asm .nu0 {color: #0000ff;}
+.asm.source-asm .ln-xtra, .asm.source-asm li.ln-xtra, .asm.source-asm div.ln-xtra {background-color: #ffc;}
+.asm.source-asm span.xtra { display:block; }
 
 /*]]>*/
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
@@ -127,15 +139,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../variadic.html" title="c/variadic"> Variadic function support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="c/error"> Error handling</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../memory.html" title="c/memory"> Dynamic memory management</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="c/string"> Strings library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../algorithm.html" title="c/algorithm"> Algorithms</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../numeric.html" title="c/numeric"> Numerics</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="c/io"> Input/output support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../locale.html" title="c/locale"> Localization support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="c/atomic"> Atomic operations</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread"> Thread support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread"> Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental"> Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../index.html" title="c/symbol index"> Symbol index</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../keyword.html" title="c/keyword"> Keywords</a></td></tr>
@@ -279,13 +291,14 @@ Upon entry to f, the restricted pointer a must provide exclusive access to its a
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">float</span> x<span class="br0">[</span><span class="nu0">100</span><span class="br0">]</span><span class="sy4">;</span>
 <span class="kw4">float</span> <span class="sy2">*</span>c<span class="sy4">;</span>
 <span class="co2">#define f3(N, A, B)                                    \
+do                                                     \
 {   int n = (N);                                       \
     float * restrict a = (A);                          \
     float * const    b = (B);                          \
     int i;                                             \
     for ( i=0; i&lt;n; i++ )                              \
         a[i] = b[i] + c[i];                            \
-}</span></pre></div></div>
+} while(0)</span></pre></div></div>
 <h4><span class="mw-headline" id="Struct_members">Struct members</span></h4>
 <p>The scope of the aliasing assertion made by a restrict-qualified pointer that is a member of a struct is the scope of the identifier used to access the struct.
 </p><p>Even if the struct is declared at file scope, when the identifier used to access the struct has block scope, the aliasing assertions in the struct also have block scope; the aliasing assertions are only in effect within a block execution or a function call, depending on how the object of this struct type was created:
@@ -307,7 +320,8 @@ Upon entry to f, the restricted pointer a must provide exclusive access to its a
 <p><a href="../keyword/restrict.html" title="c/keyword/restrict"><tt>restrict</tt></a>
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
-<div class="t-example"><p>code generation example; compile with -S (gcc, clang, etc) or /FA (visual studio)</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<p>code generation example; compile with -S (gcc, clang, etc) or /FA (visual studio)
+</p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> foo<span class="br0">(</span><span class="kw4">int</span> <span class="sy2">*</span>a, <span class="kw4">int</span> <span class="sy2">*</span>b<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="sy2">*</span>a <span class="sy1">=</span> <span class="nu0">5</span><span class="sy4">;</span>
@@ -323,20 +337,19 @@ Upon entry to f, the restricted pointer a must provide exclusive access to its a
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1"># generated code on 64bit Intel platform:
-foo:
-    movl    $5, (%rdi)    # store 5 in *a
-    movl    $6, (%rsi)    # store 6 in *b
-    movl    (%rdi), %eax  # read back from *a in case previous store modified it
-    addl    $6, %eax      # add 6 to the value read from *a
-    ret
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="asm source-asm"><pre class="de1"><span class="co1">; generated code on 64bit Intel platform:</span>
+foo<span class="sy0">:</span>
+    movl    $<span class="nu0">5</span><span class="sy0">,</span> <span class="br0">(</span><span class="sy0">%</span>rdi<span class="br0">)</span>    <span class="co1">; store 5 in *a</span>
+    movl    $<span class="nu0">6</span><span class="sy0">,</span> <span class="br0">(</span><span class="sy0">%</span>rsi<span class="br0">)</span>    <span class="co1">; store 6 in *b</span>
+    movl    <span class="br0">(</span><span class="sy0">%</span>rdi<span class="br0">)</span><span class="sy0">,</span> <span class="sy0">%</span><span class="kw3">eax</span>  <span class="co1">; read back from *a in case previous store modified it</span>
+    addl    $<span class="nu0">6</span><span class="sy0">,</span> <span class="sy0">%</span><span class="kw3">eax</span>      <span class="co1">; add 6 to the value read from *a</span>
+    <span class="kw1">ret</span>
  
-rfoo:
-    movl      $11, %eax   # the result is 11, a compile-time constant
-    movl      $5, (%rdi)  # store 5 in *a
-    movl      $6, (%rsi)  # store 6 in *b
-    ret</pre></div></div> 
-</div>
+rfoo<span class="sy0">:</span>
+    movl      $<span class="nu0">11</span><span class="sy0">,</span> <span class="sy0">%</span><span class="kw3">eax</span>   <span class="co1">; the result is 11, a compile-time constant</span>
+    movl      $<span class="nu0">5</span><span class="sy0">,</span> <span class="br0">(</span><span class="sy0">%</span>rdi<span class="br0">)</span>  <span class="co1">; store 5 in *a</span>
+    movl      $<span class="nu0">6</span><span class="sy0">,</span> <span class="br0">(</span><span class="sy0">%</span>rsi<span class="br0">)</span>  <span class="co1">; store 6 in *b</span>
+    <span class="kw1">ret</span></pre></div></div>
 <h3><span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-17">
 <ul><li> C17 standard (ISO/IEC 9899:2018): 
@@ -362,19 +375,19 @@ rfoo:
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1820/1000000
-Preprocessor generated node count: 5641/1000000
-Post‐expand include size: 45908/2097152 bytes
-Template argument size: 10745/2097152 bytes
+Preprocessor visited node count: 1780/1000000
+Preprocessor generated node count: 5430/1000000
+Post‐expand include size: 44615/2097152 bytes
+Template argument size: 9287/2097152 bytes
 Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13816-0!*!0!!en!*!* and timestamp 20211030034217 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13816-0!*!0!!en!*!* and timestamp 20220609231101 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/restrict&amp;oldid=133359">https://en.cppreference.com/mwiki/index.php?title=c/language/restrict&amp;oldid=133359</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/restrict&amp;oldid=140147">https://en.cppreference.com/mwiki/index.php?title=c/language/restrict&amp;oldid=140147</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -391,10 +404,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/restrict">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/c/language/restrict">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 4 September 2021, at 16:01.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 168,517 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 9 June 2022, at 16:11.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 191,577 times.</li>
                             </ul>
                     </div>
         </div>
@@ -412,7 +425,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.543 secs. -->
+</script><!-- Served in 0.039 secs. -->
 	</body>
-<!-- Cached 20211030034217 -->
+<!-- Cached 20220610000530 -->
 </html>

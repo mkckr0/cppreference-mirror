@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/upper_bound","wgTitle":"cpp/algorithm/upper bound","wgCurRevisionId":130926,"wgArticleId":792,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/upper_bound","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/upper_bound","wgTitle":"cpp/algorithm/upper bound","wgCurRevisionId":140237,"wgArticleId":792,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/upper_bound","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,14 +141,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../algorithm.html" title="cpp/algorithm"> Algorithm library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> <a href="ranges.html" title="cpp/algorithm/ranges">Constrained algorithms and algorithms on ranges</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <span class="t-lc">std::ranges::copy</span>, <span class="t-lc">std::ranges::sort</span>, ... </td></tr>
+<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <a href="ranges/copy.html" title="cpp/algorithm/ranges/copy"><tt>ranges::copy</tt></a>, <a href="ranges/sort.html" title="cpp/algorithm/ranges/sort"><tt>ranges::sort</tt></a>, ... </td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="../algorithm.html#Execution_policies" title="cpp/algorithm">Execution policies <span class="t-mark-rev t-since-cxx17">(C++17)</span></a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="is_execution_policy.html" title="cpp/algorithm/is execution policy"><span class="t-lines"><span>is_execution_policy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span>  </span></span></div></div></td></tr>
@@ -400,7 +400,7 @@ ForwardIt upper_bound<span class="br0">(</span> ForwardIt first, ForwardIt last,
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Returns an iterator pointing to the first element in the range <code>[first, last)</code> that is <i>greater</i> than <code>value</code>, or <code>last</code> if no such element is found.
+<p>Returns an iterator pointing to the first element in the range <code>[first, last)</code> such that <span class="t-c"><span class="mw-geshi cpp source-cpp">value <span class="sy1">&lt;</span> element</span></span> (or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp<span class="br0">(</span>value, element<span class="br0">)</span></span></span>) is true (i.e. strictly greater), or <code>last</code> if no such element is found.
 </p><p>The range <code>[first, last)</code> must be partitioned with respect to the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span><span class="br0">(</span>value <span class="sy1">&lt;</span> element<span class="br0">)</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span>comp<span class="br0">(</span>value, element<span class="br0">)</span></span></span>, i.e., all elements for which the expression is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> must precede all elements for which the expression is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>.  A fully-sorted range meets this criterion.
 </p><p>The first version uses <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">&lt;</span></span></span> to compare the elements, the second version uses the given comparison function <code>comp</code>.
 </p>
@@ -413,7 +413,7 @@ ForwardIt upper_bound<span class="br0">(</span> ForwardIt first, ForwardIt last,
 </td>
 <td> -
 </td>
-<td>  the range of elements to examine
+<td>  iterators defining the partially-ordered range to examine
 </td></tr>
 <tr class="t-par">
 <td>  value
@@ -445,7 +445,7 @@ The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></s
 <td colspan="3"> -<div class="spacer"></div><code>Compare</code> must meet the requirements of <a href="../named_req/BinaryPredicate.html" title="cpp/named req/BinaryPredicate"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">BinaryPredicate</span></a>. it is not required to satisfy <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p>iterator pointing to the first element that is <i>greater</i> than <code>value</code>, or <code>last</code> if no such element is found.
+<p>Iterator pointing to the first element in the range <code>[first, last)</code> such that <span class="t-c"><span class="mw-geshi cpp source-cpp">value <span class="sy1">&lt;</span> element</span></span> (or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp<span class="br0">(</span>value, element<span class="br0">)</span></span></span>) is true, or <code>last</code> if no such element is found.
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
 <p>The number of comparisons performed is logarithmic in the distance between <code>first</code> and <code>last</code> (At most <span class="texhtml" style="white-space: nowrap;">log<span class="t-su t-su-b"><br>2</span>(last - first) + O(1)</span> comparisons). However, for non-<a href="../named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span>s</a>, the number of iterator increments is linear. Notably, <span class="t-lc"><a href="../container/set.html" title="cpp/container/set">std::set</a></span> and <span class="t-lc"><a href="../container/multiset.html" title="cpp/container/multiset">std::multiset</a></span> iterators are not random access, and so their member functions <span class="t-lc"><a href="../container/set/upper_bound.html" title="cpp/container/set/upper bound">std::set::upper_bound</a></span> (resp. <span class="t-lc"><a href="../container/multiset/upper_bound.html" title="cpp/container/multiset/upper bound">std::multiset::upper_bound</a></span>) should be preferred.
@@ -618,19 +618,19 @@ ForwardIt upper_bound<span class="br0">(</span>ForwardIt first, ForwardIt last, 
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10798/1000000
-Preprocessor generated node count: 15167/1000000
-Post‐expand include size: 318795/2097152 bytes
-Template argument size: 63502/2097152 bytes
+Preprocessor visited node count: 10940/1000000
+Preprocessor generated node count: 15405/1000000
+Post‐expand include size: 319750/2097152 bytes
+Template argument size: 63953/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:792-0!*!0!!en!*!* and timestamp 20220114093827 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:792-0!*!0!!en!*!* and timestamp 20220613163652 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/upper_bound&amp;oldid=130926">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/upper_bound&amp;oldid=130926</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/upper_bound&amp;oldid=140237">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/upper_bound&amp;oldid=140237</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -647,10 +647,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/upper_bound">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/upper_bound">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 29 June 2021, at 03:35.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 373,395 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 13 June 2022, at 09:36.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 410,618 times.</li>
                             </ul>
                     </div>
         </div>
@@ -668,7 +668,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.988 secs. -->
+</script><!-- Served in 0.046 secs. -->
 	</body>
-<!-- Cached 20220114093827 -->
+<!-- Cached 20220613165656 -->
 </html>

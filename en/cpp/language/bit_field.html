@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/bit_field","wgTitle":"cpp/language/bit field","wgCurRevisionId":137561,"wgArticleId":9905,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/bit_field","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/bit_field","wgTitle":"cpp/language/bit field","wgCurRevisionId":140707,"wgArticleId":9905,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/bit_field","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -383,21 +383,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> -
 </td>
-<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> optional sequence of any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> sequence of any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">identifier</span>
 </td>
 <td> -
 </td>
-<td> the name of the bit-field that is being declared. The name is optional: nameless bitfields introduce the specified number of bits of padding
+<td> the name of the bit-field that is being declared. The name is optional: unnamed bit-fields introduce the specified number of <a href="objects.html#Object_representation_and_value_representation" title="cpp/language/object">padding bits</a>.
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">size</span>
 </td>
 <td> -
 </td>
-<td> an <a href="constant_expression.html#Integral_constant_expression" title="cpp/language/constant expression">integral constant expression</a> with a value greater or equal to zero. When greater than zero, this is the number of bits that this bit-field will occupy. The value zero is only allowed for nameless bitfields and has special meaning: it specifies that the next bit-field in the class definition will begin at an allocation unit's boundary.
+<td> an <a href="constant_expression.html#Integral_constant_expression" title="cpp/language/constant expression">integral constant expression</a> with a value greater or equal to zero. When greater than zero, this is the number of bits that this bit-field will occupy. The value zero is only allowed for nameless bitfields and has <a href="bitfield.html#zero_size">special meaning</a>.
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">brace-or-equal-initializer</span>
@@ -407,7 +407,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> <a href="data_members.html#Member_initialization" title="cpp/language/data members">default member initializer</a> to be used with this bit-field
 </td></tr></table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>The type of a bit-field can only be integral or enumeration type.
+<p>The type of a bit-field can only be integral or (possibly cv-qualified) enumeration type, an unnamed bit-field cannot be declared with a cv-qualified type.
 </p><p>A bit-field cannot be a <a href="static.html" title="cpp/language/static">static data member</a>.
 </p><p>There are no bit-field <a href="value_category.html" title="cpp/language/value category">prvalues</a>: lvalue-to-rvalue conversion always produces an object of the underlying type of the bit-field.
 </p><p>The number of bits in a bit-field sets the limit to the range of values it can hold:
@@ -417,8 +417,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw1">struct</span> S
 <span class="br0">{</span>
-     <span class="co1">// three-bit unsigned field, allowed values are 0...7</span>
-     <span class="kw4">unsigned</span> <span class="kw4">int</span> b <span class="sy4">:</span> <span class="nu0">3</span><span class="sy4">;</span>
+    <span class="co1">// three-bit unsigned field, allowed values are 0...7</span>
+    <span class="kw4">unsigned</span> <span class="kw4">int</span> b <span class="sy4">:</span> <span class="nu0">3</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
@@ -460,7 +460,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">2</pre></div></div> 
 </div>
-<p>The special unnamed bit-field of size zero can be forced to break up padding. It specifies that the next bit-field begins at the beginning of its allocation unit:
+<p><span id="zero_size"></span>
+The special unnamed bit-field of size zero can be forced to break up padding. It specifies that the next bit-field begins at the beginning of its allocation unit:
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
@@ -486,7 +487,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">2</pre></div></div> 
 </div>
-<p>If the specified size of the bit-field is greater than the size of its type, the value is limited by the type: a <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/integer.html"><span class="kw126">std::<span class="me2">uint8_t</span></span></a> b <span class="sy4">:</span> <span class="nu0">1000</span><span class="sy4">;</span></span></span> would still hold values between 0 and 255. the extra bits become unused padding.
+<p>If the specified size of the bit-field is greater than the size of its type, the value is limited by the type: a <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/integer.html"><span class="kw126">std::<span class="me2">uint8_t</span></span></a> b <span class="sy4">:</span> <span class="nu0">1000</span><span class="sy4">;</span></span></span> would still hold values between 0 and 255. the extra bits are <a href="objects.html#Object_representation_and_value_representation" title="cpp/language/object">padding bits</a>.
 </p><p>Because bit-fields do not necessarily begin at the beginning of a byte, address of a bit-field cannot be taken. Pointers and non-const references to bit-fields are not possible. When <a href="reference_initialization.html" title="cpp/language/reference initialization">initializing a const reference</a> from a bit-field, a temporary is created (its type is the type of the bit-field), copy initialized with the value of the bit-field, and the reference is bound to that temporary.
 </p>
  <table class="t-rev-begin">
@@ -543,7 +544,7 @@ In case of ambiguity between the size of the bit-field and the default member in
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue324">CWG 324</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/324.html">CWG 324</a>
 </td>
 <td> C++98
 </td>
@@ -552,13 +553,31 @@ In case of ambiguity between the size of the bit-field and the default member in
 <td> added bit-field specifications for<br>operators which may return lvalues
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue739">CWG 739</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/739.html">CWG 739</a>
 </td>
 <td> C++98
 </td>
-<td> signedness of bit-fields that aren't <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span></span></span><br>or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span></span></span> were implementation-defined
+<td> signedness of bit-fields that are neither declared<br><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span></span></span> nor <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span></span></span> were implementation-defined
 </td>
 <td> consistent with underlying types
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2229.html">CWG 2229</a>
+</td>
+<td> C++98
+</td>
+<td> unnamed bit-fields could be declared with a cv-qualified type
+</td>
+<td> prohibited
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2511.html">CWG 2511</a>
+</td>
+<td> C++98
+</td>
+<td> cv-qualifications were not allowed in bit-field types
+</td>
+<td> bit-fields can have cv-qualified<br>enumeration types
 </td></tr></table>
 <h3><span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-c++20">
@@ -627,19 +646,19 @@ In case of ambiguity between the size of the bit-field and the default member in
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3654/1000000
-Preprocessor generated node count: 9989/1000000
-Post‐expand include size: 152545/2097152 bytes
-Template argument size: 22964/2097152 bytes
+Preprocessor visited node count: 3798/1000000
+Preprocessor generated node count: 10247/1000000
+Post‐expand include size: 154184/2097152 bytes
+Template argument size: 23804/2097152 bytes
 Highest expansion depth: 22/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9905-0!*!0!!en!*!* and timestamp 20220127093802 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9905-0!*!0!!en!*!* and timestamp 20220629073819 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/bit_field&amp;oldid=137561">https://en.cppreference.com/mwiki/index.php?title=cpp/language/bit_field&amp;oldid=137561</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/bit_field&amp;oldid=140707">https://en.cppreference.com/mwiki/index.php?title=cpp/language/bit_field&amp;oldid=140707</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -656,10 +675,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/bit_field">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/bit_field">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 27 January 2022, at 01:38.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 553,709 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 29 June 2022, at 00:38.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 601,373 times.</li>
                             </ul>
                     </div>
         </div>
@@ -677,7 +696,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.036 secs. -->
+</script><!-- Served in 0.039 secs. -->
 	</body>
-<!-- Cached 20220127094043 -->
+<!-- Cached 20220629074338 -->
 </html>

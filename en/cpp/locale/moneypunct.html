@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -237,7 +237,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The facet <span class="t-lc"><strong class="selflink">std::moneypunct</strong></span> encapsulates monetary value format preferences. Stream I/O manipulators <span class="t-lc"><a href="../io/manip/get_money.html" title="cpp/io/manip/get money">std::get_money</a></span> and <span class="t-lc"><a href="../io/manip/put_money.html" title="cpp/io/manip/put money">std::put_money</a></span> use <span class="t-lc"><strong class="selflink">std::moneypunct</strong></span> through <span class="t-lc"><a href="money_get.html" title="cpp/locale/money get">std::money_get</a></span> and <span class="t-lc"><a href="money_put.html" title="cpp/locale/money put">std::money_put</a></span> for parsing monetary value input and formatting monetary value output. 
 </p>
 <div class="t-inheritance-diagram">
-<div class="center"><div class="noresize"><map name="ImageMap_1_200219535"><area href="money_base.html" shape="rect" coords="5,4,107,36" alt="cpp/locale/money base" title="cpp/locale/money base"><area href="locale/facet.html" shape="rect" coords="5,52,107,85" alt="cpp/locale/locale/facet" title="cpp/locale/locale/facet"></map><img alt="std-moneypunct-inheritance.svg" src="../../../common/images/e/e7/std-moneypunct-inheritance.svg" width="302" height="88" usemap="#ImageMap_1_200219535"></div></div>
+<div class="center"><div class="noresize"><map name="ImageMap_1_1117881016"><area href="money_base.html" shape="rect" coords="5,4,107,36" alt="cpp/locale/money base" title="cpp/locale/money base"><area href="locale/facet.html" shape="rect" coords="5,52,107,85" alt="cpp/locale/locale/facet" title="cpp/locale/locale/facet"></map><img alt="std-moneypunct-inheritance.svg" src="../../../common/images/e/e7/std-moneypunct-inheritance.svg" width="302" height="88" usemap="#ImageMap_1_1117881016"></div></div>
 <div style="text-align:center;">
 <p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
 </p>
@@ -517,13 +517,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 NewPP limit report
 Preprocessor visited node count: 8271/1000000
 Preprocessor generated node count: 12310/1000000
-Post‐expand include size: 238242/2097152 bytes
-Template argument size: 43704/2097152 bytes
+Post‐expand include size: 238248/2097152 bytes
+Template argument size: 43705/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3608-0!*!0!!en!2!* and timestamp 20220114110728 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3608-0!*!0!!en!2!* and timestamp 20220410103658 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -544,10 +544,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/moneypunct">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/moneypunct">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 29 July 2015, at 05:22.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 26,593 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 29 July 2015, at 06:22.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 27,881 times.</li>
                             </ul>
                     </div>
         </div>
@@ -565,7 +565,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.439 secs. -->
+</script><!-- Served in 1.330 secs. -->
 	</body>
-<!-- Cached 20220114110728 -->
+<!-- Cached 20220410103658 -->
 </html>

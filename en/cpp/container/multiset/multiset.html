@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -213,32 +213,34 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv-h1"><td colspan="5"> <a href="deduction_guides.html" title="cpp/container/multiset/deduction guides">Deduction guides</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl">
-<td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span><br>
-<p><span class="kw1">explicit</span> multiset<span class="br0">(</span> <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp, <br>
-</p>
-                   <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
+<td class="t-dcl-nopad">  </td>
+</tr>
+<tr class="t-dcl">
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> multiset<span class="br0">(</span> <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp, <br>
+                   <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (2) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">explicit</span> multiset<span class="br0">(</span> <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (1) </td>
+<td> (3) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
 </tbody>
-<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
-<td></td>
-<td rowspan="142">(2)</td>
-<td></td>
-</tr>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx98">
-<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt <span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt <span class="sy1">&gt;</span><br>
 <p>multiset<span class="br0">(</span> InputIt first, InputIt last,<br>
           <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> Compare<span class="br0">(</span><span class="br0">)</span>,<br>
 </p>
           <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> (4) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx14">
@@ -246,48 +248,50 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>multiset<span class="br0">(</span> InputIt first, InputIt last,<br>
 </p>
           <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> (5) </td>
 <td> <span class="t-mark-rev t-since-cxx14">(since C++14)</span> </td>
 </tr>
 </tbody><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx98">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <span class="kw4">const</span> multiset<span class="sy3">&amp;</span> other <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> (6) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <span class="kw4">const</span> multiset<span class="sy3">&amp;</span> other, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> (7) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
+</tbody>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> multiset<span class="sy3">&amp;&amp;</span> other <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (4) </td>
+<td> (8) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> multiset<span class="sy3">&amp;&amp;</span> other, <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td> (4) </td>
+<td> (9) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
 </tbody>
-<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
-<td></td>
-<td rowspan="142">(5)</td>
-<td></td>
-</tr>
+<tbody class="t-dcl-rev">
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw961">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
 <p>          <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp <span class="sy1">=</span> Compare<span class="br0">(</span><span class="br0">)</span>,<br>
 </p>
           <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> alloc <span class="sy1">=</span> Allocator<span class="br0">(</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> (10) </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx14">
 <td> <div><span class="mw-geshi cpp source-cpp">multiset<span class="br0">(</span> <a href="../../utility/initializer_list.html"><span class="kw961">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>value_type<span class="sy1">&gt;</span> init,<br>
           <span class="kw4">const</span> Allocator<span class="sy3">&amp;</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
+<td> (11) </td>
 <td> <span class="t-mark-rev t-since-cxx14">(since C++14)</span> </td>
 </tr>
 </tbody><tbody>
@@ -295,9 +299,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody></table>
 <p>Constructs new container from a variety of data sources and optionally using user supplied allocator <code>alloc</code> or comparison function object <code>comp</code>.
 </p>
-<div class="t-li1"><span class="t-li">1)</span> Constructs an empty container.</div>
-<div class="t-li1"><span class="t-li">2)</span> Constructs the container with the contents of the range <code>[first, last)</code>. </div>
-<div class="t-li1"><span class="t-li">3)</span> Copy constructor. Constructs the container with the copy of the contents of <code>other</code>.
+<div class="t-li1"><span class="t-li">1-3)</span> Constructs an empty container.</div>
+<div class="t-li1"><span class="t-li">4-5)</span> Constructs the container with the contents of the range <code>[first, last)</code>. </div>
+<div class="t-li1"><span class="t-li">6-7)</span> Copy constructor. Constructs the container with the copy of the contents of <code>other</code>.
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
 <p>If <code>alloc</code> is not provided, allocator is obtained by calling <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../memory/allocator_traits.html"><span class="kw702">std::<span class="me2">allocator_traits</span></span></a><span class="sy1">&lt;</span>allocator_type<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">select_on_container_copy_construction</span><span class="br0">(</span><br>
@@ -311,7 +315,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
 </table></div>
-<div class="t-li1"><span class="t-li">4)</span> Move constructor. Constructs the container with the contents of <code>other</code> using move semantics. If <code>alloc</code> is not provided, allocator is obtained by move-construction from the allocator belonging to <code>other</code>.
+<div class="t-li1"><span class="t-li">8-9)</span> Move constructor. Constructs the container with the contents of <code>other</code> using move semantics. If <code>alloc</code> is not provided, allocator is obtained by move-construction from the allocator belonging to <code>other</code>.
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx23"><td>
 <p>The template parameter <code>Allocator</code> is only deduced from the first argument while used in <a href="../../language/deduction_guide.html" title="cpp/language/class template argument deduction">class template argument deduction</a>.
@@ -319,7 +323,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
 </table></div>
-<div class="t-li1"><span class="t-li">5)</span> Constructs the container with the contents of the initializer list <code>init</code>. </div>
+<div class="t-li1"><span class="t-li">10-11)</span> Constructs the container with the contents of the initializer list <code>init</code>. </div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
@@ -372,16 +376,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="3"> -<div class="spacer"></div><code>Allocator</code> must meet the requirements of <a href="../../named_req/Allocator.html" title="cpp/named req/Allocator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Allocator</span></a>.
 </td></tr></table>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> Constant</div>
-<div class="t-li1"><span class="t-li">2)</span> <span class="texhtml" style="white-space: nowrap;">N log(N)</span> where <span class="t-c"><span class="mw-geshi cpp source-cpp">N <span class="sy1">=</span> <a href="../../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span></span></span> in general, linear in <code>N</code> if the range is already sorted by <code>value_comp()</code>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Linear in size of <code>other</code></div>
-<div class="t-li1"><span class="t-li">4)</span> Constant. If <code>alloc</code> is given and <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>, then linear.</div>
-<div class="t-li1"><span class="t-li">5)</span> <span class="texhtml" style="white-space: nowrap;">N log(N)</span> where <span class="t-c"><span class="mw-geshi cpp source-cpp">N <span class="sy1">=</span> init.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span> in general, linear in <code>N</code> if <code>init</code> is already sorted by <code>value_comp()</code>.</div>
+<div class="t-li1"><span class="t-li">1-3)</span> Constant</div>
+<div class="t-li1"><span class="t-li">4-5)</span> <span class="texhtml" style="white-space: nowrap;">N log(N)</span> where <span class="t-c"><span class="mw-geshi cpp source-cpp">N <span class="sy1">=</span> <a href="../../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span></span></span> in general, linear in <code>N</code> if the range is already sorted by <code>value_comp()</code>.</div>
+<div class="t-li1"><span class="t-li">6-7)</span> Linear in size of <code>other</code></div>
+<div class="t-li1"><span class="t-li">8-9)</span> Constant. If <code>alloc</code> is given and <span class="t-c"><span class="mw-geshi cpp source-cpp">alloc <span class="sy3">!</span><span class="sy1">=</span> other.<span class="me1">get_allocator</span><span class="br0">(</span><span class="br0">)</span></span></span>, then linear.</div>
+<div class="t-li1"><span class="t-li">10-11)</span> <span class="texhtml" style="white-space: nowrap;">N log(N)</span> where <span class="t-c"><span class="mw-geshi cpp source-cpp">N <span class="sy1">=</span> init.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span> in general, linear in <code>N</code> if <code>init</code> is already sorted by <code>value_comp()</code>.</div>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
 <p>Calls to <code>Allocator::allocate</code> may throw.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>After container move construction (overload <span class="t-v">(4)</span>), references, pointers, and iterators (other than the end iterator) to <code>other</code> remain valid, but refer to elements that are now in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The current standard makes this guarantee via the blanket statement in <a rel="nofollow" class="external text" href="https://eel.is/c++draft/container.requirements.general#12">[container.requirements.general]/12</a>, and a more direct guarantee is under consideration via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2321">LWG 2321</a>.
+<p>After container move construction (overload <span class="t-v">(8-9)</span>), references, pointers, and iterators (other than the end iterator) to <code>other</code> remain valid, but refer to elements that are now in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The current standard makes this guarantee via the blanket statement in <a rel="nofollow" class="external text" href="https://eel.is/c++draft/container.requirements.general#12">[container.requirements.general]/12</a>, and a more direct guarantee is under consideration via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2321">LWG 2321</a>.
 </p><p>Although not formally required until C++23, some implementations has already put the template parameter <code>Allocator</code> into <a href="../../language/template_argument_deduction.html#Non-deduced_contexts" title="cpp/language/template argument deduction">non-deduced contexts</a> in earlier modes.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
@@ -408,19 +412,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 	a.<span class="me1">insert</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
 	print<span class="br0">(</span><span class="st0">"a"</span>, a<span class="br0">)</span><span class="sy4">;</span>
  
-	<span class="co1">// (2) Iterator constructor</span>
+	<span class="co1">// (4) Iterator constructor</span>
 	<a href="../multiset.html"><span class="kw1282">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> b<span class="br0">(</span>a.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, a.<span class="me1">find</span><span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 	print<span class="br0">(</span><span class="st0">"b"</span>, b<span class="br0">)</span><span class="sy4">;</span>
  
-	<span class="co1">// (3) Copy constructor</span>
+	<span class="co1">// (6) Copy constructor</span>
 	<a href="../multiset.html"><span class="kw1282">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> c<span class="br0">(</span>a<span class="br0">)</span><span class="sy4">;</span>
 	print<span class="br0">(</span><span class="st0">"c"</span>, c<span class="br0">)</span><span class="sy4">;</span>
  
-	<span class="co1">// (4) Move constructor</span>
+	<span class="co1">// (8) Move constructor</span>
 	<a href="../multiset.html"><span class="kw1282">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> d<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>a<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 	print<span class="br0">(</span><span class="st0">"d"</span>, d<span class="br0">)</span><span class="sy4">;</span>
  
-	<span class="co1">// (5) Initializer list constructor</span>
+	<span class="co1">// (10) Initializer list constructor</span>
 	<a href="../multiset.html"><span class="kw1282">std::<span class="me2">multiset</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> e <span class="br0">{</span><span class="nu0">3</span>,<span class="nu0">2</span>,<span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">4</span>,<span class="nu0">7</span>,<span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span>
 	print<span class="br0">(</span><span class="st0">"e"</span>, e<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
@@ -465,15 +469,15 @@ e: 1 2 2 3 3 4 7</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6602/1000000
-Preprocessor generated node count: 12906/1000000
-Post‐expand include size: 213635/2097152 bytes
-Template argument size: 30663/2097152 bytes
+Preprocessor visited node count: 6706/1000000
+Preprocessor generated node count: 12955/1000000
+Post‐expand include size: 213659/2097152 bytes
+Template argument size: 30689/2097152 bytes
 Highest expansion depth: 23/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1026-0!*!0!!en!*!* and timestamp 20211128143808 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1026-0!*!0!!en!*!* and timestamp 20220725155023 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -494,10 +498,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/container/multiset/multiset">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/multiset/multiset">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 28 November 2021, at 06:38.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 31,483 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 28 November 2021, at 07:38.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 35,709 times.</li>
                             </ul>
                     </div>
         </div>
@@ -515,7 +519,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.035 secs. -->
+</script><!-- Served in 2.266 secs. -->
 	</body>
-<!-- Cached 20211128144621 -->
+<!-- Cached 20220725155023 -->
 </html>

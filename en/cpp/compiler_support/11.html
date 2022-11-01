@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -334,7 +334,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td></tr>
 <tr>
-<td> Compiler support for <a href="../types.html#Type_traits_.28since_C.2B.2B11.29" title="cpp/types">type traits</a>
+<td> Compiler support for <a href="../meta.html#Type_traits" title="cpp/meta">type traits</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/N1836">N1836</a><br><span title="obsolete and not completely correct though, it shows the common fact the mainstream compilers have"><a rel="nofollow" class="external text" href="https://wg21.link/N2518">N2518</a>*</span><br><a rel="nofollow" class="external text" href="https://wg21.link/N2984">N2984</a><br><a rel="nofollow" class="external text" href="https://wg21.link/N3142">N3142</a>
 </td>
@@ -697,7 +697,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="../atomic.html" title="cpp/atomic">Atomic operations</a>
+<td> <a href="../thread.html#Atomic_operations" title="cpp/thread">Atomic operations</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/N2427">N2427</a>
 </td>
@@ -1392,7 +1392,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td> <a href="../language/reference.html#Rvalue_references" title="cpp/language/reference">Rvalue references</a>
 </td>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/N2118">N2118</a><br><a rel="nofollow" class="external text" href="https://wg21.link/N2844">N2844</a><br><a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1138">CWG1138</a>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/N2118">N2118</a><br><a rel="nofollow" class="external text" href="https://wg21.link/N2844">N2844</a><br><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1138.html">CWG1138</a>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">4.3 (N2118)<br>4.5
 </td>
@@ -1678,7 +1678,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <th>
 </th></tr>
 <tr>
-<td> <a href="../types.html#Type_traits_.28since_C.2B.2B11.29" title="cpp/types">Type traits</a>
+<td> <a href="../meta.html#Type_traits" title="cpp/meta">Type traits</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/N1836">N1836</a><br><a rel="nofollow" class="external text" href="https://wg21.link/N2240">N2240</a><br><a rel="nofollow" class="external text" href="https://wg21.link/N2244">N2244</a><br><a rel="nofollow" class="external text" href="https://wg21.link/N2255">N2255</a><br><a rel="nofollow" class="external text" href="https://wg21.link/N2342">N2342</a><br><a rel="nofollow" class="external text" href="https://wg21.link/N2984">N2984</a><br><a rel="nofollow" class="external text" href="https://wg21.link/N3142">N3142</a>
 </td>
@@ -1753,6 +1753,25 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
+<tr>
+<td> <a href="../regex.html" title="cpp/regex">Regular expressions library</a>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/N1429">N1429</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">4.9
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">?
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">?
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++11 feature<br> 
 </th>
@@ -1775,15 +1794,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 16034/1000000
-Preprocessor generated node count: 15374/1000000
-Post‐expand include size: 397433/2097152 bytes
-Template argument size: 171964/2097152 bytes
-Highest expansion depth: 16/40
+Preprocessor visited node count: 16559/1000000
+Preprocessor generated node count: 15468/1000000
+Post‐expand include size: 400827/2097152 bytes
+Template argument size: 173226/2097152 bytes
+Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19808-0!*!0!!*!*!* and timestamp 20220115173845 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19808-0!*!0!!*!*!* and timestamp 20220630222733 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -1804,10 +1823,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/compiler_support/11">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/compiler_support/11">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 11 August 2020, at 01:03.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 17,073 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 11 August 2020, at 02:03.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 24,544 times.</li>
                             </ul>
                     </div>
         </div>
@@ -1825,7 +1844,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.033 secs. -->
+</script><!-- Served in 1.690 secs. -->
 	</body>
-<!-- Cached 20220115183110 -->
+<!-- Cached 20220630222734 -->
 </html>

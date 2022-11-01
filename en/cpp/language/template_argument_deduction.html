@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/template_argument_deduction","wgTitle":"cpp/language/template argument deduction","wgCurRevisionId":137557,"wgArticleId":13515,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason","Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/template_argument_deduction","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/template_argument_deduction","wgTitle":"cpp/language/template argument deduction","wgCurRevisionId":140127,"wgArticleId":13515,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason","Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/template_argument_deduction","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -294,6 +294,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5">   <a href="fold.html" title="cpp/language/fold"> Fold-expressions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="sfinae.html" title="cpp/language/sfinae"> SFINAE</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="constraints.html" title="cpp/language/constraints"> Constraints and concepts</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="requires.html" title="cpp/language/requires"> Requires expression</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>In order to instantiate a <a href="function_template.html" title="cpp/language/function template">function template</a>, every template argument must be known, but not every template argument has to be specified. When possible, the compiler will deduce the missing template arguments from the function arguments. This occurs when a function call is attempted, when an address of a function template is taken, and in some <a href="template_argument_deduction.html#Other_contexts">other contexts</a>:
@@ -446,7 +447,7 @@ f<span class="br0">(</span>c<span class="br0">)</span><span class="sy4">;</span>
 <span class="co1">//  int n3 = g(i); // error: deduces to g&lt;int&gt;(const int&amp;&amp;), which</span>
                    <span class="co1">// cannot bind an rvalue reference to an lvalue</span>
 <span class="br0">}</span></pre></div></div></div>
-<p>After these transformations, the deduction processes as described below (cf. section "Deduction from a type") and attempts to find such template arguments that would make the deduced <code><b>A</b></code> (that is, <code><b>P</b></code> after adjustments listed above and the substitution of the deduced template parameters) identical to the <i>transformed</i> <code><b>A</b></code>, that is <code><b>A</b></code> after the adjustments listed above.
+<p>After these transformations, the deduction processes as described below (cf. section <a href="template_argument_deduction.html#Deduction_from_a_type">Deduction from a type</a>) and attempts to find such template arguments that would make the deduced <code><b>A</b></code> (that is, <code><b>P</b></code> after adjustments listed above and the substitution of the deduced template parameters) identical to the <i>transformed</i> <code><b>A</b></code>, that is <code><b>A</b></code> after the adjustments listed above.
 </p><p>If the usual deduction from <code><b>P</b></code> and <code><b>A</b></code> fails, the following alternatives are additionally considered: 
 </p>
 <div class="t-li1"><span class="t-li">1)</span> If <code><b>P</b></code> is a reference type, the deduced <code><b>A</b></code> (i.e., the type referred to by the reference) can be more cv-qualified than the transformed <code><b>A</b></code>:
@@ -766,7 +767,7 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
  
 A<span class="sy1">&lt;</span>B<span class="sy1">&gt;</span> ab<span class="sy4">;</span>
 f<span class="br0">(</span>ab<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// P = A&lt;TT&gt;, A = A&lt;B&gt;: deduced TT = B, calls f(A&lt;B&gt;)</span></pre></div></div>
-<p>Notes: As <a href="noexcept_spec.html" title="cpp/language/noexcept spec">noexcept specification</a> has become a part of type since C++17, some compilers (e.g. GCC, Clang, and ICC, but not MSVC) are able to deduce the value in the <code>noexcept</code> specifier from a type in C++17 or later mode. Such feature has not been accepted by the standard. This is <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2355">CWG issue 2355</a>.
+<p>Notes: As <a href="noexcept_spec.html" title="cpp/language/noexcept spec">noexcept specification</a> has become a part of type since C++17, some compilers (e.g. GCC, Clang, and ICC, but not MSVC) are able to deduce the value in the <code>noexcept</code> specifier from a type in C++17 or later mode. Such feature has not been accepted by the standard. This is <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2355.html">CWG issue 2355</a>.
 </p>
 <h3><span class="mw-headline" id="Other_contexts">Other contexts</span></h3>
 <p>Besides function calls and operator expressions, template argument deduction is used in the following situations:
@@ -864,12 +865,12 @@ f<span class="br0">(</span>ab<span class="br0">)</span><span class="sy4">;</span
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: mini-example </td></tr></table> 
 <h4><span class="mw-headline" id="Conversion_function_template">Conversion function template</span></h4>
 <p>Template argument deduction is used when selecting <a href="cast_operator.html" title="cpp/language/cast operator">user-defined conversion function</a> template arguments.
-</p><p><code><b>A</b></code> is the type that is required as the result of the conversion. <code><b>P</b></code> is the return type of the conversion function template, except that
+</p><p><code><b>A</b></code> is the type that is required as the result of the conversion. <code><b>P</b></code> is the return type of the conversion function template. If <code><b>P</b></code> is a reference type, then the referred type is used in place of <code><b>P</b></code> for the following parts of the section.
+</p><p>If <code><b>A</b></code> is not a reference type:
 </p>
-<div class="t-li1"><span class="t-li">a)</span> if the return type is a reference type then <code><b>P</b></code> is the referred type;</div>
-<div class="t-li1"><span class="t-li">b)</span> if the return type is an array type and <code><b>A</b></code> is not a reference type, then <code><b>P</b></code> is the pointer type obtained by array-to-pointer conversion;</div>
-<div class="t-li1"><span class="t-li">c)</span> if the return type is a function type and <code><b>A</b></code> is not a reference type, then <code><b>P</b></code> is the function pointer type obtained by function-to-pointer conversion;</div>
-<div class="t-li1"><span class="t-li">d)</span> if <code><b>P</b></code> is cv-qualified, the top-level cv-qualifiers are ignored.</div>
+<div class="t-li1"><span class="t-li">a)</span> if the <code><b>P</b></code> is an array type, then the pointer type obtained by array-to-pointer conversion is used in place of <code><b>P</b></code>;</div>
+<div class="t-li1"><span class="t-li">b)</span> if the <code><b>P</b></code> is a function type, then the function pointer type obtained by function-to-pointer conversion is used in place of <code><b>P</b></code>;</div>
+<div class="t-li1"><span class="t-li">c)</span> if <code><b>P</b></code> is cv-qualified, the top-level cv-qualifiers are ignored.</div>
 <p>If <code><b>A</b></code> is cv-qualified, the top-level cv-qualifiers are ignored. If <code><b>A</b></code> is a reference type, the referred type is used by deduction.
 </p><p>If the usual deduction from <code><b>P</b></code> and <code><b>A</b></code> (as described above) fails, the following alternatives are additionally considered:
 </p>
@@ -954,7 +955,7 @@ A a<span class="sy4">;</span>
     <span class="kw1">catch</span><span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <h3><span class="mw-headline" id="Alias_templates">Alias templates</span></h3>
-<p><a href="type_alias.html" title="cpp/language/type alias">Alias templates</a> are never deduced:
+<p><a href="type_alias.html" title="cpp/language/type alias">Alias templates</a> are not deduced <span class="t-rev-inl t-since-cxx20"><span>, except in <a href="deduction_guide.html#Deduction_for_alias_templates" title="cpp/language/class template argument deduction">class template argument deduction</a> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw1">struct</span> Alloc <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
@@ -1008,7 +1009,7 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue70">CWG 70</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/70.html">CWG 70</a>
 </td>
 <td> C++98
 </td>
@@ -1017,7 +1018,7 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
 <td> specified as non-deduced
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue300">CWG 300</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/300.html">CWG 300</a>
 </td>
 <td> C++98
 </td>
@@ -1026,7 +1027,7 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
 <td> change these forms to<br><code>type(T)/T()/T(T)</code> so they<br>can also cover references
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue322">CWG 322</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/322.html">CWG 322</a>
 </td>
 <td> C++98
 </td>
@@ -1035,7 +1036,25 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
 <td> adjustment added
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1391">CWG 1391</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/976.html">CWG 976</a>
+</td>
+<td> C++98
+</td>
+<td> in the deduction for conversion operator templates,<br><code>const T&amp;</code> return type could never match <code>T</code> result type
+</td>
+<td> rules adjusted to<br>allow such matches
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1387.html">CWG 1387</a>
+</td>
+<td> C++11
+</td>
+<td> the expression of a decltype-specifier was not a non-deduced context
+</td>
+<td> it is
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1391.html">CWG 1391</a>
 </td>
 <td> C++98
 </td>
@@ -1044,7 +1063,7 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
 <td> specified as described above
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1591">CWG 1591</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1591.html">CWG 1591</a>
 </td>
 <td> C++11
 </td>
@@ -1053,7 +1072,7 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
 <td> deduction allowed
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2052">CWG 2052</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2052.html">CWG 2052</a>
 </td>
 <td> C++98
 </td>
@@ -1062,7 +1081,7 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
 <td> soft error if there<br>are other overloads
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2091">CWG 2091</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2091.html">CWG 2091</a>
 </td>
 <td> C++98
 </td>
@@ -1082,19 +1101,19 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6008/1000000
-Preprocessor generated node count: 16080/1000000
-Post‐expand include size: 159563/2097152 bytes
-Template argument size: 45446/2097152 bytes
+Preprocessor visited node count: 6073/1000000
+Preprocessor generated node count: 16395/1000000
+Post‐expand include size: 162000/2097152 bytes
+Template argument size: 46186/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13515-0!*!0!!en!*!* and timestamp 20220127033918 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13515-0!*!0!!en!*!* and timestamp 20220708023722 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_argument_deduction&amp;oldid=137557">https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_argument_deduction&amp;oldid=137557</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_argument_deduction&amp;oldid=140127">https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_argument_deduction&amp;oldid=140127</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1111,10 +1130,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/template_argument_deduction">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/template_argument_deduction">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 26 January 2022, at 19:39.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 558,128 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 8 June 2022, at 23:31.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 592,988 times.</li>
                             </ul>
                     </div>
         </div>
@@ -1132,7 +1151,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.039 secs. -->
+</script><!-- Served in 6.848 secs. -->
 	</body>
-<!-- Cached 20220127034953 -->
+<!-- Cached 20220708023722 -->
 </html>

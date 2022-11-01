@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -383,10 +383,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">4)</span> null pointer value may be converted to the null pointer value of <span class="t-spar">new-type</span></div>
 <p>As with all cast expressions, the result is:
 </p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx11"><td>
+<ul><li> an lvalue if <span class="t-spar">new-type</span> is a reference type;
+</li><li> an rvalue otherwise.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
+<tr class="t-rev t-since-cxx11"><td>
 <ul><li> an lvalue if <span class="t-spar">new-type</span> is an lvalue reference type or an rvalue reference to function type;
 </li><li> an xvalue if <span class="t-spar">new-type</span> is an rvalue reference to object type; 
 </li><li> a prvalue otherwise.
 </li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Pointers to functions and pointers to member functions are not subject to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">const_cast</span></span></span>
 </p><p><code>const_cast</code> makes it possible to form a reference or pointer to non-const type that is actually referring to a <a href="cv.html" title="cpp/language/cv">const object</a> or a reference or pointer to non-volatile type that is actually referring to a <a href="cv.html" title="cpp/language/cv">volatile object</a>. Modifying a const object through a non-const access path and referring to a volatile object through a non-volatile <a href="value_category.html#glvalue" title="cpp/language/value category">glvalue</a> results in undefined behavior.
@@ -447,15 +458,15 @@ type::i = 4</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2899/1000000
-Preprocessor generated node count: 6901/1000000
-Post‐expand include size: 149234/2097152 bytes
-Template argument size: 18618/2097152 bytes
+Preprocessor visited node count: 3003/1000000
+Preprocessor generated node count: 7228/1000000
+Post‐expand include size: 150729/2097152 bytes
+Template argument size: 19083/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2741-0!*!0!!en!*!* and timestamp 20220107094643 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2741-0!*!0!!en!*!* and timestamp 20220603120335 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -476,10 +487,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/const_cast">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/const_cast">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 7 January 2022, at 01:11.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 817,888 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 3 June 2022, at 05:03.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 866,941 times.</li>
                             </ul>
                     </div>
         </div>
@@ -497,7 +508,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.861 secs. -->
+</script><!-- Served in 0.036 secs. -->
 	</body>
-<!-- Cached 20220107094643 -->
+<!-- Cached 20220603120745 -->
 </html>

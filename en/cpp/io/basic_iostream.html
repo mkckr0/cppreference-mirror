@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -191,7 +191,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The class template <code>basic_iostream</code> provides support for high level input/output operations on streams. The supported operations include sequential reading or writing and formatting. This functionality is implemented over the interface provided by the <code>basic_streambuf</code> class. It is accessed through <code>basic_ios</code> class.
 </p>
 <div class="t-inheritance-diagram">
-<div class="center"><div class="noresize"><map name="ImageMap_1_666556432"><area href="ios_base.html" shape="rect" coords="5,33,107,66" alt="cpp/io/ios base" title="cpp/io/ios base"><area href="basic_ios.html" shape="rect" coords="135,31,252,69" alt="cpp/io/basic ios" title="cpp/io/basic ios"><area href="basic_istream.html" shape="rect" coords="278,4,395,42" alt="cpp/io/basic istream" title="cpp/io/basic istream"><area href="basic_ostream.html" shape="rect" coords="278,58,395,96" alt="cpp/io/basic ostream" title="cpp/io/basic ostream"></map><img alt="std-basic iostream-inheritance.svg" src="../../../common/images/7/7c/std-basic_iostream-inheritance.svg" width="543" height="99" usemap="#ImageMap_1_666556432"></div></div>
+<div class="center"><div class="noresize"><map name="ImageMap_1_1330202751"><area href="ios_base.html" shape="rect" coords="5,33,107,66" alt="cpp/io/ios base" title="cpp/io/ios base"><area href="basic_ios.html" shape="rect" coords="135,31,252,69" alt="cpp/io/basic ios" title="cpp/io/basic ios"><area href="basic_istream.html" shape="rect" coords="278,4,395,42" alt="cpp/io/basic istream" title="cpp/io/basic istream"><area href="basic_ostream.html" shape="rect" coords="278,58,395,96" alt="cpp/io/basic ostream" title="cpp/io/basic ostream"></map><img alt="std-basic iostream-inheritance.svg" src="../../../common/images/7/7c/std-basic_iostream-inheritance.svg" width="543" height="99" usemap="#ImageMap_1_1330202751"></div></div>
 <div style="text-align:center;">
 <p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
 </p>
@@ -975,13 +975,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 NewPP limit report
 Preprocessor visited node count: 17345/1000000
 Preprocessor generated node count: 14910/1000000
-Post‐expand include size: 631036/2097152 bytes
-Template argument size: 179041/2097152 bytes
+Post‐expand include size: 631042/2097152 bytes
+Template argument size: 179042/2097152 bytes
 Highest expansion depth: 35/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:515-0!*!0!!en!2!* and timestamp 20220120154710 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:515-0!*!0!!en!2!* and timestamp 20220529221321 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -1002,10 +1002,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_iostream">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_iostream">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 17 April 2018, at 12:37.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 179,686 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 17 April 2018, at 13:37.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 188,672 times.</li>
                             </ul>
                     </div>
         </div>
@@ -1023,7 +1023,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.855 secs. -->
+</script><!-- Served in 3.358 secs. -->
 	</body>
-<!-- Cached 20220120154711 -->
+<!-- Cached 20220529221321 -->
 </html>

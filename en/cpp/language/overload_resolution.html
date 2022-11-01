@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/overload_resolution","wgTitle":"cpp/language/overload resolution","wgCurRevisionId":137512,"wgArticleId":12784,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/overload_resolution","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/overload_resolution","wgTitle":"cpp/language/overload resolution","wgCurRevisionId":141099,"wgArticleId":12784,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/overload_resolution","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -305,7 +305,33 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <h3><span class="mw-headline" id="Details">Details</span></h3>
 <p>Before overload resolution begins, the functions selected by name lookup and template argument deduction are combined to form the set of <i>candidate functions</i> (the exact criteria depend on the context in which overload resolution takes place, see below).
-</p><p>If any candidate function is a <a href="member_functions.html" title="cpp/language/member functions">member function</a> (static or non-static), but not a constructor, it is treated as if it has an extra parameter (<i>implicit object parameter</i>) which represents the object for which they are called and appears before the first of the actual parameters.
+</p><p>For function templates, <a href="template_argument_deduction.html" title="cpp/language/template argument deduction">template argument deduction</a> and checking of any explicit template arguments are performed to find the template argument values (if any) that can be used in this case:
+</p>
+<ul><li> if both succeeds, the template arguments are used to synthesize declarations of the corresponding function template specializations, which are added to the candidate set, and such specializations are treated just like non-template functions except where specified otherwise in the tie-breaker rules;
+</li><li> if argument deduction fails or the synthesized function template specialization would be ill-formed, no such function is added to the candidate set.
+</li></ul>
+<p>If a name refers to one or more function templates and also to a set of overloaded non-template functions, those functions and the specializations generated from the templates are all candidates.
+</p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx20"><td>
+<p>If a constructor template or conversion function template has a <a href="explicit.html" title="cpp/language/explicit">conditional explicit specifier</a> which happens to be <a href="dependent_name.html#Value-dependent_expressions" title="cpp/language/dependent name">value-dependent</a>, after deduction, if the context requires a candidate that is not explicit and the generated specialization is explicit, it is removed from the candidate set.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table>
+<p><br>
+</p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<p>Defaulted <a href="move_constructor.html" title="cpp/language/move constructor">move constructor</a> and <a href="move_operator.html" title="cpp/language/move assignment">move assignment</a> that are defined as deleted are never included in the list of candidate functions.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
+<p>Inherited copy and move constructors are not included in the list of candidate functions when constructing a derived class object.
+</p>
+<h4><span class="mw-headline" id="Implicit_object_parameter">Implicit object parameter</span></h4>
+<p>If any candidate function is a <a href="member_functions.html" title="cpp/language/member functions">member function</a> (static or non-static)<span class="t-rev-inl t-since-cxx23"><span> that does not have an <a href="member_functions.html#Explicit_object_parameter" title="cpp/language/member functions">explicit object parameter</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>, but not a constructor, it is treated as if it has an extra parameter (<i>implicit object parameter</i>) which represents the object for which they are called and appears before the first of the actual parameters.
 </p><p>Similarly, the object on which a member function is being called is prepended to the argument list as the <i>implied object argument</i>.
 </p><p>For member functions of class <code>X</code>, the type of the implicit object parameter is affected by cv-qualifications and ref-qualifications of the member function as described in <a href="member_functions.html" title="cpp/language/member functions">member functions</a>.
 </p><p>The user-defined conversion functions are considered to be members of the <i>implied object argument</i> for the purpose of determining the type of the <i>implicit object parameter</i>.
@@ -324,18 +350,6 @@ A a<span class="sy4">;</span>
 a.<span class="me1">B</span><span class="sy4">::</span><span class="me2">f</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// Error: user-defined conversions cannot be applied</span>
            <span class="co1">// to the implicit object parameter</span>
 <span class="kw1">static_cast</span><span class="sy1">&lt;</span>B<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>a<span class="br0">)</span>.<span class="me1">f</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span></pre></div></div></div>
-<p>If any candidate is a function template, its specializations are generated using <a href="template_argument_deduction.html" title="cpp/language/template argument deduction">template argument deduction</a>, and such specializations are treated just like non-template functions except where specified otherwise in the tie-breaker rules. If a name refers to one or more function templates and also to a set of overloaded non-template functions, those functions and the specializations generated from the templates are all candidates.
-</p>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx20"><td>
-<p>If a constructor template or conversion function template has a <a href="explicit.html" title="cpp/language/explicit">conditional explicit specifier</a> which happens to be <a href="dependent_name.html#Value-dependent_expressions" title="cpp/language/dependent name">value-dependent</a>, after deduction, if the context requires a candidate that is not explicit and the generated specialization is explicit, it is removed from the candidate set
-</p>
-</td>
-<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
-</table>
-<p>Defaulted <a href="move_constructor.html" title="cpp/language/move constructor">move constructor</a> and <a href="move_operator.html" title="cpp/language/move assignment">move assignment</a> that are defined as deleted are never included in the list of candidate functions.
-</p><p>Inherited copy and move constructors are not included in the list of candidate functions when constructing a derived class object.
-</p>
 <h3><span class="mw-headline" id="Candidate_functions">Candidate functions</span></h3>
 <p>The set of candidate functions and the list of arguments is prepared in a unique way for each of the contexts where overload resolution is used:
 </p>
@@ -509,7 +523,7 @@ B b<span class="br0">{</span> <span class="br0">{</span><span class="nu0">0</spa
 <div class="t-li1"><span class="t-li">1)</span> there is at least one argument of F1 whose implicit conversion is <i>better</i> than the corresponding implicit conversion for that argument of F2</div>
 <div class="t-li1"><span class="t-li">2)</span> or, if not that, (only in context of non-class initialization by conversion), the standard conversion sequence from the return type of F1 to the type being initialized is <i>better</i> than the standard conversion sequence from the return type of F2</div>
  <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx11"><td> 
+<tr class="t-rev t-since-cxx11"><td>
 <div class="t-li1"><span class="t-li">3)</span> or, if not that, (only in context of initialization by conversion function for direct reference binding of a reference to function type), the return type of F1 is the same kind of reference (lvalue or rvalue) as the reference being initialized, and the return type of F2 is not</div>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
@@ -523,8 +537,21 @@ B b<span class="br0">{</span> <span class="br0">{</span><span class="nu0">0</spa
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
  <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx11"><td> 
-<div class="t-li1"><span class="t-li">7)</span> or, if not that, F1 is a constructor for a class D, F2 is a constructor for a base class B of D, and for all arguments the corresponding parameters of F1 and F2 have the same type</div>
+<tr class="t-rev t-since-cxx11"><td>
+<div class="t-li1"><span class="t-li">7)</span> or, if not that, F1 is a constructor for a class D, F2 is a constructor for a base class B of D, and for all arguments the corresponding parameters of F1 and F2 have the same type:
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A
+<span class="br0">{</span>
+    A<span class="br0">(</span><span class="kw4">int</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw1">struct</span> B<span class="sy4">:</span> A
+<span class="br0">{</span>
+    <span class="kw1">using</span> A<span class="sy4">::</span><span class="me2">A</span><span class="sy4">;</span>
+ 
+    B<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+B b<span class="sy4">;</span> <span class="co1">// OK, B::B()</span></pre></div></div></div>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
@@ -539,7 +566,7 @@ B b<span class="br0">{</span> <span class="br0">{</span><span class="nu0">0</spa
 <tr class="t-rev t-since-cxx17"><td>
 <div class="t-li1"><span class="t-li">10)</span> or, if not that, F1 is generated from a <a href="deduction_guide.html" title="cpp/language/deduction guide" class="mw-redirect">user-defined deduction-guide</a> and F2 is not</div>
 <div class="t-li1"><span class="t-li">11)</span> or, if not that, F1 is the <a href="deduction_guide.html" title="cpp/language/deduction guide" class="mw-redirect">copy deduction candidate</a> and F2 is not</div>
-<div class="t-li1"><span class="t-li">12)</span> or, if not that, F1 is generated from a non-template constructor and F2 is generated from a constructor template
+<div class="t-li1"><span class="t-li">12)</span> or, if not that, F1 is generated from a non-template constructor and F2 is generated from a constructor template:
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw1">struct</span> A
 <span class="br0">{</span>
@@ -868,7 +895,7 @@ conversion.
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1">CWG 1</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1.html">CWG 1</a>
 </td>
 <td> C++98
 </td>
@@ -877,7 +904,7 @@ conversion.
 <td> the program is ill-formed in this case
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue83">CWG 83</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/83.html">CWG 83</a>
 </td>
 <td> C++98
 </td>
@@ -886,7 +913,7 @@ conversion.
 <td> the rank of the deprecated conversion<br>is lowered (it was removed in C++11)
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue162">CWG 162</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/162.html">CWG 162</a>
 </td>
 <td> C++98
 </td>
@@ -895,7 +922,7 @@ conversion.
 <td> only invalid if overload resolution selects<br>a non-static member function in this case
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue280">CWG 280</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/280.html">CWG 280</a>
 </td>
 <td> C++98
 </td>
@@ -904,7 +931,25 @@ conversion.
 <td> removed the accessibility constraint, the<br>program is ill-formed if a surrogate call<br>function is selected and the corresponding<br>conversion function cannot be called
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1307">CWG 1307</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/415.html">CWG 415</a>
+</td>
+<td> C++98
+</td>
+<td> when a function template is selected as a candidate, its<br>specializations were instantiated using template argument deduction
+</td>
+<td> no instantiation will occur in this case,<br>their declarations will be synthesized
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/495.html">CWG 495</a>
+</td>
+<td> C++98
+</td>
+<td> when the implicit conversions for arguments are equally<br>good, a non-template conversion function was always<br>better than a conversion function template, even if the<br>latter may have a better standard conversion sequence
+</td>
+<td> standard conversion sequences are<br>compared before specialization levels
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1307.html">CWG 1307</a>
 </td>
 <td> C++11
 </td>
@@ -913,7 +958,34 @@ conversion.
 <td> a shorter array is better when possible
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1467">CWG 1467</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1328.html">CWG 1328</a>
+</td>
+<td> C++11
+</td>
+<td> the determination of the candidate functions when<br>binding a reference to a conversion result was not clear
+</td>
+<td> made clear
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1374.html">CWG 1374</a>
+</td>
+<td> C++98
+</td>
+<td> qualification conversion was checked before reference<br>binding when comparing standard conversion sequences
+</td>
+<td> reversed
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1385.html">CWG 1385</a>
+</td>
+<td> C++11
+</td>
+<td> a non-explicit user-defined conversion function declared with<br>a ref-qualifier did not have a corresponding surrogate function
+</td>
+<td> it has a corresponding<br>surrogate function
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1467.html">CWG 1467</a>
 </td>
 <td> C++11
 </td>
@@ -922,7 +994,7 @@ conversion.
 <td> initialization defined
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1601">CWG 1601</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1601.html">CWG 1601</a>
 </td>
 <td> C++11
 </td>
@@ -931,13 +1003,49 @@ conversion.
 <td> fixed type is preferred to<br>what it promotes to
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2137">CWG 2137</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1608.html">CWG 1608</a>
+</td>
+<td> C++98
+</td>
+<td> the set of member candidates of a unary operator <code>@</code> whose argument<br>has type <code>T1</code> was empty if <code>T1</code> is a class currently being defined
+</td>
+<td> the set is the result of qualified name<br>lookup of <code>T1::operator@</code> in this case
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1687.html">CWG 1687</a>
+</td>
+<td> C++98
+</td>
+<td> when a built-in candidate is selected by overload resolution,<br>the operands would undergo conversion without restriction
+</td>
+<td> only convert class type operands,<br>and disabled the second<br>standard conversion sequence
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2052.html">CWG 2052</a>
+</td>
+<td> C++98
+</td>
+<td> ill-formed synthesized function template specializations could<br>be added to the candidate set, making the program ill-formed
+</td>
+<td> they are not added<br>to the candidate set
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2137.html">CWG 2137</a>
 </td>
 <td> C++11
 </td>
-<td> init-list ctors lost to copy ctors when list-initializing X from {X}
+<td> initializer list constructors lost to copy<br>constructors when list-initializing X from {X}
 </td>
-<td> non-aggregates consider init-lists first
+<td> non-aggregates consider<br>initializer lists first
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2273.html">CWG 2273</a>
+</td>
+<td> C++11
+</td>
+<td> there was no tiebreaker between<br>inherited and non-inherited constructors
+</td>
+<td> non-inherited constructor wins
 </td></tr></table>
 <h3><span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-c++20">
@@ -984,19 +1092,19 @@ conversion.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7469/1000000
-Preprocessor generated node count: 13884/1000000
-Post‐expand include size: 172967/2097152 bytes
-Template argument size: 44467/2097152 bytes
+Preprocessor visited node count: 7748/1000000
+Preprocessor generated node count: 14627/1000000
+Post‐expand include size: 177770/2097152 bytes
+Template argument size: 46957/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12784-0!*!0!!en!*!* and timestamp 20220125083929 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12784-0!*!0!!en!*!* and timestamp 20220715091455 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/overload_resolution&amp;oldid=137512">https://en.cppreference.com/mwiki/index.php?title=cpp/language/overload_resolution&amp;oldid=137512</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/overload_resolution&amp;oldid=141099">https://en.cppreference.com/mwiki/index.php?title=cpp/language/overload_resolution&amp;oldid=141099</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1013,10 +1121,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/overload_resolution">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/overload_resolution">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 25 January 2022, at 00:39.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 313,876 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 15 July 2022, at 02:14.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 338,418 times.</li>
                             </ul>
                     </div>
         </div>
@@ -1034,7 +1142,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.038 secs. -->
+</script><!-- Served in 0.039 secs. -->
 	</body>
-<!-- Cached 20220125085005 -->
+<!-- Cached 20220715091849 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/shift","wgTitle":"cpp/algorithm/shift","wgCurRevisionId":137661,"wgArticleId":17719,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/shift","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/shift","wgTitle":"cpp/algorithm/shift","wgCurRevisionId":138460,"wgArticleId":17719,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/shift","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,14 +141,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../algorithm.html" title="cpp/algorithm"> Algorithm library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> <a href="ranges.html" title="cpp/algorithm/ranges">Constrained algorithms and algorithms on ranges</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <span class="t-lc">std::ranges::copy</span>, <span class="t-lc">std::ranges::sort</span>, ... </td></tr>
+<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <a href="ranges/copy.html" title="cpp/algorithm/ranges/copy"><tt>ranges::copy</tt></a>, <a href="ranges/sort.html" title="cpp/algorithm/ranges/sort"><tt>ranges::sort</tt></a>, ... </td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="../algorithm.html#Execution_policies" title="cpp/algorithm">Execution policies <span class="t-mark-rev t-since-cxx17">(C++17)</span></a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="is_execution_policy.html" title="cpp/algorithm/is execution policy"><span class="t-lines"><span>is_execution_policy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span>  </span></span></div></div></td></tr>
@@ -458,8 +458,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> If the algorithm fails to allocate memory, <span class="t-lc"><a href="../memory/new/bad_alloc.html" title="cpp/memory/new/bad alloc">std::bad_alloc</a></span> is thrown.
 </li></ul>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p><a href="../feature_test.html#Library_features" title="cpp/feature test">Feature testing</a> macro: <a href="../utility/feature_test.html" title="cpp/utility/feature test"><tt>__cpp_lib_shift</tt></a>
-</p>
+<table class="wikitable">
+<tr>
+<td> <a href="../feature_test.html#Library_features" title="cpp/feature test">Feature-test</a> macro:
+</td>
+<td> <a href="../utility/feature_test.html" title="cpp/utility/feature test"><tt>__cpp_lib_shift</tt></a>
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;algorithm&gt;</span>
@@ -489,9 +493,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
 <a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span> <span class="br0">(</span><a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> os, <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="kw4">const</span><span class="sy3">&amp;</span> v<span class="br0">)</span> <span class="br0">{</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">auto</span><span class="sy3">&amp;</span> s <span class="sy4">:</span> v<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="kw4">constexpr</span> <span class="br0">(</span><a href="../types/is_same.html"><span class="kw590">std::<span class="me2">is_same</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cv.html"><span class="kw599">std::<span class="me2">remove_cv_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span>, S<span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">)</span>
+        <span class="kw1">if</span> <span class="kw4">constexpr</span> <span class="br0">(</span><a href="../types/is_same.html"><span class="kw591">std::<span class="me2">is_same_v</span></span></a><span class="sy1">&lt;</span>T, S<span class="sy1">&gt;</span><span class="br0">)</span>
             s.<span class="me1">specified_state</span> <span class="sy4">?</span> os <span class="sy1">&lt;&lt;</span> s.<span class="me1">value</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy4">:</span> os <span class="sy1">&lt;&lt;</span> <span class="st0">". "</span><span class="sy4">;</span>
-        <span class="kw1">else</span> <span class="kw1">if</span> <span class="kw4">constexpr</span> <span class="br0">(</span><a href="../types/is_same.html"><span class="kw590">std::<span class="me2">is_same</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cv.html"><span class="kw599">std::<span class="me2">remove_cv_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span>, <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">)</span>
+        <span class="kw1">else</span> <span class="kw1">if</span> <span class="kw4">constexpr</span> <span class="br0">(</span><a href="../types/is_same.html"><span class="kw591">std::<span class="me2">is_same_v</span></span></a><span class="sy1">&lt;</span>T, <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">)</span>
             os <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>s.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span> <span class="sy4">?</span> <span class="st0">"."</span> <span class="sy4">:</span> s<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
         <span class="kw1">else</span>
             os <span class="sy1">&lt;&lt;</span> s <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
@@ -552,23 +556,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  <div class="t-dsc-member-div"><div><a href="rotate.html" title="cpp/algorithm/rotate"> <span class="t-lines"><span>rotate</span></span></a></div></div>
 </td>
 <td>   rotates the order of elements in a range  <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="ranges/shift.html" title="cpp/algorithm/ranges/shift"> <span class="t-lines"><span>ranges::shift_left</span><span>ranges::shift_right</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div>
+</td>
+<td>   shifts elements in a range <br> <span class="t-mark">(niebloid)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 9912/1000000
-Preprocessor generated node count: 12134/1000000
-Post‐expand include size: 291722/2097152 bytes
-Template argument size: 57574/2097152 bytes
+Preprocessor visited node count: 10117/1000000
+Preprocessor generated node count: 12559/1000000
+Post‐expand include size: 297999/2097152 bytes
+Template argument size: 58871/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17719-0!*!0!!en!*!* and timestamp 20220129110803 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17719-0!*!0!!en!*!* and timestamp 20220723212356 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/shift&amp;oldid=137661">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/shift&amp;oldid=137661</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/shift&amp;oldid=138460">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/shift&amp;oldid=138460</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -585,10 +594,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/shift">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/shift">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 29 January 2022, at 03:08.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 37,814 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 2 March 2022, at 22:43.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 45,197 times.</li>
                             </ul>
                     </div>
         </div>
@@ -606,7 +615,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.032 secs. -->
+</script><!-- Served in 3.821 secs. -->
 	</body>
-<!-- Cached 20220129114215 -->
+<!-- Cached 20220723212356 -->
 </html>

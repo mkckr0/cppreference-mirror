@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/derived_class","wgTitle":"cpp/language/derived class","wgCurRevisionId":133665,"wgArticleId":10177,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/derived_class","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/derived_class","wgTitle":"cpp/language/derived class","wgCurRevisionId":140230,"wgArticleId":10177,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/derived_class","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -316,7 +316,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>Any class type (whether declared with <span class="t-spar">class-key</span> <code>class</code> or <code>struct</code>) may be declared as <i>derived</i> from one or more <i>base classes</i> which, in turn, may be derived from their own base classes, forming an inheritance hierarchy.
-</p><p>The list of base classes is provided in the <span class="t-spar">base-clause</span> of the  <a href="class.html" title="cpp/language/class">class declaration syntax</a>. The <span class="t-spar">base-clause</span> consists of the character <code><b>:</b></code> followed by a comma-separated list of one or more <span class="t-spar">base-specifier</span>s.
+</p><p>The list of base classes is provided in the <span class="t-spar">base-clause</span> of the <a href="class.html" title="cpp/language/class">class declaration syntax</a>. The <span class="t-spar">base-clause</span> consists of the character <code><b>:</b></code> followed by a comma-separated list of one or more <span class="t-spar">base-specifier</span>s.
 </p>
 <table class="t-sdsc-begin">
 
@@ -324,9 +324,61 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">access-specifier</span><span class="t-mark">(optional)</span> <span class="t-spar">virtual-specifier</span><span class="t-mark">(optional)</span> <span class="t-spar">class-or-decltype</span>
+<td> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">class-or-decltype</span>
+</td>
+<td> (1)
 </td>
 <td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <code><b>virtual</b></code> <span class="t-spar">class-or-decltype</span>
+</td>
+<td> (2)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">access-specifier</span> <span class="t-spar">class-or-decltype</span>
+</td>
+<td> (3)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <code><b>virtual</b></code> <span class="t-spar">access-specifier</span> <span class="t-spar">class-or-decltype</span>
+</td>
+<td> (4)
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">access-specifier</span> <code><b>virtual</b></code> <span class="t-spar">class-or-decltype</span>
+</td>
+<td> (5)
 </td>
 <td class="t-sdsc-nopad">
 </td></tr>
@@ -336,36 +388,34 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
+<div class="t-li1"><span class="t-li">1)</span> Specifies a non-virtual inheritance with default member accessibility.</div>
+<div class="t-li1"><span class="t-li">2)</span> Specifies a virtual inheritance with default member accessibility.</div>
+<div class="t-li1"><span class="t-li">3)</span> Specifies a non-virtual inheritance with given member accessibility.</div>
+<div class="t-li1"><span class="t-li">4)</span> Specifies a virtual inheritance with given member accessibility.</div>
+<div class="t-li1"><span class="t-li">5)</span> Same as 4), <code><b>virtual</b></code> and <span class="t-spar">access-specifier</span> can appear in any order.</div>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">attr</span>
+<td> <span class="t-spar">attr</span>
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-cxx11">(since C++11)</span> optional sequence of any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> sequence of any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">access-specifier</span>
+<td> <span class="t-spar">access-specifier</span>
 </td>
 <td> -
 </td>
-<td>  one of <code>private</code>, <code>public</code>, or <code>protected</code>
+<td> one of <code>private</code>, <code>public</code>, or <code>protected</code>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">virtual-specifier</span>
+<td> <span class="t-spar">class-or-decltype</span>
 </td>
 <td> -
 </td>
-<td>  the keyword <code>virtual</code>
-</td></tr>
-<tr class="t-par">
-<td>  <span class="t-spar">class-or-decltype</span>
-</td>
-<td> -
-</td>
-<td>  one of
+<td> one of
 <ul><li> <span class="t-spar">nested-name-specifier</span><span class="t-mark">(optional)</span> <span class="t-spar">type-name</span>
 </li><li> <span class="t-spar">nested-name-specifier</span> <code><b>template</b></code> <span class="t-spar">simple-template-id</span>
 </li></ul>
@@ -377,7 +427,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
 </td></tr></table>
-<p><span class="t-spar">virtual-specifier</span> and <span class="t-spar">access-specifier</span> may appear in any order. An <a href="elaborated_type_specifier.html" title="cpp/language/elaborated type specifier">elaborated type specifier</a> cannot directly appear as <span class="t-spar">class-or-decltype</span> due to syntax limitations.
+<p>An <a href="elaborated_type_specifier.html" title="cpp/language/elaborated type specifier">elaborated type specifier</a> cannot directly appear as <span class="t-spar">class-or-decltype</span> due to syntax limitations.
 </p>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
@@ -389,15 +439,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table>
 <p>If <span class="t-spar">access-specifier</span> is omitted, it defaults to <code>public</code> for classes declared with <span class="t-spar">class-key</span> <code>struct</code> and to <code>private</code> for classes declared with <span class="t-spar">class-key</span> <code>class</code>.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> Base <span class="br0">{</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> Base
+<span class="br0">{</span>
     <span class="kw4">int</span> a, b, c<span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="co1">// every object of type Derived includes Base as a subobject</span>
-<span class="kw1">struct</span> Derived <span class="sy4">:</span> Base <span class="br0">{</span>
+<span class="kw1">struct</span> Derived <span class="sy4">:</span> Base
+<span class="br0">{</span>
     <span class="kw4">int</span> b<span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="co1">// every object of type Derived2 includes Derived and Base as subobjects</span>
-<span class="kw1">struct</span> Derived2 <span class="sy4">:</span> Derived <span class="br0">{</span>
+<span class="kw1">struct</span> Derived2 <span class="sy4">:</span> Derived
+<span class="br0">{</span>
     <span class="kw4">int</span> c<span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <p>Classes denoted by <span class="t-spar">class-or-decltype</span>'s listed in the <span class="t-spar">base-clause</span> are direct base classes. Their bases are indirect base classes. The same class cannot be specified as a direct base class more than once, but the same class can be both direct and indirect base class.
@@ -410,10 +465,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw1">class</span> X <span class="sy4">:</span> <span class="kw1">public</span> <span class="kw1">virtual</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">class</span> Y <span class="sy4">:</span> <span class="kw1">virtual</span> <span class="kw1">public</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">class</span> Z <span class="sy4">:</span> <span class="kw1">public</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="co1">// every object of type AA has one X, one Y, one Z, and two B's:</span>
 <span class="co1">// one that is the base of Z and one that is shared by X and Y</span>
-<span class="kw1">struct</span> AA <span class="sy4">:</span> X, Y, Z <span class="br0">{</span>
-    AA<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+<span class="kw1">struct</span> AA <span class="sy4">:</span> X, Y, Z
+<span class="br0">{</span>
+    AA<span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">{</span>
         X<span class="sy4">::</span><span class="me2">n</span> <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="co1">// modifies the virtual B subobject's member</span>
         Y<span class="sy4">::</span><span class="me2">n</span> <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span> <span class="co1">// modifies the same virtual B subobject's member</span>
         Z<span class="sy4">::</span><span class="me2">n</span> <span class="sy1">=</span> <span class="nu0">3</span><span class="sy4">;</span> <span class="co1">// modifies the non-virtual B subobject's member</span>
@@ -424,10 +482,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>An example of an inheritance hierarchy with virtual base classes is the iostreams hierarchy of the standard library: <span class="t-lc"><a href="../io/basic_istream.html" title="cpp/io/basic istream">std::istream</a></span> and <span class="t-lc"><a href="../io/basic_ostream.html" title="cpp/io/basic ostream">std::ostream</a></span> are derived from <span class="t-lc"><a href="../io/basic_ios.html" title="cpp/io/basic ios">std::ios</a></span> using virtual inheritance. <span class="t-lc"><a href="../io/basic_iostream.html" title="cpp/io/basic iostream">std::iostream</a></span> is derived from both <span class="t-lc"><a href="../io/basic_istream.html" title="cpp/io/basic istream">std::istream</a></span> and <span class="t-lc"><a href="../io/basic_ostream.html" title="cpp/io/basic ostream">std::ostream</a></span>, so every instance of <span class="t-lc"><a href="../io/basic_iostream.html" title="cpp/io/basic iostream">std::iostream</a></span> contains a <span class="t-lc"><a href="../io/basic_ostream.html" title="cpp/io/basic ostream">std::ostream</a></span> subobject, a <span class="t-lc"><a href="../io/basic_istream.html" title="cpp/io/basic istream">std::istream</a></span> subobject, and just one <span class="t-lc"><a href="../io/basic_ios.html" title="cpp/io/basic ios">std::ios</a></span> subobject (and, consequently, one <span class="t-lc"><a href="../io/ios_base.html" title="cpp/io/ios base">std::ios_base</a></span>).
 </p><p>All virtual base subobjects are initialized before any non-virtual base subobject, so only the most derived class calls the constructors of the virtual bases in its <a href="initializer_list.html" title="cpp/language/initializer list" class="mw-redirect">member initializer list</a>:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> B <span class="br0">{</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> B
+<span class="br0">{</span>
     <span class="kw4">int</span> n<span class="sy4">;</span>
+ 
     B<span class="br0">(</span><span class="kw4">int</span> x<span class="br0">)</span> <span class="sy4">:</span> n<span class="br0">(</span>x<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="kw1">struct</span> X <span class="sy4">:</span> <span class="kw1">virtual</span> B <span class="br0">{</span> X<span class="br0">(</span><span class="br0">)</span> <span class="sy4">:</span> B<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">struct</span> Y <span class="sy4">:</span> <span class="kw1">virtual</span> B <span class="br0">{</span> Y<span class="br0">(</span><span class="br0">)</span> <span class="sy4">:</span> B<span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">struct</span> AA <span class="sy4">:</span> X, Y     <span class="br0">{</span> AA<span class="br0">(</span><span class="br0">)</span> <span class="sy4">:</span> B<span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span>, X<span class="br0">(</span><span class="br0">)</span>, Y<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
@@ -435,8 +496,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co1">// the default constructor of AA calls the default constructors of X and Y</span>
 <span class="co1">// but those constructors do not call the constructor of B because B is a virtual base</span>
 AA a<span class="sy4">;</span> <span class="co1">// a.n == 3</span>
+ 
 <span class="co1">// the default constructor of X calls the constructor of B</span>
-X x<span class="sy4">;</span> <span class="co1">// x.n == 1</span></pre></div></div>
+X x<span class="sy4">;</span>  <span class="co1">// x.n == 1</span></pre></div></div>
 <p>There are <a href="unqualified_lookup.html#Member_function_definition" title="cpp/language/unqualified lookup">special rules</a> for unqualified name lookup for class members when virtual inheritance is involved (sometimes referred to as the rules of dominance).
 </p>
 <h3><span class="mw-headline" id="Public_inheritance">Public inheritance</span></h3>
@@ -449,13 +511,16 @@ X x<span class="sy4">;</span> <span class="co1">// x.n == 1</span></pre></div></
 <span class="co2">#include &lt;iostream&gt;</span>
  
 <span class="kw1">struct</span> MenuOption <span class="br0">{</span> <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> title<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="co1">// Menu is a vector of MenuOption: options can be inserted, removed, reordered...</span>
 <span class="co1">// and has a title.</span>
-<span class="kw1">class</span> Menu <span class="sy4">:</span> <span class="kw1">public</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>MenuOption<span class="sy1">&gt;</span> <span class="br0">{</span>
+<span class="kw1">class</span> Menu <span class="sy4">:</span> <span class="kw1">public</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>MenuOption<span class="sy1">&gt;</span>
+<span class="br0">{</span>
 <span class="kw1">public</span><span class="sy4">:</span>
     <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> title<span class="sy4">;</span>
  
-    <span class="kw4">void</span> print<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span>
+    <span class="kw4">void</span> print<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> title <span class="sy1">&lt;&lt;</span> <span class="st0">":<span class="es1">\n</span>"</span><span class="sy4">;</span>
         <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> i <span class="sy1">=</span> <span class="nu0">0</span>, s <span class="sy1">=</span> size<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> s<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
             <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"  "</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>i<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">". "</span> <span class="sy1">&lt;&lt;</span> at<span class="br0">(</span>i<span class="br0">)</span>.<span class="me1">title</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
@@ -469,13 +534,17 @@ X x<span class="sy4">;</span> <span class="co1">// x.n == 1</span></pre></div></
  
 <span class="co1">// THIS IS BAD!</span>
 <span class="co1">// ColorMenu is a Menu where every option has a custom color.</span>
-<span class="kw1">class</span> ColorMenu <span class="sy4">:</span> <span class="kw1">public</span> Menu <span class="br0">{</span>
+<span class="kw1">class</span> ColorMenu <span class="sy4">:</span> <span class="kw1">public</span> Menu
+<span class="br0">{</span>
 <span class="kw1">public</span><span class="sy4">:</span>
     <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>Color<span class="sy1">&gt;</span> colors<span class="sy4">;</span>
  
-    <span class="kw4">void</span> print<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span>
+    <span class="kw4">void</span> print<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> title <span class="sy1">&lt;&lt;</span> <span class="st0">":<span class="es1">\n</span>"</span><span class="sy4">;</span>
-        <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> i <span class="sy1">=</span> <span class="nu0">0</span>, s <span class="sy1">=</span> size<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> s<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span> <span class="br0">{</span>
+ 
+        <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> i <span class="sy1">=</span> <span class="nu0">0</span>, s <span class="sy1">=</span> size<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> s<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
+        <span class="br0">{</span>
             <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"  "</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>i<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">". "</span><span class="sy4">;</span>
             apply_terminal_color<span class="br0">(</span>colors<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
             <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> at<span class="br0">(</span>i<span class="br0">)</span>.<span class="me1">title</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
@@ -491,7 +560,8 @@ X x<span class="sy4">;</span> <span class="co1">// x.n == 1</span></pre></div></
 <span class="co1">// Basically every non-const call to a std::vector method will break the invariant</span>
 <span class="co1">// of the ColorMenu and will need fixing from the user by correctly managing colors.</span>
  
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     ColorMenu color_menu<span class="sy4">;</span>
  
     <span class="co1">// The big problem of this class is that we must keep ColorMenu::Color</span>
@@ -502,7 +572,7 @@ X x<span class="sy4">;</span> <span class="co1">// x.n == 1</span></pre></div></
  
     color_menu.<span class="me1">colors</span>.<span class="me1">push_back</span><span class="br0">(</span>Color<span class="sy4">::</span><span class="me2">RED</span><span class="br0">)</span><span class="sy4">;</span>
  
-    color_menu.<span class="me1">print</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">//OK: colors and Menu has the same number of elements</span>
+    color_menu.<span class="me1">print</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: colors and Menu has the same number of elements</span>
 <span class="br0">}</span></pre></div></div>
 </div>
 <h3><span class="mw-headline" id="Protected_inheritance">Protected inheritance</span></h3>
@@ -516,20 +586,25 @@ X x<span class="sy4">;</span> <span class="co1">// x.n == 1</span></pre></div></
 </p><p>Similar to protected inheritance, private inheritance may also be used for controlled polymorphism: within the members of the derived (but not within further-derived classes), derived IS-A base.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> Transport<span class="sy1">&gt;</span>
-<span class="kw1">class</span> service <span class="sy4">:</span> <span class="kw1">private</span> Transport  <span class="co1">// private inheritance from the Transport policy</span>
+<span class="kw1">class</span> service <span class="sy4">:</span> <span class="kw1">private</span> Transport <span class="co1">// private inheritance from the Transport policy</span>
 <span class="br0">{</span>
 <span class="kw1">public</span><span class="sy4">:</span>
-    <span class="kw4">void</span> transmit<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-        this<span class="sy2">-</span><span class="sy1">&gt;</span>send<span class="br0">(</span>...<span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// send using whatever transport was supplied</span>
+    <span class="kw4">void</span> transmit<span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        this<span class="sy2">-</span><span class="sy1">&gt;</span>send<span class="br0">(</span>...<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// send using whatever transport was supplied</span>
     <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="co1">// TCP transport policy</span>
-<span class="kw1">class</span> tcp <span class="br0">{</span>
+<span class="kw1">class</span> tcp
+<span class="br0">{</span>
 <span class="kw1">public</span><span class="sy4">:</span>
     <span class="kw4">void</span> send<span class="br0">(</span>...<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="co1">// UDP transport policy</span>
-<span class="kw1">class</span> udp <span class="br0">{</span>
+<span class="kw1">class</span> udp
+<span class="br0">{</span>
 <span class="kw1">public</span><span class="sy4">:</span>
     <span class="kw4">void</span> send<span class="br0">(</span>...<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
@@ -539,6 +614,28 @@ service.<span class="me1">transmit</span><span class="br0">(</span>...<span clas
 <h3><span class="mw-headline" id="Member_name_lookup">Member name lookup</span></h3>
 <p>Unqualified and qualified name lookup rules for class members are detailed in <a href="lookup.html" title="cpp/language/lookup">name lookup</a>.
 </p>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1710.html">CWG 1710</a>
+</td>
+<td> C++98
+</td>
+<td> the syntax of <span class="t-spar">class-or-decltype</span> made it impossible to derive from<br>a dependent class where the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span></span></span> disambiguator is required
+</td>
+<td> allowed <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span></span></span>
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <ul><li> <a href="virtual.html" title="cpp/language/virtual">virtual functions</a>
 </li><li> <a href="abstract_class.html" title="cpp/language/abstract class">abstract classes</a>
@@ -546,19 +643,19 @@ service.<span class="me1">transmit</span><span class="br0">(</span>...<span clas
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3337/1000000
-Preprocessor generated node count: 7630/1000000
-Post‐expand include size: 140589/2097152 bytes
-Template argument size: 24239/2097152 bytes
+Preprocessor visited node count: 3671/1000000
+Preprocessor generated node count: 8404/1000000
+Post‐expand include size: 144331/2097152 bytes
+Template argument size: 25874/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:10177-0!*!0!!en!*!* and timestamp 20220117194430 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:10177-0!*!0!!en!*!* and timestamp 20220613072209 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/derived_class&amp;oldid=133665">https://en.cppreference.com/mwiki/index.php?title=cpp/language/derived_class&amp;oldid=133665</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/derived_class&amp;oldid=140230">https://en.cppreference.com/mwiki/index.php?title=cpp/language/derived_class&amp;oldid=140230</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -575,10 +672,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/derived_class">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/derived_class">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 September 2021, at 19:22.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 462,730 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 13 June 2022, at 00:22.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 496,227 times.</li>
                             </ul>
                     </div>
         </div>
@@ -596,7 +693,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.283 secs. -->
+</script><!-- Served in 0.037 secs. -->
 	</body>
-<!-- Cached 20220117194430 -->
+<!-- Cached 20220613072240 -->
 </html>

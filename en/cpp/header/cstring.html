@@ -52,6 +52,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -64,35 +65,35 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../header.html" title="cpp/header"> Standard Library headers </a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../header.html" title="cpp/header"> Standard Library headers </a><div class="t-navbar-menu"><div>Note: a slash '/' in a revision mark means that the header was deprecated and/or removed.
+<div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> Language Support</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="cstddef.html" title="cpp/header/cstddef"><tt>&lt;cstddef&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="cstdlib.html" title="cpp/header/cstdlib"><tt>&lt;cstdlib&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="version.html" title="cpp/header/version"><tt>&lt;version&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="version.html" title="cpp/header/version"><tt>&lt;version&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="limits.html" title="cpp/header/limits"><tt>&lt;limits&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="climits.html" title="cpp/header/climits"><tt>&lt;climits&gt;</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="cfloat.html" title="cpp/header/cfloat"><tt>&lt;cfloat&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cstdint.html" title="cpp/header/cstdint"><tt>&lt;cstdint&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="cstdint.html" title="cpp/header/cstdint"><tt>&lt;cstdint&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="new.html" title="cpp/header/new"><tt>&lt;new&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="typeinfo.html" title="cpp/header/typeinfo"><tt>&lt;typeinfo&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="source_location.html" title="cpp/header/source location"><tt>&lt;source_location&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="source_location.html" title="cpp/header/source location"><tt>&lt;source_location&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="exception.html" title="cpp/header/exception"><tt>&lt;exception&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="initializer_list.html" title="cpp/header/initializer list"><tt>&lt;initializer_list&gt;</tt></a>    </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="compare.html" title="cpp/header/compare"><tt>&lt;compare&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="initializer_list.html" title="cpp/header/initializer list"><tt>&lt;initializer_list&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span>  </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="compare.html" title="cpp/header/compare"><tt>&lt;compare&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="coroutine.html" title="cpp/header/coroutine"><tt>&lt;coroutine&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="coroutine.html" title="cpp/header/coroutine"><tt>&lt;coroutine&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="csignal.html" title="cpp/header/csignal"><tt>&lt;csignal&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="csetjmp.html" title="cpp/header/csetjmp"><tt>&lt;csetjmp&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="cstdarg.html" title="cpp/header/cstdarg"><tt>&lt;cstdarg&gt;</tt></a></td></tr>
@@ -100,7 +101,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Concepts</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="concepts.html" title="cpp/header/concepts"><tt>&lt;concepts&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="concepts.html" title="cpp/header/concepts"><tt>&lt;concepts&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Diagnostics</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="stdexcept.html" title="cpp/header/stdexcept"><tt>&lt;stdexcept&gt;</tt></a></td></tr>
@@ -109,38 +110,39 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="cerrno.html" title="cpp/header/cerrno"><tt>&lt;cerrno&gt;</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="system_error.html" title="cpp/header/system error"><tt>&lt;system_error&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="system_error.html" title="cpp/header/system error"><tt>&lt;system_error&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> General utilities</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="utility.html" title="cpp/header/utility"><tt>&lt;utility&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="memory_resource.html" title="cpp/header/memory resource"><tt>&lt;memory_resource&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="scoped_allocator.html" title="cpp/header/scoped allocator"><tt>&lt;scoped_allocator&gt;</tt></a>    </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="memory_resource.html" title="cpp/header/memory resource"><tt>&lt;memory_resource&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="scoped_allocator.html" title="cpp/header/scoped allocator"><tt>&lt;scoped_allocator&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span>  </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="expected.html" title="cpp/header/expected"><tt>&lt;expected&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="bitset.html" title="cpp/header/bitset"><tt>&lt;bitset&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="tuple.html" title="cpp/header/tuple"><tt>&lt;tuple&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="optional.html" title="cpp/header/optional"><tt>&lt;optional&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="any.html" title="cpp/header/any"><tt>&lt;any&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="tuple.html" title="cpp/header/tuple"><tt>&lt;tuple&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="optional.html" title="cpp/header/optional"><tt>&lt;optional&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="any.html" title="cpp/header/any"><tt>&lt;any&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="variant.html" title="cpp/header/variant"><tt>&lt;variant&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="type_traits.html" title="cpp/header/type traits"><tt>&lt;type_traits&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="ratio.html" title="cpp/header/ratio"><tt>&lt;ratio&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="chrono.html" title="cpp/header/chrono"><tt>&lt;chrono&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="variant.html" title="cpp/header/variant"><tt>&lt;variant&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="type_traits.html" title="cpp/header/type traits"><tt>&lt;type_traits&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="ratio.html" title="cpp/header/ratio"><tt>&lt;ratio&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="chrono.html" title="cpp/header/chrono"><tt>&lt;chrono&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="typeindex.html" title="cpp/header/typeindex"><tt>&lt;typeindex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="typeindex.html" title="cpp/header/typeindex"><tt>&lt;typeindex&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="stacktrace.html" title="cpp/header/stacktrace"><tt>&lt;stacktrace&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="stacktrace.html" title="cpp/header/stacktrace"><tt>&lt;stacktrace&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="ctime.html" title="cpp/header/ctime"><tt>&lt;ctime&gt;</tt></a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Strings</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="string.html" title="cpp/header/string"><tt>&lt;string&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="string_view.html" title="cpp/header/string view"><tt>&lt;string_view&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="string_view.html" title="cpp/header/string view"><tt>&lt;string_view&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"><tt>&lt;cstring&gt;</tt></strong></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="charconv.html" title="cpp/header/charconv"><tt>&lt;charconv&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="format.html" title="cpp/header/format"><tt>&lt;format&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="charconv.html" title="cpp/header/charconv"><tt>&lt;charconv&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="format.html" title="cpp/header/format"><tt>&lt;format&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
@@ -150,58 +152,59 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="cwchar.html" title="cpp/header/cwchar"><tt>&lt;cwchar&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cuchar.html" title="cpp/header/cuchar"><tt>&lt;cuchar&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="cuchar.html" title="cpp/header/cuchar"><tt>&lt;cuchar&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Localization</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="locale.html" title="cpp/header/locale"><tt>&lt;locale&gt;</tt></a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&gt;</tt></a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="clocale.html" title="cpp/header/clocale"><tt>&lt;clocale&gt;</tt></a></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"> <a href="codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&gt;</tt></a> <span class="t-mark">(C++11/17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <br>
+</td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Containers</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="span.html" title="cpp/header/span"><tt>&lt;span&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="array.html" title="cpp/header/array"><tt>&lt;array&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="span.html" title="cpp/header/span"><tt>&lt;span&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="array.html" title="cpp/header/array"><tt>&lt;array&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="vector.html" title="cpp/header/vector"><tt>&lt;vector&gt;</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="deque.html" title="cpp/header/deque"><tt>&lt;deque&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="forward_list.html" title="cpp/header/forward list"><tt>&lt;forward_list&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="forward_list.html" title="cpp/header/forward list"><tt>&lt;forward_list&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="list.html" title="cpp/header/list"><tt>&lt;list&gt;</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="map.html" title="cpp/header/map"><tt>&lt;map&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="set.html" title="cpp/header/set"><tt>&lt;set&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="queue.html" title="cpp/header/queue"><tt>&lt;queue&gt;</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="unordered_map.html" title="cpp/header/unordered map"><tt>&lt;unordered_map&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="unordered_set.html" title="cpp/header/unordered set"><tt>&lt;unordered_set&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="unordered_map.html" title="cpp/header/unordered map"><tt>&lt;unordered_map&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="unordered_set.html" title="cpp/header/unordered set"><tt>&lt;unordered_set&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="stack.html" title="cpp/header/stack"><tt>&lt;stack&gt;</tt></a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Iterators</td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="iterator.html" title="cpp/header/iterator"><tt>&lt;iterator&gt;</tt></a></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Ranges</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Algorithms</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="algorithm.html" title="cpp/header/algorithm"><tt>&lt;algorithm&gt;</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="execution.html" title="cpp/header/execution"><tt>&lt;execution&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="execution.html" title="cpp/header/execution"><tt>&lt;execution&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Numerics</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="complex.html" title="cpp/header/complex"><tt>&lt;complex&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="random.html" title="cpp/header/random"><tt>&lt;random&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="random.html" title="cpp/header/random"><tt>&lt;random&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="valarray.html" title="cpp/header/valarray"><tt>&lt;valarray&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="numeric.html" title="cpp/header/numeric"><tt>&lt;numeric&gt;</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="bit.html" title="cpp/header/bit"><tt>&lt;bit&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="numbers.html" title="cpp/header/numbers"><tt>&lt;numbers&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="bit.html" title="cpp/header/bit"><tt>&lt;bit&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="numbers.html" title="cpp/header/numbers"><tt>&lt;numbers&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="cfenv.html" title="cpp/header/cfenv"><tt>&lt;cfenv&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="cfenv.html" title="cpp/header/cfenv"><tt>&lt;cfenv&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="cmath.html" title="cpp/header/cmath"><tt>&lt;cmath&gt;</tt></a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Input/Output</td></tr>
@@ -217,50 +220,50 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"> <a href="syncstream.html" title="cpp/header/syncstream"><tt>&lt;syncstream&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="spanstream.html" title="cpp/header/spanstream"><tt>&lt;spanstream&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="sstream.html" title="cpp/header/sstream"><tt>&lt;sstream&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="spanstream.html" title="cpp/header/spanstream"><tt>&lt;spanstream&gt;</tt></a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="fstream.html" title="cpp/header/fstream"><tt>&lt;fstream&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="syncstream.html" title="cpp/header/syncstream"><tt>&lt;syncstream&gt;</tt></a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="cstdio.html" title="cpp/header/cstdio"><tt>&lt;cstdio&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cinttypes.html" title="cpp/header/cinttypes"><tt>&lt;cinttypes&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="strstream.html" title="cpp/header/strstream"><tt>&lt;strstream&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="cinttypes.html" title="cpp/header/cinttypes"><tt>&lt;cinttypes&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="strstream.html" title="cpp/header/strstream"><tt>&lt;strstream&gt;</tt></a> <span class="t-mark">(C++98/)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Regular expressions</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="regex.html" title="cpp/header/regex"><tt>&lt;regex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="regex.html" title="cpp/header/regex"><tt>&lt;regex&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Filesystem support</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="filesystem.html" title="cpp/header/filesystem"><tt>&lt;filesystem&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="filesystem.html" title="cpp/header/filesystem"><tt>&lt;filesystem&gt;</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Thread support</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="thread.html" title="cpp/header/thread"><tt>&lt;thread&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="atomic.html" title="cpp/header/atomic"><tt>&lt;atomic&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="mutex.html" title="cpp/header/mutex"><tt>&lt;mutex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="thread.html" title="cpp/header/thread"><tt>&lt;thread&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="atomic.html" title="cpp/header/atomic"><tt>&lt;atomic&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="mutex.html" title="cpp/header/mutex"><tt>&lt;mutex&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="shared_mutex.html" title="cpp/header/shared mutex"><tt>&lt;shared_mutex&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="condition_variable.html" title="cpp/header/condition variable"><tt>&lt;condition_variable&gt;</tt></a>    </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="future.html" title="cpp/header/future"><tt>&lt;future&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="shared_mutex.html" title="cpp/header/shared mutex"><tt>&lt;shared_mutex&gt;</tt></a> <span class="t-mark-rev t-since-cxx14">(C++14)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="condition_variable.html" title="cpp/header/condition variable"><tt>&lt;condition_variable&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span>  </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="future.html" title="cpp/header/future"><tt>&lt;future&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="stop_token.html" title="cpp/header/stop token"><tt>&lt;stop_token&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="semaphore.html" title="cpp/header/semaphore"><tt>&lt;semaphore&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="stop_token.html" title="cpp/header/stop token"><tt>&lt;stop_token&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="semaphore.html" title="cpp/header/semaphore"><tt>&lt;semaphore&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="latch.html" title="cpp/header/latch"><tt>&lt;latch&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="barrier.html" title="cpp/header/barrier"><tt>&lt;barrier&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="latch.html" title="cpp/header/latch"><tt>&lt;latch&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="barrier.html" title="cpp/header/barrier"><tt>&lt;barrier&gt;</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <br>
 </td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> C compatibility</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="ciso646.html" title="cpp/header/ciso646"><tt>&lt;ciso646&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cstdalign.html" title="cpp/header/cstdalign"><tt>&lt;cstdalign&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="cstdbool.html" title="cpp/header/cstdbool"><tt>&lt;cstdbool&gt;</tt></a> <span class="t-mark">(C++11/17/20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="ccomplex.html" title="cpp/header/ccomplex"><tt>&lt;ccomplex&gt;</tt></a> <span class="t-mark">(C++11/17/20)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="cstdbool.html" title="cpp/header/cstdbool"><tt>&lt;cstdbool&gt;</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="ccomplex.html" title="cpp/header/ccomplex"><tt>&lt;ccomplex&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="ctgmath.html" title="cpp/header/ctgmath"><tt>&lt;ctgmath&gt;</tt></a> <span class="t-mark">(C++11/17/20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="cstdalign.html" title="cpp/header/cstdalign"><tt>&lt;cstdalign&gt;</tt></a> <span class="t-mark">(C++11/17/20)</span></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="ctgmath.html" title="cpp/header/ctgmath"><tt>&lt;ctgmath&gt;</tt></a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="ciso646.html" title="cpp/header/ciso646"><tt>&lt;ciso646&gt;</tt></a> <span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="stdatomic.h.html" title="cpp/header/stdatomic.h"><tt>&lt;stdatomic.h&gt;</tt></a></td></tr>
 </table></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
@@ -434,15 +437,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 8674/1000000
-Preprocessor generated node count: 7424/1000000
-Post‐expand include size: 227444/2097152 bytes
-Template argument size: 37418/2097152 bytes
+Preprocessor visited node count: 9541/1000000
+Preprocessor generated node count: 8026/1000000
+Post‐expand include size: 255627/2097152 bytes
+Template argument size: 40776/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9735-0!*!0!!en!*!* and timestamp 20220114093757 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9735-0!*!0!!en!*!* and timestamp 20220730025456 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -463,10 +466,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/header/cstring">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/header/cstring">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 17 June 2020, at 18:53.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 160,259 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 17 June 2020, at 19:53.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 179,449 times.</li>
                             </ul>
                     </div>
         </div>
@@ -484,7 +487,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.662 secs. -->
+</script><!-- Served in 0.839 secs. -->
 	</body>
-<!-- Cached 20220114093757 -->
+<!-- Cached 20220730025456 -->
 </html>

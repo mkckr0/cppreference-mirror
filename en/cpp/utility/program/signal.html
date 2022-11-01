@@ -13,7 +13,7 @@
 
 <script src="../../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/utility/program/signal","wgTitle":"cpp/utility/program/signal","wgCurRevisionId":129478,"wgArticleId":1974,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/utility/program/signal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/utility/program/signal","wgTitle":"cpp/utility/program/signal","wgCurRevisionId":140332,"wgArticleId":1974,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/utility/program/signal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,19 +141,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../utility.html" title="cpp/utility"> Utilities library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h1"><td colspan="5"> Language support</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../types.html" title="cpp/types"> Type support</a> (basic types, RTTI, type traits)     </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../types.html" title="cpp/types"> Type support</a> (basic types, RTTI)</td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/utility/feature test"> Library feature-test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../memory.html" title="cpp/memory"> Dynamic memory management</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../program.html" title="cpp/utility/program"> Program utilities</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Error handling</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../coroutine.html" title="cpp/coroutine"> Coroutine support</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../variadic.html" title="cpp/utility/variadic"> Variadic functions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../types/is_constant_evaluated.html" title="cpp/types/is constant evaluated"><span class="t-lines"><span>is_constant_evaluated</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
@@ -172,7 +171,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/partial_order.html" title="cpp/utility/compare/partial order"><span class="t-lines"><span>partial_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/compare_strong_order_fallback.html" title="cpp/utility/compare/compare strong order fallback"><span class="t-lines"><span>compare_strong_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/compare_weak_order_fallback.html" title="cpp/utility/compare/compare weak order fallback"><span class="t-lines"><span>compare_weak_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/compare_partial_order_fallback.html" title="cpp/utility/compare/compare partial order fallback"><span class="t-lines"><span>compare_partial_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/compare_partial_order_fallback.html" title="cpp/utility/compare/compare partial order fallback"><span class="t-lines"><span>compare_partial_order_fallback</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span>   </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../compare/named_comparison_functions.html" title="cpp/utility/compare/named comparison functions"><span class="t-lines"><span>is_eq</span><span>is_neq</span><span>is_lt</span><span>is_lteq</span><span>is_gt</span><span>is_gteq</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h1"><td colspan="5"> General utilities</td></tr>
@@ -181,7 +180,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../format.html" title="cpp/utility/format"> Formatting library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../bitset.html" title="cpp/utility/bitset"><span class="t-lines"><span>bitset</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../hash.html" title="cpp/utility/hash"><span class="t-lines"><span>hash</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../integer_sequence.html" title="cpp/utility/integer sequence"><span class="t-lines"><span>integer_sequence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx14">(C++14)</span></span></span></div></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Relational operators <span class="t-mark-rev t-deprecated-cxx20">(deprecated in C++20)</span> </td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../rel_ops/operator_cmp.html" title="cpp/utility/rel ops/operator cmp"><span class="t-lines"><span>rel_ops::operator!=</span><span>rel_ops::operator&gt;</span></span></a></div></div></td></tr>
@@ -201,14 +199,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../ranges/swap.html" title="cpp/utility/ranges/swap"><span class="t-lines"><span>ranges::swap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../exchange.html" title="cpp/utility/exchange"><span class="t-lines"><span>exchange</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx14">(C++14)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../declval.html" title="cpp/utility/declval"><span class="t-lines"><span>declval</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
-</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../to_underlying.html" title="cpp/utility/to underlying"><span class="t-lines"><span>to_underlying</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../forward.html" title="cpp/utility/forward"><span class="t-lines"><span>forward</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../forward_like.html" title="cpp/utility/forward like"><span class="t-lines"><span>forward_like</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../move.html" title="cpp/utility/move"><span class="t-lines"><span>move</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../move_if_noexcept.html" title="cpp/utility/move if noexcept"><span class="t-lines"><span>move_if_noexcept</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../as_const.html" title="cpp/utility/as const"><span class="t-lines"><span>as_const</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../to_underlying.html" title="cpp/utility/to underlying"><span class="t-lines"><span>to_underlying</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Common vocabulary types </td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
@@ -222,8 +219,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../tuple_element.html" title="cpp/utility/tuple element"><span class="t-lines"><span>tuple_element</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../apply.html" title="cpp/utility/apply"><span class="t-lines"><span>apply</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../make_from_tuple.html" title="cpp/utility/make from tuple"><span class="t-lines"><span>make_from_tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"> <br>
-</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/utility/expected&amp;action=edit&amp;redlink=1" class="new" title="cpp/utility/expected (page does not exist)"><span class="t-lines"><span>expected</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Elementary string conversions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../to_chars.html" title="cpp/utility/to chars"><span class="t-lines"><span>to_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
@@ -242,6 +238,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="at_quick_exit.html" title="cpp/utility/program/at quick exit"><span class="t-lines"><span>at_quick_exit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="EXIT_status.html" title="cpp/utility/program/EXIT status"><span class="t-lines"><span>EXIT_SUCCESS</span><span>EXIT_FAILURE</span></span></a></div></div></td></tr>
 </table></div></td></tr>
+<tr class="t-nv-h1"><td colspan="5"> Unreachable control flow</td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unreachable.html" title="cpp/utility/unreachable"><span class="t-lines"><span>unreachable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Communicating with the environment</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="system.html" title="cpp/utility/program/system"><span class="t-lines"><span>system</span></span></a></div></div></td></tr>
@@ -258,7 +256,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="SIG_ERR.html" title="cpp/utility/program/SIG ERR"><span class="t-lines"><span>SIG_ERR</span></span></a></div></div></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Signal types</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="SIG_types.html" title="cpp/utility/program/SIG types"><span class="t-lines"><span>SIGABRT</span><span>SIGFPE</span><span>SIGILL</span><span>SIGINT</span><span>SIGSEGV</span><span>SIGTERM</span></span></a></div></div></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="SIG_types.html" title="cpp/utility/program/SIG types"><span class="t-lines"><span>SIGABRT</span><span>SIGFPE</span><span>SIGILL</span></span></a></div></div></td></tr>
+</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="SIG_types.html" title="cpp/utility/program/SIG types"><span class="t-lines"><span>SIGINT</span><span>SIGSEGV</span><span>SIGTERM</span></span></a></div></div></td></tr>
+</table></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Non-local jumps</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="setjmp.html" title="cpp/utility/program/setjmp"><span class="t-lines"><span>setjmp</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="longjmp.html" title="cpp/utility/program/longjmp"><span class="t-lines"><span>longjmp</span></span></a></div></div></td></tr>
@@ -287,7 +289,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Sets the handler for signal <code>sig</code>. The signal handler can be set so that default handling will occur, signal is ignored, or a user-defined function is called.
 </p><p>When signal handler is set to a function and a signal occurs, it is implementation defined whether <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">signal</span><span class="br0">(</span>sig, <a href="SIG_strategies.html"><span class="kw979">SIG_DFL</span></a><span class="br0">)</span></span></span> will be executed immediately before the start of signal handler. Also, the implementation can prevent some implementation-defined set of signals from occurring while the signal handler runs. 
 </p><p>For some of the signals, the implementation may call <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">signal</span><span class="br0">(</span>sig, <a href="SIG_strategies.html"><span class="kw980">SIG_IGN</span></a><span class="br0">)</span></span></span> at the startup of the program. For the rest, the implementation must call <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">signal</span><span class="br0">(</span>sig, <a href="SIG_strategies.html"><span class="kw979">SIG_DFL</span></a><span class="br0">)</span></span></span>.
-</p><p>(Note: POSIX introduced <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/sigaction.html">sigaction</a> to standardize these implementation-defined behaviors)
+</p><p>(Note: POSIX introduced <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/sigaction.html"><code>sigaction</code></a> to standardize these implementation-defined behaviors)
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -306,8 +308,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   defines signal types <br> <span class="t-mark">(macro constant)</span> </td></tr>
 </table>
-<p><br>
-</p>
 </td></tr>
 <tr class="t-par">
 <td>  handler
@@ -354,7 +354,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <ul><li> call to any library function, except the following <i>signal-safe</i> functions (note, in particular, dynamic allocation is not signal-safe):
 </li></ul>
-<dl><dd><ul><li> members functions of <span class="t-lc"><a href="../../atomic/atomic.html" title="cpp/atomic/atomic">std::atomic</a></span> and non-member functions from <a href="../../atomic.html" title="cpp/atomic">&lt;atomic&gt;</a> if the atomic type they operate on is lock-free. The functions <span class="t-lc"><a href="../../atomic/atomic_is_lock_free.html" title="cpp/atomic/atomic is lock free">std::atomic_is_lock_free</a></span> and <span class="t-lc"><a href="../../atomic/atomic/is_lock_free.html" title="cpp/atomic/atomic/is lock free">std::atomic::is_lock_free</a></span> are signal-safe for any atomic type.
+<dl><dd><ul><li> members functions of <span class="t-lc"><a href="../../atomic/atomic.html" title="cpp/atomic/atomic">std::atomic</a></span> and non-member functions from <a href="../../header/atomic.html" title="cpp/header/atomic"><tt>&lt;atomic&gt;</tt></a> if the atomic type they operate on is lock-free. The functions <span class="t-lc"><a href="../../atomic/atomic_is_lock_free.html" title="cpp/atomic/atomic is lock free">std::atomic_is_lock_free</a></span> and <span class="t-lc"><a href="../../atomic/atomic/is_lock_free.html" title="cpp/atomic/atomic/is lock free">std::atomic::is_lock_free</a></span> are signal-safe for any atomic type.
 </li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">signal</span></span></span> with the first argument being the number of the signal currently handled (signal handler can re-register itself, but not other signals).
 </li><li> member functions of <span class="t-lc"><a href="../../types/numeric_limits.html" title="cpp/types/numeric limits">std::numeric_limits</a></span>
 </li><li> <span class="t-lc"><a href="_Exit.html" title="cpp/utility/program/ Exit">std::_Exit</a></span>
@@ -362,14 +362,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> <span class="t-lc"><a href="quick_exit.html" title="cpp/utility/program/quick exit">std::quick_exit</a></span>
 </li><li> The member functions of <span class="t-lc"><a href="../initializer_list.html" title="cpp/utility/initializer list">std::initializer_list</a></span> and the <code>std::initializer_list</code> overloads of <span class="t-lc"><a href="../../iterator/begin.html" title="cpp/iterator/begin">std::begin</a></span> and <span class="t-lc"><a href="../../iterator/end.html" title="cpp/iterator/end">std::end</a></span>
 </li><li> <span class="t-lc"><a href="../forward.html" title="cpp/utility/forward">std::forward</a></span>, <span class="t-lc">std::move</span>, <span class="t-lc"><a href="../move_if_noexcept.html" title="cpp/utility/move if noexcept">std::move_if_noexcept</a></span>
-</li><li> All functions from <a href="../../types.html#Type_traits" title="cpp/types">&lt;type_traits&gt;</a>
+</li><li> All functions from <a href="../../header/type_traits.html" title="cpp/header/type traits"><tt>&lt;type_traits&gt;</tt></a>
 </li><li> <span class="t-lc"><a href="../../string/byte/memcpy.html" title="cpp/string/byte/memcpy">std::memcpy</a></span> and <span class="t-lc"><a href="../../string/byte/memmove.html" title="cpp/string/byte/memmove">std::memmove</a></span>
 </li></ul>
 </dd></dl>
 <ul><li> access to an object with thread storage duration
 </li><li> a <a href="../../language/dynamic_cast.html" title="cpp/language/dynamic cast"><tt>dynamic_cast</tt></a> expression
 </li><li> a <a href="../../language/throw.html" title="cpp/language/throw"><tt>throw</tt></a> expression
-</li><li> entry to a <a href="../../language/try_catch.html" title="cpp/language/try catch"><tt>try</tt></a> block, including <a href="../../language/function-try-block.html" title="cpp/language/function-try-block"><tt>function-try-block</tt></a>
+</li><li> entry to a <a href="../../language/try_catch.html" title="cpp/language/try catch"><tt>try</tt></a> block, including <a href="../../language/function-try-block.html" title="cpp/language/function-try-block">function-<code>try</code>-block</a>
 </li><li> initialization of a static variable that performs <a href="../../language/initialization.html#Non-local_variables" title="cpp/language/initialization">dynamic non-local initialization</a> (including delayed until first ODR-use)
 </li><li> waits for completion of initialization of any variable with static storage duration due to another thread concurrently initializing it
 </li></ul>
@@ -429,14 +429,14 @@ For each signal handler invocation, evaluations performed by the thread invoking
   std<span class="sy4">::</span><span class="me2">signal</span><span class="br0">(</span><a href="SIG_types.html"><span class="kw985">SIGINT</span></a>, signal_handler<span class="br0">)</span><span class="sy4">;</span>
  
   <a href="../../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"SignalValue: "</span> <span class="sy1">&lt;&lt;</span> gSignalStatus <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-  <a href="../../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Sending signal "</span> <span class="sy1">&lt;&lt;</span> <a href="SIG_types.html"><span class="kw985">SIGINT</span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+  <a href="../../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Sending signal: "</span> <span class="sy1">&lt;&lt;</span> <a href="SIG_types.html"><span class="kw985">SIGINT</span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
   <a href="raise.html"><span class="kw977">std::<span class="me2">raise</span></span></a><span class="br0">(</span><a href="SIG_types.html"><span class="kw985">SIGINT</span></a><span class="br0">)</span><span class="sy4">;</span>
   <a href="../../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"SignalValue: "</span> <span class="sy1">&lt;&lt;</span> gSignalStatus <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">SignalValue: 0
-Sending signal 2
+Sending signal: 2
 SignalValue: 2</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
@@ -456,19 +456,19 @@ SignalValue: 2</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7820/1000000
-Preprocessor generated node count: 13592/1000000
-Post‐expand include size: 246581/2097152 bytes
-Template argument size: 58933/2097152 bytes
+Preprocessor visited node count: 8102/1000000
+Preprocessor generated node count: 13814/1000000
+Post‐expand include size: 253338/2097152 bytes
+Template argument size: 60288/2097152 bytes
 Highest expansion depth: 21/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1974-0!*!0!!en!*!* and timestamp 20220124070812 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1974-0!*!0!!en!*!* and timestamp 20220727203946 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/utility/program/signal&amp;oldid=129478">https://en.cppreference.com/mwiki/index.php?title=cpp/utility/program/signal&amp;oldid=129478</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/utility/program/signal&amp;oldid=140332">https://en.cppreference.com/mwiki/index.php?title=cpp/utility/program/signal&amp;oldid=140332</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -485,10 +485,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/utility/program/signal">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/utility/program/signal">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 6 June 2021, at 13:54.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 294,319 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 16 June 2022, at 08:12.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 319,904 times.</li>
                             </ul>
                     </div>
         </div>
@@ -506,7 +506,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.002 secs. -->
+</script><!-- Served in 2.407 secs. -->
 	</body>
-<!-- Cached 20220124070814 -->
+<!-- Cached 20220727203946 -->
 </html>

@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,14 +141,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../algorithm.html" title="cpp/algorithm"> Algorithm library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> <a href="ranges.html" title="cpp/algorithm/ranges">Constrained algorithms and algorithms on ranges</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <span class="t-lc">std::ranges::copy</span>, <span class="t-lc">std::ranges::sort</span>, ... </td></tr>
+<tr class="t-nv"><td colspan="5"> Constrained algorithms, e.g. <a href="ranges/copy.html" title="cpp/algorithm/ranges/copy"><tt>ranges::copy</tt></a>, <a href="ranges/sort.html" title="cpp/algorithm/ranges/sort"><tt>ranges::sort</tt></a>, ... </td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="../algorithm.html#Execution_policies" title="cpp/algorithm">Execution policies <span class="t-mark-rev t-since-cxx17">(C++17)</span></a></td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="is_execution_policy.html" title="cpp/algorithm/is execution policy"><span class="t-lines"><span>is_execution_policy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span>  </span></span></div></div></td></tr>
@@ -500,7 +500,7 @@ ForwardIt remove_if<span class="br0">(</span> ForwardIt first, ForwardIt last, U
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T <span class="sy1">&gt;</span>
 ForwardIt remove<span class="br0">(</span>ForwardIt first, ForwardIt last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value<span class="br0">)</span>
 <span class="br0">{</span>
-    first <span class="sy1">=</span> <a href="find_if_not.html"><span class="kw1578">std::<span class="me2">find</span></span></a><span class="br0">(</span>first, last, value<span class="br0">)</span><span class="sy4">;</span>
+    first <span class="sy1">=</span> <a href="find.html"><span class="kw1578">std::<span class="me2">find</span></span></a><span class="br0">(</span>first, last, value<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>first <span class="sy3">!</span><span class="sy1">=</span> last<span class="br0">)</span>
         <span class="kw1">for</span><span class="br0">(</span>ForwardIt i <span class="sy1">=</span> first<span class="sy4">;</span> <span class="sy2">++</span>i <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="br0">)</span>
             <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><span class="br0">(</span><span class="sy2">*</span>i <span class="sy1">==</span> value<span class="br0">)</span><span class="br0">)</span>
@@ -516,7 +516,7 @@ ForwardIt remove<span class="br0">(</span>ForwardIt first, ForwardIt last, <span
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> UnaryPredicate<span class="sy1">&gt;</span>
 ForwardIt remove_if<span class="br0">(</span>ForwardIt first, ForwardIt last, UnaryPredicate p<span class="br0">)</span>
 <span class="br0">{</span>
-    first <span class="sy1">=</span> <a href="find_if_not.html"><span class="kw1579">std::<span class="me2">find_if</span></span></a><span class="br0">(</span>first, last, p<span class="br0">)</span><span class="sy4">;</span>
+    first <span class="sy1">=</span> <a href="find.html"><span class="kw1579">std::<span class="me2">find_if</span></span></a><span class="br0">(</span>first, last, p<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>first <span class="sy3">!</span><span class="sy1">=</span> last<span class="br0">)</span>
         <span class="kw1">for</span><span class="br0">(</span>ForwardIt i <span class="sy1">=</span> first<span class="sy4">;</span> <span class="sy2">++</span>i <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="br0">)</span>
             <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>p<span class="br0">(</span><span class="sy2">*</span>i<span class="br0">)</span><span class="br0">)</span>
@@ -582,15 +582,15 @@ Textwithsomewhitespaces</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10868/1000000
-Preprocessor generated node count: 14642/1000000
-Post‐expand include size: 303543/2097152 bytes
-Template argument size: 59903/2097152 bytes
+Preprocessor visited node count: 10925/1000000
+Preprocessor generated node count: 14707/1000000
+Post‐expand include size: 303935/2097152 bytes
+Template argument size: 60186/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:769-0!*!0!!en!*!* and timestamp 20220114093304 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:769-0!*!0!!en!*!* and timestamp 20220627191450 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -611,10 +611,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/remove">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/remove">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 7 September 2021, at 05:32.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,207,085 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 7 September 2021, at 06:32.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,305,317 times.</li>
                             </ul>
                     </div>
         </div>
@@ -632,7 +632,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.640 secs. -->
+</script><!-- Served in 3.019 secs. -->
 	</body>
-<!-- Cached 20220114093304 -->
+<!-- Cached 20220627191450 -->
 </html>

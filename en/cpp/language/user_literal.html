@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/user_literal","wgTitle":"cpp/language/user literal","wgCurRevisionId":137579,"wgArticleId":5061,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/user_literal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/user_literal","wgTitle":"cpp/language/user literal","wgCurRevisionId":139788,"wgArticleId":5061,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/user_literal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -473,74 +473,74 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">decimal-literal</span>
+<td> <span class="t-spar">decimal-literal</span>
 </td>
 <td> -
 </td>
-<td>  same as in <a href="integer_literal.html" title="cpp/language/integer literal">integer literal</a>, a non-zero decimal digit followed by zero or more decimal digits
+<td> same as in <a href="integer_literal.html" title="cpp/language/integer literal">integer literal</a>, a non-zero decimal digit followed by zero or more decimal digits
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">octal-literal</span>
+<td> <span class="t-spar">octal-literal</span>
 </td>
 <td> -
 </td>
-<td>  same as in <a href="integer_literal.html" title="cpp/language/integer literal">integer literal</a>, a zero followed by zero or more octal digits
+<td> same as in <a href="integer_literal.html" title="cpp/language/integer literal">integer literal</a>, a zero followed by zero or more octal digits
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">hex-literal</span>
+<td> <span class="t-spar">hex-literal</span>
 </td>
 <td> -
 </td>
-<td>  same as in <a href="integer_literal.html" title="cpp/language/integer literal">integer literal</a>, <code>0x</code> or <code>0X</code> followed by one or more hexadecimal digits
+<td> same as in <a href="integer_literal.html" title="cpp/language/integer literal">integer literal</a>, <code>0x</code> or <code>0X</code> followed by one or more hexadecimal digits
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">binary-literal</span>
+<td> <span class="t-spar">binary-literal</span>
 </td>
 <td> -
 </td>
-<td>  same as in <a href="integer_literal.html" title="cpp/language/integer literal">integer literal</a>, <code>0b</code> or <code>0B</code> followed by one or more binary digits
+<td> same as in <a href="integer_literal.html" title="cpp/language/integer literal">integer literal</a>, <code>0b</code> or <code>0B</code> followed by one or more binary digits
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">digit-sequence</span>
+<td> <span class="t-spar">digit-sequence</span>
 </td>
 <td> -
 </td>
-<td>  same as in <a href="floating_literal.html" title="cpp/language/floating literal">floating literal</a>, a sequence of decimal digits
+<td> same as in <a href="floating_literal.html" title="cpp/language/floating literal">floating literal</a>, a sequence of decimal digits
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">fractional-constant</span>
+<td> <span class="t-spar">fractional-constant</span>
 </td>
 <td> -
 </td>
-<td>  same as in <a href="floating_literal.html" title="cpp/language/floating literal">floating literal</a>, either a <span class="t-spar">digit-sequence</span> followed by a dot (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">123</span>.</span></span>) or an optional <span class="t-spar">digit-sequence</span> followed by a dot and another <span class="t-spar">digit-sequence</span> (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu16">1.0</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu18">.12</span></span></span>)
+<td> same as in <a href="floating_literal.html" title="cpp/language/floating literal">floating literal</a>, either a <span class="t-spar">digit-sequence</span> followed by a dot (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">123</span>.</span></span>) or an optional <span class="t-spar">digit-sequence</span> followed by a dot and another <span class="t-spar">digit-sequence</span> (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu16">1.0</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu18">.12</span></span></span>)
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">exponent-part</span>
+<td> <span class="t-spar">exponent-part</span>
 </td>
 <td> -
 </td>
-<td>  same as in <a href="floating_literal.html" title="cpp/language/floating literal">floating literal</a>, the letter <code>e</code> or the letter <code>E</code> followed by optional sign, followed by <span class="t-spar">digit-sequence</span>
+<td> same as in <a href="floating_literal.html" title="cpp/language/floating literal">floating literal</a>, the letter <code>e</code> or the letter <code>E</code> followed by optional sign, followed by <span class="t-spar">digit-sequence</span>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">character-literal</span>
+<td> <span class="t-spar">character-literal</span>
 </td>
 <td> -
 </td>
-<td>  same as in <a href="character_literal.html" title="cpp/language/character literal">character literal</a>
+<td> same as in <a href="character_literal.html" title="cpp/language/character literal">character literal</a>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">string-literal</span>
+<td> <span class="t-spar">string-literal</span>
 </td>
 <td> -
 </td>
-<td>  same as in <a href="string_literal.html" title="cpp/language/string literal">string literal</a>, including raw string literals
+<td> same as in <a href="string_literal.html" title="cpp/language/string literal">string literal</a>, including raw string literals
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">ud-suffix</span>
+<td> <span class="t-spar">ud-suffix</span>
 </td>
 <td> -
 </td>
-<td>  an identifier, introduced by a <i>literal operator</i> or a <i>literal operator template</i> declaration (see below). All <span class="t-spar">ud-suffix</span>es introduced by a program must begin with the underscore character <code><b>_</b></code>. The standard library <span class="t-spar">ud-suffix</span>es do not begin with underscores.
+<td> an identifier, introduced by a <i>literal operator</i> or a <i>literal operator template</i> declaration (see below). All <span class="t-spar">ud-suffix</span>es introduced by a program must begin with the underscore character <code><b>_</b></code>. The standard library <span class="t-spar">ud-suffix</span>es do not begin with underscores.
 </td></tr></table>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx14"><td>
@@ -571,16 +571,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">4)</span> For user-defined character literals, the user-defined literal expression is treated as a function call <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="st0">""</span> X<span class="br0">(</span>ch<span class="br0">)</span></span></span>, where <code>ch</code> is the literal without <span class="t-spar">ud-suffix</span></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">long</span> <span class="kw4">double</span> operator <span class="st0">""</span> _w<span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span><span class="br0">)</span><span class="sy4">;</span>
 <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> operator <span class="st0">""</span> _w<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char16_t</span><span class="sy2">*</span>, size_t<span class="br0">)</span><span class="sy4">;</span>
-<span class="kw4">unsigned</span> operator <span class="st0">""</span> _w<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span>
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="nu16">1.2</span>_w<span class="sy4">;</span> <span class="co1">// calls operator "" _w(1.2L)</span>
+<span class="kw4">unsigned</span>    operator <span class="st0">""</span> _w<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="nu16">1.2</span>_w<span class="sy4">;</span>    <span class="co1">// calls operator "" _w(1.2L)</span>
     u<span class="st0">"one"</span>_w<span class="sy4">;</span> <span class="co1">// calls operator "" _w(u"one", 3)</span>
-    <span class="nu0">12</span>_w<span class="sy4">;</span> <span class="co1">// calls operator "" _w("12")</span>
-    <span class="st0">"two"</span>_w<span class="sy4">;</span> <span class="co1">// error: no applicable literal operator</span>
+    <span class="nu0">12</span>_w<span class="sy4">;</span>     <span class="co1">// calls operator "" _w("12")</span>
+    <span class="st0">"two"</span>_w<span class="sy4">;</span>  <span class="co1">// error: no applicable literal operator</span>
 <span class="br0">}</span></pre></div></div>
-<p>When string literal concatenation takes place in <a href="translation_phases.html" title="cpp/language/translation phases">translation phase 6</a>, user-defined string literals are concatenated as well, and their <span class="t-spar">ud-suffix</span>es are ignored for the purpose of concatenation, except that only one suffix may appear on all concatenated literals:
+<p>When string literal concatenation takes place in <a href="translation_phases.html#Phase_6" title="cpp/language/translation phases">translation phase 6</a>, user-defined string literals are concatenated as well, and their <span class="t-spar">ud-suffix</span>es are ignored for the purpose of concatenation, except that only one suffix may appear on all concatenated literals:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     L<span class="st0">"A"</span> <span class="st0">"B"</span> <span class="st0">"C"</span>_x<span class="sy4">;</span>  <span class="co1">// OK: same as L"ABC"_x</span>
     <span class="st0">"P"</span>_x <span class="st0">"Q"</span> <span class="st0">"R"</span>_y<span class="sy4">;</span> <span class="co1">// error: two different ud-suffixes (_x and _y)</span>
 <span class="br0">}</span></pre></div></div>
@@ -623,33 +626,35 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">identifier</span>
+<td> <span class="t-spar">identifier</span>
 </td>
 <td> -
 </td>
-<td>  the identifier to use as the <span class="t-spar">ud-suffix</span> for the user-defined literals that will call this function. Must begin with the underscore <code><b>_</b></code>: the suffixes that do not begin with the underscore are reserved for the literal operators provided by the standard library.
+<td> the identifier to use as the <span class="t-spar">ud-suffix</span> for the user-defined literals that will call this function. Must begin with the underscore <code><b>_</b></code>: the suffixes that do not begin with the underscore are reserved for the literal operators provided by the standard library.
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">user-defined-string-literal</span>
+<td> <span class="t-spar">user-defined-string-literal</span>
 </td>
 <td> -
 </td>
-<td>  the character sequence <code><b>""</b></code> followed, without a space, by the character sequence that becomes the <span class="t-spar">ud-suffix</span>. This special syntax makes it possible to use language keywords and <a href="../keywords.html" title="cpp/keywords" class="mw-redirect">reserved identifiers</a> as ud-suffixes, and is used by the declaration of <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="st0">""</span><span class="kw1">if</span></span></span> from the header <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span>complex<span class="sy1">&gt;</span></span></span>. Note that using this form does not change the rules that user-defined literal operators must begin with an underscore: declarations such as <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="st0">""</span><span class="kw1">if</span></span></span> may only appear as part of a standard library header. However, it allows the use of an underscore followed by a capital letter (which is otherwise a <a href="name.html" title="cpp/language/identifiers">reserved identifier</a>)
+<td> the character sequence <code><b>""</b></code> followed, without a space, by the character sequence that becomes the <span class="t-spar">ud-suffix</span>. This special syntax makes it possible to use language keywords and <a href="../keywords.html" title="cpp/keywords" class="mw-redirect">reserved identifiers</a> as ud-suffixes, and is used by the declaration of <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="st0">""</span><span class="kw1">if</span></span></span> from the header <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span>complex<span class="sy1">&gt;</span></span></span>. Note that using this form does not change the rules that user-defined literal operators must begin with an underscore: declarations such as <span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="st0">""</span><span class="kw1">if</span></span></span> may only appear as part of a standard library header. However, it allows the use of an underscore followed by a capital letter (which is otherwise a <a href="name.html" title="cpp/language/identifiers">reserved identifier</a>)
 </td></tr></table>
 <p>If the literal operator is a template, it must have an empty parameter list and can have only one template parameter, which must be a non-type template parameter pack with element type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> (in which case it is known as a <i>numeric literal operator template</i>)
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw4">char</span>...<span class="sy1">&gt;</span> <span class="kw4">double</span> operator <span class="st0">""</span> _x<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">char</span>...<span class="sy1">&gt;</span>
+<span class="kw4">double</span> operator <span class="st0">""</span> _x<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
 <p>or a non-type template parameter of class type (in which case it is known as a <i>string literal operator template</i>)
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A <span class="br0">{</span> <span class="kw4">constexpr</span> A<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span>A a<span class="sy1">&gt;</span> A operator <span class="st0">""</span>_a<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+<span class="kw1">template</span><span class="sy1">&lt;</span>A a<span class="sy1">&gt;</span>
+A operator <span class="st0">""</span>_a<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
-<p>Only the following parameter lists are allowed on literal operators :
+<p>Only the following parameter lists are allowed on literal operators:
 </p>
 <table class="t-sdsc-begin">
 
@@ -837,10 +842,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;string&gt;</span>
  
-<span class="kw4">void</span> operator <span class="st0">""</span> _km<span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK, will be called for 1.0_km</span>
+<span class="kw4">void</span>        operator <span class="st0">""</span> _km<span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK, will be called for 1.0_km</span>
 <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> operator <span class="st0">""</span> _i18n<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span>, <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
-<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw4">char</span>...<span class="sy1">&gt;</span> <span class="kw4">double</span> operator <span class="st0">""</span> _π<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
-<span class="kw4">float</span> operator <span class="st0">""</span>_e<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">char</span>...<span class="sy1">&gt;</span>
+<span class="kw4">double</span> operator <span class="st0">""</span> _π<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
+<span class="kw4">float</span>  operator <span class="st0">""</span>_e<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
  
 <span class="co1">// error: suffix must begin with underscore</span>
 <span class="kw4">float</span> operator <span class="st0">""</span>Z<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span>
@@ -874,7 +881,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Same applies to dot operator following an integer or floating-point user-defined literal:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;chrono&gt;</span>
+ 
 <span class="kw1">using</span> <span class="kw1">namespace</span> std<span class="sy4">::</span><span class="me2">literals</span><span class="sy4">;</span>
+ 
 <span class="kw4">auto</span> a <span class="sy1">=</span> 4s.<span class="me1">count</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// Error</span>
 <span class="kw4">auto</span> b <span class="sy1">=</span> 4s .<span class="me1">count</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// OK</span>
 <span class="kw4">auto</span> c <span class="sy1">=</span> <span class="br0">(</span>4s<span class="br0">)</span>.<span class="me1">count</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span></pre></div></div>
@@ -889,7 +898,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co2">#include &lt;string&gt;</span>
  
 <span class="co1">// used as conversion from degrees (input param) to radians (returned output)</span>
-<span class="kw4">constexpr</span> <span class="kw4">long</span> <span class="kw4">double</span> operator<span class="st0">""</span> _deg_to_rad <span class="br0">(</span> <span class="kw4">long</span> <span class="kw4">double</span> deg <span class="br0">)</span>
+<span class="kw4">constexpr</span> <span class="kw4">long</span> <span class="kw4">double</span> operator<span class="st0">""</span> _deg_to_rad<span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> deg<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">long</span> <span class="kw4">double</span> radians <span class="sy1">=</span> deg <span class="sy2">*</span> <a href="../numeric/constants.html"><span class="kw3331">std::<span class="me2">numbers</span><span class="sy4">::</span><span class="me2">pi_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">long</span> <span class="kw4">double</span><span class="sy1">&gt;</span> <span class="sy2">/</span> <span class="nu0">180</span><span class="sy4">;</span>
     <span class="kw1">return</span> radians<span class="sy4">;</span>
@@ -900,20 +909,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     <span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span> m<span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw4">constexpr</span> mytype operator<span class="st0">""</span> _mytype <span class="br0">(</span> <span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span> n <span class="br0">)</span>
+<span class="kw4">constexpr</span> mytype operator<span class="st0">""</span> _mytype<span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span> n<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">return</span> mytype<span class="br0">{</span>n<span class="br0">}</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
 <span class="co1">// used for side-effects</span>
-<span class="kw4">void</span> operator<span class="st0">""</span> _print <span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> str <span class="br0">)</span>
+<span class="kw4">void</span> operator<span class="st0">""</span> _print<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> str<span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> str <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
 <span class="co2">#if __cpp_nontype_template_args &lt; 201911</span>
  
-<a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> operator<span class="st0">""</span> _x2 <span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> str, <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> <span class="br0">)</span>
+<a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> operator<span class="st0">""</span> _x2 <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> str, <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">return</span> <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="br0">{</span>str<span class="br0">}</span> <span class="sy2">+</span> str<span class="sy4">;</span>
 <span class="br0">}</span>
@@ -925,7 +934,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     <span class="kw4">char</span> p<span class="br0">[</span>N<span class="sy2">*</span><span class="nu0">2</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">]</span><span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
  
-    <span class="kw4">constexpr</span> DoubleString <span class="br0">(</span> <span class="kw4">char</span> <span class="kw4">const</span><span class="br0">(</span><span class="sy3">&amp;</span>pp<span class="br0">)</span><span class="br0">[</span>N<span class="br0">]</span> <span class="br0">)</span>
+    <span class="kw4">constexpr</span> DoubleString<span class="br0">(</span><span class="kw4">char</span> <span class="kw4">const</span><span class="br0">(</span><span class="sy3">&amp;</span>pp<span class="br0">)</span><span class="br0">[</span>N<span class="br0">]</span><span class="br0">)</span>
     <span class="br0">{</span>
         std<span class="sy4">::</span><a href="../algorithm/ranges/copy.html"><span class="kw2853">ranges::<span class="me2">copy</span></span></a><span class="br0">(</span>pp, p<span class="br0">)</span><span class="sy4">;</span>
         std<span class="sy4">::</span><a href="../algorithm/ranges/copy.html"><span class="kw2853">ranges::<span class="me2">copy</span></span></a><span class="br0">(</span>pp, p <span class="sy2">+</span> N <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
@@ -959,7 +968,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 abcabc</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="Standard_library">Standard library</span></h3>
-<p>The following literal operators are defined in the standard library
+<p>The following literal operators are defined in the standard library:
 </p>
 <table class="t-dsc-begin">
 
@@ -1048,30 +1057,39 @@ abcabc</pre></div></div>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1473">CWG 1473</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1473.html">CWG 1473</a>
 </td>
 <td> C++11
 </td>
-<td> whitespace between <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">""</span></span></span> and <span class="t-spar">ud-suffix</span> was required in the declaration of literal operators
+<td> whitespace between <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">""</span></span></span> and <span class="t-spar">ud-suffix</span> was<br>required in the declaration of literal operators
 </td>
 <td> made optional
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1479.html">CWG 1479</a>
+</td>
+<td> C++11
+</td>
+<td> literal operators could have default arguments
+</td>
+<td> prohibited
 </td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7675/1000000
-Preprocessor generated node count: 13802/1000000
-Post‐expand include size: 244069/2097152 bytes
-Template argument size: 49638/2097152 bytes
+Preprocessor visited node count: 7689/1000000
+Preprocessor generated node count: 13842/1000000
+Post‐expand include size: 244338/2097152 bytes
+Template argument size: 49537/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5061-0!*!0!!en!*!* and timestamp 20220128101957 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5061-0!*!0!!en!*!* and timestamp 20220628052250 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/user_literal&amp;oldid=137579">https://en.cppreference.com/mwiki/index.php?title=cpp/language/user_literal&amp;oldid=137579</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/user_literal&amp;oldid=139788">https://en.cppreference.com/mwiki/index.php?title=cpp/language/user_literal&amp;oldid=139788</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1088,10 +1106,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/user_literal">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/user_literal">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 28 January 2022, at 02:19.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 553,541 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 23 May 2022, at 19:41.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 590,898 times.</li>
                             </ul>
                     </div>
         </div>
@@ -1109,7 +1127,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.034 secs. -->
+</script><!-- Served in 5.255 secs. -->
 	</body>
-<!-- Cached 20220128102542 -->
+<!-- Cached 20220628052250 -->
 </html>

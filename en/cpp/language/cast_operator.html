@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/cast_operator","wgTitle":"cpp/language/cast operator","wgCurRevisionId":137522,"wgArticleId":13115,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/cast_operator","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/cast_operator","wgTitle":"cpp/language/cast operator","wgCurRevisionId":140542,"wgArticleId":13115,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/cast_operator","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -478,10 +478,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     B<span class="sy3">&amp;</span> b2 <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span>B<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>x<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// does not call X::operatorB&amp;</span>
     B<span class="sy3">&amp;</span> b3 <span class="sy1">=</span> x.<span class="me1">operator</span> B<span class="sy3">&amp;</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// calls X::operatorB&amp;</span>
 <span class="br0">}</span></pre></div></div>
-<p>When making an explicit call to the conversion function, the type-id is greedy: it is the longest possible sequence of tokens that is a valid type id (including attributes, if any):
+<p>When making an explicit call to the conversion function, <span class="t-spar">conversion-type-id</span> is greedy: it is the longest sequence of tokens that could possibly form a <span class="t-spar">conversion-type-id</span> <span class="t-rev-inl t-since-cxx11"><span>(including attributes, if any)</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="sy3">&amp;</span> x.<span class="me1">operator</span> <span class="kw4">int</span> <span class="sy2">*</span> a<span class="sy4">;</span> <span class="co1">// parsed as &amp; (x.operator int*) a</span>
-                      <span class="co1">// not as &amp; (x.operator int) * a</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="sy3">&amp;</span> x.<span class="me1">operator</span> <span class="kw4">int</span> <span class="sy2">*</span> a<span class="sy4">;</span> <span class="co1">// error: parsed as &amp; (x.operator int*) a,</span>
+                      <span class="co1">//           not as &amp; (x.operator int) * a</span>
+ 
+operator <span class="kw4">int</span> <span class="br0">[</span><span class="br0">[</span>noreturn<span class="br0">]</span><span class="br0">]</span> <span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// error: noreturn attribute applied to a type</span></pre></div></div>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx14"><td>
 <p>The placeholder <a href="auto.html" title="cpp/language/auto">auto</a> can be used in <span class="t-spar">conversion-type-id</span>, indicating a <a href="function.html#Return_type_deduction" title="cpp/language/function">deduced return type</a>:
@@ -514,30 +516,48 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue296">CWG 296</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/296.html">CWG 296</a>
 </td>
 <td> C++98
 </td>
 <td> conversion functions could be static
 </td>
 <td> they cannot be declared static
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2016.html">CWG 2016</a>
+</td>
+<td> C++98
+</td>
+<td> conversion functions could not specify return types,<br>but the types are present in <span class="t-spar">conversion-type-id</span>
+</td>
+<td> return types cannot be specified in the<br>declaration specifiers of conversion functions
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2175.html">CWG 2175</a>
+</td>
+<td> C++11
+</td>
+<td> it was unclear whether the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span><span class="br0">[</span>noreturn<span class="br0">]</span><span class="br0">]</span></span></span> in<br><span class="t-c"><span class="mw-geshi cpp source-cpp">operator <span class="kw4">int</span> <span class="br0">[</span><span class="br0">[</span>noreturn<span class="br0">]</span><span class="br0">]</span> <span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></span></span> is parsed as a part of<br><span class="t-spar">noptr-declarator</span> (of function declarator) or <span class="t-spar">conversion-type-id</span>
+</td>
+<td> it is parsed as a part of<br><span class="t-spar">conversion-type-id</span>
 </td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3566/1000000
-Preprocessor generated node count: 8165/1000000
-Post‐expand include size: 154165/2097152 bytes
-Template argument size: 20676/2097152 bytes
+Preprocessor visited node count: 3757/1000000
+Preprocessor generated node count: 8473/1000000
+Post‐expand include size: 156295/2097152 bytes
+Template argument size: 21758/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13115-0!*!0!!*!*!* and timestamp 20220126030853 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13115-0!*!0!!*!*!* and timestamp 20220624081921 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/cast_operator&amp;oldid=137522">https://en.cppreference.com/mwiki/index.php?title=cpp/language/cast_operator&amp;oldid=137522</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/cast_operator&amp;oldid=140542">https://en.cppreference.com/mwiki/index.php?title=cpp/language/cast_operator&amp;oldid=140542</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -554,10 +574,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/cast_operator">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/cast_operator">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 25 January 2022, at 19:08.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 708,782 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 24 June 2022, at 01:19.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 752,683 times.</li>
                             </ul>
                     </div>
         </div>
@@ -575,7 +595,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.037 secs. -->
+</script><!-- Served in 0.036 secs. -->
 	</body>
-<!-- Cached 20220126034130 -->
+<!-- Cached 20220624082123 -->
 </html>

@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -254,7 +254,7 @@ The element may be constructed even if there already is an element with the key 
 <p>Returns a pair consisting of an iterator to the inserted element, or the already-existing element if no insertion happened, and a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> denoting whether the insertion took place (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if insertion happened, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> if it did not).
 </p>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
-<p>If an exception is thrown by any operation, this function has no effect.
+<p>If an exception is thrown by any operation, this function has no effect (strong exception guarantee).
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
 <p>Amortized constant on average, worst case linear in the size of the container.
@@ -280,7 +280,7 @@ The element may be constructed even if there already is an element with the key 
     m.<span class="me1">emplace</span><span class="br0">(</span><span class="st0">"d"</span>, <span class="st0">"ddd"</span><span class="br0">)</span><span class="sy4">;</span>
  
     <span class="co1">// uses pair's piecewise constructor</span>
-    m.<span class="me1">emplace</span><span class="br0">(</span><a href="../../utility/piecewise_construct.html"><span class="kw1109">std::<span class="me2">piecewise_construct</span></span></a>,
+    m.<span class="me1">emplace</span><span class="br0">(</span><a href="../../utility/piecewise_construct_t.html"><span class="kw1109">std::<span class="me2">piecewise_construct</span></span></a>,
               <a href="../../utility/tuple/forward_as_tuple.html"><span class="kw1117">std::<span class="me2">forward_as_tuple</span></span></a><span class="br0">(</span><span class="st0">"c"</span><span class="br0">)</span>,
               <a href="../../utility/tuple/forward_as_tuple.html"><span class="kw1117">std::<span class="me2">forward_as_tuple</span></span></a><span class="br0">(</span><span class="nu0">10</span>, <span class="st0">'c'</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">// as of C++17, m.try_emplace("c", 10, 'c'); can be used</span>
@@ -319,13 +319,13 @@ d =&gt; ddd</pre></div></div>
 NewPP limit report
 Preprocessor visited node count: 5696/1000000
 Preprocessor generated node count: 11261/1000000
-Post‐expand include size: 219578/2097152 bytes
-Template argument size: 32282/2097152 bytes
+Post‐expand include size: 219674/2097152 bytes
+Template argument size: 32283/2097152 bytes
 Highest expansion depth: 24/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:324-0!*!0!!en!*!* and timestamp 20211204160949 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:324-0!*!0!!en!*!* and timestamp 20220506202235 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -346,10 +346,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/container/unordered_map/emplace">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/unordered_map/emplace">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 4 December 2021, at 08:09.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 368,314 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 4 December 2021, at 09:09.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 401,585 times.</li>
                             </ul>
                     </div>
         </div>
@@ -367,7 +367,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.034 secs. -->
+</script><!-- Served in 1.122 secs. -->
 	</body>
-<!-- Cached 20211204165414 -->
+<!-- Cached 20220506202236 -->
 </html>

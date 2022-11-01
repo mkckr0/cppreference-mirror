@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/alignof","wgTitle":"cpp/language/alignof","wgCurRevisionId":132506,"wgArticleId":1984,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/alignof","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/alignof","wgTitle":"cpp/language/alignof","wgCurRevisionId":140816,"wgArticleId":1984,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/alignof","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -351,7 +351,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
-<p>Queries alignment requirements of a type
+<p>Queries alignment requirements of a type.
 </p>
 <h3><span class="mw-headline" id="Syntax">Syntax</span></h3>
 <table class="t-sdsc-begin">
@@ -375,8 +375,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Returns a value of type <span class="t-lc"><a href="../types/size_t.html" title="cpp/types/size t">std::size_t</a></span>.
 </p>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>Returns <a href="objects.html#Alignment" title="cpp/language/object">the alignment</a>, in bytes, required for any instance of the type indicated by <a href="type-id.html#Type_naming" title="cpp/language/type">type-id</a>, which is either complete object type, an array type whose element type is complete, or a reference type to one of those types.
-</p><p>If the type is reference type, the operator returns the alignment of <i>referenced</i> type; if the type is array type, alignment requirement of the element type is returned.
+<p>Returns <a href="objects.html#Alignment" title="cpp/language/object">the alignment</a>, in bytes, required for any instance of the type indicated by <a href="type-id.html#Type_naming" title="cpp/language/type">type-id</a>, which is either <a href="type-id.html#Incomplete_type" title="cpp/language/type">complete</a> object type, an array type whose element type is complete, or a reference type to one of those types.
+</p><p>If the type is reference type, the operator returns the alignment of referenced type; if the type is array type, alignment requirement of the element type is returned.
 </p>
 <h3><span class="mw-headline" id="Keywords">Keywords</span></h3>
 <p><a href="../keyword/alignof.html" title="cpp/keyword/alignof"><tt>alignof</tt></a>
@@ -388,7 +388,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
  
-<span class="kw1">struct</span> Foo <span class="br0">{</span>
+<span class="kw1">struct</span> Foo
+<span class="br0">{</span>
     <span class="kw4">int</span>   i<span class="sy4">;</span>
     <span class="kw4">float</span> f<span class="sy4">;</span>
     <span class="kw4">char</span>  c<span class="sy4">;</span>
@@ -396,7 +397,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="co1">// Note: `alignas(alignof(long double))` below can be simplified to simply </span>
 <span class="co1">// `alignas(long double)` if desired.</span>
-<span class="kw1">struct</span> alignas<span class="br0">(</span>alignof<span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span><span class="br0">)</span><span class="br0">)</span> Foo2 <span class="br0">{</span>
+<span class="kw1">struct</span> alignas<span class="br0">(</span>alignof<span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span><span class="br0">)</span><span class="br0">)</span> Foo2
+<span class="br0">{</span>
     <span class="co1">// put your definition here</span>
 <span class="br0">}</span><span class="sy4">;</span> 
  
@@ -407,30 +409,90 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Alignment of"</span>  <span class="st0">"<span class="es1">\n</span>"</span>
-        <span class="st0">"- char             : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span><span class="kw4">char</span><span class="br0">)</span>    <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
-        <span class="st0">"- pointer          : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span>    <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
-        <span class="st0">"- class Foo        : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span>Foo<span class="br0">)</span>     <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
-        <span class="st0">"- class Foo2       : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span>Foo2<span class="br0">)</span>    <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
-        <span class="st0">"- empty class      : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span>Empty<span class="br0">)</span>   <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
-        <span class="st0">"- alignas(64) Empty: "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span>Empty64<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span><span class="sy4">;</span>
+        <span class="st0">"- char            : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span><span class="kw4">char</span><span class="br0">)</span>    <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
+        <span class="st0">"- pointer         : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span>    <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
+        <span class="st0">"- class Foo       : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span>Foo<span class="br0">)</span>     <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
+        <span class="st0">"- class Foo2      : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span>Foo2<span class="br0">)</span>    <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
+        <span class="st0">"- empty class     : "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span>Empty<span class="br0">)</span>   <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span>
+        <span class="st0">"- empty class<span class="es1">\n</span>"</span>
+        <span class="st0">"  with alignas(64): "</span> <span class="sy1">&lt;&lt;</span> alignof<span class="br0">(</span>Empty64<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Alignment of
-- char             : 1
-- pointer          : 8
-- class Foo        : 4
-- class Foo2       : 16
-- empty class      : 1
-- alignas(64) Empty: 64</pre></div></div> 
+- char            : 1
+- pointer         : 8
+- class Foo       : 4
+- class Foo2      : 16
+- empty class     : 1
+- empty class
+  with alignas(64): 64</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++11">
+<ul><li> C++11 standard (ISO/IEC 14882:2011): 
+</li></ul>
+<dl><dd><ul><li> 5.3.6 Alignof [expr.alignof] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++14">
+<ul><li> C++14 standard (ISO/IEC 14882:2014): 
+</li></ul>
+<dl><dd><ul><li> 5.3.6 Alignof [expr.alignof] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++17">
+<ul><li> C++17 standard (ISO/IEC 14882:2017): 
+</li></ul>
+<dl><dd><ul><li> 8.3.6 Alignof [expr.alignof] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++20">
+<ul><li> C++20 standard (ISO/IEC 14882:2020): 
+</li></ul>
+<dl><dd><ul><li> 7.6.2.5 Alignof [expr.alignof] 
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2023): 
+</li></ul>
+<dl><dd><ul><li> 7.6.2.6 Alignof [expr.alignof] 
+</li></ul>
+</dd></dl>
+</div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1305.html">CWG 1305</a>
+</td>
+<td> C++11
+</td>
+<td> <span class="t-spar">type-id</span> could not represent a reference to an array<br>with an unknown bound but a complete element type
+</td>
+<td> allowed
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td>  <a href="objects.html#Alignment" title="cpp/language/object"> alignment requirement </a>
+<td> <a href="objects.html#Alignment" title="cpp/language/object">alignment requirement</a>
 </td>
-<td>  restricts the addresses at which an object may be allocated
+<td> restricts the addresses at which an object may be allocated
 </td></tr>
 
 
@@ -448,19 +510,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2816/1000000
-Preprocessor generated node count: 7411/1000000
-Post‐expand include size: 155121/2097152 bytes
-Template argument size: 18916/2097152 bytes
+Preprocessor visited node count: 3058/1000000
+Preprocessor generated node count: 8218/1000000
+Post‐expand include size: 156801/2097152 bytes
+Template argument size: 19518/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1984-0!*!0!!en!*!* and timestamp 20220105154524 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1984-0!*!0!!en!*!* and timestamp 20220705125735 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/alignof&amp;oldid=132506">https://en.cppreference.com/mwiki/index.php?title=cpp/language/alignof&amp;oldid=132506</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/alignof&amp;oldid=140816">https://en.cppreference.com/mwiki/index.php?title=cpp/language/alignof&amp;oldid=140816</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -477,10 +539,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/alignof">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/alignof">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 August 2021, at 02:05.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 212,824 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 5 July 2022, at 05:57.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 229,165 times.</li>
                             </ul>
                     </div>
         </div>
@@ -498,7 +560,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.718 secs. -->
+</script><!-- Served in 0.048 secs. -->
 	</body>
-<!-- Cached 20220105154524 -->
+<!-- Cached 20220705125743 -->
 </html>

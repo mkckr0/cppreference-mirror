@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/template_parameters","wgTitle":"cpp/language/template parameters","wgCurRevisionId":137672,"wgArticleId":13162,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker","Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/template_parameters","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/template_parameters","wgTitle":"cpp/language/template parameters","wgCurRevisionId":141457,"wgArticleId":13162,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker","Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/template_parameters","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -318,6 +318,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5">   <a href="fold.html" title="cpp/language/fold"> Fold-expressions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="sfinae.html" title="cpp/language/sfinae"> SFINAE</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="constraints.html" title="cpp/language/constraints"> Constraints and concepts</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="requires.html" title="cpp/language/requires"> Requires expression</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <h3><span class="mw-headline" id="Template_parameters">Template parameters</span></h3>
@@ -427,7 +428,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
 <ul><li> a <a href="type-id.html" title="cpp/language/type">floating-point type</a>;
-</li><li> a <a href="../named_req/LiteralType.html" title="cpp/named req/LiteralType">literal class type</a> with the following properties: 
+</li><li> a <a href="../named_req/LiteralType.html" title="cpp/named req/LiteralType">literal class type</a> with the following properties:
 </li></ul>
 <dl><dd><ul><li> all base classes and non-static data members are public and non-mutable and
 </li><li> the types of all base classes and non-static data members are structural types or (possibly multi-dimensional) array thereof.
@@ -449,7 +450,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 B<span class="sy1">&lt;</span><span class="nu0">5</span><span class="sy1">&gt;</span> b1<span class="sy4">;</span>   <span class="co1">// OK: non-type template parameter type is int</span>
 B<span class="sy1">&lt;</span><span class="st0">'a'</span><span class="sy1">&gt;</span> b2<span class="sy4">;</span> <span class="co1">// OK: non-type template parameter type is char</span>
-B<span class="sy1">&lt;</span><span class="nu16">2.5</span><span class="sy1">&gt;</span> b3<span class="sy4">;</span> <span class="co1">// error (until C++20): non-type template parameter type cannot be double</span></pre></div></div>
+B<span class="sy1">&lt;</span><span class="nu16">2.5</span><span class="sy1">&gt;</span> b3<span class="sy4">;</span> <span class="co1">// error (until C++20): non-type template parameter type cannot be double</span>
+ 
+<span class="co1">// C++20 deduced class type placeholder, class template arguments are deduced at the call site</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><a href="../container/array.html"><span class="kw1271">std::<span class="me2">array</span></span></a> arr<span class="sy1">&gt;</span>
+<span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+f<span class="sy1">&lt;</span><a href="../container/array.html"><span class="kw1271">std::<span class="me2">array</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span>, <span class="nu0">8</span><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
 <p>For non-type template parameter packs whose type uses a placeholder type, the type is independently deduced for each template argument and need not match:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">auto</span>...<span class="sy1">&gt;</span>
@@ -459,6 +466,8 @@ C<span class="sy1">&lt;</span><span class="st0">'C'</span>, <span class="nu0">0<
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
+<p><span id="template_parameter_object"></span>
+</p>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
 <p>An <a href="name.html" title="cpp/language/identifiers">identifier</a> that names a non-type template parameter of class type <code>T</code> denotes a static storage duration object of type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> T</span></span>, called a <i>template parameter object</i>, whose value is that of the corresponding template argument after it has been converted to the type of the template parameter. All such template parameters in the program of the same type with the same value denote the same template parameter object. A template parameter object shall have <a href="constexpr.html#Constant_destruction" title="cpp/language/constexpr">constant destruction</a>.
@@ -498,7 +507,7 @@ C<span class="sy1">&lt;</span><span class="st0">'C'</span>, <span class="nu0">0<
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <span class="t-spar">type-parameter-key</span> <span class="t-spar">name</span><span class="t-mark">(optional)</span> <code><b>= </b></code> <span class="t-spar">default</span>
+<td> <span class="t-spar">type-parameter-key</span> <span class="t-spar">name</span><span class="t-mark">(optional)</span> <code><b>=</b></code> <span class="t-spar">default</span>
 </td>
 <td> (2)
 </td>
@@ -566,18 +575,18 @@ C<span class="sy1">&lt;</span><span class="st0">'C'</span>, <span class="nu0">0<
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">type-parameter-key</span>
+<td> <span class="t-spar">type-parameter-key</span>
 </td>
 <td> -
 </td>
-<td>  either <code><b>typename</b></code> or <code><b>class</b></code>. There is no difference between these keywords in a type template parameter declaration
+<td> either <code><b>typename</b></code> or <code><b>class</b></code>. There is no difference between these keywords in a type template parameter declaration
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">type-constraint</span>
+<td> <span class="t-spar">type-constraint</span>
 </td>
 <td> -
 </td>
-<td>  either the name of a <a href="constraints.html" title="cpp/language/constraints">concept</a> or the name of a concept followed by a list of template arguments (in angle brackets). Either way, the concept name may be optionally qualified
+<td> either the name of a <a href="constraints.html" title="cpp/language/constraints">concept</a> or the name of a concept followed by a list of template arguments (in angle brackets). Either way, the concept name may be optionally qualified
 </td></tr></table>
 <div class="t-li1"><span class="t-li">1)</span> A type template parameter without a default.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
@@ -685,11 +694,11 @@ concept C3 <span class="sy1">=</span> <span class="kw2">true</span><span class="
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">type-parameter-key</span>
+<td> <span class="t-spar">type-parameter-key</span>
 </td>
 <td> -
 </td>
-<td>  <span class="t-rev-inl t-since-cxx17"><span>either <code><b>typename</b></code> or</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> <code><b>class</b></code>
+<td> <code><b>class</b></code> <span class="t-rev-inl t-since-cxx17"><span>or <code><b>typename</b></code></span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>
 </td></tr></table>
 <div class="t-li1"><span class="t-li">1)</span> A template template parameter with an optional name.</div>
 <div class="t-li1"><span class="t-li">2)</span> A template template parameter with an optional name and a default.</div>
@@ -740,12 +749,12 @@ concept C3 <span class="sy1">=</span> <span class="kw2">true</span><span class="
     B b<span class="sy4">;</span> <span class="co1">// A's B, not the template parameter</span>
 <span class="br0">}</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> B<span class="sy1">&gt;</span> 
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> C<span class="sy1">&gt;</span> 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> B<span class="sy1">&gt;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> C<span class="sy1">&gt;</span>
 <span class="kw4">void</span> A<span class="sy1">&lt;</span>B<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">g</span><span class="br0">(</span>C<span class="br0">)</span>
 <span class="br0">{</span>
     B b<span class="sy4">;</span> <span class="co1">// A's B, not the template parameter</span>
-    C c<span class="sy4">;</span> <span class="co1">// the template parameter C, not A's C    </span>
+    C c<span class="sy4">;</span> <span class="co1">// the template parameter C, not A's C</span>
 <span class="br0">}</span></pre></div></div>
 <p>In the definition of a member of a class template that appears outside of the namespace containing the class template definition, the name of a template parameter hides the name of a member of this namespace.
 </p>
@@ -801,10 +810,10 @@ concept C3 <span class="sy1">=</span> <span class="kw2">true</span><span class="
  <table class="t-rev-begin">
 <tr class="t-rev t-until-cxx17"><td>
 <ul><li> For integral and arithmetic types, the template argument provided during instantiation must be a <a href="constant_expression.html" title="cpp/language/constant expression">converted constant expression</a> of the template parameter's type (so certain implicit conversion applies).
-</li><li> For pointers to objects, the template arguments have to designate the address of a complete object with static <a href="storage_duration.html" title="cpp/language/storage duration">storage duration</a> and a <a href="storage_duration.html#Linkage" title="cpp/language/storage duration">linkage</a> (either internal or external), or a constant expression that evaluates to the appropriate null pointer or <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> value.
+</li><li> For pointers to objects, the template arguments have to designate the address of a complete object with static <a href="storage_duration.html" title="cpp/language/storage duration">storage duration</a> and a <a href="storage_duration.html#Linkage" title="cpp/language/storage duration">linkage</a> (either internal or external), or a constant expression that evaluates to the appropriate null pointer<span class="t-rev-inl t-since-cxx11"><span> or <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> value.
 </li><li> For pointers to functions, the valid arguments are pointers to functions with linkage (or constant expressions that evaluate to null pointer values).
 </li><li> For lvalue reference parameters, the argument provided at instantiation cannot be a temporary, an unnamed lvalue, or a named lvalue with no linkage (in other words, the argument must have linkage).
-</li><li> For pointers to members, the argument has to be a pointer to member expressed as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span>Class<span class="sy4">::</span><span class="me2">Member</span></span></span> or a constant expression that evaluates to null pointer or <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span> value.
+</li><li> For pointers to members, the argument has to be a pointer to member expressed as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span>Class<span class="sy4">::</span><span class="me2">Member</span></span></span> or a constant expression that evaluates to null pointer<span class="t-rev-inl t-since-cxx11"><span> or <span class="t-lc"><a href="../types/nullptr_t.html" title="cpp/types/nullptr t">std::nullptr_t</a></span></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> value.
 </li></ul>
 <p>In particular, this implies that string literals, addresses of array elements, and addresses of non-static members cannot be used as template arguments to instantiate templates whose corresponding non-type template parameters are pointers to objects.
 </p>
@@ -921,7 +930,7 @@ C<span class="sy1">&lt;</span>A<span class="sy1">&gt;</span> c<span class="sy4">
 <p>If the rewrite produces an invalid type, then <code>P</code> is not at least as specialized as <code>A</code>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-<span class="kw1">struct</span> eval<span class="sy4">;</span>                     <span class="co1">// primary template </span>
+<span class="kw1">struct</span> eval<span class="sy4">;</span>                     <span class="co1">// primary template</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span>, <span class="kw1">typename</span>...<span class="sy1">&gt;</span> <span class="kw1">class</span> TT, <span class="kw1">typename</span> T1, <span class="kw1">typename</span>... <span class="me1">Rest</span><span class="sy1">&gt;</span>
 <span class="kw1">struct</span> eval<span class="sy1">&lt;</span>TT<span class="sy1">&lt;</span>T1, Rest...<span class="sy1">&gt;&gt;</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// partial specialization of eval</span>
@@ -942,7 +951,7 @@ eval<span class="sy1">&lt;</span>D<span class="sy1">&lt;</span><span class="kw4"
                         <span class="co1">// type parameter pack, while 17 does not name a type</span>
 eval<span class="sy1">&lt;</span>E<span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">float</span><span class="sy1">&gt;&gt;</span> eE<span class="sy4">;</span> <span class="co1">// error: E does not match TT in partial specialization</span>
                         <span class="co1">// because E's third (default) parameter is a non-type</span></pre></div></div>
-<p>Before the adoption of <a rel="nofollow" class="external text" href="https://wg21.link/p0552r0">P0552R0</a>, each of the template parameters of <code>A</code> must match corresponding template parameters of <code>P</code> exactly. This hinders many reasonable template argument from being accepted.
+<p>Before the adoption of <a rel="nofollow" class="external text" href="https://wg21.link/p0522r0">P0522R0</a>, each of the template parameters of <code>A</code> must match corresponding template parameters of <code>P</code> exactly. This hinders many reasonable template argument from being accepted.
 </p><p>Although it was pointed out very early (<a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue150">CWG#150</a>), by the time it was resolved, the changes were applied to the C++17 working paper and the resolution became a de facto C++17 feature. Many compilers disable it by default:
 </p>
 <ul><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/gcc-7/changes.html#cxx">GCC</a> disables it in all language modes prior to C++17 by default, it can only be enabled by setting a compiler flag in these modes.
@@ -955,9 +964,9 @@ eval<span class="sy1">&lt;</span>E<span class="sy1">&lt;</span><span class="kw4"
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span><span class="sy1">&gt;</span> <span class="kw1">class</span> P<span class="sy1">&gt;</span> <span class="kw1">class</span> X <span class="br0">{</span> <span class="coMULTI">/* ... */</span> <span class="br0">}</span><span class="sy4">;</span>
 X<span class="sy1">&lt;</span>A<span class="sy1">&gt;</span> xa<span class="sy4">;</span> <span class="co1">// OK</span>
-X<span class="sy1">&lt;</span>B<span class="sy1">&gt;</span> xb<span class="sy4">;</span> <span class="co1">// OK after P0552R0</span>
+X<span class="sy1">&lt;</span>B<span class="sy1">&gt;</span> xb<span class="sy4">;</span> <span class="co1">// OK after P0522R0</span>
          <span class="co1">// Error earlier: not an exact match</span>
-X<span class="sy1">&lt;</span>C<span class="sy1">&gt;</span> xc<span class="sy4">;</span> <span class="co1">// OK after P0552R0</span>
+X<span class="sy1">&lt;</span>C<span class="sy1">&gt;</span> xc<span class="sy4">;</span> <span class="co1">// OK after P0522R0</span>
          <span class="co1">// Error earlier: not an exact match</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>...<span class="sy1">&gt;</span> <span class="kw1">class</span> Q<span class="sy1">&gt;</span> <span class="kw1">class</span> Y <span class="br0">{</span> <span class="coMULTI">/* ... */</span> <span class="br0">}</span><span class="sy4">;</span>
@@ -967,7 +976,7 @@ Y<span class="sy1">&lt;</span>C<span class="sy1">&gt;</span> yc<span class="sy4"
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">auto</span> n<span class="sy1">&gt;</span> <span class="kw1">class</span> D <span class="br0">{</span> <span class="coMULTI">/* ... */</span> <span class="br0">}</span><span class="sy4">;</span>   <span class="co1">// note: C++17</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="kw1">class</span> R<span class="sy1">&gt;</span> <span class="kw1">class</span> Z <span class="br0">{</span> <span class="coMULTI">/* ... */</span> <span class="br0">}</span><span class="sy4">;</span>
-Z<span class="sy1">&lt;</span>D<span class="sy1">&gt;</span> zd<span class="sy4">;</span> <span class="co1">// OK after P0552R0: the template parameter</span>
+Z<span class="sy1">&lt;</span>D<span class="sy1">&gt;</span> zd<span class="sy4">;</span> <span class="co1">// OK after P0522R0: the template parameter</span>
          <span class="co1">// is more specialized than the template argument</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="kw1">struct</span> SI <span class="br0">{</span> <span class="coMULTI">/* ... */</span> <span class="br0">}</span><span class="sy4">;</span>
@@ -995,18 +1004,18 @@ FA<span class="sy1">&lt;</span>SI<span class="sy1">&gt;</span><span class="br0">
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
-<p>Default template arguments that appear in the declarations and the definition are merged similarly to default function arguments:
+<p>Default template arguments that appear in the declarations are merged similarly to default function arguments:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T1, <span class="kw1">typename</span> T2 <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span> <span class="kw1">class</span> A<span class="sy4">;</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T1 <span class="sy1">=</span> <span class="kw4">int</span>, <span class="kw1">typename</span> T2<span class="sy1">&gt;</span> <span class="kw1">class</span> A<span class="sy4">;</span>
  
 <span class="co1">// the above is the same as the following:</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T1 <span class="sy1">=</span> <span class="kw4">int</span>, <span class="kw1">typename</span> T2 <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span> <span class="kw1">class</span> A<span class="sy4">;</span></pre></div></div>
-<p>But the same parameter cannot be given default arguments twice in the same scope
+<p>But the same parameter cannot be given default arguments twice in the same scope:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span> <span class="kw1">class</span> X<span class="sy4">;</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T <span class="sy1">=</span> <span class="kw4">int</span><span class="sy1">&gt;</span> <span class="kw1">class</span> X <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// error</span></pre></div></div>
-<p>When parsing a default template argument for a non-type template parameter, the first non-nested <code>&gt;</code> is taken as the end of the template parameter list rather than a greater-than operator:
+<p>When parsing a default template argument for a non-type template parameter, the first non-nested <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;</span></span></span> is taken as the end of the template parameter list rather than a greater-than operator:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">3</span> <span class="sy1">&gt;</span> <span class="nu0">4</span><span class="sy1">&gt;</span>   <span class="co1">// syntax error</span>
 <span class="kw1">class</span> X <span class="br0">{</span> <span class="coMULTI">/* ... */</span> <span class="br0">}</span><span class="sy4">;</span>
@@ -1019,7 +1028,7 @@ FA<span class="sy1">&lt;</span>SI<span class="sy1">&gt;</span><span class="br0">
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T <span class="sy1">=</span> <span class="kw4">float</span><span class="sy1">&gt;</span>
 <span class="kw1">struct</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
  
-<span class="co1">// template template parameter T has a parameter list, which </span>
+<span class="co1">// template template parameter T has a parameter list, which</span>
 <span class="co1">// consists of one type template parameter with a default</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> <span class="sy1">=</span> <span class="kw4">float</span><span class="sy1">&gt;</span> <span class="kw1">typename</span> T<span class="sy1">&gt;</span>
 <span class="kw1">struct</span> A
@@ -1096,7 +1105,9 @@ S<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt
 </table>
 <h3><span class="mw-headline" id="Examples">Examples</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;array&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;numeric&gt;</span>
  
 <span class="co1">// simple non-type template parameter</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">int</span> N<span class="sy1">&gt;</span>
@@ -1125,11 +1136,21 @@ S<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt
  
 <span class="co1">//  S2&lt;"fail"&gt; s2;        // error: string literal cannot be used</span>
     <span class="kw4">char</span> okay<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"okay"</span><span class="sy4">;</span> <span class="co1">// static object with linkage</span>
-<span class="co1">//  S2&lt; &amp;okay[0] &gt; s3;    // error: array element has no linkage</span>
+<span class="co1">//  S2&lt;&amp;okay[0]&gt; s3;      // error: array element has no linkage</span>
     S2<span class="sy1">&lt;</span>okay<span class="sy1">&gt;</span> s4<span class="sy4">;</span>          <span class="co1">// works</span>
  
 <span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span><span class="sy4">;</span>
 <span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> n<span class="sy4">;</span> <span class="br0">}</span>
+ 
+<span class="co1">// C++20: NTTP can be a literal class type</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><a href="../container/array.html"><span class="kw1271">std::<span class="me2">array</span></span></a> arr<span class="sy1">&gt;</span>
+<span class="kw4">constexpr</span>
+<span class="kw4">auto</span> sum<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> <a href="../algorithm/accumulate.html"><span class="kw1655">std::<span class="me2">accumulate</span></span></a><span class="br0">(</span>arr.<span class="me1">cbegin</span><span class="br0">(</span><span class="br0">)</span>, arr.<span class="me1">cend</span><span class="br0">(</span><span class="br0">)</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+ 
+<span class="co1">// C++20: class template arguments are deduced at the call site</span>
+static_assert<span class="br0">(</span>sum<span class="sy1">&lt;</span><a href="../container/array.html"><span class="kw1271">std::<span class="me2">array</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span>, <span class="nu0">8</span><span class="sy1">&gt;</span><span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">1</span>, <span class="nu0">4</span>, <span class="nu0">1</span>, <span class="nu0">5</span>, <span class="nu0">9</span>, <span class="nu0">2</span>, <span class="nu0">6</span><span class="br0">}</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu16">31.0</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="co1">// C++20: NTTP argument deduction and CTAD</span>
+static_assert<span class="br0">(</span>sum<span class="sy1">&lt;</span><a href="../container/array.html"><span class="kw1271">std::<span class="me2">array</span></span></a><span class="br0">{</span><span class="nu0">2</span>, <span class="nu0">7</span>, <span class="nu0">1</span>, <span class="nu0">8</span>, <span class="nu0">2</span>, <span class="nu0">8</span><span class="br0">}</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">28</span><span class="br0">)</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
@@ -1160,7 +1181,7 @@ S<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue150">CWG 150</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/150.html">CWG 150</a>
 </td>
 <td> C++98
 </td>
@@ -1169,7 +1190,7 @@ S<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt
 <td> more specialized also allowed<br>(resolved by <a rel="nofollow" class="external text" href="https://wg21.link/p0522r0">P0522R0</a>)
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue184">CWG 184</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/184.html">CWG 184</a>
 </td>
 <td> C++98
 </td>
@@ -1178,30 +1199,66 @@ S<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt
 <td> specification added
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue354">CWG 354</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/354.html">CWG 354</a>
 </td>
 <td> C++98
 </td>
 <td> null pointer values could not be non-type template arguments
 </td>
 <td> allowed
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1398.html">CWG 1398</a>
+</td>
+<td> C++11
+</td>
+<td> template non-type arguments could not have type <code>std::nullptr_t</code>
+</td>
+<td> allowed
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1570.html">CWG 1570</a>
+</td>
+<td> C++98
+</td>
+<td> template non-type arguments could designate addresses of subobjects
+</td>
+<td> not allowed
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1922.html">CWG 1922</a>
+</td>
+<td> C++98
+</td>
+<td> it was unclear whether a class template whose name is an<br>injected-class-name can use the default arguments in prior declarations
+</td>
+<td> allowed
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2032.html">CWG 2032</a>
+</td>
+<td> C++14
+</td>
+<td> for variable templates, there was no restriction on the template<br>parameters after a template parameter with a default argument
+</td>
+<td> apply the same restriction as on<br>class templates and alias templates
 </td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6414/1000000
-Preprocessor generated node count: 16596/1000000
-Post‐expand include size: 173794/2097152 bytes
-Template argument size: 49727/2097152 bytes
+Preprocessor visited node count: 6603/1000000
+Preprocessor generated node count: 17030/1000000
+Post‐expand include size: 177433/2097152 bytes
+Template argument size: 52522/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13162-0!*!0!!en!*!* and timestamp 20220129171822 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13162-0!*!0!!en!*!* and timestamp 20220728022312 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_parameters&amp;oldid=137672">https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_parameters&amp;oldid=137672</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_parameters&amp;oldid=141457">https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_parameters&amp;oldid=141457</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1218,10 +1275,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/template_parameters">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/template_parameters">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 29 January 2022, at 09:18.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,386,668 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 27 July 2022, at 19:23.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,503,913 times.</li>
                             </ul>
                     </div>
         </div>
@@ -1239,7 +1296,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.038 secs. -->
+</script><!-- Served in 0.040 secs. -->
 	</body>
-<!-- Cached 20220129171837 -->
+<!-- Cached 20220728022445 -->
 </html>

@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -269,7 +269,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Class ctype encapsulates character classification features. All stream input operations performed through <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../io/basic_istream.html"><span class="kw1717">std::<span class="me2">basic_istream</span></span></a><span class="sy1">&lt;</span>charT<span class="sy1">&gt;</span></span></span> use the <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">ctype</span><span class="sy1">&lt;</span>charT<span class="sy1">&gt;</span></span></span> of the locale imbued in the stream to identify whitespace characters for input tokenization. Stream output operations apply <span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">ctype</span><span class="sy1">&lt;</span>charT<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">widen</span><span class="br0">(</span><span class="br0">)</span></span></span> to narrow-character arguments prior to output.
 </p>
 <div class="t-inheritance-diagram">
-<div class="center"><div class="noresize"><map name="ImageMap_1_16167977"><area href="ctype_base.html" shape="rect" coords="5,4,107,36" alt="cpp/locale/ctype base" title="cpp/locale/ctype base"><area href="locale/facet.html" shape="rect" coords="5,52,107,85" alt="cpp/locale/locale/facet" title="cpp/locale/locale/facet"></map><img alt="std-ctype-inheritance.svg" src="../../../common/images/e/ea/std-ctype-inheritance.svg" width="243" height="88" usemap="#ImageMap_1_16167977"></div></div>
+<div class="center"><div class="noresize"><map name="ImageMap_1_1319028350"><area href="ctype_base.html" shape="rect" coords="5,4,107,36" alt="cpp/locale/ctype base" title="cpp/locale/ctype base"><area href="locale/facet.html" shape="rect" coords="5,52,107,85" alt="cpp/locale/locale/facet" title="cpp/locale/locale/facet"></map><img alt="std-ctype-inheritance.svg" src="../../../common/images/e/ea/std-ctype-inheritance.svg" width="243" height="88" usemap="#ImageMap_1_1319028350"></div></div>
 <div style="text-align:center;">
 <p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
 </p>
@@ -607,13 +607,13 @@ locale with modified ctype:
 NewPP limit report
 Preprocessor visited node count: 9616/1000000
 Preprocessor generated node count: 12616/1000000
-Post‐expand include size: 247621/2097152 bytes
-Template argument size: 54869/2097152 bytes
+Post‐expand include size: 247627/2097152 bytes
+Template argument size: 54870/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2779-0!*!0!!en!2!* and timestamp 20220114101318 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2779-0!*!0!!en!2!* and timestamp 20220410084328 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -634,10 +634,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/ctype">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/ctype">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 December 2018, at 13:27.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 62,248 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 16 December 2018, at 14:27.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 64,798 times.</li>
                             </ul>
                     </div>
         </div>
@@ -655,7 +655,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.520 secs. -->
+</script><!-- Served in 1.770 secs. -->
 	</body>
-<!-- Cached 20220114101318 -->
+<!-- Cached 20220410084328 -->
 </html>

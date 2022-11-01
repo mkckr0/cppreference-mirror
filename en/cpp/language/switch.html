@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/switch","wgTitle":"cpp/language/switch","wgCurRevisionId":137542,"wgArticleId":713,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/switch","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/switch","wgTitle":"cpp/language/switch","wgCurRevisionId":140156,"wgArticleId":713,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/switch","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -355,20 +355,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">attr</span>
+<td> <span class="t-spar">attr</span>
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-cxx11">(since C++11)</span> any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">init-statement</span>
+<td> <span class="t-spar">init-statement</span>
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-cxx17">(since C++17)</span> either
+<td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> either
 <ul><li> an <a href="statements.html#Expression_statements" title="cpp/language/statements">expression statement</a> (which may be a <i>null statement</i> "<code><b>;</b></code>")
-</li><li> a  <a href="declarations.html" title="cpp/language/declarations">simple declaration</a>, typically a declaration of a variable with initializer, but it may declare arbitrarily many variables <span class="t-rev-inl t-since-cxx17"><span>or <a href="structured_binding.html" title="cpp/language/structured binding">structured bindings</a></span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>
+</li><li> a <a href="declarations.html#Simple_declaration" title="cpp/language/declarations">simple declaration</a>, typically a declaration of a variable with initializer, but it may declare arbitrarily many variables <span class="t-rev-inl t-since-cxx17"><span>or <a href="structured_binding.html" title="cpp/language/structured binding">structured bindings</a></span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>
 </li></ul>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx23"><td>
@@ -381,18 +381,18 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </dd></dl>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">condition</span>
+<td> <span class="t-spar">condition</span>
 </td>
 <td> -
 </td>
-<td>  any <a href="expressions.html" title="cpp/language/expressions">expression</a> of integral or enumeration type, or of a class type <a href="implicit_cast.html#Contextual_conversions" title="cpp/language/implicit conversion">contextually implicitly convertible</a> to an integral or enumeration type, or a <a href="declarations.html" title="cpp/language/declarations">declaration</a> of a single non-array variable of such type with a brace-or-equals <a href="initialization.html" title="cpp/language/initialization">initializer</a>.
+<td> any <a href="expressions.html" title="cpp/language/expressions">expression</a> of integral or enumeration type, or of a class type <a href="implicit_cast.html#Contextual_conversions" title="cpp/language/implicit conversion">contextually implicitly convertible</a> to an integral or enumeration type, or a <a href="declarations.html" title="cpp/language/declarations">declaration</a> of a single non-array variable of such type with a brace-or-equals <a href="initialization.html" title="cpp/language/initialization">initializer</a>. If the (possibly converted) type is subject to <a href="implicit_cast.html#Integral_promotion" title="cpp/language/implicit conversion">integral promotions</a>, <span class="t-spar">condition</span> is converted to the promoted type.
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">statement</span>
+<td> <span class="t-spar">statement</span>
 </td>
 <td> -
 </td>
-<td>  any <a href="statements.html" title="cpp/language/statements">statement</a> (typically a compound statement). <code><b>case:</b></code> and <code><b>default:</b></code> labels are permitted in <span class="t-spar">statement</span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">break</span><span class="sy4">;</span></span></span> statement has special meaning.
+<td> any <a href="statements.html" title="cpp/language/statements">statement</a> (typically a compound statement). <code><b>case:</b></code> and <code><b>default:</b></code> labels are permitted in <span class="t-spar">statement</span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">break</span><span class="sy4">;</span></span></span> statement has special meaning.
 </td></tr></table>
 <table class="t-sdsc-begin">
 
@@ -429,11 +429,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">constant-expression</span>
+<td> <span class="t-spar">constant-expression</span>
 </td>
 <td> -
 </td>
-<td>  a constant expression of the same type as the type of <span class="t-spar">condition</span> after conversions and <a href="implicit_cast.html#Integral_promotion" title="cpp/language/implicit conversion">integral promotions</a>
+<td> a constant expression of the same type as the type of <span class="t-spar">condition</span> after conversions and <a href="implicit_cast.html#Integral_promotion" title="cpp/language/implicit conversion">integral promotions</a>
 </td></tr></table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
 <p>The body of a switch statement may have an arbitrary number of <code>case:</code> labels, as long as the values of all <span class="t-spar">constant-expressions</span> are unique (after conversions/promotions). At most one <code>default:</code> label may be present (although nested switch statements may use their own <code>default:</code> labels or have <code>case:</code> labels whose constants are identical to the ones used in the enclosing switch).
@@ -442,15 +442,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>If <span class="t-spar">condition</span> evaluates to the value that doesn't match any of the <code>case:</code> labels, and the <code>default:</code> label is not present, then none of the statements in switch body is executed.
 </p><p>The <a href="break.html" title="cpp/language/break">break</a> statement, when encountered in <span class="t-spar">statement</span> exits the switch statement:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">case</span> <span class="nu0">1</span> <span class="sy4">:</span> cout <span class="sy1">&lt;&lt;</span> <span class="st0">'1'</span><span class="sy4">;</span> <span class="co1">// prints "1",</span>
-    <span class="kw1">case</span> <span class="nu0">2</span> <span class="sy4">:</span> cout <span class="sy1">&lt;&lt;</span> <span class="st0">'2'</span><span class="sy4">;</span> <span class="co1">// then prints "2"</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
+        cout <span class="sy1">&lt;&lt;</span> <span class="st0">'1'</span><span class="sy4">;</span> <span class="co1">// prints "1",</span>
+    <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span>
+        cout <span class="sy1">&lt;&lt;</span> <span class="st0">'2'</span><span class="sy4">;</span> <span class="co1">// then prints "2"</span>
 <span class="br0">}</span></pre></div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">case</span> <span class="nu0">1</span> <span class="sy4">:</span> cout <span class="sy1">&lt;&lt;</span> <span class="st0">'1'</span><span class="sy4">;</span> <span class="co1">// prints "1"</span>
-             <span class="kw1">break</span><span class="sy4">;</span>       <span class="co1">// and exits the switch</span>
-    <span class="kw1">case</span> <span class="nu0">2</span> <span class="sy4">:</span> cout <span class="sy1">&lt;&lt;</span> <span class="st0">'2'</span><span class="sy4">;</span>
-             <span class="kw1">break</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
+        cout <span class="sy1">&lt;&lt;</span> <span class="st0">'1'</span><span class="sy4">;</span> <span class="co1">// prints "1"</span>
+        <span class="kw1">break</span><span class="sy4">;</span>       <span class="co1">// and exits the switch</span>
+    <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span>
+        cout <span class="sy1">&lt;&lt;</span> <span class="st0">'2'</span><span class="sy4">;</span>
+        <span class="kw1">break</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx17"><td>
@@ -464,10 +470,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td></tr>
 <tr class="t-sdsc">
 <td class="t-sdsc-nopad"> <code><b>{</b></code><br>
-<dl><dd><span class="t-spar">init_statement</span> <br>
-</dd><dd><code><b>switch</b></code> <code><b>(</b></code> <span class="t-spar">condition</span> <code><b>)</b></code> <span class="t-spar">statement</span> <br>
+<dl><dd><span class="t-spar">init-statement</span><br>
+</dd><dd><code><b>switch</b></code> <code><b>(</b></code> <span class="t-spar">condition</span> <code><b>)</b></code> <span class="t-spar">statement</span><br>
 </dd></dl>
-<p><code><b>} </b></code>
+<p><code></code>}
 </p>
 </td>
 <td class="t-sdsc-nopad">
@@ -486,22 +492,29 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr></table>
 <p>Because transfer of control is <a href="goto.html" title="cpp/language/goto">not permitted to enter the scope</a> of a variable, if a declaration statement is encountered inside the <span class="t-spar">statement</span>, it has to be scoped in its own compound statement:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span> <span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="co1">// initialization</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
+        <span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="co1">// initialization</span>
+        <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> x <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+        <span class="kw1">break</span><span class="sy4">;</span>
+    <span class="kw1">default</span><span class="sy4">:</span>
+        <span class="co1">// compilation error: jump to default:</span>
+        <span class="co1">// would enter the scope of 'x' without initializing it</span>
+        <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"default<span class="es1">\n</span>"</span><span class="sy4">;</span>
+        <span class="kw1">break</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
+        <span class="br0">{</span>
+            <span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
             <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> x <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
             <span class="kw1">break</span><span class="sy4">;</span>
-    <span class="kw1">default</span><span class="sy4">:</span> <span class="co1">// compilation error: jump to default: would enter the scope of 'x'</span>
-             <span class="co1">// without initializing it</span>
-             <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"default<span class="es1">\n</span>"</span><span class="sy4">;</span>
-             <span class="kw1">break</span><span class="sy4">;</span>
-<span class="br0">}</span></pre></div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span> <span class="br0">{</span>  <span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-               <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> x <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-               <span class="kw1">break</span><span class="sy4">;</span>
-            <span class="br0">}</span> <span class="co1">// scope of 'x' ends here</span>
-    <span class="kw1">default</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"default<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="co1">// no error</span>
-             <span class="kw1">break</span><span class="sy4">;</span>
+        <span class="br0">}</span> <span class="co1">// scope of 'x' ends here</span>
+    <span class="kw1">default</span><span class="sy4">:</span>
+        <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"default<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="co1">// no error</span>
+        <span class="kw1">break</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <h3><span class="mw-headline" id="Keywords">Keywords</span></h3>
 <p><a href="../keyword/switch.html" title="cpp/keyword/switch"><tt>switch</tt></a>,
@@ -515,63 +528,96 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">const</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
-    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"1"</span><span class="sy4">;</span>
-        <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"2"</span><span class="sy4">;</span>   <span class="co1">// execution starts at this case label</span>
-        <span class="kw1">case</span> <span class="nu0">3</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"3"</span><span class="sy4">;</span>   <span class="br0">[</span><span class="br0">[</span>fallthrough<span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// C++17 attribute to silent</span>
-        <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span>                                      <span class="co1">// the warning on fall through</span>
-        <span class="kw1">case</span> <span class="nu0">5</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"45"</span><span class="sy4">;</span>
-                <span class="kw1">break</span><span class="sy4">;</span>              <span class="co1">// execution of subsequent statements is terminated</span>
-        <span class="kw1">case</span> <span class="nu0">6</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"6"</span><span class="sy4">;</span>
+    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"1"</span><span class="sy4">;</span>
+        <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span>              <span class="co1">// execution starts at this case label</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"2"</span><span class="sy4">;</span>
+        <span class="kw1">case</span> <span class="nu0">3</span><span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"3"</span><span class="sy4">;</span>
+            <span class="br0">[</span><span class="br0">[</span>fallthrough<span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// C++17 attribute to silent the warning on fall through</span>
+        <span class="kw1">case</span> <span class="nu0">5</span><span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"45"</span><span class="sy4">;</span>
+            <span class="kw1">break</span><span class="sy4">;</span>           <span class="co1">// execution of subsequent statements is terminated</span>
+        <span class="kw1">case</span> <span class="nu0">6</span><span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"6"</span><span class="sy4">;</span>
     <span class="br0">}</span>
  
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
-    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"a"</span><span class="sy4">;</span>
-        <span class="kw1">default</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"d"</span><span class="sy4">;</span> <span class="co1">// there are no applicable constant_expressions </span>
-                                   <span class="co1">// therefore default is executed</span>
+    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"a"</span><span class="sy4">;</span>
+        <span class="kw1">default</span><span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"d"</span><span class="sy4">;</span> <span class="co1">// there are no applicable constant expressions </span>
+                              <span class="co1">// therefore default is executed</span>
     <span class="br0">}</span>
  
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
-    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"a"</span><span class="sy4">;</span>  <span class="co1">// nothing is executed</span>
+    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"a"</span><span class="sy4">;</span> <span class="co1">// nothing is executed</span>
     <span class="br0">}</span>
  
     <span class="co1">// when enumerations are used in a switch statement, many compilers</span>
     <span class="co1">// issue warnings if one of the enumerators is not handled</span>
-    <span class="kw2">enum</span> color <span class="br0">{</span>RED, GREEN, BLUE<span class="br0">}</span><span class="sy4">;</span>
-    <span class="kw1">switch</span><span class="br0">(</span>RED<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">case</span> RED<span class="sy4">:</span>   <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"red<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="kw1">break</span><span class="sy4">;</span>
-        <span class="kw1">case</span> GREEN<span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"green<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="kw1">break</span><span class="sy4">;</span>
-        <span class="kw1">case</span> BLUE<span class="sy4">:</span>  <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"blue<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="kw1">break</span><span class="sy4">;</span>
+    <span class="kw2">enum</span> color <span class="br0">{</span> RED, GREEN, BLUE <span class="br0">}</span><span class="sy4">;</span>
+    <span class="kw1">switch</span> <span class="br0">(</span>RED<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">case</span> RED<span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"red<span class="es1">\n</span>"</span><span class="sy4">;</span>
+            <span class="kw1">break</span><span class="sy4">;</span>
+        <span class="kw1">case</span> GREEN<span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"green<span class="es1">\n</span>"</span><span class="sy4">;</span>
+            <span class="kw1">break</span><span class="sy4">;</span>
+        <span class="kw1">case</span> BLUE<span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"blue<span class="es1">\n</span>"</span><span class="sy4">;</span>
+            <span class="kw1">break</span><span class="sy4">;</span>
     <span class="br0">}</span>
  
     <span class="co1">// the C++17 init-statement syntax can be helpful when there is</span>
     <span class="co1">// no implicit conversion to integral or enumeration type</span>
-    <span class="kw1">struct</span> Device <span class="br0">{</span>
-        <span class="kw2">enum</span> <span class="br0">{</span> SLEEP, READY, BAD <span class="br0">}</span> state_<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+    <span class="kw1">struct</span> Device
+    <span class="br0">{</span>
+        <span class="kw2">enum</span> State <span class="br0">{</span> SLEEP, READY, BAD <span class="br0">}</span><span class="sy4">;</span>
+        <span class="kw4">auto</span> state<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> m_state<span class="sy4">;</span> <span class="br0">}</span>
+ 
         <span class="coMULTI">/*...*/</span>
-        <span class="kw4">auto</span> state<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> state_<span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw1">private</span><span class="sy4">:</span>
+        State m_state<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
     <span class="br0">}</span><span class="sy4">;</span>
+ 
     <span class="kw1">switch</span> <span class="br0">(</span><span class="kw4">auto</span> dev <span class="sy1">=</span> Device<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> dev.<span class="me1">state</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
     <span class="br0">{</span>
-      <span class="kw1">case</span> Device<span class="sy4">::</span><span class="me2">SLEEP</span><span class="sy4">:</span> <span class="coMULTI">/*...*/</span> <span class="kw1">break</span><span class="sy4">;</span>
-      <span class="kw1">case</span> Device<span class="sy4">::</span><span class="me2">READY</span><span class="sy4">:</span> <span class="coMULTI">/*...*/</span> <span class="kw1">break</span><span class="sy4">;</span>
-      <span class="kw1">case</span> Device<span class="sy4">::</span><span class="me2">BAD</span><span class="sy4">:</span> <span class="coMULTI">/*...*/</span> <span class="kw1">break</span><span class="sy4">;</span>
+        <span class="kw1">case</span> Device<span class="sy4">::</span><span class="me2">SLEEP</span><span class="sy4">:</span>
+            <span class="coMULTI">/*...*/</span>
+            <span class="kw1">break</span><span class="sy4">;</span>
+        <span class="kw1">case</span> Device<span class="sy4">::</span><span class="me2">READY</span><span class="sy4">:</span>
+            <span class="coMULTI">/*...*/</span>
+            <span class="kw1">break</span><span class="sy4">;</span>
+        <span class="kw1">case</span> Device<span class="sy4">::</span><span class="me2">BAD</span><span class="sy4">:</span>
+            <span class="coMULTI">/*...*/</span>
+            <span class="kw1">break</span><span class="sy4">;</span>
     <span class="br0">}</span>
  
     <span class="co1">// pathological examples</span>
  
     <span class="co1">// the statement doesn't have to be a compound statement</span>
-    <span class="kw1">switch</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span>
+    <span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"this does nothing<span class="es1">\n</span>"</span><span class="sy4">;</span>
  
     <span class="co1">// labels don't require a compound statement either</span>
-    <span class="kw1">switch</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">1</span><span class="br0">)</span>
+    <span class="kw1">switch</span> <span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">1</span><span class="br0">)</span>
+    <span class="br0">{</span>
         <span class="kw1">case</span> <span class="nu0">0</span><span class="sy4">:</span>
-        <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+        <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
+            <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -580,36 +626,52 @@ d
 red
 1</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1767.html">CWG 1767</a>
+</td>
+<td> C++98
+</td>
+<td> <span class="t-spar">condition</span>s of types that are not subject to<br>integral promotion could not be promoted
+</td>
+<td> do not promote<br><span class="t-spar">condition</span>s of these types
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
-<td colspan="2"> <a href="https://en.wikipedia.org/wiki/Duff%27s_device" class="extiw" title="enwiki:Duff's device">Loop unrolling using Duff's Device</a>
-</td></tr>
-
-
-<tr class="t-dsc">
-<td colspan="2"> <a href="https://en.wikipedia.org/wiki/Coroutine#Implementations_for_C" class="extiw" title="enwiki:Coroutine">Duff's device can be used to implement coroutines in C/C++</a>
-</td></tr>
-
-
 </table>
+<h3><span class="mw-headline" id="External_links">External links</span></h3>
+<ul><li> <a href="https://en.wikipedia.org/wiki/Duff%27s_device" class="extiw" title="enwiki:Duff's device">Loop unrolling using Duff's Device</a>
+</li><li> <a href="https://en.wikipedia.org/wiki/Coroutine#C" class="extiw" title="enwiki:Coroutine">Duff's device can be used to implement coroutines in C/C++</a>
+</li></ul>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3570/1000000
-Preprocessor generated node count: 8503/1000000
-Post‐expand include size: 140321/2097152 bytes
-Template argument size: 26291/2097152 bytes
+Preprocessor visited node count: 3647/1000000
+Preprocessor generated node count: 8854/1000000
+Post‐expand include size: 141146/2097152 bytes
+Template argument size: 27633/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:713-0!*!0!!en!*!* and timestamp 20220126201309 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:713-0!*!0!!en!*!* and timestamp 20220610084443 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;oldid=137542">https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;oldid=137542</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;oldid=140156">https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;oldid=140156</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -626,10 +688,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/switch">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/switch">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 26 January 2022, at 12:13.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,912,381 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 10 June 2022, at 01:44.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,970,959 times.</li>
                             </ul>
                     </div>
         </div>
@@ -647,7 +709,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.036 secs. -->
+</script><!-- Served in 0.037 secs. -->
 	</body>
-<!-- Cached 20220126201310 -->
+<!-- Cached 20220610085627 -->
 </html>

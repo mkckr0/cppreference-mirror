@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -283,7 +283,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Amortized constant.
 </p>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
-<p>If an exception is thrown (which can be due to <code>Allocator::allocate()</code> or element copy/move constructor/assignment), this function has no effect (strong exception guarantee).
+<p>If an exception is thrown (which can be due to <code>Allocator::allocate()</code> or element copy/move constructor/assignment), this function has no effect (<a href="../../language/exceptions.html#Exception_safety" title="cpp/language/exceptions">strong exception guarantee</a>).
 </p>
 <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
@@ -293,30 +293,32 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
 <h3> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Some implementations also throw <span class="t-lc"><a href="../../error/length_error.html" title="cpp/error/length error">std::length_error</a></span> when <code>push_back</code> causes a reallocation that would exceed <span class="t-lc"><a href="max_size.html" title="cpp/container/vector/max size">max_size</a></span>, due to implicitly calling an equivalent of <span class="t-lc">reserve(size()+1)</span>.
+<p>Calling <code>push_back</code> will cause reallocation (when <span class="t-lc"><a href="size.html" title="cpp/container/vector/size">size</a></span><code>()+1 &gt; </code><span class="t-lc"><a href="capacity.html" title="cpp/container/vector/capacity">capacity</a></span><code>()</code>), so some implementations also throw <span class="t-lc"><a href="../../error/length_error.html" title="cpp/error/length error">std::length_error</a></span> when <code>push_back</code> causes a reallocation that would exceed <span class="t-lc"><a href="max_size.html" title="cpp/container/vector/max size">max_size</a></span> (due to implicitly calling an equivalent of <span class="t-lc"><a href="reserve.html" title="cpp/container/vector/reserve">reserve</a></span><code>(</code><span class="t-lc"><a href="size.html" title="cpp/container/vector/size">size</a></span><code>()+1))</code>.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;vector&gt;</span>
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;iomanip&gt;</span>
+<span class="co2">#include &lt;string&gt;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><a href="../../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span> letters<span class="sy4">;</span>
  
     letters.<span class="me1">push_back</span><span class="br0">(</span><span class="st0">"abc"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> s <span class="sy1">=</span> <span class="st0">"def"</span><span class="sy4">;</span>
+    <a href="../../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> s<span class="br0">{</span><span class="st0">"def"</span><span class="br0">}</span><span class="sy4">;</span>
     letters.<span class="me1">push_back</span><span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>s<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"vector holds: "</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span><span class="sy3">&amp;&amp;</span> i <span class="sy4">:</span> letters<span class="br0">)</span> <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/quoted.html"><span class="kw1806">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>i<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>Moved-from string holds "</span> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/quoted.html"><span class="kw1806">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>s<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"std::vector `letters` holds: "</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span><span class="sy3">&amp;&amp;</span> e <span class="sy4">:</span> letters<span class="br0">)</span> <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/quoted.html"><span class="kw1806">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>e<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+ 
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>Moved-from string `s` holds: "</span> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/quoted.html"><span class="kw1806">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>s<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
-<p>Output:
+<p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">vector holds: "abc" "def" 
-Moved-from string holds ""</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">std::vector `letters` holds: "abc" "def" 
+Moved-from string `s` holds: ""</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -331,19 +333,24 @@ Moved-from string holds ""</pre></div></div>
 <td>  <div class="t-dsc-member-div"><div><a href="pop_back.html" title="cpp/container/vector/pop back"> <span class="t-lines"><span>pop_back</span></span></a></div></div>
 </td>
 <td>   removes the last element  <br> <span class="t-mark">(public member function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../../iterator/back_inserter.html" title="cpp/iterator/back inserter"> <span class="t-lines"><span>back_inserter</span></span></a></div></div>
+</td>
+<td>   creates a <span class="t-lc"><a href="../../iterator/back_insert_iterator.html" title="cpp/iterator/back insert iterator">std::back_insert_iterator</a></span> of type inferred from the argument <br> <span class="t-mark">(function template)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5715/1000000
-Preprocessor generated node count: 12418/1000000
-Post‐expand include size: 207695/2097152 bytes
-Template argument size: 27521/2097152 bytes
+Preprocessor visited node count: 5880/1000000
+Preprocessor generated node count: 12655/1000000
+Post‐expand include size: 216057/2097152 bytes
+Template argument size: 28699/2097152 bytes
 Highest expansion depth: 23/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:463-0!*!0!!en!*!* and timestamp 20210917150226 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:463-0!*!0!!en!*!* and timestamp 20220717223158 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -364,10 +371,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/container/vector/push_back">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/vector/push_back">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
                                     <li id="footer-info-lastmod"> This page was last modified on 9 January 2018, at 22:54.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 669,843 times.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 775,969 times.</li>
                             </ul>
                     </div>
         </div>
@@ -385,7 +392,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.482 secs. -->
+</script><!-- Served in 0.040 secs. -->
 	</body>
-<!-- Cached 20210917150227 -->
+<!-- Cached 20220717224116 -->
 </html>

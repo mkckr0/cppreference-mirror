@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/except_spec","wgTitle":"cpp/language/except spec","wgCurRevisionId":136383,"wgArticleId":3413,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/except_spec","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/except_spec","wgTitle":"cpp/language/except spec","wgCurRevisionId":140222,"wgArticleId":3413,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/except_spec","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -337,11 +337,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">type-id-list</span>
+<td> <span class="t-spar">type-id-list</span>
 </td>
 <td> -
 </td>
-<td>  comma-separated list of <a href="type-id.html#Type_naming" title="cpp/language/type">type-ids</a><span class="t-rev-inl t-since-cxx11"><span>, a type-id representing a <a href="parameter_pack.html#Pack_expansion" title="cpp/language/parameter pack">pack expansion</a> is followed by an ellipsis (...)</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>
+<td> comma-separated list of <a href="type-id.html#Type_naming" title="cpp/language/type">type-ids</a><span class="t-rev-inl t-since-cxx11"><span>, a type-id representing a <a href="parameter_pack.html#Pack_expansion" title="cpp/language/parameter pack">pack expansion</a> is followed by an ellipsis (...)</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>
 </td></tr></table>
 <p>An explicit dynamic exception specification shall appear only on a function declarator for a function type, pointer to function type, reference to function type, or pointer to member function type that is the top-level type of a declaration or definition, or on such a type appearing as a parameter or return type in a function declarator.
 </p>
@@ -350,10 +350,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">void</span> g<span class="br0">(</span><span class="kw4">void</span> pfa<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// OK: pointer to function parameter declaration</span>
 <span class="kw1">typedef</span> <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>pf<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// Error: typedef declaration</span></pre></div></div>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>If a function is declared with type <code>T</code> listed in its dynamic exception specification, the function may throw exceptions of that type or a type derived from it. A dynamic exception speficification without a type-id list (i.e. <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span><span class="br0">(</span><span class="br0">)</span></span></span>) is non-throwing. A function with a non-throwing dynamic exception specification does not allow any exceptions.
-</p><p><a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">Incomplete types</a>, pointers or references to incomplete types other than cv <code>void*</code>, and rvalue reference types are not allowed in the exception specification. Array and function types, if used, are adjusted to corresponding pointer types. <span class="t-rev-inl t-since-cxx11"><span><a href="parameter_pack.html" title="cpp/language/parameter pack">parameter packs</a> are allowed</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>.
+<p>If a function is declared with type <code>T</code> listed in its dynamic exception specification, the function may throw exceptions of that type or a type derived from it.
+</p><p><a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">Incomplete types</a>, pointers or references to incomplete types other than cv <code>void*</code><span class="t-rev-inl t-since-cxx11"><span>, and rvalue reference types</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> are not allowed in the exception specification. Array and function types, if used, are adjusted to corresponding pointer types, top level cv-qualifications are also dropped. <span class="t-rev-inl t-since-cxx11"><span><a href="parameter_pack.html" title="cpp/language/parameter pack">parameter packs</a> are allowed</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>.
+</p><p>A dynamic exception specification whose set of adjusted types is empty <span class="t-rev-inl t-since-cxx11"><span>(after any packs are expanded)</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> is non-throwing. A function with a non-throwing dynamic exception specification does not allow any exceptions.
 </p><p>A dynamic exception specification is not considered part of a function’s type.
-</p><p>If the function throws an exception of the type not listed in its exception specification, the function <span class="t-lc"><a href="../error/exception/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span> is called. The default function calls <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span>, but it may be replaced by a user-provided function (via <span class="t-lc"><a href="../error/exception/set_unexpected.html" title="cpp/error/set unexpected">std::set_unexpected</a></span>) which may call <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> or throw an exception. If the exception thrown from <span class="t-lc"><a href="../error/exception/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span> is accepted by the exception specification, stack unwinding continues as usual. If it isn't, but <span class="t-lc"><a href="../error/bad_exception.html" title="cpp/error/bad exception">std::bad_exception</a></span> is allowed by the exception specification, <span class="t-lc"><a href="../error/bad_exception.html" title="cpp/error/bad exception">std::bad_exception</a></span> is thrown. Otherwise, <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> is called.
+</p><p>If the function throws an exception of the type not listed in its exception specification, the function <span class="t-lc"><a href="../error/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span> is called. The default function calls <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span>, but it may be replaced by a user-provided function (via <span class="t-lc"><a href="../error/exception/set_unexpected.html" title="cpp/error/set unexpected">std::set_unexpected</a></span>) which may call <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> or throw an exception. If the exception thrown from <span class="t-lc"><a href="../error/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span> is accepted by the exception specification, stack unwinding continues as usual. If it isn't, but <span class="t-lc"><a href="../error/bad_exception.html" title="cpp/error/bad exception">std::bad_exception</a></span> is allowed by the exception specification, <span class="t-lc"><a href="../error/bad_exception.html" title="cpp/error/bad exception">std::bad_exception</a></span> is thrown. Otherwise, <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> is called.
 </p>
 <h3><span class="mw-headline" id="Potential_exceptions">Potential exceptions</span></h3>
 <p>Each function <code>f</code>, pointer to function <code>pf</code>, and pointer to member function <code>pmf</code> has a <i>set of potential exceptions</i>, which consists of types that might be thrown. Set of all types indicates that any exception may be thrown. This set is defined as follows:
@@ -481,16 +482,34 @@ static_assert<span class="br0">(</span>__cplusplus <span class="sy1">&lt;</span>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue25">CWG 25</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/25.html">CWG 25</a>
 </td>
 <td> C++98
 </td>
-<td> the behavior of assignment and initialization between pointers<br>to members with different exception specifications is unspecified
+<td> the behavior of assignment and initialization<br>between pointers to members with different<br>exception specifications was unspecified
 </td>
-<td> apply the restriction  for<br>function pointers and references
+<td> apply the restriction<br>for function pointers<br>and references
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1351">CWG 1351</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/973.html">CWG 973</a>
+</td>
+<td> C++98
+</td>
+<td> exception specification may contain functions types, but the<br>corresponding function pointer conversion was not specified
+</td>
+<td> specified
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1267.html">CWG 1267</a>
+</td>
+<td> C++11
+</td>
+<td> rvalue reference types were allowed in exception specifications
+</td>
+<td> not allowed
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1351.html">CWG 1351</a>
 </td>
 <td> C++98<br>C++11
 </td>
@@ -499,13 +518,22 @@ static_assert<span class="br0">(</span>__cplusplus <span class="sy1">&lt;</span>
 <td> made considered
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2191">CWG 2191</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1777.html">CWG 1777</a>
+</td>
+<td> C++11
+</td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span><span class="br0">(</span>T...<span class="br0">)</span></span></span> was not a non-throwing<br>specification even if <span class="t-c"><span class="mw-geshi cpp source-cpp">T</span></span> is an empty pack
+</td>
+<td> it is non-throwing<br>if the pack is empty
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2191.html">CWG 2191</a>
 </td>
 <td> C++98
 </td>
 <td> the set of potential exceptions of a <code>typeid</code> expression<br>might contain <code>bad_typeid</code> even if it cannot be thrown
 </td>
-<td> contains <code>bad_typeid</code> only<br>if it can be thrown
+<td> contains <code>bad_typeid</code><br>only if it can be thrown
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -518,19 +546,19 @@ static_assert<span class="br0">(</span>__cplusplus <span class="sy1">&lt;</span>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3434/1000000
-Preprocessor generated node count: 8786/1000000
-Post‐expand include size: 130764/2097152 bytes
-Template argument size: 18648/2097152 bytes
+Preprocessor visited node count: 3565/1000000
+Preprocessor generated node count: 9054/1000000
+Post‐expand include size: 132535/2097152 bytes
+Template argument size: 19230/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3413-0!*!0!!en!*!* and timestamp 20220105150610 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3413-0!*!0!!en!*!* and timestamp 20220613020706 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/except_spec&amp;oldid=136383">https://en.cppreference.com/mwiki/index.php?title=cpp/language/except_spec&amp;oldid=136383</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/except_spec&amp;oldid=140222">https://en.cppreference.com/mwiki/index.php?title=cpp/language/except_spec&amp;oldid=140222</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -547,10 +575,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/except_spec">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/except_spec">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 December 2021, at 17:45.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 237,527 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 12 June 2022, at 19:07.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 255,230 times.</li>
                             </ul>
                     </div>
         </div>
@@ -568,7 +596,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.109 secs. -->
+</script><!-- Served in 0.038 secs. -->
 	</body>
-<!-- Cached 20220105150611 -->
+<!-- Cached 20220613022138 -->
 </html>

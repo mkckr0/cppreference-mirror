@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/attributes","wgTitle":"cpp/language/attributes","wgCurRevisionId":132132,"wgArticleId":8703,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/attributes","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/attributes","wgTitle":"cpp/language/attributes","wgCurRevisionId":140460,"wgArticleId":8703,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/attributes","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -344,7 +344,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>Introduces implementation-defined attributes for types, objects, code, etc.
 </p>
-<dl><dd><code><b>[[</b></code><span class="t-spar">attr</span><code><b>]]</b></code> <code><b>[[</b></code><span class="t-spar">attr1</span>, <span class="t-spar">attr2</span>, <span class="t-spar">attr3</span><code><b>(</b></code><span class="t-spar">args</span><code><b>)</b></code><code><b>]]</b></code> <code><b>[[</b></code><span class="t-spar">namespace</span><code><b>::</b></code><span class="t-spar">attr</span><code><b>(</b></code><span class="t-spar">args</span><code><b>)</b></code><code><b>]]</b></code> <span class="t-spar">alignas_specifier</span>
+<dl><dd><code><b>[[</b></code><span class="t-spar">attr</span><code><b>]]</b></code> <code><b>[[</b></code><span class="t-spar">attr1</span>, <span class="t-spar">attr2</span>, <span class="t-spar">attr3</span><code><b>(</b></code><span class="t-spar">args</span><code><b>)</b></code><code><b>]]</b></code> <code><b>[[</b></code><span class="t-spar">namespace</span><code><b>::</b></code><span class="t-spar">attr</span><code><b>(</b></code><span class="t-spar">args</span><code><b>)</b></code><code><b>]]</b></code> <span class="t-spar">alignas-specifier</span>
 </dd></dl>
 <p>Formally, the syntax is
 </p>
@@ -455,13 +455,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Attributes provide the unified standard syntax for implementation-defined language extensions, such as the GNU and IBM language extensions <code>__attribute__((...))</code>, Microsoft extension <code>__declspec()</code>, etc.
 </p><p>An attribute can be used almost everywhere in the C++ program, and can be applied to almost everything: to types, to variables, to functions, to names, to code blocks, to entire translation units, although each particular attribute is only valid where it is permitted by the implementation: <code>[[expect_true]]</code> could be an attribute that can only be used with an <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">if</span></span></span>, and not with a class declaration. <code>[[omp::parallel()]]</code> could be an attribute that applies to a code block or to a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">for</span></span></span> loop, but not to the type <code>int</code>, etc. (note these two attributes are fictional examples, see below for the standard and some non-standard attributes)
 </p><p>In declarations, attributes may appear both before the whole declaration and directly after the name of the entity that is declared, in which case they are combined. In most other situations, attributes apply to the directly preceding entity.
-</p><p>The <a href="alignas.html" title="cpp/language/alignas"><code>alignas</code> specifier</a> is a part of the attribute specifier sequence, although it has different syntax. It may appear where the <code>[[...]]</code> attributes appear and may mix with them (provided it is used where <span class="t-c"><span class="mw-geshi cpp source-cpp">alignas</span></span> is permitted)
-</p><p>Two consecutive left square bracket tokens (<code>[[</code>) may only appear when introducing an attribute-specifier or  inside an attribute argument.
+</p><p>The <a href="alignas.html" title="cpp/language/alignas"><code>alignas</code> specifier</a> is a part of the attribute specifier sequence, although it has different syntax. It may appear where the <code><a href="https://en.cppreference.com/mwiki/index.php?title=...&amp;action=edit&amp;redlink=1" class="new" title="... (page does not exist)">...</a></code> attributes appear and may mix with them (provided it is used where <span class="t-c"><span class="mw-geshi cpp source-cpp">alignas</span></span> is permitted)
+</p><p>Two consecutive left square bracket tokens (<code>[[</code>) may only appear when introducing an attribute-specifier or inside an attribute argument.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-  <span class="kw4">int</span> y<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span><span class="sy4">;</span>
-  y<span class="br0">[</span><span class="br0">[</span><span class="br0">]</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="br0">}</span><span class="br0">(</span><span class="br0">)</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>  <span class="co1">// error</span>
-  <span class="kw4">int</span> i <span class="br0">[</span><span class="br0">[</span>cats<span class="sy4">::</span><span class="me2">meow</span><span class="br0">(</span><span class="br0">[</span><span class="br0">[</span><span class="br0">]</span><span class="br0">]</span><span class="br0">)</span><span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// OK</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">int</span> y<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span><span class="sy4">;</span>
+    y<span class="br0">[</span><span class="br0">[</span><span class="br0">]</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="br0">}</span><span class="br0">(</span><span class="br0">)</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>  <span class="co1">// error</span>
+    <span class="kw4">int</span> i <span class="br0">[</span><span class="br0">[</span>cats<span class="sy4">::</span><span class="me2">meow</span><span class="br0">(</span><span class="br0">[</span><span class="br0">[</span><span class="br0">]</span><span class="br0">]</span><span class="br0">)</span><span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// OK</span>
 <span class="br0">}</span></pre></div></div>
 <p>Besides the standard attributes listed below, implementations may support arbitrary non-standard attributes with implementation-defined behavior. <span class="t-rev-inl t-since-cxx17"><span>All attributes unknown to an implementation are ignored without causing an error.</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>
 </p>
@@ -478,65 +479,65 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td> <code>[[<a href="attributes/noreturn.html" title="cpp/language/attributes/noreturn">noreturn</a>]]</code><span class="t-mark-rev t-since-cxx11">(C++11)</span>
+<td> <code>[[<a href="attributes/noreturn.html" title="cpp/language/attributes/noreturn">noreturn</a>]]</code><span class="t-mark-rev t-since-cxx11">(since C++11)</span>
 </td>
-<td>  indicates that the function does not return
+<td> indicates that the function does not return
 </td></tr>
 
 
 
 <tr class="t-dsc">
-<td> <code>[[<a href="attributes/carries_dependency.html" title="cpp/language/attributes/carries dependency">carries_dependency</a>]]</code><span class="t-mark-rev t-since-cxx11">(C++11)</span>
+<td> <code>[[<a href="attributes/carries_dependency.html" title="cpp/language/attributes/carries dependency">carries_dependency</a>]]</code><span class="t-mark-rev t-since-cxx11">(since C++11)</span>
 </td>
-<td>  indicates that dependency chain in release-consume <span class="t-lc"><a href="../atomic/memory_order.html" title="cpp/atomic/memory order">std::memory_order</a></span> propagates in and out of the function
+<td> indicates that dependency chain in release-consume <span class="t-lc"><a href="../atomic/memory_order.html" title="cpp/atomic/memory order">std::memory_order</a></span> propagates in and out of the function
 </td></tr>
 
 
 
 <tr class="t-dsc">
-<td> <code>[[<a href="attributes/deprecated.html" title="cpp/language/attributes/deprecated">deprecated</a>]]</code><span class="t-mark-rev t-since-cxx14">(C++14)</span><br><code>[[deprecated("reason")]]</code><span class="t-mark-rev t-since-cxx14">(C++14)</span>
+<td> <code>[[<a href="attributes/deprecated.html" title="cpp/language/attributes/deprecated">deprecated</a>]]</code><span class="t-mark-rev t-since-cxx14">(since C++14)</span><br><code>[[deprecated("reason")]]</code><span class="t-mark-rev t-since-cxx14">(since C++14)</span>
 </td>
-<td>  indicates that the use of the name or entity declared with this attribute is allowed, but discouraged for some <span class="t-spar">reason</span>
+<td> indicates that the use of the name or entity declared with this attribute is allowed, but discouraged for some <span class="t-spar">reason</span>
 </td></tr>
 
 
 
 <tr class="t-dsc">
-<td> <code>[[<a href="attributes/fallthrough.html" title="cpp/language/attributes/fallthrough">fallthrough</a>]]</code><span class="t-mark-rev t-since-cxx17">(C++17)</span>
+<td> <code>[[<a href="attributes/fallthrough.html" title="cpp/language/attributes/fallthrough">fallthrough</a>]]</code><span class="t-mark-rev t-since-cxx17">(since C++17)</span>
 </td>
-<td>  indicates that the fall through from the previous case label is intentional and should not be diagnosed by a compiler that warns on fall-through
+<td> indicates that the fall through from the previous case label is intentional and should not be diagnosed by a compiler that warns on fall-through
 </td></tr>
 
 
 
 <tr class="t-dsc">
-<td> <code>[[<a href="attributes/nodiscard.html" title="cpp/language/attributes/nodiscard">nodiscard</a>]]</code><span class="t-mark-rev t-since-cxx17">(C++17)</span><br><code>[[nodiscard("reason")]]</code><span class="t-mark-rev t-since-cxx20">(C++20)</span>
+<td> <code>[[<a href="attributes/nodiscard.html" title="cpp/language/attributes/nodiscard">nodiscard</a>]]</code><span class="t-mark-rev t-since-cxx17">(since C++17)</span><br><code>[[nodiscard("reason")]]</code><span class="t-mark-rev t-since-cxx20">(since C++20)</span>
 </td>
-<td>  encourages the compiler to issue a warning if the return value is discarded
+<td> encourages the compiler to issue a warning if the return value is discarded
 </td></tr>
 
 
 
 <tr class="t-dsc">
-<td> <code>[[<a href="attributes/maybe_unused.html" title="cpp/language/attributes/maybe unused">maybe_unused</a>]]</code><span class="t-mark-rev t-since-cxx17">(C++17)</span>
+<td> <code>[[<a href="attributes/maybe_unused.html" title="cpp/language/attributes/maybe unused">maybe_unused</a>]]</code><span class="t-mark-rev t-since-cxx17">(since C++17)</span>
 </td>
-<td>  suppresses compiler warnings on unused entities, if any
+<td> suppresses compiler warnings on unused entities, if any
 </td></tr>
 
 
 
 <tr class="t-dsc">
-<td> <code>[[<a href="attributes/likely.html" title="cpp/language/attributes/likely">likely</a>]]</code><span class="t-mark-rev t-since-cxx20">(C++20)</span><br><code>[[<a href="attributes/likely.html" title="cpp/language/attributes/likely">unlikely</a>]]</code><span class="t-mark-rev t-since-cxx20">(C++20)</span>
+<td> <code>[[<a href="attributes/likely.html" title="cpp/language/attributes/likely">likely</a>]]</code><span class="t-mark-rev t-since-cxx20">(since C++20)</span><br><code>[[<a href="attributes/likely.html" title="cpp/language/attributes/likely">unlikely</a>]]</code><span class="t-mark-rev t-since-cxx20">(since C++20)</span>
 </td>
-<td>  indicates that the compiler should optimize for the case where a path of execution through a statement is more or less likely than any other path of execution
+<td> indicates that the compiler should optimize for the case where a path of execution through a statement is more or less likely than any other path of execution
 </td></tr>
 
 
 
 <tr class="t-dsc">
-<td> <code>[[<a href="attributes/no_unique_address.html" title="cpp/language/attributes/no unique address">no_unique_address</a>]]</code><span class="t-mark-rev t-since-cxx20">(C++20)</span>
+<td> <code>[[<a href="attributes/no_unique_address.html" title="cpp/language/attributes/no unique address">no_unique_address</a>]]</code><span class="t-mark-rev t-since-cxx20">(since C++20)</span>
 </td>
-<td>  indicates that a non-static data member need not have an address distinct from all other non-static data members of its class
+<td> indicates that a non-static data member need not have an address distinct from all other non-static data members of its class
 </td></tr>
 
 
@@ -544,7 +545,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td> <code>[[<a href="attributes/optimize_for_synchronized.html" title="cpp/language/attributes/optimize for synchronized">optimize_for_synchronized</a>]]</code><span class="t-mark-rev t-since-tm-ts t-mark-ts">(TM TS)</span>
 </td>
-<td>  indicates that the function definition should be optimized for invocation from a <a href="transactional_memory.html" title="cpp/language/transactional memory">synchronized statement</a>
+<td> indicates that the function definition should be optimized for invocation from a <a href="transactional_memory.html" title="cpp/language/transactional memory">synchronized statement</a>
 </td></tr>
 
 
@@ -563,9 +564,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="br0">}</span>
  
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
-<span class="br0">{</span>
-<span class="br0">}</span></pre></div></div>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></pre></div></div>
 </div>
 <h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
@@ -581,6 +580,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <th> Correct behavior
 </th></tr>
 <tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2079.html">CWG 2079</a>
+</td>
+<td> C++11
+</td>
+<td> <code>[[</code> could not appear inside an attribute argument
+</td>
+<td> allowed
+</td></tr>
+<tr>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2156R1">P2156R1</a>
 </td>
 <td> C++11
@@ -589,32 +597,32 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> not required
 </td></tr></table>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+</table>
 <h3><span class="mw-headline" id="External_links">External links</span></h3>
 <ul><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/onlinedocs/gcc/Attribute-Syntax.html#Attribute-Syntax">Attributes in GCC</a>
 <ul><li> these attributes can be used as <code>[[gnu::...]]</code>, see <a rel="nofollow" class="external text" href="https://stackoverflow.com/questions/54639524/which-gnu-attributes-have-c11-syntax#comment96071307_54639524">here</a>
 </li></ul>
 </li><li> <a rel="nofollow" class="external text" href="https://clang.llvm.org/docs/AttributeReference.html">Attributes in Clang</a>
 </li></ul>
-<h3><span class="mw-headline" id="See_also">See also</span></h3>
-<table class="t-dsc-begin">
-
-</table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5433/1000000
-Preprocessor generated node count: 10874/1000000
-Post‐expand include size: 207102/2097152 bytes
-Template argument size: 35812/2097152 bytes
+Preprocessor visited node count: 5427/1000000
+Preprocessor generated node count: 10763/1000000
+Post‐expand include size: 206815/2097152 bytes
+Template argument size: 35312/2097152 bytes
 Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:8703-0!*!0!!en!*!* and timestamp 20220117234210 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:8703-0!*!0!!en!*!* and timestamp 20220712073031 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/attributes&amp;oldid=132132">https://en.cppreference.com/mwiki/index.php?title=cpp/language/attributes&amp;oldid=132132</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/attributes&amp;oldid=140460">https://en.cppreference.com/mwiki/index.php?title=cpp/language/attributes&amp;oldid=140460</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -631,10 +639,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/attributes">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/attributes">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 7 August 2021, at 04:48.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 567,973 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 21 June 2022, at 18:39.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 613,634 times.</li>
                             </ul>
                     </div>
         </div>
@@ -652,7 +660,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.281 secs. -->
+</script><!-- Served in 1.230 secs. -->
 	</body>
-<!-- Cached 20220117234210 -->
+<!-- Cached 20220712073031 -->
 </html>

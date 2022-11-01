@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/friend","wgTitle":"cpp/language/friend","wgCurRevisionId":137295,"wgArticleId":3084,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/friend","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/friend","wgTitle":"cpp/language/friend","wgCurRevisionId":141405,"wgArticleId":3084,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/friend","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -200,7 +200,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -403,13 +403,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td></tr></table>
 <h3><span class="mw-headline" id="Description">Description</span></h3>
 <div class="t-li1"><span class="t-li">1)</span> Designates a function or several functions as friends of this class:
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> Y <span class="br0">{</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> Y
+<span class="br0">{</span>
     <span class="kw4">int</span> data<span class="sy4">;</span> <span class="co1">// private member</span>
+ 
     <span class="co1">// the non-member function operator&lt;&lt; will have access to Y's private members</span>
     <span class="kw1">friend</span> <a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span><span class="br0">(</span><a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> out, <span class="kw4">const</span> Y<span class="sy3">&amp;</span> o<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">friend</span> <span class="kw4">char</span><span class="sy2">*</span> X<span class="sy4">::</span><span class="me2">foo</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// members of other classes can be friends too</span>
     <span class="kw1">friend</span> X<span class="sy4">::</span><span class="me2">X</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">)</span>, X<span class="sy4">::</span>~X<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// constructors and destructors can be friends</span>
 <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="co1">// friend declaration does not declare a member function</span>
 <span class="co1">// this operator&lt;&lt; still needs to be defined, as a non-member</span>
 <a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span><span class="br0">(</span><a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> out, <span class="kw4">const</span> Y<span class="sy3">&amp;</span> y<span class="br0">)</span>
@@ -417,13 +420,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw1">return</span> out <span class="sy1">&lt;&lt;</span> y.<span class="me1">data</span><span class="sy4">;</span> <span class="co1">// can access private member Y::data</span>
 <span class="br0">}</span></pre></div></div></div>
 <div class="t-li1"><span class="t-li">2)</span> (only allowed in non-<a href="class.html#Local_classes" title="cpp/language/class">local</a> class definitions) Defines a non-member function, and makes it a friend of this class at the same time. Such non-member function is always <a href="inline.html" title="cpp/language/inline">inline</a><span class="t-rev-inl t-since-cxx20"><span>, unless it is attached to a <a href="modules.html" title="cpp/language/modules">named module</a></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>.
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> X <span class="br0">{</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> X
+<span class="br0">{</span>
     <span class="kw4">int</span> a<span class="sy4">;</span>
-    <span class="kw1">friend</span> <span class="kw4">void</span> friend_set<span class="br0">(</span>X<span class="sy3">&amp;</span> p, <span class="kw4">int</span> i<span class="br0">)</span> <span class="br0">{</span>
+ 
+    <span class="kw1">friend</span> <span class="kw4">void</span> friend_set<span class="br0">(</span>X<span class="sy3">&amp;</span> p, <span class="kw4">int</span> i<span class="br0">)</span>
+    <span class="br0">{</span>
         p.<span class="me1">a</span> <span class="sy1">=</span> i<span class="sy4">;</span> <span class="co1">// this is a non-member function</span>
     <span class="br0">}</span>
- <span class="kw1">public</span><span class="sy4">:</span>
-    <span class="kw4">void</span> member_set<span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span> <span class="br0">{</span>
+<span class="kw1">public</span><span class="sy4">:</span>
+    <span class="kw4">void</span> member_set<span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span>
+    <span class="br0">{</span>
         a <span class="sy1">=</span> i<span class="sy4">;</span> <span class="co1">// this is a member function</span>
     <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div></div>
@@ -431,19 +438,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 The name of the class that is used in this <code>friend</code> declaration does not need to be previously declared.</div>
 <div class="t-li1"><span class="t-li">4)</span> Designates the type named by the <span class="t-spar">simple-type-specifier</span> or <span class="t-spar">typename-specifier</span> as a friend of this class if that type is a (possibly <a href="cv.html" title="cpp/language/cv">cv-qualified</a>) class, struct, or union; otherwise the <code>friend</code> declaration is ignored. This declaration will not forward declare a new type.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> Y <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">class</span> A <span class="br0">{</span>
+ 
+<span class="kw1">class</span> A
+<span class="br0">{</span>
     <span class="kw4">int</span> data<span class="sy4">;</span> <span class="co1">// private data member</span>
-    <span class="kw1">class</span> B <span class="br0">{</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// private nested type</span>
+ 
+    <span class="kw1">class</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// private nested type</span>
+ 
     <span class="kw2">enum</span> <span class="br0">{</span> a <span class="sy1">=</span> <span class="nu0">100</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// private enumerator</span>
+ 
     <span class="kw1">friend</span> <span class="kw1">class</span> X<span class="sy4">;</span> <span class="co1">// friend class forward declaration (elaborated class specifier)</span>
     <span class="kw1">friend</span> Y<span class="sy4">;</span> <span class="co1">// friend class declaration (simple type specifier) (since c++11)</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw1">class</span> X <span class="sy4">:</span> A<span class="sy4">::</span><span class="me2">B</span> <span class="br0">{</span> <span class="co1">// OK: A::B accessible to friend</span>
+<span class="kw1">class</span> X <span class="sy4">:</span> A<span class="sy4">::</span><span class="me2">B</span> <span class="co1">// OK: A::B accessible to friend</span>
+<span class="br0">{</span>
     A<span class="sy4">::</span><span class="me2">B</span> mx<span class="sy4">;</span> <span class="co1">// OK: A::B accessible to member of friend</span>
-    <span class="kw1">class</span> Y <span class="br0">{</span>
+ 
+    <span class="kw1">class</span> Y
+    <span class="br0">{</span>
         A<span class="sy4">::</span><span class="me2">B</span> my<span class="sy4">;</span> <span class="co1">// OK: A::B accessible to nested member of friend</span>
     <span class="br0">}</span><span class="sy4">;</span>
+ 
     <span class="kw4">int</span> v<span class="br0">[</span>A<span class="sy4">::</span><span class="me2">a</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// OK: A::a accessible to member of friend</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div></div>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
@@ -455,24 +471,30 @@ The name of the class that is used in this <code>friend</code> declaration does 
 </p><p>When a local class declares an unqualified function or class as a friend, only functions and classes in the innermost non-class scope are <a href="lookup.html" title="cpp/language/lookup">looked up</a>, not the global functions:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> F <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">extern</span> <span class="kw4">int</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">class</span> Local <span class="br0">{</span> <span class="co1">// Local class in the main() function</span>
+ 
+    <span class="kw1">class</span> Local <span class="co1">// Local class in the main() function</span>
+    <span class="br0">{</span>
         <span class="kw1">friend</span> <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// Error, no such function declared in main()</span>
         <span class="kw1">friend</span> <span class="kw4">int</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK, there is a declaration for g in main()</span>
         <span class="kw1">friend</span> <span class="kw1">class</span> F<span class="sy4">;</span> <span class="co1">// friends a local F (defined later)</span>
         <span class="kw1">friend</span> <span class="kw1">class</span> <span class="sy4">::</span><span class="me2">F</span><span class="sy4">;</span> <span class="co1">// friends the global F</span>
     <span class="br0">}</span><span class="sy4">;</span>
+ 
     <span class="kw1">class</span> F <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// local F</span>
 <span class="br0">}</span></pre></div></div>
-<p>A name first declared in a friend declaration within a class or class template <code>X</code> becomes a member of the innermost enclosing namespace of <code>X</code>, but is not visible for lookup (except argument-dependent lookup that considers <code>X</code>) unless a matching declaration at the namespace scope is provided - see <a href="namespace.html#Namespaces" title="cpp/language/namespace">namespaces</a> for details.
+<p>A name first declared in a friend declaration within a class or class template <code>X</code> becomes a member of the innermost enclosing namespace of <code>X</code>, but is not visible for lookup (except argument-dependent lookup that considers <code>X</code>) unless a matching declaration at namespace scope is provided - see <a href="namespace.html#Namespaces" title="cpp/language/namespace">namespaces</a> for details.
 </p>
 <h3><span class="mw-headline" id="Template_friends">Template friends</span></h3>
 <p>Both <a href="function_template.html" title="cpp/language/function template">function template</a> and <a href="class_template.html" title="cpp/language/class template">class template</a> declarations may appear with the <code>friend</code> specifier in any non-local class or class template (although only function templates may be defined within the class or class template that is granting friendship). In this case, every specialization of the template becomes a friend, whether it is implicitly instantiated, partially specialized, or explicitly specialized.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> A <span class="br0">{</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> A
+<span class="br0">{</span>
     <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
     <span class="kw1">friend</span> <span class="kw1">class</span> B<span class="sy4">;</span> <span class="co1">// every B&lt;T&gt; is a friend of A</span>
  
@@ -481,65 +503,95 @@ The name of the class that is used in this <code>friend</code> declaration does 
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <p>Friend declarations cannot refer to partial specializations, but can refer to full specializations:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span> <span class="kw1">class</span> A <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// primary</span>
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span> <span class="kw1">class</span> A<span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// partial</span>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw1">class</span> A<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// full</span>
-<span class="kw1">class</span> X <span class="br0">{</span>
-    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span> <span class="kw1">friend</span> <span class="kw1">class</span> A<span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// error!</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+<span class="kw1">class</span> A <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>      <span class="co1">// primary</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+<span class="kw1">class</span> A<span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>  <span class="co1">// partial</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;&gt;</span>
+<span class="kw1">class</span> A<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// full</span>
+ 
+<span class="kw1">class</span> X
+<span class="br0">{</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw1">class</span> A<span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span><span class="sy4">;</span>  <span class="co1">// error!</span>
+ 
     <span class="kw1">friend</span> <span class="kw1">class</span> A<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// OK</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
-<p>When a friend declaration refers to a full specialization of a function template, the keyword <code>inline</code> and default arguments cannot be used:
+<p>When a friend declaration refers to a full specialization of a function template, the keywords <code>inline</code><span class="t-rev-inl t-since-cxx11"><span>/<code>constexpr</code></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span><span class="t-rev-inl t-since-cxx20"><span>/<code>consteval</code></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> and default arguments cannot be used:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span> <span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>
-<span class="kw1">template</span><span class="sy1">&lt;&gt;</span> <span class="kw4">void</span> f<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+<span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>
  
-<span class="kw1">class</span> X <span class="br0">{</span>
+<span class="kw1">template</span><span class="sy1">&lt;&gt;</span>
+<span class="kw4">void</span> f<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="kw1">class</span> X
+<span class="br0">{</span>
     <span class="kw1">friend</span> <span class="kw4">void</span> f<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// error: default args not allowed</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <p>A template friend declaration can name a member of a class template A, which can be either a member function or a member type (the type must use <a href="elaborated_type_specifier.html" title="cpp/language/elaborated type specifier">elaborated-type-specifier</a>). Such declaration is only well-formed if the last component in its nested-name-specifier (the name to the left of the last <code><b>::</b></code>) is a simple-template-id (template name followed by argument list in angle brackets) that names the class template. The template parameters of such template friend declaration must be deducible from the simple-template-id.
-</p><p>In this case, the member of any specialization of A becomes a friend. This does not involve instantiating the primary template A: the only requirements are that the deduction of the template parameters of A from that specialization succeeds, and that substitution of the deduced template arguments into the friend declaration produces a declaration that would be a valid redeclaration of the member of the specialization:
+</p><p>In this case, the member of any specialization of either A or partial specializations of A becomes a friend. This does not involve instantiating the primary template A or partial specializations of A: the only requirements are that the deduction of the template parameters of A from that specialization succeeds, and that substitution of the deduced template arguments into the friend declaration produces a declaration that would be a valid redeclaration of the member of the specialization:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// primary template</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-<span class="kw1">struct</span> A <span class="br0">{</span> 
-  <span class="kw1">struct</span> B <span class="br0">{</span> <span class="br0">}</span><span class="sy4">;</span>
-  <span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-  <span class="kw1">struct</span> D <span class="br0">{</span> <span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-  T h<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-  <span class="kw1">template</span><span class="sy1">&lt;</span>T U<span class="sy1">&gt;</span> T i<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw1">struct</span> A
+<span class="br0">{</span> 
+    <span class="kw1">struct</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+ 
+    <span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="kw1">struct</span> D <span class="br0">{</span> <span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+ 
+    T h<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span>T U<span class="sy1">&gt;</span>
+    T i<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="co1">// full specialization</span>
 <span class="kw1">template</span><span class="sy1">&lt;&gt;</span>
-<span class="kw1">struct</span> A<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="br0">{</span>
-  <span class="kw1">struct</span> B <span class="br0">{</span> <span class="br0">}</span><span class="sy4">;</span>
-  <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-  <span class="kw1">struct</span> D <span class="br0">{</span> <span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">int</span> U<span class="sy1">&gt;</span> <span class="kw4">int</span> i<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw1">struct</span> A<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span>
+<span class="br0">{</span>
+    <span class="kw1">struct</span> B <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+ 
+    <span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    <span class="kw1">struct</span> D <span class="br0">{</span> <span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">int</span> U<span class="sy1">&gt;</span>
+    <span class="kw4">int</span> i<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="co1">// another full specialization</span>
 <span class="kw1">template</span><span class="sy1">&lt;&gt;</span>
-<span class="kw1">struct</span> A<span class="sy1">&lt;</span><span class="kw4">float</span><span class="sy2">*</span><span class="sy1">&gt;</span> <span class="br0">{</span>
+<span class="kw1">struct</span> A<span class="sy1">&lt;</span><span class="kw4">float</span><span class="sy2">*</span><span class="sy1">&gt;</span>
+<span class="br0">{</span>
     <span class="kw4">int</span> <span class="sy2">*</span>h<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="co1">// the non-template class granting friendship to members of class template A</span>
-<span class="kw1">class</span> X <span class="br0">{</span>
-  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-  <span class="kw1">friend</span> <span class="kw1">struct</span> A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">B</span><span class="sy4">;</span> <span class="co1">// all A&lt;T&gt;::B are friends, including A&lt;int&gt;::B</span>
  
-  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-  <span class="kw1">friend</span> <span class="kw4">void</span> A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">f</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// A&lt;int&gt;::f() is not a friend because its signature</span>
-                          <span class="co1">// does not match, but e.g. A&lt;char&gt;::f() is a friend</span>
+<span class="co1">// the non-template class granting friendship to members of class template A</span>
+<span class="kw1">class</span> X
+<span class="br0">{</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw1">struct</span> A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">B</span><span class="sy4">;</span> <span class="co1">// all A&lt;T&gt;::B are friends, including A&lt;int&gt;::B</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">void</span> A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">f</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// A&lt;int&gt;::f() is not a friend because its signature</span>
+                           <span class="co1">// does not match, but e.g. A&lt;char&gt;::f() is a friend</span>
  
 <span class="co1">//  template&lt;class T&gt;</span>
 <span class="co1">//  friend void A&lt;T&gt;::D::g(); // ill-formed, the last part of the nested-name-specifier,</span>
 <span class="co1">//                            // D in A&lt;T&gt;::D::, is not simple-template-id</span>
  
-  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
-  <span class="kw1">friend</span> <span class="kw4">int</span><span class="sy2">*</span> A<span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">h</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// all A&lt;T*&gt;::h are friends: A&lt;float*&gt;::h(), A&lt;int*&gt;::h(), etc</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+    <span class="kw1">friend</span> <span class="kw4">int</span><span class="sy2">*</span> A<span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">h</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// all A&lt;T*&gt;::h are friends:</span>
+                            <span class="co1">// A&lt;float*&gt;::h(), A&lt;int*&gt;::h(), etc</span>
  
-  <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span> 
-  <span class="kw1">template</span><span class="sy1">&lt;</span>T U<span class="sy1">&gt;</span>       <span class="co1">// all instantiations of A&lt;T&gt;::i() and A&lt;int&gt;::i() are friends, </span>
-  <span class="kw1">friend</span> T A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">i</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// and thereby all specializations of those function templates</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span> 
+    <span class="kw1">template</span><span class="sy1">&lt;</span>T U<span class="sy1">&gt;</span>       <span class="co1">// all instantiations of A&lt;T&gt;::i() and A&lt;int&gt;::i() are friends, </span>
+    <span class="kw1">friend</span> T A<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">i</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// and thereby all specializations of those function templates</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
@@ -556,10 +608,11 @@ The name of the class that is used in this <code>friend</code> declaration does 
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-<span class="kw1">class</span> Foo <span class="br0">{</span>
- <span class="kw1">public</span><span class="sy4">:</span>
+<span class="kw1">class</span> Foo
+<span class="br0">{</span>
+<span class="kw1">public</span><span class="sy4">:</span>
     Foo<span class="br0">(</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> val<span class="br0">)</span> <span class="sy4">:</span> data<span class="br0">(</span>val<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
- <span class="kw1">private</span><span class="sy4">:</span>
+<span class="kw1">private</span><span class="sy4">:</span>
     T data<span class="sy4">;</span>
  
     <span class="co1">// generates a non-template operator&lt;&lt; for this T</span>
@@ -590,14 +643,16 @@ The name of the class that is used in this <code>friend</code> declaration does 
 <a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span><span class="br0">(</span><a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span>, <span class="kw4">const</span> Foo<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
-<span class="kw1">class</span> Foo <span class="br0">{</span>
- <span class="kw1">public</span><span class="sy4">:</span>
+<span class="kw1">class</span> Foo
+<span class="br0">{</span>
+<span class="kw1">public</span><span class="sy4">:</span>
     Foo<span class="br0">(</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> val<span class="br0">)</span> <span class="sy4">:</span> data<span class="br0">(</span>val<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
- <span class="kw1">private</span><span class="sy4">:</span>
+<span class="kw1">private</span><span class="sy4">:</span>
     T data<span class="sy4">;</span>
  
     <span class="co1">// refers to a full specialization for this particular T </span>
     <span class="kw1">friend</span> <a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span> <span class="sy1">&lt;&gt;</span> <span class="br0">(</span><a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span>, <span class="kw4">const</span> Foo<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
+ 
     <span class="co1">// note: this relies on template argument deduction in declarations</span>
     <span class="co1">// can also specify the template argument with operator&lt;&lt; &lt;T&gt;"</span>
 <span class="br0">}</span><span class="sy4">;</span>
@@ -620,14 +675,15 @@ The name of the class that is used in this <code>friend</code> declaration does 
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;sstream&gt;</span>
  
-<span class="kw1">class</span> MyClass <span class="br0">{</span>
-    <span class="kw4">int</span> i<span class="sy4">;</span>                    <span class="co1">// friends have access to non-public, non-static</span>
-    <span class="kw4">static</span> <span class="kw1">inline</span> <span class="kw4">int</span> id<span class="br0">{</span><span class="nu0">6</span><span class="br0">}</span><span class="sy4">;</span>  <span class="co1">// and static (possibly inline) members</span>
+<span class="kw1">class</span> MyClass
+<span class="br0">{</span>
+    <span class="kw4">int</span> i<span class="sy4">;</span>                   <span class="co1">// friends have access to non-public, non-static</span>
+    <span class="kw4">static</span> <span class="kw1">inline</span> <span class="kw4">int</span> id<span class="br0">{</span><span class="nu0">6</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// and static (possibly inline) members</span>
  
     <span class="kw1">friend</span> <a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span><span class="br0">(</span><a href="../io/basic_ostream.html"><span class="kw1733">std::<span class="me2">ostream</span></span></a><span class="sy3">&amp;</span> out, <span class="kw4">const</span> MyClass<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">friend</span> <a href="../io/basic_istream.html"><span class="kw1731">std::<span class="me2">istream</span></span></a><span class="sy3">&amp;</span> operator<span class="sy1">&gt;&gt;</span><span class="br0">(</span><a href="../io/basic_istream.html"><span class="kw1731">std::<span class="me2">istream</span></span></a><span class="sy3">&amp;</span> in, MyClass<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">friend</span> <span class="kw4">void</span> change_id<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>
- <span class="kw1">public</span><span class="sy4">:</span>
+<span class="kw1">public</span><span class="sy4">:</span>
     MyClass<span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span> <span class="sy4">:</span> i<span class="br0">(</span>i<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
@@ -674,22 +730,58 @@ MyClass::id = 9; i = 100</pre></div></div>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue45">CWG 45</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/45.html">CWG 45</a>
 </td>
 <td> C++98
 </td>
-<td> members of a class nested in a friend class of <code>T</code> have no<br> special access to <code>T</code>
+<td> members of a class nested in a friend<br>class of <code>T</code> have no special access to <code>T</code>
 </td>
-<td> a nested class has the same access as<br> the enclosing class
+<td> a nested class has the same<br>access as the enclosing class
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue500">CWG 500</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/500.html">CWG 500</a>
 </td>
 <td> C++98
 </td>
-<td> friend class of <code>T</code> cannot inherit from private or protected<br> members of <code>T</code>, but its nested class can
+<td> friend class of <code>T</code> cannot inherit from private or<br>protected members of <code>T</code>, but its nested class can
 </td>
-<td> both can inherit from such members
+<td> both can inherit<br>from such members
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1439.html">CWG 1439</a>
+</td>
+<td> C++98
+</td>
+<td> the rule targeting friend declarations in non-local<br>classes did not cover template declarations
+</td>
+<td> covered
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1477.html">CWG 1477</a>
+</td>
+<td> C++98
+</td>
+<td> a name first declared in a friend declaration within a class<br>or class template was not visible for lookup if the matching<br>declaration is provided in another namespace scope
+</td>
+<td> it is visible for<br>lookup in this case
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1804.html">CWG 1804</a>
+</td>
+<td> C++98
+</td>
+<td> when a member of a class template is friended, the corresponding<br>member of specializations of partial specializations of the class<br>template was not a friend of the class granting friendship
+</td>
+<td> such members<br>are also friends
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2379.html">CWG 2379</a>
+</td>
+<td> C++11
+</td>
+<td> friend declarations referring to full specializations<br>of function templates could be declared constexpr
+</td>
+<td> prohibited
 </td></tr></table>
 <h3><span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-c++20">
@@ -758,19 +850,19 @@ MyClass::id = 9; i = 100</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3761/1000000
-Preprocessor generated node count: 8748/1000000
-Post‐expand include size: 147696/2097152 bytes
-Template argument size: 27048/2097152 bytes
+Preprocessor visited node count: 3917/1000000
+Preprocessor generated node count: 9100/1000000
+Post‐expand include size: 149811/2097152 bytes
+Template argument size: 28043/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3084-0!*!0!!en!*!* and timestamp 20220117200137 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3084-0!*!0!!en!*!* and timestamp 20220727033706 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/friend&amp;oldid=137295">https://en.cppreference.com/mwiki/index.php?title=cpp/language/friend&amp;oldid=137295</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/friend&amp;oldid=141405">https://en.cppreference.com/mwiki/index.php?title=cpp/language/friend&amp;oldid=141405</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -787,10 +879,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/friend">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/friend">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 17 January 2022, at 12:01.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 946,822 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 26 July 2022, at 20:37.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,022,295 times.</li>
                             </ul>
                     </div>
         </div>
@@ -808,7 +900,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.061 secs. -->
+</script><!-- Served in 0.037 secs. -->
 	</body>
-<!-- Cached 20220117200511 -->
+<!-- Cached 20220727034033 -->
 </html>

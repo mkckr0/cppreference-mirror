@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -249,7 +249,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> CharT, <span class="kw1">class</span> Traits, <span class="kw1">class</span> Alloc, <span class="kw1">class</span> U <span class="sy1">&gt;</span><br>
 <p><span class="kw4">constexpr</span> <span class="kw1">typename</span> <a href="../basic_string.html"><span class="kw1231">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>CharT,Traits,Alloc<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span><br>
 </p>
-    erase<span class="br0">(</span><a href="../basic_string.html"><span class="kw1231">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>CharT,Traits,Alloc<span class="sy1">&gt;</span><span class="sy3">&amp;</span> c, <span class="kw4">const</span> U<span class="sy3">&amp;</span> value<span class="br0">)</span><span class="sy4">;</span></span></div></td>
+    erase<span class="br0">(</span> <a href="../basic_string.html"><span class="kw1231">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>CharT,Traits,Alloc<span class="sy1">&gt;</span><span class="sy3">&amp;</span> c, <span class="kw4">const</span> U<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
@@ -257,7 +257,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> CharT, <span class="kw1">class</span> Traits, <span class="kw1">class</span> Alloc, <span class="kw1">class</span> Pred <span class="sy1">&gt;</span><br>
 <p><span class="kw4">constexpr</span> <span class="kw1">typename</span> <a href="../basic_string.html"><span class="kw1231">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>CharT,Traits,Alloc<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span><br>
 </p>
-    erase_if<span class="br0">(</span><a href="../basic_string.html"><span class="kw1231">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>CharT,Traits,Alloc<span class="sy1">&gt;</span><span class="sy3">&amp;</span> c, Pred pred<span class="br0">)</span><span class="sy4">;</span></span></div></td>
+    erase_if<span class="br0">(</span> <a href="../basic_string.html"><span class="kw1231">std::<span class="me2">basic_string</span></span></a><span class="sy1">&lt;</span>CharT,Traits,Alloc<span class="sy1">&gt;</span><span class="sy3">&amp;</span> c, Pred pred <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
@@ -316,35 +316,32 @@ c.<span class="me1">erase</span><span class="br0">(</span>it, c.<span class="me1
  
 <span class="kw4">void</span> print_container<span class="br0">(</span><a href="../basic_string_view.html"><span class="kw1251">std::<span class="me2">string_view</span></span></a> comment, <span class="kw4">const</span> <a href="../basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> c<span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> comment<span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> comment <span class="sy1">&lt;&lt;</span> <span class="st0">"{ "</span><span class="sy4">;</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> x <span class="sy4">:</span> c<span class="br0">)</span> <span class="br0">{</span>
         <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> x <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
     <span class="br0">}</span>
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"}<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> cnt<span class="br0">(</span><span class="nu0">10</span>, <span class="st0">' '</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../../algorithm/iota.html"><span class="kw1659">std::<span class="me2">iota</span></span></a><span class="br0">(</span>cnt.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, cnt.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, <span class="st0">'0'</span><span class="br0">)</span><span class="sy4">;</span>
-    print_container<span class="br0">(</span><span class="st0">"Init:<span class="es1">\n</span>"</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
+    print_container<span class="br0">(</span><span class="st0">"Initially, cnt = "</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
  
     <a href="../../container/vector/erase2.html"><span class="kw3217">std::<span class="me2">erase</span></span></a><span class="br0">(</span>cnt, <span class="st0">'3'</span><span class="br0">)</span><span class="sy4">;</span>
-    print_container<span class="br0">(</span><span class="st0">"Erase '3':<span class="es1">\n</span>"</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
+    print_container<span class="br0">(</span><span class="st0">"After erase '3', cnt = "</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
  
     <span class="kw4">auto</span> erased <span class="sy1">=</span> <a href="../../container/vector/erase2.html"><span class="kw3218">std::<span class="me2">erase_if</span></span></a><span class="br0">(</span>cnt, <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">char</span> x<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="br0">(</span>x <span class="sy2">-</span> <span class="st0">'0'</span><span class="br0">)</span> <span class="sy2">%</span> <span class="nu0">2</span> <span class="sy1">==</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
-    print_container<span class="br0">(</span><span class="st0">"Erase all even numbers:<span class="es1">\n</span>"</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"In all "</span> <span class="sy1">&lt;&lt;</span> erased <span class="sy1">&lt;&lt;</span> <span class="st0">" even numbers were erased.<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    print_container<span class="br0">(</span><span class="st0">"After erase all even numbers, cnt = "</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Erased even numbers: "</span> <span class="sy1">&lt;&lt;</span> erased <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Init:
-0 1 2 3 4 5 6 7 8 9 
-Erase '3':
-0 1 2 4 5 6 7 8 9 
-Erase all even numbers:
-1 5 7 9
-In all 5 even numbers were erased.</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Initially, cnt = { 0 1 2 3 4 5 6 7 8 9 }
+After erase '3', cnt = { 0 1 2 4 5 6 7 8 9 }
+After erase all even numbers, cnt = { 1 5 7 9 }
+Erased even numbers: 5</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -359,14 +356,14 @@ In all 5 even numbers were erased.</pre></div></div>
 <!-- 
 NewPP limit report
 Preprocessor visited node count: 6355/1000000
-Preprocessor generated node count: 11215/1000000
-Post‐expand include size: 285639/2097152 bytes
-Template argument size: 41736/2097152 bytes
+Preprocessor generated node count: 11245/1000000
+Post‐expand include size: 285657/2097152 bytes
+Template argument size: 41935/2097152 bytes
 Highest expansion depth: 23/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18107-0!*!0!!en!*!* and timestamp 20220114101816 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18107-0!*!0!!en!*!* and timestamp 20220617211327 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -387,10 +384,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/string/basic_string/erase2">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/string/basic_string/erase2">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 28 July 2020, at 07:47.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 15,683 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 28 July 2020, at 08:47.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 19,459 times.</li>
                             </ul>
                     </div>
         </div>
@@ -408,7 +405,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.541 secs. -->
+</script><!-- Served in 0.040 secs. -->
 	</body>
-<!-- Cached 20220114101817 -->
+<!-- Cached 20220617222609 -->
 </html>

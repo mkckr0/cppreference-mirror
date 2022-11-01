@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -293,6 +293,13 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
 <p>Exactly <span class="t-c"><span class="mw-geshi cpp source-cpp">size<span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span> <span class="nu0">1</span></span></span> comparisons of the elements, if the container is not empty. Otherwise, no comparison is performed.
 </p>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<table class="wikitable">
+<tr>
+<td> <a href="../../feature_test.html#Library_features" title="cpp/feature test">Feature-test</a> macro:
+</td>
+<td> <a href="../../utility/feature_test.html" title="cpp/utility/feature test"><tt>__cpp_lib_list_remove_return_type</tt></a>
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
@@ -309,20 +316,26 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <span class="br0">{</span>
   <a href="../list.html"><span class="kw1278">std::<span class="me2">list</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> c <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">3</span>, <span class="nu0">2</span>, <span class="nu0">1</span>, <span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span>
   print<span class="br0">(</span><span class="st0">"Before unique():"</span>, c<span class="br0">)</span><span class="sy4">;</span>
-  c.<span class="me1">unique</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-  print<span class="br0">(</span><span class="st0">"After  unique():"</span>, c<span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw4">const</span> <span class="kw4">auto</span> count1 <span class="sy1">=</span> c.<span class="me1">unique</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  print<span class="br0">(</span><span class="st0">"After unique(): "</span>, c<span class="br0">)</span><span class="sy4">;</span>
+  <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> count1 <span class="sy1">&lt;&lt;</span> <span class="st0">" elements were removed<span class="es1">\n</span>"</span><span class="sy4">;</span>
  
-  c <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">12</span>, <span class="nu0">23</span>, <span class="nu0">3</span>, <span class="nu0">2</span>, <span class="nu0">51</span>, <span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span>
+  c <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">12</span>, <span class="nu0">23</span>, <span class="nu0">3</span>, <span class="nu0">2</span>, <span class="nu0">51</span>, <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span>
   print<span class="br0">(</span><span class="st0">"Before unique(pred):"</span>, c<span class="br0">)</span><span class="sy4">;</span>
-  c.<span class="me1">unique</span><span class="br0">(</span><span class="br0">[</span>mod<span class="sy1">=</span><span class="nu0">10</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">int</span> x, <span class="kw4">int</span> y<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="br0">(</span>x <span class="sy2">%</span> mod<span class="br0">)</span> <span class="sy1">==</span> <span class="br0">(</span>y <span class="sy2">%</span> mod<span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
-  print<span class="br0">(</span><span class="st0">"After  unique(pred):"</span>, c<span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw4">const</span> <span class="kw4">auto</span> count2 <span class="sy1">=</span> c.<span class="me1">unique</span><span class="br0">(</span><span class="br0">[</span>mod<span class="sy1">=</span><span class="nu0">10</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">int</span> x, <span class="kw4">int</span> y<span class="br0">)</span> <span class="br0">{</span>
+      <span class="kw1">return</span> <span class="br0">(</span>x <span class="sy2">%</span> mod<span class="br0">)</span> <span class="sy1">==</span> <span class="br0">(</span>y <span class="sy2">%</span> mod<span class="br0">)</span><span class="sy4">;</span>
+  <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
+  print<span class="br0">(</span><span class="st0">"After unique(pred): "</span>, c<span class="br0">)</span><span class="sy4">;</span>
+  <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> count2 <span class="sy1">&lt;&lt;</span> <span class="st0">" elements were removed<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Before unique(): 1 2 2 3 3 2 1 1 2
-After  unique(): 1 2 3 2 1 2
-Before unique(pred): 1 2 12 23 3 2 51 1 2
-After  unique(pred): 1 2 23 2 51 2</pre></div></div> 
+After unique():  1 2 3 2 1 2
+3 elements were removed
+Before unique(pred): 1 2 12 23 3 2 51 1 2 2
+After unique(pred):  1 2 23 2 51 2
+4 elements were removed</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -335,15 +348,15 @@ After  unique(pred): 1 2 23 2 51 2</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5916/1000000
-Preprocessor generated node count: 13399/1000000
-Post‐expand include size: 202372/2097152 bytes
-Template argument size: 27206/2097152 bytes
+Preprocessor visited node count: 5959/1000000
+Preprocessor generated node count: 13550/1000000
+Post‐expand include size: 203483/2097152 bytes
+Template argument size: 28065/2097152 bytes
 Highest expansion depth: 23/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:956-0!*!0!!en!*!* and timestamp 20210917150225 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:956-0!*!0!!en!*!* and timestamp 20220724093351 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -364,10 +377,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/container/list/unique">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/list/unique">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
                                     <li id="footer-info-lastmod"> This page was last modified on 21 June 2021, at 04:44.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 50,272 times.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 58,135 times.</li>
                             </ul>
                     </div>
         </div>
@@ -385,7 +398,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.905 secs. -->
+</script><!-- Served in 1.888 secs. -->
 	</body>
-<!-- Cached 20210917150225 -->
+<!-- Cached 20220724093351 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/this","wgTitle":"cpp/language/this","wgCurRevisionId":137294,"wgArticleId":5291,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/this","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/this","wgTitle":"cpp/language/this","wgCurRevisionId":140953,"wgArticleId":5291,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/this","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -334,9 +334,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
-<p>The keyword <code>this</code> is a <a href="value_category.html" title="cpp/language/value category">prvalue</a> <a href="expressions.html" title="cpp/language/expressions">expression</a> whose value is the address of the <a href="overload_resolution.html" title="cpp/language/overload resolution">implicit object parameter</a> (object on which the non-static member function is being called). It can appear in the following contexts:
+<p>The expression <code>this</code> is <span class="t-rev-inl t-until-cxx11"><span>an <a href="value_category.html#rvalue" title="cpp/language/value category">rvalue</a></span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>a <a href="value_category.html#prvalue" title="cpp/language/value category">prvalue</a></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> <a href="expressions.html" title="cpp/language/expressions">expression</a> whose value is the address of the <a href="overload_resolution.html#Implicit_object_parameter" title="cpp/language/overload resolution">implicit object parameter</a> (object on which the non-static member function is being called). It can appear in the following contexts:
 </p>
-<div class="t-li1"><span class="t-li">1)</span> Within the body of any non-static <a href="member_functions.html" title="cpp/language/member functions">member function</a>, including <a href="initializer_list.html" title="cpp/language/initializer list" class="mw-redirect">member initializer list</a></div>
+<div class="t-li1"><span class="t-li">1)</span> Within the body of any non-static <a href="member_functions.html" title="cpp/language/member functions">member function</a>, including <a href="initializer_list.html" title="cpp/language/initializer list" class="mw-redirect">member initializer list</a><span class="t-rev-inl t-since-cxx11"><span>, and <a href="lambda.html#closure_type_fun_operator" title="cpp/language/lambda">lambda-expression body</a></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span></div>
 <div class="t-li1"><span class="t-li">2)</span> within the <a href="function.html" title="cpp/language/function">declaration</a> of a non-static member function anywhere after the (optional) cv-qualifier sequence, including
  <table class="t-rev-begin">
 <tr class="t-rev t-until-cxx17"><td>
@@ -356,10 +356,31 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
 <div class="t-li1"><span class="t-li">3)</span> within <a href="data_members.html#Member_initialization" title="cpp/language/data members">default member initializer</a></div>
+<div class="t-li1"><span class="t-li">4)</span> within <a href="lambda.html#Lambda_capture" title="cpp/language/lambda">lambda-expression capture</a> list</div>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
-<p>The type of <code>this</code> in a member function of class <code>X</code> is <code>X*</code> (pointer to X). If the member function is <a href="member_functions.html" title="cpp/language/member functions">cv-qualified</a>, the type of <code>this</code> is <code>cv X*</code> (pointer to identically cv-qualified X). Since constructors and destructors cannot be cv-qualified, the type of <code>this</code> in them is always <code>X*</code>, even when constructing or destroying a const object.
+<h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
+<p><code>this</code> can only associate with the innermost enclosing class of its appearance, even if the appearance is invalid in the context:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> Outer
+<span class="br0">{</span>
+    <span class="kw4">int</span> a<span class="br0">[</span>sizeof<span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span>            <span class="co1">// error: not inside a member function</span>
+    <span class="kw4">unsigned</span> <span class="kw4">int</span> sz <span class="sy1">=</span> sizeof<span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: in default member initializer</span>
+ 
+    <span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw4">int</span> b<span class="br0">[</span>sizeof<span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span>     <span class="co1">// OK</span>
+ 
+        <span class="kw1">struct</span> Inner
+        <span class="br0">{</span>
+            <span class="kw4">int</span> c<span class="br0">[</span>sizeof<span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// error: not inside a member function of Inner</span>
+                                  <span class="co1">// 'this' is not associated with Outer</span>
+                                  <span class="co1">// even if it is inside a member function of Outer</span>
+        <span class="br0">}</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span><span class="sy4">;</span></pre></div></div>
+<p>The type of <code>this</code> in a member function of class <code>X</code> is <code>X*</code> (pointer to X). If the member function is <a href="member_functions.html#member_functions_with_cv-qualifiers" title="cpp/language/member functions">declared with a cv-qualifier sequence</a> <i>cv</i>, the type of <code>this</code> is <code><i>cv</i> X*</code> (pointer to identically cv-qualified X). Since constructors and destructors cannot be declared with cv-qualifiers, the type of <code>this</code> in them is always <code>X*</code>, even when constructing or destroying a const object.
 </p><p>When a non-static class member is used in any of the contexts where the <code>this</code> keyword is allowed (non-static member function bodies, member initializer lists, default member initializers), the implicit <code><b>this-&gt;</b></code> is automatically added before the name, resulting in a member access expression (which, if the member is a virtual member function, results in a virtual function call).
 </p><p>In class templates, <code>this</code> is a <a href="dependent_name.html" title="cpp/language/dependent name">dependent expression</a>, and explicit <code>this-&gt;</code> may be used to force another expression to become dependent.
 </p>
@@ -375,18 +396,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     D<span class="br0">(</span><span class="br0">)</span>
     <span class="br0">{</span>
         <span class="co1">// var = 1;    // error: 'var' was not declared in this scope</span>
-        this<span class="sy2">-</span><span class="sy1">&gt;</span>var <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="co1">// ok</span>
+        this<span class="sy2">-</span><span class="sy1">&gt;</span>var <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="co1">// OK</span>
     <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
-<p><a href="initializer_list.html" title="cpp/language/constructor">During construction</a> of an  object, if the value of the object or any of its subobjects is accessed through a glvalue that is not obtained, directly or indirectly, from the constructor's <code>this</code> pointer, the value of the object or subobject thus obtained is unspecified. In other words, the this pointer cannot be aliased in a constructor:
+<p><a href="initializer_list.html" title="cpp/language/constructor">During construction</a> of an object, if the value of the object or any of its subobjects is accessed through a glvalue that is not obtained, directly or indirectly, from the constructor's <code>this</code> pointer, the value of the object or subobject thus obtained is unspecified. In other words, the this pointer cannot be aliased in a constructor:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">extern</span> <span class="kw1">struct</span> D d<span class="sy4">;</span>
+ 
 <span class="kw1">struct</span> D
 <span class="br0">{</span>
     D<span class="br0">(</span><span class="kw4">int</span> a<span class="br0">)</span> <span class="sy4">:</span> a<span class="br0">(</span>a<span class="br0">)</span>, b<span class="br0">(</span>d.<span class="me1">a</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span> <span class="co1">// b(a) or b(this-&gt;a) would be correct</span>
     <span class="kw4">int</span> a, b<span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
-D d <span class="sy1">=</span> D<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// because b(d.a) did not obtain a through this, d.b is now unspecified</span></pre></div></div>
+ 
+D d <span class="sy1">=</span> D<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// because b(d.a) did not obtain a through this, d.b is now unspecified</span></pre></div></div>
 <p>It is possible to execute <span class="t-c"><span class="mw-geshi cpp source-cpp">delete this<span class="sy4">;</span></span></span>, if the program can guarantee that the object was allocated by <span class="t-c"><span class="mw-geshi cpp source-cpp">new</span></span>, however, this renders every pointer to the deallocated object invalid, including the <code>this</code> pointer itself: after <span class="t-c"><span class="mw-geshi cpp source-cpp">delete this<span class="sy4">;</span></span></span> returns, such member function cannot refer to a member of a class (since this involves an implicit dereference of <code>this</code>) and no other member function may be called.
 </p>
  <table class="t-rev-begin">
@@ -402,6 +425,9 @@ D d <span class="sy1">=</span> D<span class="br0">(</span><span class="nu0">1</s
     <span class="kw4">void</span> incRef<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="sy2">++</span>mnRef<span class="sy4">;</span> <span class="br0">}</span>
     <span class="kw4">void</span> decRef<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">--</span>mnRef <span class="sy1">==</span> <span class="nu0">0</span><span class="br0">)</span> delete this<span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
+<h3><span class="mw-headline" id="Keywords">Keywords</span></h3>
+<p><a href="../keyword/this.html" title="cpp/keyword/this"><tt>this</tt></a> 
+</p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">class</span> T
 <span class="br0">{</span>
@@ -415,7 +441,7 @@ D d <span class="sy1">=</span> D<span class="br0">(</span><span class="nu0">1</s
  
     <span class="kw4">void</span> foo<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span>
     <span class="br0">{</span>
-<span class="co1">//        x = 7; // Error: *this is constant</span>
+<span class="co1">//      x = 7; // Error: *this is constant</span>
     <span class="br0">}</span>
  
     <span class="kw4">void</span> foo<span class="br0">(</span><span class="kw4">int</span> x<span class="br0">)</span> <span class="co1">// parameter x shadows the member with the same name</span>
@@ -425,46 +451,63 @@ D d <span class="sy1">=</span> D<span class="br0">(</span><span class="nu0">1</s
     <span class="br0">}</span>
  
     <span class="kw4">int</span> y<span class="sy4">;</span>
-    T<span class="br0">(</span><span class="kw4">int</span> x<span class="br0">)</span> <span class="sy4">:</span> x<span class="br0">(</span>x<span class="br0">)</span>, <span class="co1">// uses parameter x to initialize member x</span>
+    T<span class="br0">(</span><span class="kw4">int</span> x<span class="br0">)</span> <span class="sy4">:</span> x<span class="br0">(</span>x<span class="br0">)</span>,      <span class="co1">// uses parameter x to initialize member x</span>
                y<span class="br0">(</span>this<span class="sy2">-</span><span class="sy1">&gt;</span>x<span class="br0">)</span> <span class="co1">// uses member x to initialize member y</span>
     <span class="br0">{</span><span class="br0">}</span>
  
-    T<span class="sy3">&amp;</span> operator<span class="sy1">=</span> <span class="br0">(</span> <span class="kw4">const</span> T<span class="sy3">&amp;</span> b <span class="br0">)</span>
+    T<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> b<span class="br0">)</span>
     <span class="br0">{</span>
         x <span class="sy1">=</span> b.<span class="me1">x</span><span class="sy4">;</span>
         <span class="kw1">return</span> <span class="sy2">*</span>this<span class="sy4">;</span> <span class="co1">// many overloaded operators return *this</span>
     <span class="br0">}</span>
-<span class="br0">}</span><span class="sy4">;</span>
- 
-<span class="kw1">class</span> Outer
-<span class="br0">{</span>
-    <span class="kw4">int</span> a<span class="br0">[</span>sizeof<span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// error: not inside a member function</span>
-    <span class="kw4">unsigned</span> <span class="kw4">int</span> sz <span class="sy1">=</span> sizeof<span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: in default member initializer</span>
-    <span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span>
-    <span class="br0">{</span>
-        <span class="kw4">int</span> b<span class="br0">[</span>sizeof<span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// OK</span>
-        <span class="kw1">struct</span> Inner
-        <span class="br0">{</span>
-            <span class="kw4">int</span> c<span class="br0">[</span>sizeof<span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// error: not inside a member function of Inner</span>
-        <span class="br0">}</span><span class="sy4">;</span>
-    <span class="br0">}</span>
-<span class="br0">}</span></pre></div></div>
+<span class="br0">}</span><span class="sy4">;</span></pre></div></div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/760.html">CWG 760</a>
+</td>
+<td> C++98
+</td>
+<td> when <code>this</code> is used in a nested class, it was<br>unspecified whether it is associated with<br>the nested class or the enclosing class
+</td>
+<td> <code>this</code> always associates with<br>the innermost nested class,<br>regardless of whether it is in<br>a non-static member function
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2271.html">CWG 2271</a>
+</td>
+<td> C++98
+</td>
+<td> <code>this</code> could be aliased when constructing a non-const object
+</td>
+<td> alias is also<br>prohibited in this case
+</td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2835/1000000
-Preprocessor generated node count: 6479/1000000
-Post‐expand include size: 136509/2097152 bytes
-Template argument size: 15917/2097152 bytes
+Preprocessor visited node count: 3116/1000000
+Preprocessor generated node count: 7305/1000000
+Post‐expand include size: 139691/2097152 bytes
+Template argument size: 17515/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5291-0!*!0!!*!*!* and timestamp 20220117194905 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5291-0!*!0!!en!*!* and timestamp 20220712115935 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/this&amp;oldid=137294">https://en.cppreference.com/mwiki/index.php?title=cpp/language/this&amp;oldid=137294</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/this&amp;oldid=140953">https://en.cppreference.com/mwiki/index.php?title=cpp/language/this&amp;oldid=140953</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -481,10 +524,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/this">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/this">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 17 January 2022, at 11:49.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 328,084 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 12 July 2022, at 04:59.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 364,943 times.</li>
                             </ul>
                     </div>
         </div>
@@ -502,7 +545,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.035 secs. -->
+</script><!-- Served in 0.033 secs. -->
 	</body>
-<!-- Cached 20220117200025 -->
+<!-- Cached 20220712120022 -->
 </html>

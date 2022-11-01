@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/definition","wgTitle":"cpp/language/definition","wgCurRevisionId":137433,"wgArticleId":13180,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/definition","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/definition","wgTitle":"cpp/language/definition","wgCurRevisionId":141493,"wgArticleId":13180,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/definition","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -284,7 +284,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="translation_phases.html" title="cpp/language/translation phases"> Phases of translation</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../comments.html" title="cpp/comment"> Comments</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="main_function.html" title="cpp/language/main function"> The main() function</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="punctuators.html" title="cpp/language/punctuators"> Punctuators</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="punctuators.html" title="cpp/language/punctuators"> Punctuation</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="name.html" title="cpp/language/identifiers"> Names and identifiers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="type-id.html" title="cpp/language/type"> Types</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="types.html" title="cpp/language/types"> Fundamental types</a> </td></tr>
@@ -490,15 +490,16 @@ f<span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">ch
 </div></td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
-<p>In the definitions above, <i>potentially-evaluated</i> means the expression is not an <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions">unevaluated operand</a> (or its subexpression), such as the operand of <a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a> and <i>a set of potential results</i> of an expression <code>e</code> is a (possibly empty) set of id-expressions that appear within <code>e</code>, combined as follows:
+<p>In the definitions above, <i>potentially-evaluated</i> means the expression is not an <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions">unevaluated operand</a> (or its subexpression), such as the operand of <a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a> and <i>a set of potential results</i> of an expression <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is a (possibly empty) set of id-expressions that appear within <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span>, combined as follows:
 </p>
-<ul><li> If <code>e</code> is an <a href="expressions.html" title="cpp/language/expressions">id-expression</a>, the expression <code>e</code> is its only potential result.
-</li><li> If <code>e</code> is an array subscript expression (<span class="t-c"><span class="mw-geshi cpp source-cpp">e1<span class="br0">[</span>e2<span class="br0">]</span></span></span>) where one of the operands is an array, the potential results of that operand is included in the set.
-</li><li> If <code>e</code> is a class member access expression (<span class="t-c"><span class="mw-geshi cpp source-cpp">e1.<span class="me1">e2</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">e1<span class="sy2">-</span><span class="sy1">&gt;</span>e2</span></span>), the potential results of the object expression e1 is included in the set.
-</li><li> If <code>e</code> is a pointer-to-member access expression (<span class="t-c"><span class="mw-geshi cpp source-cpp">e1.<span class="sy2">*</span>e2</span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">e1<span class="sy2">-</span><span class="sy1">&gt;</span><span class="sy2">*</span>e2</span></span>) whose second operand is a constant expression, the potential results of the object expression e1 are included in the set.
-</li><li> If <code>e</code> is an expression in parentheses (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>e1<span class="br0">)</span></span></span>), the potential results of <code>e1</code> are included in the set.
-</li><li> If <code>e</code> is a glvalue conditional expression (<span class="t-c"><span class="mw-geshi cpp source-cpp">e1<span class="sy4">?</span>e2<span class="sy4">:</span>e3</span></span>, where e2 and e3 are glvalues), the union of the potential results of <code>e2</code> and <code>e3</code> are both included in the set.
-</li><li> If <code>e</code> is a comma expression (<span class="t-c"><span class="mw-geshi cpp source-cpp">e1,e2</span></span>), the potential results of <code>e2</code> are in the set of potential results.
+<ul><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is an <a href="expressions.html#Primary_expressions" title="cpp/language/expressions">id-expression</a>, the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is its only potential result.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is a subscript expression (<span class="t-c"><span class="mw-geshi cpp source-cpp">E1<span class="br0">[</span>E2<span class="br0">]</span></span></span>) where one of the operands is an array, the potential results of that operand is included in the set.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is a class member access expression of the form <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="me1">E2</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="kw1">template</span> E2</span></span> naming a non-static data member, the potential results of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is included in the set.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is a class member access expression naming a static data member, the id-expression designating the data member is included in the set.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is a pointer-to-member access expression of the form <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="sy2">*</span>E2</span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="sy2">*</span><span class="kw1">template</span> E2</span></span> whose second operand is a constant expression, the potential results of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> are included in the set.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is an expression in parentheses (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>E1<span class="br0">)</span></span></span>), the potential results of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> are included in the set.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is a glvalue conditional expression (<span class="t-c"><span class="mw-geshi cpp source-cpp">E1 <span class="sy4">?</span> E2 <span class="sy4">:</span> E3</span></span>, where <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">E3</span></span> are glvalues), the union of the potential results of <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">E3</span></span> are both included in the set.
+</li><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">E</span></span> is a comma expression (<span class="t-c"><span class="mw-geshi cpp source-cpp">E1, E2</span></span>), the potential results of <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> are in the set of potential results.
 </li><li> Otherwise, the set is empty.
 </li></ul>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> S
@@ -559,16 +560,34 @@ f<span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">ch
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue261">CWG 261</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/261.html">CWG 261</a>
 </td>
 <td> C++98
 </td>
-<td> a deallocation function for a polymorphic class might be odr-used even<br>if there were no relevant new or delete expressions in the program
+<td> a deallocation function for a polymorphic class<br>might be odr-used even if there were no relevant<br>new or delete expressions in the program
 </td>
-<td> supplemented the odr-use cases to<br>cover constructors and destructors
+<td> supplemented the<br>odr-use cases to cover<br>constructors and destructors
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1614">CWG 1614</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/678.html">CWG 678</a>
+</td>
+<td> C++98
+</td>
+<td> an entity could have definitions<br>with different language linkages
+</td>
+<td> the behavior is<br>undefined in this case
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1472.html">CWG 1472</a>
+</td>
+<td> C++98
+</td>
+<td> reference variables which satisfy the requirements for<br>appearing in a constant expression were odr-used even<br>if the lvalue-to-rvalue conversion is immediately applied
+</td>
+<td> they are not odr-used<br>in this case
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1614.html">CWG 1614</a>
 </td>
 <td> C++98
 </td>
@@ -577,13 +596,49 @@ f<span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">ch
 <td> the function is not odr-used
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1926">CWG 1926</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1741.html">CWG 1741</a>
+</td>
+<td> C++98
+</td>
+<td> constant objects that are immediately lvalue-to-rvalue<br>converted in potentially-evaluated expressions were odr-used
+</td>
+<td> they are not odr-used
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1926.html">CWG 1926</a>
 </td>
 <td> C++98
 </td>
 <td> array subscript expressions didn't propagate potential results
 </td>
 <td> they propagate
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2300.html">CWG 2300</a>
+</td>
+<td> C++11
+</td>
+<td> lambda expressions in different translation<br>units could never have the same closure type
+</td>
+<td> the closure type can be the<br>same under one definition rule
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2353.html">CWG 2353</a>
+</td>
+<td> C++98
+</td>
+<td> a static data member was not a potential result<br>of a member access expression accesing it
+</td>
+<td> it is
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2433.html">CWG 2433</a>
+</td>
+<td> C++14
+</td>
+<td> a variable template could not have multiple definitions in a program
+</td>
+<td> it can
 </td></tr></table>
 <h3><span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-c++20">
@@ -631,19 +686,19 @@ f<span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">ch
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4772/1000000
-Preprocessor generated node count: 12395/1000000
-Post‐expand include size: 144294/2097152 bytes
-Template argument size: 22707/2097152 bytes
+Preprocessor visited node count: 5273/1000000
+Preprocessor generated node count: 12903/1000000
+Post‐expand include size: 148419/2097152 bytes
+Template argument size: 23708/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13180-0!*!0!!en!*!* and timestamp 20220121055701 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13180-0!*!0!!en!*!* and timestamp 20220728093029 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/definition&amp;oldid=137433">https://en.cppreference.com/mwiki/index.php?title=cpp/language/definition&amp;oldid=137433</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/definition&amp;oldid=141493">https://en.cppreference.com/mwiki/index.php?title=cpp/language/definition&amp;oldid=141493</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -660,10 +715,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/definition">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/definition">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 January 2022, at 21:57.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 261,646 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 28 July 2022, at 02:30.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 289,294 times.</li>
                             </ul>
                     </div>
         </div>
@@ -681,7 +736,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.035 secs. -->
+</script><!-- Served in 0.036 secs. -->
 	</body>
-<!-- Cached 20220121060306 -->
+<!-- Cached 20220728093138 -->
 </html>

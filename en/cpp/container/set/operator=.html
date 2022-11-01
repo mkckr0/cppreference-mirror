@@ -132,6 +132,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -144,8 +145,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -299,50 +299,60 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>After container move assignment (overload <span class="t-v">(2)</span>), unless element-wise move assignment is forced by incompatible allocators, references, pointers, and iterators (other than the end iterator) to <code>other</code> remain valid, but refer to elements that are now in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. The current standard makes this guarantee via the blanket statement in <a rel="nofollow" class="external text" href="https://eel.is/c++draft/container.requirements.general#12">[container.requirements.general]/12</a>, and a more direct guarantee is under consideration via <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue2321">LWG 2321</a>.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
-<div class="t-template-editlink" style="">
-</div><div class="t-example"><p>The following code uses <code>operator=</code> to assign one <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../set.html"><span class="kw1280">std::<span class="me2">set</span></span></a></span></span> to another:</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div class="t-example"><p>The following code uses <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">=</span></span></span> to assign one <span class="t-lc"><a href="../set.html" title="cpp/container/set">std::set</a></span> to another:</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;set&gt;</span>
+<span class="co2">#include &lt;iterator&gt;</span>
 <span class="co2">#include &lt;iostream&gt;</span>
  
-<span class="kw4">void</span> display_sizes<span class="br0">(</span><span class="kw4">const</span> <a href="../set.html"><span class="kw1280">std::<span class="me2">set</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="sy3">&amp;</span>nums1,
-                   <span class="kw4">const</span> <a href="../set.html"><span class="kw1280">std::<span class="me2">set</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="sy3">&amp;</span>nums2,
-                   <span class="kw4">const</span> <a href="../set.html"><span class="kw1280">std::<span class="me2">set</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="sy3">&amp;</span>nums3<span class="br0">)</span>
+<span class="kw4">void</span> print<span class="br0">(</span><span class="kw4">auto</span> <span class="kw4">const</span> comment, <span class="kw4">auto</span> <span class="kw4">const</span><span class="sy3">&amp;</span> container<span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"nums1: "</span> <span class="sy1">&lt;&lt;</span> nums1.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> 
-              <span class="sy1">&lt;&lt;</span> <span class="st0">" nums2: "</span> <span class="sy1">&lt;&lt;</span> nums2.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span>
-              <span class="sy1">&lt;&lt;</span> <span class="st0">" nums3: "</span> <span class="sy1">&lt;&lt;</span> nums3.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="kw4">auto</span> size <span class="sy1">=</span> <a href="../../iterator/size.html"><span class="kw686">std::<span class="me2">size</span></span></a><span class="br0">(</span>container<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> comment <span class="sy1">&lt;&lt;</span> <span class="st0">"{ "</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> <span class="kw4">const</span><span class="sy3">&amp;</span> element<span class="sy4">:</span> container<span class="br0">)</span>
+        <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> element <span class="sy1">&lt;&lt;</span> <span class="br0">(</span><span class="sy2">--</span>size <span class="sy4">?</span> <span class="st0">", "</span> <span class="sy4">:</span> <span class="st0">" "</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"}<span class="es1">\n</span>"</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../set.html"><span class="kw1280">std::<span class="me2">set</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> nums1 <span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">1</span>, <span class="nu0">4</span>, <span class="nu0">6</span>, <span class="nu0">5</span>, <span class="nu0">9</span><span class="br0">}</span><span class="sy4">;</span>
-    <a href="../set.html"><span class="kw1280">std::<span class="me2">set</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> nums2<span class="sy4">;</span> 
-    <a href="../set.html"><span class="kw1280">std::<span class="me2">set</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> nums3<span class="sy4">;</span>
+    <a href="../set.html"><span class="kw1280">std::<span class="me2">set</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> x <span class="br0">{</span> <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span> <span class="br0">}</span>, y, z<span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">auto</span> w <span class="sy1">=</span> <span class="br0">{</span> <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">6</span>, <span class="nu0">7</span> <span class="br0">}</span><span class="sy4">;</span>
  
     <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Initially:<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    display_sizes<span class="br0">(</span>nums1, nums2, nums3<span class="br0">)</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"x = "</span>, x<span class="br0">)</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"y = "</span>, y<span class="br0">)</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"z = "</span>, z<span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="co1">// copy assignment copies data from nums1 to nums2</span>
-    nums2 <span class="sy1">=</span> nums1<span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Copy assignment copies data from x to y:<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    y <span class="sy1">=</span> x<span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"x = "</span>, x<span class="br0">)</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"y = "</span>, y<span class="br0">)</span><span class="sy4">;</span>
  
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"After assigment:<span class="es1">\n</span>"</span><span class="sy4">;</span> 
-    display_sizes<span class="br0">(</span>nums1, nums2, nums3<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Move assignment moves data from x to z, modifying both x and z:<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    z <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>x<span class="br0">)</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"x = "</span>, x<span class="br0">)</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"z = "</span>, z<span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="co1">// move assignment moves data from nums1 to nums3,</span>
-    <span class="co1">// modifying both nums1 and nums3</span>
-    nums3 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>nums1<span class="br0">)</span><span class="sy4">;</span>
- 
-    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"After move assigment:<span class="es1">\n</span>"</span><span class="sy4">;</span> 
-    display_sizes<span class="br0">(</span>nums1, nums2, nums3<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Assignment of initializer_list w to z:<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    z <span class="sy1">=</span> w<span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"w = "</span>, w<span class="br0">)</span><span class="sy4">;</span>
+    print<span class="br0">(</span><span class="st0">"z = "</span>, z<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Initially:
-nums1: 6 nums2: 0 nums3: 0
-After assigment:
-nums1: 6 nums2: 6 nums3: 0
-After move assigment:
-nums1: 0 nums2: 6 nums3: 6</pre></div></div> 
+x = { 1, 2, 3 }
+y = { }
+z = { }
+Copy assignment copies data from x to y:
+x = { 1, 2, 3 }
+y = { 1, 2, 3 }
+Move assignment moves data from x to z, modifying both x and z:
+x = { }
+z = { 1, 2, 3 }
+Assignment of initializer_list w to z:
+w = { 4, 5, 6, 7 }
+z = { 4, 5, 6, 7 }</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -356,15 +366,15 @@ nums1: 0 nums2: 6 nums3: 6</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5953/1000000
-Preprocessor generated node count: 14383/1000000
-Post‐expand include size: 210980/2097152 bytes
-Template argument size: 30843/2097152 bytes
+Preprocessor visited node count: 6026/1000000
+Preprocessor generated node count: 14470/1000000
+Post‐expand include size: 208201/2097152 bytes
+Template argument size: 31429/2097152 bytes
 Highest expansion depth: 22/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:295-0!*!0!!en!*!* and timestamp 20211205032132 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:295-0!*!0!!en!*!* and timestamp 20220507063534 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -385,10 +395,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/container/set/operator=">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/container/set/operator=">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 30 July 2020, at 16:01.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 41,565 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 30 July 2020, at 17:01.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 44,278 times.</li>
                             </ul>
                     </div>
         </div>
@@ -406,7 +416,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.470 secs. -->
+</script><!-- Served in 2.512 secs. -->
 	</body>
-<!-- Cached 20211205032132 -->
+<!-- Cached 20220507063534 -->
 </html>

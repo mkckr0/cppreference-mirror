@@ -51,15 +51,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="c/variadic.html" title="c/variadic"> Variadic function support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c/error.html" title="c/error"> Error handling</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c/memory.html" title="c/memory"> Dynamic memory management</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="c/chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c/string.html" title="c/string"> Strings library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c/algorithm.html" title="c/algorithm"> Algorithms</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c/numeric.html" title="c/numeric"> Numerics</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="c/chrono.html" title="c/chrono"> Date and time utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c/io.html" title="c/io"> Input/output support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c/locale.html" title="c/locale"> Localization support</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="c/atomic.html" title="c/atomic"> Atomic operations</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="c/thread.html" title="c/thread"> Thread support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="c/thread.html" title="c/thread"> Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c/experimental.html" title="c/experimental"> Technical Specifications</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="c/index.html" title="c/symbol index"> Symbol index</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="mainpagetable" cellspacing="0" style="width:100%; white-space:nowrap;">
 
@@ -92,7 +92,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p><b><a href="c/variadic.html" title="c/variadic"> Variadic functions</a></b>
 </p><p><b><a href="c/error.html" title="c/error"> Error handling</a></b>
 </p><p><b><a href="c/memory.html" title="c/memory"> Dynamic memory management</a></b>
-</p><p><b><a href="c/chrono.html" title="c/chrono"> Date and time utilities</a></b>
 </p><p><b><a href="c/string.html" title="c/string"> Strings library</a></b>
 </p>
 <div class="mainpagediv">
@@ -114,10 +113,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="c/numeric/tgmath.html" title="c/numeric/tgmath"> Type-generic math</a> <span class="t-mark-rev t-since-c99">(C99)</span>
 </p>
 </div>
-<p><b><a href="c/io.html" title="c/io"> Input/output support</a></b>
+<p><b><a href="c/chrono.html" title="c/chrono"> Date and time utilities</a></b>
+</p><p><b><a href="c/io.html" title="c/io"> Input/output support</a></b>
 </p><p><b><a href="c/locale.html" title="c/locale"> Localization support</a></b>
-</p><p><b><a href="c/atomic.html" title="c/atomic"> Atomic operations library</a></b> <span class="t-mark-rev t-since-c11">(C11)</span>
-</p><p><b><a href="c/thread.html" title="c/thread"> Thread support library</a></b> <span class="t-mark-rev t-since-c11">(C11)</span>
+</p><p><b><a href="c/thread.html" title="c/thread"> Concurrency support library</a></b> <span class="t-mark-rev t-since-c11">(C11)</span>
 </p>
 </td></tr>
 <tr class="row">
@@ -133,15 +132,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 384/1000000
-Preprocessor generated node count: 1665/1000000
-Post‐expand include size: 14432/2097152 bytes
-Template argument size: 1039/2097152 bytes
+Preprocessor visited node count: 380/1000000
+Preprocessor generated node count: 1653/1000000
+Post‐expand include size: 13977/2097152 bytes
+Template argument size: 995/2097152 bytes
 Highest expansion depth: 13/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5742-0!*!0!*!*!*!* and timestamp 20211105030108 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5742-0!*!0!*!*!*!* and timestamp 20220313075249 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -162,10 +161,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/c">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 3 July 2017, at 21:56.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,270,249 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 3 July 2017, at 20:56.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 1,357,919 times.</li>
                             </ul>
                     </div>
         </div>
@@ -183,7 +182,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.113 secs. -->
+</script><!-- Served in 0.107 secs. -->
 	</body>
-<!-- Cached 20211105030110 -->
+<!-- Cached 20220313075249 -->
 </html>

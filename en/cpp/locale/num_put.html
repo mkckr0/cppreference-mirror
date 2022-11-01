@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -140,8 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -258,7 +258,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Class <code>std::num_put</code> encapsulates the rules for formatting numeric values as strings. Specifically, the types <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">long</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="sy2">*</span></span></span>, and of all types implicitly convertible to these (such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span></span>) are supported. The standard formatting output operators (such as <span class="t-c"><span class="mw-geshi cpp source-cpp">cout <span class="sy1">&lt;&lt;</span> n<span class="sy4">;</span></span></span>) use the <code>std::num_put</code> facet of the I/O stream's locale to generate text representation of numbers.
 </p>
 <div class="t-inheritance-diagram">
-<div class="center"><div class="noresize"><map name="ImageMap_1_747575864"><area href="locale/facet.html" shape="rect" coords="5,6,107,39" alt="cpp/locale/locale/facet" title="cpp/locale/locale/facet"></map><img alt="std-num put-inheritance.svg" src="../../../common/images/a/a5/std-num_put-inheritance.svg" width="277" height="45" usemap="#ImageMap_1_747575864"></div></div>
+<div class="center"><div class="noresize"><map name="ImageMap_1_1151608914"><area href="locale/facet.html" shape="rect" coords="5,6,107,39" alt="cpp/locale/locale/facet" title="cpp/locale/locale/facet"></map><img alt="std-num put-inheritance.svg" src="../../../common/images/a/a5/std-num_put-inheritance.svg" width="277" height="45" usemap="#ImageMap_1_1151608914"></div></div>
 <div style="text-align:center;">
 <p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
 </p>
@@ -437,13 +437,13 @@ Output using an american locale:
 NewPP limit report
 Preprocessor visited node count: 6015/1000000
 Preprocessor generated node count: 11708/1000000
-Post‐expand include size: 148144/2097152 bytes
-Template argument size: 27249/2097152 bytes
+Post‐expand include size: 148150/2097152 bytes
+Template argument size: 27250/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3745-0!*!0!!en!2!* and timestamp 20220114113040 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3745-0!*!0!!en!2!* and timestamp 20220410094522 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -464,10 +464,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/num_put">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/num_put">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 June 2018, at 15:11.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 27,629 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 15 June 2018, at 16:11.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 28,919 times.</li>
                             </ul>
                     </div>
         </div>
@@ -485,7 +485,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.064 secs. -->
+</script><!-- Served in 1.962 secs. -->
 	</body>
-<!-- Cached 20220114113040 -->
+<!-- Cached 20220410094524 -->
 </html>

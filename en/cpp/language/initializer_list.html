@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/constructor","wgTitle":"cpp/language/constructor","wgCurRevisionId":137394,"wgArticleId":5432,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/constructor","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/constructor","wgTitle":"cpp/language/constructor","wgCurRevisionId":139742,"wgArticleId":5432,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/constructor","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -395,48 +395,50 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
-<div class="t-li1"><span class="t-li">1)</span> Initializes the base or member named by <span class="t-spar">class-or-identifier</span> using <a href="direct_initialization.html" title="cpp/language/direct initialization">direct initialization</a> or, if <span class="t-spar">expression-list</span> is empty, <a href="value_initialization.html" title="cpp/language/value initialization">value-initialization</a></div>
+<div class="t-li1"><span class="t-li">1)</span> Initializes the base or member named by <span class="t-spar">class-or-identifier</span> using <a href="direct_initialization.html" title="cpp/language/direct initialization">direct-initialization</a> or, if <span class="t-spar">expression-list</span> is empty, <a href="value_initialization.html" title="cpp/language/value initialization">value-initialization</a></div>
 <div class="t-li1"><span class="t-li">2)</span> Initializes the base or member named by <span class="t-spar">class-or-identifier</span> using <a href="list_initialization.html" title="cpp/language/list initialization">list-initialization</a> (which becomes <a href="value_initialization.html" title="cpp/language/value initialization">value-initialization</a> if the list is empty and <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">aggregate-initialization</a> when initializing an aggregate)</div>
 <div class="t-li1"><span class="t-li">3)</span> Initializes multiple bases using a <a href="parameter_pack.html#Base_specifiers_and_member_initializer_lists" title="cpp/language/parameter pack">pack expansion</a></div>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">class-or-identifier</span>
+<td> <span class="t-spar">class-or-identifier</span>
 </td>
 <td> -
 </td>
-<td>  any identifier that names a non-static data member or any type name which names either the class itself (for delegating constructors) or a direct or virtual base.
+<td> any identifier that names a non-static data member or any type name which names either the class itself (for delegating constructors) or a direct or virtual base.
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">expression-list</span>
+<td> <span class="t-spar">expression-list</span>
 </td>
 <td> -
 </td>
-<td>  possibly empty, comma-separated list of the arguments to pass to the constructor of the base or member
+<td> possibly empty, comma-separated list of the arguments to pass to the constructor of the base or member
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">braced-init-list</span>
+<td> <span class="t-spar">braced-init-list</span>
 </td>
 <td> -
 </td>
-<td>  brace-enclosed list of comma-separated initializers and nested braced-init-lists
+<td> brace-enclosed list of comma-separated initializers and nested braced-init-lists
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">parameter-pack</span>
+<td> <span class="t-spar">parameter-pack</span>
 </td>
 <td> -
 </td>
-<td>  name of a variadic template <a href="parameter_pack.html#Base_specifiers_and_member_initializer_lists" title="cpp/language/parameter pack">parameter pack</a>
+<td> name of a variadic template <a href="parameter_pack.html#Base_specifiers_and_member_initializer_lists" title="cpp/language/parameter pack">parameter pack</a>
 </td></tr></table>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> S
 <span class="br0">{</span>
     <span class="kw4">int</span> n<span class="sy4">;</span>
+ 
     S<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>       <span class="co1">// constructor declaration</span>
+ 
     S<span class="br0">(</span><span class="br0">)</span> <span class="sy4">:</span> n<span class="br0">(</span><span class="nu0">7</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span> <span class="co1">// constructor definition:</span>
-                      <span class="co1">// ": n(7)" is the initializer list</span>
-                      <span class="co1">// ": n(7) {}" is the function body</span>
+                  <span class="co1">// ": n(7)" is the initializer list</span>
+                  <span class="co1">// ": n(7) {}" is the function body</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 S<span class="sy4">::</span><span class="me2">S</span><span class="br0">(</span><span class="kw4">int</span> x<span class="br0">)</span> <span class="sy4">:</span> n<span class="br0">{</span>x<span class="br0">}</span> <span class="br0">{</span><span class="br0">}</span> <span class="co1">// constructor definition: ": n{x}" is the initializer list</span>
@@ -586,16 +588,16 @@ S<span class="sy4">::</span><span class="me2">S</span><span class="br0">(</span>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue194">CWG 194</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/194.html">CWG 194</a>
 </td>
 <td> C++98
 </td>
-<td> the declarator syntax of constructors only allows at most one function<br>specifier (e.g. a constructor cannot be declared <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">inline</span> <span class="kw1">explicit</span></span></span>)
+<td> the declarator syntax of constructor only allowed<br>at most one function specifier (e.g. a constructor<br>cannot be declared <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">inline</span> <span class="kw1">explicit</span></span></span>)
 </td>
-<td> multiple function<br>specifiers are allowed
+<td> multiple function<br>specifiers allowed
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue257">CWG 257</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/257.html">CWG 257</a>
 </td>
 <td> C++98
 </td>
@@ -604,7 +606,34 @@ S<span class="sy4">::</span><span class="me2">S</span><span class="br0">(</span>
 <td> specified as not required<br>and such member initializers<br>are ignored during execution
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1696">CWG 1696</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/263.html">CWG 263</a>
+</td>
+<td> C++98
+</td>
+<td> the declarator syntax of constructor<br>prohibited constructors from being friends
+</td>
+<td> allowed constructors<br>to be friends
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1345.html">CWG 1345</a>
+</td>
+<td> C++98
+</td>
+<td> anonymous union members without default<br>member initializers were default-initialized
+</td>
+<td> they are not initialized
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1435.html">CWG 1435</a>
+</td>
+<td> C++98
+</td>
+<td> the meaning of 'class name' in the<br>declarator syntax of constructor was unclear
+</td>
+<td> changed the syntax to a specialized<br>function declarator syntax
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1696.html">CWG 1696</a>
 </td>
 <td> C++98
 </td>
@@ -664,44 +693,44 @@ S<span class="sy4">::</span><span class="me2">S</span><span class="br0">(</span>
 </dd></dl>
 </div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
-<ul><li> <a href="copy_elision.html" title="cpp/language/copy elision"> copy elision</a>
-</li><li> <a href="converting_constructor.html" title="cpp/language/converting constructor"> converting constructor</a>
-</li><li> <a href="as_operator.html" title="cpp/language/copy assignment"> copy assignment</a>
-</li><li> <a href="copy_constructor.html" title="cpp/language/copy constructor"> copy constructor</a>
-</li><li> <a href="default_constructor.html" title="cpp/language/default constructor"> default constructor</a>
-</li><li> <a href="destructor.html" title="cpp/language/destructor"> destructor</a>
-</li><li> <a href="explicit.html" title="cpp/language/explicit"> explicit</a>
-</li><li> <a href="initialization.html" title="cpp/language/initialization"> initialization</a>
-<ul><li> <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization"> aggregate initialization</a>
-</li><li> <a href="constant_initialization.html" title="cpp/language/constant initialization"> constant initialization</a>
-</li><li> <a href="copy_initialization.html" title="cpp/language/copy initialization"> copy initialization</a>
-</li><li> <a href="default_initialization.html" title="cpp/language/default initialization"> default initialization</a>
-</li><li> <a href="direct_initialization.html" title="cpp/language/direct initialization"> direct initialization</a>
-</li><li> <a href="list_initialization.html" title="cpp/language/list initialization"> list initialization</a>
-</li><li> <a href="reference_initialization.html" title="cpp/language/reference initialization"> reference initialization</a>
-</li><li> <a href="value_initialization.html" title="cpp/language/value initialization"> value initialization</a>
-</li><li> <a href="zero_initialization.html" title="cpp/language/zero initialization"> zero initialization</a>
+<ul><li> <a href="copy_elision.html" title="cpp/language/copy elision">copy elision</a>
+</li><li> <a href="converting_constructor.html" title="cpp/language/converting constructor">converting constructor</a>
+</li><li> <a href="as_operator.html" title="cpp/language/copy assignment">copy assignment</a>
+</li><li> <a href="copy_constructor.html" title="cpp/language/copy constructor">copy constructor</a>
+</li><li> <a href="default_constructor.html" title="cpp/language/default constructor">default constructor</a>
+</li><li> <a href="destructor.html" title="cpp/language/destructor">destructor</a>
+</li><li> <a href="explicit.html" title="cpp/language/explicit"><code>explicit</code></a>
+</li><li> <a href="initialization.html" title="cpp/language/initialization">initialization</a>
+<ul><li> <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">aggregate initialization</a>
+</li><li> <a href="constant_initialization.html" title="cpp/language/constant initialization">constant initialization</a>
+</li><li> <a href="copy_initialization.html" title="cpp/language/copy initialization">copy initialization</a>
+</li><li> <a href="default_initialization.html" title="cpp/language/default initialization">default initialization</a>
+</li><li> <a href="direct_initialization.html" title="cpp/language/direct initialization">direct initialization</a>
+</li><li> <a href="list_initialization.html" title="cpp/language/list initialization">list initialization</a>
+</li><li> <a href="reference_initialization.html" title="cpp/language/reference initialization">reference initialization</a>
+</li><li> <a href="value_initialization.html" title="cpp/language/value initialization">value initialization</a>
+</li><li> <a href="zero_initialization.html" title="cpp/language/zero initialization">zero initialization</a>
 </li></ul>
-</li><li> <a href="move_operator.html" title="cpp/language/move assignment"> move assignment</a>
-</li><li> <a href="move_constructor.html" title="cpp/language/move constructor"> move constructor</a>
-</li><li> <a href="new.html" title="cpp/language/new"> new</a>
+</li><li> <a href="move_operator.html" title="cpp/language/move assignment">move assignment</a>
+</li><li> <a href="move_constructor.html" title="cpp/language/move constructor">move constructor</a>
+</li><li> <a href="new.html" title="cpp/language/new"><code>new</code></a>
 </li></ul>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4429/1000000
-Preprocessor generated node count: 9678/1000000
-Post‐expand include size: 152085/2097152 bytes
-Template argument size: 28609/2097152 bytes
+Preprocessor visited node count: 4485/1000000
+Preprocessor generated node count: 9854/1000000
+Post‐expand include size: 153097/2097152 bytes
+Template argument size: 28926/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5432-0!*!0!!en!*!* and timestamp 20220120080905 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5432-0!*!0!!en!*!* and timestamp 20220519023833 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/constructor&amp;oldid=137394">https://en.cppreference.com/mwiki/index.php?title=cpp/language/constructor&amp;oldid=137394</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/constructor&amp;oldid=139742">https://en.cppreference.com/mwiki/index.php?title=cpp/language/constructor&amp;oldid=139742</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -718,10 +747,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/initializer_list">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/initializer_list">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 January 2022, at 00:09.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 2,001,751 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 18 May 2022, at 19:38.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 2,128,042 times.</li>
                             </ul>
                     </div>
         </div>
@@ -739,7 +768,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.033 secs. -->
+</script><!-- Served in 0.031 secs. -->
 	</body>
-<!-- Cached 20220120081010 -->
+<!-- Cached 20220519024232 -->
 </html>

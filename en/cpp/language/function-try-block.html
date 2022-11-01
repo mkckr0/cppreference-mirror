@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/function-try-block","wgTitle":"cpp/language/function-try-block","wgCurRevisionId":125141,"wgArticleId":13494,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/function-try-block","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/function-try-block","wgTitle":"cpp/language/function-try-block","wgCurRevisionId":139558,"wgArticleId":13494,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/function-try-block","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -104,6 +104,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../concepts.html" title="cpp/concepts"> Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../meta.html" title="cpp/meta"> Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../error.html" title="cpp/error"> Diagnostics library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html" title="cpp/utility"> General utilities library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../string.html" title="cpp/string"> Strings library</a> </td></tr>
@@ -116,8 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../io.html" title="cpp/io"> Input/output library</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../filesystem.html" title="cpp/filesystem"> Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../regex.html" title="cpp/regex"> Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic"> Atomic operations library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Thread support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread"> Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental"> Technical specifications</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
@@ -176,7 +176,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="enum_class.html" title="cpp/language/enum"> Enumeration types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function.html" title="cpp/language/function"> Function types</a></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Compound types</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="class.html" title="cpp/language/class"> Class/struct types</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="union.html" title="cpp/language/union"> Union types</a></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Specifiers</td></tr>
@@ -314,25 +314,25 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">ctor-initializer</span>
+<td> <span class="t-spar">ctor-initializer</span>
 </td>
 <td> -
 </td>
-<td>  member <a href="initializer_list.html" title="cpp/language/initializer list" class="mw-redirect">initializer list</a>, only allowed in constructors
+<td> member <a href="initializer_list.html" title="cpp/language/initializer list" class="mw-redirect">initializer list</a>, only allowed in constructors
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">compound-statement</span>
+<td> <span class="t-spar">compound-statement</span>
 </td>
 <td> -
 </td>
-<td>  the brace-enclosed <a href="statements.html#Compound_statements" title="cpp/language/statements">sequence of statements</a> that constitutes the body of a function
+<td> the brace-enclosed <a href="statements.html#Compound_statements" title="cpp/language/statements">sequence of statements</a> that constitutes the body of a function
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">handler-sequence</span>
+<td> <span class="t-spar">handler-sequence</span>
 </td>
 <td> -
 </td>
-<td>  sequence of one or more <a href="try_catch.html" title="cpp/language/try catch">catch-clauses</a>
+<td> sequence of one or more <a href="try_catch.html" title="cpp/language/try catch">catch-clauses</a>
 </td></tr></table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
 <p>A <i>function-try-block</i> associates a sequence of catch clauses with the entire function body, and with the <a href="initializer_list.html" title="cpp/language/initializer list" class="mw-redirect">member initializer list</a> (if used in a constructor) as well. Every exception thrown from any statement in the function body, or (for constructors) from any member or base constructor, or (for destructors) from any member or base destructor, transfers control to the <span class="t-spar">handler-sequence</span> the same way an exception thrown in a regular <a href="try_catch.html" title="cpp/language/try catch">try block</a> would.
@@ -340,19 +340,31 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
-<span class="kw1">struct</span> S <span class="br0">{</span>
+ 
+<span class="kw1">struct</span> S
+<span class="br0">{</span>
     <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> m<span class="sy4">;</span>
-    S<span class="br0">(</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> str, <span class="kw4">int</span> idx<span class="br0">)</span> <span class="kw1">try</span> <span class="sy4">:</span> m<span class="br0">(</span>str, idx<span class="br0">)</span> <span class="br0">{</span>
+ 
+    S<span class="br0">(</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> str, <span class="kw4">int</span> idx<span class="br0">)</span> <span class="kw1">try</span> <span class="sy4">:</span> m<span class="br0">(</span>str, idx<span class="br0">)</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"S("</span> <span class="sy1">&lt;&lt;</span> str <span class="sy1">&lt;&lt;</span> <span class="st0">", "</span> <span class="sy1">&lt;&lt;</span> idx <span class="sy1">&lt;&lt;</span> <span class="st0">") constructed, m = "</span> <span class="sy1">&lt;&lt;</span> m <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
+    <span class="br0">}</span>
+    <span class="kw1">catch</span><span class="br0">(</span><span class="kw4">const</span> <a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"S("</span> <span class="sy1">&lt;&lt;</span> str <span class="sy1">&lt;&lt;</span> <span class="st0">", "</span> <span class="sy1">&lt;&lt;</span> idx <span class="sy1">&lt;&lt;</span> <span class="st0">") failed: "</span> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span> <span class="co1">// implicit "throw;" here</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     S s1<span class="br0">{</span><span class="st0">"ABC"</span>, <span class="nu0">1</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// does not throw (index is in bounds)</span>
-    <span class="kw1">try</span> <span class="br0">{</span>
+ 
+    <span class="kw1">try</span>
+    <span class="br0">{</span>
         S s2<span class="br0">{</span><span class="st0">"ABC"</span>, <span class="nu0">4</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// throws (out of bounds)</span>
-    <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
+    <span class="br0">}</span>
+    <span class="kw1">catch</span> <span class="br0">(</span><a href="../error/exception.html"><span class="kw765">std::<span class="me2">exception</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span>
+    <span class="br0">{</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"S s2... raised an exception: "</span> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
@@ -360,7 +372,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Before any catch clauses of a function-try-block on a constructor are entered, all fully-constructed members and bases have already been destroyed.
 </p>
  <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx11"><td> If the function-try-block is on a delegating constructor, which called a non-delegating constructor that completed successfully, but then the body of the delegating constructor throws, the destructor of this object will be completed before any catch clauses of the function-try-block are entered.</td>
+<tr class="t-rev t-since-cxx11"><td>
+<p>If the function-try-block is on a delegating constructor, which called a non-delegating constructor that completed successfully, but then the body of the delegating constructor throws, the destructor of this object will be completed before any catch clauses of the function-try-block are entered.
+</p>
+</td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
 <p>Before any catch clauses of a function-try-block on a destructor are entered, all bases and non-variant members have already been destroyed.
@@ -381,30 +396,55 @@ Function-try-block of the top-level function of a thread does not catch the exce
 <p>Likewise, function-try-block of the <a href="main_function.html" title="cpp/language/main function">main() function</a> does not catch the exceptions thrown from the constructors and destructors of <a href="storage_duration.html" title="cpp/language/storage duration">static</a> objects (except for the constructors of function-local statics).
 </p><p><a href="scope.html#Block_scope" title="cpp/language/scope">The scope</a> and lifetime of the function parameters (but not any objects declared in the function itself), extend to the end of the <span class="t-spar">handler-sequence</span>.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">2</span><span class="br0">)</span> <span class="kw1">try</span> <span class="br0">{</span>
-   <span class="sy2">++</span>n<span class="sy4">;</span> <span class="co1">// increments the function parameter</span>
-   <span class="kw1">throw</span> n<span class="sy4">;</span>
-<span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span> <span class="br0">{</span>
-   <span class="sy2">++</span>n<span class="sy4">;</span> <span class="co1">// n is in scope and still refers to the function parameter</span>
-   <a href="../error/assert.html"><span class="kw775">assert</span></a><span class="br0">(</span>n <span class="sy1">==</span> <span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span>
-   <span class="kw1">return</span> n<span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">2</span><span class="br0">)</span> <span class="kw1">try</span>
+<span class="br0">{</span>
+    <span class="sy2">++</span>n<span class="sy4">;</span> <span class="co1">// increments the function parameter</span>
+    <span class="kw1">throw</span> n<span class="sy4">;</span>
+<span class="br0">}</span>
+<span class="kw1">catch</span><span class="br0">(</span>...<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="sy2">++</span>n<span class="sy4">;</span> <span class="co1">// n is in scope and still refers to the function parameter</span>
+    <a href="../error/assert.html"><span class="kw775">assert</span></a><span class="br0">(</span>n <span class="sy1">==</span> <span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">return</span> n<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1167.html">CWG 1167</a>
+</td>
+<td> C++98
+</td>
+<td> it was unspecified whether a function-try-block on a destructor<br>will catch exceptions from a base or member destructor
+</td>
+<td> such exceptions are caught
+</td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2477/1000000
-Preprocessor generated node count: 5966/1000000
-Post‐expand include size: 119424/2097152 bytes
-Template argument size: 15044/2097152 bytes
+Preprocessor visited node count: 2544/1000000
+Preprocessor generated node count: 6324/1000000
+Post‐expand include size: 120472/2097152 bytes
+Template argument size: 15618/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13494-0!*!0!!*!*!* and timestamp 20220105151546 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13494-0!*!0!!en!*!* and timestamp 20220509081528 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/function-try-block&amp;oldid=125141">https://en.cppreference.com/mwiki/index.php?title=cpp/language/function-try-block&amp;oldid=125141</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/function-try-block&amp;oldid=139558">https://en.cppreference.com/mwiki/index.php?title=cpp/language/function-try-block&amp;oldid=139558</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -421,10 +461,10 @@ Expensive parser function count: 0/100
             <div id="footer">
                         <div id="cpp-navigation">
             <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/function-try-block">Online version</a></li><li>Offline version retrieved 2022-02-01 15:27.</li></ul></div>
+            <ul><li><a href="https://en.cppreference.com/w/cpp/language/function-try-block">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
                         <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 December 2020, at 08:18.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 130,115 times.</li>
+                                    <li id="footer-info-lastmod"> This page was last modified on 9 May 2022, at 01:15.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 137,134 times.</li>
                             </ul>
                     </div>
         </div>
@@ -442,7 +482,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.184 secs. -->
+</script><!-- Served in 0.047 secs. -->
 	</body>
-<!-- Cached 20220105151547 -->
+<!-- Cached 20220509083727 -->
 </html>
