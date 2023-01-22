@@ -13,7 +13,7 @@
 
 <script src="../../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/string/multibyte/wcsrtombs","wgTitle":"c/string/multibyte/wcsrtombs","wgCurRevisionId":119774,"wgArticleId":6105,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/string/multibyte/wcsrtombs","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/string/multibyte/wcsrtombs","wgTitle":"c/string/multibyte/wcsrtombs","wgCurRevisionId":142642,"wgArticleId":6105,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/string/multibyte/wcsrtombs","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -219,7 +219,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> <code>dstsz</code> is not zero (unless <code>dst</code> is null)
 </li><li> <code>len</code> is greater than <code>dstsz</code> and the conversion does not encounter null or encoding error in the <code>src</code> array by the time <code>dstsz</code> is reached (unless <code>dst</code> is null)
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>wcsrtombs_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;wchar.h&gt;</code>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>wcsrtombs_s</code>  only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../wide.html" title="c/string/wide"><tt>&lt;wchar.h&gt;</tt></a>.</dd></dl></div>
 
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -265,10 +265,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> -
 </td>
-<td>  pointer to a size_t object where the result will be stored
+<td>  pointer to a <span class="t-lc"><a href="../../types/size_t.html" title="c/types/size t">size_t</a></span> object where the result will be stored
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> On success, returns the number of bytes (including any shift sequences, but excluding the terminating <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span>) written to the character array whose first element is pointed to by <code>dst</code>. If <code>dst</code> is a null poniter, returns the number of bytes that would have been written. On conversion error (if invalid wide character was encountered), returns <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span></span></span>, stores <span class="t-lc"><a href="../../error/errno_macros.html" title="c/error/errno macros">EILSEQ</a></span> in <span class="t-lc"><a href="../../error/errno.html" title="c/error/errno">errno</a></span>, and leaves <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span> in unspecified state.</div>
+<div class="t-li1"><span class="t-li">1)</span> On success, returns the number of bytes (including any shift sequences, but excluding the terminating <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span>) written to the character array whose first element is pointed to by <code>dst</code>. If <code>dst</code> is a null pointer, returns the number of bytes that would have been written. On conversion error (if invalid wide character was encountered), returns <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span></span></span>, stores <span class="t-lc"><a href="../../error/errno_macros.html" title="c/error/errno macros">EILSEQ</a></span> in <span class="t-lc"><a href="../../error/errno.html" title="c/error/errno">errno</a></span>, and leaves <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span> in unspecified state.</div>
 <div class="t-li1"><span class="t-li">2)</span> Returns zero on success (in which case the number of bytes excluding terminating zero that were, or would be written to <code>dst</code>, is stored in <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>retval</span></span>), non-zero on error. In case of a runtime constraint violation, stores <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span></span></span> in <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>retval</span></span> (unless <code>retval</code> is null) and sets <span class="t-c"><span class="mw-geshi c source-c">dst<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span> to <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span> (unless <code>dst</code> is null or <code>dstmax</code> is zero or greater than <span class="t-lc">RSIZE_MAX</span>)</div>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -299,6 +299,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 Length, including '\0': 11</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-17">
+<ul><li> C17 standard (ISO/IEC 9899:2018): 
+</li></ul>
+<dl><dd><ul><li> 7.29.6.4.2 The wcsrtombs function (p: 324-325)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> K.3.9.3.2.2 The wcsrtombs_s function (p: 471-472)
+</li></ul>
+</dd></dl>
+</div>
 <div class="t-ref-std-11">
 <ul><li> C11 standard (ISO/IEC 9899:2011): 
 </li></ul>
@@ -308,6 +318,7 @@ Length, including '\0': 11</pre></div></div>
 <dl><dd><ul><li> K.3.9.3.2.2 The wcsrtombs_s function (p: 649-651)
 </li></ul>
 </dd></dl>
+</div>
 <div class="t-ref-std-c99">
 <ul><li> C99 standard (ISO/IEC 9899:1999): 
 </li></ul>
@@ -333,23 +344,23 @@ Length, including '\0': 11</pre></div></div>
 </td>
 <td>   converts a narrow multibyte character string to wide string, given state <br> <span class="t-mark">(function)</span> </td></tr>
 
-</table></div>
+</table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4094/1000000
-Preprocessor generated node count: 10688/1000000
-Post‐expand include size: 97543/2097152 bytes
-Template argument size: 19620/2097152 bytes
+Preprocessor visited node count: 4221/1000000
+Preprocessor generated node count: 12894/1000000
+Post‐expand include size: 98088/2097152 bytes
+Template argument size: 19864/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6105-0!*!0!!en!*!* and timestamp 20220705063226 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6105-0!*!0!!en!*!* and timestamp 20230120051243 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcsrtombs&amp;oldid=119774">https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcsrtombs&amp;oldid=119774</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcsrtombs&amp;oldid=142642">https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcsrtombs&amp;oldid=142642</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -362,17 +373,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/string/multibyte/wcsrtombs">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 June 2020, at 21:27.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 17,025 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -387,7 +387,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.716 secs. -->
+</script><!-- Served in 0.796 secs. -->
 	</body>
-<!-- Cached 20220705063226 -->
+<!-- Cached 20230120051243 -->
 </html>

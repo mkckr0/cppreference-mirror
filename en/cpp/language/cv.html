@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/cv","wgTitle":"cpp/language/cv","wgCurRevisionId":141362,"wgArticleId":691,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/cv","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/cv","wgTitle":"cpp/language/cv","wgCurRevisionId":146450,"wgArticleId":691,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/cv","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -370,7 +371,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>When an object is first created, the cv-qualifiers used (which could be part of <span class="t-spar">decl-specifier-seq</span> or part of a <span class="t-spar">declarator</span> in a <a href="declarations.html" title="cpp/language/declarations">declaration</a>, or part of <span class="t-spar">type-id</span> in a <a href="new.html" title="cpp/language/new">new-expression</a>) determine the constness or volatility of the object, as follows:
 </p>
 <ul><li><i><b>const object</b></i> - an object whose type is <span class="t-spar">const-qualified</span>, or a non-mutable subobject of a const object. Such object cannot be modified: attempt to do so directly is a compile-time error, and attempt to do so indirectly (e.g., by modifying the const object through a reference or pointer to non-const type) results in undefined behavior.
-</li><li><i><b>volatile object</b></i> - an object whose type is <span class="t-spar">volatile-qualified</span>, or a subobject of a volatile object, or a mutable subobject of a const-volatile object. Every access (read or write operation, member function call, etc.) made through a glvalue expression of volatile-qualified type is treated as a visible side-effect for the <a href="as_if.html" title="cpp/language/as if">purposes of optimization</a> (that is, within a single thread of execution, volatile accesses cannot be optimized out or reordered with another visible side effect that is <a href="eval_order.html" title="cpp/language/eval order">sequenced-before</a> or sequenced-after the volatile access. This makes volatile objects suitable for communication with a <a href="../utility/program/signal.html" title="cpp/utility/program/signal">signal handler</a>, but not with another thread of execution, see <span class="t-lc"><a href="../atomic/memory_order.html" title="cpp/atomic/memory order">std::memory_order</a></span>). Any attempt to refer to a volatile object through a <a href="value_category.html#glvalue" title="cpp/language/value category">glvalue</a> of non-volatile type (e.g. through a reference or pointer to non-volatile type) results in undefined behavior.
+</li><li><i><b>volatile object</b></i> - an object whose type is <span class="t-spar">volatile-qualified</span>, or a subobject of a volatile object, or a mutable subobject of a const-volatile object. Every access (read or write operation, member function call, etc.) made through a glvalue expression of volatile-qualified type is treated as a visible side-effect for the <a href="as_if.html" title="cpp/language/as if">purposes of optimization</a> (that is, within a single thread of execution, volatile accesses cannot be optimized out or reordered with another visible side effect that is <a href="eval_order.html" title="cpp/language/eval order">sequenced-before</a> or sequenced-after the volatile access. This makes volatile objects suitable for communication with a <a href="../utility/program/signal.html" title="cpp/utility/program/signal">signal handler</a>, but not with another thread of execution, see <span class="t-lc"><a href="../atomic/memory_order.html" title="cpp/atomic/memory order">std::memory_order</a></span>). Any attempt to access a volatile object through a <a href="value_category.html#glvalue" title="cpp/language/value category">glvalue</a> of non-volatile type (e.g. through a reference or pointer to non-volatile type) results in undefined behavior.
 </li><li><i><b>const volatile object</b></i> - an object whose type is <span class="t-spar">const-volatile-qualified</span>, a non-mutable subobject of a const volatile object, a const subobject of a volatile object, or a non-mutable volatile subobject of a const object. Behaves as both a const object and as a volatile object.
 </li></ul>
 <p>Each cv-qualifier (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span></span>) can appear at most once in any cv-qualifier sequence. For example, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="kw4">const</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span> <span class="kw4">const</span> <span class="kw4">volatile</span></span></span> are not valid cv-qualifier sequences.
@@ -443,7 +444,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Some uses of volatile are deprecated:
 </p>
 <ul><li> lvalue of volatile type as operand of built-in <a href="operator_incdec.html" title="cpp/language/operator incdec">increment/decrement</a> operators;
-</li><li> lvalue of volatile type as left operand of built-in <a href="operator_assignment.html" title="cpp/language/operator assignment">direct/compound assigment</a> operators other than some bitwise compound assignment operators, unless the direct assigment expression appears in an <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions">unevaluated context</a> or is a <a href="expressions.html#Discarded-value_expressions" title="cpp/language/expressions">discarded-value expression</a>;
+</li><li> lvalue of volatile type as left operand of built-in <a href="operator_assignment.html" title="cpp/language/operator assignment">direct assignment</a>, unless the direct assignment expression appears in an <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions">unevaluated context</a> or is a <a href="expressions.html#Discarded-value_expressions" title="cpp/language/expressions">discarded-value expression</a>;
 </li><li> volatile object type as function parameter type or return type;
 </li><li> volatile qualifier in <a href="structured_binding.html" title="cpp/language/structured binding">structured binding</a> declaration.
 </li></ul>
@@ -452,7 +453,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cstdlib&gt;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">int</span> n1 <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>          <span class="co1">// non-const object</span>
     <span class="kw4">const</span> <span class="kw4">int</span> n2 <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>    <span class="co1">// const object</span>
@@ -478,8 +481,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw4">const</span> <span class="kw4">int</span><span class="sy3">&amp;</span> r2 <span class="sy1">=</span> n2<span class="sy4">;</span> <span class="co1">// reference to const bound to const object</span>
 <span class="co1">//  r2 = 2; // error: attempt to modify through reference to const</span>
 <span class="co1">//  const_cast&lt;int&amp;&gt;(r2) = 2; // undefined behavior: attempt to modify const object n2</span>
+ 
+    <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span>...<span class="br0">)</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>n3, n4, x, r2<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// see also: [[maybe_unused]]</span>
+ 
+    <a href="../utility/program/system.html"><span class="kw975">std::<span class="me2">system</span></span></a><span class="br0">(</span><span class="st0">"g++ -O3 -Wa,-adhln ./main.cpp"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// may issue asm on POSIX systems</span>
 <span class="br0">}</span></pre></div></div>
-<p>Output:
+<p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1"># typical machine code produced on an x86_64 platform
 # (only the code that contributes to observable side-effects is emitted)
@@ -536,19 +543,19 @@ main:
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4330/1000000
-Preprocessor generated node count: 9446/1000000
-Post‐expand include size: 167945/2097152 bytes
-Template argument size: 26025/2097152 bytes
+Preprocessor visited node count: 4344/1000000
+Preprocessor generated node count: 9499/1000000
+Post‐expand include size: 168374/2097152 bytes
+Template argument size: 26410/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:691-0!*!0!!en!*!* and timestamp 20220726025027 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:691-0!*!0!!en!*!* and timestamp 20230120010743 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/cv&amp;oldid=141362">https://en.cppreference.com/mwiki/index.php?title=cpp/language/cv&amp;oldid=141362</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/cv&amp;oldid=146450">https://en.cppreference.com/mwiki/index.php?title=cpp/language/cv&amp;oldid=146450</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -561,17 +568,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/cv">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 25 July 2022, at 19:50.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 789,952 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -586,7 +582,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.032 secs. -->
+</script><!-- Served in 1.634 secs. -->
 	</body>
-<!-- Cached 20220726025622 -->
+<!-- Cached 20230120010744 -->
 </html>

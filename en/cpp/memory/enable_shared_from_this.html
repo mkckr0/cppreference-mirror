@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/memory/enable_shared_from_this","wgTitle":"cpp/memory/enable shared from this","wgCurRevisionId":139300,"wgArticleId":3425,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/memory/enable_shared_from_this","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/memory/enable_shared_from_this","wgTitle":"cpp/memory/enable shared from this","wgCurRevisionId":146105,"wgArticleId":3425,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/memory/enable_shared_from_this","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -151,11 +152,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../types.html" title="cpp/types"> Type support</a> (basic types, RTTI)</td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility/feature_test.html" title="cpp/utility/feature test"> Library feature-test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../memory.html" title="cpp/memory"> Dynamic memory management</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/launder.html" title="cpp/utility/launder"><span class="t-lines"><span>launder</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility/program.html" title="cpp/utility/program"> Program utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../coroutine.html" title="cpp/coroutine"> Coroutine support</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility/variadic.html" title="cpp/utility/variadic"> Variadic functions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../types/is_constant_evaluated.html" title="cpp/types/is constant evaluated"><span class="t-lines"><span>is_constant_evaluated</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/launder.html" title="cpp/utility/launder"><span class="t-lines"><span>launder</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/initializer_list.html" title="cpp/utility/initializer list"><span class="t-lines"><span>initializer_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/source_location.html" title="cpp/utility/source location"><span class="t-lines"><span>source_location</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Three-way comparison <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
@@ -219,7 +220,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/tuple_element.html" title="cpp/utility/tuple element"><span class="t-lines"><span>tuple_element</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/apply.html" title="cpp/utility/apply"><span class="t-lines"><span>apply</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/make_from_tuple.html" title="cpp/utility/make from tuple"><span class="t-lines"><span>make_from_tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/utility/expected&amp;action=edit&amp;redlink=1" class="new" title="cpp/utility/expected (page does not exist)"><span class="t-lines"><span>expected</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/expected.html" title="cpp/utility/expected"><span class="t-lines"><span>expected</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Elementary string conversions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/to_chars.html" title="cpp/utility/to chars"><span class="t-lines"><span>to_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
@@ -248,7 +249,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="uses_allocator.html" title="cpp/memory/uses allocator"><span class="t-lines"><span>uses_allocator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="uses_allocator_construction_args.html" title="cpp/memory/uses allocator construction args"><span class="t-lines"><span>uses_allocator_construction_args</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="make_obj_using_allocator.html" title="cpp/memory/make obj using allocator"><span class="t-lines"><span>make_obj_using_allocator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="uninitialized_construct_using_allocator.html" title="cpp/memory/uninitialized construct using allocator"><span class="t-lines"><span>uninitialized_construct_using_allocator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="uninitialized_construct_using_allocator.html" title="cpp/memory/uninitialized construct using allocator"><span class="t-lines"><span>uninitialized_construct_using_allocator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span>  </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="scoped_allocator_adaptor.html" title="cpp/memory/scoped allocator adaptor"><span class="t-lines"><span>scoped_allocator_adaptor</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="polymorphic_allocator.html" title="cpp/memory/polymorphic allocator"><span class="t-lines"><span>pmr::polymorphic_allocator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Memory resources</td></tr>
@@ -289,7 +290,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ranges/uninitialized_copy.html" title="cpp/memory/ranges/uninitialized copy"><span class="t-lines"><span>ranges::uninitialized_copy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ranges/uninitialized_fill.html" title="cpp/memory/ranges/uninitialized fill"><span class="t-lines"><span>ranges::uninitialized_fill</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ranges/uninitialized_move.html" title="cpp/memory/ranges/uninitialized move"><span class="t-lines"><span>ranges::uninitialized_move</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ranges/uninitialized_default_construct.html" title="cpp/memory/ranges/uninitialized default construct"><span class="t-lines"><span>ranges::uninitialized_default_construct</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ranges/uninitialized_default_construct.html" title="cpp/memory/ranges/uninitialized default construct"><span class="t-lines"><span>ranges::uninitialized_default_construct</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span>  </span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ranges/uninitialized_value_construct.html" title="cpp/memory/ranges/uninitialized value construct"><span class="t-lines"><span>ranges::uninitialized_value_construct</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ranges/destroy.html" title="cpp/memory/ranges/destroy"><span class="t-lines"><span>ranges::destroy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ranges/destroy_at.html" title="cpp/memory/ranges/destroy at"><span class="t-lines"><span>ranges::destroy_at</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
@@ -327,14 +328,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="c/realloc.html" title="cpp/memory/c/realloc"><span class="t-lines"><span>realloc</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="c/free.html" title="cpp/memory/c/free"><span class="t-lines"><span>free</span></span></a></div></div></td></tr>
 </table></div></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h1"><td colspan="5"> <a href="new.html" title="cpp/memory/new">Low level memory management</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/operator_new.html" title="cpp/memory/new/operator new"><span class="t-lines"><span>operator new<br>operator new[]</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/operator_delete.html" title="cpp/memory/new/operator delete"><span class="t-lines"><span>operator delete<br>operator delete[]</span></span></a></div></div></td></tr>
+<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/operator_new.html" title="cpp/memory/new/operator new"><span class="t-lines"><span>operator new</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/operator_new.html" title="cpp/memory/new/operator new"><span class="t-lines"><span>operator new[]</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/operator_delete.html" title="cpp/memory/new/operator delete"><span class="t-lines"><span>operator delete</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/operator_delete.html" title="cpp/memory/new/operator delete"><span class="t-lines"><span>operator delete[]</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/get_new_handler.html" title="cpp/memory/new/get new handler"><span class="t-lines"><span>get_new_handler</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/set_new_handler.html" title="cpp/memory/new/set new handler"><span class="t-lines"><span>set_new_handler</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/bad_alloc.html" title="cpp/memory/new/bad alloc"><span class="t-lines"><span>bad_alloc</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/launder.html" title="cpp/utility/launder"><span class="t-lines"><span>launder</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/bad_alloc.html" title="cpp/memory/new/bad alloc"><span class="t-lines"><span>bad_alloc</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/bad_array_new_length.html" title="cpp/memory/new/bad array new length"><span class="t-lines"><span>bad_array_new_length</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/nothrow_t.html" title="cpp/memory/new/nothrow t" class="mw-redirect"><span class="t-lines"><span>nothrow_t</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="new/align_val_t.html" title="cpp/memory/new/align val t"><span class="t-lines"><span>align_val_t</span></span></a></div></div></td></tr>
@@ -346,7 +350,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink"><tt>std::enable_shared_from_this</tt></strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h1"><td colspan="5"> Protected member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="enable_shared_from_this/enable_shared_from_this.html" title="cpp/memory/enable shared from this/enable shared from this"><span class="t-lines"><span>enable_shared_from_this::enable_shared_from_this</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="enable_shared_from_this/~enable_shared_from_this.html" title="cpp/memory/enable shared from this/~enable shared from this"><span class="t-lines"><span>enable_shared_from_this::~enable_shared_from_this</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="enable_shared_from_this/%7Eenable_shared_from_this.html" title="cpp/memory/enable shared from this/~enable shared from this"><span class="t-lines"><span>enable_shared_from_this::~enable_shared_from_this</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="enable_shared_from_this/operator%3D.html" title="cpp/memory/enable shared from this/operator="><span class="t-lines"><span>enable_shared_from_this::operator=</span></span></a></div></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Public member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="enable_shared_from_this/shared_from_this.html" title="cpp/memory/enable shared from this/shared from this"><span class="t-lines"><span>enable_shared_from_this::shared_from_this</span></span></a></div></div></td></tr>
@@ -380,7 +384,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="enable_shared_from_this/~enable_shared_from_this.html" title="cpp/memory/enable shared from this/~enable shared from this"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="enable_shared_from_this/%7Eenable_shared_from_this.html" title="cpp/memory/enable shared from this/~enable shared from this"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
 </td>
 <td>  destroys an <code>enable_shared_from_this</code> object <br> <span class="t-mark">(protected member function)</span>
 </td></tr>
@@ -389,21 +393,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="enable_shared_from_this/operator%3D.html" title="cpp/memory/enable shared from this/operator="> <span class="t-lines"><span>operator=</span></span></a></div></div>
 </td>
-<td>   returns a reference to <span class="t-c"><span class="mw-geshi cpp source-cpp">this</span></span>  <br> <span class="t-mark">(protected member function)</span>
+<td>  returns a reference to <span class="t-c"><span class="mw-geshi cpp source-cpp">this</span></span> <br> <span class="t-mark">(protected member function)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="enable_shared_from_this/shared_from_this.html" title="cpp/memory/enable shared from this/shared from this"> <span class="t-lines"><span>shared_from_this</span></span></a></div></div>
 </td>
-<td>   returns a <span class="t-c"><span class="mw-geshi cpp source-cpp">shared_ptr</span></span> which shares ownership of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>  <br> <span class="t-mark">(public member function)</span>
+<td>  returns a <span class="t-c"><span class="mw-geshi cpp source-cpp">shared_ptr</span></span> which shares ownership of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> <br> <span class="t-mark">(public member function)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="enable_shared_from_this/weak_from_this.html" title="cpp/memory/enable shared from this/weak from this"> <span class="t-lines"><span>weak_from_this</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
 </td>
-<td>   returns the  <span class="t-c"><span class="mw-geshi cpp source-cpp">weak_ptr</span></span> which shares ownership of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>  <br> <span class="t-mark">(public member function)</span>
+<td>  returns the  <span class="t-c"><span class="mw-geshi cpp source-cpp">weak_ptr</span></span> which shares ownership of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> <br> <span class="t-mark">(public member function)</span>
 </td></tr>
 
 </table>
@@ -411,16 +415,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member name
+<td> Member name
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>weak_this</code> <span class="t-mark">(private)</span><span class="t-mark-rev t-since-cxx17">(C++17)</span>
+<td> <code>weak_this</code> <span class="t-mark">(private)</span><span class="t-mark-rev t-since-cxx17">(C++17)</span>
 </td>
-<td>  <span class="t-lc"><a href="weak_ptr.html" title="cpp/memory/weak ptr">std::weak_ptr</a></span> object tracking the control block of the first shared owner of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. Exposition only
+<td> <span class="t-lc"><a href="weak_ptr.html" title="cpp/memory/weak ptr">std::weak_ptr</a></span> object tracking the control block of the first shared owner of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>. Exposition only
 </td></tr>
 
 </table>
@@ -430,25 +434,35 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p><code>enable_shared_from_this</code> provides the safe alternative to an expression like <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="shared_ptr.html"><span class="kw735">std::<span class="me2">shared_ptr</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span>this<span class="br0">)</span></span></span>, which is likely to result in <span class="t-c"><span class="mw-geshi cpp source-cpp">this</span></span> being destructed more than once by multiple owners that are unaware of each other (see example below).
 </p>
 <table class="wikitable">
+
 <tr>
-<td> <a href="../feature_test.html#Library_features" title="cpp/feature test">Feature-test</a> macro:
-</td>
-<td> <a href="../utility/feature_test.html" title="cpp/utility/feature test"><tt>__cpp_lib_enable_shared_from_this</tt></a>
+<th><a href="../utility/feature_test.html" title="cpp/utility/feature test">Feature-test</a> macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Library_features" title="cpp/feature test"><code>__cpp_lib_enable_shared_from_this</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201603L</span></span></span></td>
+<td><span class="t-mark">(C++17)</span></td>
+<td>More precise specification of <a href="enable_shared_from_this.html#Top"><code>std::enable_shared_from_this</code></a>
 </td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;memory&gt;</span>
 <span class="co2">#include &lt;iostream&gt;</span>
  
-<span class="kw1">struct</span> Good <span class="sy4">:</span> std<span class="sy4">::</span><span class="me2">enable_shared_from_this</span><span class="sy1">&lt;</span>Good<span class="sy1">&gt;</span> <span class="co1">// note: public inheritance</span>
+<span class="kw1">class</span> Good <span class="sy4">:</span> <span class="kw1">public</span> std<span class="sy4">::</span><span class="me2">enable_shared_from_this</span><span class="sy1">&lt;</span>Good<span class="sy1">&gt;</span>
 <span class="br0">{</span>
+<span class="kw1">public</span><span class="sy4">:</span>
     <a href="shared_ptr.html"><span class="kw735">std::<span class="me2">shared_ptr</span></span></a><span class="sy1">&lt;</span>Good<span class="sy1">&gt;</span> getptr<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
         <span class="kw1">return</span> shared_from_this<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw1">struct</span> Best <span class="sy4">:</span> std<span class="sy4">::</span><span class="me2">enable_shared_from_this</span><span class="sy1">&lt;</span>Best<span class="sy1">&gt;</span> <span class="co1">// note: public inheritance</span>
+<span class="kw1">class</span> Best <span class="sy4">:</span> <span class="kw1">public</span> std<span class="sy4">::</span><span class="me2">enable_shared_from_this</span><span class="sy1">&lt;</span>Best<span class="sy1">&gt;</span>
 <span class="br0">{</span>
+<span class="kw1">public</span><span class="sy4">:</span>
     <a href="shared_ptr.html"><span class="kw735">std::<span class="me2">shared_ptr</span></span></a><span class="sy1">&lt;</span>Best<span class="sy1">&gt;</span> getptr<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
         <span class="kw1">return</span> shared_from_this<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
@@ -482,13 +496,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw4">void</span> misuseGood<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="co1">// Bad: shared_from_this is called without having std::shared_ptr owning the caller </span>
+    <span class="co1">// Bad: shared_from_this is called without having std::shared_ptr owning the caller</span>
     <span class="kw1">try</span> <span class="br0">{</span>
         Good not_so_good<span class="sy4">;</span>
         <a href="shared_ptr.html"><span class="kw735">std::<span class="me2">shared_ptr</span></span></a><span class="sy1">&lt;</span>Good<span class="sy1">&gt;</span> gp1 <span class="sy1">=</span> not_so_good.<span class="me1">getptr</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span><a href="bad_weak_ptr.html"><span class="kw745">std::<span class="me2">bad_weak_ptr</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
         <span class="co1">// undefined behavior (until C++17) and std::bad_weak_ptr thrown (since C++17)</span>
-        <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>    
+        <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> e.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span>
  
@@ -539,23 +553,28 @@ Bad::~Bad() called
 <td>  <div class="t-dsc-member-div"><div><a href="shared_ptr.html" title="cpp/memory/shared ptr"> <span class="t-lines"><span>shared_ptr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
 <td>   smart pointer with shared object ownership semantics  <br> <span class="t-mark">(class template)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="shared_ptr/make_shared.html" title="cpp/memory/shared ptr/make shared"> <span class="t-lines"><span>make_shared</span><span>make_shared_for_overwrite</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div>
+</td>
+<td>   creates a shared pointer that manages a new object <br> <span class="t-mark">(function template)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 13016/1000000
-Preprocessor generated node count: 15243/1000000
-Post‐expand include size: 415692/2097152 bytes
-Template argument size: 88776/2097152 bytes
+Preprocessor visited node count: 13389/1000000
+Preprocessor generated node count: 15718/1000000
+Post‐expand include size: 427725/2097152 bytes
+Template argument size: 90938/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3425-0!*!0!!en!*!* and timestamp 20220727203247 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3425-0!*!0!!en!*!* and timestamp 20230120003933 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/memory/enable_shared_from_this&amp;oldid=139300">https://en.cppreference.com/mwiki/index.php?title=cpp/memory/enable_shared_from_this&amp;oldid=139300</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/memory/enable_shared_from_this&amp;oldid=146105">https://en.cppreference.com/mwiki/index.php?title=cpp/memory/enable_shared_from_this&amp;oldid=146105</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -568,17 +587,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/memory/enable_shared_from_this">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 April 2022, at 10:34.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 562,484 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -593,7 +601,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.633 secs. -->
+</script><!-- Served in 2.999 secs. -->
 	</body>
-<!-- Cached 20220727203247 -->
+<!-- Cached 20230120003934 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/filesystem/rename","wgTitle":"cpp/filesystem/rename","wgCurRevisionId":128544,"wgArticleId":15192,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/filesystem/rename","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/filesystem/rename","wgTitle":"cpp/filesystem/rename","wgCurRevisionId":144491,"wgArticleId":15192,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/filesystem/rename","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -189,92 +190,91 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> rename<span class="br0">(</span><span class="kw4">const</span> <a href="path.html"><span class="kw2203">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> old_p,<br>
-<p>            <span class="kw4">const</span> <a href="path.html"><span class="kw2203">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> new_p<span class="br0">)</span><span class="sy4">;</span><br>
-<span class="kw4">void</span> rename<span class="br0">(</span><span class="kw4">const</span> <a href="path.html"><span class="kw2203">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> old_p,<br>
-            <span class="kw4">const</span> <a href="path.html"><span class="kw2203">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> new_p,<br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> rename<span class="br0">(</span> <span class="kw4">const</span> <a href="path.html"><span class="kw2203">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> old_p,<br>
+<p>             <span class="kw4">const</span> <a href="path.html"><span class="kw2203">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> new_p <span class="br0">)</span><span class="sy4">;</span><br>
+<span class="kw4">void</span> rename<span class="br0">(</span> <span class="kw4">const</span> <a href="path.html"><span class="kw2203">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> old_p,<br>
+             <span class="kw4">const</span> <a href="path.html"><span class="kw2203">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a><span class="sy3">&amp;</span> new_p,<br>
 </p>
-            <a href="../error/error_code.html"><span class="kw878">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span> ec<span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span></span></div></td>
+             <a href="../error/error_code.html"><span class="kw878">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span> ec <span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Moves or renames the filesystem object identified by <code>old_p</code> to <code>new_p</code> as if by the POSIX <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/rename.html"><code>rename</code></a>:
+<p>Moves or renames the filesystem object identified by <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> to <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> as if by the POSIX <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/rename.html"><code>rename</code></a>:
 </p>
-<ul><li> If <code>old_p</code> is a non-directory file, then <code>new_p</code> must be one of:
+<ul><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> is a non-directory file, then <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> must be one of:
 </li></ul>
-<dl><dd><ul><li> the same file as <code>old_p</code> or a hardlink to it: nothing is done in this case
-</li><li> existing non-directory file: <code>new_p</code> is first deleted, then, without allowing other processes to observe <code>new_p</code> as deleted, the pathname <code>new_p</code> is linked to the file and <code>old_p</code> is unlinked from the file. Write permissions are required to both the directory that contains <code>old_p</code> and the directory that contains <code>new_p</code>.
-</li><li> non-existing file in an existing directory: The pathname <code>new_p</code> is linked to the file and <code>old_p</code> is unlinked from the file. Write permissions are required to both the directory that contains <code>old_p</code> and the directory that contains <code>new_p</code>.
-</li></ul>
-</dd></dl>
-<ul><li> If <code>old_p</code> is a directory, then <code>new_p</code> must be one of:
-</li></ul>
-<dl><dd><ul><li> the same directory as <code>old_p</code> or a hardlink to it: nothing is done in this case
-</li><li> existing directory: <code>new_p</code> is deleted if empty on POSIX systems, but this may be an error on other systems. If not an error, then <code>new_p</code> is first deleted, then, without allowing other processes to observe <code>new_p</code> as deleted, the pathname <code>new_p</code> is linked to the directory and <code>old_p</code> is unlinked from the directory. Write permissions are required to both the directory that contains <code>old_p</code> and the directory that contains <code>new_p</code>.
-</li><li> non-existing directory, not ending with a directory separator, and whose parent directory exists: The pathname <code>new_p</code> is linked to the directory and <code>old_p</code> is unlinked from the directory. Write permissions are required to both the directory that contains <code>old_p</code> and the directory that contains <code>new_p</code>.
+<dl><dd><ul><li> the same file as <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> or a hardlink to it: nothing is done in this case
+</li><li> existing non-directory file: <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> is first deleted, then, without allowing other processes to observe <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> as deleted, the pathname <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> is linked to the file and <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> is unlinked from the file. Write permissions are required to both the directory that contains <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> and the directory that contains <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span>.
+</li><li> non-existing file in an existing directory: The pathname <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> is linked to the file and <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> is unlinked from the file. Write permissions are required to both the directory that contains <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> and the directory that contains <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span>.
 </li></ul>
 </dd></dl>
-<ul><li> Symlinks are not followed: if <code>old_p</code> is a symlink, it is itself renamed, not its target. If <code>new_p</code> is an existing symlink, it is itself erased, not its target.
+<ul><li> If <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> is a directory, then <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> must be one of:
+</li></ul>
+<dl><dd><ul><li> the same directory as <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> or a hardlink to it: nothing is done in this case
+</li><li> existing directory: <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> is deleted if empty on POSIX systems, but this may be an error on other systems. If not an error, then <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> is first deleted, then, without allowing other processes to observe <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> as deleted, the pathname <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> is linked to the directory and <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> is unlinked from the directory. Write permissions are required to both the directory that contains <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> and the directory that contains <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span>.
+</li><li> non-existing directory, not ending with a directory separator, and whose parent directory exists: The pathname <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> is linked to the directory and <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> is unlinked from the directory. Write permissions are required to both the directory that contains <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> and the directory that contains <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span>.
+</li></ul>
+</dd></dl>
+<ul><li> Symlinks are not followed: if <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> is a symlink, it is itself renamed, not its target. If <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> is an existing symlink, it is itself erased, not its target.
 </li></ul>
 <p>Rename fails if
 </p>
-<ul><li> <code>new_p</code> ends with <span class="t-spar">dot</span> or with <span class="t-spar">dot-dot</span>
-</li><li> <code>new_p</code> names a non-existing directory ending with a directory separator
-</li><li> <code>old_p</code> is a directory which is an ancestor of <code>new_p</code>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> ends with <span class="t-spar">dot</span> or with <span class="t-spar">dot-dot</span>
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span> names a non-existing directory ending with a directory separator
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">old_p</span></span> is a directory which is an ancestor of <span class="t-c"><span class="mw-geshi cpp source-cpp">new_p</span></span>
 </li></ul>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  old_p
+<td> old_p
 </td>
 <td> -
 </td>
-<td>  path to move or rename
+<td> path to move or rename
 </td></tr>
 <tr class="t-par">
-<td>  new_p
+<td> new_p
 </td>
 <td> -
 </td>
-<td>  target path for the move/rename operation
+<td> target path for the move/rename operation
 </td></tr>
 <tr class="t-par">
-<td>  ec
+<td> ec
 </td>
 <td> -
 </td>
-<td>  out-parameter for error reporting in the non-throwing overload
+<td> out-parameter for error reporting in the non-throwing overload.
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>(none)
 </p>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
 <p>The overload that does not take a <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../error/error_code.html"><span class="kw878">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span></span></span> parameter throws <a href="filesystem_error.html" title="cpp/filesystem/filesystem error"><tt>filesystem::filesystem_error</tt></a> on underlying OS API errors, constructed with <code>old_p</code> as the first path argument, <code>new_p</code> as the second path argument, and the OS error code as the error code argument. The overload taking a <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../error/error_code.html"><span class="kw878">std::<span class="me2">error_code</span></span></a><span class="sy3">&amp;</span></span></span> parameter sets it to the OS API error code if an OS API call fails, and executes <span class="t-c"><span class="mw-geshi cpp source-cpp">ec.<span class="me1">clear</span><span class="br0">(</span><span class="br0">)</span></span></span> if no errors occur. Any overload not marked <code>noexcept</code> may throw  <span class="t-lc"><a href="../memory/new/bad_alloc.html" title="cpp/memory/new/bad alloc">std::bad_alloc</a></span> if memory allocation fails.
-</p><p><br>
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;filesystem&gt;</span>
 <span class="co2">#include &lt;fstream&gt;</span>
-<span class="co2">#include &lt;filesystem&gt;</span>
 <span class="kw1">namespace</span> fs <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">filesystem</span><span class="sy4">;</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    fs<span class="sy4">::</span><span class="me2">path</span> p <span class="sy1">=</span> fs<span class="sy4">::</span><span class="me2">current_path</span><span class="br0">(</span><span class="br0">)</span> <span class="sy2">/</span> <span class="st0">"sandbox"</span><span class="sy4">;</span>
-    fs<span class="sy4">::</span><span class="me2">create_directories</span><span class="br0">(</span>p<span class="sy2">/</span><span class="st0">"from"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/basic_ofstream.html"><span class="kw1737">std::<span class="me2">ofstream</span></span></a><span class="br0">(</span>p<span class="sy2">/</span><span class="st0">"from/file1.txt"</span><span class="br0">)</span>.<span class="me1">put</span><span class="br0">(</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span>
-    fs<span class="sy4">::</span><span class="me2">create_directory</span><span class="br0">(</span>p<span class="sy2">/</span><span class="st0">"to"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="path.html"><span class="kw2203">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">path</span></span></a> p <span class="sy1">=</span> <a href="current_path.html"><span class="kw2277">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">current_path</span></span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">/</span> <span class="st0">"sandbox"</span><span class="sy4">;</span>
+    <a href="create_directory.html"><span class="kw2273">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">create_directories</span></span></a><span class="br0">(</span>p <span class="sy2">/</span> <span class="st0">"from"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/basic_ofstream.html"><span class="kw1737">std::<span class="me2">ofstream</span></span></a><span class="br0">{</span> p <span class="sy2">/</span> <span class="st0">"from/file1.txt"</span> <span class="br0">}</span>.<span class="me1">put</span><span class="br0">(</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="create_directory.html"><span class="kw2272">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">create_directory</span></span></a><span class="br0">(</span>p <span class="sy2">/</span> <span class="st0">"to"</span><span class="br0">)</span><span class="sy4">;</span>
  
-<span class="co1">//    fs::rename(p/"from/file1.txt", p/"to/"); // error: to is a directory</span>
-    fs<span class="sy4">::</span><span class="me2">rename</span><span class="br0">(</span>p<span class="sy2">/</span><span class="st0">"from/file1.txt"</span>, p<span class="sy2">/</span><span class="st0">"to/file2.txt"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
-<span class="co1">//    fs::rename(p/"from", p/"to"); // error: to is not empty</span>
-    fs<span class="sy4">::</span><span class="me2">rename</span><span class="br0">(</span>p<span class="sy2">/</span><span class="st0">"from"</span>, p<span class="sy2">/</span><span class="st0">"to/subdir"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
+<span class="co1">//  fs::rename(p / "from/file1.txt", p / "to/"); // error: "to" is a directory</span>
+    fs<span class="sy4">::</span><span class="me2">rename</span><span class="br0">(</span>p <span class="sy2">/</span> <span class="st0">"from/file1.txt"</span>, p <span class="sy2">/</span> <span class="st0">"to/file2.txt"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
+<span class="co1">//  fs::rename(p / "from", p / "to"); // error: "to" is not empty</span>
+    fs<span class="sy4">::</span><span class="me2">rename</span><span class="br0">(</span>p <span class="sy2">/</span> <span class="st0">"from"</span>, p <span class="sy2">/</span> <span class="st0">"to/subdir"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
  
-    fs<span class="sy4">::</span><span class="me2">remove_all</span><span class="br0">(</span>p<span class="br0">)</span><span class="sy4">;</span>
+    <a href="remove.html"><span class="kw2286">std::<span class="me2">filesystem</span><span class="sy4">::</span><span class="me2">remove_all</span></span></a><span class="br0">(</span>p<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
@@ -293,19 +293,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3881/1000000
-Preprocessor generated node count: 8413/1000000
-Post‐expand include size: 104696/2097152 bytes
-Template argument size: 19071/2097152 bytes
+Preprocessor visited node count: 4517/1000000
+Preprocessor generated node count: 8496/1000000
+Post‐expand include size: 108944/2097152 bytes
+Template argument size: 19504/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15192-0!*!0!!en!*!* and timestamp 20220410082300 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15192-0!*!0!!en!*!* and timestamp 20230120005244 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/rename&amp;oldid=128544">https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/rename&amp;oldid=128544</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/rename&amp;oldid=144491">https://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/rename&amp;oldid=144491</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -318,17 +318,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/filesystem/rename">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 4 May 2021, at 15:34.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 68,669 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -343,7 +332,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.861 secs. -->
+</script><!-- Served in 4.267 secs. -->
 	</body>
-<!-- Cached 20220410082300 -->
+<!-- Cached 20230120005244 -->
 </html>

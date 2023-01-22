@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/program/at_quick_exit","wgTitle":"c/program/at quick exit","wgCurRevisionId":140322,"wgArticleId":6187,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/program/at_quick_exit","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/program/at_quick_exit","wgTitle":"c/program/at quick exit","wgCurRevisionId":144355,"wgArticleId":6187,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/program/at_quick_exit","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -188,7 +188,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Registers the function pointed to by <code>func</code> to be called on quick program termination (via <span class="t-lc"><a href="quick_exit.html" title="c/program/quick exit">quick_exit</a></span>).
-</p><p>Calling the function from several threads does not induce a data race. The implementation shall support the registration of at least <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">32</span></span></span> functions.
+</p><p>Calling the function from several threads does not induce a data race. The implementation is guaranteed to support the registration of at least 32 functions. The exact limit is implementation-defined. 
+</p><p>The registered functions will not be called on <a href="exit.html" title="c/program/exit">normal program termination</a>. If a function need to be called in that case, <span class="t-lc"><a href="atexit.html" title="c/program/atexit">atexit</a></span> must be used.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -250,27 +251,42 @@ pushed first</pre></div></div>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="abort.html" title="c/program/abort"> <span class="t-lines"><span>abort</span></span></a></div></div>
+</td>
+<td>   causes abnormal program termination (without cleaning up) <br> <span class="t-mark">(function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="exit.html" title="c/program/exit"> <span class="t-lines"><span>exit</span></span></a></div></div>
+</td>
+<td>   causes normal program termination with cleaning up <br> <span class="t-mark">(function)</span> </td></tr>
+
+<tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="atexit.html" title="c/program/atexit"> <span class="t-lines"><span>atexit</span></span></a></div></div>
 </td>
 <td>   registers a function to be called on <span class="t-lc"><a href="exit.html" title="c/program/exit">exit()</a></span> invocation <br> <span class="t-mark">(function)</span> </td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="quick_exit.html" title="c/program/quick exit"> <span class="t-lines"><span>quick_exit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   causes normal program termination without completely cleaning up  <br> <span class="t-mark">(function)</span> </td></tr>
 
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2303/1000000
-Preprocessor generated node count: 7356/1000000
-Post‐expand include size: 57264/2097152 bytes
-Template argument size: 8488/2097152 bytes
+Preprocessor visited node count: 2611/1000000
+Preprocessor generated node count: 7591/1000000
+Post‐expand include size: 69324/2097152 bytes
+Template argument size: 10535/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6187-0!*!0!!en!*!* and timestamp 20220704073957 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6187-0!*!0!!en!*!* and timestamp 20230120055853 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/at_quick_exit&amp;oldid=140322">https://en.cppreference.com/mwiki/index.php?title=c/program/at_quick_exit&amp;oldid=140322</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/at_quick_exit&amp;oldid=144355">https://en.cppreference.com/mwiki/index.php?title=c/program/at_quick_exit&amp;oldid=144355</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -283,17 +299,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/program/at_quick_exit">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 June 2022, at 07:10.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 17,551 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -308,7 +313,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.442 secs. -->
+</script><!-- Served in 0.348 secs. -->
 	</body>
-<!-- Cached 20220704073957 -->
+<!-- Cached 20230120055853 -->
 </html>

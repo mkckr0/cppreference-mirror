@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/equal_range","wgTitle":"cpp/algorithm/equal range","wgCurRevisionId":128303,"wgArticleId":732,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/equal_range","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/equal_range","wgTitle":"cpp/algorithm/equal range","wgCurRevisionId":146428,"wgArticleId":732,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/equal_range","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -367,20 +368,18 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
-<p><a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt,ForwardIt<span class="sy1">&gt;</span> <br>
-    equal_range<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
+<td> <div><span id="Version_1"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
+<p><a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt, ForwardIt<span class="sy1">&gt;</span> <br>
 </p>
-                 <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+    equal_range<span class="br0">(</span> ForwardIt first, ForwardIt last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
-<p><span class="kw4">constexpr</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt,ForwardIt<span class="sy1">&gt;</span> <br>
-              equal_range<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
+<p><span class="kw4">constexpr</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt, ForwardIt<span class="sy1">&gt;</span> <br>
 </p>
-                           <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+    equal_range<span class="br0">(</span> ForwardIt first, ForwardIt last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
@@ -392,8 +391,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
-<p><a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt,ForwardIt<span class="sy1">&gt;</span> <br>
+<td> <div><span id="Version_2"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<p><a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt, ForwardIt<span class="sy1">&gt;</span> <br>
     equal_range<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
 </p>
                  <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -402,48 +401,47 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl t-since-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
-<p><span class="kw4">constexpr</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt,ForwardIt<span class="sy1">&gt;</span> <br>
-              equal_range<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
+<p><span class="kw4">constexpr</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt, ForwardIt<span class="sy1">&gt;</span> <br>
+    equal_range<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
 </p>
-                           <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                 <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Returns a range containing all elements equivalent to <code>value</code> in the range <code>[first, last)</code>.
-</p><p>The range <code>[first, last)</code> must be at least partially ordered with respect to <code>value</code>, i.e. it must satisfy all of the following requirements:
+<p>Returns a range containing all elements equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span> in the range <code>[first, last)</code>.
+</p><p>The range <code>[first, last)</code> must be at least partially ordered with respect to <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span>, i.e. it must satisfy all of the following requirements:
 </p>
 <ul><li> partitioned with respect to <span class="t-c"><span class="mw-geshi cpp source-cpp">element <span class="sy1">&lt;</span> value</span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp<span class="br0">(</span>element, value<span class="br0">)</span></span></span> (that is, all elements for which the expression is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> precedes all elements for which the expression is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>)
 </li><li> partitioned with respect to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span><span class="br0">(</span>value <span class="sy1">&lt;</span> element<span class="br0">)</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span>comp<span class="br0">(</span>value, element<span class="br0">)</span></span></span>
 </li><li> for all elements, if <span class="t-c"><span class="mw-geshi cpp source-cpp">element <span class="sy1">&lt;</span> value</span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp<span class="br0">(</span>element, value<span class="br0">)</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> then <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span><span class="br0">(</span>value <span class="sy1">&lt;</span> element<span class="br0">)</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span>comp<span class="br0">(</span>value, element<span class="br0">)</span></span></span> is also <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>
 </li></ul>
 <p>A fully-sorted range meets these criteria.
-</p><p>The returned range is defined by two iterators, one pointing to the first element that is <i>not less</i> than <code>value</code> and another pointing to the first element <i>greater</i> than <code>value</code>. The first iterator may be alternatively obtained with <span class="t-lc"><a href="lower_bound.html" title="cpp/algorithm/lower bound">std::lower_bound()</a></span>, the second - with <span class="t-lc"><a href="upper_bound.html" title="cpp/algorithm/upper bound">std::upper_bound()</a></span>.
-</p><p>The first version uses <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">&lt;</span></span></span> to compare the elements, the second version uses the given comparison function <code>comp</code>.
-</p><p><br>
+</p><p>The returned range is defined by two iterators, one pointing to the first element that is <i>not less</i> than <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span> and another pointing to the first element <i>greater</i> than <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span>. The first iterator may be alternatively obtained with <span class="t-lc"><a href="lower_bound.html" title="cpp/algorithm/lower bound">std::lower_bound()</a></span>, the second - with <span class="t-lc"><a href="upper_bound.html" title="cpp/algorithm/upper bound">std::upper_bound()</a></span>.
+</p><p>The first version uses <code>operator&lt;</code> to compare the elements, the second version uses the given comparison function <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span>.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  the range of elements to examine
+<td> the range of elements to examine
 </td></tr>
 <tr class="t-par">
-<td>  value
+<td> value
 </td>
 <td> -
 </td>
-<td>  value to compare the elements to
+<td> value to compare the elements to
 </td></tr>
 <tr class="t-par">
-<td>   comp
+<td>  comp
 </td>
 <td> -
 </td>
@@ -451,7 +449,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The signature of the predicate function should be equivalent to the following:
 </p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> <span class="kw4">bool</span> pred<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
 </p><p>While the signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1 <span class="sy3">&amp;</span></span></span> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
-The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">T</span></span> can be implicitly converted to both <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span>, and an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">ForwardIt</span></span> can be dereferenced and then implicitly converted to both <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span>.
+The types <code>Type1</code> and <code>Type2</code> must be such that an object of type <code>T</code> can be implicitly converted to both <code>Type1</code> and <code>Type2</code>, and an object of type <code>ForwardIt</code> can be dereferenced and then implicitly converted to both <code>Type1</code> and <code>Type2</code>.
 ​ 
 </p>
 </td></tr>
@@ -462,41 +460,39 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <td colspan="3"> -<div class="spacer"></div><code>ForwardIt</code> must meet the requirements of <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>.
 </td></tr>
 <tr class="t-par-req">
-<td colspan="3"> -<div class="spacer"></div><code>Compare</code> must meet the requirements of <a href="../named_req/BinaryPredicate.html" title="cpp/named req/BinaryPredicate"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">BinaryPredicate</span></a>. it is not required to satisfy <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>
+<td colspan="3"> -<div class="spacer"></div><code>Compare</code> must meet the requirements of <a href="../named_req/BinaryPredicate.html" title="cpp/named req/BinaryPredicate"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">BinaryPredicate</span></a>. It is not required to satisfy <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>.
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p><span class="t-lc"><a href="../utility/pair.html" title="cpp/utility/pair">std::pair</a></span> containing a pair of iterators defining the wanted range, the first pointing to the first element that is <i>not less</i> than <code>value</code> and the second pointing to the first element <i>greater</i> than <code>value</code>. 
-</p><p>If there are no elements <i>not less</i> than <code>value</code>, <code>last</code> is returned as the first element. Similarly if there are no elements <i>greater</i> than <code>value</code>, <code>last</code> is returned as the second element
+<p>A <span class="t-lc"><a href="../utility/pair.html" title="cpp/utility/pair">std::pair</a></span> containing a pair of iterators defining the wanted range. The first pointing to the first element that is <i>not less</i> than <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span> and the second pointing to the first element <i>greater</i> than <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span>. 
+</p><p>If there are no elements <i>not less</i> than <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span> is returned as the first element. Similarly if there are no elements <i>greater</i> than <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span> is returned as the second element.
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<p>The number of comparisons performed is logarithmic in the distance between <code>first</code> and <code>last</code> (At most <span class="texhtml" style="white-space: nowrap;">2 * log<span class="t-su t-su-b"><br>2</span>(last - first) + O(1)</span> comparisons). However, for non-<a href="../named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span>s</a>, the number of iterator increments is linear. Notably, <span class="t-lc"><a href="../container/set.html" title="cpp/container/set">std::set</a></span> and <span class="t-lc"><a href="../container/multiset.html" title="cpp/container/multiset">std::multiset</a></span> iterators are not random access, and so their member functions <span class="t-lc"><a href="../container/set/equal_range.html" title="cpp/container/set/equal range">std::set::equal_range</a></span> (resp. <span class="t-lc"><a href="../container/multiset/equal_range.html" title="cpp/container/multiset/equal range">std::multiset::equal_range</a></span>) should be preferred.
+<p>The number of comparisons performed is logarithmic in the distance between <span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span> (At most <span class="texhtml" style="white-space: nowrap;">2 * log<span class="t-su t-su-b"><br>2</span>(last - first) + O(1)</span> comparisons). However, for non-<a href="../named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span>s</a>, the number of iterator increments is linear. Notably, <span class="t-lc"><a href="../container/set.html" title="cpp/container/set">std::set</a></span> and <span class="t-lc"><a href="../container/multiset.html" title="cpp/container/multiset">std::multiset</a></span> iterators are not random access, and so their member functions <span class="t-lc"><a href="../container/set/equal_range.html" title="cpp/container/set/equal range">std::set::equal_range</a></span> (resp. <span class="t-lc"><a href="../container/multiset/equal_range.html" title="cpp/container/multiset/equal range">std::multiset::equal_range</a></span>) should be preferred.
 </p>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <table class="eq-fun-cpp-table">
 
 <tr>
-<th> First version
+<th><a href="equal_range.html#Version_1">equal_range (1)</a>
 </th></tr>
 <tr>
 <td>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T<span class="sy1">&gt;</span>
-<a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt,ForwardIt<span class="sy1">&gt;</span> 
-    equal_range<span class="br0">(</span>ForwardIt first, ForwardIt last,
-                <span class="kw4">const</span> T<span class="sy3">&amp;</span> value<span class="br0">)</span>
+<a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt, ForwardIt<span class="sy1">&gt;</span> 
+    equal_range<span class="br0">(</span>ForwardIt first, ForwardIt last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">return</span> <a href="../utility/pair/make_pair.html"><span class="kw1100">std::<span class="me2">make_pair</span></span></a><span class="br0">(</span><a href="lower_bound.html"><span class="kw1627">std::<span class="me2">lower_bound</span></span></a><span class="br0">(</span>first, last, value<span class="br0">)</span>,
                           <a href="upper_bound.html"><span class="kw1628">std::<span class="me2">upper_bound</span></span></a><span class="br0">(</span>first, last, value<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Second version
+<th><a href="equal_range.html#Version_2">equal_range (2)</a>
 </th></tr>
 <tr>
 <td>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T, <span class="kw1">class</span> Compare<span class="sy1">&gt;</span>
-<a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt,ForwardIt<span class="sy1">&gt;</span> 
-    equal_range<span class="br0">(</span>ForwardIt first, ForwardIt last,
-                <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Compare comp<span class="br0">)</span>
+<a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>ForwardIt,ForwardIt<span class="sy1">&gt;</span>
+    equal_range<span class="br0">(</span>ForwardIt first, ForwardIt last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Compare comp<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">return</span> <a href="../utility/pair/make_pair.html"><span class="kw1100">std::<span class="me2">make_pair</span></span></a><span class="br0">(</span><a href="lower_bound.html"><span class="kw1627">std::<span class="me2">lower_bound</span></span></a><span class="br0">(</span>first, last, value, comp<span class="br0">)</span>,
                           <a href="upper_bound.html"><span class="kw1628">std::<span class="me2">upper_bound</span></span></a><span class="br0">(</span>first, last, value, comp<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
@@ -516,30 +512,29 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
     <span class="kw4">bool</span> operator<span class="sy1">&lt;</span> <span class="br0">(</span> <span class="kw4">const</span> S<span class="sy3">&amp;</span> s <span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> number <span class="sy1">&lt;</span> s.<span class="me1">number</span><span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
+<span class="kw1">struct</span> Comp
+<span class="br0">{</span>
+    <span class="kw4">bool</span> operator<span class="br0">(</span><span class="br0">)</span> <span class="br0">(</span> <span class="kw4">const</span> S<span class="sy3">&amp;</span> s, <span class="kw4">int</span> i <span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> s.<span class="me1">number</span> <span class="sy1">&lt;</span> i<span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">bool</span> operator<span class="br0">(</span><span class="br0">)</span> <span class="br0">(</span> <span class="kw4">int</span> i, <span class="kw4">const</span> S<span class="sy3">&amp;</span> s <span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> i <span class="sy1">&lt;</span> s.<span class="me1">number</span><span class="sy4">;</span> <span class="br0">}</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="co1">// note: not ordered, only partitioned w.r.t. S defined below</span>
-    <span class="kw4">const</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>S<span class="sy1">&gt;</span> vec <span class="sy1">=</span> <span class="br0">{</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="st0">'A'</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu0">2</span>,<span class="st0">'B'</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu0">2</span>,<span class="st0">'C'</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu0">2</span>,<span class="st0">'D'</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu0">4</span>,<span class="st0">'G'</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu0">3</span>,<span class="st0">'F'</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
- 
+    <span class="kw4">const</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>S<span class="sy1">&gt;</span> vec <span class="sy1">=</span> <span class="br0">{</span><span class="br0">{</span><span class="nu0">1</span>, <span class="st0">'A'</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu0">2</span>, <span class="st0">'B'</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu0">2</span>, <span class="st0">'C'</span><span class="br0">}</span>,
+                                <span class="br0">{</span><span class="nu0">2</span>, <span class="st0">'D'</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu0">4</span>, <span class="st0">'G'</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu0">3</span>, <span class="st0">'F'</span><span class="br0">}</span><span class="br0">}</span><span class="sy4">;</span>
     <span class="kw4">const</span> S value <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">2</span>, <span class="st0">'?'</span><span class="br0">}</span><span class="sy4">;</span>
  
     <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Compare using S::operator&lt;(): "</span><span class="sy4">;</span>
     <span class="kw4">const</span> <span class="kw4">auto</span> p <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">equal_range</span><span class="br0">(</span>vec.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, vec.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, value<span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="kw1">for</span> <span class="br0">(</span> <span class="kw4">auto</span> i <span class="sy1">=</span> p.<span class="me1">first</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> p.<span class="me1">second</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">)</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> i <span class="sy1">=</span> p.<span class="me1">first</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> p.<span class="me1">second</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> i<span class="sy2">-</span><span class="sy1">&gt;</span>name <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
  
- 
     <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>"</span> <span class="st0">"Using heterogeneous comparison: "</span><span class="sy4">;</span>
-    <span class="kw1">struct</span> Comp
-    <span class="br0">{</span>
-        <span class="kw4">bool</span> operator<span class="br0">(</span><span class="br0">)</span> <span class="br0">(</span> <span class="kw4">const</span> S<span class="sy3">&amp;</span> s, <span class="kw4">int</span> i <span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> s.<span class="me1">number</span> <span class="sy1">&lt;</span> i<span class="sy4">;</span> <span class="br0">}</span>
-        <span class="kw4">bool</span> operator<span class="br0">(</span><span class="br0">)</span> <span class="br0">(</span> <span class="kw4">int</span> i, <span class="kw4">const</span> S<span class="sy3">&amp;</span> s <span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> i <span class="sy1">&lt;</span> s.<span class="me1">number</span><span class="sy4">;</span> <span class="br0">}</span>
-    <span class="br0">}</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">auto</span> p2 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">equal_range</span><span class="br0">(</span>vec.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, vec.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, <span class="nu0">2</span>, Comp<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="kw4">const</span> <span class="kw4">auto</span> p2 <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">equal_range</span><span class="br0">(</span>vec.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>,vec.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, <span class="nu0">2</span>, Comp<span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
- 
-    <span class="kw1">for</span> <span class="br0">(</span> <span class="kw4">auto</span> i <span class="sy1">=</span> p2.<span class="me1">first</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> p2.<span class="me1">second</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">)</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> i <span class="sy1">=</span> p2.<span class="me1">first</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> p2.<span class="me1">second</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> i<span class="sy2">-</span><span class="sy1">&gt;</span>name <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
@@ -565,12 +560,10 @@ Using heterogeneous comparison: B C D</pre></div></div>
 </td>
 <td> C++98
 </td>
-<td> Compare was required to be a strict weak ordering
+<td> <code>Compare</code> was required to satisfy <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a> and <code>T</code> was required<br>to be <a href="../named_req/LessThanComparable.html" title="cpp/named req/LessThanComparable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LessThanComparable</span></a> (strict weak ordering required)
 </td>
-<td> only a partitioning is needed; heterogeneous comparisons permitted
+<td> only a partitioning is required;<br>heterogeneous comparisons permitted
 </td></tr></table>
-<p><br>
-</p>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -617,19 +610,19 @@ Using heterogeneous comparison: B C D</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 11264/1000000
-Preprocessor generated node count: 15789/1000000
-Post‐expand include size: 324482/2097152 bytes
-Template argument size: 63579/2097152 bytes
+Preprocessor visited node count: 11531/1000000
+Preprocessor generated node count: 17272/1000000
+Post‐expand include size: 324199/2097152 bytes
+Template argument size: 63390/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:732-0!*!0!!en!*!* and timestamp 20220728222850 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:732-0!*!0!!en!*!* and timestamp 20230120015449 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/equal_range&amp;oldid=128303">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/equal_range&amp;oldid=128303</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/equal_range&amp;oldid=146428">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/equal_range&amp;oldid=146428</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -642,17 +635,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/equal_range">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 22 April 2021, at 02:36.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 232,561 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -667,7 +649,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.985 secs. -->
+</script><!-- Served in 4.281 secs. -->
 	</body>
-<!-- Cached 20220728222850 -->
+<!-- Cached 20230120015450 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/freestanding","wgTitle":"cpp/freestanding","wgCurRevisionId":141283,"wgArticleId":17908,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/freestanding","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/freestanding","wgTitle":"cpp/freestanding","wgCurRevisionId":143595,"wgArticleId":17908,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/freestanding","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -47,7 +47,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> Freestanding and hosted</strong> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -70,7 +71,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="symbol_index.html" title="cpp/symbol index"> Symbols index</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
-<p>There are two kinds of implementations defined by the C++ standard: <i><b>hosted</b></i> and <i><b>freestanding</b></i> implementations. For <i>hosted</i> implementations the set of standard library headers required by the C++ standard is much larger than for <i>freestanding</i> ones. In a <i>freestanding</i> implementation execution may happen without an operating system.
+<p>There are two kinds of implementations defined by the C++ standard: <i><b>hosted</b></i> and <i><b>freestanding</b></i> implementations. For <i>hosted</i> implementations, the set of standard library headers required by the C++ standard is much larger than for <i>freestanding</i> ones. In a <i>freestanding</i> implementation, execution may happen without an operating system.
 </p><p>The kind of the implementation is implementation-defined. <span class="t-rev-inl t-since-cxx11"><span>The macro <code>__STDC_HOSTED__</code> is predefined to <code>1</code> for hosted implementations and <code>0</code> for freestanding implementations.</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>
 </p>
  <table class="t-rev-begin">
@@ -101,7 +102,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> In a <i>hosted</i> implementation, a program must contain a global function called <a href="language/main_function.html" title="cpp/language/main function"><tt>main</tt></a>. Executing a program starts a main <a href="thread.html" title="cpp/thread">thread of execution</a> in which the <code>main</code> function is invoked, and in which variables of static <a href="language/storage_duration.html" title="cpp/language/storage duration">storage duration</a> might be initialized and destroyed.
 </td></tr></table>
-<h3><span class="mw-headline" id="Requirements_on_standard_library_headers">Requirements on <a href="header.html" title="cpp/header">standard library headers</a></span></h3>
+<p><span id="header_requirements"></span>
+</p>
+<h3><span class="mw-headline" id="Requirements_on_standard_library_headers">Requirements on <a href="headers.html" title="cpp/header">standard library headers</a></span></h3>
 <p>A <i>freestanding</i> implementation has an implementation-defined set of headers. This set includes at least the headers in the following table:
 </p>
 <table class="wikitable">
@@ -172,6 +175,34 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> <a href="header/atomic.html" title="cpp/header/atomic"><tt>&lt;atomic&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(since C++11)</span><sup id="cite_ref-2" class="reference"><a href="freestanding.html#cite_note-2">[2]</a></sup>
 </td></tr>
 <tr>
+<td> Utility components </td>
+<td> <a href="header/utility.html" title="cpp/header/utility"><tt>&lt;utility&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(since C++23)</span>
+</td></tr>
+<tr>
+<td> Tuples </td>
+<td> <a href="header/tuple.html" title="cpp/header/tuple"><tt>&lt;tuple&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(since C++23)</span>
+</td></tr>
+<tr>
+<td> Memory </td>
+<td> <a href="header/memory.html" title="cpp/header/memory"><tt>&lt;memory&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> <span class="t-mark">(partial)</span>
+</td></tr>
+<tr>
+<td> Function objects </td>
+<td> <a href="header/functional.html" title="cpp/header/functional"><tt>&lt;functional&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> <span class="t-mark">(partial)</span>
+</td></tr>
+<tr>
+<td> Compile-time rational arithmetic </td>
+<td> <a href="header/ratio.html" title="cpp/header/ratio"><tt>&lt;ratio&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(since C++23)</span>
+</td></tr>
+<tr>
+<td> Iterators library </td>
+<td> <a href="header/iterator.html" title="cpp/header/iterator"><tt>&lt;iterator&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> <span class="t-mark">(partial)</span>
+</td></tr>
+<tr>
+<td> Ranges library </td>
+<td> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> <span class="t-mark">(partial)</span>
+</td></tr>
+<tr>
 <td> Deprecated headers </td>
 <td> <a href="header/ciso646.html" title="cpp/header/ciso646"><tt>&lt;ciso646&gt;</tt></a> <a href="header/cstdalign.html" title="cpp/header/cstdalign"><tt>&lt;cstdalign&gt;</tt></a> <a href="header/cstdbool.html" title="cpp/header/cstdbool"><tt>&lt;cstdbool&gt;</tt></a> <span class="t-mark-rev t-since-cxx11">(since C++11)</span><span class="t-mark-rev t-until-cxx20">(until C++20)</span>
 </td></tr></table>
@@ -182,9 +213,26 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li>
 </ol>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Compiler vendors may not correctly support freestanding implementation, for either implementation issues (see: <a rel="nofollow" class="external text" href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=100057">GCC bug 100057</a>) or just ignoring freestanding as a whole (LLVM libcxx and msvc stl).
+<p>Compiler vendors might not correctly support freestanding implementation, for either implementation issues, or just ignoring freestanding as a whole (LLVM libcxx and msvc stl).
+</p><p>Many features will be freestanding in C++23 but with partial headers. Whether array would be freestanding in the future is under discussion.
 </p>
 <h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2023): 
+</li></ul>
+<dl><dd><ul><li> 4.1 Implementation compliance [intro.compliance] (p: 10)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.9.2 Multi-threaded executions and data races [intro.multithread] (p: 84)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 6.9.3.1 main function [basic.start.main] (p: 89)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 16.4.2.5 Freestanding implementations [compliance] (p: 483)
+</li></ul>
+</dd></dl>
+</div>
 <div class="t-ref-std-c++20">
 <ul><li> C++20 standard (ISO/IEC 14882:2020): 
 </li></ul>
@@ -291,7 +339,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> &lt;coroutine&gt; is freestanding,<br> but uses std::hash which is not
 </td>
-<td> Not yet fixed
+<td> Fixed in C++23 with &lt;functional&gt;<br>being partial freestanding
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -300,19 +348,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2583/1000000
-Preprocessor generated node count: 6314/1000000
-Post‐expand include size: 34505/2097152 bytes
-Template argument size: 8476/2097152 bytes
+Preprocessor visited node count: 3167/1000000
+Preprocessor generated node count: 8430/1000000
+Post‐expand include size: 38372/2097152 bytes
+Template argument size: 9833/2097152 bytes
 Highest expansion depth: 13/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17908-0!*!0!!en!*!* and timestamp 20220723224211 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17908-0!*!0!!en!*!* and timestamp 20230120003924 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/freestanding&amp;oldid=141283">https://en.cppreference.com/mwiki/index.php?title=cpp/freestanding&amp;oldid=141283</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/freestanding&amp;oldid=143595">https://en.cppreference.com/mwiki/index.php?title=cpp/freestanding&amp;oldid=143595</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -325,17 +373,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/freestanding">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 23 July 2022, at 15:42.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 147,154 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -350,7 +387,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.070 secs. -->
+</script><!-- Served in 0.728 secs. -->
 	</body>
-<!-- Cached 20220723225143 -->
+<!-- Cached 20230120003924 -->
 </html>

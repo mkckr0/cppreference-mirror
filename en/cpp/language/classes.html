@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/classes","wgTitle":"cpp/language/classes","wgCurRevisionId":141381,"wgArticleId":9899,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/classes","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/classes","wgTitle":"cpp/language/classes","wgCurRevisionId":145517,"wgArticleId":9899,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/classes","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -47,7 +47,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -286,7 +287,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> a member function,
 </li><li> a member type,
 </li><li> a member template,
-</li><li> an enumerator of an <span class="t-rev-inl t-since-cxx11"><span>unscoped</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> enumeration, or
+</li><li> an enumerator of an enumeration <span class="t-rev-inl t-since-cxx11"><span>(unless the enumeration is scoped)</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>, or
 </li><li> a member of a member anonymous union.
 </li></ul>
 <p>However, a non-static data member may use the name <code>T</code> as long as there are no user-declared constructors.
@@ -306,49 +307,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <h4> <span class="mw-headline" id="Trivially_copyable_class">Trivially copyable class</span></h4>
 <p>A <i>trivially copyable class</i> is a class that
 </p>
- <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx20"><td>
-<ul><li> has at least one non-deleted copy constructor, move constructor, copy assignment operator, or move assignment operator
-</li><li> each copy constructor is either <a href="copy_constructor.html#Trivial_copy_constructor" title="cpp/language/copy constructor">trivial</a> or deleted
-</li><li> each move constructor is either <a href="move_constructor.html#Trivial_move_constructor" title="cpp/language/move constructor">trivial</a> or deleted
-</li><li> each copy assignment operator is either <a href="as_operator.html#Trivial_copy_assignment" title="cpp/language/copy assignment">trivial</a> or deleted
-</li><li> each move assignment operator is either <a href="move_operator.html#Trivial_move_assignment" title="cpp/language/move assignment">trivial</a> or deleted, and
-</li><li> has a non-deleted <a href="destructor.html#Trivial_destructor" title="cpp/language/destructor">trivial destructor</a>.
-</li></ul>
-</td>
-<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
-<tr class="t-rev t-since-cxx20"><td>
 <ul><li> has at least one eligible <a href="copy_constructor.html#Eligible_copy_constructor" title="cpp/language/copy constructor">copy constructor</a>, <a href="move_constructor.html#Eligible_move_constructor" title="cpp/language/move constructor">move constructor</a>, <a href="as_operator.html#Eligible_copy_assignment_operator" title="cpp/language/copy assignment">copy assignment operator</a>, or <a href="move_operator.html#Eligible_move_assignment_operator" title="cpp/language/move assignment">move assignment operator</a>,
 </li><li> each eligible copy constructor is <a href="copy_constructor.html#Trivial_copy_constructor" title="cpp/language/copy constructor">trivial</a>
 </li><li> each eligible move constructor is <a href="move_constructor.html#Trivial_move_constructor" title="cpp/language/move constructor">trivial</a>
-</li><li> each eligible copy assignment operator is <a href="as_operator.html#Trivial_copy_assignment" title="cpp/language/copy assignment">trivial</a>
-</li><li> each eligible move assignment operator is <a href="move_operator.html#Trivial_move_assignment" title="cpp/language/move assignment">trivial</a>, and
+</li><li> each eligible copy assignment operator is <a href="as_operator.html#Trivial_copy_assignment_operator" title="cpp/language/copy assignment">trivial</a>
+</li><li> each eligible move assignment operator is <a href="move_operator.html#Trivial_move_assignment_operator" title="cpp/language/move assignment">trivial</a>, and
 </li><li> has a non-deleted <a href="destructor.html#Trivial_destructor" title="cpp/language/destructor">trivial destructor</a>.
 </li></ul>
-</td>
-<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
-</table>
-<p><br>
-</p>
 <h4> <span class="mw-headline" id="Trivial_class">Trivial class</span></h4>
 <p>A <i>trivial class</i> is a class that
 </p>
 <ul><li> is trivially copyable, and
+</li><li> has one or more <a href="default_constructor.html#Eligible_default_constructor" title="cpp/language/default constructor">eligible default constructors</a> such that each is <a href="default_constructor.html#Trivial_default_constructor" title="cpp/language/default constructor">trivial</a>.
 </li></ul>
- <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx20"><td>
-<ul><li> has one or more default constructors, all of which are either <a href="default_constructor.html#Trivial_default_constructor" title="cpp/language/default constructor">trivial</a> or deleted and at least one of which is not deleted.
-</li></ul>
-</td>
-<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
-<tr class="t-rev t-since-cxx20"><td>
-<ul><li> has one or more <a href="default_constructor.html#Eligible_default_constructor" title="cpp/language/default constructor">eligible default constructors</a>, all of which are <a href="default_constructor.html#Trivial_default_constructor" title="cpp/language/default constructor">trivial</a>.
-</li></ul>
-</td>
-<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
-</table>
-<p><br>
-</p>
 <h4> <span class="mw-headline" id="Standard-layout_class">Standard-layout class</span></h4>
 <p>A <i>standard-layout class</i> is a class that
 </p>
@@ -356,8 +327,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> has no <a href="virtual.html" title="cpp/language/virtual">virtual functions</a> and no <a href="derived_class.html#Virtual_base_classes" title="cpp/language/derived class">virtual base classes</a>,
 </li><li> has the same <a href="access.html" title="cpp/language/access">access control</a> for all non-static data members,
 </li><li> has no non-standard-layout base classes,
-</li><li> has all non-static data members and <a href="bitfield.html" title="cpp/language/bit field">bit-fields</a> in the class and its base classes first declared in the same class, and
-</li><li> given the class as S, has no element of the set M(S) of types as a base class, where M(X) for a type X is defined as:
+</li><li> only one class in the hierarchy has non-static data members, and
+</li><li> Informally, none of the base classes has the same type as the first non-static data member. Or, formally: given the class as S, has no element of the set M(S) of types as a base class, where M(X) for a type X is defined as:
 </li></ul>
 <dl><dd><ul><li> If X is a non-union class type with no (possibly inherited) non-static data members, the set M(X) is empty.
 </li><li> If X is a non-union class type whose first non-static data member has type X0 (where said member may be an anonymous union), the set M(X) consists of X0 and the elements of M(X0).
@@ -366,30 +337,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> If X is a non-class, non-array type, the set M(X) is empty.
 </li></ul>
 </dd></dl>
-<p><br>
-A <i>standard-layout struct</i> is a standard-layout class defined with the class keyword <a href="../keyword/struct.html" title="cpp/keyword/struct"><tt>struct</tt></a> or the class keyword <a href="../keyword/class.html" title="cpp/keyword/class"><tt>class</tt></a>. A <i>standard-layout union</i> is a standard-layout class defined with the class keyword <a href="../keyword/union.html" title="cpp/keyword/union"><tt>union</tt></a>.
+<p>A <i>standard-layout struct</i> is a standard-layout class defined with the class keyword <a href="../keyword/struct.html" title="cpp/keyword/struct"><tt>struct</tt></a> or the class keyword <a href="../keyword/class.html" title="cpp/keyword/class"><tt>class</tt></a>. A <i>standard-layout union</i> is a standard-layout class defined with the class keyword <a href="../keyword/union.html" title="cpp/keyword/union"><tt>union</tt></a>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
-<p><br>
-</p>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx20"><td>
-<h4> <span class="mw-headline" id="Implicit-lifetime_class">Implicit-lifetime class</span></h4>
+<h4><span class="mw-headline" id="Implicit-lifetime_class">Implicit-lifetime class</span></h4>
 <p>An <i>implicit-lifetime class</i> is a class that
 </p>
-<ul><li> is an <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">aggregate</a>, or
+<ul><li> is an <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">aggregate</a> whose destructor is not <span class="t-rev-inl t-until-cxx11"><span>user-declared</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span><a href="function.html#User-provided_functions" title="cpp/language/function">user-provided</a></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>, or
 </li><li> has at least one trivial eligible constructor and a trivial, non-deleted destructor.
 </li></ul>
-</td>
-<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
-</table>
-<p><br>
+<p>Notes: the implicit-lifetime property is clarified by defect report <a rel="nofollow" class="external text" href="https://wg21.link/P0593R6">P0593R6</a>.
 </p>
- <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx20"><td>
-<h4> <span class="mw-headline" id="POD_class">POD class</span></h4>
+<h4><span class="mw-headline" id="POD_class">POD class</span></h4>
 <p>A <i>POD class</i> is a class that
 </p>
  <table class="t-rev-begin">
@@ -409,11 +370,14 @@ A <i>standard-layout struct</i> is a standard-layout class defined with the clas
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
-<p><br>
-A <i>POD struct</i> is a non-union POD class. A <i>POD union</i> is a union that is a POD class.
+<p>A <i>POD struct</i> is a non-union POD class. A <i>POD union</i> is a union that is a POD class.
+</p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx20"><td>
+<p>The usage of the POD property is deprecated. User codes should expect or require the trivial or standard-layout property, or both of them.
 </p>
 </td>
-<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
 <h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
@@ -517,23 +481,32 @@ A <i>POD struct</i> is a non-union POD class. A <i>POD union</i> is a union that
 <td> the definition of M(X) in determining a standard-<br>layout class did not consider the case of<br>a class whose first member is an array
 </td>
 <td> addressed this case in<br>the definition of M(X)
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2605.html">CWG 2605</a>
+</td>
+<td> C++98
+</td>
+<td> an implicit-lifetime class could have a user-provided destructor
+</td>
+<td> prohibited
 </td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4041/1000000
+Preprocessor visited node count: 3845/1000000
 Preprocessor generated node count: 9013/1000000
-Post‐expand include size: 164393/2097152 bytes
-Template argument size: 35283/2097152 bytes
+Post‐expand include size: 153764/2097152 bytes
+Template argument size: 25911/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9899-0!*!0!!en!*!* and timestamp 20220726085829 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9899-0!*!0!!en!*!* and timestamp 20230120005015 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/classes&amp;oldid=141381">https://en.cppreference.com/mwiki/index.php?title=cpp/language/classes&amp;oldid=141381</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/classes&amp;oldid=145517">https://en.cppreference.com/mwiki/index.php?title=cpp/language/classes&amp;oldid=145517</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -546,17 +519,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/classes">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 26 July 2022, at 01:58.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 282,321 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -571,7 +533,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.042 secs. -->
+</script><!-- Served in 0.461 secs. -->
 	</body>
-<!-- Cached 20220726085911 -->
+<!-- Cached 20230120005015 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/iterator/advance","wgTitle":"cpp/iterator/advance","wgCurRevisionId":127973,"wgArticleId":2671,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/iterator/advance","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/iterator/advance","wgTitle":"cpp/iterator/advance","wgCurRevisionId":145983,"wgArticleId":2671,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/iterator/advance","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -277,39 +278,39 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt, <span class="kw1">class</span> Distance <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_1"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt, <span class="kw1">class</span> Distance <span class="sy1">&gt;</span><br>
 <span class="kw4">void</span> advance<span class="br0">(</span> InputIt<span class="sy3">&amp;</span> it, Distance n <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx17">(until C++17)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt, <span class="kw1">class</span> Distance <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_2"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt, <span class="kw1">class</span> Distance <span class="sy1">&gt;</span><br>
 <span class="kw4">constexpr</span> <span class="kw4">void</span> advance<span class="br0">(</span> InputIt<span class="sy3">&amp;</span> it, Distance n <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Increments given iterator <code>it</code> by <code>n</code> elements.
-</p><p>If <code>n</code> is negative, the iterator is decremented. In this case, <code>InputIt</code> must meet the requirements of <a href="../named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyBidirectionalIterator</span></a>, otherwise the behavior is undefined.
+<p>Increments given iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">it</span></span> by <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span> elements.
+</p><p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span> is negative, the iterator is decremented. In this case, <code>InputIt</code> must meet the requirements of <a href="../named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyBidirectionalIterator</span></a>, otherwise the behavior is undefined.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  it
+<td> it
 </td>
 <td> -
 </td>
-<td>  iterator to be advanced
+<td> iterator to be advanced
 </td></tr>
 <tr class="t-par">
-<td>  n
+<td> n
 </td>
 <td> -
 </td>
-<td>  number of elements <code>it</code> should be advanced
+<td> number of elements <span class="t-c"><span class="mw-geshi cpp source-cpp">it</span></span> should be advanced
 </td></tr>
 <tr class="t-par-hitem">
 <td colspan="3"> Type requirements
@@ -325,7 +326,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>However, if <code>InputIt</code> additionally meets the requirements of <a href="../named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a>, complexity is constant.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>The behavior is undefined if the specified sequence of increments or decrements would require that a non-incrementable iterator (such as the past-the-end iterator) is incremented, or that a non-decrementable iterator (such as the front iterator or the singular iterator) is decremented.
+<p>The behavior is undefined if the specified sequence of increments or decrements would require that a non-incrementable iterator (such as the past-the-end iterator) is incremented, or that a non-decrementable iterator (such as the front iterator or the <a href="../iterator.html#Dereferenceability_and_validity" title="cpp/iterator">singular</a> iterator) is decremented.
 </p>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <p>See also the implementations in <a rel="nofollow" class="external text" href="https://github.com/gcc-mirror/gcc/blob/d9375e490072d1aae73a93949aa158fcd2a27018/libstdc%2B%2B-v3/include/bits/stl_iterator_base_funcs.h#L200">libstdc++</a> and <a rel="nofollow" class="external text" href="https://github.com/llvm-mirror/libcxx/blob/a12cb9d211019d99b5875b6d8034617cbc24c2cc/include/iterator#L582">libc++</a>.
@@ -334,51 +335,48 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="eq-fun-cpp-table">
 
 <tr>
-<th> First version
+<th><a href="advance.html#Version_1">Non-constexpr version</a>
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// implementation via tag dispatch, available in C++98 with constexpr removed</span>
-<span class="kw1">namespace</span> detail <span class="br0">{</span>
- 
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
-<span class="kw4">constexpr</span> <span class="co1">// required since C++17</span>
-<span class="kw4">void</span> do_advance<span class="br0">(</span>It<span class="sy3">&amp;</span> it, <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> n,
-                <a href="iterator_tags.html"><span class="kw654">std::<span class="me2">input_iterator_tag</span></span></a><span class="br0">)</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> detail
 <span class="br0">{</span>
-    <span class="kw1">while</span> <span class="br0">(</span>n <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="sy2">--</span>n<span class="sy4">;</span>
-        <span class="sy2">++</span>it<span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
+    <span class="kw4">void</span> do_advance<span class="br0">(</span>It<span class="sy3">&amp;</span> it, <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> n,
+                    <a href="iterator_tags.html"><span class="kw654">std::<span class="me2">input_iterator_tag</span></span></a><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">while</span> <span class="br0">(</span>n <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+        <span class="br0">{</span>
+            <span class="sy2">--</span>n<span class="sy4">;</span>
+            <span class="sy2">++</span>it<span class="sy4">;</span>
+        <span class="br0">}</span>
     <span class="br0">}</span>
-<span class="br0">}</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
-<span class="kw4">constexpr</span> <span class="co1">// required since C++17</span>
-<span class="kw4">void</span> do_advance<span class="br0">(</span>It<span class="sy3">&amp;</span> it, <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> n,
-                <a href="iterator_tags.html"><span class="kw657">std::<span class="me2">bidirectional_iterator_tag</span></span></a><span class="br0">)</span>
-<span class="br0">{</span>
-    <span class="kw1">while</span> <span class="br0">(</span>n <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="sy2">--</span>n<span class="sy4">;</span>
-        <span class="sy2">++</span>it<span class="sy4">;</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
+    <span class="kw4">void</span> do_advance<span class="br0">(</span>It<span class="sy3">&amp;</span> it, <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> n,
+                    <a href="iterator_tags.html"><span class="kw657">std::<span class="me2">bidirectional_iterator_tag</span></span></a><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">while</span> <span class="br0">(</span>n <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+        <span class="br0">{</span>
+            <span class="sy2">--</span>n<span class="sy4">;</span>
+            <span class="sy2">++</span>it<span class="sy4">;</span>
+        <span class="br0">}</span>
+        <span class="kw1">while</span> <span class="br0">(</span>n <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="br0">)</span>
+        <span class="br0">{</span>
+            <span class="sy2">++</span>n<span class="sy4">;</span>
+            <span class="sy2">--</span>it<span class="sy4">;</span>
+        <span class="br0">}</span>
     <span class="br0">}</span>
-    <span class="kw1">while</span> <span class="br0">(</span>n <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="sy2">++</span>n<span class="sy4">;</span>
-        <span class="sy2">--</span>it<span class="sy4">;</span>
+ 
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
+    <span class="kw4">void</span> do_advance<span class="br0">(</span>It<span class="sy3">&amp;</span> it, <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> n,
+                    <a href="iterator_tags.html"><span class="kw658">std::<span class="me2">random_access_iterator_tag</span></span></a><span class="br0">)</span>
+    <span class="br0">{</span>
+        it <span class="sy2">+</span><span class="sy1">=</span> n<span class="sy4">;</span>
     <span class="br0">}</span>
-<span class="br0">}</span>
- 
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
-<span class="kw4">constexpr</span> <span class="co1">// required since C++17</span>
-<span class="kw4">void</span> do_advance<span class="br0">(</span>It<span class="sy3">&amp;</span> it, <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> n,
-                <a href="iterator_tags.html"><span class="kw658">std::<span class="me2">random_access_iterator_tag</span></span></a><span class="br0">)</span>
-<span class="br0">{</span>
-    it <span class="sy2">+</span><span class="sy1">=</span> n<span class="sy4">;</span>
-<span class="br0">}</span>
- 
 <span class="br0">}</span> <span class="co1">// namespace detail</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It, <span class="kw1">class</span> Distance<span class="sy1">&gt;</span>
-<span class="kw4">constexpr</span> <span class="co1">// since C++17</span>
 <span class="kw4">void</span> advance<span class="br0">(</span>It<span class="sy3">&amp;</span> it, Distance n<span class="br0">)</span>
 <span class="br0">{</span>
     detail<span class="sy4">::</span><span class="me2">do_advance</span><span class="br0">(</span>it, <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span><span class="br0">(</span>n<span class="br0">)</span>,
@@ -386,12 +384,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Second version
+<th><a href="advance.html#Version_2">constexpr version</a>
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// implementation via constexpr if, available in C++17</span>
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It, <span class="kw1">class</span> Distance<span class="sy1">&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It, <span class="kw1">class</span> Distance<span class="sy1">&gt;</span>
 <span class="kw4">constexpr</span> <span class="kw4">void</span> advance<span class="br0">(</span>It<span class="sy3">&amp;</span> it, Distance n<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">using</span> category <span class="sy1">=</span> <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator_category</span><span class="sy4">;</span>
@@ -400,13 +397,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw4">auto</span> dist <span class="sy1">=</span> <span class="kw1">typename</span> <a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>It<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span><span class="br0">(</span>n<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="kw4">constexpr</span> <span class="br0">(</span><a href="../types/is_base_of.html"><span class="kw593">std::<span class="me2">is_base_of_v</span></span></a><span class="sy1">&lt;</span><a href="iterator_tags.html"><span class="kw658">std::<span class="me2">random_access_iterator_tag</span></span></a>, category<span class="sy1">&gt;</span><span class="br0">)</span>
         it <span class="sy2">+</span><span class="sy1">=</span> dist<span class="sy4">;</span>
-    <span class="kw1">else</span> <span class="br0">{</span>
-        <span class="kw1">while</span> <span class="br0">(</span>dist <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">else</span>
+    <span class="br0">{</span>
+        <span class="kw1">while</span> <span class="br0">(</span>dist <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+        <span class="br0">{</span>
             <span class="sy2">--</span>dist<span class="sy4">;</span>
             <span class="sy2">++</span>it<span class="sy4">;</span>
         <span class="br0">}</span>
-        <span class="kw1">if</span> <span class="kw4">constexpr</span> <span class="br0">(</span><a href="../types/is_base_of.html"><span class="kw593">std::<span class="me2">is_base_of_v</span></span></a><span class="sy1">&lt;</span><a href="iterator_tags.html"><span class="kw657">std::<span class="me2">bidirectional_iterator_tag</span></span></a>, category<span class="sy1">&gt;</span><span class="br0">)</span> <span class="br0">{</span>
-            <span class="kw1">while</span> <span class="br0">(</span>dist <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="kw4">constexpr</span> <span class="br0">(</span><a href="../types/is_base_of.html"><span class="kw593">std::<span class="me2">is_base_of_v</span></span></a><span class="sy1">&lt;</span><a href="iterator_tags.html"><span class="kw657">std::<span class="me2">bidirectional_iterator_tag</span></span></a>, category<span class="sy1">&gt;</span><span class="br0">)</span>
+        <span class="br0">{</span>
+            <span class="kw1">while</span> <span class="br0">(</span>dist <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="br0">)</span>
+            <span class="br0">{</span>
                 <span class="sy2">++</span>dist<span class="sy4">;</span>
                 <span class="sy2">--</span>it<span class="sy4">;</span>
             <span class="br0">}</span>
@@ -422,7 +423,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> 
 <span class="br0">{</span>
-    <a href="../container/vector.html"><span class="kw1271">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">{</span> <span class="nu0">3</span>, <span class="nu0">1</span>, <span class="nu0">4</span> <span class="br0">}</span><span class="sy4">;</span>
+    <a href="../container/vector.html"><span class="kw1271">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">1</span>, <span class="nu0">4</span><span class="br0">}</span><span class="sy4">;</span>
  
     <span class="kw4">auto</span> vi <span class="sy1">=</span> v.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     std<span class="sy4">::</span><span class="me2">advance</span><span class="br0">(</span>vi, <span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span>
@@ -462,19 +463,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7537/1000000
-Preprocessor generated node count: 10419/1000000
-Post‐expand include size: 251559/2097152 bytes
-Template argument size: 53505/2097152 bytes
+Preprocessor visited node count: 7729/1000000
+Preprocessor generated node count: 11321/1000000
+Post‐expand include size: 253179/2097152 bytes
+Template argument size: 53516/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2671-0!*!0!!en!*!* and timestamp 20220728185902 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2671-0!*!0!!en!*!* and timestamp 20230120010850 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/advance&amp;oldid=127973">https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/advance&amp;oldid=127973</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/advance&amp;oldid=145983">https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/advance&amp;oldid=145983</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -487,17 +488,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/iterator/advance">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 5 April 2021, at 01:08.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 402,656 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -512,7 +502,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.280 secs. -->
+</script><!-- Served in 1.409 secs. -->
 	</body>
-<!-- Cached 20220728185903 -->
+<!-- Cached 20230120010850 -->
 </html>

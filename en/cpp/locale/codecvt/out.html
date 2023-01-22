@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="client-nojs">
 <head>
-<title>std::codecvt&lt;InternT,ExternT,State&gt;::out, do_out - cppreference.com</title>
+<title>std::codecvt&lt;InternT,ExternT,StateT&gt;::out, do_out - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
 <link rel="shortcut icon" href="../../../../common/favicon.ico">
@@ -13,7 +13,7 @@
 
 <script src="../../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/locale/codecvt/out","wgTitle":"cpp/locale/codecvt/out","wgCurRevisionId":111107,"wgArticleId":5179,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/locale/codecvt/out","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/locale/codecvt/out","wgTitle":"cpp/locale/codecvt/out","wgCurRevisionId":142183,"wgArticleId":5179,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/locale/codecvt/out","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -108,7 +108,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::codecvt&lt;InternT,ExternT,State&gt;::</span>out, do_out</h1>
+<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::codecvt&lt;InternT,ExternT,StateT&gt;::</span>out, do_out</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -234,7 +235,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../codecvt.html" title="cpp/locale/codecvt"><tt>std::codecvt</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> Member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="codecvt.html" title="cpp/locale/codecvt/codecvt"><span class="t-lines"><span>codecvt::codecvt</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="~codecvt.html" title="cpp/locale/codecvt/~codecvt"><span class="t-lines"><span>codecvt::~codecvt</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="%7Ecodecvt.html" title="cpp/locale/codecvt/~codecvt"><span class="t-lines"><span>codecvt::~codecvt</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>codecvt::out</span><span>codecvt::do_out</span></span></strong></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="in.html" title="cpp/locale/codecvt/in"><span class="t-lines"><span>codecvt::in</span><span>codecvt::do_in</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unshift.html" title="cpp/locale/codecvt/unshift"><span class="t-lines"><span>codecvt::unshift</span><span>codecvt::do_unshift</span></span></a></div></div></td></tr>
@@ -279,49 +280,53 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> public member function, calls the member function <code>do_out</code> of the most derived class.</div>
-<div class="t-li1"><span class="t-li">2)</span> If this <code>codecvt</code> facet defines a conversion, translates the internal characters from the source range <code>[from, from_end)</code> to external characters, placing the results in the subsequent locations starting at <code>to</code>. Converts no more than <span class="t-c"><span class="mw-geshi cpp source-cpp">from_end <span class="sy2">-</span> from</span></span> internal characters and writes no more than <span class="t-c"><span class="mw-geshi cpp source-cpp">to_end <span class="sy2">-</span> to</span></span> external characters. Leaves <code>from_next</code> and <code>to_next</code> pointing one beyond the last element successfully converted.</div>
-<p>If this <code>codecvt</code> facet does not define a conversion, no characters are converted. <code>to_next</code> is set to be equal to <code>to</code>, <code>state</code> is unchanged, and <span class="t-lc"><a href="../codecvt_base.html" title="cpp/locale/codecvt base">std::codecvt_base::noconv</a></span> is returned.
+<div class="t-li1"><span class="t-li">2)</span> If this <code>codecvt</code> facet defines a conversion, translates the internal characters from the source range <code>[from, from_end)</code> to external characters, placing the results in the subsequent locations starting at <span class="t-c"><span class="mw-geshi cpp source-cpp">to</span></span>. Converts no more than <span class="t-c"><span class="mw-geshi cpp source-cpp">from_end <span class="sy2">-</span> from</span></span> internal characters and writes no more than <span class="t-c"><span class="mw-geshi cpp source-cpp">to_end <span class="sy2">-</span> to</span></span> external characters. Leaves <span class="t-c"><span class="mw-geshi cpp source-cpp">from_next</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">to_next</span></span> pointing one beyond the last element successfully converted.</div>
+<p>If this <code>codecvt</code> facet does not define a conversion, no characters are converted. <span class="t-c"><span class="mw-geshi cpp source-cpp">to_next</span></span> is set to be equal to <span class="t-c"><span class="mw-geshi cpp source-cpp">to</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">state</span></span> is unchanged, and <span class="t-lc"><a href="../codecvt_base.html" title="cpp/locale/codecvt base">std::codecvt_base::noconv</a></span> is returned.
+</p><p><span class="t-c"><span class="mw-geshi cpp source-cpp">do_out<span class="br0">(</span>state, from, from <span class="sy2">+</span> <span class="nu0">1</span>, from_next, to, to_end, to_next<span class="br0">)</span></span></span> must return <code>ok</code> if
 </p>
+<ul><li> this <code>codecvt</code> facet is used by <a href="../../io/basic_filebuf.html" title="cpp/io/basic filebuf"><tt>basic_filebuf</tt></a>, and
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">do_out<span class="br0">(</span>state, from, from_end, from_next, to, to_end, to_next<span class="br0">)</span></span></span> would return <code>ok</code> where <span class="t-c"><span class="mw-geshi cpp source-cpp">from <span class="sy3">!</span><span class="sy1">=</span> from_end</span></span>.
+</li></ul>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>A value of type <span class="t-lc"><a href="../codecvt_base.html" title="cpp/locale/codecvt base">std::codecvt_base::result</a></span>, indicating the success status as follows:
 </p>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td>  <code>ok</code>
+<td> <code>ok</code>
 </td>
-<td>  conversion completed
+<td> conversion completed
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>partial</code>
+<td> <code>partial</code>
 </td>
-<td>  not enough space in the output buffer or unexpected end of source buffer
+<td> not enough space in the output buffer or unexpected end of source buffer
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>error</code>
+<td> <code>error</code>
 </td>
-<td>  encountered a character that could not be converted
+<td> encountered a character that could not be converted
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>noconv</code>
+<td> <code>noconv</code>
 </td>
-<td>  this facet is non-converting, no output written
+<td> this facet is non-converting, no output written
 </td></tr>
 
 </table>
-<p>The non-converting specialization <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../codecvt.html"><span class="kw1943">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span>, <span class="kw4">char</span>, <a href="../../string/multibyte/mbstate_t.html"><span class="kw1182">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;</span></span></span> always returns <span class="t-lc"><a href="../codecvt_base.html" title="cpp/locale/codecvt base">std::codecvt_base::noconv</a></span>
+<p>The non-converting specialization <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../codecvt.html"><span class="kw1943">std::<span class="me2">codecvt</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span>, <span class="kw4">char</span>, <a href="../../string/multibyte/mbstate_t.html"><span class="kw1182">std::<span class="me2">mbstate_t</span></span></a><span class="sy1">&gt;</span></span></span> always returns <span class="t-lc"><a href="../codecvt_base.html" title="cpp/locale/codecvt base">std::codecvt_base::noconv</a></span>.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Requires that <span class="t-c"><span class="mw-geshi cpp source-cpp">from <span class="sy1">&lt;=</span> from_end <span class="sy3">&amp;&amp;</span> to <span class="sy1">&lt;=</span> to_end</span></span> and that <code>state</code> either representing the initial shift state or obtained by converting the preceding characters in the sequence.
+<p>Requires that <span class="t-c"><span class="mw-geshi cpp source-cpp">from <span class="sy1">&lt;=</span> from_end <span class="sy3">&amp;&amp;</span> to <span class="sy1">&lt;=</span> to_end</span></span> and that <span class="t-c"><span class="mw-geshi cpp source-cpp">state</span></span> either representing the initial shift state or obtained by converting the preceding characters in the sequence.
 </p><p>While <code>codecvt</code> supports N:M conversions (e.g. UTF-16 to UTF-8, where two internal characters may be necessary to decide what external characters to output), <span class="t-lc"><a href="../../io/basic_filebuf.html" title="cpp/io/basic filebuf">std::basic_filebuf</a></span> can only use <code>codecvt</code> facets that define a 1:N conversion, that is it must be able to process one internal character at a time when writing to a file.
-</p><p>When performing N:M conversions, this function may return <span class="t-lc"><a href="../codecvt_base.html" title="cpp/locale/codecvt base">std::codecvt_base::partial</a></span> after consuming all source characters (<code>from_next == from_end</code>). This means that another internal character is needed to complete the conversion (e.g. when converting UTF-16 to UTF-8, if the last character in the source buffer is a high surrogate).
-</p><p>The effect on <code>state</code> is deliberately unspecified. In standard facets, it is used to maintain shift state like when calling <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../string/multibyte/wcsrtombs.html"><span class="kw1177">std::<span class="me2">wcsrtombs</span></span></a></span></span>, and is therefore updated to reflect the shift state after the last successfully converted character, but a user-defined facet is free to use it to maintain any other state, e.g. count the number of special characters encountered.
+</p><p>When performing N:M conversions, this function may return <span class="t-lc"><a href="../codecvt_base.html" title="cpp/locale/codecvt base">std::codecvt_base::partial</a></span> after consuming all source characters (<span class="t-c"><span class="mw-geshi cpp source-cpp">from_next <span class="sy1">==</span> from_end</span></span>). This means that another internal character is needed to complete the conversion (e.g. when converting UTF-16 to UTF-8, if the last character in the source buffer is a high surrogate).
+</p><p>The effect on <span class="t-c"><span class="mw-geshi cpp source-cpp">state</span></span> is deliberately unspecified. In standard facets, it is used to maintain shift state like when calling <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../string/multibyte/wcsrtombs.html"><span class="kw1177">std::<span class="me2">wcsrtombs</span></span></a></span></span>, and is therefore updated to reflect the shift state after the last successfully converted character, but a user-defined facet is free to use it to maintain any other state, e.g. count the number of special characters encountered.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -351,6 +356,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">The string in narrow multibyte encoding: zß水🍌</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue76">LWG 76</a>
+</td>
+<td> C++98
+</td>
+<td> it was unclear whether the conversion is required<br>to support taking one internal character at a time
+</td>
+<td> only required if used<br>by <a href="../../io/basic_filebuf.html" title="cpp/io/basic filebuf"><tt>basic_filebuf</tt></a>
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -372,24 +399,24 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="in.html" title="cpp/locale/codecvt/in"> <span class="t-lines"><span>do_in</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   converts a string from externT to internT, such as when reading from file <br> <span class="t-mark">(virtual protected member function)</span> </td></tr>
+<td>   converts a string from <code>ExternT</code> to <code>InternT</code>, such as when reading from file <br> <span class="t-mark">(virtual protected member function)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6014/1000000
-Preprocessor generated node count: 10493/1000000
-Post‐expand include size: 150043/2097152 bytes
-Template argument size: 28275/2097152 bytes
+Preprocessor visited node count: 6386/1000000
+Preprocessor generated node count: 11007/1000000
+Post‐expand include size: 153334/2097152 bytes
+Template argument size: 29139/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5179-0!*!0!!en!*!* and timestamp 20220410091402 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5179-0!*!0!!en!*!* and timestamp 20230120050235 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/locale/codecvt/out&amp;oldid=111107">https://en.cppreference.com/mwiki/index.php?title=cpp/locale/codecvt/out&amp;oldid=111107</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/locale/codecvt/out&amp;oldid=142183">https://en.cppreference.com/mwiki/index.php?title=cpp/locale/codecvt/out&amp;oldid=142183</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -402,17 +429,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/codecvt/out">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 1 June 2019, at 23:25.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 25,763 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -427,7 +443,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.367 secs. -->
+</script><!-- Served in 2.334 secs. -->
 	</body>
-<!-- Cached 20220410091402 -->
+<!-- Cached 20230120050236 -->
 </html>

@@ -258,7 +258,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> <code>maxsize</code> is greater than <span class="t-c"><span class="mw-geshi c source-c">RSIZE_MAX</span></span>
 </li><li> <code>maxsize</code> is less than the generated file name string
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>tmpnam_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;stdio.h&gt;</code>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>tmpnam_s</code>  only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../io.html" title="c/io"><tt>&lt;stdio.h&gt;</tt></a>.</dd></dl></div>
 
 <p><code>tmpnam</code> and <code>tmpnam_s</code> modify static state (which may be shared between these functions) and are not required to be thread-safe.
 </p>
@@ -360,15 +360,15 @@ temporary file name: /tmp/file420gSN</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5885/1000000
-Preprocessor generated node count: 10155/1000000
-Post‐expand include size: 157317/2097152 bytes
-Template argument size: 30436/2097152 bytes
+Preprocessor visited node count: 5937/1000000
+Preprocessor generated node count: 11458/1000000
+Post‐expand include size: 157456/2097152 bytes
+Template argument size: 30500/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6242-0!*!0!!en!*!* and timestamp 20220704171415 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6242-0!*!0!!en!*!* and timestamp 20230120010104 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -385,17 +385,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/io/tmpnam">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 6 November 2021, at 03:57.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 34,257 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -410,7 +399,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.628 secs. -->
+</script><!-- Served in 0.938 secs. -->
 	</body>
-<!-- Cached 20220704171415 -->
+<!-- Cached 20230120010104 -->
 </html>

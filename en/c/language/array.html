@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/array","wgTitle":"c/language/array","wgCurRevisionId":139683,"wgArticleId":13930,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/array","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/array","wgTitle":"c/language/array","wgCurRevisionId":142035,"wgArticleId":13930,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/array","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -282,13 +282,17 @@ where</div>
 <p>If <span class="t-spar">expression</span> is not an <a href="constant_expression.html#Integer_constant_expression" title="c/language/constant expression">integer constant expression</a>, the declarator is for an array of variable size.
 </p><p>Each time the flow of control passes over the declaration, <span class="t-spar">expression</span> is evaluated (and it must always evaluate to a value greater than zero), and the array is allocated (correspondingly, <a href="lifetime.html" title="c/language/lifetime">lifetime</a> of a VLA ends when the declaration goes out of scope). The size of each VLA instance does not change during its lifetime, but on another pass over the same code, it may be allocated with a different size.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="br0">{</span>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
    <span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
-label<span class="sy4">:</span>
+label<span class="sy4">:;</span>
    <span class="kw4">int</span> a<span class="br0">[</span>n<span class="br0">]</span><span class="sy4">;</span> <span class="co1">// re-allocated 10 times, each with a different size</span>
    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"The array has %zu elements<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> a <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>a<span class="br0">)</span><span class="sy4">;</span>
    <span class="kw1">if</span> <span class="br0">(</span>n<span class="sy2">++</span> <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="br0">)</span> <span class="kw1">goto</span> label<span class="sy4">;</span> <span class="co1">// leaving the scope of a VLA ends its lifetime</span>
 <span class="br0">}</span></pre></div></div>
+</div>
 <p>If the size is <code><b>*</b></code>, the declaration is for a VLA of unspecified size. Such declaration may only appear in a function prototype scope, and declares an array of a complete type. In fact, all VLA declarators in function prototype scope are treated as if <span class="t-spar">expression</span> were replaced by <code><b>*</b></code>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> foo<span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> x, <span class="kw4">int</span> a<span class="br0">[</span><span class="sy2">*</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
@@ -413,7 +417,9 @@ s1 <span class="sy1">=</span> s2<span class="sy4">;</span> <span class="co1">// 
 <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> p<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints size of a pointer</span></pre></div></div>
 <p>When an array type is used in a function parameter list, it is transformed to the corresponding pointer type: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="br0">)</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span> a<span class="br0">)</span></span></span> declare the same function. Since the function's actual parameter type is pointer type, a function call with an array argument performs array-to-pointer conversion; the size of the argument array is not available to the called function and must be passed explicitly:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span> a<span class="br0">[</span><span class="br0">]</span>, <span class="kw4">int</span> sz<span class="br0">)</span> <span class="co1">// actually declares void f(int* a, int sz)</span>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span> a<span class="br0">[</span><span class="br0">]</span>, <span class="kw4">int</span> sz<span class="br0">)</span> <span class="co1">// actually declares void f(int* a, int sz)</span>
 <span class="br0">{</span>
     <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> sz<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
        <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, a<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
@@ -423,6 +429,7 @@ s1 <span class="sy1">=</span> s2<span class="sy4">;</span> <span class="co1">// 
     <span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span>
     f<span class="br0">(</span>a, <span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// converts a to int*, passes the pointer</span>
 <span class="br0">}</span></pre></div></div>
+</div>
 <h4><span class="mw-headline" id="Multidimensional_arrays">Multidimensional arrays</span></h4>
 <p>When the element type of an array is another array, it is said that the array is multidimensional:
 </p>
@@ -486,19 +493,19 @@ s1 <span class="sy1">=</span> s2<span class="sy4">;</span> <span class="co1">// 
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3373/1000000
-Preprocessor generated node count: 8469/1000000
-Post‐expand include size: 64784/2097152 bytes
-Template argument size: 20847/2097152 bytes
+Preprocessor visited node count: 3413/1000000
+Preprocessor generated node count: 8678/1000000
+Post‐expand include size: 65636/2097152 bytes
+Template argument size: 22055/2097152 bytes
 Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13930-0!*!0!!en!*!* and timestamp 20220516110539 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13930-0!*!0!!en!*!* and timestamp 20230120014148 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;oldid=139683">https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;oldid=139683</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;oldid=142035">https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;oldid=142035</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -511,17 +518,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/array">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 May 2022, at 04:05.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 169,162 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -536,7 +532,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.035 secs. -->
+</script><!-- Served in 1.100 secs. -->
 	</body>
-<!-- Cached 20220516111210 -->
+<!-- Cached 20230120014148 -->
 </html>

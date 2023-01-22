@@ -13,7 +13,7 @@
 
 <script src="../../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/random/poisson_distribution","wgTitle":"cpp/numeric/random/poisson distribution","wgCurRevisionId":132439,"wgArticleId":3915,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/random/poisson_distribution","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/random/poisson_distribution","wgTitle":"cpp/numeric/random/poisson distribution","wgCurRevisionId":146720,"wgArticleId":3915,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/random/poisson_distribution","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -284,16 +285,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member type
+<td> Member type
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>result_type</code>
+<td> <code>result_type</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">IntType</span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">IntType</span></span>
 </td></tr>
 
 
@@ -319,7 +320,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr>
-<td colspan="2"> <h5> <span class="mw-headline" id="Generation">  Generation </span></h5>
+<td colspan="2"> <h5> <span class="mw-headline" id="Generation"> Generation </span></h5>
 </td></tr>
 
 <tr class="t-dsc">
@@ -329,7 +330,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr>
-<td colspan="2"> <h5> <span class="mw-headline" id="Characteristics">  Characteristics </span></h5>
+<td colspan="2"> <h5> <span class="mw-headline" id="Characteristics"> Characteristics </span></h5>
 </td></tr>
 
 <tr class="t-dsc">
@@ -367,28 +368,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
-<span class="co2">#include &lt;iomanip&gt;</span>
-<span class="co2">#include &lt;string&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iomanip&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;map&gt;</span>
+<span class="co2">#include &lt;string&gt;</span>
 <span class="co2">#include &lt;random&gt;</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="random_device.html"><span class="kw1489">std::<span class="me2">random_device</span></span></a> rd<span class="sy4">;</span>
     <a href="mersenne_twister_engine.html"><span class="kw1492">std::<span class="me2">mt19937</span></span></a> gen<span class="br0">(</span>rd<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="co1">// if an event occurs 4 times a minute on average</span>
-    <span class="co1">// how often is it that it occurs n times in one minute?</span>
+    <span class="co1">// If an event occurs 4 times a minute on average, how</span>
+    <span class="co1">// often is it that it occurs n times in one minute?</span>
     std<span class="sy4">::</span><span class="me2">poisson_distribution</span><span class="sy1">&lt;&gt;</span> d<span class="br0">(</span><span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span>
  
     <a href="../../container/map.html"><span class="kw1284">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">int</span><span class="sy1">&gt;</span> hist<span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> n<span class="sy1">&lt;</span><span class="nu0">10000</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> n<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> n<span class="sy1">&lt;</span><span class="nu0">10000</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
         <span class="sy2">++</span>hist<span class="br0">[</span>d<span class="br0">(</span>gen<span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span>
-    <span class="br0">}</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">auto</span> p <span class="sy4">:</span> hist<span class="br0">)</span> <span class="br0">{</span>
+ 
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> p <span class="sy4">:</span> hist<span class="br0">)</span>
         <a href="../../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../../io/manip/hex.html"><span class="kw1785">std::<span class="me2">hex</span></span></a> <span class="sy1">&lt;&lt;</span> p.<span class="me1">first</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span>
                   <span class="sy1">&lt;&lt;</span> <a href="../../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="br0">(</span>p.<span class="me1">second</span><span class="sy2">/</span><span class="nu0">100</span>, <span class="st0">'*'</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -403,28 +404,33 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 8 **
 9 *
 a
-b 
-c 
+b
+c
 d</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="External_links">External links</span></h3>
-<p><a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/PoissonDistribution.html">Weisstein, Eric W. "Poisson Distribution."</a> From MathWorld--A Wolfram Web Resource.
-</p>
+<table style="border-top:solid 1px;border-bottom:none;border-left:none;border-right:none;">
+
+<tr style="vertical-align:top;">
+<td> </td>
+<td><a rel="nofollow" class="external text" href="https://mathworld.wolfram.com/PoissonDistribution.html">Weisstein, Eric W. "Poisson Distribution."</a> From MathWorld — A Wolfram Web Resource.
+</td></tr></table>
+
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 8403/1000000
-Preprocessor generated node count: 12528/1000000
-Post‐expand include size: 280015/2097152 bytes
-Template argument size: 57442/2097152 bytes
+Preprocessor visited node count: 8426/1000000
+Preprocessor generated node count: 12627/1000000
+Post‐expand include size: 280807/2097152 bytes
+Template argument size: 57515/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3915-0!*!0!!en!*!* and timestamp 20220410095813 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3915-0!*!0!!en!*!* and timestamp 20230121180545 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/random/poisson_distribution&amp;oldid=132439">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/random/poisson_distribution&amp;oldid=132439</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/random/poisson_distribution&amp;oldid=146720">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/random/poisson_distribution&amp;oldid=146720</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -437,17 +443,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/numeric/random/poisson_distribution">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 14 August 2021, at 16:42.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 58,152 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -462,7 +457,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.404 secs. -->
+</script><!-- Served in 1.540 secs. -->
 	</body>
-<!-- Cached 20220410095814 -->
+<!-- Cached 20230121180545 -->
 </html>

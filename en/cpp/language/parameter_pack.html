@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/parameter_pack","wgTitle":"cpp/language/parameter pack","wgCurRevisionId":140905,"wgArticleId":9639,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/parameter_pack","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/parameter_pack","wgTitle":"cpp/language/parameter pack","wgCurRevisionId":143915,"wgArticleId":9639,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/parameter_pack","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -544,7 +545,8 @@ g<span class="br0">(</span><span class="nu0">1</span>, <span class="nu16">0.2</s
 <h4><span class="mw-headline" id="Function_argument_lists">Function argument lists</span></h4>
 <p>A pack expansion may appear inside the parentheses of a function call operator, in which case the largest expression or braced-init-list to the left of the ellipsis is the pattern that is expanded:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">f<span class="br0">(</span><span class="sy3">&amp;</span>args...<span class="br0">)</span><span class="sy4">;</span>             <span class="co1">// expands to f(&amp;E1, &amp;E2, &amp;E3)</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">f<span class="br0">(</span>args...<span class="br0">)</span><span class="sy4">;</span>              <span class="co1">// expands to f(E1, E2, E3)</span>
+f<span class="br0">(</span><span class="sy3">&amp;</span>args...<span class="br0">)</span><span class="sy4">;</span>             <span class="co1">// expands to f(&amp;E1, &amp;E2, &amp;E3)</span>
 f<span class="br0">(</span>n, <span class="sy2">++</span>args...<span class="br0">)</span><span class="sy4">;</span>         <span class="co1">// expands to f(n, ++E1, ++E2, ++E3);</span>
 f<span class="br0">(</span><span class="sy2">++</span>args..., n<span class="br0">)</span><span class="sy4">;</span>         <span class="co1">// expands to f(++E1, ++E2, ++E3, n);</span>
  
@@ -676,6 +678,20 @@ X<span class="sy1">&lt;</span>B, D<span class="sy1">&gt;</span> x<span class="sy
 </table>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: a few words about partial specializations and other ways to access individual elements? Mention recursion vs logarithmic vs shortcuts such as fold expressions </td></tr></table>
+<table class="wikitable">
+
+<tr>
+<th>Feature-test macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_variadic_templates</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">200704L</span></span></span></td>
+<td><span class="t-mark">(C++11)</span></td>
+<td>Variadic templates
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <p>The below example defines a function similar to <span class="t-lc"><a href="../io/c/printf.html" title="cpp/io/c/fprintf">std::printf</a></span>, that replace each occurrence of the character <code>%</code> in the format string with a value.
 </p><p>The first overload is called when only the format string is passed and there is no parameter expansion.
@@ -775,19 +791,19 @@ X<span class="sy1">&lt;</span>B, D<span class="sy1">&gt;</span> x<span class="sy
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4014/1000000
-Preprocessor generated node count: 11734/1000000
-Post‐expand include size: 140821/2097152 bytes
-Template argument size: 25627/2097152 bytes
+Preprocessor visited node count: 4129/1000000
+Preprocessor generated node count: 12122/1000000
+Post‐expand include size: 142271/2097152 bytes
+Template argument size: 25959/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9639-0!*!0!!en!*!* and timestamp 20220710180059 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9639-0!*!0!!en!*!* and timestamp 20230120003853 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/parameter_pack&amp;oldid=140905">https://en.cppreference.com/mwiki/index.php?title=cpp/language/parameter_pack&amp;oldid=140905</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/parameter_pack&amp;oldid=143915">https://en.cppreference.com/mwiki/index.php?title=cpp/language/parameter_pack&amp;oldid=143915</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -800,17 +816,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/parameter_pack">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 10 July 2022, at 11:00.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,432,263 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -825,7 +830,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.040 secs. -->
+</script><!-- Served in 2.679 secs. -->
 	</body>
-<!-- Cached 20220710180257 -->
+<!-- Cached 20230120003853 -->
 </html>

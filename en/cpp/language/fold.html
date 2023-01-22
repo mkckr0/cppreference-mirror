@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/fold","wgTitle":"cpp/language/fold","wgCurRevisionId":140819,"wgArticleId":13849,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/fold","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/fold","wgTitle":"cpp/language/fold","wgCurRevisionId":145541,"wgArticleId":13849,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/fold","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -330,7 +331,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <code><b>(</b></code> <span class="t-spar">pack</span> <span class="t-spar">op</span> <code><b>...</b></code> <code><b>)</b></code>
+<td> <code><b>(</b></code> <span class="t-spar">pack op</span> <code><b>... )</b></code>
 </td>
 <td> (1)
 </td>
@@ -343,7 +344,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <code><b>(</b></code> <code><b>...</b></code> <span class="t-spar">op</span> <span class="t-spar">pack</span> <code><b>)</b></code>
+<td> <code><b>( ...</b></code> <span class="t-spar">op pack</span> <code><b>)</b></code>
 </td>
 <td> (2)
 </td>
@@ -356,7 +357,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <code><b>(</b></code> <span class="t-spar">pack</span> <span class="t-spar">op</span> <code><b>...</b></code> <span class="t-spar">op</span> <span class="t-spar">init</span> <code><b>)</b></code>
+<td> <code><b>(</b></code> <span class="t-spar">pack op</span> <code><b>...</b></code> <span class="t-spar">op init</span> <code><b>)</b></code>
 </td>
 <td> (3)
 </td>
@@ -369,7 +370,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <code><b>(</b></code> <span class="t-spar">init</span> <span class="t-spar">op</span> <code><b>...</b></code> <span class="t-spar">op</span> <span class="t-spar">pack</span> <code><b>)</b></code>
+<td> <code><b>(</b></code> <span class="t-spar">init op</span> <code><b>...</b></code> <span class="t-spar">op pack</span> <code><b>)</b></code>
 </td>
 <td> (4)
 </td>
@@ -389,35 +390,35 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">op</span>
+<td> <span class="t-spar">op</span>
 </td>
 <td> -
 </td>
-<td>  any of the following 32 <i>binary</i> operators: <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">+</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">/</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">%</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">^</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">|</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;&lt;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;&gt;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">+</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">/</span><span class="sy1">=</span></span></span>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">%</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">^</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">|</span><span class="sy1">=</span></span></span>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;&lt;=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;&gt;=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">==</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;&amp;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">||</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp">,</span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp">.<span class="sy2">*</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="sy1">&gt;</span><span class="sy2">*</span></span></span>. In a binary fold, both <span class="t-spar">op</span>s must be the same.
+<td> any of the following 32 <i>binary</i> operators: <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">+</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">/</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">%</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">^</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">|</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;&lt;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;&gt;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">+</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">/</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">%</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">^</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">|</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;&lt;=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;&gt;=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">==</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span><span class="sy1">=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&lt;=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy1">&gt;=</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;&amp;</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">||</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp">,</span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp">.<span class="sy2">*</span></span></span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">-</span><span class="sy1">&gt;</span><span class="sy2">*</span></span></span>. In a binary fold, both <span class="t-spar">op</span>s must be the same.
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">pack</span>
+<td> <span class="t-spar">pack</span>
 </td>
 <td> -
 </td>
-<td>  an expression that contains an unexpanded <a href="parameter_pack.html" title="cpp/language/parameter pack">parameter pack</a> and does not contain an operator with <a href="operator_precedence.html" title="cpp/language/operator precedence">precedence</a> lower than cast at the top level (formally, a <span class="t-spar">cast-expression</span>)
+<td> an expression that contains an unexpanded <a href="parameter_pack.html" title="cpp/language/parameter pack">parameter pack</a> and does not contain an operator with <a href="operator_precedence.html" title="cpp/language/operator precedence">precedence</a> lower than cast at the top level (formally, a <span class="t-spar">cast-expression</span>)
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">init</span>
+<td> <span class="t-spar">init</span>
 </td>
 <td> -
 </td>
-<td>  an expression that does not contain an unexpanded <a href="parameter_pack.html" title="cpp/language/parameter pack">parameter pack</a> and does not contain an operator with <a href="operator_precedence.html" title="cpp/language/operator precedence">precedence</a> lower than cast  at the top level (formally, a <span class="t-spar">cast-expression</span>)
+<td> an expression that does not contain an unexpanded <a href="parameter_pack.html" title="cpp/language/parameter pack">parameter pack</a> and does not contain an operator with <a href="operator_precedence.html" title="cpp/language/operator precedence">precedence</a> lower than cast  at the top level (formally, a <span class="t-spar">cast-expression</span>)
 </td></tr></table>
 <p>Note that the opening and closing parentheses are a required part of the fold expression.
 </p>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>The instantiation of a <i>fold expression</i> expands the expression <code>e</code> as follows:
+<p>The instantiation of a <i>fold expression</i> expands the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">e</span></span> as follows:
 </p>
-<div class="t-li1"><span class="t-li">1)</span> Unary right fold <code>(E <span class="t-spar">op</span> ...)</code> becomes <code>(E<sub>1</sub> <span class="t-spar">op</span> (... <span class="t-spar">op</span> (E<sub>N-1</sub> <span class="t-spar">op</span> E<sub>N</sub>)))</code></div>
-<div class="t-li1"><span class="t-li">2)</span> Unary left fold <code>(... <span class="t-spar">op</span> E)</code> becomes <code>(((E<sub>1</sub> <span class="t-spar">op</span> E<sub>2</sub>) <span class="t-spar">op</span> ...) <span class="t-spar">op</span> E<sub>N</sub>)</code></div>
-<div class="t-li1"><span class="t-li">3)</span> Binary right fold <code>(E <span class="t-spar">op</span> ... <span class="t-spar">op</span> I)</code> becomes <code>(E<sub>1</sub> <span class="t-spar">op</span> (... <span class="t-spar">op</span> (E<sub>N−1</sub> <span class="t-spar">op</span> (E<sub>N</sub> <span class="t-spar">op</span> I))))</code></div>
-<div class="t-li1"><span class="t-li">4)</span> Binary left fold <code>(I <span class="t-spar">op</span> ... <span class="t-spar">op</span> E)</code> becomes <code>((((I <span class="t-spar">op</span> E<sub>1</sub>) <span class="t-spar">op</span> E<sub>2</sub>) <span class="t-spar">op</span> ...) <span class="t-spar">op</span> E<sub>N</sub>)</code></div>
+<div class="t-li1"><span class="t-li">1)</span> Unary right fold <span class="t-c"><code>(E</code> <span class="t-spar">op</span> <code>...)</code></span> becomes <span class="t-c"><code>(E<sub>1</sub></code> <span class="t-spar">op</span> <code>(</code>... <span class="t-spar">op</span> <code>(E<sub>N-1</sub></code> <span class="t-spar">op</span> <code>E<sub>N</sub>)))</code></span></div>
+<div class="t-li1"><span class="t-li">2)</span> Unary left fold <span class="t-c"><code>(...</code> <span class="t-spar">op</span> <code>E)</code></span> becomes <span class="t-c"><code>(((E<sub>1</sub></code> <span class="t-spar">op</span> <code>E<sub>2</sub>)</code> <span class="t-spar">op</span> ...<code>)</code> <span class="t-spar">op</span> <code>E<sub>N</sub>)</code></span></div>
+<div class="t-li1"><span class="t-li">3)</span> Binary right fold <span class="t-c"><code>(E</code> <span class="t-spar">op</span> <code>...</code> <span class="t-spar">op</span> <code>I)</code></span> becomes <span class="t-c"><code>(E<sub>1</sub></code> <span class="t-spar">op</span> <code>(</code>... <span class="t-spar">op</span> <code>(E<sub>N−1</sub></code> <span class="t-spar">op</span> <code>(E<sub>N</sub></code> <span class="t-spar">op</span> <code>I))))</code></span></div>
+<div class="t-li1"><span class="t-li">4)</span> Binary left fold <span class="t-c"><code>(I</code> <span class="t-spar">op</span> <code>...</code> <span class="t-spar">op</span> <code>E)</code></span> becomes <span class="t-c"><code>((((I</code> <span class="t-spar">op</span> <code>E<sub>1</sub>)</code> <span class="t-spar">op</span> <code>E<sub>2</sub>)</code> <span class="t-spar">op</span> ...<code>)</code> <span class="t-spar">op</span> <code>E<sub>N</sub>)</code></span></div>
 <p>(where <code>N</code> is the number of elements in the pack expansion)
 </p><p>For example, 
 </p>
@@ -425,33 +426,48 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">bool</span> all<span class="br0">(</span>Args... <span class="me1">args</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="br0">(</span>... <span class="sy3">&amp;&amp;</span> args<span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
  
 <span class="kw4">bool</span> b <span class="sy1">=</span> all<span class="br0">(</span><span class="kw2">true</span>, <span class="kw2">true</span>, <span class="kw2">true</span>, <span class="kw2">false</span><span class="br0">)</span><span class="sy4">;</span>
- <span class="co1">// within all(), the unary left fold expands as</span>
- <span class="co1">//  return ((true &amp;&amp; true) &amp;&amp; true) &amp;&amp; false;</span>
- <span class="co1">// b is false</span></pre></div></div>
+<span class="co1">// within all(), the unary left fold expands as</span>
+<span class="co1">//  return ((true &amp;&amp; true) &amp;&amp; true) &amp;&amp; false;</span>
+<span class="co1">// b is false</span></pre></div></div>
 <p>When a unary fold is used with a pack expansion of length zero, only the following operators are allowed:
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Logical AND (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;&amp;</span></span></span>). The value for the empty pack is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span></div>
 <div class="t-li1"><span class="t-li">2)</span> Logical OR (<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">||</span></span></span>). The value for the empty pack is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span></div>
 <div class="t-li1"><span class="t-li">3)</span> The comma operator (<span class="t-c"><span class="mw-geshi cpp source-cpp">,</span></span>). The value for the empty pack is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span><span class="br0">(</span><span class="br0">)</span></span></span></div>
-<h3><span class="mw-headline" id="Note">Note</span></h3>
-<p>If the expression used as <span class="t-spar">init</span> or as <span class="t-spar">pack</span> has an operator with precedence below cast at the top level, it must be parenthesized:
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<p>If the expression used as <span class="t-spar">init</span> or as <span class="t-spar">pack</span> has an operator with <a href="operator_precedence.html" title="cpp/language/operator precedence">precedence</a> below cast at the top level, it must be parenthesized:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> ...<span class="me1">Args</span><span class="sy1">&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span>... <span class="me1">Args</span><span class="sy1">&gt;</span>
 <span class="kw4">int</span> sum<span class="br0">(</span>Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span><span class="br0">)</span>
 <span class="br0">{</span>
 <span class="co1">//  return (args + ... + 1 * 2);   // Error: operator with precedence below cast</span>
     <span class="kw1">return</span> <span class="br0">(</span>args <span class="sy2">+</span> ... <span class="sy2">+</span> <span class="br0">(</span><span class="nu0">1</span> <span class="sy2">*</span> <span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
 <span class="br0">}</span></pre></div></div>
+<table class="wikitable">
+
+<tr>
+<th>Feature-test macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_fold_expressions</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201603L</span></span></span></td>
+<td><span class="t-mark">(C++17)</span></td>
+<td><a href="fold.html#Top">Fold expressions</a>
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
-<span class="co2">#include &lt;vector&gt;</span>
-<span class="co2">#include &lt;climits&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;climits&gt;</span>
+<span class="co2">#include &lt;concepts&gt;</span>
 <span class="co2">#include &lt;cstdint&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;type_traits&gt;</span>
 <span class="co2">#include &lt;utility&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> ...<span class="me1">Args</span><span class="sy1">&gt;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span>... <span class="me1">Args</span><span class="sy1">&gt;</span>
 <span class="kw4">void</span> printer<span class="br0">(</span>Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="br0">(</span><a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> ... <span class="sy1">&lt;&lt;</span> args<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
@@ -464,17 +480,24 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="br0">(</span>v.<span class="me1">push_back</span><span class="br0">(</span><a href="../utility/forward.html"><span class="kw1120">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>Args<span class="sy1">&gt;</span><span class="br0">(</span>args<span class="br0">)</span><span class="br0">)</span>, ...<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
-<span class="co1">// compile-time endianness swap based on http://stackoverflow.com/a/36937049 </span>
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a>... <span class="me1">N</span><span class="sy1">&gt;</span>
-<span class="kw4">constexpr</span> T bswap_impl<span class="br0">(</span>T i, <a href="../utility/integer_sequence.html"><span class="kw1111">std::<span class="me2">index_sequence</span></span></a><span class="sy1">&lt;</span>N...<span class="sy1">&gt;</span><span class="br0">)</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a>... <span class="me1">dummy_pack</span><span class="sy1">&gt;</span>
+<span class="kw4">constexpr</span> T bswap_impl<span class="br0">(</span>T i, <a href="../utility/integer_sequence.html"><span class="kw1111">std::<span class="me2">index_sequence</span></span></a><span class="sy1">&lt;</span>dummy_pack...<span class="sy1">&gt;</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">return</span> <span class="br0">(</span><span class="br0">(</span><span class="br0">(</span>i <span class="sy1">&gt;&gt;</span> N<span class="sy2">*</span><a href="../types/climits.html"><span class="kw393">CHAR_BIT</span></a> <span class="sy3">&amp;</span> <a href="../types/integer.html"><span class="kw126">std::<span class="me2">uint8_t</span></span></a><span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span>sizeof<span class="br0">(</span>T<span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span><span class="sy2">-</span>N<span class="br0">)</span><span class="sy2">*</span><a href="../types/climits.html"><span class="kw393">CHAR_BIT</span></a><span class="br0">)</span> <span class="sy3">|</span> ...<span class="br0">)</span><span class="sy4">;</span>
+    T low_byte_mask <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span><span class="sy4">;</span>
+    T ret<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+    <span class="br0">(</span><span class="br0">[</span><span class="sy3">&amp;</span><span class="br0">]</span>
+    <span class="br0">{</span>
+        <span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>dummy_pack<span class="sy4">;</span>
+        ret <span class="sy1">&lt;&lt;=</span> <a href="../types/climits.html"><span class="kw393">CHAR_BIT</span></a><span class="sy4">;</span>
+        ret <span class="sy3">|</span><span class="sy1">=</span> i <span class="sy3">&amp;</span> low_byte_mask<span class="sy4">;</span>
+        i <span class="sy1">&gt;&gt;=</span> <a href="../types/climits.html"><span class="kw393">CHAR_BIT</span></a><span class="sy4">;</span>
+    <span class="br0">}</span><span class="br0">(</span><span class="br0">)</span>, ...<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">return</span> ret<span class="sy4">;</span>
 <span class="br0">}</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U <span class="sy1">=</span> <a href="../types/make_unsigned.html"><span class="kw621">std::<span class="me2">make_unsigned_t</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;&gt;</span>
-<span class="kw4">constexpr</span> U bswap<span class="br0">(</span>T i<span class="br0">)</span>
+<span class="kw4">constexpr</span> <span class="kw4">auto</span> bswap<span class="br0">(</span><a href="../concepts/unsigned_integral.html"><span class="kw2943">std::<span class="me2">unsigned_integral</span></span></a> <span class="kw4">auto</span> i<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">return</span> bswap_impl<span class="sy1">&lt;</span>U<span class="sy1">&gt;</span><span class="br0">(</span>i, <a href="../utility/integer_sequence.html"><span class="kw1113">std::<span class="me2">make_index_sequence</span></span></a><span class="sy1">&lt;</span>sizeof<span class="br0">(</span>T<span class="br0">)</span><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">return</span> bswap_impl<span class="br0">(</span>i, <a href="../utility/integer_sequence.html"><span class="kw1113">std::<span class="me2">make_index_sequence</span></span></a><span class="sy1">&lt;</span>sizeof<span class="br0">(</span>i<span class="br0">)</span><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
@@ -486,8 +509,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     push_back_vec<span class="br0">(</span>v, <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">9</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy4">:</span> v<span class="br0">)</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
  
-    static_assert<span class="br0">(</span>bswap<span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw127">std::<span class="me2">uint16_t</span></span></a><span class="sy1">&gt;</span><span class="br0">(</span>0x1234u<span class="br0">)</span><span class="sy1">==</span>0x3412u<span class="br0">)</span><span class="sy4">;</span>
-    static_assert<span class="br0">(</span>bswap<span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw129">std::<span class="me2">uint64_t</span></span></a><span class="sy1">&gt;</span><span class="br0">(</span>0x0123456789abcdefULL<span class="br0">)</span><span class="sy1">==</span>0xefcdab8967452301ULL<span class="br0">)</span><span class="sy4">;</span>
+    static_assert<span class="br0">(</span>bswap<span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw127">std::<span class="me2">uint16_t</span></span></a><span class="sy1">&gt;</span><span class="br0">(</span>0x1234u<span class="br0">)</span> <span class="sy1">==</span> 
+                                       0x3412u<span class="br0">)</span><span class="sy4">;</span>
+    static_assert<span class="br0">(</span>bswap<span class="sy1">&lt;</span><a href="../types/integer.html"><span class="kw129">std::<span class="me2">uint64_t</span></span></a><span class="sy1">&gt;</span><span class="br0">(</span>0x0123456789abcdefull<span class="br0">)</span> <span class="sy1">==</span>
+                                       0xefcdab8967452301ULL<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -495,10 +520,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 6 2 45 12 1 2 9</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="References">References</span></h3>
-<div class="t-ref-std-c++17">
-<ul><li> C++17 standard (ISO/IEC 14882:2017): 
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2023): 
 </li></ul>
-<dl><dd><ul><li> 8.1.6 Fold expressions [expr.prim.fold] 
+<dl><dd><ul><li> 7.5.6 Fold expressions [expr.prim.fold] 
 </li></ul>
 </dd></dl>
 </div>
@@ -509,29 +534,51 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li></ul>
 </dd></dl>
 </div>
-<div class="t-ref-std-c++23">
-<ul><li> C++23 standard (ISO/IEC 14882:2023): 
+<div class="t-ref-std-c++17">
+<ul><li> C++17 standard (ISO/IEC 14882:2017): 
 </li></ul>
-<dl><dd><ul><li> 7.5.6 Fold expressions [expr.prim.fold] 
+<dl><dd><ul><li> 8.1.6 Fold expressions [expr.prim.fold] 
 </li></ul>
 </dd></dl>
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2611.html">CWG 2611</a>
+</td>
+<td> C++17
+</td>
+<td> the expansion results of fold expressions were not enclosed with parentheses
+</td>
+<td> enclosed with parentheses
+</td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3874/1000000
-Preprocessor generated node count: 8109/1000000
-Post‐expand include size: 137005/2097152 bytes
-Template argument size: 21502/2097152 bytes
+Preprocessor visited node count: 4185/1000000
+Preprocessor generated node count: 8990/1000000
+Post‐expand include size: 138059/2097152 bytes
+Template argument size: 21387/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13849-0!*!0!!en!*!* and timestamp 20220708020643 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13849-0!*!0!!en!*!* and timestamp 20230120004650 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/fold&amp;oldid=140819">https://en.cppreference.com/mwiki/index.php?title=cpp/language/fold&amp;oldid=140819</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/fold&amp;oldid=145541">https://en.cppreference.com/mwiki/index.php?title=cpp/language/fold&amp;oldid=145541</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -544,17 +591,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/fold">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 5 July 2022, at 06:14.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 415,140 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -569,7 +605,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 4.043 secs. -->
+</script><!-- Served in 3.217 secs. -->
 	</body>
-<!-- Cached 20220708020643 -->
+<!-- Cached 20230120004650 -->
 </html>

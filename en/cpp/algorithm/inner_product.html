@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/inner_product","wgTitle":"cpp/algorithm/inner product","wgCurRevisionId":131400,"wgArticleId":742,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/inner_product","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/inner_product","wgTitle":"cpp/algorithm/inner product","wgCurRevisionId":146038,"wgArticleId":742,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/inner_product","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -367,10 +368,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
-<p>T inner_product<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
-</p>
-                 InputIt2 first2, T init <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span id="Version_1"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
+T inner_product<span class="br0">(</span> InputIt1 first1, InputIt1 last1, InputIt2 first2, T init <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
@@ -390,13 +389,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> T,<br>
+<td> <div><span id="Version_2"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> T,<br>
 <p>          <span class="kw1">class</span> BinaryOperation1, <span class="kw1">class</span> BinaryOperation2 <span class="sy1">&gt;</span><br>
-T inner_product<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
-                 InputIt2 first2, T init,<br>
-                 BinaryOperation1 op1,<br>
+T inner_product<span class="br0">(</span> InputIt1 first1, InputIt1 last1, InputIt2 first2, T init,<br>
 </p>
-                 BinaryOperation2 op2 <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                 BinaryOperation1 op1, BinaryOperation2 op2 <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
@@ -405,103 +402,92 @@ T inner_product<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
 <p>          <span class="kw1">class</span> BinaryOperation1, <span class="kw1">class</span> BinaryOperation2 <span class="sy1">&gt;</span><br>
 <span class="kw4">constexpr</span> T inner_product<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
                            InputIt2 first2, T init,<br>
-                           BinaryOperation1 op1,<br>
 </p>
-                           BinaryOperation2 op2 <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                           BinaryOperation1 op1, BinaryOperation2 op2 <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Computes inner product (i.e. sum of products) or performs ordered map/reduce operation on the range <code>[first1, last1)</code> and the range beginning at <code>first2</code>. 
+<p>Computes inner product (i.e. sum of products) or performs ordered map/reduce operation on the range <code>[first1, last1)</code> and the range beginning at <span class="t-c"><span class="mw-geshi cpp source-cpp">first2</span></span>. 
 </p>
-<div class="t-li1"><span class="t-li">1)</span> Initializes the accumulator <code>acc</code> with the initial value <code>init</code> and then
+<div class="t-li1"><span class="t-li">1)</span> Initializes the accumulator <span class="t-c"><span class="mw-geshi cpp source-cpp">acc</span></span> with the initial value <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span> and then
  <table class="t-rev-begin">
 <tr class="t-rev t-until-cxx20"><td>
-<p>modifies it with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> acc <span class="sy2">+</span> <span class="sy2">*</span>first1 <span class="sy2">*</span> <span class="sy2">*</span>first2</span></span>, then modifies again with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> acc <span class="sy2">+</span> <span class="sy2">*</span><span class="br0">(</span>first1<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span> <span class="sy2">*</span> <span class="sy2">*</span><span class="br0">(</span>first2<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span></span></span>, etc
+<p>modifies it with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> acc <span class="sy2">+</span> <span class="sy2">*</span>first1 <span class="sy2">*</span> <span class="sy2">*</span>first2</span></span>, then modifies again with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> acc <span class="sy2">+</span> <span class="sy2">*</span><span class="br0">(</span>first1 <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span> <span class="sy2">*</span> <span class="sy2">*</span><span class="br0">(</span>first2 <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span></span></span>, etc
 </p>
 </td>
 <td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
 <tr class="t-rev t-since-cxx20"><td>
-<p>modifies it with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>acc<span class="br0">)</span> <span class="sy2">+</span> <span class="sy2">*</span>first1 <span class="sy2">*</span> <span class="sy2">*</span>first2</span></span>, then modifies again with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>acc<span class="br0">)</span> <span class="sy2">+</span> <span class="sy2">*</span><span class="br0">(</span>first1<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span> <span class="sy2">*</span> <span class="sy2">*</span><span class="br0">(</span>first2<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span></span></span>, etc
+<p>modifies it with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>acc<span class="br0">)</span> <span class="sy2">+</span> <span class="sy2">*</span>first1 <span class="sy2">*</span> <span class="sy2">*</span>first2</span></span>, then modifies again with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>acc<span class="br0">)</span> <span class="sy2">+</span> <span class="sy2">*</span><span class="br0">(</span>first1 <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span> <span class="sy2">*</span> <span class="sy2">*</span><span class="br0">(</span>first2 <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span></span></span>, etc
 </p>
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
-until reaching <code>last1</code>. For built-in meaning of + and *, this computes inner product of the two ranges.</div>
-<div class="t-li1"><span class="t-li">2)</span> Initializes the accumulator <code>acc</code> with the initial value <code>init</code> and then
+until reaching <span class="t-c"><span class="mw-geshi cpp source-cpp">last1</span></span>. For built-in meaning of + and *, this computes inner product of the two ranges.</div>
+<div class="t-li1"><span class="t-li">2)</span> Initializes the accumulator <span class="t-c"><span class="mw-geshi cpp source-cpp">acc</span></span> with the initial value <span class="t-c"><span class="mw-geshi cpp source-cpp">init</span></span> and then
  <table class="t-rev-begin">
 <tr class="t-rev t-until-cxx20"><td>
-<p>modifies it with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> op1<span class="br0">(</span>acc, op2<span class="br0">(</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span></span></span>, then modifies again with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> op1<span class="br0">(</span>acc, op2<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>first1<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>first2<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span></span></span>, etc
+<p>modifies it with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> op1<span class="br0">(</span>acc, op2<span class="br0">(</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span></span></span>, then modifies again with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> op1<span class="br0">(</span>acc, op2<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>first1 <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>first2 <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span></span></span>, etc
 </p>
 </td>
 <td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
 <tr class="t-rev t-since-cxx20"><td>
-<p>modifies it with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> op1<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>acc<span class="br0">)</span>, op2<span class="br0">(</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span></span></span>, then modifies again with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> op1<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>acc<span class="br0">)</span>, op2<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>first1<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>first2<span class="sy2">+</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span></span></span>, etc
+<p>modifies it with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> op1<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>acc<span class="br0">)</span>, op2<span class="br0">(</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span></span></span>, then modifies again with the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">acc <span class="sy1">=</span> op1<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>acc<span class="br0">)</span>, op2<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>first1 <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>first2 <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span></span></span>, etc
 </p>
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
-until reaching <code>last1</code>.</div>
- <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx11"><td>
-<p><code>op1</code> or <code>op2</code> must not have side effects.
+until reaching <span class="t-c"><span class="mw-geshi cpp source-cpp">last1</span></span>.</div>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp">op1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">op2</span></span> must not invalidate any iterators, including the end iterators, or modify any elements of the range involved.
 </p>
-</td>
-<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
-<tr class="t-rev t-since-cxx11"><td>
-<p><code>op1</code> or <code>op2</code> must not invalidate any iterators, including the end iterators, or modify any elements of the range involved.
-</p>
-</td>
-<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
-</table>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  first1, last1
+<td> first1, last1
 </td>
 <td> -
 </td>
-<td>  the first range of elements
+<td> the first range of elements
 </td></tr>
 <tr class="t-par">
-<td>  first2
+<td> first2
 </td>
 <td> -
 </td>
-<td>  the beginning of the second range of elements
+<td> the beginning of the second range of elements
 </td></tr>
 <tr class="t-par">
-<td>  init
+<td> init
 </td>
 <td> -
 </td>
-<td>  initial value of the sum of the products
+<td> initial value of the sum of the products
 </td></tr>
 <tr class="t-par">
-<td>   op1
+<td>  op1
 </td>
 <td> -
 </td>
-<td>  binary operation function object that will be applied.  This "sum" function takes a value returned by op2 and the current value of the accumulator and produces a new value to be stored in the accumulator. <br>
+<td>  binary operation function object that will be applied. This "sum" function takes a value returned by op2 and the current value of the accumulator and produces a new value to be stored in the accumulator.<br>
 <p>The signature of the function should be equivalent to the following:
 </p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> Ret fun<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
-</p><p>The signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>. <br>The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that objects of types <span class="t-c"><span class="mw-geshi cpp source-cpp">T</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type3</span></span> can be implicitly converted to <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> respectively. The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Ret</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">T</span></span> can be assigned a value of type <span class="t-c"><span class="mw-geshi cpp source-cpp">Ret</span></span>.
+</p><p>The signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>. <br>The types <code> Type1 </code> and <code> Type2 </code> must be such that objects of types <code>T</code> and <code>Type3</code> can be implicitly converted to <code> Type1 </code> and <code> Type2 </code> respectively. The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Ret</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">T</span></span> can be assigned a value of type <span class="t-c"><span class="mw-geshi cpp source-cpp">Ret</span></span>.
 ​
 </p>
 </td></tr>
 <tr class="t-par">
-<td>   op2
+<td>  op2
 </td>
 <td> -
 </td>
-<td>  binary operation function object that will be applied.  This "product" function takes one value from each range and produces a new value. <br>
+<td>  binary operation function object that will be applied. This "product" function takes one value from each range and produces a new value.<br>
 <p>The signature of the function should be equivalent to the following:
 </p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> Ret fun<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
-</p><p>The signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>. <br>The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that objects of types <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt2</span></span> can be dereferenced and then implicitly converted to <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> respectively. The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Ret</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type3</span></span> can be assigned a value of type <span class="t-c"><span class="mw-geshi cpp source-cpp">Ret</span></span>.
+</p><p>The signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>. <br>The types <code> Type1 </code> and <code> Type2 </code> must be such that objects of types <code>InputIt1</code> and <code>InputIt2</code> can be dereferenced and then implicitly converted to <code> Type1 </code> and <code> Type2 </code> respectively. The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Ret</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type3</span></span> can be assigned a value of type <span class="t-c"><span class="mw-geshi cpp source-cpp">Ret</span></span>.
 ​
 </p>
 </td></tr>
@@ -518,36 +504,36 @@ until reaching <code>last1</code>.</div>
 <td colspan="3"> -<div class="spacer"></div><code>T</code> must meet the requirements of <a href="../named_req/CopyAssignable.html" title="cpp/named req/CopyAssignable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyAssignable</span></a> and <a href="../named_req/CopyConstructible.html" title="cpp/named req/CopyConstructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyConstructible</span></a>.
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p>The final value of <code>acc</code> as described above.
+<p>The final value of <span class="t-c"><span class="mw-geshi cpp source-cpp">acc</span></span> as described above.
 </p>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <table class="eq-fun-cpp-table">
 
 <tr>
-<th> First version
+<th><a href="inner_product.html#Version_1">inner_product (1)</a>
 </th></tr>
 <tr>
 <td>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw4">constexpr</span> <span class="co1">// since C++20</span>
-T inner_product<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
-                InputIt2 first2, T init<span class="br0">)</span>
+T inner_product<span class="br0">(</span>InputIt1 first1, InputIt1 last1, InputIt2 first2, T init<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">while</span> <span class="br0">(</span>first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">while</span> <span class="br0">(</span>first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="br0">)</span>
+    <span class="br0">{</span>
          init <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>init<span class="br0">)</span> <span class="sy2">+</span> <span class="sy2">*</span>first1 <span class="sy2">*</span> <span class="sy2">*</span>first2<span class="sy4">;</span> <span class="co1">// std::move since C++20</span>
          <span class="sy2">++</span>first1<span class="sy4">;</span>
          <span class="sy2">++</span>first2<span class="sy4">;</span>
     <span class="br0">}</span>
+ 
     <span class="kw1">return</span> init<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Second version
+<th><a href="inner_product.html#Version_2">inner_product (2)</a>
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2,
-         <span class="kw1">class</span> T,
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> T,
          <span class="kw1">class</span> BinaryOperation1, <span class="kw1">class</span> BinaryOperation2<span class="sy1">&gt;</span>
 <span class="kw4">constexpr</span> <span class="co1">// since C++20</span>
 T inner_product<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
@@ -555,16 +541,18 @@ T inner_product<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
                 BinaryOperation1 op1
                 BinaryOperation2 op2<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">while</span> <span class="br0">(</span>first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">while</span> <span class="br0">(</span>first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="br0">)</span>
+    <span class="br0">{</span>
          init <span class="sy1">=</span> op1<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>init<span class="br0">)</span>, op2<span class="br0">(</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// std::move since C++20</span>
          <span class="sy2">++</span>first1<span class="sy4">;</span>
          <span class="sy2">++</span>first2<span class="sy4">;</span>
     <span class="br0">}</span>
+ 
     <span class="kw1">return</span> init<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr></table>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>The parallelizable version of this algorithm, <span class="t-lc"><a href="transform_reduce.html" title="cpp/algorithm/transform reduce">std::transform_reduce</a></span>, requires <code>op1</code> and <code>op2</code> to be commutative and associative, but <code>std::inner_product</code> makes no such requirement, and always performs the operations in the order given.
+<p>The parallelizable version of this algorithm, <span class="t-lc"><a href="transform_reduce.html" title="cpp/algorithm/transform reduce">std::transform_reduce</a></span>, requires <span class="t-c"><span class="mw-geshi cpp source-cpp">op1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">op2</span></span> to be commutative and associative, but <code>std::inner_product</code> makes no such requirement, and always performs the operations in the order given.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -572,6 +560,7 @@ T inner_product<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;vector&gt;</span>
 <span class="co2">#include &lt;functional&gt;</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> a<span class="br0">{</span><span class="nu0">0</span>, <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span><span class="br0">}</span><span class="sy4">;</span>
@@ -589,6 +578,28 @@ T inner_product<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Inner product of a and b: 21
 Number of pairwise matches between a and b: 2</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue242">LWG 242</a>
+</td>
+<td> C++98
+</td>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp">op1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">op2</span></span> cannot have side effects
+</td>
+<td> they cannot modify the ranges involved
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -600,7 +611,7 @@ Number of pairwise matches between a and b: 2</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="accumulate.html" title="cpp/algorithm/accumulate"> <span class="t-lines"><span>accumulate</span></span></a></div></div>
 </td>
-<td>   sums up a range of elements  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  sums up or folds a range of elements <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="partial_sum.html" title="cpp/algorithm/partial sum"> <span class="t-lines"><span>partial_sum</span></span></a></div></div>
@@ -610,19 +621,19 @@ Number of pairwise matches between a and b: 2</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10853/1000000
-Preprocessor generated node count: 15295/1000000
-Post‐expand include size: 313026/2097152 bytes
-Template argument size: 63018/2097152 bytes
+Preprocessor visited node count: 10926/1000000
+Preprocessor generated node count: 16893/1000000
+Post‐expand include size: 309531/2097152 bytes
+Template argument size: 61691/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:742-0!*!0!!en!*!* and timestamp 20220410082314 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:742-0!*!0!!en!*!* and timestamp 20230120004811 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/inner_product&amp;oldid=131400">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/inner_product&amp;oldid=131400</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/inner_product&amp;oldid=146038">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/inner_product&amp;oldid=146038</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -635,17 +646,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/inner_product">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 10 July 2021, at 14:02.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 230,574 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -660,7 +660,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 4.147 secs. -->
+</script><!-- Served in 3.918 secs. -->
 	</body>
-<!-- Cached 20220410082314 -->
+<!-- Cached 20230120004812 -->
 </html>

@@ -196,7 +196,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv-h2"><td colspan="5"> Memory manipulation</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="memchr.html" title="c/string/byte/memchr"><span class="t-lines"><span>memchr</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="memcmp.html" title="c/string/byte/memcmp"><span class="t-lines"><span>memcmp</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="memset.html" title="c/string/byte/memset"><span class="t-lines"><span>memset</span><span>memset_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="memset.html" title="c/string/byte/memset"><span class="t-lines"><span>memset</span><span>memset_explicit</span><span>memset_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="memcpy.html" title="c/string/byte/memcpy"><span class="t-lines"><span>memcpy</span><span>memcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="memmove.html" title="c/string/byte/memmove"><span class="t-lines"><span>memmove</span><span>memmove_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="memccpy.html" title="c/string/byte/memccpy"><span class="t-lines"><span>memccpy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
@@ -244,7 +244,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <div class="t-li1"><span class="t-li"></span> The behavior is undefined if the size of the character array pointed to by <code>dest</code> &lt;= <span class="t-c"><span class="mw-geshi c source-c">strnlen_s<span class="br0">(</span>src, destsz<span class="br0">)</span></span></span> &lt; <code>destsz</code>; in other words, an erroneous value of <code>destsz</code> does not expose the impending buffer overflow.
-<dl><dd>As with all bounds-checked functions, <code>strcpy_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;string.h&gt;</code>.</dd></dl></div>
+<dl><dd>As with all bounds-checked functions, <code>strcpy_s</code>  only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../byte.html" title="c/string/byte"><tt>&lt;string.h&gt;</tt></a>.</dd></dl></div>
 
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -377,15 +377,15 @@ dst = "", r = 22</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5304/1000000
-Preprocessor generated node count: 10251/1000000
-Post‐expand include size: 134360/2097152 bytes
-Template argument size: 24483/2097152 bytes
+Preprocessor visited node count: 5371/1000000
+Preprocessor generated node count: 11565/1000000
+Post‐expand include size: 135633/2097152 bytes
+Template argument size: 24887/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6127-0!*!0!!en!*!* and timestamp 20220704160015 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6127-0!*!0!!en!*!* and timestamp 20230120004849 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -402,17 +402,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/string/byte/strcpy">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 27 June 2022, at 13:13.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 558,159 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -427,7 +416,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.704 secs. -->
+</script><!-- Served in 0.593 secs. -->
 	</body>
-<!-- Cached 20220704160015 -->
+<!-- Cached 20230120004849 -->
 </html>

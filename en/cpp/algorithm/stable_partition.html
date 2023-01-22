@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -375,7 +376,18 @@ BidirIt stable_partition<span class="br0">(</span> ExecutionPolicy<span class="s
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Reorders the elements in the range <code>[first, last)</code> in such a way that all elements for which the predicate <code>p</code> returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> precede the elements for which predicate <code>p</code> returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>. Relative order of the elements is preserved. </div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, but executed according to <code>policy</code>. This overload does not participate in overload resolution unless <span class="t-rev-inl t-until-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span> <span class="t-rev-inl t-since-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> is true.</div>
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, but executed according to <code>policy</code>. This overload does not participate in overload resolution unless  <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table></div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
@@ -469,15 +481,15 @@ BidirIt stable_partition<span class="br0">(</span> ExecutionPolicy<span class="s
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 9647/1000000
-Preprocessor generated node count: 12280/1000000
-Post‐expand include size: 291476/2097152 bytes
-Template argument size: 50933/2097152 bytes
+Preprocessor visited node count: 9728/1000000
+Preprocessor generated node count: 13237/1000000
+Post‐expand include size: 293357/2097152 bytes
+Template argument size: 51573/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:785-0!*!0!!en!*!* and timestamp 20220410085715 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:785-0!*!0!!en!*!* and timestamp 20230120010105 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -494,17 +506,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/stable_partition">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 31 October 2021, at 08:42.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 96,407 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -519,7 +520,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.870 secs. -->
+</script><!-- Served in 1.956 secs. -->
 	</body>
-<!-- Cached 20220410085715 -->
+<!-- Cached 20230120010106 -->
 </html>

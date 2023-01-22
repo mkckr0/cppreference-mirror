@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/namespace","wgTitle":"cpp/language/namespace","wgCurRevisionId":140538,"wgArticleId":5741,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/namespace","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/namespace","wgTitle":"cpp/language/namespace","wgCurRevisionId":146445,"wgArticleId":5741,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/namespace","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -939,7 +940,7 @@ Two using-declarations can introduce functions with the same name and parameter 
     f<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>        <span class="co1">// error: B::f(int) or C::f(int)?</span>
     <span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// error: f(int) conflicts with C::f(int) and B::f(int)</span>
 <span class="br0">}</span></pre></div></div>
-<p>If an entity is declared, but not defined in some inner namespace, and then declared through using-declaration in the outer namespace, and then a definition appears in the outer namespace with the same unqualified name, that definition is a member of the outer namespace and conflicts with the using-declration:
+<p>If an entity is declared, but not defined in some inner namespace, and then declared through using-declaration in the outer namespace, and then a definition appears in the outer namespace with the same unqualified name, that definition is a member of the outer namespace and conflicts with the using-declaration:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> X
 <span class="br0">{</span>
@@ -1070,8 +1071,22 @@ Two using-declarations can introduce functions with the same name and parameter 
     f<span class="br0">(</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// OK: the only f(char) is D::f(char)</span>
 <span class="br0">}</span></pre></div></div>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>The using-directive <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">using</span> <span class="kw1">namespace</span> std<span class="sy4">;</span></span></span> at any namespace scope introduces every name from the namespace <code>std</code> into the global namespace (since the global namespace is the nearest namespace that contains both <code>std</code> and any user-declared namespace), which may lead to undesirable name collisions. This, and other using directives are generally considered bad practice at file scope of a header file (<a rel="nofollow" class="external text" href="http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rs-using-directive">SF.7: Don’t write using namespace at global scope in a header file</a>).
+<p>The using-directive <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">using</span> <span class="kw1">namespace</span> std<span class="sy4">;</span></span></span> at any namespace scope introduces every name from the namespace <code>std</code> into the global namespace (since the global namespace is the nearest namespace that contains both <code>std</code> and any user-declared namespace), which may lead to undesirable name collisions. This, and other using directives are generally considered bad practice at file scope of a header file (<a rel="nofollow" class="external text" href="http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rs-using-directive">SF.7: Don’t write <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">using</span> <span class="kw1">namespace</span></span></span> at global scope in a header file</a>).
 </p>
+<table class="wikitable">
+
+<tr>
+<th>Feature-test macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_namespace_attributes</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201411L</span></span></span></td>
+<td><span class="t-mark">(C++17)</span></td>
+<td><a href="attributes.html" title="cpp/language/attributes">Attributes</a> for namespaces
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>This example shows how to use a namespace to create a class that already has been named in the <code>std</code> namespace.</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;vector&gt;</span>
@@ -1132,7 +1147,7 @@ Two using-declarations can introduce functions with the same name and parameter 
 </td>
 <td> C++98
 </td>
-<td> lookup only considered namespace declarations only for<br>the last name in the operand of a using-directive (which is<br>sub-optimal, becuase classes cannot contain namespaces)
+<td> lookup only considered namespace declarations only for<br>the last name in the operand of a using-directive (which is<br>sub-optimal, because classes cannot contain namespaces)
 </td>
 <td> the lookup restriction<br>applies to all names in the<br>operands of using-directives
 </td></tr>
@@ -1210,19 +1225,19 @@ Two using-declarations can introduce functions with the same name and parameter 
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6498/1000000
-Preprocessor generated node count: 14340/1000000
-Post‐expand include size: 198878/2097152 bytes
-Template argument size: 46713/2097152 bytes
+Preprocessor visited node count: 6653/1000000
+Preprocessor generated node count: 14776/1000000
+Post‐expand include size: 200605/2097152 bytes
+Template argument size: 47147/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5741-0!*!0!!en!*!* and timestamp 20220712051740 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5741-0!*!0!!en!*!* and timestamp 20230120004322 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/namespace&amp;oldid=140538">https://en.cppreference.com/mwiki/index.php?title=cpp/language/namespace&amp;oldid=140538</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/namespace&amp;oldid=146445">https://en.cppreference.com/mwiki/index.php?title=cpp/language/namespace&amp;oldid=146445</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1235,17 +1250,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/namespace">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 23 June 2022, at 19:16.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,385,980 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1260,7 +1264,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 4.129 secs. -->
+</script><!-- Served in 4.109 secs. -->
 	</body>
-<!-- Cached 20220712051740 -->
+<!-- Cached 20230120004322 -->
 </html>

@@ -233,7 +233,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Creates and opens a temporary file. The file is opened as binary file for update (as if by <span class="t-lc"><a href="fopen.html" title="c/io/fopen">fopen</a></span> with <code>"wb+"</code> mode). The filename of the file is guaranteed to be unique within the filesystem. At least <span class="t-lc"><a href="../io.html" title="c/io">TMP_MAX</a></span> files may be opened during the lifetime of a program (this limit may be shared with <span class="t-lc"><a href="tmpnam.html" title="c/io/tmpnam">tmpnam</a></span> and may be further limited by <span class="t-lc"><a href="../io.html" title="c/io">FOPEN_MAX</a></span>).</div>
 <div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that at least <span class="t-lc">TMP_MAX_S</span> files may be opened (the limit may be shared with <span class="t-lc">tmpnam_s</span>), and if <code>streamptr</code> is a null pointer, the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function is called. 
-<dl><dd>As with all bounds-checked functions, <code>tmpfile_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;stdio.h&gt;</code>.</dd></dl></div>
+<dl><dd>As with all bounds-checked functions, <code>tmpfile_s</code>  only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../io.html" title="c/io"><tt>&lt;stdio.h&gt;</tt></a>.</dd></dl></div>
 
 <p>The temporary file created by this function is closed and deleted when the program exits normally. Whether it's deleted on abnormal termination is implementation-defined.
 </p>
@@ -321,15 +321,15 @@ File name: /tmp/tmpfjptPe5 (deleted)</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5086/1000000
-Preprocessor generated node count: 9144/1000000
-Post‐expand include size: 153214/2097152 bytes
-Template argument size: 30133/2097152 bytes
+Preprocessor visited node count: 5138/1000000
+Preprocessor generated node count: 10447/1000000
+Post‐expand include size: 153353/2097152 bytes
+Template argument size: 30198/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6241-0!*!0!!en!*!* and timestamp 20220704164133 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6241-0!*!0!!en!*!* and timestamp 20230118015518 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -346,17 +346,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/io/tmpfile">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 June 2022, at 16:41.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 36,237 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -371,7 +360,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.535 secs. -->
+</script><!-- Served in 0.536 secs. -->
 	</body>
-<!-- Cached 20220704164133 -->
+<!-- Cached 20230118015518 -->
 </html>

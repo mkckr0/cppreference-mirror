@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental/lib_extensions_3","wgTitle":"cpp/experimental/lib extensions 3","wgCurRevisionId":116739,"wgArticleId":19058,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental/lib_extensions_3","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental/lib_extensions_3","wgTitle":"cpp/experimental/lib extensions 3","wgCurRevisionId":145103,"wgArticleId":19058,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental/lib_extensions_3","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -174,32 +175,56 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="../header/experimental/memory_resource.html" title="cpp/header/experimental/memory resource">&lt;experimental/memory_resource&gt;</a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__cpp_lib_experimental_memory_resources</span></span></div></div>
+</td>
+<td>   a value of at least <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201803</span></span></span> indicates that <a href="resource_adaptor.html" title="cpp/experimental/resource adaptor"><tt>resource_adaptor</tt></a> is supported  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="../header/experimental/functional.html" title="cpp/header/experimental/functional">&lt;experimental/functional&gt;</a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__cpp_lib_experimental_function_polymorphic_allocator</span></span></div></div>
+</td>
+<td>   a value of at least <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202211</span></span></span> indicates that <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../memory/polymorphic_allocator.html"><span class="kw708">std::<span class="me2">pmr</span><span class="sy4">::</span><span class="me2">polymorphic_allocator</span></span></a><span class="sy1">&lt;&gt;</span></span></span> is used for <a href="function.html" title="cpp/experimental/function"><tt>std::experimental::function</tt></a>  <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc-header">
 <td colspan="2"> <div>Defined in header <code><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/experimental/scope&amp;action=edit&amp;redlink=1" class="new" title="cpp/header/experimental/scope (page does not exist)">&lt;experimental/scope&gt;</a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__cpp_lib_experimental_scope</span></span></div></div>
 </td>
-<td>   a value of at least <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201902</span></span></span> indicates that the scope guard are supported  <br> <span class="t-mark">(macro constant)</span>
+<td>   a value of at least <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201902</span></span></span> indicates that the scope guards are supported  <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 </table>
-
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<p>The value of <code>__cpp_lib_experimental_memory_resources</code> has been increased in LFTS v3, because the design of <a href="resource_adaptor.html" title="cpp/experimental/resource adaptor"><tt>resource_adaptor</tt></a> is rebased onto <span class="t-lc"><a href="../memory/memory_resource.html" title="cpp/memory/memory resource">std::pmr::memory_resource</a></span>.
+</p>
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1625/1000000
-Preprocessor generated node count: 5067/1000000
-Post‐expand include size: 63572/2097152 bytes
-Template argument size: 9839/2097152 bytes
+Preprocessor visited node count: 2086/1000000
+Preprocessor generated node count: 5528/1000000
+Post‐expand include size: 71712/2097152 bytes
+Template argument size: 13288/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19058-0!*!0!!*!*!* and timestamp 20220410092629 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19058-0!*!0!!*!*!* and timestamp 20230120040110 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/lib_extensions_3&amp;oldid=116739">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/lib_extensions_3&amp;oldid=116739</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/lib_extensions_3&amp;oldid=145103">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/lib_extensions_3&amp;oldid=145103</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -212,17 +237,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/experimental/lib_extensions_3">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 23 February 2020, at 07:53.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 22,082 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -237,7 +251,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.327 secs. -->
+</script><!-- Served in 0.569 secs. -->
 	</body>
-<!-- Cached 20220410092629 -->
+<!-- Cached 20230120040110 -->
 </html>

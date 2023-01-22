@@ -13,7 +13,7 @@
 
 <script src="../../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/string/multibyte/mblen","wgTitle":"c/string/multibyte/mblen","wgCurRevisionId":132379,"wgArticleId":6116,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/string/multibyte/mblen","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/string/multibyte/mblen","wgTitle":"c/string/multibyte/mblen","wgCurRevisionId":146551,"wgArticleId":6116,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/string/multibyte/mblen","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -181,7 +181,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Determines the size, in bytes, of the multibyte character whose first byte is pointed to by <code>s</code>. 
+<p>Determines the size, in bytes, of the multibyte character whose first byte is pointed to by <code>s</code>.
 </p><p>If <code>s</code> is a null pointer, <span class="t-rev-inl t-until-c23"><span>resets the global conversion state and</span> <span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span> determined whether shift sequences are used.
 </p><p>This function is equivalent to the call <span class="t-c"><span class="mw-geshi c source-c"><a href="mbtowc.html"><span class="kw575">mbtowc</span></a><span class="br0">(</span><span class="br0">(</span><span class="kw4">wchar_t</span><span class="sy2">*</span><span class="br0">)</span><span class="nu0">0</span>, s, n<span class="br0">)</span></span></span>, except that conversion state of <span class="t-lc"><a href="mbtowc.html" title="c/string/multibyte/mbtowc">mbtowc</a></span> is unaffected.
 </p>
@@ -190,18 +190,18 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  s
+<td> s
 </td>
 <td> -
 </td>
-<td>  pointer to the multibyte character
+<td> pointer to the multibyte character
 </td></tr>
 <tr class="t-par">
-<td>  n
+<td> n
 </td>
 <td> -
 </td>
-<td>  limit on the number of bytes in s that can be examined
+<td> limit on the number of bytes in s that can be examined
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>If <code>s</code> is not a null pointer, returns the number of bytes that are contained in the multibyte character or <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">1</span></span></span> if the first bytes pointed to by <code>s</code> do not form a valid multibyte character or <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> if <code>s</code> is pointing at the null charcter <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span>.
@@ -222,10 +222,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;string.h&gt;</span>
-<span class="co2">#include &lt;stdlib.h&gt;</span>
-<span class="co2">#include &lt;locale.h&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;locale.h&gt;</span>
 <span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;stdlib.h&gt;</span>
+<span class="co2">#include &lt;string.h&gt;</span>
  
 <span class="co1">// the number of characters in a multibyte string is the sum of mblen()'s</span>
 <span class="co1">// note: the simpler approach is mbstowcs(NULL, str, sz)</span>
@@ -236,7 +236,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     mblen<span class="br0">(</span><a href="../../types/NULL.html"><span class="kw103">NULL</span></a>, <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// reset the conversion state</span>
     <span class="kw1">while</span><span class="br0">(</span>ptr <span class="sy1">&lt;</span> end<span class="br0">)</span> <span class="br0">{</span>
         <span class="kw4">int</span> next <span class="sy1">=</span> mblen<span class="br0">(</span>ptr, end <span class="sy2">-</span> ptr<span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">if</span><span class="br0">(</span>next <span class="sy1">==</span> <span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>next <span class="sy1">==</span> <span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
            <a href="../../io/perror.html"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"strlen_mb"</span><span class="br0">)</span><span class="sy4">;</span>
            <span class="kw1">break</span><span class="sy4">;</span>
         <span class="br0">}</span>
@@ -248,10 +248,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw4">void</span> dump_bytes<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> str<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> end <span class="sy1">=</span> str <span class="sy2">+</span> <a href="../byte/strlen.html"><span class="kw558">strlen</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> str <span class="sy3">!</span><span class="sy1">=</span> end<span class="sy4">;</span> <span class="sy2">++</span>str<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> end <span class="sy1">=</span> str <span class="sy2">+</span> <a href="../byte/strlen.html"><span class="kw558">strlen</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span> str <span class="sy3">!</span><span class="sy1">=</span> end<span class="sy4">;</span> <span class="sy2">++</span>str<span class="br0">)</span>
         <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%02X "</span>, <span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>str<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="br0">}</span>
     <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
@@ -315,17 +313,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 NewPP limit report
 Preprocessor visited node count: 3087/1000000
 Preprocessor generated node count: 9279/1000000
-Post‐expand include size: 84255/2097152 bytes
-Template argument size: 18115/2097152 bytes
+Post‐expand include size: 84245/2097152 bytes
+Template argument size: 18057/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6116-0!*!0!!en!*!* and timestamp 20220703121914 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6116-0!*!0!!en!*!* and timestamp 20230120012600 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/mblen&amp;oldid=132379">https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/mblen&amp;oldid=132379</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/mblen&amp;oldid=146551">https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/mblen&amp;oldid=146551</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -338,17 +336,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/string/multibyte/mblen">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 13 August 2021, at 00:20.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 18,860 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -363,7 +350,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.507 secs. -->
+</script><!-- Served in 0.038 secs. -->
 	</body>
-<!-- Cached 20220703121914 -->
+<!-- Cached 20230120030216 -->
 </html>

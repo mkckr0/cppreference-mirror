@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/punctuators","wgTitle":"c/language/punctuators","wgCurRevisionId":140856,"wgArticleId":20774,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/punctuators","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/punctuators","wgTitle":"c/language/punctuators","wgCurRevisionId":146515,"wgArticleId":20774,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/punctuators","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -128,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="../comment.html" title="c/comment"> Comments</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="ascii.html" title="c/language/ascii"> ASCII</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="charset.html" title="c/language/charset"> Character sets</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="translation_phases.html" title="c/language/translation phases"> Translation phases</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink">Punctuation</strong></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="identifier.html" title="c/language/identifier">Identifier</a></td></tr>
@@ -145,34 +146,34 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>These are the punctuation symbols in C. The meaning of each symbol is detailed in the linked pages.
 </p>
-<h3><span class="mw-headline" id=".7B_.7D"> <code>{</code> <code>} </code> </span></h3>
+<h3><span class="mw-headline" id=".7B_.7D"><code>{</code> <code>} </code></span></h3>
 <ul><li> In a <a href="struct.html" title="c/language/struct">struct</a> or <a href="union.html" title="c/language/union">union</a> definition, delimit the <span class="t-spar">struct-declaration-list</span>.
-</li><li> In a <a href="enum.html" title="c/language/enum">enum</a> definition, delimit the enumerator list.
+</li><li> In an <a href="enum.html" title="c/language/enum">enum</a> definition, delimit the enumerator list.
 </li><li> Delimit a <a href="statements.html#Compound_statements" title="c/language/statements">compound statement</a>. The compound statement may be part of a <a href="function_definition.html" title="c/language/function definition">function definition</a>.
 </li><li> In <a href="initialization.html" title="c/language/initialization">initialization</a>, delimit the initializers.
 </li></ul>
-<h3><span class="mw-headline" id=".5B_.5D"> <code>[</code> <code>]</code> </span></h3>
+<h3><span class="mw-headline" id=".5B_.5D"><code>[</code> <code>]</code></span></h3>
 <ul><li> <a href="operator_member_access.html#Subscript" title="c/language/operator member access">Subscript operator</a>.
 </li><li> Part of <a href="declarations.html#Declarators" title="c/language/declarations">array declarator</a> in a <a href="declarations.html" title="c/language/declarations">declaration</a> or a <a href="compatible_type.html#Type_names" title="c/language/type">type-id</a>.
 </li><li> In <a href="initialization.html" title="c/language/initialization">initialization</a>, introduce a designator for an array element. <span class="t-mark-rev t-since-c99">(since C99)</span>
-</li><li> In a <a href="attributes.html" title="c/language/attributes">attribute specifier</a>, delimit the attributes. <span class="t-mark-rev t-since-c23">(since C23)</span>
+</li><li> In an <a href="attributes.html" title="c/language/attributes">attribute specifier</a>, delimit the attributes. <span class="t-mark-rev t-since-c23">(since C23)</span>
 </li></ul>
-<h3><span class="mw-headline" id=".23"> <code>#</code> </span></h3>
+<h3><span class="mw-headline" id=".23"><code>#</code></span></h3>
 <ul><li> Introduce a <a href="../preprocessor.html" title="c/preprocessor">preprocessing directive</a>.
 </li><li> The <a href="../preprocessor/replace.html#.23_and_.23.23_operators" title="c/preprocessor/replace">preprocessing operator for stringification</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".23.23"> <code>##</code> </span></h3>
+<h3><span class="mw-headline" id=".23.23"><code>##</code></span></h3>
 <ul><li> The <a href="../preprocessor/replace.html#.23_and_.23.23_operators" title="c/preprocessor/replace">preprocessing operator for token pasting</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".28_.29"> <code>(</code> <code>)</code> </span></h3>
-<ul><li> In a expression, <a href="expressions.html#Primary_expressions" title="c/language/expressions">indicate grouping</a>.
+<h3><span class="mw-headline" id=".28_.29"><code>(</code> <code>)</code></span></h3>
+<ul><li> In an expression, <a href="expressions.html#Primary_expressions" title="c/language/expressions">indicate grouping</a>.
 </li><li> <a href="operator_other.html#Function_call" title="c/language/operator other">Function call operator</a>.
-</li><li> In a <a href="sizeof.html" title="c/language/sizeof"><code>sizeof</code></a><span class="t-rev-inl t-since-c11"><span> or <a href="_Alignof.html" title="c/language/ Alignof"><code>_Alignof</code></a></span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> expression, delimit the operand.
-</li><li> In a <a href="cast.html" title="c/language/cast">explicit cast</a>, delimit the type-id.
+</li><li> In a <a href="sizeof.html" title="c/language/sizeof"><code>sizeof</code></a><span class="t-rev-inl t-since-c11"><span>or <a href="_Alignof.html" title="c/language/ Alignof"><code>_Alignof</code></a></span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> expression, delimit the operand.
+</li><li> In an <a href="cast.html" title="c/language/cast">explicit cast</a>, delimit the type-id.
 </li><li> In a <a href="compound_literal.html" title="c/language/compound literal">compound literal</a>, delimit the type-id. <span class="t-mark-rev t-since-c99">(since C99)</span>
 </li><li> In a <a href="declarations.html" title="c/language/declarations">declaration</a> or a <a href="compatible_type.html#Type_names" title="c/language/type">type-id</a>, indicate grouping.
 </li><li> In a <a href="function_declaration.html" title="c/language/function declaration">function declarator</a> (in a <a href="declarations.html" title="c/language/declarations">declaration</a> or a <a href="compatible_type.html#Type_names" title="c/language/type">type-id</a>), delimit the parameter list.
-</li><li> In a <a href="if.html" title="c/language/if"><code>if</code></a>, <a href="switch.html" title="c/language/switch"><code>switch</code></a>, <a href="while.html" title="c/language/while"><code>while</code></a>, <a href="do.html" title="c/language/do"><code>do-while</code></a>, or <a href="for.html" title="c/language/for"><code>for</code></a> statement, delimit the controlling clause.
+</li><li> In an <a href="if.html" title="c/language/if"><code>if</code></a>, <a href="switch.html" title="c/language/switch"><code>switch</code></a>, <a href="while.html" title="c/language/while"><code>while</code></a>, <a href="do.html" title="c/language/do"><code>do-while</code></a>, or <a href="for.html" title="c/language/for"><code>for</code></a> statement, delimit the controlling clause.
 </li><li> In a <a href="../preprocessor/replace.html#Function-like_macros" title="c/preprocessor/replace">function-like macro definition</a>, delimit the macro parameters.
 </li><li> Part of a <code>defined</code><span class="t-rev-inl t-since-c23"><span>, <code>__has_include</code>, or <code>__has_c_attribute</code></span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> preprocessing operator.
 </li><li> Part of a <a href="generic.html" title="c/language/generic">generic selection expression</a>. <span class="t-mark-rev t-since-c11">(since C11)</span>
@@ -181,7 +182,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> In an <a href="_Alignas.html" title="c/language/ Alignas"><code>_Alignas</code></a> specifier, delimit the operand. <span class="t-mark-rev t-since-c11">(since C11)</span>
 </li><li> In an <a href="attributes.html" title="c/language/attributes">attribute</a>, delimit the attribute arguments. <span class="t-mark-rev t-since-c23">(since C23)</span>
 </li></ul>
-<h3><span class="mw-headline" id=".3B"> <code>;</code> </span></h3>
+<h3><span class="mw-headline" id=".3B"><code>;</code></span></h3>
 <ul><li> Indicate the end of
 </li></ul>
 <dl><dd><ul><li> a <a href="statements.html" title="c/language/statements">statement</a> (including the init-statement of a for statement)
@@ -190,153 +191,153 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </dd></dl>
 <ul><li> Separate the second and third clauses of a <a href="for.html" title="c/language/for">for statement</a>.
 </li></ul>
-<h3><span class="mw-headline" id=":"> <code>:</code> </span></h3>
+<h3><span class="mw-headline" id=":"><code>:</code></span></h3>
 <ul><li> Part of <a href="operator_other.html#Conditional_operator" title="c/language/operator other">conditional operator</a>.
 </li><li> Part of <a href="statements.html#Labels" title="c/language/statements">label declaration</a>.
 </li><li> In a <a href="bit_field.html" title="c/language/bit field">bit-field member declaration</a>, introduce the width.
 </li></ul>
-<h3><span class="mw-headline" id="..."> <code>...</code> </span></h3>
+<h3><span class="mw-headline" id="..."><code>...</code></span></h3>
 <ul><li> In the <a href="function_declaration.html#Parameter_list" title="c/language/function declaration">parameter list</a> of a function declarator, signify a <a href="variadic.html" title="c/language/variadic">variadic function</a>.
 </li><li> In a <a href="../preprocessor/replace.html" title="c/preprocessor/replace">macro definition</a>, signify a variadic macro. <span class="t-mark-rev t-since-c99">(since C99)</span>
 </li></ul>
-<h3><span class="mw-headline" id=".3F"> <code>?</code> </span></h3>
+<h3><span class="mw-headline" id=".3F"><code>?</code></span></h3>
 <ul><li> Part of <a href="operator_other.html#Conditional_operator" title="c/language/operator other">conditional operator</a>.
 </li><li> In a <a href="generic.html" title="c/language/generic">generic association</a>, delimit the type-id or <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">default</span></span></span> and the selected expression. <span class="t-mark-rev t-since-c11">(since C11)</span>
 </li></ul>
-<h3><span class="mw-headline" id="::"> <code>::</code> </span></h3>
-<ul><li> In a <a href="attributes.html" title="c/language/attributes">attribute</a>, indicate attribute scope. <span class="t-mark-rev t-since-c23">(since C23)</span>
+<h3><span class="mw-headline" id="::"><code>::</code></span></h3>
+<ul><li> In an <a href="attributes.html" title="c/language/attributes">attribute</a>, indicate attribute scope. <span class="t-mark-rev t-since-c23">(since C23)</span>
 </li></ul>
-<h3><span class="mw-headline" id="."> <code>.</code> </span></h3>
+<h3><span class="mw-headline" id="."><code>.</code></span></h3>
 <ul><li> <a href="operator_member_access.html#Member_access" title="c/language/operator member access">Member access operator</a>.
 </li><li> In <a href="initialization.html" title="c/language/initialization">initialization</a>, introduce a designator for a struct/union member. <span class="t-mark-rev t-since-c99">(since C99)</span>
 </li></ul>
-<h3><span class="mw-headline" id="-.3E"> <code>-&gt;</code> </span></h3>
+<h3><span class="mw-headline" id="-.3E"><code>-&gt;</code></span></h3>
 <ul><li> <a href="operator_member_access.html#Member_access_through_pointer" title="c/language/operator member access">Member access operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".7E"> <code>~</code> </span></h3>
+<h3><span class="mw-headline" id=".7E"><code>~</code></span></h3>
 <ul><li> <a href="operator_arithmetic.html#Bitwise_logic" title="c/language/operator arithmetic">Unary complement operator (a.k.a. bitwise not operator)</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".21"> <code>!</code> </span></h3>
+<h3><span class="mw-headline" id=".21"><code>!</code></span></h3>
 <ul><li> <a href="operator_logical.html#Logical_NOT" title="c/language/operator logical">Logical not operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".2B"> <code>+</code> </span></h3>
+<h3><span class="mw-headline" id=".2B"><code>+</code></span></h3>
 <ul><li> <a href="operator_arithmetic.html#Unary_arithmetic" title="c/language/operator arithmetic">Unary plus operator</a>.
 </li><li> <a href="operator_arithmetic.html#Additive_operators" title="c/language/operator arithmetic">Binary plus operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id="-"> <code>-</code> </span></h3>
+<h3><span class="mw-headline" id="-"><code>-</code></span></h3>
 <ul><li> <a href="operator_arithmetic.html#Unary_arithmetic" title="c/language/operator arithmetic">Unary minus operator</a>.
 </li><li> <a href="operator_arithmetic.html#Additive_operators" title="c/language/operator arithmetic">Binary minus operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".2A"> <code>*</code> </span></h3>
+<h3><span class="mw-headline" id=".2A"><code>*</code></span></h3>
 <ul><li> <a href="operator_member_access.html#Dereference" title="c/language/operator member access">Indirection operator</a>.
 </li><li> <a href="operator_arithmetic.html#Multiplicative_operators" title="c/language/operator arithmetic">Multiplication operator</a>.
 </li><li> Pointer operator operator in a <a href="declarations.html#Declarators" title="c/language/declarations">declarator</a> or in a <a href="compatible_type.html#Type_names" title="c/language/type">type-id</a>.
 </li><li> Placeholder for the length of a variable-length array declarator in a <a href="function_declaration.html" title="c/language/function declaration">function declaration</a>. <span class="t-mark-rev t-since-c99">(since C99)</span>
 </li></ul>
-<h3><span class="mw-headline" id=".2F"> <code>/</code> </span></h3>
+<h3><span class="mw-headline" id=".2F"><code>/</code></span></h3>
 <ul><li> <a href="operator_arithmetic.html#Multiplicative_operators" title="c/language/operator arithmetic">Division operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".25"> <code>%</code> </span></h3>
+<h3><span class="mw-headline" id=".25"><code>%</code></span></h3>
 <ul><li> <a href="operator_arithmetic.html#Multiplicative_operators" title="c/language/operator arithmetic">Modulo operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".5E"> <code>^</code> </span></h3>
+<h3><span class="mw-headline" id=".5E"><code>^</code></span></h3>
 <ul><li> <a href="operator_arithmetic.html#Bitwise_logic" title="c/language/operator arithmetic">Bitwise xor operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".26"> <code>&amp;</code> </span></h3>
+<h3><span class="mw-headline" id=".26"><code>&amp;</code></span></h3>
 <ul><li> <a href="operator_member_access.html#Address_of" title="c/language/operator member access">Address-of operator</a>.
 </li><li> <a href="operator_arithmetic.html#Bitwise_logic" title="c/language/operator arithmetic">Bitwise and operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".7C"> <code>|</code> </span></h3>
+<h3><span class="mw-headline" id=".7C"><code>|</code></span></h3>
 <ul><li> <a href="operator_arithmetic.html#Bitwise_logic" title="c/language/operator arithmetic">Bitwise or operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".3D"> <code>=</code> </span></h3>
+<h3><span class="mw-headline" id=".3D"><code>=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Simple_assignment" title="c/language/operator assignment">Simple assignment operator</a>.
 </li><li> In <a href="initialization.html" title="c/language/initialization">initialization</a>, delimit the object and the initializer list.
-</li><li> In a <a href="enum.html" title="c/language/enum">enum definition</a>, introduce the value of enumeration constant.
+</li><li> In an <a href="enum.html" title="c/language/enum">enum definition</a>, introduce the value of enumeration constant.
 </li></ul>
-<h3><span class="mw-headline" id=".2B.3D"> <code>+=</code> </span></h3>
+<h3><span class="mw-headline" id=".2B.3D"><code>+=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id="-.3D"> <code>-=</code> </span></h3>
+<h3><span class="mw-headline" id="-.3D"><code>-=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".2A.3D"> <code>*=</code> </span></h3>
+<h3><span class="mw-headline" id=".2A.3D"><code>*=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".2F.3D"> <code>/=</code> </span></h3>
+<h3><span class="mw-headline" id=".2F.3D"><code>/=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".25.3D"> <code>%=</code> </span></h3>
+<h3><span class="mw-headline" id=".25.3D"><code>%=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".5E.3D"> <code>^=</code> </span></h3>
+<h3><span class="mw-headline" id=".5E.3D"><code>^=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".26.3D"> <code>&amp;=</code> </span></h3>
+<h3><span class="mw-headline" id=".26.3D"><code>&amp;=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".7C.3D"> <code>|=</code> </span></h3>
+<h3><span class="mw-headline" id=".7C.3D"><code>|=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".3D.3D"> <code>==</code> </span></h3>
+<h3><span class="mw-headline" id=".3D.3D"><code>==</code></span></h3>
 <ul><li> <a href="operator_comparison.html#Equality_operators" title="c/language/operator comparison">Equality operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".21.3D"> <code>!=</code> </span></h3>
+<h3><span class="mw-headline" id=".21.3D"><code>!=</code></span></h3>
 <ul><li> <a href="operator_comparison.html#Equality_operators" title="c/language/operator comparison">Inequality operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".3C"> <code>&lt;</code> </span></h3>
+<h3><span class="mw-headline" id=".3C"><code>&lt;</code></span></h3>
 <ul><li> <a href="operator_comparison.html#Relational_operators" title="c/language/operator comparison">Less-than operator</a>.
-</li><li> Introduce a header name in a <a href="../preprocessor/include.html" title="c/preprocessor/include"><span class="t-c"><span class="mw-geshi c source-c"><span class="co2">#include</span></span></span> directive</a>.
+</li><li> Introduce a header name in an <a href="../preprocessor/include.html" title="c/preprocessor/include"><span class="t-c"><span class="mw-geshi c source-c"><span class="co2">#include</span></span></span> directive</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".3E"> <code>&gt;</code> </span></h3>
+<h3><span class="mw-headline" id=".3E"><code>&gt;</code></span></h3>
 <ul><li> <a href="operator_comparison.html#Relational_operators" title="c/language/operator comparison">Greater-than operator</a>.
-</li><li> Indicate the end of a header name in a <a href="../preprocessor/include.html" title="c/preprocessor/include"><code>#include</code> directive</a>
+</li><li> Indicate the end of a header name in an <a href="../preprocessor/include.html" title="c/preprocessor/include"><code>#include</code> directive</a>
 </li></ul>
-<h3><span class="mw-headline" id=".3C.3D"> <code>&lt;=</code> </span></h3>
+<h3><span class="mw-headline" id=".3C.3D"><code>&lt;=</code></span></h3>
 <ul><li> <a href="operator_comparison.html#Relational_operators" title="c/language/operator comparison">Less-than-or-equal-to operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".3E.3D"> <code>&gt;=</code> </span></h3>
+<h3><span class="mw-headline" id=".3E.3D"><code>&gt;=</code></span></h3>
 <ul><li> <a href="operator_comparison.html#Relational_operators" title="c/language/operator comparison">Greater-than-or-equal-to operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".26.26"> <code>&amp;&amp;</code> </span></h3>
+<h3><span class="mw-headline" id=".26.26"><code>&amp;&amp;</code></span></h3>
 <ul><li> <a href="operator_logical.html#Logical_AND" title="c/language/operator logical">Logical and operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".7C.7C"> <code>||</code> </span></h3>
+<h3><span class="mw-headline" id=".7C.7C"><code>||</code></span></h3>
 <ul><li> <a href="operator_logical.html#Logical_OR" title="c/language/operator logical">Logical or operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".3C.3C"> <code>&lt;&lt;</code> </span></h3>
+<h3><span class="mw-headline" id=".3C.3C"><code>&lt;&lt;</code></span></h3>
 <ul><li> <a href="operator_arithmetic.html#Shift_operators" title="c/language/operator arithmetic">Bitwise shift operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".3E.3E"> <code>&gt;&gt;</code> </span></h3>
+<h3><span class="mw-headline" id=".3E.3E"><code>&gt;&gt;</code></span></h3>
 <ul><li> <a href="operator_arithmetic.html#Shift_operators" title="c/language/operator arithmetic">Bitwise shift operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".3C.3C.3D"> <code>&lt;&lt;=</code> </span></h3>
+<h3><span class="mw-headline" id=".3C.3C.3D"><code>&lt;&lt;=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".3E.3E.3D"> <code>&gt;&gt;=</code> </span></h3>
+<h3><span class="mw-headline" id=".3E.3E.3D"><code>&gt;&gt;=</code></span></h3>
 <ul><li> <a href="operator_assignment.html#Compound_assignment" title="c/language/operator assignment">Compound assignment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".2B.2B"> <code>++</code> </span></h3>
+<h3><span class="mw-headline" id=".2B.2B"><code>++</code></span></h3>
 <ul><li> <a href="operator_incdec.html" title="c/language/operator incdec">Increment operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id="--"> <code>--</code> </span></h3>
+<h3><span class="mw-headline" id="--"><code>--</code></span></h3>
 <ul><li> <a href="operator_incdec.html" title="c/language/operator incdec">Decrement operator</a>.
 </li></ul>
-<h3><span class="mw-headline" id=".2C"> <code>,</code> </span></h3>
+<h3><span class="mw-headline" id=".2C"><code>,</code></span></h3>
 <ul><li> <a href="operator_other.html#Comma_operator" title="c/language/operator other">Comma operator</a>.
 </li><li> List separator in
 </li></ul>
 <dl><dd><ul><li> the declarator list in a <a href="declarations.html" title="c/language/declarations">declaration</a>
 </li><li> initializer list in <a href="initialization.html" title="c/language/initialization">initialization</a><span class="t-rev-inl t-since-c99"><span>, including <a href="compound_literal.html" title="c/language/compound literal">compound literals</a></span> <span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>
 </li><li> the argument list in a <a href="operator_other.html#Function_call" title="c/language/operator other">function call expression</a>
-</li><li> the enumerator list in a <a href="enum.html" title="c/language/enum">enum</a> declaration
+</li><li> the enumerator list in an <a href="enum.html" title="c/language/enum">enum</a> declaration
 </li><li> the macro parameter list in a <a href="../preprocessor/replace.html#Function-like_macros" title="c/preprocessor/replace">function-like macro definition</a>
 </li><li> the generic association list in a <a href="generic.html" title="c/language/generic">generic selection expression</a> <span class="t-mark-rev t-since-c11">(since C11)</span>
 </li><li> an <a href="attributes.html" title="c/language/attributes">attribute</a> list <span class="t-mark-rev t-since-c23">(since C23)</span>
 </li></ul>
 </dd></dl>
 <ul><li> In a <a href="static_assert.html" title="c/language/ Static assert">static assertion declaration</a>, separate the arguments. <span class="t-mark-rev t-since-c11">(since C11)</span>
-</li><li> In a <a href="generic.html" title="c/language/generic">generic selection expression</a>, seperate the controlling expression and the generic association list. <span class="t-mark-rev t-since-c11">(since C11)</span>
+</li><li> In a <a href="generic.html" title="c/language/generic">generic selection expression</a>, separate the controlling expression and the generic association list. <span class="t-mark-rev t-since-c11">(since C11)</span>
 </li></ul>
 <h3><span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-17">
@@ -379,19 +380,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3273/1000000
-Preprocessor generated node count: 7753/1000000
-Post‐expand include size: 50965/2097152 bytes
-Template argument size: 11947/2097152 bytes
+Preprocessor visited node count: 3279/1000000
+Preprocessor generated node count: 7766/1000000
+Post‐expand include size: 51465/2097152 bytes
+Template argument size: 11972/2097152 bytes
 Highest expansion depth: 13/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:20774-0!*!0!!en!*!* and timestamp 20220707073316 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:20774-0!*!0!!en!*!* and timestamp 20230120032922 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/punctuators&amp;oldid=140856">https://en.cppreference.com/mwiki/index.php?title=c/language/punctuators&amp;oldid=140856</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/punctuators&amp;oldid=146515">https://en.cppreference.com/mwiki/index.php?title=c/language/punctuators&amp;oldid=146515</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -404,17 +405,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/punctuators">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 7 July 2022, at 00:33.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 3,221 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -429,7 +419,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.047 secs. -->
+</script><!-- Served in 0.454 secs. -->
 	</body>
-<!-- Cached 20220707095235 -->
+<!-- Cached 20230120032922 -->
 </html>

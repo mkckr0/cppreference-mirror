@@ -173,6 +173,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>nodiscard</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="maybe_unused.html" title="c/language/attributes/maybe unused"><span class="t-lines"><span>maybe_unused</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="noreturn.html" title="c/language/attributes/noreturn"><span class="t-lines"><span>noreturn</span><span>_Noreturn</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c23">(C23)</span><span class="t-mark">(deprecated)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/unsequenced&amp;action=edit&amp;redlink=1" class="new" title="c/language/attributes/unsequenced (page does not exist)"><span class="t-lines"><span>unsequenced</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/reproducible&amp;action=edit&amp;redlink=1" class="new" title="c/language/attributes/reproducible (page does not exist)"><span class="t-lines"><span>reproducible</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>If a function declared <code>nodiscard</code> or a function returning a struct/union/enum declared <code>nodiscard</code> by value is called from a <a href="../expressions.html" title="c/language/expressions">discarded-value expression</a> other than a cast to <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span>, the compiler is encouraged to issue a warning.
 </p>
@@ -262,15 +264,15 @@ game.cpp:17:5: warning: ignoring return value of function declared with 'nodisca
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1974/1000000
-Preprocessor generated node count: 5082/1000000
-Post‐expand include size: 61197/2097152 bytes
-Template argument size: 13266/2097152 bytes
+Preprocessor visited node count: 2126/1000000
+Preprocessor generated node count: 5144/1000000
+Post‐expand include size: 66016/2097152 bytes
+Template argument size: 14253/2097152 bytes
 Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19921-0!*!0!!en!*!* and timestamp 20220617181317 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19921-0!*!0!!en!*!* and timestamp 20230120031852 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -287,17 +289,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/attributes/nodiscard">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 27 November 2020, at 10:01.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 5,593 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -312,7 +303,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.360 secs. -->
+</script><!-- Served in 0.331 secs. -->
 	</body>
-<!-- Cached 20220617181317 -->
+<!-- Cached 20230120031853 -->
 </html>

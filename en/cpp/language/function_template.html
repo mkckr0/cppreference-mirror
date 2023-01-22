@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/function_template","wgTitle":"cpp/language/function template","wgCurRevisionId":141380,"wgArticleId":5067,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/function_template","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/function_template","wgTitle":"cpp/language/function template","wgCurRevisionId":146461,"wgArticleId":5067,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/function_template","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -758,7 +759,7 @@ decltype<span class="br0">(</span>g<span class="br0">(</span>T<span class="br0">
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
-<p>Two expressions involving template parameters are called <i>functionally equivalent</i> if they are not <i>equivalent</i>, but for any given set of template arguments, the evaluation of the two expressions results in the same value.
+<p>Two <span class="t-rev-inl t-since-cxx20"><span><a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">potentially-evaluated</a></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> expressions involving template parameters are called <i>functionally equivalent</i> if they are not <i>equivalent</i>, but for any given set of template arguments, the evaluation of the two expressions results in the same value.
 </p><p>Two function templates are considered <i>functionally equivalent</i> if they are <i>equivalent</i>, except that one or more expressions that involve template parameters in their return types and parameter lists are <i>functionally equivalent</i>.
 </p>
  <table class="t-rev-begin">
@@ -823,7 +824,7 @@ f<span class="br0">(</span>p<span class="br0">)</span><span class="sy4">;</span>
 </p><p>Formally, to determine which of any two function templates is more specialized, the partial ordering process first transforms one of the two templates as follows:
 </p>
 <ul><li> For each type, non-type, and template parameter, <span class="t-rev-inl t-since-cxx11"><span>including parameter packs,</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> a unique fictitious type, value, or template is generated and substituted into function type of the template
-</li><li> If only one of the two function templates being compared is a member function, and that function template is a non-static member of some class <code>A</code>, a new first parameter is inserted into its parameter list. Given <i>cv</i> as the cv-qualifiers of the function template<span class="t-rev-inl t-since-cxx11"><span> and <i>ref</i> as the ref-qualifier of the function template</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>, the new parameter is of type is <i>cv</i> <code>A&amp;</code><span class="t-rev-inl t-since-cxx11"><span> unless <i>ref</i> is <code>&amp;&amp;</code>, or <i>ref</i> is not present and the first parameter of the other template has rvalue reference type, in this case the type is <i>cv</i> <code>A&amp;&amp;</code></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>. This helps the ordering of operators, which are looked up both as member and as non-member functions:
+</li><li> If only one of the two function templates being compared is a member function, and that function template is a non-static member of some class <code>A</code>, a new first parameter is inserted into its parameter list. Given <i>cv</i> as the cv-qualifiers of the function template<span class="t-rev-inl t-since-cxx11"><span> and <i>ref</i> as the ref-qualifier of the function template</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>, the new parameter type is <i>cv</i> <code>A&amp;</code><span class="t-rev-inl t-since-cxx11"><span> unless <i>ref</i> is <code>&amp;&amp;</code>, or <i>ref</i> is not present and the first parameter of the other template has rvalue reference type, in this case the type is <i>cv</i> <code>A&amp;&amp;</code></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>. This helps the ordering of operators, which are looked up both as member and as non-member functions:
 </li></ul>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
  
@@ -861,7 +862,7 @@ f<span class="br0">(</span>p<span class="br0">)</span><span class="sy4">;</span>
 </li></ul>
 <p>Each type from the list above from the parameter template is deduced. Before deduction begins, each parameter <code><b>P</b></code> of the parameter template and the corresponding argument <code><b>A</b></code> of the argument template is adjusted as follows:
 </p>
-<ul><li> If both <code><b>P</b></code> and <code><b>A</b></code> are reference types before, determine which is more cv-qualified (in all other cases, cv-qualificiations are ignored for partial ordering purposes)
+<ul><li> If both <code><b>P</b></code> and <code><b>A</b></code> are reference types before, determine which is more cv-qualified (in all other cases, cv-qualifications are ignored for partial ordering purposes)
 </li><li> If <code><b>P</b></code> is a reference type, it is replaced by the type referred to
 </li><li> If <code><b>A</b></code> is a reference type, it is replaced by the type referred to
 </li><li> If <code><b>P</b></code> is cv-qualified, <code><b>P</b></code> is replaced with cv-unqualified version of itself
@@ -890,7 +891,7 @@ f<span class="br0">(</span>p<span class="br0">)</span><span class="sy4">;</span>
 </li><li> template-1 is more specialized than template-2 for some types
 </li><li> template-2 is not more specialized than template-1 for any types OR is not at least as specialized for any types
 </li></ul>
-<p>Then template-1 is more specialized than template-2. If the conditions above are true after switching template order, than template-2 is more specialized than template-1. Otherwise, neither template is more specialized than the other.
+<p>Then template-1 is more specialized than template-2. If the conditions above are true after switching template order, then template-2 is more specialized than template-1. Otherwise, neither template is more specialized than the other.
 </p>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
@@ -1000,7 +1001,7 @@ f<span class="br0">(</span>p<span class="br0">)</span><span class="sy4">;</span>
  
     <span class="co1">// only one overload to choose from, partial ordering not tried, #1 is called</span>
 <span class="br0">}</span></pre></div></div>
-<p>Since in a call context considers only parameters for which there are explicit call arguments, those<span class="t-rev-inl t-since-cxx11"><span> function parameter packs,</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> ellipsis parameters, and parameters with default arguments, for which there is no explicit call argument, are ignored:
+<p>Since a call context considers only parameters for which there are explicit call arguments, those<span class="t-rev-inl t-since-cxx11"><span> function parameter packs,</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> ellipsis parameters, and parameters with default arguments, for which there is no explicit call argument, are ignored:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span><span class="sy4">;</span>         <span class="co1">// #1</span>
@@ -1067,8 +1068,9 @@ f<span class="br0">(</span>p<span class="br0">)</span><span class="sy4">;</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">const</span> T<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// #2</span>
  
-f<span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: selects #2; non-variadic template is more specialized than variadic template</span>
-            <span class="co1">// (was ambiguous before DR1395 because deduction failed in both directions)</span></pre></div></div>
+f<span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: selects #2; non-variadic template is more specialized than</span>
+            <span class="co1">// variadic template (was ambiguous before DR1395 because deduction</span>
+            <span class="co1">// failed in both directions)</span></pre></div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span>... <span class="me1">Args</span><span class="sy1">&gt;</span>
 <span class="kw4">void</span> f<span class="br0">(</span>Args... <span class="me1">args</span><span class="br0">)</span><span class="sy4">;</span>        <span class="co1">// #1</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T1, <span class="kw1">class</span>... <span class="me1">Args</span><span class="sy1">&gt;</span>
@@ -1149,16 +1151,14 @@ f<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><
 f<span class="br0">(</span>new <span class="kw4">int</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// calls #3, even though specialization of #1 would be a perfect match</span></pre></div></div>
 <p>It is important to remember this rule while ordering the header files of a translation unit. For more examples of the interplay between function overloads and function specializations, expand below:
 </p>
-<hr>
-<table style="border-style: none; border-spacing: 2px; width: 100%;" class="mw-collapsible mw-collapsed">
+<div style="margin-left:0px">
+<table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
 <tr>
-<td>
-<p><br>
-</p>
-</td></tr>
+<th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"> <span style="font-size:115%">Examples</span>
+</th></tr>
 <tr>
-<td>
+<td style="border: solid 1px silver; padding: 8px; background: white;">
 <p>Consider first some scenarios where the argument-dependent lookup is not employed. For that, we use the call <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>f<span class="br0">)</span><span class="br0">(</span>t<span class="br0">)</span></span></span>. As described in <a href="adl.html" title="cpp/language/adl">ADL</a>, wrapping the function name in parentheses is suppressing the argument-dependent lookup.
 </p>
 <ul><li> Multiple overloads of <span class="t-c"><span class="mw-geshi cpp source-cpp">f<span class="br0">(</span><span class="br0">)</span></span></span> declared before the <i>point-of-reference</i> (POR) in <span class="t-c"><span class="mw-geshi cpp source-cpp">g<span class="br0">(</span><span class="br0">)</span></span></span>.
@@ -1408,8 +1408,7 @@ Let's consider now those cases employing argument-dependent lookup (i.e., we use
 <p><br>
 Whenever the arguments are some C++ basic types, there are no ADL-associated namespaces. Hence, those scenarios are identical with the non-ADL examples above.
 </p>
-</td></tr></table>
-<hr>
+</td></tr></table></div>
 <p>For detailed rules on overload resolution, see <a href="overload_resolution.html" title="cpp/language/overload resolution">overload resolution</a>.
 </p>
 <h3><span class="mw-headline" id="Function_template_specialization">Function template specialization</span></h3>
@@ -1506,19 +1505,19 @@ Whenever the arguments are some C++ basic types, there are no ADL-associated nam
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6801/1000000
-Preprocessor generated node count: 14992/1000000
-Post‐expand include size: 174259/2097152 bytes
-Template argument size: 57875/2097152 bytes
+Preprocessor visited node count: 6919/1000000
+Preprocessor generated node count: 15622/1000000
+Post‐expand include size: 175883/2097152 bytes
+Template argument size: 58199/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5067-0!*!0!!en!*!* and timestamp 20220726081442 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5067-0!*!0!!en!*!* and timestamp 20230120003832 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/function_template&amp;oldid=141380">https://en.cppreference.com/mwiki/index.php?title=cpp/language/function_template&amp;oldid=141380</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/function_template&amp;oldid=146461">https://en.cppreference.com/mwiki/index.php?title=cpp/language/function_template&amp;oldid=146461</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1531,17 +1530,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/function_template">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 26 July 2022, at 01:14.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,568,332 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1556,7 +1544,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.042 secs. -->
+</script><!-- Served in 7.822 secs. -->
 	</body>
-<!-- Cached 20220726081628 -->
+<!-- Cached 20230120003832 -->
 </html>

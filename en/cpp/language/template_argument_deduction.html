@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/template_argument_deduction","wgTitle":"cpp/language/template argument deduction","wgCurRevisionId":140127,"wgArticleId":13515,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason","Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/template_argument_deduction","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/template_argument_deduction","wgTitle":"cpp/language/template argument deduction","wgCurRevisionId":146462,"wgArticleId":13515,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason","Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/template_argument_deduction","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -547,7 +548,7 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
  
 out<span class="br0">(</span><span class="st0">"123"</span><span class="br0">)</span><span class="sy4">;</span>     <span class="co1">// P = const T&amp;, A = const char[4] lvalue: deduced T = char[4]</span>
 out<span class="br0">(</span><a href="../io/manip/endl.html"><span class="kw1795">std::<span class="me2">endl</span></span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// P = const T&amp;, A = function template: T is in non-deduced context</span></pre></div></div></div>
-<div class="t-li1"><span class="t-li">6)</span> The parameter <code><b>P</b></code>, whose <code><b>A</b></code> is <span class="t-rev-inl t-since-cxx17"><span>a braced-init-list, but <code><b>P</b></code> is not <span class="t-lc"><a href="../utility/initializer_list.html" title="cpp/utility/initializer list">std::initializer_list</a></span>, a reference to one (possibly cv-qualified), or</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> a reference to an array:
+<div class="t-li1"><span class="t-li">6)</span> The parameter <code><b>P</b></code>, whose <code><b>A</b></code> is a braced-init-list, but <code><b>P</b></code> is not <span class="t-lc"><a href="../utility/initializer_list.html" title="cpp/utility/initializer list">std::initializer_list</a></span>, a reference to one (possibly cv-qualified)<span class="t-rev-inl t-since-cxx17"><span>, or a reference to an array</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>: 
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> g1<span class="br0">(</span><a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
  
@@ -623,44 +624,71 @@ bad<span class="br0">(</span>t1, t2<span class="br0">)</span><span class="sy4">;
 <p>Given a function parameter <code><b>P</b></code> that depends on one or more type template parameters <code><b>T</b></code>i, template template parameters <code><b>TT</b></code>i, or non-type template parameters <code><b>I</b></code>i, and the corresponding argument <code><b>A</b></code>, deduction takes place if <code><b>P</b></code> has one of the following forms:
 </p>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: possibly a table with micro-examples </td></tr></table>
-<ul><li> <code>T</code>;
-</li><li> <code>cv-list T</code>;
+<ul><li> <code><i>cv</i></code><span class="t-mark">(optional)</span> <code>T</code>;
 </li><li> <code>T*</code>;
 </li><li> <code>T&amp;</code>;
-</li><li> <code>T&amp;&amp;</code>;
-</li><li> <code>T[integer-constant]</code>;
-</li><li> <code>class-template-name&lt;T&gt;</code>;
-</li><li> <code>type(T)</code>;
-</li><li> <code>T()</code>;
-</li><li> <code>T(T)</code>;
-</li><li> <code>T type::*</code>;
-</li><li> <code>type T::*</code>;
-</li><li> <code>T T::*</code>;
-</li><li> <code>T(type::*)()</code>;
-</li><li> <code>type(T::*)()</code>;
-</li><li> <code>type(type::*)(T)</code>;
-</li><li> <code>type(T::*)(T)</code>;
-</li><li> <code>T (type::*)(T)</code>;
-</li><li> <code>T (T::*)()</code>;
-</li><li> <code>T (T::*)(T)</code>;
-</li><li> <code>type[i]</code>;
-</li><li> <code>class-template-name&lt;I&gt;</code>;
-</li><li> <code>TT&lt;T&gt;</code>;
-</li><li> <code>TT&lt;I&gt;</code>;
-</li><li> <code>TT&lt;&gt;</code>;
 </li></ul>
-<p>where
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<ul><li> <code>T&amp;&amp;</code>;
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
+<ul><li> <code>T</code><span class="t-mark">(optional)</span> <code>[</code><code>I</code><span class="t-mark">(optional)</span><code>]</code>;
+</li></ul>
+ <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx17"><td>
+<ul><li> <code>T</code><span class="t-mark">(optional)</span> <code>(</code><code>U</code><span class="t-mark">(optional)</span><code>)</code>;
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx17">(until C++17)</span></td></tr>
+<tr class="t-rev t-since-cxx17"><td>
+<ul><li> <code>T</code><span class="t-mark">(optional)</span> <code>(</code><code>U</code><span class="t-mark">(optional)</span><code>)</code> <code>noexcept(</code><code>I</code><span class="t-mark">(optional)</span><code>)</code>;
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
+</table>
+<ul><li> <code>T</code><span class="t-mark">(optional)</span> <code>U</code><span class="t-mark">(optional)</span><code>::*</code>;
+</li><li> <code>TT</code><span class="t-mark">(optional)</span><code>&lt;T&gt;</code>;
+</li><li> <code>TT</code><span class="t-mark">(optional)</span><code>&lt;I&gt;</code>;
+</li><li> <code>TT</code><span class="t-mark">(optional)</span><code>&lt;TU&gt;</code>;
+</li><li> <code>TT</code><span class="t-mark">(optional)</span><code>&lt;&gt;</code>.
+</li></ul>
+<p>In the above forms,
 </p>
-<ul><li> <code>(T)</code> is a function parameter type list where at least one parameter type contains T;
-</li><li> <code>()</code> is a function parameter type list where no parameters contain T;
-</li><li> <code>&lt;T&gt;</code> is a template argument list where at least one argument contains T;
-</li><li> <code>&lt;I&gt;</code> is a template argument list where at least one argument contains I;
-</li><li> <code>&lt;&gt;</code> is a template argument list where no arguments contain T or I.
+<ul><li> <code>T</code><span class="t-mark">(optional)</span> or <code>U</code><span class="t-mark">(optional)</span> represents a type or <span class="t-spar">parameter-type-list</span> that either satisfies these rules recursively, is a non-deduced context in <code>P</code> or <code>A</code>, or is the same non-dependent type in <code>P</code> and <code>A</code>.
+</li><li> <code>TT</code><span class="t-mark">(optional)</span> or <code>TU</code><span class="t-mark">(optional)</span> represents either a class template or a template template parameter.
+</li><li> <code>I</code><span class="t-mark">(optional)</span> represents an expression that either is an <code>I</code>, is value-dependent in <code>P</code> or <code>A</code>, or has the same constant value in <code>P</code> and <code>A</code>.
 </li></ul>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx17"><td>
+<ul><li> <code>noexcept(</code><code>I</code><span class="t-mark">(optional)</span><code>)</code> represents an <a href="noexcept_spec.html" title="cpp/language/noexcept spec">exception specification</a> in which the possibly-implicit <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span></span> specifier's operand satisfies the rules for an <code>I</code><span class="t-mark">(optional)</span> above.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
+</table>
 <p>If <code><b>P</b></code> has one of the forms that include a template parameter list <code><b>&lt;T&gt;</b></code> or <code><b>&lt;I&gt;</b></code>, then each element <code><b>P</b></code>i of that template argument list is matched against the corresponding template argument <code><b>A</b></code>i of its <code><b>A</b></code>. If the last <code><b>P</b></code>i is a pack expansion, then its pattern is compared against each remaining argument in the template argument list of <code><b>A</b></code>. A trailing parameter pack that is not otherwise deduced, is deduced to an empty parameter pack.
 </p><p>If <code><b>P</b></code> has one of the forms that include a function parameter list <code><b>(T)</b></code>, then each parameter <code><b>P</b></code>i from that list is compared with the corresponding argument <code><b>A</b></code>i from <code><b>A</b></code>'s function parameter list. If the last <code><b>P</b></code>i is a pack expansion, then its declarator is compared with each remaining <code><b>A</b></code>i in the parameter type list of <code><b>A</b></code>.
-</p><p>Forms can be nested and processed recursively: <code>X&lt;int&gt;(*)(char[6])</code> is an example of <code>type(*)(T)</code>, where <i>type</i> is <code>class-template-name&lt;T&gt;</code> and T is <code>type[i]</code>.
+</p><p>Forms can be nested and processed recursively:
 </p>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">[</span><span class="nu0">6</span><span class="br0">]</span><span class="br0">)</span></span></span> is an example of <code>T*</code>, where <code>T</code> is <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">[</span><span class="nu0">6</span><span class="br0">]</span><span class="br0">)</span></span></span>;
+</li></ul>
+ <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx17"><td>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">[</span><span class="nu0">6</span><span class="br0">]</span><span class="br0">)</span></span></span> is an example of <code>T</code><span class="t-mark">(optional)</span> <code>(</code><code>U</code><span class="t-mark">(optional)</span><code>)</code>, where <code>T</code> is <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span></span></span> and <code>U</code> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span><span class="br0">[</span><span class="nu0">6</span><span class="br0">]</span></span></span>;
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx17">(until C++17)</span></td></tr>
+<tr class="t-rev t-since-cxx17"><td>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">[</span><span class="nu0">6</span><span class="br0">]</span><span class="br0">)</span></span></span> is an example of <code>T</code><span class="t-mark">(optional)</span> <code>(</code><code>U</code><span class="t-mark">(optional)</span><code>)</code> <code>noexcept(</code><code>I</code><span class="t-mark">(optional)</span><code>)</code>, where <code>T</code> is <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span></span></span>, <code>U</code> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span><span class="br0">[</span><span class="nu0">6</span><span class="br0">]</span></span></span>, and <code>I</code> in the implicit <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span></span> specifier is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>;
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
+</table>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span></span></span> is an example of <code>TT</code><span class="t-mark">(optional)</span><code>&lt;T&gt;</code>, where <code>TT</code> is <code>X</code> and <code>T</code> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span>, and
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span><span class="br0">[</span><span class="nu0">6</span><span class="br0">]</span></span></span> is an example of <code>T</code><span class="t-mark">(optional)</span> <code>[</code><code>I</code><span class="t-mark">(optional)</span><code>]</code>, where <code>T</code> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> and <code>I</code> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a><span class="br0">(</span><span class="nu0">6</span><span class="br0">)</span></span></span>.
+</li></ul>
  <table class="t-rev-begin">
 <tr class="t-rev t-until-cxx17"><td>
 <p>Type template argument cannot be deduced from the type of a non-type template argument:
@@ -699,17 +727,31 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
  
 f<span class="br0">(</span>bar<span class="sy1">&lt;</span><span class="nu0">3</span><span class="sy1">&gt;</span><span class="br0">{</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: T was deduced to int (and n to 3)</span>
              <span class="co1">// from the template argument value in the type bar&lt;3&gt;</span></pre></div></div>
-<p>The type of <code>N</code> in the type <code>T[N]</code> is <span class="t-lc"><a href="../types/size_t.html" title="cpp/types/size t">std::size_t</a></span>
+<p>The type of <code>N</code> in the type <code>T[N]</code> is <span class="t-lc"><a href="../types/size_t.html" title="cpp/types/size t">std::size_t</a></span>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, T i<span class="sy1">&gt;</span>
 <span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span> <span class="br0">(</span><span class="sy3">&amp;</span>a<span class="br0">)</span><span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> v<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span>
 f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: T is std::size_t</span></pre></div></div>
+<p>The type of <code>B</code> in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span>B<span class="br0">)</span></span></span> specifier of a function type is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt;</span>
+<span class="kw1">struct</span> A <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">auto</span><span class="sy1">&gt;</span>
+<span class="kw1">struct</span> B<span class="sy4">;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">auto</span> X, <span class="kw4">void</span> <span class="br0">(</span><span class="sy2">*</span>F<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="br0">(</span>X<span class="br0">)</span><span class="sy1">&gt;</span>
+<span class="kw1">struct</span> B<span class="sy1">&lt;</span>F<span class="sy1">&gt;</span> <span class="br0">{</span>
+    A<span class="sy1">&lt;</span>X<span class="sy1">&gt;</span> ax<span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw4">void</span> f_nothrow<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
+B<span class="sy1">&lt;</span>f_nothrow<span class="sy1">&gt;</span> bn<span class="sy4">;</span>   <span class="co1">// OK: X is deduced as true and the type of X is deduced as bool.</span></pre></div></div>
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
-<p>If a non-type template parameter of function template is used in the template parameter list of function parameter(which is also a template), and the corresponding template argument is deduced, the type of the deduced template argument ( as specified in its enclosing template parameter list, meaning references are preserved) must match the type of the non-type template parameter exactly, except that cv-qualifiers are dropped, and except where the template argument is deduced from an array bound—in that case any integral type is allowed, even bool though it would always become true:
+<p>If a non-type template parameter of function template is used in the template parameter list of function parameter (which is also a template), and the corresponding template argument is deduced, the type of the deduced template argument ( as specified in its enclosing template parameter list, meaning references are preserved) must match the type of the non-type template parameter exactly, except that cv-qualifiers are dropped, and except where the template argument is deduced from an array bound—in that case any integral type is allowed, even <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> though it would always become <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">int</span> i<span class="sy1">&gt;</span>
 <span class="kw1">class</span> A <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
@@ -767,8 +809,6 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
  
 A<span class="sy1">&lt;</span>B<span class="sy1">&gt;</span> ab<span class="sy4">;</span>
 f<span class="br0">(</span>ab<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// P = A&lt;TT&gt;, A = A&lt;B&gt;: deduced TT = B, calls f(A&lt;B&gt;)</span></pre></div></div>
-<p>Notes: As <a href="noexcept_spec.html" title="cpp/language/noexcept spec">noexcept specification</a> has become a part of type since C++17, some compilers (e.g. GCC, Clang, and ICC, but not MSVC) are able to deduce the value in the <code>noexcept</code> specifier from a type in C++17 or later mode. Such feature has not been accepted by the standard. This is <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2355.html">CWG issue 2355</a>.
-</p>
 <h3><span class="mw-headline" id="Other_contexts">Other contexts</span></h3>
 <p>Besides function calls and operator expressions, template argument deduction is used in the following situations:
 </p>
@@ -785,7 +825,7 @@ f<span class="br0">(</span>ab<span class="br0">)</span><span class="sy4">;</span
  
 <span class="kw4">auto</span> l <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">13</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// P = std::initializer_list&lt;U&gt;, A = {13}:</span>
                <span class="co1">// deduced U = int, the type of l is std::initializer_list&lt;int&gt;</span></pre></div></div>
-<p>In direct-list-initialization (but not in copy-list-initalization), when deducing the meaning of the <a href="auto.html" title="cpp/language/auto">auto</a> from a braced-init-list, the braced-init-list must contain only one element, and the type of auto will be the type of that element:
+<p>In direct-list-initialization (but not in copy-list-initialization), when deducing the meaning of the <a href="auto.html" title="cpp/language/auto">auto</a> from a braced-init-list, the braced-init-list must contain only one element, and the type of auto will be the type of that element:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">auto</span> x1 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// x1 is std::initializer_list&lt;int&gt;</span>
 <span class="kw4">auto</span> x2<span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// error: not a single element</span>
@@ -836,7 +876,7 @@ f<span class="br0">(</span>ab<span class="br0">)</span><span class="sy4">;</span
 <p>If deduction fails, or if deduction succeeds, but the specialization it produces would be invalid (for example, an overloaded operator whose parameters are neither class nor enumeration types), the specialization is not included in the overload set, similar to <a href="sfinae.html" title="cpp/language/sfinae">SFINAE</a>.
 </p>
 <h4><span class="mw-headline" id="Address_of_an_overload_set">Address of an overload set</span></h4>
-<p>Template argument deduction is used when taking an <a href="overloaded_address.html" title="cpp/language/overloaded address">address of a overload set</a>, which includes function templates.
+<p>Template argument deduction is used when taking an <a href="overloaded_address.html" title="cpp/language/overloaded address">address of an overload set</a>, which includes function templates.
 </p><p>The function type of the function template is <code><b>P</b></code>. The <a href="overloaded_address.html" title="cpp/language/overloaded address">target type</a> is the type of <code><b>A</b></code>:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/endl.html"><span class="kw1795">std::<span class="me2">endl</span></span></a><span class="sy4">;</span>
@@ -1097,23 +1137,32 @@ f<span class="br0">(</span>v<span class="br0">)</span><span class="sy4">;</span>
 <td> direct-list-initialization of <code>auto</code> deduces <span class="t-lc"><a href="../utility/initializer_list.html" title="cpp/utility/initializer list">std::initializer_list</a></span>
 </td>
 <td> ill-formed for more than one<br>elements, deduce element<br>type for single element
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2355.html">CWG 2355</a>
+</td>
+<td> C++17
+</td>
+<td> value in a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span></span> specifier of a function type was not deducible
+</td>
+<td> made deducible
 </td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6073/1000000
-Preprocessor generated node count: 16395/1000000
-Post‐expand include size: 162000/2097152 bytes
-Template argument size: 46186/2097152 bytes
+Preprocessor visited node count: 7155/1000000
+Preprocessor generated node count: 18188/1000000
+Post‐expand include size: 175375/2097152 bytes
+Template argument size: 52084/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13515-0!*!0!!en!*!* and timestamp 20220708023722 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13515-0!*!0!!en!*!* and timestamp 20230120004429 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_argument_deduction&amp;oldid=140127">https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_argument_deduction&amp;oldid=140127</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_argument_deduction&amp;oldid=146462">https://en.cppreference.com/mwiki/index.php?title=cpp/language/template_argument_deduction&amp;oldid=146462</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1126,17 +1175,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/template_argument_deduction">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 8 June 2022, at 23:31.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 592,988 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1151,7 +1189,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 6.848 secs. -->
+</script><!-- Served in 8.513 secs. -->
 	</body>
-<!-- Cached 20220708023722 -->
+<!-- Cached 20230120004429 -->
 </html>

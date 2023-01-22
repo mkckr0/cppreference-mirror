@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/overloaded_address","wgTitle":"cpp/language/overloaded address","wgCurRevisionId":136831,"wgArticleId":13003,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/overloaded_address","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/overloaded_address","wgTitle":"cpp/language/overloaded address","wgCurRevisionId":143710,"wgArticleId":13003,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/overloaded_address","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -350,7 +351,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td></tr></table>
 <p>In each context, the name of an overloaded function may be preceded by address-of operator <code><b>&amp;</b></code> and may be enclosed in a redundant set of parentheses.
 </p><p>In all these contexts, the function selected from the overload set is the function whose type matches the pointer to function, reference to function, or pointer to member function type that is expected by <i>target</i>.
-</p><p>The parameter types and the return type of the function must match the target exactly, no implicit conversions are considered (e.g. a function returning a pointer to derived won't get selected when initializing a pointer to function returning a pointer to base).
+</p><p>The parameter types and the return type of the function must match the target exactly. No implicit conversions are considered (e.g. a function returning a pointer to derived won't get selected when initializing a pointer to function returning a pointer to base).
 </p><p>If the function name names a function template, then, first, <a href="template_argument_deduction.html" title="cpp/language/template argument deduction">template argument deduction</a> is done, and if it succeeds, it produces a single template specialization which is added to the set of overloads to consider. <span class="t-rev-inl t-since-cxx20"><span>All functions whose associated <a href="constraints.html" title="cpp/language/constraints">constraints</a> are not satisfied are dropped from the set.</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> If more than one function from the set matches the target, and at least one function is non-template, the template specializations are eliminated from consideration. <span class="t-rev-inl t-since-cxx20"><span>For any pair of non-template functions where one is <a href="constraints.html" title="cpp/language/constraints">more constrained</a> than another, the less constrained function is dropped from the set</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>. If all remaining candidates are template specializations, <a href="partial_specialization.html" title="cpp/language/partial specialization">less specialized</a> ones are removed if more specialized are available. If more than one candidate remains after the removals, the program is ill-formed.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
@@ -403,6 +404,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">}</span></pre></div></div>
 </div>
 <h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2023): 
+</li></ul>
+<dl><dd><ul><li> 12.3 Address of overloaded function [over.over] 
+</li></ul>
+</dd></dl>
+</div>
 <div class="t-ref-std-c++20">
 <ul><li> C++20 standard (ISO/IEC 14882:2020): 
 </li></ul>
@@ -441,19 +449,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2360/1000000
-Preprocessor generated node count: 5719/1000000
-Post‐expand include size: 123105/2097152 bytes
-Template argument size: 15524/2097152 bytes
+Preprocessor visited node count: 2390/1000000
+Preprocessor generated node count: 5810/1000000
+Post‐expand include size: 123947/2097152 bytes
+Template argument size: 15627/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13003-0!*!0!!*!*!* and timestamp 20220410090944 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13003-0!*!0!!*!*!* and timestamp 20230120013935 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/overloaded_address&amp;oldid=136831">https://en.cppreference.com/mwiki/index.php?title=cpp/language/overloaded_address&amp;oldid=136831</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/overloaded_address&amp;oldid=143710">https://en.cppreference.com/mwiki/index.php?title=cpp/language/overloaded_address&amp;oldid=143710</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -466,17 +474,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/overloaded_address">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 31 December 2021, at 06:55.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 103,697 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -491,7 +488,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.568 secs. -->
+</script><!-- Served in 0.750 secs. -->
 	</body>
-<!-- Cached 20220410090944 -->
+<!-- Cached 20230120013936 -->
 </html>

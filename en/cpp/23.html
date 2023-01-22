@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/23","wgTitle":"cpp/23","wgCurRevisionId":140212,"wgArticleId":19901,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo without reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/23","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/23","wgTitle":"cpp/23","wgCurRevisionId":143787,"wgArticleId":19901,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo without reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/23","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -137,10 +138,30 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete </td></tr></table>
 <h2><span class="mw-headline" id="New_language_features"> New language features </span></h2>
 <h2><span class="mw-headline" id="New_library_features"> New library features </span></h2>
+<h3><span class="mw-headline" id="New_modules"> New modules </span></h3>
+<ul><li> <a href="standard_library.html#Importing_modules" title="cpp/standard library"><span class="t-c"><span class="mw-geshi cpp source-cpp">std</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">std.<span class="me1">compat</span></span></span></a>
+</li></ul>
+<h3><span class="mw-headline" id="New_headers"> New headers </span></h3>
+<ul><li> <a href="header/expected.html" title="cpp/header/expected"><tt>&lt;expected&gt;</tt></a>
+</li><li> <a href="header/flat_map.html" title="cpp/header/flat map"><tt>&lt;flat_map&gt;</tt></a>
+</li><li> <a href="header/flat_set.html" title="cpp/header/flat set"><tt>&lt;flat_set&gt;</tt></a>
+</li><li> <a href="header/generator.html" title="cpp/header/generator"><tt>&lt;generator&gt;</tt></a>
+</li><li> <a href="header/mdspan.html" title="cpp/header/mdspan"><tt>&lt;mdspan&gt;</tt></a>
+</li><li> <a href="header/print.html" title="cpp/header/print"><tt>&lt;print&gt;</tt></a>
+</li><li> <a href="header/spanstream.html" title="cpp/header/spanstream"><tt>&lt;spanstream&gt;</tt></a>
+</li><li> <a href="header/stacktrace.html" title="cpp/header/stacktrace"><tt>&lt;stacktrace&gt;</tt></a>
+</li><li> <a href="header/stdfloat.html" title="cpp/header/stdfloat"><tt>&lt;stdfloat&gt;</tt></a>
+</li></ul>
+<p>Headers that were borrowed from C:
+</p>
+<ul><li> <a href="header/stdatomic.h.html" title="cpp/header/stdatomic.h"><tt>&lt;stdatomic.h&gt;</tt></a>
+</li></ul>
 <h2><span class="mw-headline" id="Defect_reports"> Defect reports </span></h2>
 <h2><span class="mw-headline" id="Compiler_support"> Compiler support</span></h2>
+<p>Main Article: <a href="compiler_support.html#C.2B.2B23_features" title="cpp/compiler support">C++23 compiler support</a>
+</p>
 <h3><span class="mw-headline" id="C.2B.2B23_core_language_features"> C++23 core language features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-compiler-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++23 feature<br> 
@@ -327,7 +348,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> DR: Allow Duplicate Attributes
+<td> DR: Allow duplicate <a href="language/attributes.html#Syntax" title="cpp/language/attributes">attributes</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2156R1">P2156R1</a>
 </td>
@@ -476,7 +497,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="language/member_functions.html#Explicit_object_parameter" title="cpp/language/member functions">Deducing this</a>
+<td> <a href="language/member_functions.html#Explicit_object_parameter" title="cpp/language/member functions">Explicit object parameter</a> (deducing this)
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0847R7">P0847R7</a>
 </td>
@@ -534,7 +555,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Change scope of lambda trailing-return-type
+<td> Change scope of <a href="language/lambda.html#Syntax" title="cpp/language/lambda">lambda</a> trailing-return-type
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2036R3">P2036R3</a>
 </td>
@@ -652,11 +673,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Character sets and encodings
+<td> <a href="language/charset.html" title="cpp/language/charset">Character sets and encodings</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2314R4">P2314R4</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
@@ -681,7 +702,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Extend init-statement to allow alias-declaration
+<td> Extend init-statement (of <a href="language/for.html#Syntax" title="cpp/language/for"><code>for</code> loop</a>) to allow <a href="language/type_alias.html" title="cpp/language/type alias">alias-declaration</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2360R0">P2360R0</a>
 </td>
@@ -712,7 +733,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Multidimensional subscript operator
+<td> Multidimensional <a href="language/operators.html#Array_subscript_operator" title="cpp/language/operators">subscript operator</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2128R6">P2128R6</a>
 </td>
@@ -772,7 +793,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> DR: Adjusting the value of feature testing macro <code>__cpp_concepts</code>
+<td> DR: Adjusting the value of feature-test macro <a href="feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_concepts</code></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2493R0">P2493R0</a>
 </td>
@@ -805,7 +826,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2437R1">P2437R1</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes<span title="Supported in all versions, but gcc-13 no longer gives a -pedantic warning about it being non-standard.">*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
@@ -834,7 +855,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2362R3">P2362R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">14
 </td>
@@ -865,7 +886,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -888,11 +909,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Delimited escape sequences
+<td> <a href="language/escape.html" title="cpp/language/escape">Delimited escape sequences</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2290R3">P2290R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
@@ -917,11 +938,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Named universal character escapes
+<td> <a href="language/escape.html#Named_universal_character_escapes" title="cpp/language/escape">Named universal character escapes</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2071R2">P2071R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
@@ -950,7 +971,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2448R2">P2448R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -979,7 +1000,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2266R3">P2266R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
@@ -1008,9 +1029,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1169R4">P1169R4</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1033,11 +1054,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Requirements for optional extended floating-point types
+<td> Requirements for optional <a href="types/floating-point.html" title="cpp/types/floating-point">extended floating-point types</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1467R9">P1467R9</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1045,7 +1066,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.4
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1091,11 +1112,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Attribute <code>[[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/attributes/assume&amp;action=edit&amp;redlink=1" class="new" title="cpp/language/attributes/assume (page does not exist)">assume</a>]]</code>
+<td> Attribute <code>[[<a href="language/attributes/assume.html" title="cpp/language/attributes/assume">assume</a>]]</code>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1774R8">P1774R8</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1120,15 +1141,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Support for UTF-8 as a portable source file encoding
+<td> Support for <a href="language/translation_phases.html#Phase_1" title="cpp/language/translation phases">UTF-8 as a portable source file encoding</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2295R6">P2295R6</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13<span title="UTF-8 source files were already supported in old versions. For pedantic diagnostics of invalid UTF-8 sequences use -finput-charset=UTF-8 -pedantic-errors.">*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15<span title="UTF-8 source files were already supported in old versions, but comments that are invalid as UTF-8 were not diagnosed.">*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015 Update 2">19.0 (Update 2)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1153,7 +1174,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2327R1">P2327R1</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
@@ -1178,11 +1199,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> DR: Relax requirements on <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> to match existing practices
+<td> DR: <a href="language/types.html#Defect_reports" title="cpp/language/types">Relax requirements on <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span></a> to match existing practices
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2460R2">P2460R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
@@ -1240,6 +1261,122 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2468R2">P2468R2</a>
 </td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> DR: <span class="t-c"><span class="mw-geshi cpp source-cpp">char8_t</span></span> Compatibility and Portability Fix
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2513R4">P2513R4</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">static</span> operator<span class="br0">[</span><span class="br0">]</span></span></span>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2589R0">P2589R0</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> Permitting <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">static</span> <span class="kw4">constexpr</span></span></span> variables in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span></span></span> functions
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2647R1">P2647R1</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> Extending the lifetime of temporaries in range-based for loop initializer
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2718R0">P2718R0</a>
+</td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
@@ -1265,9 +1402,38 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> DR: <span class="t-c"><span class="mw-geshi cpp source-cpp">char8_t</span></span> Compatibility and Portability Fix
+<td> DR: Meaningful exports
 </td>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2513R3">P2513R3</a>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2615R0">P2615R0</a>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> DR: <span class="t-c"><span class="mw-geshi cpp source-cpp">consteval</span></span> needs to propagate up
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2564R0">P2564R0</a>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1318,12 +1484,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </th>
 <th> <div class="t-vertical"><div>Cray</div></div>
 </th>
-<th> <div class="t-vertical"><div>Nvidia HPC C++</div></div>
+<th> <div class="t-vertical"><div>Nvidia HPC C++<br>(ex Portland Group/PGI)</div></div>
 </th>
 <th> <div class="t-vertical"><div>Nvidia nvcc</div></div>
 </th></tr></table>
 <h3><span class="mw-headline" id="C.2B.2B23_library_features"> C++23 library features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-standard-library-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++23 feature<br> 
@@ -1591,7 +1757,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.3">19.33*</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.3">19.33*</span><span title="no feature-test macro">*</span><br><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1720,7 +1886,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Default template arguments for <a href="utility/pair.html" title="cpp/utility/pair"><tt>pair</tt></a>'s forwarding constructor
+<td> Default template arguments for <a href="utility/pair.html" title="cpp/utility/pair"><tt>pair</tt></a>'s forwarding <a href="utility/pair/pair.html" title="cpp/utility/pair/pair">constructor</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1951R1">P1951R1</a>
 </td>
@@ -1840,9 +2006,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2216R3">P2216R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="Paragraph 6 (Binary size)">14 (partial)*</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="Paragraph 6 (Binary size)">14 (partial)* 15</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.2">19.32*</span>
 </td>
@@ -1874,15 +2040,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> zip: <span class="t-lc">views::zip</span>, <span class="t-lc">views::zip_transform</span>, <span class="t-lc">views::adjacent</span>, and <span class="t-lc">views::adjacent_transform</span>
+<td> zip: <a href="ranges/zip_view.html" title="cpp/ranges/zip view"><tt>views::zip</tt></a>, <a href="ranges/zip_transform_view.html" title="cpp/ranges/zip transform view"><tt>views::zip_transform</tt></a>, <a href="ranges/adjacent_view.html" title="cpp/ranges/adjacent view"><tt>views::adjacent</tt></a>, and <a href="ranges/adjacent_transform_view.html" title="cpp/ranges/adjacent transform view"><tt>views::adjacent_transform</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2321R2">P2321R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="tuple specializations, and views::zip">15 (partial)*</span>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="VS 2022 17.3">19.33*</span> <span title="changes of pair, tuple, and vector&lt;bool&gt;::reference">(partial)*</span>
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="VS 2022 17.3">19.33*</span> <span title="19.33: changes of pair, tuple, and vector&lt;bool&gt;::reference">(partial)*</span><span title="19.35: views::zip">*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2087,9 +2253,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2418R2">P2418R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.2">19.32*</span>
 </td>
@@ -2165,7 +2331,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.3">19.33*</span>
 </td>
@@ -2261,7 +2427,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="make_unique_for_overwrite is missing">16 (partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.3">19.33*</span>
 </td>
@@ -2282,7 +2448,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2301,7 +2467,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2331,11 +2497,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::join_with</span>
+<td> <a href="ranges/join_with_view.html" title="cpp/ranges/join with view"><tt>views::join_with</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2441R2">P2441R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2350,11 +2516,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::chunk</span> and <span class="t-lc">views::slide</span>
+<td> <span class="t-lc">views::chunk</span> and <a href="ranges/slide_view.html" title="cpp/ranges/slide view"><tt>views::slide</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2442R1">P2442R1</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2369,11 +2535,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::chunk_by</span>
+<td> <a href="ranges/chunk_by_view.html" title="cpp/ranges/chunk by view"><tt>views::chunk_by</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2443R1">P2443R1</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2388,7 +2554,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">std::mdspan</span>: a non-owning multidimensional array reference
+<td> <a href="container/mdspan.html" title="cpp/container/mdspan"><tt>std::mdspan</tt></a>: a non-owning multidimensional array reference
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0009R18">P0009R18</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2599R2">P2599R2</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2604R0">P2604R0</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2613R1">P2613R1</a>
 </td>
@@ -2407,7 +2573,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/flat_map&amp;action=edit&amp;redlink=1" class="new" title="cpp/header/flat map (page does not exist)"><tt>&lt;flat_map&gt;</tt></a>
+<td> <a href="header/flat_map.html" title="cpp/header/flat map"><tt>&lt;flat_map&gt;</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0429R9">P0429R9</a>
 </td>
@@ -2426,7 +2592,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/flat_set&amp;action=edit&amp;redlink=1" class="new" title="cpp/header/flat set (page does not exist)"><tt>&lt;flat_set&gt;</tt></a>
+<td> <a href="header/flat_set.html" title="cpp/header/flat set"><tt>&lt;flat_set&gt;</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1222R4">P1222R4</a>
 </td>
@@ -2453,6 +2619,25 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.6">19.36*</span>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> Freestanding Library: Easy <a href="header/utility.html" title="cpp/header/utility"><tt>&lt;utility&gt;</tt></a>, <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a>, and <a href="header/iterator.html" title="cpp/header/iterator"><tt>&lt;iterator&gt;</tt></a>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P1642R11">P1642R11</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13<span title="Enables extra headers (e.g. &lt;string_view&gt;, etc)">*</span>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
@@ -2464,15 +2649,15 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::stride</span>
+<td> <a href="ranges/stride_view.html" title="cpp/ranges/stride view"><tt>views::stride</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1899R3">P1899R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2483,9 +2668,9 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Formatted output library
+<td> Formatted output library <a href="header/print.html" title="cpp/header/print"><tt>&lt;print&gt;</tt></a>
 </td>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2093R14">P2093R14</a>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2093R14">P2093R14</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2539R3">P2539R3</a>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2529,7 +2714,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.5">19.35*</span> <span title="19.35: The 'Iterators' section, including basic_const_iterator, make_const_iterator(), and make_const_sentinel().">(partial)*</span><br><span title="VS 2022 17.6">19.36*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2546,7 +2731,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2563,11 +2748,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2291R3">P2291R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2605,7 +2790,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.5">19.35*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2620,7 +2805,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2374R4">P2374R4</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2540R1">P2540R1</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2662,7 +2847,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2677,11 +2862,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2417R2">P2417R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2698,9 +2883,9 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2711,15 +2896,15 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::as_rvalue</span>
+<td> <a href="ranges/as_rvalue_view.html" title="cpp/ranges/as rvalue view"><tt>views::as_rvalue</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2446R2">P2446R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2738,7 +2923,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="VS 2022 17.5">19.35*</span><br><span title="modules work but you need manually add the modules to your project">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2755,9 +2940,9 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2776,7 +2961,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.6">19.36*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2787,11 +2972,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::repeat</span>
+<td> <a href="ranges/repeat_view.html" title="cpp/ranges/repeat view"><tt>views::repeat</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2474R2">P2474R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2814,7 +2999,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2825,13 +3010,13 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc"><a href="string/basic_string_view.html" title="cpp/string/basic string view">std::basic_string_view</a></span> range constructor should be explicit
+<td> <span class="t-lc"><a href="string/basic_string_view.html" title="cpp/string/basic string view">std::basic_string_view</a></span> range <a href="string/basic_string_view/basic_string_view.html" title="cpp/string/basic string view/basic string view">constructor</a> should be explicit
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2499R0">P2499R0</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.2
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
@@ -2863,25 +3048,6 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">std::basic_format_string</span>
-</td>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2508R1">P2508R1</a>
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td></tr>
-<tr>
 <td> Add a conditional noexcept specification to <span class="t-lc"><a href="utility/apply.html" title="cpp/utility/apply">std::apply</a></span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2517R0">P2517R0</a>
@@ -2890,7 +3056,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2907,7 +3073,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">16 (partial)<span title="Specializations for string and debug_string are not done.">*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2947,7 +3113,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span><span title="Treated as a defect report against C++20.">*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2966,7 +3132,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span><span title="Treated as a defect report against C++20.">*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2985,7 +3151,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3000,9 +3166,9 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1169R4">P1169R4</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3019,11 +3185,68 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1467R9">P1467R9</a>
 </td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> DR: <a href="utility/format/basic_format_string.html" title="cpp/utility/format/basic format string"><tt>std::basic_format_string</tt></a>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2508R1">P2508R1</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.5">19.35*</span>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> Monadic operations for <span class="t-lc">std::expected</span>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2505R5">P2505R5</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> DR: Poison Pills are Too Toxic
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2602R2">P2602R2</a>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.6">19.36*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3052,22 +3275,23 @@ Applied to C++11 and later modes.">(partial)*</span>
 </th>
 <th> <div class="t-vertical"><div>Cray C++<br>Standard Library</div></div>
 </th></tr></table>
-
+<p><i>*</i> - hover over a cell with the version number to see notes
+</p>
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 20808/1000000
-Preprocessor generated node count: 17963/1000000
-Post‐expand include size: 610267/2097152 bytes
-Template argument size: 200738/2097152 bytes
+Preprocessor visited node count: 24570/1000000
+Preprocessor generated node count: 21384/1000000
+Post‐expand include size: 670938/2097152 bytes
+Template argument size: 232278/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19901-0!*!0!!en!*!* and timestamp 20220730103225 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19901-0!*!0!!en!*!* and timestamp 20230120170843 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/23&amp;oldid=140212">https://en.cppreference.com/mwiki/index.php?title=cpp/23&amp;oldid=140212</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/23&amp;oldid=143787">https://en.cppreference.com/mwiki/index.php?title=cpp/23&amp;oldid=143787</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -3080,17 +3304,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/23">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 12 June 2022, at 09:45.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 159,250 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -3105,7 +3318,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.946 secs. -->
+</script><!-- Served in 2.362 secs. -->
 	</body>
-<!-- Cached 20220730103225 -->
+<!-- Cached 20230120170843 -->
 </html>

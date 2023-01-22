@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/merge","wgTitle":"cpp/algorithm/merge","wgCurRevisionId":132882,"wgArticleId":754,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/merge","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/merge","wgTitle":"cpp/algorithm/merge","wgCurRevisionId":146426,"wgArticleId":754,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/merge","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -367,7 +368,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_1"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt <span class="sy1">&gt;</span><br>
 <p>OutputIt merge<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
                 InputIt2 first2, InputIt2 last2,<br>
 </p>
@@ -403,7 +404,7 @@ ForwardIt3 merge<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_3"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
 <p>OutputIt merge<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
                 InputIt2 first2, InputIt2 last2,<br>
 </p>
@@ -439,7 +440,18 @@ ForwardIt3 merge<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Elements are compared using <code>operator&lt;</code>.</div>
 <div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary comparison function <code>comp</code>.</div>
-<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <code>policy</code>. These overloads do not participate in overload resolution unless <span class="t-rev-inl t-until-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span> <span class="t-rev-inl t-since-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> is true.</div>
+<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <code>policy</code>. These overloads do not participate in overload resolution unless  <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table></div>
 <p>This merge function is <i>stable</i>, which means that for equivalent elements in the original two ranges, the elements from the first range (preserving their original order) precede the elements from the second range (preserving their original order).
 </p><p>The behavior is undefined if the destination range overlaps either of the input ranges (the input ranges may overlap each other).
 </p>
@@ -448,25 +460,25 @@ ForwardIt3 merge<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp
 
 
 <tr class="t-par">
-<td>  first1, last1
+<td> first1, last1
 </td>
 <td> -
 </td>
-<td>  the first range of elements to merge
+<td> the first range of elements to merge
 </td></tr>
 <tr class="t-par">
-<td>  first2, last2
+<td> first2, last2
 </td>
 <td> -
 </td>
-<td>  the second range of elements to merge
+<td> the second range of elements to merge
 </td></tr>
 <tr class="t-par">
-<td>  d_first
+<td> d_first
 </td>
 <td> -
 </td>
-<td>  the beginning of the destination range
+<td> the beginning of the destination range
 </td></tr>
 <tr class="t-par">
 <td>  policy
@@ -476,16 +488,16 @@ ForwardIt3 merge<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp
 <td>  the execution policy to use. See <a href="execution_policy_tag_t.html" title="cpp/algorithm/execution policy tag t">execution policy</a> for details.
 </td></tr>
 <tr class="t-par">
-<td>   comp
+<td> comp
 </td>
 <td> -
 </td>
-<td>  comparison function object (i.e. an object that satisfies the requirements of <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>) which returns ​<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the first argument is <i>less</i> than (i.e. is ordered <i>before</i>) the second. <br>
+<td> comparison function object (i.e. an object that satisfies the requirements of <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>) which returns ​<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the first argument is <i>less</i> than (i.e. is ordered <i>before</i>) the second. <br>
 <p>The signature of the comparison function should be equivalent to the following:
-</p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> <span class="kw4">bool</span> cmp<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
-</p><p>While the signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1 <span class="sy3">&amp;</span></span></span> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
-The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that objects of types <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt2</span></span> can be dereferenced and then implicitly converted to both <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span>.
-​ 
+</p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span> cmp<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
+</p><p>While the signature does not need to have <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span><span class="sy3">&amp;</span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <code>Type1&amp;</code> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <code>Type1</code> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
+The types <code>Type1</code> and <code>Type2</code> must be such that objects of types <code>InputIt1</code> and <code>InputIt2</code> can be dereferenced and then implicitly converted to both <code>Type1</code> and <code>Type2</code>.
+​
 </p>
 </td></tr>
 <tr class="t-par-hitem">
@@ -521,7 +533,7 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <table class="eq-fun-cpp-table">
 
 <tr>
-<th> First version
+<th><a href="merge.html#Version_1">merge (1)</a>
 </th></tr>
 <tr>
 <td>
@@ -530,14 +542,18 @@ OutputIt merge<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
                InputIt2 first2, InputIt2 last2,
                OutputIt d_first<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>d_first<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span>first2 <span class="sy1">==</span> last2<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>d_first<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>first2 <span class="sy1">==</span> last2<span class="br0">)</span>
             <span class="kw1">return</span> <a href="copy.html"><span class="kw1586">std::<span class="me2">copy</span></span></a><span class="br0">(</span>first1, last1, d_first<span class="br0">)</span><span class="sy4">;</span>
-        <span class="br0">}</span>
-        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>first2 <span class="sy1">&lt;</span> <span class="sy2">*</span>first1<span class="br0">)</span> <span class="br0">{</span>
+ 
+        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>first2 <span class="sy1">&lt;</span> <span class="sy2">*</span>first1<span class="br0">)</span>
+        <span class="br0">{</span>
             <span class="sy2">*</span>d_first <span class="sy1">=</span> <span class="sy2">*</span>first2<span class="sy4">;</span>
             <span class="sy2">++</span>first2<span class="sy4">;</span>
-        <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+        <span class="br0">}</span>
+        <span class="kw1">else</span>
+        <span class="br0">{</span>
             <span class="sy2">*</span>d_first <span class="sy1">=</span> <span class="sy2">*</span>first1<span class="sy4">;</span>
             <span class="sy2">++</span>first1<span class="sy4">;</span>
         <span class="br0">}</span>
@@ -546,7 +562,7 @@ OutputIt merge<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Second version
+<th><a href="merge.html#Version_3">merge (3)</a>
 </th></tr>
 <tr>
 <td>
@@ -556,14 +572,18 @@ OutputIt merge<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
                InputIt2 first2, InputIt2 last2,
                OutputIt d_first, Compare comp<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>d_first<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span>first2 <span class="sy1">==</span> last2<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>d_first<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>first2 <span class="sy1">==</span> last2<span class="br0">)</span>
             <span class="kw1">return</span> <a href="copy.html"><span class="kw1586">std::<span class="me2">copy</span></span></a><span class="br0">(</span>first1, last1, d_first<span class="br0">)</span><span class="sy4">;</span>
-        <span class="br0">}</span>
-        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>first2, <span class="sy2">*</span>first1<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>first2, <span class="sy2">*</span>first1<span class="br0">)</span><span class="br0">)</span>
+        <span class="br0">{</span>
             <span class="sy2">*</span>d_first <span class="sy1">=</span> <span class="sy2">*</span>first2<span class="sy4">;</span>
             <span class="sy2">++</span>first2<span class="sy4">;</span>
-        <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+        <span class="br0">}</span>
+        <span class="kw1">else</span>
+        <span class="br0">{</span>
             <span class="sy2">*</span>d_first <span class="sy1">=</span> <span class="sy2">*</span>first1<span class="sy4">;</span>
             <span class="sy2">++</span>first1<span class="sy4">;</span>
         <span class="br0">}</span>
@@ -573,12 +593,12 @@ OutputIt merge<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
 </td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
-<span class="co2">#include &lt;iterator&gt;</span>
-<span class="co2">#include &lt;algorithm&gt;</span>
-<span class="co2">#include &lt;vector&gt;</span>
-<span class="co2">#include &lt;random&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;algorithm&gt;</span>
 <span class="co2">#include &lt;functional&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;iterator&gt;</span>
+<span class="co2">#include &lt;random&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
  
 <span class="kw4">auto</span> print <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">auto</span> <span class="kw4">const</span> rem, <span class="kw4">auto</span> <span class="kw4">const</span><span class="sy3">&amp;</span> v<span class="br0">)</span>
 <span class="br0">{</span>
@@ -616,11 +636,11 @@ OutputIt merge<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
 <p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Originally:
-v1: 2 6 5 7 4 2 2 6 7 0 
-v2: 8 3 2 5 0 1 9 6 5 0 
+v1: 2 6 5 7 4 2 2 6 7 0
+v2: 8 3 2 5 0 1 9 6 5 0
 After sorting:
-v1: 0 2 2 2 4 5 6 6 7 7 
-v2: 0 0 1 2 3 5 5 6 8 9 
+v1: 0 2 2 2 4 5 6 6 7 7
+v2: 0 0 1 2 3 5 5 6 8 9
 After merging:
 dst: 0 0 0 1 2 2 2 2 3 4 5 5 5 6 6 6 7 7 8 9</pre></div></div> 
 </div>
@@ -660,19 +680,19 @@ dst: 0 0 0 1 2 2 2 2 3 4 5 5 5 6 6 6 7 7 8 9</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 11059/1000000
-Preprocessor generated node count: 14836/1000000
-Post‐expand include size: 317835/2097152 bytes
-Template argument size: 66024/2097152 bytes
+Preprocessor visited node count: 11117/1000000
+Preprocessor generated node count: 17243/1000000
+Post‐expand include size: 316976/2097152 bytes
+Template argument size: 66376/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:754-0!*!0!!en!*!* and timestamp 20220410082202 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:754-0!*!0!!en!*!* and timestamp 20230120004123 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/merge&amp;oldid=132882">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/merge&amp;oldid=132882</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/merge&amp;oldid=146426">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/merge&amp;oldid=146426</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -685,17 +705,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/merge">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 25 August 2021, at 19:00.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 253,390 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -710,7 +719,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.473 secs. -->
+</script><!-- Served in 3.319 secs. -->
 	</body>
-<!-- Cached 20220410082202 -->
+<!-- Cached 20230120004123 -->
 </html>

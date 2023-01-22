@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/operator_member_access","wgTitle":"cpp/language/operator member access","wgCurRevisionId":140248,"wgArticleId":707,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/operator_member_access","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/operator_member_access","wgTitle":"cpp/language/operator member access","wgCurRevisionId":146170,"wgArticleId":707,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/operator_member_access","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -303,52 +304,52 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="expressions.html" title="cpp/language/expressions"> Expressions</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> General </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="value_category.html" title="cpp/language/value category"> value categories</a> (lvalue, rvalue, xvalue)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="cpp/language/eval order"> order of evaluation</a> (sequence points)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="cpp/language/constant expression"> constant expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions"> unevaluated expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Primary_expressions" title="cpp/language/expressions"> primary expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="lambda.html" title="cpp/language/lambda">lambda-expression</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Literals </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="integer_literal.html" title="cpp/language/integer literal">integer literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="floating_literal.html" title="cpp/language/floating literal">floating-point literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="bool_literal.html" title="cpp/language/bool literal">boolean literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="character_literal.html" title="cpp/language/character literal">character literals</a> including <a href="escape.html" title="cpp/language/escape">escape sequences</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="cpp/language/string literal">string literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="nullptr.html" title="cpp/language/nullptr">null pointer literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="user_literal.html" title="cpp/language/user literal">user-defined literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Operators </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_assignment.html" title="cpp/language/operator assignment"> Assignment operators</a>: 
+<tr class="t-nv-h2"><td colspan="5">General </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a> (lvalue, rvalue, xvalue)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a> (sequence points)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constant_expression.html" title="cpp/language/constant expression">Constant expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">Potentially-evaluated expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Primary_expressions" title="cpp/language/expressions">Primary expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda-expression</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Literals </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="integer_literal.html" title="cpp/language/integer literal">Integer literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="floating_literal.html" title="cpp/language/floating literal">Floating-point literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">Character literals</a> including <a href="escape.html" title="cpp/language/escape">escape sequences</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="string_literal.html" title="cpp/language/string literal">String literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="nullptr.html" title="cpp/language/nullptr">Null pointer literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Operators </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_assignment.html" title="cpp/language/operator assignment">Assignment operators</a>:
 <code>a=b</code>, <code>a+=b</code>, <code>a-=b</code>, <code>a*=b</code>, <code>a/=b</code>, <code>a%=b</code>, <code>a&amp;=b</code>, <code>a|=b</code>, <code>a^=b</code>, <code>a&lt;&lt;=b</code>, <code>a&gt;&gt;=b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_incdec.html" title="cpp/language/operator incdec"> Increment and decrement</a>: <code>++a</code>, <code>--a</code>, <code>a++</code>, <code>a--</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic"> Arithmetic operators</a>:
-<code>+a</code>, <code>-a</code>, <code>a+b</code>, <code>a-b</code>, <code>a*b</code>, <code>a/b</code>, <code>a%b</code>, <code>~a</code>, <code>a&amp;b</code>, <code>a|b</code>, <code>a^b</code>, <code>a&lt;&lt;b</code>, <code>a&gt;&gt;b</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_logical.html" title="cpp/language/operator logical"> Logical operators</a>: <code>a||b</code>, <code>a&amp;&amp;b</code>, <code>!a</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_comparison.html" title="cpp/language/operator comparison"> Comparison operators</a>: <code>a==b</code>, <code>a!=b</code>, <code>a&lt;b</code>, <code>a&gt;b</code>, <code>a&lt;=b</code>, <code>a&gt;=b</code>, <code>a&lt;=&gt;b</code><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <strong class="selflink"> Member access operators</strong>: <code>a[b]</code>, <code>*a</code>, <code>&amp;a</code>, <code>a-&gt;b</code>, <code>a.b</code>, <code>a-&gt;*b</code>, <code>a.*b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_other.html" title="cpp/language/operator other"> Other operators</a>: <code>a(...)</code>, <code>a,b</code>, <code>a?b:c</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="new.html" title="cpp/language/new">new-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="delete.html" title="cpp/language/delete">delete-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="throw.html" title="cpp/language/throw">throw-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="fold.html" title="cpp/language/fold">Fold expression</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Conversions </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a> <code>(T)a</code>, <code>T(a)</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_incdec.html" title="cpp/language/operator incdec">Increment and decrement</a>: <code>++a</code>, <code>--a</code>, <code>a++</code>, <code>a--</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">Arithmetic operators</a>:
+<code>+a</code>, <code>-a</code>, <code>a+b</code>, <code>a-b</code>, <code>a*b</code>, <code>a/b</code>, <code>a%b</code>, <code>~a</code>, <code>a&amp;b</code>, <code>a|b</code>, <code>a^b</code>, <code>a&lt;&lt;b</code>, <code>a&gt;&gt;b</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_logical.html" title="cpp/language/operator logical">Logical operators</a>: <code>a||b</code>, <code>a&amp;&amp;b</code>, <code>!a</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_comparison.html" title="cpp/language/operator comparison">Comparison operators</a>: <code>a==b</code>, <code>a!=b</code>, <code>a&lt;b</code>, <code>a&gt;b</code>, <code>a&lt;=b</code>, <code>a&gt;=b</code>, <code>a&lt;=&gt;b</code><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink">Member access operators</strong>: <code>a[b]</code>, <code>*a</code>, <code>&amp;a</code>, <code>a-&gt;b</code>, <code>a.b</code>, <code>a-&gt;*b</code>, <code>a.*b</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_other.html" title="cpp/language/operator other">Other operators</a>: <code>a(...)</code>, <code>a,b</code>, <code>a?b:c</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new">new-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete">delete-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="throw.html" title="cpp/language/throw">throw-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fold.html" title="cpp/language/fold">Fold expression</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Conversions </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a> <code>(T)a</code>, <code>T(a)</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>Accesses a member of its operand.
@@ -488,11 +489,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <span class="t-spar">expr1</span> <code><b>[</b></code> <code><b>{</b></code> <span class="t-spar">expr, ...</span> <code><b>}</b></code> <code><b>]</b></code>
+<td> <span class="t-spar">expr1</span> <code><b>[{</b></code> <span class="t-spar">expr, ...</span> <code><b>}]</b></code>
 </td>
 <td> (2)
 </td>
-<td> <span class="t-mark-rev t-since-cxx11">(C++11)</span>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span>
 </td></tr>
 
 
@@ -505,7 +506,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> (3)
 </td>
-<td> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+<td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span>
 </td></tr>
 
  
@@ -513,10 +514,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
-<div class="t-li1"><span class="t-li">1)</span> For the built-in operator, one of the expressions (either <span class="t-spar">expr1</span> or <span class="t-spar">expr2</span>) must be a glvalue of type “array of T” or a prvalue of type “pointer to T”, while the other expression (<span class="t-spar">expr2</span> or <span class="t-spar">expr1</span>, respectively) must be a prvalue of unscoped enumeration or integral type. The result of this expression has the type <code>T</code>. <span class="t-rev-inl t-since-cxx23"><span><span class="t-spar">expr2</span> cannot be a unparenthesized <a href="operator_other.html#Built-in_comma_operator" title="cpp/language/operator other">comma expression</a>.</span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span></div>
+<div class="t-li1"><span class="t-li">1)</span> For the built-in operator, one of the expressions (either <span class="t-spar">expr1</span> or <span class="t-spar">expr2</span>) must be a glvalue of type “array of <code>T</code>” or a prvalue of type “pointer to <code>T</code>”, while the other expression (<span class="t-spar">expr2</span> or <span class="t-spar">expr1</span>, respectively) must be a prvalue of unscoped enumeration or integral type. The result of this expression has the type <code>T</code>. <span class="t-rev-inl t-since-cxx23"><span><span class="t-spar">expr2</span> cannot be a unparenthesized <a href="operator_other.html#Built-in_comma_operator" title="cpp/language/operator other">comma expression</a>.</span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span></div>
 <div class="t-li1"><span class="t-li">2)</span> The form with brace-enclosed list inside the square brackets is only used to call an overloaded <code>operator[]</code>.</div>
 <div class="t-li1"><span class="t-li">3)</span> The form with comma-separated expression list inside the square brackets is only used to call an overloaded <code>operator[]</code>.</div>
-<p>The built-in subscript expression <span class="t-c"><span class="mw-geshi cpp source-cpp">E1<span class="br0">[</span>E2<span class="br0">]</span></span></span> is exactly identical to the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span><span class="br0">(</span>E1 <span class="sy2">+</span> E2<span class="br0">)</span></span></span><span class="t-rev-inl t-since-cxx17"><span> except <a href="eval_order.html" title="cpp/language/eval order">evaluation order</a></span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>, that is, the pointer operand (which may be a result of array-to-pointer conversion, and which must point to an element of some array or one past the end) is adjusted to point to another element of the same array, following the rules of <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">pointer arithmetics</a>, and is then dereferenced.
+<p>The built-in subscript expression <span class="t-c"><span class="mw-geshi cpp source-cpp">E1<span class="br0">[</span>E2<span class="br0">]</span></span></span> is exactly identical to the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span><span class="br0">(</span>E1 <span class="sy2">+</span> E2<span class="br0">)</span></span></span> except for its value category (see below) <span class="t-rev-inl t-since-cxx17"><span> and <a href="eval_order.html" title="cpp/language/eval order">evaluation order</a></span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>: the pointer operand (which may be a result of array-to-pointer conversion, and which must point to an element of some array or one past the end) is adjusted to point to another element of the same array, following the rules of <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">pointer arithmetics</a>, and is then dereferenced.
 </p><p>When applied to an array, the subscript expression is an <a href="value_category.html" title="cpp/language/value category">lvalue</a><span class="t-rev-inl t-since-cxx11"><span> if the array is an lvalue, and an <a href="value_category.html" title="cpp/language/value category">xvalue</a> if it isn't</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>. 
 </p><p>When applied to a pointer, the subscript expression is always an lvalue.
 </p><p>The type <code>T</code> is not allowed to be an <a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">incomplete type</a>, even if the size or internal structure of <code>T</code> is never used, as in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span>x<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span>.
@@ -688,7 +689,7 @@ Note that, unlike C99 and later C versions, there's no special case for the unar
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <span class="t-spar">expr</span> <code><b>.</b></code> <code><b>template</b></code><span class="t-mark">(optional)</span> <span class="t-spar">id-expr</span>
+<td> <span class="t-spar">expr</span> <code><b>.template</b></code><span class="t-mark">(optional)</span> <span class="t-spar">id-expr</span>
 </td>
 <td> (1)
 </td>
@@ -701,7 +702,7 @@ Note that, unlike C99 and later C versions, there's no special case for the unar
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <span class="t-spar">expr</span> <code><b>-&gt;</b></code> <code><b>template</b></code><span class="t-mark">(optional)</span> <span class="t-spar">id-expr</span>
+<td> <span class="t-spar">expr</span> <code><b>-&gt;template</b></code><span class="t-mark">(optional)</span> <span class="t-spar">id-expr</span>
 </td>
 <td> (2)
 </td>
@@ -739,33 +740,31 @@ Note that, unlike C99 and later C versions, there's no special case for the unar
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
-<div class="t-li1"><span class="t-li">1)</span> The first operand must be an expression of <a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">complete class type</a> <code>T</code>.</div>
+<div class="t-li1"><span class="t-li">1)</span> The first operand must be an expression of <a href="incomplete_type.html" title="cpp/language/incomplete type" class="mw-redirect">complete</a> class type <code>T</code>.</div>
 <div class="t-li1"><span class="t-li">2)</span> The first operand must be an expression of pointer to complete class type <code>T*</code>.</div>
-<div class="t-li1"><span class="t-li">3,4)</span> The first operand must be an expression of scalar type (see below)</div>
+<div class="t-li1"><span class="t-li">3,4)</span> The first operand must be an expression of scalar type (see below).</div>
 <p>The first operand of both operators is evaluated even if it is not necessary (e.g. when the second operand names a static member).
 </p><p>The second operand of both operators is a name of (formally, an <a href="name.html#In_expressions" title="cpp/language/identifiers">id-expression</a> that names) a data member or member function of <code>T</code> or of an unambiguous and accessible base class <code>B</code> of <code>T</code> (e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="me1">E2</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">E1<span class="sy2">-</span><span class="sy1">&gt;</span>E2</span></span>), optionally <a href="name.html#Qualified_identifiers" title="cpp/language/identifiers">qualified</a> (e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="me1">B</span><span class="sy4">::</span><span class="me2">E2</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">E1<span class="sy2">-</span><span class="sy1">&gt;</span>B<span class="sy4">::</span><span class="me2">E2</span></span></span>), optionally using <a href="dependent_name.html#template_disambiguator" title="cpp/language/dependent name"><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span></span></span> disambiguator</a> (e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="kw1">template</span> E2</span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">E1<span class="sy2">-</span><span class="sy1">&gt;</span><span class="kw1">template</span> E2</span></span>).
 </p><p>If a user-defined <code>operator-&gt;</code> is provided, the <code>operator-&gt;</code> is called again on the value that it returns, recursively, until an <code>operator-&gt;</code> is reached that returns a plain pointer. After that, built-in semantics are applied to that pointer.
 </p><p>The expression <span class="t-c"><span class="mw-geshi cpp source-cpp">E1<span class="sy2">-</span><span class="sy1">&gt;</span>E2</span></span> is exactly equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span><span class="sy2">*</span>E1<span class="br0">)</span>.<span class="me1">E2</span></span></span> for built-in types; that is why the following rules address only <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="me1">E2</span></span></span>.
 </p><p>In the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="me1">E2</span></span></span>:
 </p>
-<div class="t-li1"><span class="t-li">1)</span> if <code>E2</code> is a <a href="static.html" title="cpp/language/static">static data member</a>:
-<ul><li> if <code>E2</code> is of reference type <code>T&amp;</code> or <code>T&amp;&amp;</code>, the result is an lvalue of type <code>T</code> designating the object or function to which <code>E2</code> refers,
-</li><li> otherwise, the result is an lvalue designating that static data member.
+<div class="t-li1"><span class="t-li">1)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a <a href="static.html" title="cpp/language/static">static data member</a>:
+<ul><li> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is of reference type <code>T&amp;</code> <span class="t-rev-inl t-since-cxx11"><span>or <code>T&amp;&amp;</code></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>, the result is an lvalue of type <code>T</code> designating the object or function to which the reference is bound,
+</li><li> otherwise, given the type of <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> as <code>T</code>, the result is an lvalue of type <code>T</code> designating that static data member.
 </li></ul>
-<dl><dd> Essentially, <code>E1</code> is evaluated and discarded in both cases;</dd></dl></div>
-
-<div class="t-li1"><span class="t-li">2)</span> if <code>E2</code> is a <a href="data_members.html" title="cpp/language/data members">non-static data member</a>:
-<ul><li> if <code>E2</code> is of reference type <code>T&amp;</code> or <code>T&amp;&amp;</code>, the result is an lvalue of type <code>T</code> designating the object or function to which <code>E2</code> refers,
-</li><li> otherwise, if <code>E1</code> is an lvalue, the result is an lvalue designating that non-static data member of <code>E1</code>,
-</li><li> otherwise (if <code>E1</code> is an <span class="t-rev-inl t-until-cxx17"><span>rvalue</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>xvalue (which may be <a href="implicit_cast.html#Temporary_materialization" title="cpp/language/implicit conversion">materialized</a> from prvalue)</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>), the result is an <span class="t-rev-inl t-until-cxx11"><span>rvalue</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>xvalue</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> designating that non-static data member of <code>E1</code>.
+Essentially, <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is evaluated and discarded in both cases;</div>
+<div class="t-li1"><span class="t-li">2)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a <a href="data_members.html" title="cpp/language/data members">non-static data member</a>:
+<ul><li> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is of reference type <code>T&amp;</code> <span class="t-rev-inl t-since-cxx11"><span>or <code>T&amp;&amp;</code></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>, the result is an lvalue of type <code>T</code> designating the object or function to which the corresponding reference member of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is bound,
+</li><li> otherwise, if <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is an lvalue, the result is an lvalue designating that non-static data member of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span>,
+</li><li> otherwise (if <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is an <span class="t-rev-inl t-until-cxx17"><span>rvalue</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>xvalue (which may be <a href="implicit_cast.html#Temporary_materialization" title="cpp/language/implicit conversion">materialized</a> from prvalue)</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>), the result is an <span class="t-rev-inl t-until-cxx11"><span>rvalue</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>xvalue</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> designating that non-static data member of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span>.
 </li></ul>
-<dl><dd> If <code>E2</code> is not a mutable member, the <a href="cv.html" title="cpp/language/cv">cv-qualification</a> of the result is the union of the cv-qualifications of <code>E1</code> and <code>E2</code>, otherwise (if <code>E2</code> is a mutable member), it is the union of the volatile-qualifications of <code>E1</code> and <code>E2</code>;</dd></dl></div>
-
-<div class="t-li1"><span class="t-li">3)</span> if <code>E2</code> is a <a href="static.html" title="cpp/language/static">static member function</a>, the result is an lvalue designating that static member function. Essentially, <code>E1</code> is evaluated and discarded in this case;</div>
-<div class="t-li1"><span class="t-li">4)</span> if <code>E2</code> is a <a href="member_functions.html" title="cpp/language/member functions">non-static member function</a> including a <a href="destructor.html" title="cpp/language/destructor">destructor</a>, the result is a special kind of prvalue designating that non-static member function of <code>E1</code> that can only be used as the left-hand operand of a member function call operator, and for no other purpose;</div>
-<div class="t-li1"><span class="t-li">5)</span> if <code>E2</code> is a member enumerator, the result is a prvalue equal to that member enumerator of <code>E1</code>;</div>
-<div class="t-li1"><span class="t-li">6)</span> if <code>E2</code> is a <a href="nested_classes.html" title="cpp/language/nested classes" class="mw-redirect">nested type</a>, the program is ill-formed (won't compile);</div>
-<div class="t-li1"><span class="t-li">7)</span> if <code>E1</code> has a <a href="type-id.html" title="cpp/language/type">scalar type</a> and <code>E2</code> is a <code><b>~</b></code> followed by the <a href="type-id.html#Type_naming" title="cpp/language/type">type name</a> or <a href="decltype.html" title="cpp/language/decltype">decltype specifier</a> designating the same type (minus cv-qualifications), optionally <a href="name.html#Qualified_identifiers" title="cpp/language/identifiers">qualified</a>, the result is a special kind of prvalue that can only be used as the left-hand operand of a function call operator, and for no other purpose. The resulting function call expression is called <i>pseudo destructor call</i>. It takes no arguments, returns void, evaluates <code>E1</code>, and ends the lifetime of its result object. This is the only case where the left-hand operand of <code>operator.</code> has non-class type. Allowing pseudo destructor call makes it possible to write code without having to know if a destructor exists for a given type.</div>
+If <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is not a <a href="cv.html#mutable_specifier" title="cpp/language/cv">mutable</a> member, the <a href="cv.html" title="cpp/language/cv">cv-qualification</a> of the result is the union of the cv-qualifications of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span>, otherwise (if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a mutable member), it is the union of the volatile-qualifications of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span>;</div>
+<div class="t-li1"><span class="t-li">3)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a <a href="static.html" title="cpp/language/static">static member function</a>, the result is an lvalue designating that static member function. Essentially, <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is evaluated and discarded in this case;</div>
+<div class="t-li1"><span class="t-li">4)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a <a href="member_functions.html" title="cpp/language/member functions">non-static member function</a> including a <a href="destructor.html" title="cpp/language/destructor">destructor</a>, the result is a special kind of prvalue designating that non-static member function of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> that can only be used as the left-hand operand of a member function call operator, and for no other purpose;</div>
+<div class="t-li1"><span class="t-li">5)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a member enumerator, given the type of <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> as <code>T</code>, the result is <span class="t-rev-inl t-until-cxx11"><span>an rvalue</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>a prvalue</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> of type <code>T</code> whose value is the value of the enumerator;</div>
+<div class="t-li1"><span class="t-li">6)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a <a href="nested_classes.html" title="cpp/language/nested classes" class="mw-redirect">nested type</a>, the program is ill-formed;</div>
+<div class="t-li1"><span class="t-li">7)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> has a <a href="../named_req/ScalarType.html" title="cpp/named req/ScalarType"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">ScalarType</span></a> and <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a <code><b>~</b></code> followed by the <a href="type-id.html#Type_naming" title="cpp/language/type">type name</a> or <a href="decltype.html" title="cpp/language/decltype">decltype specifier</a> designating the same type (minus cv-qualifications), optionally <a href="name.html#Qualified_identifiers" title="cpp/language/identifiers">qualified</a>, the result is a special kind of prvalue that can only be used as the left-hand operand of a function call operator, and for no other purpose. The resulting function call expression is called <i>pseudo destructor call</i>. It takes no arguments, returns void, evaluates <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span>, and ends the lifetime of its result object. This is the only case where the left-hand operand of <code>operator.</code> has non-class type. Allowing pseudo destructor call makes it possible to write code without having to know if a destructor exists for a given type.</div>
 <p><code>operator.</code> cannot be overloaded, and for <code>operator-&gt;</code>, in <a href="overload_resolution.html#Call_to_an_overloaded_operator" title="cpp/language/overload resolution">overload resolution against user-defined operators</a>, the built-in operator does not introduce any additional function signatures: built-in <code>operator-&gt;</code> does not apply if there exists an overloaded <code>operator-&gt;</code> that is a <a href="overload_resolution.html#Viable_functions" title="cpp/language/overload resolution">viable function</a>.
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -859,16 +858,21 @@ Note that, unlike C99 and later C versions, there's no special case for the unar
 </p><p>The expression <span class="t-c"><span class="mw-geshi cpp source-cpp">E1<span class="sy2">-</span><span class="sy1">&gt;</span><span class="sy2">*</span>E2</span></span> is exactly equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span><span class="sy2">*</span>E1<span class="br0">)</span>.<span class="sy2">*</span>E2</span></span> for built-in types; that is why the following rules address only <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="sy2">*</span>E2</span></span>.
 </p><p>In the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="sy2">*</span>E2</span></span>:
 </p>
-<div class="t-li1"><span class="t-li">1)</span> if <code>E2</code> is a pointer to data member,
-<ul><li> if <code>E1</code> is an lvalue, the result is an lvalue designating that data member,
-</li><li> otherwise (if <code>E1</code> is an <span class="t-rev-inl t-until-cxx17"><span>rvalue</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>xvalue (which may be <a href="implicit_cast.html#Temporary_materialization" title="cpp/language/implicit conversion">materialized</a> from prvalue)</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>), the result is an <span class="t-rev-inl t-until-cxx11"><span>rvalue</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>xvalue</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> designating that data member;</li></ul></div>
+<div class="t-li1"><span class="t-li">1)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a pointer to data member,
+<ul><li> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is an lvalue, the result is an lvalue designating that data member,
+</li><li> otherwise (if <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is an <span class="t-rev-inl t-until-cxx17"><span>rvalue</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>xvalue (which may be <a href="implicit_cast.html#Temporary_materialization" title="cpp/language/implicit conversion">materialized</a> from prvalue)</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>), the result is an <span class="t-rev-inl t-until-cxx11"><span>rvalue</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>xvalue</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> designating that data member;</li></ul></div>
 
-<div class="t-li1"><span class="t-li">2)</span> if <code>E2</code> is a pointer to member function, the result is a special kind of prvalue designating that member function that can only be used as the left-hand operand of a member function call operator, and for no other purpose;</div>
+<div class="t-li1"><span class="t-li">2)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a pointer to member function, the result is a special kind of prvalue designating that member function that can only be used as the left-hand operand of a member function call operator, and for no other purpose;</div>
 <div class="t-li1"><span class="t-li">3)</span> cv-qualification rules are the same as for member of object operator, with one additional rule: a pointer to member that refers to a mutable member cannot be used to modify that member in a const object;</div>
-<div class="t-li1"><span class="t-li">4)</span> if <code>E2</code> is a null pointer-to-member value, the behavior is undefined;</div>
-<div class="t-li1"><span class="t-li">5)</span> if the <a href="type-id.html#Dynamic_type" title="cpp/language/type">dynamic type</a> of <code>E1</code> does not contain the member to which <code>E2</code> refers, the behavior is undefined;</div>
-<div class="t-li1"><span class="t-li">6)</span> if <code>E1</code> is an rvalue and <code>E2</code> points to a member function with ref-qualifier &amp;, the program is ill-formed <span class="t-rev-inl t-since-cxx20"><span>unless the member function has the cv-qualifier <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span></span> but not <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span></span></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>;</div>
-<div class="t-li1"><span class="t-li">7)</span> if <code>E1</code> is an lvalue and <code>E2</code> points to a member function with ref-qualifier &amp;&amp;, the program is ill-formed.</div>
+<div class="t-li1"><span class="t-li">4)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a null pointer-to-member value, the behavior is undefined;</div>
+<div class="t-li1"><span class="t-li">5)</span> if the <a href="type-id.html#Dynamic_type" title="cpp/language/type">dynamic type</a> of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> does not contain the member to which <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> refers, the behavior is undefined;</div>
+<div class="t-li1"><span class="t-li">6)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is an rvalue and <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> points to a member function with ref-qualifier <code><b>&amp;</b></code>, the program is ill-formed <span class="t-rev-inl t-since-cxx20"><span>unless the member function has the cv-qualifier <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span></span></span> but not <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span></span></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>;</div>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<div class="t-li1"><span class="t-li">7)</span> if <span class="t-c"><span class="mw-geshi cpp source-cpp">E1</span></span> is an lvalue and <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> points to a member function with ref-qualifier <code><b>&amp;&amp;</b></code>, the program is ill-formed.</div>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
 <p>In <a href="overload_resolution.html#Call_to_an_overloaded_operator" title="cpp/language/overload resolution">overload resolution against user-defined operators</a>, for every combination of types <code>D</code>, <code>B</code>, <code>R</code>, where class type <code>B</code> is either the same class as <code>D</code> or an unambiguous and accessible base class of <code>D</code>, and <code>R</code> is either an object or function type, the following function signature participates in overload resolution:
 </p>
 <table class="t-dcl-begin"><tbody>
@@ -1062,6 +1066,21 @@ Note that, unlike C99 and later C versions, there's no special case for the unar
 <p>No standard library classes overload <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy3">&amp;</span></span></span>. The best known example of overloaded <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy3">&amp;</span></span></span> is the Microsoft COM class <a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/31k6d0k7(v=vs.100).aspx"><code>CComPtr</code></a>, although it can also appear in EDSLs such as <a rel="nofollow" class="external text" href="http://www.boost.org/doc/libs/release/libs/spirit/doc/html/spirit/qi/reference/operator/and_predicate.html">boost.spirit</a>
 </p><p>No standard library classes overload <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy2">-</span><span class="sy1">&gt;</span><span class="sy2">*</span></span></span>. It was suggested that it could be part of <a rel="nofollow" class="external text" href="http://www.aristeia.com/Papers/DDJ_Oct_1999.pdf">smart pointer interface</a>, and in fact is used in that capacity by actors in <a rel="nofollow" class="external text" href="http://www.boost.org/doc/libs/release/libs/phoenix/doc/html/phoenix/modules/operator.html#phoenix.modules.operator.member_pointer_operator">boost.phoenix</a>, but is more common in EDSLs such as <a rel="nofollow" class="external text" href="https://github.com/schlangster/cpp.react/blob/master/include/react/Signal.h#L557">cpp.react</a>.
 </p>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<table class="wikitable">
+
+<tr>
+<th>Feature-test macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_multidimensional_subscript</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202110L</span></span></span></td>
+<td><span class="t-mark">(C++23)</span></td>
+<td>Multidimensional subscript operator
+</td></tr></table>
 <h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
 </p>
@@ -1101,6 +1120,15 @@ Note that, unlike C99 and later C versions, there's no special case for the unar
 <td> when applying <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span></span></span> to a non-static data member of a<br>member anonymous union, it was unclear whether<br>the anonymous union take a part in the result type
 </td>
 <td> the anonymous union<br>is not included in<br>the result type
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2614.html">CWG 2614</a>
+</td>
+<td> C++98
+</td>
+<td> the result of <span class="t-c"><span class="mw-geshi cpp source-cpp">E1.<span class="me1">E2</span></span></span> was unclear if <span class="t-c"><span class="mw-geshi cpp source-cpp">E2</span></span> is a reference member or enumerator
+</td>
+<td> made clear
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <p><a href="operator_precedence.html" title="cpp/language/operator precedence">Operator precedence</a>
@@ -1109,25 +1137,25 @@ Note that, unlike C99 and later C versions, there's no special case for the unar
 <table class="wikitable">
 
 <tr style="text-align:center">
-<th colspan="7"> Common operators
+<th colspan="7">Common operators
 </th></tr>
 <tr style="text-align:center">
-<td> <a href="operator_assignment.html" title="cpp/language/operator assignment"> assignment</a>
+<td><a href="operator_assignment.html" title="cpp/language/operator assignment">assignment</a>
 </td>
-<td> <a href="operator_incdec.html" title="cpp/language/operator incdec"> increment<br>decrement</a>
+<td><a href="operator_incdec.html" title="cpp/language/operator incdec">increment<br>decrement</a>
 </td>
-<td> <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic"> arithmetic</a>
+<td><a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">arithmetic</a>
 </td>
-<td> <a href="operator_logical.html" title="cpp/language/operator logical"> logical</a>
+<td><a href="operator_logical.html" title="cpp/language/operator logical">logical</a>
 </td>
-<td> <a href="operator_comparison.html" title="cpp/language/operator comparison"> comparison</a>
+<td><a href="operator_comparison.html" title="cpp/language/operator comparison">comparison</a>
 </td>
-<td> <strong class="selflink"> member<br>access</strong>
+<td><strong class="selflink">member<br>access</strong>
 </td>
-<td> <a href="operator_other.html" title="cpp/language/operator other"> other</a>
+<td><a href="operator_other.html" title="cpp/language/operator other">other</a>
 </td></tr>
 <tr style="text-align:center">
-<td>
+<td rowspan="6">
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp">a <span class="sy1">=</span> b<br>
 a <span class="sy2">+</span><span class="sy1">=</span> b<br>
 a <span class="sy2">-</span><span class="sy1">=</span> b<br>
@@ -1141,14 +1169,14 @@ a <span class="sy1">&lt;&lt;=</span> b<br>
 a <span class="sy1">&gt;&gt;=</span> b</span></span>
 </p>
 </td>
-<td>
+<td rowspan="6">
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">++</span>a<br>
 <span class="sy2">--</span>a<br>
 a<span class="sy2">++</span><br>
 a<span class="sy2">--</span></span></span>
 </p>
 </td>
-<td>
+<td rowspan="6">
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">+</span>a<br>
 <span class="sy2">-</span>a<br>
 a <span class="sy2">+</span> b<br>
@@ -1164,13 +1192,13 @@ a <span class="sy1">&lt;&lt;</span> b<br>
 a <span class="sy1">&gt;&gt;</span> b</span></span>
 </p>
 </td>
-<td>
+<td rowspan="6">
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">!</span>a<br>
 a <span class="sy3">&amp;&amp;</span> b<br>
 a <span class="sy3">||</span> b</span></span>
 </p>
 </td>
-<td>
+<td rowspan="6">
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp">a <span class="sy1">==</span> b<br>
 a <span class="sy3">!</span><span class="sy1">=</span> b<br>
 a <span class="sy1">&lt;</span> b<br>
@@ -1180,7 +1208,7 @@ a <span class="sy1">&gt;=</span> b<br>
 a <span class="sy1">&lt;=&gt;</span> b</span></span>
 </p>
 </td>
-<td>
+<td rowspan="6">
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp">a<span class="br0">[</span>b<span class="br0">]</span><br>
 <span class="sy2">*</span>a<br>
 <span class="sy3">&amp;</span>a<br>
@@ -1190,20 +1218,31 @@ a<span class="sy2">-</span><span class="sy1">&gt;</span><span class="sy2">*</spa
 a.<span class="sy2">*</span>b</span></span>
 </p>
 </td>
-<td>
-<p><span class="t-c"><span class="mw-geshi cpp source-cpp">a<span class="br0">(</span>...<span class="br0">)</span><br>
-a, b<br>
-a <span class="sy4">?</span> b <span class="sy4">:</span> c</span></span>
-</p>
+<td>function call
+</td></tr>
+<tr style="text-align:center">
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">a<span class="br0">(</span>...<span class="br0">)</span></span></span>
+</td></tr>
+<tr style="text-align:center">
+<td>comma
+</td></tr>
+<tr style="text-align:center">
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">a, b</span></span>
+</td></tr>
+<tr style="text-align:center">
+<td>conditional
+</td></tr>
+<tr style="text-align:center">
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp">a <span class="sy4">?</span> b <span class="sy4">:</span> c</span></span>
 </td></tr>
 <tr>
-<th colspan="7"> Special operators
+<th colspan="7">Special operators
 </th></tr>
 <tr>
 <td colspan="7">
 <p><a href="static_cast.html" title="cpp/language/static cast"><tt>static_cast</tt></a> converts one type to another related type <br>
 <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><tt>dynamic_cast</tt></a> converts within inheritance hierarchies <br>
-<a href="const_cast.html" title="cpp/language/const cast"><tt>const_cast</tt></a> adds or removes <a href="cv.html" title="cpp/language/cv">cv</a> qualifiers<br>
+<a href="const_cast.html" title="cpp/language/const cast"><tt>const_cast</tt></a> adds or removes <a href="cv.html" title="cpp/language/cv">cv</a>-qualifiers<br>
 <a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><tt>reinterpret_cast</tt></a> converts type to unrelated type<br>
 <a href="explicit_cast.html" title="cpp/language/explicit cast">C-style cast</a> converts one type to another by a mix of <code>static_cast</code>, <code>const_cast</code>, and <code>reinterpret_cast</code> <br>
 <a href="new.html" title="cpp/language/new"><tt>new</tt></a> creates objects with dynamic storage duration<br>
@@ -1221,19 +1260,19 @@ a <span class="sy4">?</span> b <span class="sy4">:</span> c</span></span>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 13604/1000000
-Preprocessor generated node count: 21424/1000000
-Post‐expand include size: 346074/2097152 bytes
-Template argument size: 76168/2097152 bytes
+Preprocessor visited node count: 14742/1000000
+Preprocessor generated node count: 22359/1000000
+Post‐expand include size: 354710/2097152 bytes
+Template argument size: 77416/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:707-0!*!0!!en!*!* and timestamp 20220614071808 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:707-0!*!0!!en!*!* and timestamp 20230120012936 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/operator_member_access&amp;oldid=140248">https://en.cppreference.com/mwiki/index.php?title=cpp/language/operator_member_access&amp;oldid=140248</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/operator_member_access&amp;oldid=146170">https://en.cppreference.com/mwiki/index.php?title=cpp/language/operator_member_access&amp;oldid=146170</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1246,17 +1285,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/operator_member_access">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 14 June 2022, at 00:18.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 378,530 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1271,7 +1299,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.034 secs. -->
+</script><!-- Served in 10.979 secs. -->
 	</body>
-<!-- Cached 20220614071908 -->
+<!-- Cached 20230120012936 -->
 </html>

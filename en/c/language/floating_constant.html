@@ -155,13 +155,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="c/language/eval order"> evaluation order and sequence points</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="c/language/constant expression">constant expressions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="conversion.html" title="c/language/conversion">implicit conversions</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="generic.html" title="c/language/generic">generic selection</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="generic.html" title="c/language/generic">generic selection</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Constants_and_literals" title="c/language/expressions">constants and literals</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="integer_constant.html" title="c/language/integer constant"> integer constant</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> floating constant</strong> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="character_constant.html" title="c/language/character constant"> character constant</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bool_constant.html" title="c/language/bool constant"><span class="t-lines"><span>true/false</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="nullptr.html" title="c/language/nullptr"><span class="t-lines"><span>nullptr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="c/language/string literal"> string literal</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Operators" title="c/language/expressions">operators</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="c/language/operator precedence">operator precedence</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_member_access.html" title="c/language/operator member access">member access and indirection</a> </td></tr>
@@ -330,7 +332,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 #pragma STDC FENV_ACCESS</tt></a> is in effect (for execution-time conversion of character strings, <span class="t-lc"><a href="../string/byte/strtof.html" title="c/string/byte/strtof">strtod</a></span> can be used). Note that this differs from <a href="constant_expression.html" title="c/language/constant expression">arithmetic constant expressions</a> of floating type.
 </p><p>Letters in the floating constants are case-insensitive<span class="t-rev-inl t-since-c23"><span>, except that uppercase and lowercase cannot be both used in suffixes for decimal floating-point types</span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>: <span class="t-c"><span class="mw-geshi c source-c"><span class="nu12">0x1</span>.<span class="me1">ep</span><span class="sy2">+</span><span class="nu0">3</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="nu12">0X1</span>.<span class="me1">EP</span><span class="sy2">+</span><span class="nu0">3</span></span></span> represent the same floating-point value 15.0.
 </p><p>The decimal point specified by <span class="t-lc"><a href="../locale/setlocale.html" title="c/locale/setlocale">setlocale</a></span> has no effect on the syntax of floating constants: the decimal point character is always the period.
-</p><p>Unlike integers, not every floating value can be represented directly by decimal <span class="t-rev-inl t-since-c99"><span>or even hexadecimal</span> <span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span> constant syntax<span class="t-rev-inl t-since-c99"><span>: macros <a href="../numeric/math/NAN.html" title="c/numeric/math/NAN"><tt>NAN</tt></a> and <a href="../numeric/math/INFINITY.html" title="c/numeric/math/INFINITY"><tt>INFINITY</tt></a> as well as functions such as <span class="t-lc"><a href="../numeric/math/nan.2.html" title="c/numeric/math/nan">nan</a></span> offer ways to generate those special values</span> <span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>. Note that <span class="t-c"><span class="mw-geshi c source-c"><span class="nu12">0x1</span>.<span class="me1">FFFFFEp128f</span></span></span>, which might appear to be an IEEE float NaN, in fact overflows to an infinity in that format.
+</p><p>Unlike integers, not every floating value can be represented directly by decimal <span class="t-rev-inl t-since-c99"><span>or even hexadecimal</span> <span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span> constant syntax<span class="t-rev-inl t-since-c99"><span>: macros <a href="../numeric/math/NAN.2.html" title="c/numeric/math/NAN"><tt>NAN</tt></a> and <a href="../numeric/math/INFINITY.html" title="c/numeric/math/INFINITY"><tt>INFINITY</tt></a> as well as functions such as <span class="t-lc"><a href="../numeric/math/nan.html" title="c/numeric/math/nan">nan</a></span> offer ways to generate those special values</span> <span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>. Note that <span class="t-c"><span class="mw-geshi c source-c"><span class="nu12">0x1</span>.<span class="me1">FFFFFEp128f</span></span></span>, which might appear to be an IEEE float NaN, in fact overflows to an infinity in that format.
 </p><p>There are no negative floating constants; an expression such as <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu16">1.2</span></span></span> is the <a href="operator_arithmetic.html" title="c/language/operator arithmetic">arithmetic operator</a> unary minus applied to the floating constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu16">1.2</span></span></span>. Note that the special value negative zero may be constructed with <span class="t-lc">-0.0</span>.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
@@ -393,15 +395,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2767/1000000
-Preprocessor generated node count: 7719/1000000
-Post‐expand include size: 64519/2097152 bytes
-Template argument size: 18686/2097152 bytes
-Highest expansion depth: 15/40
+Preprocessor visited node count: 2947/1000000
+Preprocessor generated node count: 7816/1000000
+Post‐expand include size: 69901/2097152 bytes
+Template argument size: 19685/2097152 bytes
+Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13896-0!*!0!!en!*!* and timestamp 20220313075039 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13896-0!*!0!!en!*!* and timestamp 20230120020421 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -418,17 +420,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/floating_constant">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 19 October 2021, at 21:53.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 44,000 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -443,7 +434,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.727 secs. -->
+</script><!-- Served in 0.856 secs. -->
 	</body>
-<!-- Cached 20220313075039 -->
+<!-- Cached 20230120020421 -->
 </html>

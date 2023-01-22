@@ -103,7 +103,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -127,6 +128,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../io.html" title="cpp/io"> Input/output library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="../manip.html" title="cpp/io/manip"> I/O manipulators</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../io.html#Print_functions_.28since_C.2B.2B23.29" title="cpp/io"> Print functions</a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../c.html" title="cpp/io/c"> C-style I/O</a></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Buffers</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../basic_streambuf.html" title="cpp/io/basic streambuf"><span class="t-lines"><span>basic_streambuf</span></span></a></div></div></td></tr>
@@ -220,66 +222,73 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  filename
+<td> filename
 </td>
 <td> -
 </td>
-<td>  the name of the file to be opened
+<td> the name of the file to be opened
 </td></tr>
 <tr class="t-par">
-<td>  mode
+<td> mode
 </td>
 <td> -
 </td>
-<td>  specifies stream open mode. It is bitmask type, the following constants are defined:
+<td> specifies stream open mode. It is bitmask type, the following constants are defined:
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Constant
+<td> Constant
 </td>
-<td>  Explanation
+<td> Explanation
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>app</tt></a>
+<td> <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>app</tt></a>
 </td>
-<td>  seek to the end of stream before each write
+<td> seek to the end of stream before each write
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>binary</tt></a>
+<td> <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>binary</tt></a>
 </td>
-<td>  open in <a href="../c/FILE.html#Binary_and_text_modes" title="cpp/io/c/FILE">binary mode</a>
+<td> open in <a href="../c/FILE.html#Binary_and_text_modes" title="cpp/io/c/FILE">binary mode</a>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>in</tt></a>
+<td> <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>in</tt></a>
 </td>
-<td>  open for reading
+<td> open for reading
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>out</tt></a>
+<td> <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>out</tt></a>
 </td>
-<td>  open for writing
+<td> open for writing
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>trunc</tt></a>
+<td> <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>trunc</tt></a>
 </td>
-<td>  discard the contents of the stream when opening
+<td> discard the contents of the stream when opening
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>ate</tt></a>
+<td> <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>ate</tt></a>
 </td>
-<td>  seek to the end of stream immediately after open
+<td> seek to the end of stream immediately after open
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>noreplace</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td>
+<td> open in exclusive mode
 </td></tr>
 
 </table>
@@ -298,15 +307,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <a href="../../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> filename <span class="sy1">=</span> <span class="st0">"example.123"</span><span class="sy4">;</span>
  
     <a href="../basic_fstream.html"><span class="kw1738">std::<span class="me2">fstream</span></span></a> fs<span class="sy4">;</span>
- 
     fs.<span class="me1">open</span><span class="br0">(</span>filename<span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="kw1">if</span><span class="br0">(</span><span class="sy3">!</span>fs.<span class="me1">is_open</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>fs.<span class="me1">is_open</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
     <span class="br0">{</span>
-       fs.<span class="me1">clear</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-       fs.<span class="me1">open</span><span class="br0">(</span>filename, std<span class="sy4">::</span><span class="me2">ios</span><span class="sy4">::</span><span class="me2">out</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">//Create file.</span>
-       fs.<span class="me1">close</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-       fs.<span class="me1">open</span><span class="br0">(</span>filename<span class="br0">)</span><span class="sy4">;</span>
+        fs.<span class="me1">clear</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+        fs.<span class="me1">open</span><span class="br0">(</span>filename, std<span class="sy4">::</span><span class="me2">ios</span><span class="sy4">::</span><span class="me2">out</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// create file</span>
+        fs.<span class="me1">close</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+        fs.<span class="me1">open</span><span class="br0">(</span>filename<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
  
     <a href="../cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../manip/boolalpha.html"><span class="kw1768">std::<span class="me2">boolalpha</span></span></a><span class="sy4">;</span>
@@ -314,6 +322,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <a href="../cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"fs.good() = "</span> <span class="sy1">&lt;&lt;</span> fs.<span class="me1">good</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue22">LWG 22</a>
+</td>
+<td> C++98
+</td>
+<td> it was unclear how error state changes upon a successful open
+</td>
+<td> the error state is unchanged
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -335,15 +365,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4634/1000000
-Preprocessor generated node count: 9759/1000000
-Post‐expand include size: 171009/2097152 bytes
-Template argument size: 23745/2097152 bytes
+Preprocessor visited node count: 4730/1000000
+Preprocessor generated node count: 10104/1000000
+Post‐expand include size: 176169/2097152 bytes
+Template argument size: 24376/2097152 bytes
 Highest expansion depth: 35/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:490-0!*!0!!en!*!* and timestamp 20220410103522 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:490-0!*!0!!en!*!* and timestamp 20221209215005 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -360,17 +390,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_fstream/open">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 31 May 2013, at 20:41.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 100,212 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -385,7 +404,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.168 secs. -->
+</script><!-- Served in 1.170 secs. -->
 	</body>
-<!-- Cached 20220410103522 -->
+<!-- Cached 20221209215006 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/preprocessor/replace","wgTitle":"c/preprocessor/replace","wgCurRevisionId":140743,"wgArticleId":12671,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/preprocessor/replace","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/preprocessor/replace","wgTitle":"c/preprocessor/replace","wgCurRevisionId":145811,"wgArticleId":12671,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/preprocessor/replace","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -155,6 +155,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="error.html" title="c/preprocessor/error"><span class="t-lines"><span>#error</span><span>#warning</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../cpp/preprocessor/impl.html" title="cpp/preprocessor/impl"><span class="t-lines"><span>#pragma</span><span>_Pragma</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="line.html" title="c/preprocessor/line"><span class="t-lines"><span>#line</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/embed&amp;action=edit&amp;redlink=1" class="new" title="c/preprocessor/embed (page does not exist)"><span class="t-lines"><span>#embed</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>The preprocessor supports text macro replacement and function-like text macro replacement.
 </p>
@@ -243,14 +244,35 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>Version (2) of the <code>#define</code> directive defines a simple function-like macro.
 </p><p>Version (3) of the <code>#define</code> directive defines a function-like macro with variable number of arguments. The additional arguments can be accessed using <code>__VA_ARGS__</code> identifier, which is then replaced with arguments, supplied with the identifier to be replaced.
 </p><p>Version (4) of the <code>#define</code> directive defines a function-like macro with variable number of arguments, but no regular arguments. The arguments can be accessed only with <code>__VA_ARGS__</code> identifier, which is then replaced with arguments, supplied with identifier to be replaced.
-</p><p>Note: if an argument of a function-like macro includes commas that are not protected by matched pairs of left and right parentheses (such as <span class="t-c"><span class="mw-geshi c source-c">macro<span class="br0">(</span>array<span class="br0">[</span>x <span class="sy1">=</span> y, x <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><a href="../atomic/atomic_store.html"><span class="kw937">atomic_store</span></a> <span class="br0">(</span>p, <span class="br0">(</span><span class="kw1">struct</span> S<span class="br0">)</span><span class="br0">{</span> a, b <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></span>), the comma is interpreted as macro argument separator, causing a compilation failure due to argument count mismatch.
+</p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-c23"><td>
+<p>For versions (3,4), <span class="t-spar">replacement-list</span> may contain the token sequence <code><b>__VA_OPT__ (</b></code> <span class="t-spar">content</span> <code><b>)</b></code>, which is replaced by <span class="t-spar">content</span> if <code>__VA_ARGS__</code> is non-empty, and expands to nothing otherwise.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define F(...) f(0 __VA_OPT__(,) __VA_ARGS__)</span>
+F<span class="br0">(</span>a, b, c<span class="br0">)</span> <span class="co1">// replaced by f(0, a, b, c)</span>
+F<span class="br0">(</span><span class="br0">)</span>        <span class="co1">// replaced by f(0)</span>
+ 
+<span class="co2">#define G(X, ...) f(0, X __VA_OPT__(,) __VA_ARGS__)</span>
+G<span class="br0">(</span>a, b, c<span class="br0">)</span> <span class="co1">// replaced by f(0, a, b, c)</span>
+G<span class="br0">(</span>a, <span class="br0">)</span>     <span class="co1">// replaced by f(0, a)</span>
+G<span class="br0">(</span>a<span class="br0">)</span>       <span class="co1">// replaced by f(0, a)</span>
+ 
+<span class="co2">#define SDEF(sname, ...) S sname __VA_OPT__(= { __VA_ARGS__ })</span>
+SDEF<span class="br0">(</span>foo<span class="br0">)</span><span class="sy4">;</span>       <span class="co1">// replaced by S foo;</span>
+SDEF<span class="br0">(</span>bar, <span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// replaced by S bar = { 1, 2 };</span></pre></div></div>
+</td>
+<td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
+</table>
+<p><br>
+Note: if an argument of a function-like macro includes commas that are not protected by matched pairs of left and right parentheses (such as <span class="t-c"><span class="mw-geshi c source-c">macro<span class="br0">(</span>array<span class="br0">[</span>x <span class="sy1">=</span> y, x <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><a href="../atomic/atomic_store.html"><span class="kw937">atomic_store</span></a> <span class="br0">(</span>p, <span class="br0">(</span><span class="kw1">struct</span> S<span class="br0">)</span><span class="br0">{</span> a, b <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></span>), the comma is interpreted as macro argument separator, causing a compilation failure due to argument count mismatch.
 </p>
 <h4><span class="mw-headline" id=".23_and_.23.23_operators"><code>#</code> and <code>##</code> operators</span></h4>
 <p>In function-like macros, a <code>#</code> operator before an identifier in the <span class="t-spar">replacement-list</span> runs the identifier through parameter replacement and encloses the result in quotes, effectively creating a string literal. In addition, the preprocessor adds backslashes to escape the quotes surrounding embedded string literals, if any, and doubles the backslashes within the string as necessary. All leading and trailing whitespace is removed, and any sequence of whitespace in the middle of the text (but not inside embedded string literals) is collapsed to a single space. This operation is called "stringification". If the result of stringification is not a valid string literal, the behavior is undefined.
 </p>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-c99"><td>
-<p>When <code>#</code> appears before <code>__VA_ARGS__</code>, the entire expanded __VA_ARGS__ is enclosed in quotes:
+<p>When <code>#</code> appears before <code>__VA_ARGS__</code>, the entire expanded <code>__VA_ARGS__</code> is enclosed in quotes:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define showlist(...) puts(#__VA_ARGS__)</span>
 showlist<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>            <span class="co1">// expands to puts("")</span>
@@ -259,8 +281,8 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </table>
 <p>A <code>##</code> operator between any two successive identifiers in the <span class="t-spar">replacement-list</span> runs parameter replacement on the two identifiers and then concatenates the result. This operation is called "concatenation" or "token pasting". Only tokens that form a valid token together may be pasted: identifiers that form a longer identifier, digits that form a number, or operators <code>+</code> and <code>=</code> that form a <code>+=</code>. A comment cannot be created by pasting <code>/</code> and <code>*</code> because comments are removed from text before macro substitution is considered. If the result of concatenation is not a valid token, the behavior is undefined.
-</p><p>Note: Some compilers offer an extension that allows ## to appear after a comma and before __VA_ARGS__, in which case the ## does nothing when __VA_ARGS__ is non-empty, but removes the comma when __VA_ARGS__ is empty: this makes it possible to define macros such as <code>fprintf (stderr, format, ##__VA_ARGS__)</code>.
-</p><p>The order of evaluation of # and ## operators is unspecified.
+</p><p>Note: Some compilers offer an extension that allows <code>##</code> to appear after a comma and before <code>__VA_ARGS__</code>, in which case the <code>##</code> does nothing when <code>__VA_ARGS__</code> is non-empty, but removes the comma when <code>__VA_ARGS__</code> is empty: this makes it possible to define macros such as <span class="t-c"><span class="mw-geshi c source-c"><a href="../io/fprintf.html"><span class="kw852">fprintf</span></a> <span class="br0">(</span><a href="../io/std_streams.html"><span class="kw888">stderr</span></a>, format, <span class="co2">##__VA_ARGS__)</span></span></span>.
+</p><p>The order of evaluation of <code>#</code> and <code>##</code> operators is unspecified.
 </p>
 <h4><span class="mw-headline" id=".23undef_directive"><code>#undef</code> directive</span></h4>
 <p>The <code>#undef</code> directive undefines the <span class="t-spar">identifier</span>, that is it cancels the previous definition of the <span class="t-spar">identifier</span> by <code>#define</code> directive. If the identifier does not have an associated macro, the directive is ignored.
@@ -470,6 +492,28 @@ double(21): 42
 34
 million</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://www.open-std.org/jtc1/sc22/wg14/www/docs/dr_321.htm">DR 321</a>
+</td>
+<td> C99
+</td>
+<td> it was unclear if <span class="t-c"><span class="mw-geshi c source-c">L<span class="st0">'x'</span> <span class="sy1">==</span> <span class="st0">'x'</span></span></span> always holds<br>among the basic character set
+</td>
+<td> <span class="t-c"><span class="mw-geshi c source-c">__STDC_MB_MIGHT_NEQ_WC__</span></span> added for the purpose
+</td></tr></table>
 <h3><span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-17">
 <ul><li> C17 standard (ISO/IEC 9899:2018): 
@@ -518,19 +562,19 @@ million</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4999/1000000
-Preprocessor generated node count: 9526/1000000
-Post‐expand include size: 105901/2097152 bytes
-Template argument size: 38441/2097152 bytes
+Preprocessor visited node count: 5344/1000000
+Preprocessor generated node count: 10221/1000000
+Post‐expand include size: 110992/2097152 bytes
+Template argument size: 40547/2097152 bytes
 Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12671-0!*!0!!en!*!* and timestamp 20220718020627 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12671-0!*!0!!en!*!* and timestamp 20230120024330 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/replace&amp;oldid=140743">https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/replace&amp;oldid=140743</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/replace&amp;oldid=145811">https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/replace&amp;oldid=145811</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -543,17 +587,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/preprocessor/replace">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 30 June 2022, at 21:42.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 81,074 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -568,7 +601,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.971 secs. -->
+</script><!-- Served in 0.988 secs. -->
 	</body>
-<!-- Cached 20220718020627 -->
+<!-- Cached 20230120024330 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/iterator","wgTitle":"cpp/iterator","wgCurRevisionId":135630,"wgArticleId":626,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/iterator","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/iterator","wgTitle":"cpp/iterator","wgCurRevisionId":145889,"wgArticleId":626,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/iterator","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -245,81 +246,210 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="iterator/data.html" title="cpp/iterator/data"><span class="t-lines"><span>data</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 </table></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
-<p>The iterator library provides definitions for <span class="t-rev-inl t-until-cxx17"><span>five</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>six</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> kinds of iterators as well as iterator traits, adaptors, and utility functions.
+<p>Iterators are a generalization of <a href="language/pointer.html" title="cpp/language/pointer">pointers</a> that allow a C++ program to work with different data structures (for example, <a href="container.html" title="cpp/container">containers</a><span class="t-rev-inl t-since-cxx20"><span> and <a href="ranges.html" title="cpp/ranges">ranges</a></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>) in a uniform manner. The iterator library provides definitions for iterators, as well as iterator traits, adaptors, and utility functions.
+</p><p>Since iterators are an abstraction of pointers, their semantics are a generalization of most of the semantics of pointers in C++. This ensures that every <a href="language/function_template.html" title="cpp/language/function template">function template</a> that takes iterators works as well with regular pointers.
 </p>
 <h3><span class="mw-headline" id="Iterator_categories">Iterator categories</span></h3>
 <p>There are <span class="t-rev-inl t-until-cxx17"><span>five</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>six</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> kinds of iterators: <a href="named_req/InputIterator.html" title="cpp/named req/InputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyInputIterator</span></a>, <a href="named_req/OutputIterator.html" title="cpp/named req/OutputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyOutputIterator</span></a>, <a href="named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>, <a href="named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyBidirectionalIterator</span></a>, <a href="named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a><span class="t-rev-inl t-since-cxx17"><span>, and <a href="named_req/ContiguousIterator.html" title="cpp/named req/ContiguousIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyContiguousIterator</span></a></span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>.
 </p><p>Instead of being defined by specific types, each category of iterator is defined by the operations that can be performed on it.  This definition means that any type that supports the necessary operations can be used as an iterator -- for example, a pointer supports all of the operations required by <a href="named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a>, so a pointer can be used anywhere a <a href="named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a> is expected.
 </p><p>All of the iterator categories (except <a href="named_req/OutputIterator.html" title="cpp/named req/OutputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyOutputIterator</span></a>) can be organized into a hierarchy, where more powerful iterator categories (e.g. <a href="named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a>) support the operations of less powerful categories (e.g. <a href="named_req/InputIterator.html" title="cpp/named req/InputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyInputIterator</span></a>). If an iterator falls into one of these categories and also satisfies the requirements of <a href="named_req/OutputIterator.html" title="cpp/named req/OutputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyOutputIterator</span></a>, then it is called a <i>mutable</i> iterator and supports <i>both</i> input and output. Non-mutable iterators are called <i>constant</i> iterators.
 </p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx20"><td>
+<p>Iterators are called <i>constexpr</i> iterators if all operations provided to meet iterator category requirements are <a href="language/constexpr.html#constexpr_function" title="cpp/language/constexpr">constexpr functions</a>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table>
 <table class="wikitable">
 <tr>
-<th colspan="5">Iterator category
+<th rowspan="3">Iterator category
 </th>
-<th>Defined operations
+<th colspan="7">Operations and storage requirement
 </th></tr>
-<tr>
-<td rowspan="5"><a href="named_req/ContiguousIterator.html" title="cpp/named req/ContiguousIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyContiguousIterator</span></a>
+<tr style="text-align:center;">
+<td rowspan="2">     write     
 </td>
-<td rowspan="4"><a href="named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a>
+<td rowspan="2">     read     
 </td>
-<td rowspan="3"><a href="named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyBidirectionalIterator</span></a>
+<td colspan="2">increment
 </td>
-<td rowspan="2"><a href="named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>
+<td rowspan="2"> decrement 
 </td>
-<td><a href="named_req/InputIterator.html" title="cpp/named req/InputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyInputIterator</span></a>
+<td rowspan="2">   random   <br>access
 </td>
-<td>
-<ul><li> read
-</li><li> increment (without multiple passes)
-</li></ul>
+<td rowspan="2"> contiguous <br>storage
 </td></tr>
-<tr>
-<td>
+<tr style="text-align:center;">
+<td>without<br>   multiple   <br>passes
 </td>
-<td>
-<ul><li> increment (with multiple passes)
-</li></ul>
+<td>with<br>   multiple   <br>passes
 </td></tr>
-<tr>
-<td colspan="2">
-</td>
-<td>
-<ul><li> decrement
-</li></ul>
-</td></tr>
-<tr>
-<td colspan="3">
-</td>
-<td>
-<ul><li> random access
-</li></ul>
-</td></tr>
-<tr>
-<td colspan="4">
-</td>
-<td>
-<ul><li> contiguous storage
-</li></ul>
-</td></tr>
-<tr>
-<td colspan="6" style="text-align:center;">
-<p>Iterators that fall into one of the above categories and also meet the requirements of <a href="named_req/OutputIterator.html" title="cpp/named req/OutputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyOutputIterator</span></a> are called mutable iterators.
-</p>
-</td></tr>
-<tr>
+<tr style="text-align:center;">
 <td><a href="named_req/OutputIterator.html" title="cpp/named req/OutputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyOutputIterator</span></a>
 </td>
-<td colspan="4">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
 </td>
 <td>
-<ul><li> write
-</li><li> increment (without multiple passes)
-</li></ul>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr style="text-align:center;">
+<td><a href="named_req/InputIterator.html" title="cpp/named req/InputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyInputIterator</span></a><br><span style="font-size:0.7em; line-height:130%">(mutable if supports write operation)</span>
+</td>
+<td>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr style="text-align:center;">
+<td><a href="named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a><br><span style="font-size:0.7em; line-height:130%">(also satisfies <a href="named_req/InputIterator.html" title="cpp/named req/InputIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyInputIterator</span></a>)</span>
+</td>
+<td>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr style="text-align:center;">
+<td><a href="named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyBidirectionalIterator</span></a><br><span style="font-size:0.7em; line-height:130%">(also satisfies <a href="named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>)</span>
+</td>
+<td>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr style="text-align:center;">
+<td><a href="named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a><br><span style="font-size:0.7em; line-height:130%">(also satisfies <a href="named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyBidirectionalIterator</span></a>)</span>
+</td>
+<td>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td>
+</td></tr>
+<tr style="text-align:center;">
+<td>   <a href="named_req/ContiguousIterator.html" title="cpp/named req/ContiguousIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyContiguousIterator</span></a><sup id="cite_ref-1" class="reference"><a href="iterator.html#cite_note-1">[1]</a></sup><br><span style="font-size:0.7em; line-height:130%">(also satisfies <a href="named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span></a>)</span>
+</td>
+<td>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Required
 </td></tr></table>
-<p>Note: <a href="named_req/ContiguousIterator.html" title="cpp/named req/ContiguousIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyContiguousIterator</span></a> category was only formally specified in C++17, but the iterators of <span class="t-lc"><a href="container/vector.html" title="cpp/container/vector">std::vector</a></span>, <span class="t-lc"><a href="string/basic_string.html" title="cpp/string/basic string">std::basic_string</a></span>, <span class="t-lc"><a href="container/array.html" title="cpp/container/array">std::array</a></span>, and <span class="t-lc"><a href="numeric/valarray.html" title="cpp/numeric/valarray">std::valarray</a></span>, as well as pointers into C arrays are often treated as a separate category in pre-C++17 code.
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="iterator.html#cite_ref-1">↑</a></span> <span class="reference-text"><a href="named_req/ContiguousIterator.html" title="cpp/named req/ContiguousIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyContiguousIterator</span></a> category was only formally specified in C++17, but the iterators of <span class="t-lc"><a href="container/vector.html" title="cpp/container/vector">std::vector</a></span>, <span class="t-lc"><a href="string/basic_string.html" title="cpp/string/basic string">std::basic_string</a></span>, <span class="t-lc"><a href="container/array.html" title="cpp/container/array">std::array</a></span>, and <span class="t-lc"><a href="numeric/valarray.html" title="cpp/numeric/valarray">std::valarray</a></span>, as well as pointers into C arrays are often treated as a separate category in pre-C++17 code.</span>
+</li>
+</ol>
+<p>Note: A type supporting the required operations in a row of the table above does not necessarily fall into the corresponding category, see the category page for the complete list of requirements.
 </p>
-<h3><span class="mw-headline" id="C.2B.2B20_iterator_concepts"> C++20 iterator concepts </span></h3>
+<h3><span class="mw-headline" id="Definitions">Definitions</span></h3>
+<h4><span class="mw-headline" id="Types_and_writability">Types and writability</span></h4>
+<p>An input iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> supports the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>i</span></span>, resulting in a value of some <span class="t-rev-inl t-until-cxx11"><span><a href="language/class.html" title="cpp/language/class">class</a>, <a href="language/enum_class.html" title="cpp/language/enum">enumeration</a> or <a href="language/types.html" title="cpp/language/types">fundamental</a> type</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span><a href="language/type-id.html" title="cpp/language/type">object type</a></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> <code>T</code>, called the <i>value type</i> of the iterator.
+</p><p>An output iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> has a non-empty set of types that are <span class="t-rev-inl t-until-cxx20"><span><i>writable</i></span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span><span class="t-rev-inl t-since-cxx20"><span><a href="iterator/indirectly_writable.html" title="cpp/iterator/indirectly writable"><tt>indirectly_writable</tt></a></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> to the iterator; for each such type <code>T</code>, the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>i <span class="sy1">=</span> o</span></span> is valid where <span class="t-c"><span class="mw-geshi cpp source-cpp">o</span></span> is a value of type <code>T</code>.
+</p><p>For every iterator type <code>X</code> <span class="t-rev-inl t-until-cxx20"><span>for which equality is defined</span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span>, there is a corresponding signed <span class="t-rev-inl t-until-cxx20"><span><a href="language/types.html#Signed_and_unsigned_integer_types" title="cpp/language/types">integer</a></span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span><span class="t-rev-inl t-since-cxx20"><span><a href="iterator/weakly_incrementable.html#Integer-like_types" title="cpp/iterator/weakly incrementable">integer-like</a></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> type called the <i>difference type</i> of the iterator.
+</p>
+<h4><span class="mw-headline" id="Dereferenceability_and_validity">Dereferenceability and validity</span></h4>
+<p>Just as a regular pointer to an <a href="language/array.html" title="cpp/language/array">array</a> guarantees that there is a pointer value pointing past the last element of the array, so for any iterator type there is an iterator value that points past the last element of a corresponding sequence. Such a value is called a <i>past-the-end</i> value.
+</p><p>Values of an iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> for which the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>i</span></span> is defined are called <i>dereferenceable</i>. The <a href="standard_library.html" title="cpp/standard library">standard library</a> never assumes that past-the-end values are dereferenceable.
+</p><p>Iterators can also have <i>singular</i> values that are not associated with any sequence. Results of most expressions are undefined for singular values; the only exceptions are
+</p>
+<ul><li> the assignment of a non-singular value to an iterator that holds a singular value,
+</li><li> destroying an iterator that holds a singular value, and,
+</li><li> for iterators that meet the <a href="named_req/DefaultConstructible.html" title="cpp/named req/DefaultConstructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">DefaultConstructible</span></a> requirements, using a <a href="language/value_initialization.html" title="cpp/language/value initialization">value-initialized</a> iterator as the source of a copy or move operation.
+</li></ul>
+<p>In these cases the singular value is overwritten the same way as any other value. Dereferenceable values are always non-singular.
+</p><p>An <i>invalid</i> iterator is an iterator that may be singular.
+</p>
+<h4><span class="mw-headline" id="Ranges">Ranges</span></h4>
+<p>Most of the standard library’s algorithmic templates that operate on data structures have interfaces that use ranges.
+</p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p>An iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">j</span></span> is called <i>reachable</i> from an iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> if and only if there is a finite sequence of applications of the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">++</span>i</span></span> that makes <span class="t-c"><span class="mw-geshi cpp source-cpp">i <span class="sy1">==</span> j</span></span>. If <span class="t-c"><span class="mw-geshi cpp source-cpp">j</span></span> is reachable from <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>, they refer to elements of the same sequence.
+</p><p>A <i>range</i> is a pair of iterators that designate the beginning and end of the computation. A range <code>[i, i)</code> is an empty range; in general, a range <code>[i, j)</code> refers to the elements in the data structure starting with the element pointed to by <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> and up to but not including the element pointed to by <span class="t-c"><span class="mw-geshi cpp source-cpp">j</span></span>.
+</p><p>Range <code>[i, j)</code> is <i>valid</i> if and only if <span class="t-c"><span class="mw-geshi cpp source-cpp">j</span></span> is reachable from <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>. 
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p>A <i>range</i> is either
+</p>
+<ul><li> a comparable range <code>[i, s)</code>, an iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> and a <i>sentinel</i> <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span> that designate the beginning and end of the computation (<span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span> can have different types), or
+</li><li> a counted range <code>i + [0, n)</code>, an iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> and a count <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span> that designate the beginning and the number of elements to which the computation is to be applied.
+</li></ul>
+<h5> <span class="mw-headline" id="Comparable_range">Comparable range</span></h5>
+<p>An iterator and a sentinel denoting a range are comparable. <code>[i, s)</code> is empty if <span class="t-c"><span class="mw-geshi cpp source-cpp">i <span class="sy1">==</span> s</span></span>; otherwise, <code>[i, s)</code> refers to the elements in the data structure starting with the element pointed to by <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> and up to but not including the element, if any, pointed to by the first iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">j</span></span> such that <span class="t-c"><span class="mw-geshi cpp source-cpp">j <span class="sy1">==</span> s</span></span>.
+</p><p>A sentinel <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span> is called <i>reachable</i> from an iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> if and only if there is a finite sequence of applications of the expression <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">++</span>i</span></span> that makes <span class="t-c"><span class="mw-geshi cpp source-cpp">i <span class="sy1">==</span> s</span></span>.
+</p><p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">s</span></span> is reachable from <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span>, <code>[i, s)</code> denotes a <i>valid</i> range.
+</p>
+<h5> <span class="mw-headline" id="Counted_range">Counted range</span></h5>
+<p>A <i>counted range</i> <code>i + [0, n)</code> is empty if <span class="t-c"><span class="mw-geshi cpp source-cpp">n <span class="sy1">==</span> <span class="nu0">0</span></span></span>; otherwise, <code>i + [0, n)</code> refers to the <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span> elements in the data structure starting with the element pointed to by <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> and up to but not including the element, if any, pointed to by the result of <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span> applications of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">++</span>i</span></span>.
+</p><p>A counted range <code>i + [0, n)</code> is <i>valid</i> if and only if
+</p>
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">n <span class="sy1">==</span> <span class="nu0">0</span></span></span>; or
+</li><li> all of the following conditions are satisfied:
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span> is positive,
+</li><li> <span class="t-c"><span class="mw-geshi cpp source-cpp">i</span></span> is dereferenceable, and
+</li><li> <code>++i + [0, --n)</code> is valid.
+</li></ul>
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table>
+<p>The result of the application of functions in the standard library to invalid ranges is undefined.
+</p>
+<h3><span class="mw-headline" id="Iterator_concepts">Iterator concepts</span></h3>
 <p>C++20 introduces a new system of iterators based on <a href="language/constraints.html" title="cpp/language/constraints">concepts</a> that are different from C++17 iterators. While the basic taxonomy remains similar, the requirements for individual iterator categories are somewhat different.
 </p>
 <table class="t-dsc-begin">
@@ -393,7 +523,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   specifies that a <a href="iterator/random_access_iterator.html" title="cpp/iterator/random access iterator"><code>random_access_iterator</code></a> is a contiguous iterator, referring to elements that are contiguous in memory  <br> <span class="t-mark">(concept)</span> </td></tr>
 </table>
-<h3><span class="mw-headline" id="Iterator_associated_types"> Iterator associated types </span></h3>
+<h3><span class="mw-headline" id="Iterator_associated_types">Iterator associated types</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-header">
@@ -415,7 +545,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   computes the associated types of an iterator  <br> <span class="t-mark">(alias template)</span> </td></tr>
 </table>
-<h3><span class="mw-headline" id="Iterator_primitives"> Iterator primitives </span></h3>
+<h3><span class="mw-headline" id="Iterator_primitives">Iterator primitives</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
@@ -433,7 +563,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   base class to ease the definition of required types for simple iterators  <br> <span class="t-mark">(class template)</span> </td></tr>
 </table>
-<h3><span class="mw-headline" id="Iterator_customization_points"> Iterator customization points </span></h3>
+<h3><span class="mw-headline" id="Iterator_customization_points">Iterator customization points</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-header">
@@ -450,7 +580,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   swaps the values referenced by two dereferenceable objects  <br> <span class="t-mark">(customization point object)</span> </td></tr>
 </table>
-<h3><span class="mw-headline" id="Algorithm_concepts_and_utilities"> Algorithm concepts and utilities </span></h3>
+<h3><span class="mw-headline" id="Algorithm_concepts_and_utilities">Algorithm concepts and utilities</span></h3>
 <p>C++20 also provides a set of concepts and related utility templates designed to ease constraining common algorithm operations.
 </p>
 <table class="t-dsc-begin">
@@ -555,7 +685,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   helper template for specifying the constraints on algorithms that accept projections <br> <span class="t-mark">(class template)</span> </td></tr>
 </table>
-<h3><span class="mw-headline" id="Iterator_adaptors"> Iterator adaptors </span></h3>
+<h3><span class="mw-headline" id="Iterator_adaptors">Iterator adaptors</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
@@ -633,7 +763,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   creates a <span class="t-lc"><a href="iterator/insert_iterator.html" title="cpp/iterator/insert iterator">std::insert_iterator</a></span> of type inferred from the argument <br> <span class="t-mark">(function template)</span> </td></tr>
 </table>
-<h3><span class="mw-headline" id="Stream_iterators"> Stream iterators </span></h3>
+<h3><span class="mw-headline" id="Stream_iterators">Stream iterators</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
@@ -656,7 +786,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   output iterator that writes to <span class="t-lc"><a href="io/basic_streambuf.html" title="cpp/io/basic streambuf">std::basic_streambuf</a></span> <br> <span class="t-mark">(class template)</span> </td></tr>
 </table>
-<h3><span class="mw-headline" id="Iterator_operations"> Iterator operations </span></h3>
+<h3><span class="mw-headline" id="Iterator_operations">Iterator operations</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-header">
@@ -703,7 +833,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   decrement an iterator by a given distance or to a bound  <br> <span class="t-mark">(niebloid)</span> </td></tr>
 </table>
-<h3><span class="mw-headline" id="Range_access"> Range access </span></h3>
+<h3><span class="mw-headline" id="Range_access">Range access</span></h3>
 <p>These non-member functions provide a generic interface for containers, plain arrays, and <span class="t-lc"><a href="utility/initializer_list.html" title="cpp/utility/initializer list">std::initializer_list</a></span>.
 </p>
 <table class="t-dsc-begin">
@@ -803,22 +933,62 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   obtains the pointer to the underlying array <br> <span class="t-mark">(function template)</span> </td></tr>
 </table>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue208">LWG 208</a>
+</td>
+<td> C++98
+</td>
+<td> past-the-end iterators were always non-singular
+</td>
+<td> they can be singular
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue278">LWG 278</a>
+</td>
+<td> C++98
+</td>
+<td> the validity of an iterator was not defined
+</td>
+<td> defined to be always non-singular
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue324">LWG 324</a>
+</td>
+<td> C++98
+</td>
+<td> output iterators had value types
+</td>
+<td> output iterators have writable types instead
+</td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 19709/1000000
-Preprocessor generated node count: 14058/1000000
-Post‐expand include size: 649413/2097152 bytes
-Template argument size: 134929/2097152 bytes
+Preprocessor visited node count: 21616/1000000
+Preprocessor generated node count: 17245/1000000
+Post‐expand include size: 669832/2097152 bytes
+Template argument size: 142481/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:626-0!*!0!!en!*!* and timestamp 20220729053348 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:626-0!*!0!!en!*!* and timestamp 20230120004415 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator&amp;oldid=135630">https://en.cppreference.com/mwiki/index.php?title=cpp/iterator&amp;oldid=135630</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator&amp;oldid=145889">https://en.cppreference.com/mwiki/index.php?title=cpp/iterator&amp;oldid=145889</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -831,17 +1001,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/iterator">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 25 November 2021, at 00:29.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 822,363 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -856,7 +1015,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.668 secs. -->
+</script><!-- Served in 5.022 secs. -->
 	</body>
-<!-- Cached 20220729053349 -->
+<!-- Cached 20230120004415 -->
 </html>

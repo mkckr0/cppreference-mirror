@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -123,6 +124,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../io.html" title="cpp/io"> Input/output library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="manip.html" title="cpp/io/manip"> I/O manipulators</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../io.html#Print_functions_.28since_C.2B.2B23.29" title="cpp/io"> Print functions</a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c.html" title="cpp/io/c"> C-style I/O</a></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Buffers</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_streambuf.html" title="cpp/io/basic streambuf"><span class="t-lines"><span>basic_streambuf</span></span></a></div></div></td></tr>
@@ -167,7 +169,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="cin.html" title="cpp/io/cin"><span class="t-lines"><span>cin</span><span>wcin</span></span></a></div></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_istream/basic_istream.html" title="cpp/io/basic istream/basic istream"><span class="t-lines"><span>basic_istream::basic_istream</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_istream/~basic_istream.html" title="cpp/io/basic istream/~basic istream"><span class="t-lines"><span>basic_istream::~basic_istream</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_istream/%7Ebasic_istream.html" title="cpp/io/basic istream/~basic istream"><span class="t-lines"><span>basic_istream::~basic_istream</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_istream/operator%3D.html" title="cpp/io/basic istream/operator="><span class="t-lines"><span>basic_istream::operator=</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Formatted input</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_istream/operator_gtgt.html" title="cpp/io/basic istream/operator gtgt"><span class="t-lines"><span>basic_istream::operator&gt;&gt;</span></span></a></div></div></td></tr>
@@ -213,7 +215,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The class template <code>basic_istream</code> provides support for high level input operations on character streams. The supported operations include formatted input (e.g. integer values or whitespace-separated characters and characters strings) and unformatted input (e.g. raw characters and character arrays). This functionality is implemented in terms of the interface provided by the underlying <code>basic_streambuf</code> class, accessed through the <code>basic_ios</code> base class. The only non-inherited data member of <code>basic_istream</code>, in most implementations, is the value returned by <a href="basic_istream/gcount.html" title="cpp/io/basic istream/gcount"><tt>basic_istream::gcount()</tt></a>.
 </p>
 <div class="t-inheritance-diagram">
-<div class="center"><div class="noresize"><map name="ImageMap_1_472641900"><area href="ios_base.html" shape="rect" coords="5,6,107,39" alt="cpp/io/ios base" title="cpp/io/ios base"><area href="basic_ios.html" shape="rect" coords="135,4,252,42" alt="cpp/io/basic ios" title="cpp/io/basic ios"></map><img alt="std-basic istream-inheritance.svg" src="../../../common/images/d/db/std-basic_istream-inheritance.svg" width="399" height="45" usemap="#ImageMap_1_472641900"></div></div>
+<div class="center"><div class="noresize"><map name="ImageMap_1_1034214036"><area href="ios_base.html" shape="rect" coords="5,6,107,39" alt="cpp/io/ios base" title="cpp/io/ios base"><area href="basic_ios.html" shape="rect" coords="135,4,252,42" alt="cpp/io/basic ios" title="cpp/io/basic ios"></map><img alt="std-basic istream-inheritance.svg" src="../../../common/images/d/db/std-basic_istream-inheritance.svg" width="399" height="45" usemap="#ImageMap_1_1034214036"></div></div>
 <div style="text-align:center;">
 <p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
 </p>
@@ -306,7 +308,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  constructs the object <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="basic_istream/~basic_istream.html" title="cpp/io/basic istream/~basic istream"> <span class="t-lines"><span>(destructor)</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="basic_istream/%7Ebasic_istream.html" title="cpp/io/basic istream/~basic istream"> <span class="t-lines"><span>(destructor)</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
 <td>  destructs the object <br> <span class="t-mark">(virtual public member function)</span> </td></tr>
 
@@ -693,45 +695,51 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Constant
+<td> Constant
 </td>
-<td>  Explanation</td></tr>
+<td> Explanation</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>app</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>app</tt></a>
 </td>
-<td>  seek to the end of stream before each write</td></tr>
+<td> seek to the end of stream before each write</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>binary</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>binary</tt></a>
 </td>
-<td>  open in <a href="c/FILE.html#Binary_and_text_modes" title="cpp/io/c/FILE">binary mode</a></td></tr>
+<td> open in <a href="c/FILE.html#Binary_and_text_modes" title="cpp/io/c/FILE">binary mode</a></td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>in</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>in</tt></a>
 </td>
-<td>  open for reading</td></tr>
+<td> open for reading</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>out</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>out</tt></a>
 </td>
-<td>  open for writing</td></tr>
+<td> open for writing</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>trunc</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>trunc</tt></a>
 </td>
-<td>  discard the contents of the stream when opening</td></tr>
+<td> discard the contents of the stream when opening</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>ate</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>ate</tt></a>
 </td>
-<td>  seek to the end of stream immediately after open</td></tr>
+<td> seek to the end of stream immediately after open</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>noreplace</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td>
+<td> open in exclusive mode</td></tr>
 
 </table> <br> <span class="t-mark">(typedef)</span> </td></tr>
 
@@ -944,15 +952,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 16363/1000000
-Preprocessor generated node count: 15249/1000000
-Post‐expand include size: 592536/2097152 bytes
-Template argument size: 157952/2097152 bytes
+Preprocessor visited node count: 16423/1000000
+Preprocessor generated node count: 15317/1000000
+Post‐expand include size: 598366/2097152 bytes
+Template argument size: 159622/2097152 bytes
 Highest expansion depth: 35/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:516-0!*!0!!en!2!* and timestamp 20220410082101 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:516-0!*!0!!en!2!* and timestamp 20221209212823 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -969,17 +977,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_istream">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 31 May 2013, at 22:57.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 617,390 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -994,7 +991,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.443 secs. -->
+</script><!-- Served in 3.035 secs. -->
 	</body>
-<!-- Cached 20220410082101 -->
+<!-- Cached 20221209212823 -->
 </html>

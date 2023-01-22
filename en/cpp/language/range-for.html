@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/range-for","wgTitle":"cpp/language/range-for","wgCurRevisionId":141119,"wgArticleId":2146,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/range-for","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/range-for","wgTitle":"cpp/language/range-for","wgCurRevisionId":146033,"wgArticleId":2146,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/range-for","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -340,7 +341,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <code><b>for (</b></code> <span class="t-spar">init-statement</span><span class="t-mark">(optional)</span><span class="t-spar">range-declaration</span> <code><b>:</b></code> <span class="t-spar">range-expression</span> <code><b>)</b></code>
+<td class="t-sdsc-nopad"> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <code><b>for (</b></code> <span class="t-spar">init-statement</span><span class="t-mark">(optional)</span> <span class="t-spar">range-declaration</span> <code><b>:</b></code> <span class="t-spar">range-expression</span> <code><b>)</b></code>
 <p><span class="t-spar">loop-statement</span>
 </p>
 </td>
@@ -410,7 +411,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-rev t-since-cxx17"><td>
 <p><span class="t-spar">range-declaration</span> may be a <a href="structured_binding.html" title="cpp/language/structured binding">structured binding declaration</a>:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span><span class="sy3">&amp;&amp;</span> <span class="br0">[</span>first,second<span class="br0">]</span> <span class="sy4">:</span> mymap<span class="br0">)</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span><span class="sy3">&amp;&amp;</span> <span class="br0">[</span>first, second<span class="br0">]</span> <span class="sy4">:</span> mymap<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="co1">// use first and second</span>
 <span class="br0">}</span></pre></div></div>
@@ -418,7 +419,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>The above syntax produces code equivalent to the following (<b><code>__range</code></b>, <b><code>__begin</code></b> and <b><code>__end</code></b> are for exposition only):
+<p>The above syntax produces code equivalent to the following <span class="t-rev-inl t-since-cxx23"><span> except for the lifetime expansion of temporaries of <span class="t-spar">range-expression</span> (see <a href="range-for.html#Temporary_range_expression">below</a>)</span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>. The variables <b><code>__range</code></b>, <b><code>__begin</code></b> and <b><code>__end</code></b> are for exposition only.
 </p>
  <table class="t-rev-begin">
 <tr class="t-rev t-until-cxx17"><td>
@@ -485,9 +486,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy4">:</span> <span class="br0">{</span> <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span> <span class="br0">}</span><span class="br0">)</span>
     <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="co1">// error: redeclaration</span></pre></div></div>
 <h3><span class="mw-headline" id="Temporary_range_expression">Temporary range expression</span></h3>
-<p>If <span class="t-spar">range-expression</span> returns a temporary, its lifetime is extended until the end of the loop, as indicated by binding to the forwarding reference <b><code>__range</code></b>, but beware that the lifetime of any temporary within <span class="t-spar">range-expression</span> is <i>not</i> extended.
+<p>If <span class="t-spar">range-expression</span> returns a temporary, its lifetime is extended until the end of the loop, as indicated by binding to the forwarding reference <b><code>__range</code></b>. Lifetimes of all temporaries within <span class="t-spar">range-expression</span> are <span class="t-rev-inl t-until-cxx23"><span><i>not</i></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span> extended <span class="t-rev-inl t-since-cxx23"><span>if they would otherwise be destroyed at the end of <span class="t-spar">range-expression</span></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span><span class="sy3">&amp;</span> x <span class="sy4">:</span> foo<span class="br0">(</span><span class="br0">)</span>.<span class="me1">items</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="coMULTI">/* .. */</span> <span class="br0">}</span> <span class="co1">// undefined behavior if foo() returns by value</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// if foo() returns by value</span>
+<span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span><span class="sy3">&amp;</span> x <span class="sy4">:</span> foo<span class="br0">(</span><span class="br0">)</span>.<span class="me1">items</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="coMULTI">/* .. */</span> <span class="br0">}</span> <span class="co1">// until C++23 undefined behavior</span></pre></div></div>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
 <p>This problem may be worked around using <span class="t-spar">init-statement</span>:
@@ -496,10 +498,27 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx23"><td>
+<p>Note that even in C++23 non-reference parameters of intermediate function calls do not get a lifetime extension (because in some ABIs they are destroyed in the callee, not in the caller), but that is only a problem for functions that are buggy anyway:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">using</span> T <span class="sy1">=</span> <a href="../container/list.html"><span class="kw1278">std::<span class="me2">list</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">;</span>
+<span class="kw4">const</span> T<span class="sy3">&amp;</span> f1<span class="br0">(</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> t<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> t<span class="sy4">;</span> <span class="br0">}</span>
+<span class="kw4">const</span> T<span class="sy3">&amp;</span> f2<span class="br0">(</span>T t<span class="br0">)</span>        <span class="br0">{</span> <span class="kw1">return</span> t<span class="sy4">;</span> <span class="br0">}</span> <span class="co1">// always returns a dangling reference</span>
+T g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="kw4">void</span> foo<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> e <span class="sy4">:</span> f1<span class="br0">(</span>g<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>  <span class="co1">// OK: lifetime of return value of g() extended</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> e <span class="sy4">:</span> f2<span class="br0">(</span>g<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>  <span class="co1">// UB: lifetime of f2's value parameter ends early</span>
+<span class="br0">}</span></pre></div></div>
+</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
+</table>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>If the initializer (<span class="t-spar">range-expression</span>) is a braced-init-list, __range is deduced to be <span class="t-lc">std::initializer_list&lt;&gt;&amp;&amp;</span>
+<p>If the initializer (<span class="t-spar">range-expression</span>) is a braced-init-list, <b><code>__range</code></b> is deduced to be <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../utility/initializer_list.html"><span class="kw961">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;&gt;</span><span class="sy3">&amp;&amp;</span></span></span>.
 </p><p>It is safe, and in fact, preferable in generic code, to use deduction to forwarding reference, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span><span class="sy3">&amp;&amp;</span> var <span class="sy4">:</span> sequence<span class="br0">)</span></span></span>.
-</p><p>The member interpretation is used if the range type has a member named <code>begin</code> and a member named <code>end</code>. This is done regardless of whether the member is a type, data member, function, or enumerator, and regardless of its accessibility. Thus a class like <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">class</span> meow <span class="br0">{</span> <span class="kw2">enum</span> <span class="br0">{</span> begin <span class="sy1">=</span> <span class="nu0">1</span>, end <span class="sy1">=</span> <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span> <span class="coMULTI">/* rest of class */</span> <span class="br0">}</span><span class="sy4">;</span></span></span> cannot be used with the range-based for loop even if the namespace-scope begin/end functions are present. 
+</p><p>The member interpretation is used if the range type has a member named <code>begin</code> and a member named <code>end</code>. This is done regardless of whether the member is a type, data member, function, or enumerator, and regardless of its accessibility. Thus a class like <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">class</span> meow <span class="br0">{</span> <span class="kw2">enum</span> <span class="br0">{</span> begin <span class="sy1">=</span> <span class="nu0">1</span>, end <span class="sy1">=</span> <span class="nu0">2</span> <span class="br0">}</span><span class="sy4">;</span> <span class="coMULTI">/* rest of class */</span> <span class="br0">}</span><span class="sy4">;</span></span></span> cannot be used with the range-based for loop even if the namespace-scope begin/end functions are present. 
 </p><p>While the variable declared in the <span class="t-spar">range-declaration</span> is usually used in the <span class="t-spar">loop-statement</span>, doing so is not required.
 </p>
  <table class="t-rev-begin">
@@ -524,6 +543,25 @@ cow_string str <span class="sy1">=</span> <span class="coMULTI">/* ... */</span>
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
 </table>
+<table class="wikitable">
+
+<tr>
+<th>Feature-test macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td rowspan="2"><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_range_based_for</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">200907L</span></span></span></td>
+<td><span class="t-mark">(C++11)</span></td>
+<td><a href="range-for.html#Top">Range-based <code>for</code> loop</a>
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201603L</span></span></span></td>
+<td><span class="t-mark">(C++17)</span></td>
+<td>Range-based <code>for</code> loop with <a href="range-for.html#Explanation">different <code>begin</code>/<code>end</code></a> types
+</td></tr></table>
 <h3><span class="mw-headline" id="Keywords">Keywords</span></h3>
 <p><a href="../keyword/for.html" title="cpp/keyword/for"><tt>for</tt></a>
 </p>
@@ -645,19 +683,19 @@ cow_string str <span class="sy1">=</span> <span class="coMULTI">/* ... */</span>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4289/1000000
-Preprocessor generated node count: 10319/1000000
-Post‐expand include size: 148082/2097152 bytes
-Template argument size: 27157/2097152 bytes
+Preprocessor visited node count: 4750/1000000
+Preprocessor generated node count: 11459/1000000
+Post‐expand include size: 152926/2097152 bytes
+Template argument size: 29174/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2146-0!*!0!!en!*!* and timestamp 20220715234827 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2146-0!*!0!!en!*!* and timestamp 20230120005731 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/range-for&amp;oldid=141119">https://en.cppreference.com/mwiki/index.php?title=cpp/language/range-for&amp;oldid=141119</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/range-for&amp;oldid=146033">https://en.cppreference.com/mwiki/index.php?title=cpp/language/range-for&amp;oldid=146033</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -670,17 +708,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/range-for">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 July 2022, at 16:48.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 2,508,683 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -695,7 +722,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.036 secs. -->
+</script><!-- Served in 2.874 secs. -->
 	</body>
-<!-- Cached 20220715235216 -->
+<!-- Cached 20230120005731 -->
 </html>

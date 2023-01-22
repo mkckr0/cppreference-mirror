@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -419,10 +420,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The overload for <span class="t-lc"><a href="../utility/initializer_list.html" title="cpp/utility/initializer list">std::initializer_list</a></span> is necessary because it does not have a member function <code>data</code>.
 </p>
 <table class="wikitable">
+
 <tr>
-<td> <a href="../feature_test.html#Library_features" title="cpp/feature test">Feature-test</a> macro:
-</td>
-<td> <a href="../utility/feature_test.html" title="cpp/utility/feature test"><tt>__cpp_lib_nonmember_container_access</tt></a>
+<th><a href="../utility/feature_test.html" title="cpp/utility/feature test">Feature-test</a> macro
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Library_features" title="cpp/feature test"><code>__cpp_lib_nonmember_container_access</code></a>
 </td></tr></table>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <table class="eq-fun-cpp-table">
@@ -507,15 +510,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 8362/1000000
-Preprocessor generated node count: 10473/1000000
-Post‐expand include size: 248178/2097152 bytes
-Template argument size: 48435/2097152 bytes
+Preprocessor visited node count: 8373/1000000
+Preprocessor generated node count: 10560/1000000
+Post‐expand include size: 248609/2097152 bytes
+Template argument size: 48408/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:14045-0!*!0!!en!*!* and timestamp 20220728193329 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:14045-0!*!0!!en!*!* and timestamp 20230120012511 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -532,17 +535,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/iterator/data">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 31 January 2022, at 04:26.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 66,000 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -557,7 +549,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.778 secs. -->
+</script><!-- Served in 1.992 secs. -->
 	</body>
-<!-- Cached 20220728193329 -->
+<!-- Cached 20230120012512 -->
 </html>

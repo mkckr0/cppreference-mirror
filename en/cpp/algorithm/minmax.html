@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/minmax","wgTitle":"cpp/algorithm/minmax","wgCurRevisionId":132826,"wgArticleId":2482,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/minmax","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/minmax","wgTitle":"cpp/algorithm/minmax","wgCurRevisionId":146042,"wgArticleId":2482,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/minmax","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -367,13 +368,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-since-cxx11 t-until-cxx14">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T <span class="sy1">&gt;</span> <br>
+<td> <div><span id="Version_1"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
 <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span>,<span class="kw4">const</span> T<span class="sy3">&amp;</span><span class="sy1">&gt;</span> minmax<span class="br0">(</span> <span class="kw4">const</span> T<span class="sy3">&amp;</span> a, <span class="kw4">const</span> T<span class="sy3">&amp;</span> b <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> <br><span class="t-mark-rev t-until-cxx14">(until C++14)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx14">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T <span class="sy1">&gt;</span> <br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
 <span class="kw4">constexpr</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span>,<span class="kw4">const</span> T<span class="sy3">&amp;</span><span class="sy1">&gt;</span> minmax<span class="br0">(</span> <span class="kw4">const</span> T<span class="sy3">&amp;</span> a, <span class="kw4">const</span> T<span class="sy3">&amp;</span> b <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx14">(since C++14)</span> </td>
@@ -386,7 +387,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-since-cxx11 t-until-cxx14">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_2"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
 <p><a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span>,<span class="kw4">const</span> T<span class="sy3">&amp;</span><span class="sy1">&gt;</span> minmax<span class="br0">(</span> <span class="kw4">const</span> T<span class="sy3">&amp;</span> a, <span class="kw4">const</span> T<span class="sy3">&amp;</span> b,<br>
 </p>
                                      Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -409,7 +410,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-since-cxx11 t-until-cxx14">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_3"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
 <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>T,T<span class="sy1">&gt;</span> minmax<span class="br0">(</span> <a href="../utility/initializer_list.html"><span class="kw961">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> ilist<span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> <br><span class="t-mark-rev t-until-cxx14">(until C++14)</span> </td>
@@ -428,7 +429,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-since-cxx11 t-until-cxx14">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_4"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
 <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span>T,T<span class="sy1">&gt;</span> minmax<span class="br0">(</span> <a href="../utility/initializer_list.html"><span class="kw961">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> ilist, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> <br><span class="t-mark-rev t-until-cxx14">(until C++14)</span> </td>
@@ -444,7 +445,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody></table>
 <p>Returns the lowest and the greatest of the given values.
 </p>
-<div class="t-li1"><span class="t-li">1-2)</span> Returns references to the smaller and the greater of <code>a</code> and <code>b</code>. </div>
+<div class="t-li1"><span class="t-li">1-2)</span> Returns references to the smaller and the greater of <code>a</code> and <code>b</code>.</div>
 <div class="t-li1"><span class="t-li">3-4)</span> Returns the smallest and the greatest of the values in initializer list <code>ilist</code>.</div>
 <p>The <span class="t-v">(1,3)</span> versions use <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">&lt;</span></span></span> to compare the values, whereas the <span class="t-v">(2,4)</span> versions use the given comparison function <code>comp</code>.
 </p>
@@ -453,21 +454,21 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  a, b
+<td> a, b
 </td>
 <td> -
 </td>
-<td>  the values to compare
+<td> the values to compare
 </td></tr>
 <tr class="t-par">
-<td>  ilist
+<td> ilist
 </td>
 <td> -
 </td>
-<td>  initializer list with the values to compare
+<td> initializer list with the values to compare
 </td></tr>
 <tr class="t-par">
-<td>   comp
+<td>  comp
 </td>
 <td> -
 </td>
@@ -475,8 +476,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The signature of the comparison function should be equivalent to the following:
 </p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> <span class="kw4">bool</span> cmp<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
 </p><p>While the signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1 <span class="sy3">&amp;</span></span></span> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
-The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">T</span></span> can be implicitly converted to both of them.
-​ 
+The types <code>Type1</code> and <code>Type2</code> must be such that an object of type <code>T</code> can be implicitly converted to both of them.
+​
 </p>
 </td></tr>
 <tr class="t-par-hitem">
@@ -498,11 +499,11 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <table class="eq-fun-cpp-table">
 
 <tr>
-<th> First version
+<th><a href="minmax.html#Version_1">minmax (1)</a>
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw4">constexpr</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span>, <span class="kw4">const</span> T<span class="sy3">&amp;</span><span class="sy1">&gt;</span> minmax<span class="br0">(</span> <span class="kw4">const</span> T<span class="sy3">&amp;</span> a, <span class="kw4">const</span> T<span class="sy3">&amp;</span> b <span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">return</span> <span class="br0">(</span>b <span class="sy1">&lt;</span> a<span class="br0">)</span> <span class="sy4">?</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span>, <span class="kw4">const</span> T<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>b, a<span class="br0">)</span>
@@ -510,11 +511,11 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Second version
+<th><a href="minmax.html#Version_2">minmax (2)</a>
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> Compare<span class="sy1">&gt;</span> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> Compare<span class="sy1">&gt;</span>
 <span class="kw4">constexpr</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span>, <span class="kw4">const</span> T<span class="sy3">&amp;</span><span class="sy1">&gt;</span> minmax<span class="br0">(</span> <span class="kw4">const</span> T<span class="sy3">&amp;</span> a, <span class="kw4">const</span> T<span class="sy3">&amp;</span> b, Compare comp <span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">return</span> comp<span class="br0">(</span>b, a<span class="br0">)</span> <span class="sy4">?</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span>, <span class="kw4">const</span> T<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">(</span>b, a<span class="br0">)</span>
@@ -522,7 +523,7 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Third version
+<th><a href="minmax.html#Version_3">minmax (3)</a>
 </th></tr>
 <tr>
 <td>
@@ -534,7 +535,7 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Fourth version
+<th><a href="minmax.html#Version_4">minmax (4)</a>
 </th></tr>
 <tr>
 <td>
@@ -566,15 +567,14 @@ xx<span class="sy4">;</span> <span class="co1">// undefined behavior</span></pre
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v <span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">1</span>, <span class="nu0">4</span>, <span class="nu0">1</span>, <span class="nu0">5</span>, <span class="nu0">9</span>, <span class="nu0">2</span>, <span class="nu0">6</span><span class="br0">}</span><span class="sy4">;</span> 
+    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v <span class="br0">{</span><span class="nu0">3</span>, <span class="nu0">1</span>, <span class="nu0">4</span>, <span class="nu0">1</span>, <span class="nu0">5</span>, <span class="nu0">9</span>, <span class="nu0">2</span>, <span class="nu0">6</span><span class="br0">}</span><span class="sy4">;</span>
     <a href="../numeric/random/srand.html"><span class="kw1500">std::<span class="me2">srand</span></span></a><span class="br0">(</span><a href="../chrono/c/time.html"><span class="kw1016">std::<span class="me2">time</span></span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">int</span><span class="sy1">&gt;</span> bounds <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">minmax</span><span class="br0">(</span><a href="../numeric/random/rand.html"><span class="kw1501">std::<span class="me2">rand</span></span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">%</span> v.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span>,
                                              <a href="../numeric/random/rand.html"><span class="kw1501">std::<span class="me2">rand</span></span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">%</span> v.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
     <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"v["</span> <span class="sy1">&lt;&lt;</span> bounds.<span class="me1">first</span> <span class="sy1">&lt;&lt;</span> <span class="st0">","</span> <span class="sy1">&lt;&lt;</span> bounds.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"]: "</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> bounds.<span class="me1">first</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> bounds.<span class="me1">second</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> bounds.<span class="me1">first</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> bounds.<span class="me1">second</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> v<span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-    <span class="br0">}</span>
     <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -607,19 +607,19 @@ xx<span class="sy4">;</span> <span class="co1">// undefined behavior</span></pre
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10821/1000000
-Preprocessor generated node count: 14364/1000000
-Post‐expand include size: 306266/2097152 bytes
-Template argument size: 58299/2097152 bytes
+Preprocessor visited node count: 10977/1000000
+Preprocessor generated node count: 15825/1000000
+Post‐expand include size: 306480/2097152 bytes
+Template argument size: 58215/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2482-0!*!0!!en!*!* and timestamp 20220410100250 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2482-0!*!0!!en!*!* and timestamp 20230120011356 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/minmax&amp;oldid=132826">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/minmax&amp;oldid=132826</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/minmax&amp;oldid=146042">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/minmax&amp;oldid=146042</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -632,17 +632,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/minmax">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 23 August 2021, at 02:52.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 164,989 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -657,7 +646,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.910 secs. -->
+</script><!-- Served in 2.728 secs. -->
 	</body>
-<!-- Cached 20220410100250 -->
+<!-- Cached 20230120011356 -->
 </html>

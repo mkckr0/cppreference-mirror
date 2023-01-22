@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/preprocessor/replace","wgTitle":"cpp/preprocessor/replace","wgCurRevisionId":139372,"wgArticleId":1385,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/preprocessor/replace","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/preprocessor/replace","wgTitle":"cpp/preprocessor/replace","wgCurRevisionId":146055,"wgArticleId":1385,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/preprocessor/replace","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -318,7 +319,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <code><b>#define</b></code> <span class="t-spar">identifier</span> <span class="t-spar">replacement-list</span><span class="t-mark">(optional)</span>
+<td> <code><b>#define</b></code> <span class="t-spar">identifier replacement-list</span><span class="t-mark">(optional)</span>
 </td>
 <td> (1)
 </td>
@@ -395,7 +396,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>For version (2), the number of arguments must be the same as the number of parameters in macro definition. For versions (3,4), the number of arguments must not be less than the number of parameters (<span class="t-rev-inl t-since-cxx20"><span>not</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> counting <code><b>...</b></code>). Otherwise the program is ill-formed. If the identifier is not in functional-notation, i.e. does not have parentheses after itself, it is not replaced at all.
 </p><p>Version (2) of the <code>#define</code> directive defines a simple function-like macro.
 </p><p>Version (3) of the <code>#define</code> directive defines a function-like macro with variable number of arguments. The additional arguments (called <i>variable arguments</i>) can be accessed using <code>__VA_ARGS__</code> identifier, which is then replaced with arguments, supplied with the identifier to be replaced.
-</p><p>Version (4) of the <code>#define</code> directive defines a function-like macro with variable number of arguments, but no regular arguments. The arguments (called <i>variable arguments</i>) can be accessed only with <code>__VA_ARGS__</code> identifier, which is then replaced with arguments, supplied with identifier to be replaced.
+</p><p>Version (4) of the <code>#define</code> directive defines a function-like macro with variable number of arguments, but no regular arguments. The arguments (called <i>variable arguments</i>) can be accessed only with <code>__VA_ARGS__</code> identifier, which is then replaced with arguments, supplied with the identifier to be replaced.
 </p>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
@@ -418,8 +419,8 @@ SDEF<span class="br0">(</span>bar, <span class="nu0">1</span>, <span class="nu0"
 </table>
 <p>Note: if an argument of a function-like macro includes commas that are not protected by matched pairs of left and right parentheses (most commonly found in template argument lists, as in <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../error/assert.html"><span class="kw775">assert</span></a><span class="br0">(</span><a href="../types/is_same.html"><span class="kw591">std::<span class="me2">is_same_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">BOOST_FOREACH<span class="br0">(</span><a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>,<span class="kw4">int</span><span class="sy1">&gt;</span> p, m<span class="br0">)</span></span></span>), the comma is interpreted as macro argument separator, causing a compilation failure due to argument count mismatch.
 </p>
-<h4><span class="mw-headline" id="Reserved_macro_names"> Reserved macro names </span></h4>
-<p>A translation unit that includes a standard library header may not <code>#define</code> or <code>#undef</code> names declared in any standard library header.
+<h4><span class="mw-headline" id="Reserved_macro_names">Reserved macro names</span></h4>
+<p>A translation unit that <a href="../standard_library.html#Including_headers" title="cpp/standard library">includes a standard library header</a> may not <code>#define</code> or <code>#undef</code> names declared in any <a href="../headers.html" title="cpp/header">standard library header</a>.
 </p><p>A translation unit that uses any part of the standard library may not <code>#define</code> or <code>#undef</code> names lexically identical to:
 </p>
 <ul><li> <a href="../keywords.html" title="cpp/keyword">keywords</a>
@@ -427,17 +428,10 @@ SDEF<span class="br0">(</span>bar, <span class="nu0">1</span>, <span class="nu0"
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
 <ul><li> <a href="../keywords.html" title="cpp/keyword">identifiers with special meaning</a>
-</li><li> <a href="../language/attributes.html#Standard_attributes" title="cpp/language/attributes">any standard attribute token</a>
+</li><li> <a href="../language/attributes.html#Standard_attributes" title="cpp/language/attributes">any standard attribute token</a><span class="t-rev-inl t-since-cxx20"><span>, except that <a href="../language/attributes/likely.html" title="cpp/language/attributes/likely"><tt>likely</tt></a> and <a href="../language/attributes/likely.html" title="cpp/language/attributes/likely"><tt>unlikely</tt></a> may be defined as function-like macros</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>
 </li></ul>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
-</table>
- <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx20"><td>
-<p>except that <code>likely</code> and <code>unlikely</code> may be defined as function-like macros.
-</p>
-</td>
-<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
 <p>Otherwise, the behavior is undefined.
 </p>
@@ -455,7 +449,7 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
 <p>A <code>##</code> operator between any two successive identifiers in the <span class="t-spar">replacement-list</span> runs parameter replacement on the two identifiers (which are not macro-expanded first) and then concatenates the result. This operation is called "concatenation" or "token pasting". Only tokens that form a valid token together may be pasted: identifiers that form a longer identifier, digits that form a number, or operators <code>+</code> and <code>=</code> that form a <code>+=</code>. A comment cannot be created by pasting <code>/</code> and <code>*</code> because comments are removed from text before macro substitution is considered. <span class="t-rev-inl t-since-cxx23"><span>If the result begins with a sequence matching the syntax of <a href="../language/escape.html" title="cpp/language/escape">universal character name</a>, the behavior is undefined. This determination does not consider the replacement of universal character names in <a href="../language/translation_phases.html#Phase_3" title="cpp/language/translation phases">translation phase 3</a>.</span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span> If the result of concatenation is not a valid token, the behavior is undefined.
-</p><p>Note: some compilers offer an extension that allows <code>##</code> to appear after a comma and before <code>__VA_ARGS__</code>, in which case the ## does nothing when the variable arguments are present, but removes the comma when the variable arguments are not present: this makes it possible to define macros such as <code>fprintf (stderr, format, ##__VA_ARGS__)</code>
+</p><p>Note: some compilers offer an extension that allows <code>##</code> to appear after a comma and before <code>__VA_ARGS__</code>, in which case the <code>##</code> does nothing when the variable arguments are present, but removes the comma when the variable arguments are not present: this makes it possible to define macros such as <span class="t-c"><span class="mw-geshi cpp source-cpp">fprintf <span class="br0">(</span><span class="kw2">stderr</span>, format, <span class="co2">##__VA_ARGS__)</span></span></span>. <span class="t-rev-inl t-since-cxx20"><span>This can also be achieved in a standard manner using <code>__VA_OPT__</code>, such as <span class="t-c"><span class="mw-geshi cpp source-cpp">fprintf <span class="br0">(</span><span class="kw2">stderr</span>, format __VA_OPT__<span class="br0">(</span>, <span class="br0">)</span> __VA_ARGS__<span class="br0">)</span></span></span>.</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>
 </p>
 <h4><span class="mw-headline" id=".23undef_directive"><code>#undef</code> directive</span></h4>
 <p>The <code>#undef</code> directive undefines the <span class="t-spar">identifier</span>, that is cancels previous definition of the <span class="t-spar">identifier</span> by <code>#define</code> directive. If the identifier does not have associated macro, the directive is ignored.
@@ -479,7 +473,7 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_HOSTED__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_HOSTED__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
 <td>  expands to the integer constant <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if the implementation is hosted (runs under an OS), <span class="t-c"><span class="mw-geshi cpp source-cpp">​<span class="nu0">0</span>​</span></span> if freestanding (runs without an OS) <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
@@ -514,7 +508,7 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDCPP_DEFAULT_NEW_ALIGNMENT__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDCPP_DEFAULT_NEW_ALIGNMENT__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
 </td>
 <td>  expands to an <span class="t-lc"><a href="../types/size_t.html" title="cpp/types/size t">std::size_t</a></span> literal whose value is the alignment guaranteed by a call to alignment-unaware <a href="../memory/new/operator_new.html" title="cpp/memory/new/operator new">operator new</a> (larger alignments will be passed to alignment-aware overload, such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../memory/new/operator_new.html"><span class="kw689">operator new</span></a><span class="br0">(</span><a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a>, <a href="../memory/new/align_val_t.html"><span class="kw698">std::<span class="me2">align_val_t</span></span></a><span class="br0">)</span></span></span> <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
@@ -532,28 +526,28 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_VERSION__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_VERSION__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
 <td>  implementation-defined value, if present <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_ISO_10646__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_ISO_10646__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
 <td>  expands to an integer constant of the form <span class="t-c"><span class="mw-geshi cpp source-cpp">yyyymmL</span></span>, if <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> uses Unicode, the date indicates the latest revision of Unicode supported <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_MB_MIGHT_NEQ_WC__</span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_MB_MIGHT_NEQ_WC__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
 <td>  expands to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'x'</span> <span class="sy1">==</span> L<span class="st0">'x'</span></span></span> might be false for a member of the basic character set, such as on EBCDIC-based systems that use Unicode for <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDCPP_THREADS__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDCPP_THREADS__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
 <td>  expands to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if the program can have more than one thread of execution <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
@@ -563,7 +557,7 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDCPP_STRICT_POINTER_SAFETY__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span><span class="t-mark-rev t-until-cxx23">(removed in C++23)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDCPP_STRICT_POINTER_SAFETY__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span><span class="t-mark-rev t-until-cxx23">(removed in C++23)</span></span></span></div></div>
 </td>
 <td>  expands to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span></span></span> if the implementation has strict <span class="t-lc"><a href="../memory/gc/pointer_safety.html" title="cpp/memory/gc/pointer safety">std::pointer_safety</a></span> <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
@@ -578,6 +572,8 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
+<p><br>
+</p>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
 <h4> <span class="mw-headline" id="Language_feature-testing_macros">Language feature-testing macros</span></h4>
@@ -592,7 +588,7 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
  
 <span class="co1">// Make function factory and use it</span>
-<span class="co2">#define FUNCTION(name, a) int fun_##name() { return a;}</span>
+<span class="co2">#define FUNCTION(name, a) int fun_##name() { return a; }</span>
  
 FUNCTION<span class="br0">(</span>abcd, <span class="nu0">12</span><span class="br0">)</span>
 FUNCTION<span class="br0">(</span>fff, <span class="nu0">2</span><span class="br0">)</span>
@@ -613,7 +609,7 @@ FUNCTION<span class="br0">(</span>qqq, <span class="nu0">23</span><span class="b
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"qqq: "</span> <span class="sy1">&lt;&lt;</span> fun_qqq<span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> FUNCTION <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    OUTPUT<span class="br0">(</span>million<span class="br0">)</span><span class="sy4">;</span>               <span class="co1">//note the lack of quotes</span>
+    OUTPUT<span class="br0">(</span>million<span class="br0">)</span><span class="sy4">;</span> <span class="co1">//note the lack of quotes</span>
  
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> OUTER<span class="br0">(</span>World<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> OUTER<span class="br0">(</span>WORD World<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
@@ -628,7 +624,7 @@ output: million
 Hello World
 Hello WORD World</pre></div></div> 
 </div>
-<h3><span class="mw-headline" id="Defect_Reports">Defect Reports</span></h3>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
 </p>
 <table class="dsctable" style="font-size:0.8em">
@@ -642,13 +638,13 @@ Hello WORD World</pre></div></div>
 <th> Correct behavior
 </th></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/630.html">CWG 630</a>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue294">LWG 294</a>
 </td>
 <td> C++98
 </td>
-<td> a new standard macro <span class="t-c"><span class="mw-geshi cpp source-cpp">__STDC_MB_MIGHT_NEQ_WC__</span></span><br>was added in C due to the resolution of a defect
+<td> a translation unit that includes a standard library header could contain<br>macros that define names declared in other standard library headers
 </td>
-<td> also added in C++
+<td> prohibited
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <ul><li> <a href="../symbol_index/macro.html" title="cpp/symbol index/macro">Macro Symbol Index</a>
@@ -659,19 +655,19 @@ Hello WORD World</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5563/1000000
-Preprocessor generated node count: 11241/1000000
-Post‐expand include size: 175320/2097152 bytes
-Template argument size: 40074/2097152 bytes
+Preprocessor visited node count: 5651/1000000
+Preprocessor generated node count: 11339/1000000
+Post‐expand include size: 177560/2097152 bytes
+Template argument size: 41225/2097152 bytes
 Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1385-0!*!0!!en!*!* and timestamp 20220718010906 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1385-0!*!0!!en!*!* and timestamp 20230120004200 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/preprocessor/replace&amp;oldid=139372">https://en.cppreference.com/mwiki/index.php?title=cpp/preprocessor/replace&amp;oldid=139372</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/preprocessor/replace&amp;oldid=146055">https://en.cppreference.com/mwiki/index.php?title=cpp/preprocessor/replace&amp;oldid=146055</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -684,17 +680,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/preprocessor/replace">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 21 April 2022, at 21:01.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 695,142 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -709,7 +694,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.723 secs. -->
+</script><!-- Served in 3.665 secs. -->
 	</body>
-<!-- Cached 20220718010906 -->
+<!-- Cached 20230120004200 -->
 </html>

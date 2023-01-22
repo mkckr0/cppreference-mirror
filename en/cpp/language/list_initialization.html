@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/list_initialization","wgTitle":"cpp/language/list initialization","wgCurRevisionId":140926,"wgArticleId":8868,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/list_initialization","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/list_initialization","wgTitle":"cpp/language/list initialization","wgCurRevisionId":146504,"wgArticleId":8868,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/list_initialization","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -575,13 +576,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li></ul>
 <ul><li> conversion from an integer type to a floating-point type, except where the source is a constant expression whose value can be stored exactly in the target type
 </li></ul>
-<ul><li> conversion from integer or unscoped enumeration type to integer type that cannot represent all values of the original, except where source is a constant expression whose value can be stored exactly in the target type
+<ul><li> conversion from integer or unscoped enumeration type to integer type that cannot represent all values of the original, except where
+<ul><li> the source is a <a href="bitfield.html" title="cpp/language/bit field">bit-field</a> whose width <span class="t-c"><span class="mw-geshi cpp source-cpp">w</span></span> is less than that of its type (or, for an <a href="enum_class.html" title="cpp/language/enum">enumeration type</a>, its underlying type) and the target type can represent all the values of a hypothetical extended integer type with width <span class="t-c"><span class="mw-geshi cpp source-cpp">w</span></span> and with the same signedness as the original type, or
+</li><li> the source is a constant expression whose value can be stored exactly in the target type
+</li></ul>
 </li></ul>
 <ul><li> conversion from a pointer type or pointer-to-member type to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span>
 </li></ul>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Every initializer clause is <a href="eval_order.html" title="cpp/language/eval order">sequenced before</a> any initializer clause that follows it in the <span class="t-spar">braced-init-list</span>. This is in contrast with the arguments of a <a href="operator_other.html#Built-in_function_call_operator" title="cpp/language/operator other">function call expression</a>, which are <span class="t-rev-inl t-until-cxx17"><span><a href="eval_order.html" title="cpp/language/eval order">unsequenced</a></span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span><a href="eval_order.html" title="cpp/language/eval order">indeterminately sequenced</a></span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>.
-</p><p>A <span class="t-spar">braced-init-list</span> is not an expression and therefore has no type, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">decltype<span class="br0">(</span><span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span><span class="br0">}</span><span class="br0">)</span></span></span> is ill-formed. Having no type implies that template type deduction cannot deduce a type that matches a <span class="t-spar">braced-init-list</span>, so given the declaration <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span> <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span><span class="sy4">;</span></span></span> the expression <span class="t-lc">f({1,2,3})</span> is ill-formed. However, the template parameter can otherwise be deduced, as is the case for <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">(</span><a href="../iterator/istream_iterator.html"><span class="kw670">std::<span class="me2">istream_iterator</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><a href="../io/cin.html"><span class="kw1760">std::<span class="me2">cin</span></span></a><span class="br0">)</span>, <span class="br0">{</span><span class="br0">}</span><span class="br0">)</span></span></span>, where the iterator type is deduced by the first argument but also used in the second parameter position. A special exception is made for <a href="template_argument_deduction.html#Other_contexts" title="cpp/language/template argument deduction">type deduction using the keyword <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">auto</span></span></span> </a>, which deduces any <span class="t-spar">braced-init-list</span> as <span class="t-lc"><a href="../utility/initializer_list.html" title="cpp/utility/initializer list">std::initializer_list</a></span> in copy-list-initialization.
+</p><p>A <span class="t-spar">braced-init-list</span> is not an expression and therefore has no type, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">decltype<span class="br0">(</span><span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">}</span><span class="br0">)</span></span></span> is ill-formed. Having no type implies that template type deduction cannot deduce a type that matches a <span class="t-spar">braced-init-list</span>, so given the declaration <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span> <span class="kw4">void</span> f<span class="br0">(</span>T<span class="br0">)</span><span class="sy4">;</span></span></span> the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">f<span class="br0">(</span><span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span><span class="br0">}</span><span class="br0">)</span></span></span> is ill-formed. However, the template parameter can otherwise be deduced, as is the case for <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">(</span><a href="../iterator/istream_iterator.html"><span class="kw670">std::<span class="me2">istream_iterator</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">(</span><a href="../io/cin.html"><span class="kw1760">std::<span class="me2">cin</span></span></a><span class="br0">)</span>, <span class="br0">{</span><span class="br0">}</span><span class="br0">)</span></span></span>, where the iterator type is deduced by the first argument but also used in the second parameter position. A special exception is made for <a href="template_argument_deduction.html#Other_contexts" title="cpp/language/template argument deduction">type deduction using the keyword <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">auto</span></span></span> </a>, which deduces any <span class="t-spar">braced-init-list</span> as <span class="t-lc"><a href="../utility/initializer_list.html" title="cpp/utility/initializer list">std::initializer_list</a></span> in copy-list-initialization.
 </p><p>Also because a <span class="t-spar">braced-init-list</span> has no type, <a href="overload_resolution.html#Implicit_conversion_sequence_in_list-initialization" title="cpp/language/overload resolution">special rules for overload resolution</a> apply when it is used as an argument to an overloaded function call.
 </p><p>Aggregates copy/move initialize directly from single-element <span class="t-spar">braced-init-list</span> of the same type, but non-aggregates consider initializer_list constructors first:
 </p>
@@ -604,6 +608,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">}</span></pre></div></div>
 <p>Some compilers (e.g., gcc 10) only consider conversion from a pointer or a pointer-to-member to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span></span></span> narrowing in C++20 mode.
 </p>
+<table class="wikitable">
+
+<tr>
+<th>Feature-test macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_initializer_lists</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">200806L</span></span></span></td>
+<td><span class="t-mark">(C++11)</span></td>
+<td>List-initialization and <span class="t-lc"><a href="../utility/initializer_list.html" title="cpp/utility/initializer list">std::initializer_list</a></span>
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
@@ -635,7 +653,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
     <span class="kw4">int</span> n2 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// copy-list-initialization</span>
     <span class="kw4">double</span> d <span class="sy1">=</span> <span class="kw4">double</span><span class="br0">{</span><span class="nu16">1.2</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// list-initialization of a prvalue, then copy-init</span>
-    <span class="kw4">auto</span> s4 <span class="sy1">=</span> <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="br0">{</span><span class="st0">"HelloWorld"</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// same as above, no temporary created since C++17</span>
+    <span class="kw4">auto</span> s4 <span class="sy1">=</span> <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="br0">{</span><span class="st0">"HelloWorld"</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// same as above, no temporary</span>
+                                         <span class="co1">// created since C++17</span>
  
     <a href="../container/map.html"><span class="kw1284">std::<span class="me2">map</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>, <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span> m <span class="sy1">=</span> <span class="co1">// nested list-initialization</span>
     <span class="br0">{</span>
@@ -647,8 +666,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> f<span class="br0">(</span><span class="br0">{</span><span class="st0">"hello"</span>, <span class="st0">"world"</span><span class="br0">}</span><span class="br0">)</span>.<span class="me1">first</span> <span class="co1">// list-initialization in function call</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
-    <span class="kw4">const</span> <span class="kw4">int</span> <span class="br0">(</span><span class="sy3">&amp;</span>ar<span class="br0">)</span><span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// binds a lvalue reference to a temporary array</span>
-    <span class="kw4">int</span><span class="sy3">&amp;&amp;</span> r1 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// binds a rvalue reference to a temporary int</span>
+    <span class="kw4">const</span> <span class="kw4">int</span> <span class="br0">(</span><span class="sy3">&amp;</span>ar<span class="br0">)</span><span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// binds an lvalue reference to a temporary array</span>
+    <span class="kw4">int</span><span class="sy3">&amp;&amp;</span> r1 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// binds an rvalue reference to a temporary int</span>
 <span class="co1">//  int&amp; r2 = {2}; // error: cannot bind rvalue to a non-const lvalue ref</span>
  
 <span class="co1">//  int bad{1.0}; // error: narrowing conversion</span>
@@ -659,12 +678,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> n0 <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy1">&lt;&lt;</span> n1 <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy1">&lt;&lt;</span> n2 <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
               <span class="sy1">&lt;&lt;</span> s1 <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy1">&lt;&lt;</span> s2 <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy1">&lt;&lt;</span> s3 <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">auto</span> p<span class="sy4">:</span> m<span class="br0">)</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> p <span class="sy4">:</span> m<span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> p.<span class="me1">first</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy1">&lt;&lt;</span> p.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">auto</span> n<span class="sy4">:</span> f.<span class="me1">mem</span><span class="br0">)</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> n <span class="sy4">:</span> f.<span class="me1">mem</span><span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">auto</span> n<span class="sy4">:</span> f.<span class="me1">mem2</span><span class="br0">)</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> n <span class="sy4">:</span> f.<span class="me1">mem2</span><span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+ 
+    <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span>...<span class="br0">)</span><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span>d, ar, r1, uc1<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// has effect of [[maybe_unused]]</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -753,6 +774,15 @@ abcd cd aa
 <td> restricted
 </td></tr>
 <tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2627.html">CWG 2627</a>
+</td>
+<td> C++11
+</td>
+<td> a narrow bit-field of a larger integer type can be promoted to<br>a smaller integer type, but it was still a narrowing conversion
+</td>
+<td> it is not a<br>narrowing conversion
+</td></tr>
+<tr>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1957R2">P1957R2</a>
 </td>
 <td> C++11
@@ -785,19 +815,19 @@ abcd cd aa
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5178/1000000
-Preprocessor generated node count: 10784/1000000
-Post‐expand include size: 153772/2097152 bytes
-Template argument size: 32110/2097152 bytes
+Preprocessor visited node count: 5425/1000000
+Preprocessor generated node count: 11360/1000000
+Post‐expand include size: 156349/2097152 bytes
+Template argument size: 33281/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:8868-0!*!0!!en!*!* and timestamp 20220715110229 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:8868-0!*!0!!en!*!* and timestamp 20230120004554 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/list_initialization&amp;oldid=140926">https://en.cppreference.com/mwiki/index.php?title=cpp/language/list_initialization&amp;oldid=140926</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/list_initialization&amp;oldid=146504">https://en.cppreference.com/mwiki/index.php?title=cpp/language/list_initialization&amp;oldid=146504</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -810,17 +840,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/list_initialization">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 July 2022, at 04:02.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,045,161 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -835,7 +854,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.064 secs. -->
+</script><!-- Served in 3.092 secs. -->
 	</body>
-<!-- Cached 20220715110511 -->
+<!-- Cached 20230120004555 -->
 </html>

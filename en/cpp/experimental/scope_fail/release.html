@@ -103,7 +103,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -146,7 +147,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../scope_fail.html" title="cpp/experimental/scope fail"><tt>std::experimental::scope_fail</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="scope_fail.html" title="cpp/experimental/scope fail/scope fail"><span class="t-lines"><span>scope_fail::scope_fail</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="~scope_fail.html" title="cpp/experimental/scope fail/~scope fail"><span class="t-lines"><span>scope_fail::~scope_fail</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="%7Escope_fail.html" title="cpp/experimental/scope fail/~scope fail"><span class="t-lines"><span>scope_fail::~scope_fail</span></span></a></div></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Modifiers</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>scope_fail::release</span></span></strong></div></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> <a href="deduction_guides.html" title="cpp/experimental/scope fail/deduction guides"> Deduction guides</a></td></tr>
@@ -183,22 +184,22 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  constructs a new <code>scope_fail</code> <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="~scope_fail.html" title="cpp/experimental/scope fail/~scope fail"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="%7Escope_fail.html" title="cpp/experimental/scope fail/~scope fail"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
 </td>
 <td>  calls the exit function when the scope is exited via an exception if the <code>scope_fail</code> is active, then destroys the <code>scope_fail</code> <br> <span class="t-mark">(public member function)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2122/1000000
-Preprocessor generated node count: 10912/1000000
-Post‐expand include size: 99422/2097152 bytes
-Template argument size: 10538/2097152 bytes
+Preprocessor visited node count: 2128/1000000
+Preprocessor generated node count: 10925/1000000
+Post‐expand include size: 100222/2097152 bytes
+Template argument size: 10583/2097152 bytes
 Highest expansion depth: 25/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19083-0!*!0!!en!*!* and timestamp 20220410132338 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19083-0!*!0!!en!*!* and timestamp 20230120060417 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -215,17 +216,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/experimental/scope_fail/release">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 12 January 2020, at 18:52.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 2,431 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -240,7 +230,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.373 secs. -->
+</script><!-- Served in 0.338 secs. -->
 	</body>
-<!-- Cached 20220410132338 -->
+<!-- Cached 20230120060417 -->
 </html>

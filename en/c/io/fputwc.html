@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/io/fputwc","wgTitle":"c/io/fputwc","wgCurRevisionId":95117,"wgArticleId":6217,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/io/fputwc","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/io/fputwc","wgTitle":"c/io/fputwc","wgCurRevisionId":145322,"wgArticleId":6217,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/io/fputwc","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -234,30 +234,30 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Writes a wide character <code>ch</code> to the given output stream <code>stream</code>. <span class="t-c"><span class="mw-geshi c source-c">putwc<span class="br0">(</span><span class="br0">)</span></span></span> may be implemented as a macro and may evaluate <code>stream</code> more than once.
+<p>Writes a wide character <code>ch</code> to the given output stream <code>stream</code>. <code>putwc()</code> may be implemented as a macro and may evaluate <code>stream</code> more than once.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  ch
+<td> ch
 </td>
 <td> -
 </td>
-<td>  wide character to be written
+<td> wide character to be written
 </td></tr>
 <tr class="t-par">
-<td>  stream
+<td> stream
 </td>
 <td> -
 </td>
-<td>  the output stream
+<td> the output stream
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>Returns a copy of <code>ch</code> on success.
-</p><p>On failure, returns <span class="t-c"><span class="mw-geshi c source-c">WEOF</span></span> and sets the <i>error</i> indicator (see <span class="t-lc"><a href="ferror.html" title="c/io/ferror">ferror()</a></span>) on <code>stream</code>.
-</p><p>If an encoding error occurred, additionally sets <span class="t-lc"><a href="../error/errno.html" title="c/error/errno">errno</a></span> to <code>EILSEQ</code>.
+</p><p>On failure, returns <span class="t-lc">WEOF</span> and sets the <i>error</i> indicator (see <span class="t-lc"><a href="ferror.html" title="c/io/ferror">ferror()</a></span>) on <code>stream</code>.
+</p><p>If an encoding error occurred, additionally sets <span class="t-lc"><a href="../error/errno.html" title="c/error/errno">errno</a></span> to <span class="t-lc"><a href="../error/errno_macros.html" title="c/error/errno macros">EILSEQ</a></span>.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -280,11 +280,31 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
         <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
-<p>Output:
+<p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">🍌</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-23">
+<ul><li> C23 standard (ISO/IEC 9899:2023): 
+</li></ul>
+<dl><dd><ul><li> 7.31.3.3 The fputwc function (p: 430)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.31.3.8 The putwc function (p: 431-432)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-17">
+<ul><li> C17 standard (ISO/IEC 9899:2018): 
+</li></ul>
+<dl><dd><ul><li> 7.29.3.3 The fputwc function (p: 308)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.29.3.8 The putwc function (p: 310)
+</li></ul>
+</dd></dl>
+</div>
 <div class="t-ref-std-11">
 <ul><li> C11 standard (ISO/IEC 9899:2011): 
 </li></ul>
@@ -294,6 +314,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <dl><dd><ul><li> 7.29.3.8 The putwc function (p: 424)
 </li></ul>
 </dd></dl>
+</div>
 <div class="t-ref-std-c99">
 <ul><li> C99 standard (ISO/IEC 9899:1999): 
 </li></ul>
@@ -322,23 +343,23 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   gets a wide character from a file stream <br> <span class="t-mark">(function)</span> </td></tr>
 
-</table></div>
+</table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5171/1000000
-Preprocessor generated node count: 9021/1000000
-Post‐expand include size: 160173/2097152 bytes
-Template argument size: 30561/2097152 bytes
+Preprocessor visited node count: 5372/1000000
+Preprocessor generated node count: 9602/1000000
+Post‐expand include size: 161271/2097152 bytes
+Template argument size: 30735/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6217-0!*!0!!en!*!* and timestamp 20220313111709 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6217-0!*!0!!en!*!* and timestamp 20230120050022 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fputwc&amp;oldid=95117">https://en.cppreference.com/mwiki/index.php?title=c/io/fputwc&amp;oldid=95117</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fputwc&amp;oldid=145322">https://en.cppreference.com/mwiki/index.php?title=c/io/fputwc&amp;oldid=145322</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -351,17 +372,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/io/fputwc">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 22 August 2017, at 10:57.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 19,504 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -376,7 +386,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.503 secs. -->
+</script><!-- Served in 1.280 secs. -->
 	</body>
-<!-- Cached 20220313111709 -->
+<!-- Cached 20230120050022 -->
 </html>

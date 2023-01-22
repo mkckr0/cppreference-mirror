@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/error/domain_error","wgTitle":"cpp/error/domain error","wgCurRevisionId":118294,"wgArticleId":2086,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/error/domain_error","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/error/domain_error","wgTitle":"cpp/error/domain error","wgCurRevisionId":144537,"wgArticleId":2086,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/error/domain_error","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -191,7 +192,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>The standard library components do not throw this exception (mathematical functions report domain errors as specified in <span class="t-lc"><a href="../numeric/math/math_errhandling.html" title="cpp/numeric/math/math errhandling">math_errhandling</a></span>). Third-party libraries, however, use this. For example, <a rel="nofollow" class="external text" href="http://www.boost.org/doc/libs/1_55_0/libs/math/doc/html/math_toolkit/error_handling.html">boost.math</a> throws <code>std::domain_error</code> if <code>boost::math::policies::throw_on_error</code> is enabled (the default setting).
 </p>
 <div class="t-inheritance-diagram">
-<div class="center"><div class="noresize"><map name="ImageMap_1_81497806"><area href="exception.html" shape="rect" coords="5,4,107,36" alt="cpp/error/exception" title="cpp/error/exception"><area href="logic_error.html" shape="rect" coords="135,4,238,36" alt="cpp/error/logic error" title="cpp/error/logic error"></map><img alt="std-domain error-inheritance.svg" src="../../../common/images/2/26/std-domain_error-inheritance.svg" width="374" height="40" usemap="#ImageMap_1_81497806"></div></div>
+<div class="center"><div class="noresize"><map name="ImageMap_1_370551797"><area href="exception.html" shape="rect" coords="5,4,107,36" alt="cpp/error/exception" title="cpp/error/exception"><area href="logic_error.html" shape="rect" coords="135,4,238,36" alt="cpp/error/logic error" title="cpp/error/logic error"></map><img alt="std-domain error-inheritance.svg" src="../../../common/images/2/26/std-domain_error-inheritance.svg" width="374" height="40" usemap="#ImageMap_1_370551797"></div></div>
 <div style="text-align:center;">
 <p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
 </p>
@@ -210,29 +211,22 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>operator=</span></span></div></div>
 </td>
-<td>   replaces the <code>domain_error</code> object <br> <span class="t-mark">(public member function)</span>
-</td></tr>
-
-
-<tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>what</span></span></div></div>
-</td>
-<td>   returns the explanatory string <br> <span class="t-mark">(public member function)</span>
+<td>  replaces the <code>domain_error</code> object <br> <span class="t-mark">(public member function)</span>
 </td></tr>
 
 </table>
 <div class="t-member">
-<h2> <span class="mw-headline" id="std::domain_error::domain_error"> <span style="font-size:0.7em; line-height:130%">std::domain_error::</span>domain_error </span></h2>
+<h2> <span class="mw-headline" id="std::domain_error::domain_error"><span style="font-size:0.7em; line-height:130%">std::domain_error::</span>domain_error</span></h2>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dcl">
 <td> <div><span class="mw-geshi cpp source-cpp">domain_error<span class="br0">(</span> <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1232">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> what_arg <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
-<tr class="t-dcl t-since-cxx11">
+<tr class="t-dcl">
 <td> <div><span class="mw-geshi cpp source-cpp">domain_error<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> what_arg <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
-<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
+<td class="t-dcl-nopad">  </td>
 </tr>
 </tbody>
 <tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
@@ -253,34 +247,37 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<div class="t-li1"><span class="t-li">1-2)</span> Constructs the exception object with <code>what_arg</code> as explanatory string that can be accessed through <a href="exception/what.html" title="cpp/error/exception/what"><tt>what()</tt></a>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Copy constructor. <span class="t-rev-inl t-since-cxx11"><span>If <code>*this</code> and <code>other</code> both have dynamic type <code>std::domain_error</code> then <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../string/byte/strcmp.html"><span class="kw1148">std::<span class="me2">strcmp</span></span></a><span class="br0">(</span>what<span class="br0">(</span><span class="br0">)</span>, other.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span></span></span>.</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span></div>
+<div class="t-li1"><span class="t-li">1)</span> Constructs the exception object with <span class="t-c"><span class="mw-geshi cpp source-cpp">what_arg</span></span> as explanatory string. After construction, <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../string/byte/strcmp.html"><span class="kw1148">std::<span class="me2">strcmp</span></span></a><span class="br0">(</span>what<span class="br0">(</span><span class="br0">)</span>, what_arg.<span class="me1">c_str</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">2)</span> Constructs the exception object with <span class="t-c"><span class="mw-geshi cpp source-cpp">what_arg</span></span> as explanatory string. After construction, <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../string/byte/strcmp.html"><span class="kw1148">std::<span class="me2">strcmp</span></span></a><span class="br0">(</span>what<span class="br0">(</span><span class="br0">)</span>, what_arg<span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">3)</span> Copy constructor. If <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> both have dynamic type <code>std::domain_error</code> then <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../string/byte/strcmp.html"><span class="kw1148">std::<span class="me2">strcmp</span></span></a><span class="br0">(</span>what<span class="br0">(</span><span class="br0">)</span>, other.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span></span></span>. <span class="t-rev-inl t-until-cxx11"><span>No exception can be thrown from the copy constructor.</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span></div>
 <h3> <span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  what_arg
+<td> what_arg
 </td>
 <td> -
 </td>
-<td>  explanatory string
+<td> explanatory string
 </td></tr>
 <tr class="t-par">
-<td>  other
+<td> other
 </td>
 <td> -
 </td>
-<td>  another exception object to copy
+<td> another exception object to copy
 </td></tr></table>
 <h3> <span class="mw-headline" id="Exceptions">Exceptions</span></h3>
 <div class="t-li1"><span class="t-li">1-2)</span> May throw <span class="t-lc"><a href="../memory/new/bad_alloc.html" title="cpp/memory/new/bad alloc">std::bad_alloc</a></span></div>
 <h3> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Because copying <code>std::domain_error</code> is not permitted to throw exceptions, this message is typically stored internally as a separately-allocated reference-counted string. This is also why there is no constructor taking <code>std::string&amp;&amp;</code>: it would have to copy the content anyway.
+</p><p>Before the resolution of <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue254">LWG issue 254</a>, the non-copy constructor can only accept <span class="t-lc"><a href="../string/basic_string.html" title="cpp/string/basic string">std::string</a></span>. It makes dynamic allocation mandatory in order to construct a <span class="t-lc"><a href="../string/basic_string.html" title="cpp/string/basic string">std::string</a></span> object.
+</p><p>After the resolution of <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue471">LWG issue 471</a>, a derived standard exception class must have a publicly accessible copy constructor. It can be implicitly defined as long as the explanatory strings obtained by <code>what()</code> are the same for the original object and the copied object.
 </p>
 </div>
 <div class="t-member">
-<h2> <span class="mw-headline" id="std::domain_error::operator.3D"> <span style="font-size:0.7em; line-height:130%">std::domain_error::</span>operator= </span></h2>
+<h2> <span class="mw-headline" id="std::domain_error::operator.3D"><span style="font-size:0.7em; line-height:130%">std::domain_error::</span>operator=</span></h2>
 <table class="t-dcl-begin"><tbody>
 </tbody>
 <tbody class="t-dcl-rev">
@@ -297,55 +294,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Assigns the contents with those of <code>other</code>. <span class="t-rev-inl t-since-cxx11"><span>If <code>*this</code> and <code>other</code> both have dynamic type <code>std::domain_error</code> then <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../string/byte/strcmp.html"><span class="kw1148">std::<span class="me2">strcmp</span></span></a><span class="br0">(</span>what<span class="br0">(</span><span class="br0">)</span>, other.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span></span></span> after assignment.</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>
+<p>Assigns the contents with those of <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span>. If <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">other</span></span> both have dynamic type <code>std::domain_error</code> then <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../string/byte/strcmp.html"><span class="kw1148">std::<span class="me2">strcmp</span></span></a><span class="br0">(</span>what<span class="br0">(</span><span class="br0">)</span>, other.<span class="me1">what</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span></span></span> after assignment. <span class="t-rev-inl t-until-cxx11"><span>No exception can be thrown from the copy assignment operator.</span> <span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span>
 </p>
 <h3> <span class="mw-headline" id="Parameters_2">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  other
+<td> other
 </td>
 <td> -
 </td>
-<td>  another exception object to assign with
+<td> another exception object to assign with
 </td></tr></table>
 <h3> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
 </p>
-</div>
-<div class="t-member">
-<h2> <span class="mw-headline" id="std::domain_error::what"> <span style="font-size:0.7em; line-height:130%">std::domain_error::</span>what </span></h2>
-<table class="t-dcl-begin"><tbody>
-</tbody>
-<tbody class="t-dcl-rev">
-<tr class="t-dcl t-until-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">virtual</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> what<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">throw</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
-<td> <span class="t-mark-rev t-until-cxx11">(until C++11)</span> </td>
-</tr>
-<tr class="t-dcl t-since-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">virtual</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> what<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span></span></div></td>
-<td class="t-dcl-nopad">  </td>
-<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
-</tr>
-</tbody><tbody>
-<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
-</tbody></table>
-<p>Returns the explanatory string.
-</p>
-<h3> <span class="mw-headline" id="Parameters_3">Parameters</span></h3>
-<p>(none)
-</p>
-<h3> <span class="mw-headline" id="Return_value_2">Return value</span></h3>
-<p>Pointer to a null-terminated string with explanatory information. The string is suitable for conversion and display as a <span class="t-lc"><a href="../string/basic_string.html" title="cpp/string/basic string">std::wstring</a></span>. The pointer is guaranteed to be valid at least until the exception object from which it is obtained is destroyed, or until a non-const member function (e.g. copy assignment operator) on the exception object is called.
-</p>
 <h3> <span class="mw-headline" id="Notes_2">Notes</span></h3>
-<p>Implementations are allowed but not required to override <code>what()</code>.
+<p>After the resolution of <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue471">LWG issue 471</a>, a derived standard exception class must have a publicly accessible copy assignment operator. It can be implicitly defined as long as the explanatory strings obtained by <code>what()</code> are the same for the original object and the copied object.
 </p>
 </div>
 <div class="t-inherited">
-<h2> <span class="mw-headline" id="Inherited_from_std::logic_error">Inherited from  <a href="logic_error.html" title="cpp/error/logic error"><span style="font-size:0.7em; line-height:130%">std::</span>logic_error</a> </span></h2>
+<h2> <span class="mw-headline" id="Inherited_from_std::logic_error">Inherited from <a href="logic_error.html" title="cpp/error/logic error"><span style="font-size:0.7em; line-height:130%">std::</span>logic_error</a></span></h2>
 </div>
 <div class="t-inherited">
 <h2> <span class="mw-headline" id="Inherited_from_std::exception">Inherited from  <a href="exception.html" title="cpp/error/exception"> <span style="font-size:0.7em; line-height:130%">std::</span>exception</a> </span></h2>
@@ -353,7 +323,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="exception/~exception.html" title="cpp/error/exception/~exception"> <span class="t-lines"><span>(destructor)</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="exception/%7Eexception.html" title="cpp/error/exception/~exception"> <span class="t-lines"><span>(destructor)</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
 <td>  destroys the exception object <br> <span class="t-mark">(virtual public member function of <code>std::exception</code>)</span> </td></tr>
 
@@ -363,22 +333,53 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>   returns an explanatory string <br> <span class="t-mark">(virtual public member function of <code>std::exception</code>)</span> </td></tr>
 </table>
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue254">LWG 254</a>
+</td>
+<td> C++98
+</td>
+<td> the constructor accepting <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span></span></span> was missing
+</td>
+<td> added
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue471">LWG 471</a>
+</td>
+<td> C++98
+</td>
+<td> the explanatory strings of <code>std::domain_error</code>'s<br>copies were implementation-defined
+</td>
+<td> they are the same as that of the<br>original <code>std::domain_error</code> object
+</td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6030/1000000
-Preprocessor generated node count: 11396/1000000
-Post‐expand include size: 150768/2097152 bytes
-Template argument size: 31320/2097152 bytes
+Preprocessor visited node count: 5913/1000000
+Preprocessor generated node count: 12305/1000000
+Post‐expand include size: 147577/2097152 bytes
+Template argument size: 31023/2097152 bytes
 Highest expansion depth: 35/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2086-0!*!0!!en!2!* and timestamp 20220410114754 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2086-0!*!0!!en!2!* and timestamp 20230120010719 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/error/domain_error&amp;oldid=118294">https://en.cppreference.com/mwiki/index.php?title=cpp/error/domain_error&amp;oldid=118294</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/error/domain_error&amp;oldid=144537">https://en.cppreference.com/mwiki/index.php?title=cpp/error/domain_error&amp;oldid=144537</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -391,17 +392,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/error/domain_error">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 22 April 2020, at 10:00.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 128,505 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -416,7 +406,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.453 secs. -->
+</script><!-- Served in 1.869 secs. -->
 	</body>
-<!-- Cached 20220410114754 -->
+<!-- Cached 20230120010720 -->
 </html>

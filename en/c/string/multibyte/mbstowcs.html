@@ -218,7 +218,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> <code>dstsz</code> is not zero (unless <code>dst</code> is null)
 </li><li> There is no null character in the first <code>dstsz</code> multibyte characters in the <code>src</code> array and <code>len</code> is greater than <code>dstsz</code> (unless <code>dst</code> is null)
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>mbstowcs_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;stdlib.h&gt;</code>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>mbstowcs_s</code>  only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../program.html" title="c/program"><tt>program utilities</tt></a>.</dd></dl></div>
 
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>In most implementations, <code>mbstowcs</code> updates a global static object of type <span class="t-lc"><a href="mbstate_t.html" title="c/string/multibyte/mbstate t">mbstate_t</a></span> as it processes through the string, and cannot be called simultaneously by two threads, <span class="t-lc"><a href="mbsrtowcs.html" title="c/string/multibyte/mbsrtowcs">mbsrtowcs</a></span> should be used in such cases.
@@ -328,15 +328,15 @@ Wide string: zß水🍌</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3584/1000000
-Preprocessor generated node count: 9363/1000000
-Post‐expand include size: 87317/2097152 bytes
-Template argument size: 16961/2097152 bytes
+Preprocessor visited node count: 3629/1000000
+Preprocessor generated node count: 10666/1000000
+Post‐expand include size: 87500/2097152 bytes
+Template argument size: 17033/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6113-0!*!0!!en!*!* and timestamp 20220704181225 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6113-0!*!0!!en!*!* and timestamp 20230117230701 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -353,17 +353,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/string/multibyte/mbstowcs">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 May 2018, at 02:17.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 46,470 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -378,7 +367,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.677 secs. -->
+</script><!-- Served in 0.959 secs. -->
 	</body>
-<!-- Cached 20220704181225 -->
+<!-- Cached 20230117230702 -->
 </html>

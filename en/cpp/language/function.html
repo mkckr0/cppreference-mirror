@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/function","wgTitle":"cpp/language/function","wgCurRevisionId":141480,"wgArticleId":3127,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/function","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/function","wgTitle":"cpp/language/function","wgCurRevisionId":146518,"wgArticleId":3127,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/function","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -362,7 +363,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>(see <a href="declarations.html" title="cpp/language/declarations">Declarations</a> for the other forms of the <span class="t-spar">declarator</span> syntax)
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Regular function declarator syntax</div>
-<div class="t-li1"><span class="t-li">2)</span> Trailing return type declaration: trailing return type is only allowed on the outermost function declarator. The decl-specifier-seq in this case must contain the keyword <code>auto</code> </div>
+<div class="t-li1"><span class="t-li">2)</span> Trailing return type declaration. The decl-specifier-seq in this case must contain the keyword <code>auto</code> </div>
 <table class="t-par-begin">
 
 
@@ -668,8 +669,8 @@ T g<span class="br0">(</span>T t<span class="br0">)</span> <span class="br0">{</
 <tr class="t-rev t-since-cxx20"><td>
 <p>If any of the function parameters uses a <i>placeholder</i> (either <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">auto</span></span></span> or a <a href="../concepts.html" title="cpp/concepts">concept type</a>), the function declaration is instead an <a href="function_template.html#Abbreviated_function_template" title="cpp/language/function template">abbreviated function template</a> declaration:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f1<span class="br0">(</span><span class="kw4">auto</span><span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// same as template&lt;class T&gt; void f(T)</span>
-<span class="kw4">void</span> f2<span class="br0">(</span>C1 <span class="kw4">auto</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// same as template&lt;C1 T&gt; void f7(T), if C1 is a concept</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f1<span class="br0">(</span><span class="kw4">auto</span><span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// same as template&lt;class T&gt; void f1(T)</span>
+<span class="kw4">void</span> f2<span class="br0">(</span>C1 <span class="kw4">auto</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// same as template&lt;C1 T&gt; void f2(T), if C1 is a concept</span></pre></div></div>
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
@@ -679,7 +680,7 @@ T g<span class="br0">(</span>T t<span class="br0">)</span> <span class="br0">{</
 <div class="t-li1"><span class="t-li">1)</span> First, <span class="t-spar">decl-specifier-seq</span> and the declarator are combined as in any <a href="declarations.html" title="cpp/language/declarations">declaration</a> to determine the type.</div>
 <div class="t-li1"><span class="t-li">2)</span> If the type is "array of T" or "array of unknown bound of T", it is replaced by the type "pointer to T"</div>
 <div class="t-li1"><span class="t-li">3)</span> If the type is a function type F, it is replaced by the type "pointer to F"</div>
-<div class="t-li1"><span class="t-li">4)</span> Top-level cv-qualifiers are dropped from the parameter type (This adjustment only affects the function type, but doesn't modify the property of the parameter: <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">int</span> p, decltype<span class="br0">(</span>p<span class="br0">)</span><span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span>, <span class="kw4">const</span> <span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span></span></span> declare the same function) </div>
+<div class="t-li1"><span class="t-li">4)</span> Top-level cv-qualifiers are dropped from the parameter type (This adjustment only affects the function type, but doesn't modify the property of the parameter: <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">int</span> p, decltype<span class="br0">(</span>p<span class="br0">)</span><span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span>, <span class="kw4">const</span> <span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span><span class="sy4">;</span></span></span> declare the same function)</div>
 <p>Because of these rules, the following function declarations declare exactly the same function:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">char</span> s<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
@@ -892,7 +893,7 @@ T g<span class="br0">(</span>T t<span class="br0">)</span> <span class="br0">{</
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
 <h3> <span class="mw-headline" id="Deleted_functions">Deleted functions</span></h3>
-<p>If, instead of a function body, the special syntax <code><b>= delete ;</b></code> is used, the function is defined as <i>deleted</i>. Any use of a deleted function is ill-formed (the program will not compile). This includes calls, both explicit (with a function call operator) and implicit (a call to deleted overloaded operator, special member function, allocation function etc), constructing a pointer or pointer-to-member to a deleted function, and even the use of a deleted function in an unevaluated expression. However, implicit <a href="definition.html#ODR-use" title="cpp/language/definition">ODR-use</a> of a non-pure virtual member function that happens to be deleted is allowed.
+<p>If, instead of a function body, the special syntax <code><b>= delete ;</b></code> is used, the function is defined as <i>deleted</i>. Any use of a deleted function is ill-formed (the program will not compile). This includes calls, both explicit (with a function call operator) and implicit (a call to deleted overloaded operator, special member function, allocation function etc), constructing a pointer or pointer-to-member to a deleted function, and even the use of a deleted function in an expression that is not <a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">potentially-evaluated</a>. However, implicit <a href="definition.html#ODR-use" title="cpp/language/definition">ODR-use</a> of a non-pure virtual member function that happens to be deleted is allowed.
 </p><p>If the function is overloaded, <a href="overload_resolution.html" title="cpp/language/overload resolution">overload resolution</a> takes place first, and the program is only ill-formed if the deleted function was selected:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> sometype
@@ -971,6 +972,26 @@ nontrivial<span class="sy4">::</span><span class="me2">nontrivial</span><span cl
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <p>In case of ambiguity between a variable declaration using the direct-initialization syntax and a function declaration, the compiler always chooses function declaration; see <a href="direct_initialization.html#Notes" title="cpp/language/direct initialization">direct-initialization</a>.
 </p>
+<table class="wikitable">
+
+<tr>
+<th>Feature-test macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_decltype_auto</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201304L</span></span></span></td>
+<td><span class="t-mark">(C++14)</span></td>
+<td><a href="auto.html" title="cpp/language/auto"><code>decltype(auto)</code></a>
+</td></tr>
+<tr>
+<td><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_return_type_deduction</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201304L</span></span></span></td>
+<td><span class="t-mark">(C++14)</span></td>
+<td><a href="function.html#Return_type_deduction">Return type deduction for normal functions</a>
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
@@ -1057,6 +1078,15 @@ f2("42"): 42</pre></div></div>
 <td> allowed
 </td></tr>
 <tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/332.html">CWG 332</a>
+</td>
+<td> C++98
+</td>
+<td> a parameter could have cv-qualified <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> type
+</td>
+<td> prohibited
+</td></tr>
+<tr>
 <td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/393.html">CWG 393</a>
 </td>
 <td> C++98
@@ -1079,9 +1109,9 @@ f2("42"): 42</pre></div></div>
 </td>
 <td> C++98
 </td>
-<td> 1. dependent type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> could be used<br>to declare a function taking no parameters<br>2. a parameter could have cv-qualified <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> type
+<td> dependent type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> could be used to<br>declare a function taking no parameters
 </td>
-<td> 1. only non-dependent<br><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> is allowed<br>2. cv-qualified <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> types<br>    are also prohibited
+<td> only non-dependent<br><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> is allowed
 </td></tr>
 <tr>
 <td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1327.html">CWG 1327</a>
@@ -1189,19 +1219,19 @@ f2("42"): 42</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7046/1000000
-Preprocessor generated node count: 15037/1000000
-Post‐expand include size: 186674/2097152 bytes
-Template argument size: 57288/2097152 bytes
+Preprocessor visited node count: 7318/1000000
+Preprocessor generated node count: 15638/1000000
+Post‐expand include size: 189499/2097152 bytes
+Template argument size: 58208/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3127-0!*!0!!en!*!* and timestamp 20220728063326 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3127-0!*!0!!en!*!* and timestamp 20230120004237 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/function&amp;oldid=141480">https://en.cppreference.com/mwiki/index.php?title=cpp/language/function&amp;oldid=141480</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/function&amp;oldid=146518">https://en.cppreference.com/mwiki/index.php?title=cpp/language/function&amp;oldid=146518</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1214,17 +1244,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/function">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 27 July 2022, at 23:33.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 572,579 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1239,7 +1258,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.032 secs. -->
+</script><!-- Served in 6.999 secs. -->
 	</body>
-<!-- Cached 20220728063433 -->
+<!-- Cached 20230120004237 -->
 </html>

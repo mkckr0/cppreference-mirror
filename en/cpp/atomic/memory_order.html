@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/atomic/memory_order","wgTitle":"cpp/atomic/memory order","wgCurRevisionId":138867,"wgArticleId":2839,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/atomic/memory_order","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/atomic/memory_order","wgTitle":"cpp/atomic/memory order","wgCurRevisionId":146760,"wgArticleId":2839,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/atomic/memory_order","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -379,6 +380,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">2)</span> Atomic read-modify-write operations made to M by any thread</div>
 <p>is known as <i>release sequence headed by A</i>
 </p>
+<h4><span class="mw-headline" id="Synchronizes_with">Synchronizes with</span></h4>
+<p>If an atomic store in thread A is a <i>release operation</i>, an atomic load in thread B from the same variable is an <i>acquire operation</i>, and the load in thread B reads a value written by the store in thread A, then the store in thread A <i>synchronizes-with</i> the load in thread B.
+</p><p>Also, some library calls may be defined to <i>synchronize-with</i> other library calls on other threads.
+</p>
 <h4><span class="mw-headline" id="Dependency-ordered_before">Dependency-ordered before</span></h4>
 <p>Between threads, evaluation A is <i>dependency-ordered before</i> evaluation B if any of the following is true
 </p>
@@ -512,7 +517,8 @@ r2 <span class="sy1">=</span> x.<span class="me1">load</span><span class="br0">(
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Final counter value is 10000</pre></div></div> 
 </div>
 <h4><span class="mw-headline" id="Release-Acquire_ordering">Release-Acquire ordering</span></h4>
-<p>If an atomic store in thread A is tagged <span class="t-c"><span class="mw-geshi cpp source-cpp">memory_order_release</span></span> and an atomic load in thread B from the same variable is tagged <span class="t-c"><span class="mw-geshi cpp source-cpp">memory_order_acquire</span></span>, all memory writes (non-atomic and relaxed atomic) that <i>happened-before</i> the atomic store from the point of view of thread A, become <i>visible side-effects</i> in thread B. That is, once the atomic load is completed, thread B is guaranteed to see everything thread A wrote to memory. This promise only holds if B actually returns the value that A stored, or a value from later in the release sequence.
+<p>If an atomic store in thread A is tagged <span class="t-c"><span class="mw-geshi cpp source-cpp">memory_order_release</span></span>, an atomic load in thread B from the same variable is tagged <span class="t-c"><span class="mw-geshi cpp source-cpp">memory_order_acquire</span></span>, and the load in thread B reads a value written by the store in thread A, then the store in thread A <i>synchronizes-with</i> the load in thread B.
+</p><p>All memory writes (non-atomic and relaxed atomic) that <i>happened-before</i> the atomic store from the point of view of thread A, become <i>visible side-effects</i> in thread B. That is, once the atomic load is completed, thread B is guaranteed to see everything thread A wrote to memory. This promise only holds if B actually returns the value that A stored, or a value from later in the release sequence.
 </p><p>The synchronization is established only between the threads <i>releasing</i> and <i>acquiring</i> the same atomic variable. Other threads can see different order of memory accesses than either or both of the synchronized threads.
 </p><p>On strongly-ordered systems — x86, SPARC TSO, IBM mainframe, etc. — release-acquire ordering is automatic for the majority of operations. No additional CPU instructions are issued for this synchronization mode; only certain compiler optimizations are affected (e.g., the compiler is prohibited from moving non-atomic stores past the atomic store-release or performing non-atomic loads earlier than the atomic load-acquire). On weakly-ordered systems (ARM, Itanium, PowerPC), special CPU load or memory fence instructions are used.
 </p><p>Mutual exclusion locks, such as <span class="t-lc"><a href="../thread/mutex.html" title="cpp/thread/mutex">std::mutex</a></span> or <a href="atomic_flag.html" title="cpp/atomic/atomic flag">atomic spinlock</a>, are an example of release-acquire synchronization: when the lock is released by thread A and acquired by thread B, everything that took place in the critical section (before the release) in the context of thread A has to be visible to thread B (after the acquire) which is executing the same critical section.
@@ -591,7 +597,8 @@ r2 <span class="sy1">=</span> x.<span class="me1">load</span><span class="br0">(
 <span class="br0">}</span></pre></div></div>
 </div>
 <h4><span class="mw-headline" id="Release-Consume_ordering">Release-Consume ordering</span></h4>
-<p>If an atomic store in thread A is tagged <span class="t-c"><span class="mw-geshi cpp source-cpp">memory_order_release</span></span> and an atomic load in thread B from the same variable that read the stored value is tagged <span class="t-c"><span class="mw-geshi cpp source-cpp">memory_order_consume</span></span>, all memory writes (non-atomic and relaxed atomic) that <i>happened-before</i> the atomic store from the point of view of thread A, become <i>visible side-effects</i> within those operations in thread B into which the load operation <i>carries dependency</i>, that is, once the atomic load is completed, those operators and functions in thread B that use the value obtained from the load are guaranteed to see what thread A wrote to memory.
+<p>If an atomic store in thread A is tagged <span class="t-c"><span class="mw-geshi cpp source-cpp">memory_order_release</span></span>, an atomic load in thread B from the same variable is tagged <span class="t-c"><span class="mw-geshi cpp source-cpp">memory_order_consume</span></span>, and the load in thread B reads a value written by the store in thread A, then the store in thread A is <i>dependency-ordered before</i> the load in thread B. 
+</p><p>All memory writes (non-atomic and relaxed atomic) that <i>happened-before</i> the atomic store from the point of view of thread A, become <i>visible side-effects</i> within those operations in thread B into which the load operation <i>carries dependency</i>, that is, once the atomic load is completed, those operators and functions in thread B that use the value obtained from the load are guaranteed to see what thread A wrote to memory.
 </p><p>The synchronization is established only between the threads <i>releasing</i> and <i>consuming</i> the same atomic variable. Other threads can see different order of memory accesses than either or both of the synchronized threads.
 </p><p>On all mainstream CPUs other than DEC Alpha, dependency ordering is automatic, no additional CPU instructions are issued for this synchronization mode, only certain compiler optimizations are affected (e.g. the compiler is prohibited from performing speculative loads on the objects that are involved in the dependency chain). 
 </p><p>Typical use cases for this ordering involve read access to rarely written concurrent data structures (routing tables, configuration, security policies, firewall rules, etc) and publisher-subscriber situations with pointer-mediated publication, that is, when the producer publishes a pointer through which the consumer can access information: there is no need to make everything else the producer wrote to memory visible to the consumer (which may be an expensive operation on weakly-ordered architectures). An example of such scenario is <a href="https://en.wikipedia.org/wiki/Read-copy-update" class="extiw" title="enwiki:Read-copy-update">rcu_dereference</a>.
@@ -760,7 +767,7 @@ with respect to other atomic operations performed by the same thread</div></td>
     <a href="../error/assert.html"><span class="kw775">assert</span></a><span class="br0">(</span>z.<span class="me1">load</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// will never happen</span>
 <span class="br0">}</span></pre></div></div>
 </div>
-<h3><span class="mw-headline" id="Relationship_with_volatile">Relationship with <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span></span></span></h3>
+<h3><span class="mw-headline" id="Relationship_with_volatile">Relationship with <span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span></span></h3>
 <p>Within a thread of execution, accesses (reads and writes) through <a href="../language/cv.html" title="cpp/language/cv">volatile glvalues</a> cannot be reordered past observable side-effects (including other volatile accesses) that are <i>sequenced-before</i> or <i>sequenced-after</i> within the same thread, but this order is not guaranteed to be observed by another thread, since volatile access does not establish inter-thread synchronization.
 </p><p>In addition, volatile accesses are not atomic (concurrent read and write is a <a href="../language/memory_model.html" title="cpp/language/memory model">data race</a>) and do not order memory (non-volatile memory accesses may be freely reordered around the volatile access).
 </p><p>One notable exception is Visual Studio, where, with default settings, every volatile write has release semantics and every volatile read has acquire semantics (<a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/cpp/cpp/volatile-cpp">Microsoft Docs</a>), and thus volatiles may be used for inter-thread synchronization. Standard <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">volatile</span></span></span> semantics are not applicable to multithreaded programming, although they are sufficient for e.g. communication with a <span class="t-lc"><a href="../utility/program/signal.html" title="cpp/utility/program/signal">std::signal</a></span> handler that runs in the same thread when applied to <span class="t-c"><span class="mw-geshi cpp source-cpp">sig_atomic_t</span></span> variables.
@@ -780,19 +787,19 @@ with respect to other atomic operations performed by the same thread</div></td>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 8890/1000000
-Preprocessor generated node count: 17057/1000000
-Post‐expand include size: 303688/2097152 bytes
-Template argument size: 79001/2097152 bytes
+Preprocessor visited node count: 8913/1000000
+Preprocessor generated node count: 17924/1000000
+Post‐expand include size: 304574/2097152 bytes
+Template argument size: 79053/2097152 bytes
 Highest expansion depth: 18/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2839-0!*!0!!en!*!* and timestamp 20220726182833 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2839-0!*!0!!en!*!* and timestamp 20230121203527 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/atomic/memory_order&amp;oldid=138867">https://en.cppreference.com/mwiki/index.php?title=cpp/atomic/memory_order&amp;oldid=138867</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/atomic/memory_order&amp;oldid=146760">https://en.cppreference.com/mwiki/index.php?title=cpp/atomic/memory_order&amp;oldid=146760</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -805,17 +812,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/atomic/memory_order">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 17 March 2022, at 08:19.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 846,994 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -830,7 +826,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.255 secs. -->
+</script><!-- Served in 0.048 secs. -->
 	</body>
-<!-- Cached 20220726182833 -->
+<!-- Cached 20230121203818 -->
 </html>

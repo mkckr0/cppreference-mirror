@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="client-nojs">
 <head>
-<title>std::format_to_n - cppreference.com</title>
+<title>std::format_to_n, std::format_to_n_result - cppreference.com</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
 <link rel="shortcut icon" href="../../../../common/favicon.ico">
@@ -13,7 +13,7 @@
 
 <script src="../../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/utility/format/format_to_n","wgTitle":"cpp/utility/format/format to n","wgCurRevisionId":135301,"wgArticleId":18706,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/utility/format/format_to_n","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/utility/format/format_to_n","wgTitle":"cpp/utility/format/format to n","wgCurRevisionId":146574,"wgArticleId":18706,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/utility/format/format_to_n","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -108,7 +108,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>format_to_n</h1>
+<h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">std::</span>format_to_n, <span style="font-size:0.7em; line-height:130%">std::</span>format_to_n_result</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -151,11 +152,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../types.html" title="cpp/types"> Type support</a> (basic types, RTTI)</td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/utility/feature test"> Library feature-test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../memory.html" title="cpp/memory"> Dynamic memory management</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../launder.html" title="cpp/utility/launder"><span class="t-lines"><span>launder</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../program.html" title="cpp/utility/program"> Program utilities</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../coroutine.html" title="cpp/coroutine"> Coroutine support</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../variadic.html" title="cpp/utility/variadic"> Variadic functions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../../types/is_constant_evaluated.html" title="cpp/types/is constant evaluated"><span class="t-lines"><span>is_constant_evaluated</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../launder.html" title="cpp/utility/launder"><span class="t-lines"><span>launder</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../initializer_list.html" title="cpp/utility/initializer list"><span class="t-lines"><span>initializer_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../source_location.html" title="cpp/utility/source location"><span class="t-lines"><span>source_location</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Three-way comparison <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
@@ -219,7 +220,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../tuple_element.html" title="cpp/utility/tuple element"><span class="t-lines"><span>tuple_element</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../apply.html" title="cpp/utility/apply"><span class="t-lines"><span>apply</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../make_from_tuple.html" title="cpp/utility/make from tuple"><span class="t-lines"><span>make_from_tuple</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/utility/expected&amp;action=edit&amp;redlink=1" class="new" title="cpp/utility/expected (page does not exist)"><span class="t-lines"><span>expected</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../expected.html" title="cpp/utility/expected"><span class="t-lines"><span>expected</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 </table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Elementary string conversions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../to_chars.html" title="cpp/utility/to chars"><span class="t-lines"><span>to_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
@@ -241,6 +242,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv-h1"><td colspan="5"> Formatting arguments</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_format_arg.html" title="cpp/utility/format/basic format arg"><span class="t-lines"><span>basic_format_arg</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_format_args.html" title="cpp/utility/format/basic format args"><span class="t-lines"><span>basic_format_args</span><span>format_args</span><span>wformat_args</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_format_string.html" title="cpp/utility/format/basic format string"><span class="t-lines"><span>basic_format_string</span><span>format_string</span><span>wformat_string</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="visit_format_arg.html" title="cpp/utility/format/visit format arg"><span class="t-lines"><span>visit_format_arg</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="make_format_args.html" title="cpp/utility/format/make format args"><span class="t-lines"><span>make_format_args</span><span>make_wformat_args</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Format error</td></tr>
@@ -258,7 +260,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>std<span class="sy4">::</span><span class="me2">format_to_n_result</span><span class="sy1">&lt;</span>OutputIt<span class="sy1">&gt;</span><br>
     format_to_n<span class="br0">(</span> OutputIt out, <a href="../../iterator/iter_t.html"><span class="kw2878">std::<span class="me2">iter_difference_t</span></span></a><span class="sy1">&lt;</span>OutputIt<span class="sy1">&gt;</span> n,<br>
 </p>
-                 <span class="coMULTI">/*format_string&lt;Args...&gt;*/</span> fmt, Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                 std<span class="sy4">::</span><span class="me2">format_string</span><span class="sy1">&lt;</span>Args...<span class="sy1">&gt;</span> fmt, Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
@@ -267,7 +269,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>std<span class="sy4">::</span><span class="me2">format_to_n_result</span><span class="sy1">&lt;</span>OutputIt<span class="sy1">&gt;</span><br>
     format_to_n<span class="br0">(</span> OutputIt out, <a href="../../iterator/iter_t.html"><span class="kw2878">std::<span class="me2">iter_difference_t</span></span></a><span class="sy1">&lt;</span>OutputIt<span class="sy1">&gt;</span> n,<br>
 </p>
-                 <span class="coMULTI">/*wformat_string&lt;Args...&gt;*/</span> fmt, Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                 std<span class="sy4">::</span><span class="me2">wformat_string</span><span class="sy1">&lt;</span>Args...<span class="sy1">&gt;</span> fmt, Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
@@ -275,8 +277,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> OutputIt, <span class="kw1">class</span>... <span class="me1">Args</span> <span class="sy1">&gt;</span><br>
 <p>std<span class="sy4">::</span><span class="me2">format_to_n_result</span><span class="sy1">&lt;</span>OutputIt<span class="sy1">&gt;</span><br>
     format_to_n<span class="br0">(</span> OutputIt out, <a href="../../iterator/iter_t.html"><span class="kw2878">std::<span class="me2">iter_difference_t</span></span></a><span class="sy1">&lt;</span>OutputIt<span class="sy1">&gt;</span> n,<br>
+                 <span class="kw4">const</span> <a href="../../locale/locale.html"><span class="kw1898">std::<span class="me2">locale</span></span></a><span class="sy3">&amp;</span> loc,<br>
 </p>
-                 <span class="kw4">const</span> <a href="../../locale/locale.html"><span class="kw1898">std::<span class="me2">locale</span></span></a><span class="sy3">&amp;</span> loc, <span class="coMULTI">/*format_string&lt;Args...&gt;*/</span> fmt, Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                 std<span class="sy4">::</span><span class="me2">format_string</span><span class="sy1">&lt;</span>Args...<span class="sy1">&gt;</span> fmt, Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (3) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
@@ -284,10 +287,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> OutputIt, <span class="kw1">class</span>... <span class="me1">Args</span> <span class="sy1">&gt;</span><br>
 <p>std<span class="sy4">::</span><span class="me2">format_to_n_result</span><span class="sy1">&lt;</span>OutputIt<span class="sy1">&gt;</span><br>
     format_to_n<span class="br0">(</span> OutputIt out, <a href="../../iterator/iter_t.html"><span class="kw2878">std::<span class="me2">iter_difference_t</span></span></a><span class="sy1">&lt;</span>OutputIt<span class="sy1">&gt;</span> n,<br>
+                 <span class="kw4">const</span> <a href="../../locale/locale.html"><span class="kw1898">std::<span class="me2">locale</span></span></a><span class="sy3">&amp;</span> loc,<br>
 </p>
-                 <span class="kw4">const</span> <a href="../../locale/locale.html"><span class="kw1898">std::<span class="me2">locale</span></span></a><span class="sy3">&amp;</span> loc, <span class="coMULTI">/*wformat_string&lt;Args...&gt;*/</span> fmt, Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                 std<span class="sy4">::</span><span class="me2">wformat_string</span><span class="sy1">&lt;</span>Args...<span class="sy1">&gt;</span> fmt, Args<span class="sy3">&amp;&amp;</span>... <span class="me1">args</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (4) </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
+</tr>
+<tr class="t-dcl-h">
+<td> <div>Helper types</div></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> OutputIt <span class="sy1">&gt;</span><br>
@@ -302,7 +311,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Format <code>args</code> according to the format string <code>fmt</code>, and write the result to the output iterator <code>out</code>. At most <code>n</code> characters are written. If present, <code>loc</code> is used for locale-specific formatting.
-</p><p>Let <code>CharT</code> be <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> for overloads <span class="t-v">(1,3)</span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> for overloads <span class="t-v">(2,4)</span>.
+</p><p>Let <code>CharT</code> be <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span> for overloads <span class="t-v">(1,3)</span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span> for overloads <span class="t-v">(2,4)</span>.
 </p><p>These overloads participate in overload resolution only if 
 <code>OutputIt</code> satisfies the concept <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../iterator/output_iterator.html"><span class="kw2868">std::<span class="me2">output_iterator</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> CharT<span class="sy3">&amp;</span><span class="sy1">&gt;</span></span></span>.
 </p><p>The behavior is undefined if <code>OutputIt</code> does not model (meet the semantic requirements of) the  concept <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../iterator/output_iterator.html"><span class="kw2868">std::<span class="me2">output_iterator</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> CharT<span class="sy3">&amp;</span><span class="sy1">&gt;</span></span></span>, or if <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="formatter.html"><span class="kw3156">std::<span class="me2">formatter</span></span></a><span class="sy1">&lt;</span><a href="../../types/remove_cvref.html"><span class="kw2647">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>Ti<span class="sy1">&gt;</span>, CharT<span class="sy1">&gt;</span></span></span> does not meet the <a href="../../named_req/BasicFormatter.html" title="cpp/named req/BasicFormatter"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">BasicFormatter</span></a> requirements for any <code>Ti</code> in <code>Args</code>.
@@ -313,26 +322,26 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  out
+<td> out
 </td>
 <td> -
 </td>
-<td>  iterator to the output buffer
+<td> iterator to the output buffer
 </td></tr>
 <tr class="t-par">
-<td>  n
+<td> n
 </td>
 <td> -
 </td>
-<td>  maximum number of characters to be written to the buffer
+<td> maximum number of characters to be written to the buffer
 </td></tr>
 <tr class="t-par">
-<td>  fmt
+<td> fmt
 </td>
 <td> -
 </td>
-<td>  <div class="t-template-editlink" style="">
-</div>parameter of unspecified type, whose initialization is valid only if the argument is convertible to <span class="t-lc"><a href="../../string/basic_string_view.html" title="cpp/string/basic string view">std::string_view</a></span> (for <span class="t-v">(1,3)</span>) or <span class="t-lc"><a href="../../string/basic_string_view.html" title="cpp/string/basic string view">std::wstring_view</a></span> (for <span class="t-v">(2,4)</span>), and the result of conversion is a constant expression and a valid format string for <code>Args</code>. The format string consists of
+<td> <div class="t-template-editlink" style="">
+</div>an object that represents the format string. The format string consists of
 <ul><li> ordinary characters (except <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">{</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">}</span></span></span>), which are copied unchanged to the output,
 </li><li> escape sequences <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">{</span><span class="br0">{</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">}</span><span class="br0">}</span></span></span>, which are replaced with <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">{</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">}</span></span></span> respectively in the output, and
 </li><li> replacement fields.
@@ -392,23 +401,23 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  the format specification defined by the <span class="t-lc"><a href="formatter.html" title="cpp/utility/format/formatter">std::formatter</a></span> specialization for the corresponding argument.
 </td></tr></table>
 <ul><li> For basic types and standard string types, the format specification is interpreted as <a href="formatter.html#Standard_format_specification" title="cpp/utility/format/formatter">standard format specification</a>.
-</li><li> For chrono types, the format specification is interpreted as <a href="../../chrono/system_clock/formatter.html#Format_specification" title="cpp/chrono/system clock/formatter">chrono format specification</a>.
-</li><li> For other formattable types, the format specification is determined by user-defined <code>formatter</code> specializations. 
+</li><li> For chrono types, the format specification is interpreted as <a href="../../chrono/system_clock/formatter.html#Format_specification" title="cpp/chrono/system clock/formatter">chrono format specification</a>. 
+</li><li> For other formattable types, the format specification is determined by user-defined <code>formatter</code> specializations.
 </li></ul>
 </td></tr>
 <tr class="t-par">
-<td>  args...
+<td> args...
 </td>
 <td> -
 </td>
-<td>  arguments to be formatted
+<td> arguments to be formatted
 </td></tr>
 <tr class="t-par">
-<td>  loc
+<td> loc
 </td>
 <td> -
 </td>
-<td>  <span class="t-lc"><a href="../../locale/locale.html" title="cpp/locale/locale">std::locale</a></span> used for locale-specific formatting
+<td> <span class="t-lc"><a href="../../locale/locale.html" title="cpp/locale/locale">std::locale</a></span> used for locale-specific formatting
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>A <code>format_to_n_result</code> such that the <code>out</code> member is an iterator past the end of the output range, and the <code>size</code> member is the total (not truncated) output size.
@@ -427,7 +436,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw4">char</span> buffer<span class="br0">[</span><span class="nu0">64</span><span class="br0">]</span><span class="sy4">;</span>
  
     <span class="kw4">const</span> <span class="kw4">auto</span> result <span class="sy1">=</span>
-        std<span class="sy4">::</span><span class="me2">format_to_n</span><span class="br0">(</span>buffer, <a href="../../iterator/size.html"><span class="kw686">std::<span class="me2">size</span></span></a><span class="br0">(</span>buffer<span class="br0">)</span> <span class="sy2">-</span> <span class="nu0">1</span>, 
+        std<span class="sy4">::</span><span class="me2">format_to_n</span><span class="br0">(</span>buffer, <a href="../../iterator/size.html"><span class="kw686">std::<span class="me2">size</span></span></a><span class="br0">(</span>buffer<span class="br0">)</span> <span class="sy2">-</span> <span class="nu0">1</span>,
                          <span class="st0">"Hubble's H{2} {3} {0}{4}{1} km/sec/Mpc."</span>,
                          <span class="nu0">71</span>,       <span class="co1">// {0}, occupies 2 bytes</span>
                          <span class="nu0">8</span>,        <span class="co1">// {1}, occupies 1 byte</span>
@@ -437,7 +446,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                          <span class="br0">)</span><span class="sy4">;</span>
     <span class="sy2">*</span>result.<span class="me1">out</span> <span class="sy1">=</span> <span class="st0">'<span class="es5">\0</span>'</span><span class="sy4">;</span>
  
-    <span class="kw4">const</span> <a href="../../string/basic_string_view.html"><span class="kw1251">std::<span class="me2">string_view</span></span></a> str<span class="br0">{</span>buffer, result.<span class="me1">out</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// uses C++20 ctor</span>
+    <span class="kw4">const</span> <a href="../../string/basic_string_view.html"><span class="kw1251">std::<span class="me2">string_view</span></span></a> str<span class="br0">{</span>buffer, result.<span class="me1">out</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// uses C++20 constructor</span>
  
     <a href="../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Buffer: <span class="es1">\"</span>"</span> <span class="sy1">&lt;&lt;</span> str <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\"</span><span class="es1">\n</span>"</span>
               <span class="sy1">&lt;&lt;</span> <span class="st0">"Buffer size = "</span> <span class="sy1">&lt;&lt;</span> <a href="../../iterator/size.html"><span class="kw686">std::<span class="me2">size</span></span></a><span class="br0">(</span>buffer<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
@@ -479,6 +488,15 @@ Untruncated output size = 35</pre></div></div>
 <td> objects that are neither const-usable nor copyable<br>(such as generator-like objects) are not formattable
 </td>
 <td> allow formatting these objects
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2508R1">P2508R1</a>
+</td>
+<td> C++20
+</td>
+<td> there's no user-visible name for this facility
+</td>
+<td> the name <code>basic_format_string</code> is exposed
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -501,19 +519,19 @@ Untruncated output size = 35</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7559/1000000
-Preprocessor generated node count: 12341/1000000
-Post‐expand include size: 250404/2097152 bytes
-Template argument size: 53228/2097152 bytes
+Preprocessor visited node count: 7683/1000000
+Preprocessor generated node count: 12521/1000000
+Post‐expand include size: 253710/2097152 bytes
+Template argument size: 54440/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18706-0!*!0!!en!*!* and timestamp 20220727203838 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18706-0!*!0!!en!*!* and timestamp 20230120042852 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/utility/format/format_to_n&amp;oldid=135301">https://en.cppreference.com/mwiki/index.php?title=cpp/utility/format/format_to_n&amp;oldid=135301</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/utility/format/format_to_n&amp;oldid=146574">https://en.cppreference.com/mwiki/index.php?title=cpp/utility/format/format_to_n&amp;oldid=146574</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -526,17 +544,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/utility/format/format_to_n">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 November 2021, at 01:17.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 16,233 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -551,7 +558,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.592 secs. -->
+</script><!-- Served in 1.985 secs. -->
 	</body>
-<!-- Cached 20220727203838 -->
+<!-- Cached 20230120042852 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/nested_types","wgTitle":"cpp/language/nested types","wgCurRevisionId":140952,"wgArticleId":13013,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/nested_types","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/nested_types","wgTitle":"cpp/language/nested types","wgCurRevisionId":145187,"wgArticleId":13013,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/nested_types","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -318,18 +319,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>A declaration of a <a href="class.html" title="cpp/language/class">class/struct</a> or <a href="union.html" title="cpp/language/union">union</a> may appear within another class. Such declaration declares a <i>nested class</i>.
 </p>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>The name of the nested class exists in the scope of the enclosing class, and name lookup from a member function of a nested class visits the scope of the enclosing class after examining the scope of the nested class. Like any member of its enclosing class, the nested class has access to all names (private, protected, etc) to which the enclosing class has access, but it is otherwise independent and has no special access to the <a href="this.html" title="cpp/language/this"><code>this</code> pointer</a> of the enclosing class.
+<p>The name of the nested class exists in the scope of the enclosing class, and name lookup from a member function of a nested class visits the scope of the enclosing class after examining the scope of the nested class. Like any member of its enclosing class, the nested class has access to all names (private, protected, etc) to which the enclosing class has access, but it is otherwise independent and has no special access to the <a href="this.html" title="cpp/language/this"><code>this</code> pointer</a> of the enclosing class. Declarations in a nested class can use any members of the enclosing class, following the <a href="data_members.html#Usage" title="cpp/language/data members">usual usage rules</a> for the non-static members.
 </p>
- <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx11"><td>Declarations in a nested class can use only type names, static members, and enumerators from the enclosing class.
-</td>
-<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
-<tr class="t-rev t-since-cxx11"><td>
-<p>Declarations in a nested class can use any members of the enclosing class, following the <a href="data_members.html#Usage" title="cpp/language/data members">usual usage rules</a> for the non-static members.
-</p>
-</td>
-<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
-</table>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">int</span> x,y<span class="sy4">;</span> <span class="co1">// globals</span>
 <span class="kw1">class</span> enclose <span class="co1">// enclosing class</span>
 <span class="br0">{</span>
@@ -341,11 +332,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="br0">{</span>
         <span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span>
         <span class="br0">{</span>
-            x <span class="sy1">=</span> i<span class="sy4">;</span> <span class="co1">// Error: can't write to non-static enclose::x without instance            </span>
+            x <span class="sy1">=</span> i<span class="sy4">;</span> <span class="co1">// Error: can't write to non-static enclose::x without instance</span>
             <span class="kw4">int</span> a <span class="sy1">=</span> sizeof x<span class="sy4">;</span> <span class="co1">// Error until C++11,</span>
                               <span class="co1">// OK in C++11: operand of sizeof is unevaluated,</span>
                               <span class="co1">// this use of the non-static enclose::x is allowed.</span>
-            s <span class="sy1">=</span> i<span class="sy4">;</span>   <span class="co1">// OK: can assign to the static enclose::s            </span>
+            s <span class="sy1">=</span> i<span class="sy4">;</span>   <span class="co1">// OK: can assign to the static enclose::s</span>
             <span class="sy4">::</span><span class="me2">x</span> <span class="sy1">=</span> i<span class="sy4">;</span> <span class="co1">// OK: can assign to global x</span>
             y <span class="sy1">=</span> i<span class="sy4">;</span>   <span class="co1">// OK: can assign to global y</span>
         <span class="br0">}</span>
@@ -423,6 +414,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> they have the same access rights as<br>other members of the enclosing class<br>(also resolves CWG issues #8 and #10)
 </td></tr></table>
 <h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2023): 
+</li></ul>
+<dl><dd><ul><li> 11.4.12 Nested class declarations [class.nest] 
+</li></ul>
+</dd></dl>
+</div>
 <div class="t-ref-std-c++20">
 <ul><li> C++20 standard (ISO/IEC 14882:2020): 
 </li></ul>
@@ -461,19 +459,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2522/1000000
-Preprocessor generated node count: 6069/1000000
-Post‐expand include size: 134061/2097152 bytes
-Template argument size: 14890/2097152 bytes
+Preprocessor visited node count: 2456/1000000
+Preprocessor generated node count: 5824/1000000
+Post‐expand include size: 133802/2097152 bytes
+Template argument size: 14569/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13013-0!*!0!!*!*!* and timestamp 20220712114256 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13013-0!*!0!!*!*!* and timestamp 20230120004015 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/nested_types&amp;oldid=140952">https://en.cppreference.com/mwiki/index.php?title=cpp/language/nested_types&amp;oldid=140952</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/nested_types&amp;oldid=145187">https://en.cppreference.com/mwiki/index.php?title=cpp/language/nested_types&amp;oldid=145187</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -486,17 +484,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/nested_types">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 12 July 2022, at 04:42.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 444,215 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -511,7 +498,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.033 secs. -->
+</script><!-- Served in 1.002 secs. -->
 	</body>
-<!-- Cached 20220712115328 -->
+<!-- Cached 20230120004015 -->
 </html>

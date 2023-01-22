@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -197,7 +198,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="substr.html" title="cpp/string/basic string/substr"><span class="t-lines"><span>basic_string::substr</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="copy.html" title="cpp/string/basic string/copy"><span class="t-lines"><span>basic_string::copy</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="resize.html" title="cpp/string/basic string/resize"><span class="t-lines"><span>basic_string::resize</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="resize_and_overwrite.html" title="cpp/string/basic string/resize and overwrite"><span class="t-lines"><span>basic_string::resize_and_overwrite</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="resize_and_overwrite.html" title="cpp/string/basic string/resize and overwrite"><span class="t-lines"><span>basic_string::<br> resize_and_overwrite</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/string/basic string/swap"><span class="t-lines"><span>basic_string::swap</span></span></a></div></div></td></tr>
 </table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> Search</td></tr>
@@ -359,7 +360,7 @@ basic_string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><sp
 <div class="t-li1"><span class="t-li">3)</span> Replaces the contents with those of null-terminated character string pointed to by <code>s</code> as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">assign<span class="br0">(</span>s, Traits<span class="sy4">::</span><span class="me2">length</span><span class="br0">(</span>s<span class="br0">)</span><span class="br0">)</span></span></span>.</div>
 <div class="t-li1"><span class="t-li">4)</span> Replaces the contents with character <code>ch</code> as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">assign<span class="br0">(</span><a href="../../memory/addressof.html"><span class="kw758">std::<span class="me2">addressof</span></span></a><span class="br0">(</span>ch<span class="br0">)</span>, <span class="nu0">1</span><span class="br0">)</span></span></span></div>
 <div class="t-li1"><span class="t-li">5)</span> Replaces the contents with those of the initializer list <code>ilist</code> as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">assign<span class="br0">(</span>ilist.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, ilist.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span></span></span></div>
-<div class="t-li1"><span class="t-li">6)</span> Implicitly converts <code>t</code> to a string view <code>sv</code> as if by <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../basic_string_view.html"><span class="kw1249">std::<span class="me2">basic_string_view</span></span></a><span class="sy1">&lt;</span>CharT, Traits<span class="sy1">&gt;</span> sv <span class="sy1">=</span> t<span class="sy4">;</span></span></span>, then replaces the contents with those of the <code>sv</code> as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">assign<span class="br0">(</span>sv<span class="br0">)</span></span></span>. This overload participates in overload resolution only if <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../types/is_convertible.html"><span class="kw595">std::<span class="me2">is_convertible_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> StringViewLike<span class="sy3">&amp;</span>, <a href="../basic_string_view.html"><span class="kw1249">std::<span class="me2">basic_string_view</span></span></a><span class="sy1">&lt;</span>CharT, Traits<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../types/is_convertible.html"><span class="kw595">std::<span class="me2">is_convertible_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> StringViewLike<span class="sy3">&amp;</span>, <span class="kw4">const</span> CharT<span class="sy2">*</span><span class="sy1">&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">6)</span> Implicitly converts <span class="t-c"><span class="mw-geshi cpp source-cpp">t</span></span> to a string view <span class="t-c"><span class="mw-geshi cpp source-cpp">sv</span></span> as if by <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../basic_string_view.html"><span class="kw1249">std::<span class="me2">basic_string_view</span></span></a><span class="sy1">&lt;</span>CharT, Traits<span class="sy1">&gt;</span> sv <span class="sy1">=</span> t<span class="sy4">;</span></span></span>, then replaces the contents with those of the <code>sv</code> as if by <span class="t-c"><span class="mw-geshi cpp source-cpp">assign<span class="br0">(</span>sv<span class="br0">)</span></span></span>. This overload participates in overload resolution only if <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../types/is_convertible.html"><span class="kw595">std::<span class="me2">is_convertible_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> StringViewLike<span class="sy3">&amp;</span>, <a href="../basic_string_view.html"><span class="kw1249">std::<span class="me2">basic_string_view</span></span></a><span class="sy1">&lt;</span>CharT, Traits<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../types/is_convertible.html"><span class="kw595">std::<span class="me2">is_convertible_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> StringViewLike<span class="sy3">&amp;</span>, <span class="kw4">const</span> CharT<span class="sy2">*</span><span class="sy1">&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>.</div>
 <div class="t-li1"><span class="t-li">7)</span> <code>basic_string</code> cannot be assigned from <span class="t-c"><span class="mw-geshi cpp source-cpp">nullptr</span></span>.</div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -525,15 +526,15 @@ basic_string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><sp
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 9438/1000000
-Preprocessor generated node count: 13831/1000000
-Post‐expand include size: 219128/2097152 bytes
-Template argument size: 50298/2097152 bytes
+Preprocessor visited node count: 9544/1000000
+Preprocessor generated node count: 14644/1000000
+Post‐expand include size: 220083/2097152 bytes
+Template argument size: 50425/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1417-0!*!0!!en!*!* and timestamp 20220507040138 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1417-0!*!0!!en!*!* and timestamp 20230120005014 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -550,17 +551,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/string/basic_string/operator=">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 January 2022, at 09:02.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 110,800 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -575,7 +565,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.495 secs. -->
+</script><!-- Served in 0.044 secs. -->
 	</body>
-<!-- Cached 20220507040138 -->
+<!-- Cached 20230120005014 -->
 </html>

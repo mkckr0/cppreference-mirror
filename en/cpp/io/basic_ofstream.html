@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -147,6 +148,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../links/libs.html" title="cpp/links/libs"> External libraries</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../io.html" title="cpp/io"> Input/output library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="manip.html" title="cpp/io/manip"> I/O manipulators</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../io.html#Print_functions_.28since_C.2B.2B23.29" title="cpp/io"> Print functions</a> <span class="t-mark-rev t-since-cxx23">(C++23)</span></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="c.html" title="cpp/io/c"> C-style I/O</a></td></tr>
 <tr class="t-nv-h1"><td colspan="5"> Buffers</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_streambuf.html" title="cpp/io/basic streambuf"><span class="t-lines"><span>basic_streambuf</span></span></a></div></div></td></tr>
@@ -221,7 +223,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>A typical implementation of <code>std::basic_ofstream</code> holds only one non-derived data member: an instance of <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="basic_filebuf.html"><span class="kw1671">std::<span class="me2">basic_filebuf</span></span></a><span class="sy1">&lt;</span>CharT, Traits<span class="sy1">&gt;</span></span></span>.
 </p>
 <div class="t-inheritance-diagram">
-<div class="center"><div class="noresize"><map name="ImageMap_1_1743277653"><area href="ios_base.html" shape="rect" coords="5,6,107,39" alt="cpp/io/ios base" title="cpp/io/ios base"><area href="basic_ios.html" shape="rect" coords="135,4,252,42" alt="cpp/io/basic ios" title="cpp/io/basic ios"><area href="basic_ostream.html" shape="rect" coords="278,4,395,42" alt="cpp/io/basic ostream" title="cpp/io/basic ostream"></map><img alt="std-basic ofstream-inheritance.svg" src="../../../common/images/b/b1/std-basic_ofstream-inheritance.svg" width="543" height="45" usemap="#ImageMap_1_1743277653"></div></div>
+<div class="center"><div class="noresize"><map name="ImageMap_1_1482121241"><area href="ios_base.html" shape="rect" coords="5,6,107,39" alt="cpp/io/ios base" title="cpp/io/ios base"><area href="basic_ios.html" shape="rect" coords="135,4,252,42" alt="cpp/io/basic ios" title="cpp/io/basic ios"><area href="basic_ostream.html" shape="rect" coords="278,4,395,42" alt="cpp/io/basic ostream" title="cpp/io/basic ostream"></map><img alt="std-basic ofstream-inheritance.svg" src="../../../common/images/b/b1/std-basic_ofstream-inheritance.svg" width="543" height="45" usemap="#ImageMap_1_1482121241"></div></div>
 <div style="text-align:center;">
 <p><span style="font-size:0.7em; line-height:130%">Inheritance diagram</span>
 </p>
@@ -684,45 +686,51 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Constant
+<td> Constant
 </td>
-<td>  Explanation</td></tr>
+<td> Explanation</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>app</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>app</tt></a>
 </td>
-<td>  seek to the end of stream before each write</td></tr>
+<td> seek to the end of stream before each write</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>binary</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>binary</tt></a>
 </td>
-<td>  open in <a href="c/FILE.html#Binary_and_text_modes" title="cpp/io/c/FILE">binary mode</a></td></tr>
+<td> open in <a href="c/FILE.html#Binary_and_text_modes" title="cpp/io/c/FILE">binary mode</a></td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>in</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>in</tt></a>
 </td>
-<td>  open for reading</td></tr>
+<td> open for reading</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>out</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>out</tt></a>
 </td>
-<td>  open for writing</td></tr>
+<td> open for writing</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>trunc</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>trunc</tt></a>
 </td>
-<td>  discard the contents of the stream when opening</td></tr>
+<td> discard the contents of the stream when opening</td></tr>
 
 
 <tr class="t-dsc">
-<td>  <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>ate</tt></a>
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>ate</tt></a>
 </td>
-<td>  seek to the end of stream immediately after open</td></tr>
+<td> seek to the end of stream immediately after open</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="ios_base/openmode.html" title="cpp/io/ios base/openmode"><tt>noreplace</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
+</td>
+<td> open in exclusive mode</td></tr>
 
 </table> <br> <span class="t-mark">(typedef)</span> </td></tr>
 
@@ -962,15 +970,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 15823/1000000
-Preprocessor generated node count: 15475/1000000
-Post‐expand include size: 578546/2097152 bytes
-Template argument size: 162864/2097152 bytes
+Preprocessor visited node count: 15883/1000000
+Preprocessor generated node count: 15543/1000000
+Post‐expand include size: 584376/2097152 bytes
+Template argument size: 164534/2097152 bytes
 Highest expansion depth: 35/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:539-0!*!0!!en!2!* and timestamp 20220410082400 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:539-0!*!0!!en!2!* and timestamp 20230120004018 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -987,17 +995,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/io/basic_ofstream">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 12 December 2017, at 07:35.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 517,879 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1012,7 +1009,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.352 secs. -->
+</script><!-- Served in 3.587 secs. -->
 	</body>
-<!-- Cached 20220410082400 -->
+<!-- Cached 20230120004018 -->
 </html>

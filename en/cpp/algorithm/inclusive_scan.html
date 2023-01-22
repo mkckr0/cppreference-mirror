@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -471,8 +472,20 @@ ForwardIt2 inclusive_scan<span class="br0">(</span> ExecutionPolicy<span class="
 </li><li> if <span class="texhtml" style="white-space: nowrap;">N &gt; 1</span>, <span class="texhtml" style="white-space: nowrap;">op(GNSUM(op, a<span class="t-su t-su-b"><br>1</span>, ..., a<span class="t-su t-su-b"><br>K</span>), GNSUM(op, a<span class="t-su t-su-b"><br>M</span>, ..., a<span class="t-su t-su-b"><br>N</span>))</span> for any K where <span class="texhtml" style="white-space: nowrap;">1 &lt; K+1 = M ≤ N</span>
 </li></ul>
 <p>In other words, the summation operations may be performed in arbitrary order, and the behavior is nondeterministic if <code>binary_op</code> is not associative.
-</p><p>Overloads <span class="t-v">(2,4,6)</span> are executed according to <code>policy</code>. These overloads do not participate in overload resolution unless <span class="t-rev-inl t-until-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span> <span class="t-rev-inl t-since-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> is true.
-</p><p><code>binary_op</code> shall not invalidate iterators (including the end iterators) or subranges, nor modify elements in the ranges
+</p>
+Overloads <span class="t-v">(2,4,6)</span> are executed according to <code>policy</code>. These overloads do not participate in overload resolution unless  <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table>
+<p><code>binary_op</code> shall not invalidate iterators (including the end iterators) or subranges, nor modify elements in the ranges
 <span class="texhtml" style="white-space: nowrap;">[first, last)</span> or <span class="texhtml" style="white-space: nowrap;">[d_first, d_first + (last - first))</span>. Otherwise, the behavior is undefined.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -595,7 +608,7 @@ inclusive product: 3 3 12 12 60 540 1080 6480</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="accumulate.html" title="cpp/algorithm/accumulate"> <span class="t-lines"><span>accumulate</span></span></a></div></div>
 </td>
-<td>   sums up a range of elements  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  sums up or folds a range of elements <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="partial_sum.html" title="cpp/algorithm/partial sum"> <span class="t-lines"><span>partial_sum</span></span></a></div></div>
@@ -615,15 +628,15 @@ inclusive product: 3 3 12 12 60 540 1080 6480</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 11296/1000000
-Preprocessor generated node count: 14010/1000000
-Post‐expand include size: 319108/2097152 bytes
-Template argument size: 63928/2097152 bytes
+Preprocessor visited node count: 11407/1000000
+Preprocessor generated node count: 15535/1000000
+Post‐expand include size: 321013/2097152 bytes
+Template argument size: 64589/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15160-0!*!0!!en!*!* and timestamp 20220410084352 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15160-0!*!0!!en!*!* and timestamp 20230120004307 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -640,17 +653,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/inclusive_scan">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 14 April 2020, at 06:34.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 53,132 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -665,7 +667,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.005 secs. -->
+</script><!-- Served in 2.322 secs. -->
 	</body>
-<!-- Cached 20220410084354 -->
+<!-- Cached 20230120004308 -->
 </html>

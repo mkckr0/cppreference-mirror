@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/unique_copy","wgTitle":"cpp/algorithm/unique copy","wgCurRevisionId":125733,"wgArticleId":791,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/unique_copy","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/unique_copy","wgTitle":"cpp/algorithm/unique copy","wgCurRevisionId":144382,"wgArticleId":791,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/unique_copy","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -368,26 +369,22 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl t-until-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt, <span class="kw1">class</span> OutputIt <span class="sy1">&gt;</span><br>
-<p>OutputIt unique_copy<span class="br0">(</span> InputIt first, InputIt last,<br>
-</p>
-                      OutputIt d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+OutputIt unique_copy<span class="br0">(</span> InputIt first, InputIt last, OutputIt d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt, <span class="kw1">class</span> OutputIt <span class="sy1">&gt;</span><br>
-<p><span class="kw4">constexpr</span> OutputIt unique_copy<span class="br0">(</span> InputIt first, InputIt last,<br>
-</p>
-                                OutputIt d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<span class="kw4">constexpr</span> OutputIt unique_copy<span class="br0">(</span> InputIt first, InputIt last, OutputIt d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2 <span class="sy1">&gt;</span><br>
-<p>ForwardIt2 unique_copy<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt1 first, ForwardIt1 last,<br>
+<p>ForwardIt2 unique_copy<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt1 first,<br>
 </p>
-                        ForwardIt2 d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                        ForwardIt1 last, ForwardIt2 d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
 </tr>
@@ -415,8 +412,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
-<p>ForwardIt2 unique_copy<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt1 first, ForwardIt1 last,<br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1,<br>
+<p>          <span class="kw1">class</span> ForwardIt2, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
+ForwardIt2 unique_copy<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
+                        ForwardIt1 first, ForwardIt1 last,<br>
 </p>
                         ForwardIt2 d_first, BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (4) </td>
@@ -424,28 +423,39 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Copies the elements from the range <code>[first, last)</code>, to another range beginning at <code>d_first</code> in such a way that there are no consecutive equal elements. Only the first element of each group of equal elements is copied.
+<p>Copies the elements from the range <code>[first, last)</code>, to another range beginning at <span class="t-c"><span class="mw-geshi cpp source-cpp">d_first</span></span> in such a way that there are no consecutive equal elements. Only the first element of each group of equal elements is copied.
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Elements are compared using <code>operator==</code>. The behavior is undefined if it is not an <a href="https://en.wikipedia.org/wiki/equivalence_relation" class="extiw" title="enwiki:equivalence relation">equivalence relation</a>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary predicate <code>p</code>. The behavior is undefined if it is not an equivalence relation.</div>
-<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <code>policy</code>. These overloads do not participate in overload resolution unless <span class="t-rev-inl t-until-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span> <span class="t-rev-inl t-since-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> is true.</div>
+<div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary predicate <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span>. The behavior is undefined if it is not an equivalence relation.</div>
+<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <span class="t-c"><span class="mw-geshi cpp source-cpp">policy</span></span>. These overloads do not participate in overload resolution unless  <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table></div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  the range of elements to process
+<td> the range of elements to process
 </td></tr>
 <tr class="t-par">
-<td>  d_first
+<td> d_first
 </td>
 <td> -
 </td>
-<td>  the beginning of the destination range
+<td> the beginning of the destination range
 </td></tr>
 <tr class="t-par">
 <td>  policy
@@ -455,7 +465,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  the execution policy to use. See <a href="execution_policy_tag_t.html" title="cpp/algorithm/execution policy tag t">execution policy</a> for details.
 </td></tr>
 <tr class="t-par">
-<td>    p
+<td>   p
 </td>
 <td> -
 </td>
@@ -463,7 +473,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The signature of the predicate function should be equivalent to the following:
 </p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> <span class="kw4">bool</span> pred<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
 </p><p>While the signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1 <span class="sy3">&amp;</span></span></span> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
-The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt</span></span> can be dereferenced and then implicitly converted to both of them.
+The types <code>Type1</code> and <code>Type2</code> must be such that an object of type <code>InputIt</code> can be dereferenced and then implicitly converted to both of them.
 ​
 </p>
 </td></tr>
@@ -480,10 +490,13 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <td colspan="3"> -<div class="spacer"></div><code>ForwardIt1, ForwardIt2</code> must meet the requirements of <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>.
 </td></tr>
 <tr class="t-par-req">
-<td colspan="3"> -<div class="spacer"></div>The type of dereferenced <code>InputIt</code> must meet the requirements of <a href="../named_req/CopyAssignable.html" title="cpp/named req/CopyAssignable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyAssignable</span></a>. if <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt</span></span> does not satisfy <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>
+<td colspan="3"> -<div class="spacer"></div>The type of dereferenced <code>InputIt</code> must meet the requirements of <a href="../named_req/CopyAssignable.html" title="cpp/named req/CopyAssignable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyAssignable</span></a>. if <code>InputIt</code> does not satisfy <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>
 </td></tr>
 <tr class="t-par-req">
-<td colspan="3"> -<div class="spacer"></div>The type of dereferenced <code>InputIt</code> must meet the requirements of <a href="../named_req/CopyConstructible.html" title="cpp/named req/CopyConstructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyConstructible</span></a>. if neither <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt</span></span> nor <span class="t-c"><span class="mw-geshi cpp source-cpp">OutputIt</span></span> satisfies <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>, or if <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt</span></span> does not satisfy <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a> and the value type of <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt</span></span> differs from that of <span class="t-c"><span class="mw-geshi cpp source-cpp">OutputIt</span></span>.
+<td colspan="3"> -<div class="spacer"></div>The type of dereferenced <code>InputIt</code> must meet the requirements of <a href="../named_req/CopyConstructible.html" title="cpp/named req/CopyConstructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyConstructible</span></a>. if
+<ul><li> neither <code>InputIt</code> nor <code>OutputIt</code> satisfies <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>, or 
+</li><li> <code>InputIt</code> does not satisfy <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a> and the value type of <code>InputIt</code> differs from that of <code>OutputIt</code>
+</li></ul>
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>Output iterator to the element past the last written element.
@@ -498,10 +511,10 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 </li><li> If the algorithm fails to allocate memory, <span class="t-lc"><a href="../memory/new/bad_alloc.html" title="cpp/memory/new/bad alloc">std::bad_alloc</a></span> is thrown.
 </li></ul>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt</span></span> satisfies <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>, this function rereads the input in order to detect duplicates.
-</p><p>Otherwise, if <span class="t-c"><span class="mw-geshi cpp source-cpp">OutputIt</span></span> satisfies <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>, and the value type of <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt</span></span> is the same as that of <span class="t-c"><span class="mw-geshi cpp source-cpp">OutputIt</span></span>, this function compare <code>*d_first</code> to <code>*first</code>.
-</p><p>Otherwise, this function compares <code>*first</code> to a local element copy.
-</p><p>For the overloads with an ExecutionPolicy, there may be a performance cost if the value type of <code>ForwardIterator1</code> is not both <a href="../named_req/CopyConstructible.html" title="cpp/named req/CopyConstructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyConstructible</span></a> and <a href="../named_req/CopyAssignable.html" title="cpp/named req/CopyAssignable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyAssignable</span></a>.
+<p>If <code>InputIt</code> satisfies <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>, this function rereads the input in order to detect duplicates.
+</p><p>Otherwise, if <code>OutputIt</code> satisfies <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>, and the value type of <code>InputIt</code> is the same as that of <code>OutputIt</code>, this function compare <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>d_first</span></span> to <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>first</span></span>.
+</p><p>Otherwise, this function compares <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>first</span></span> to a local element copy.
+</p><p>For the overloads with an <code>ExecutionPolicy</code>, there may be a performance cost if the value type of <code>ForwardIt1</code> is not both <a href="../named_req/CopyConstructible.html" title="cpp/named req/CopyConstructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyConstructible</span></a> and <a href="../named_req/CopyAssignable.html" title="cpp/named req/CopyAssignable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyAssignable</span></a>.
 </p>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <p>See also the implementations in <a rel="nofollow" class="external text" href="https://github.com/gcc-mirror/gcc/blob/d9375e490072d1aae73a93949aa158fcd2a27018/libstdc%2B%2B-v3/include/bits/stl_algo.h#L1046">libstdc++</a> and <a rel="nofollow" class="external text" href="https://github.com/llvm-mirror/libcxx/blob/a12cb9d211019d99b5875b6d8034617cbc24c2cc/include/algorithm#L2177">libc++</a>.
@@ -529,6 +542,46 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">before: The      string    with many       spaces!
 after:  The string with many spaces!</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue239">LWG 239</a>
+</td>
+<td> C++98
+</td>
+<td> the predicate was applied <span class="t-c"><span class="mw-geshi cpp source-cpp">last <span class="sy2">-</span> first</span></span> times
+</td>
+<td> applied <span class="t-c"><span class="mw-geshi cpp source-cpp">last <span class="sy2">-</span> first <span class="sy2">-</span> <span class="nu0">1</span></span></span> times
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue241">LWG 241</a>
+</td>
+<td> C++98
+</td>
+<td> the value type of <code>InputIt</code> was not required to be <a href="../named_req/CopyConstructible.html" title="cpp/named req/CopyConstructible"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyConstructible</span></a>
+</td>
+<td> conditionally required
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue538">LWG 538</a>
+</td>
+<td> C++98
+</td>
+<td> the value type of <code>InputIt</code> was not required to be <a href="../named_req/CopyAssignable.html" title="cpp/named req/CopyAssignable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CopyAssignable</span></a>
+</td>
+<td> conditionally required
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -555,19 +608,19 @@ after:  The string with many spaces!</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 11145/1000000
-Preprocessor generated node count: 15035/1000000
-Post‐expand include size: 319160/2097152 bytes
-Template argument size: 61295/2097152 bytes
+Preprocessor visited node count: 11351/1000000
+Preprocessor generated node count: 17276/1000000
+Post‐expand include size: 320534/2097152 bytes
+Template argument size: 61627/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:791-0!*!0!!en!*!* and timestamp 20220410082358 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:791-0!*!0!!en!*!* and timestamp 20230120041557 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/unique_copy&amp;oldid=125733">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/unique_copy&amp;oldid=125733</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/unique_copy&amp;oldid=144382">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/unique_copy&amp;oldid=144382</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -580,17 +633,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/unique_copy">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 9 January 2021, at 08:11.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 69,765 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -605,7 +647,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.820 secs. -->
+</script><!-- Served in 2.893 secs. -->
 	</body>
-<!-- Cached 20220410082358 -->
+<!-- Cached 20230120041557 -->
 </html>

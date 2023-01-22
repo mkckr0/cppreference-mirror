@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language","wgTitle":"c/language","wgCurRevisionId":140852,"wgArticleId":6037,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language","wgTitle":"c/language","wgCurRevisionId":143581,"wgArticleId":6037,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -84,6 +84,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="mainpagediv">
 <p><a href="comment.html" title="c/comment"> Comments</a><br>
 <a href="language/ascii.html" title="c/language/ascii"> ASCII chart</a><br>
+<a href="language/charset.html" title="c/language/charset"> Character sets and encodings</a><br>
 <a href="language/translation_phases.html" title="c/language/translation phases"> Translation phases</a><br>
 <a href="language/punctuators.html" title="c/language/punctuators"> Punctuation</a><br>
 <a href="language/identifier.html" title="c/language/identifier"> Identifier </a> -
@@ -113,7 +114,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="preprocessor/impl.html" title="c/preprocessor/impl"><code>#pragma</code></a><br>
 <a href="preprocessor/line.html" title="c/preprocessor/line"><code>#line</code></a> -
 <a href="preprocessor/error.html" title="c/preprocessor/error"><code>#error</code></a><br>
-<a href="preprocessor/error.html" title="c/preprocessor/error"><code>#warning</code></a><span class="t-mark-rev t-since-c23">(C23)</span>
+<a href="preprocessor/error.html" title="c/preprocessor/error"><code>#warning</code></a><span class="t-mark-rev t-since-c23">(C23)</span> -
+<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/embed&amp;action=edit&amp;redlink=1" class="new" title="c/preprocessor/embed (page does not exist)"><code>#embed</code></a><span class="t-mark-rev t-since-c23">(C23)</span>
 </p>
 </div>
 <p><b><a href="language/statements.html" title="c/language/statements"> Statements</a></b>
@@ -137,11 +139,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p><a href="language/value_category.html" title="c/language/value category"> Value categories</a><br> 
 <a href="language/eval_order.html" title="c/language/eval order"> Evaluation order and sequencing</a><br> 
 <a href="language/expressions.html#Constants_and_literals" title="c/language/expressions"> Constants and literals</a><br>
- <a href="language/integer_constant.html" title="c/language/integer constant"> Integer constants</a><br>
- <a href="language/floating_constant.html" title="c/language/floating constant"> Floating constants</a><br>
- <a href="language/character_constant.html" title="c/language/character constant"> Character constants</a><br>
- <a href="language/string_literal.html" title="c/language/string literal"> String literals</a><br>
- <a href="language/compound_literal.html" title="c/language/compound literal"> Compound literals</a><span class="t-mark-rev t-since-c99">(C99)</span><br>
+  <a href="language/integer_constant.html" title="c/language/integer constant">Integer constants</a><br>
+  <a href="language/floating_constant.html" title="c/language/floating constant">Floating constants</a><br>
+  <a href="language/character_constant.html" title="c/language/character constant">Character constants</a><br>
+  <a href="language/bool_constant.html" title="c/language/bool constant"><code>true</code>/<code>false</code></a><span class="t-mark-rev t-since-c23">(C23)</span><br>
+  <a href="language/nullptr.html" title="c/language/nullptr"><code>nullptr</code></a><span class="t-mark-rev t-since-c23">(C23)</span><br>
+  <a href="language/string_literal.html" title="c/language/string literal">String literals</a><br>
+  <a href="language/compound_literal.html" title="c/language/compound literal">Compound literals</a><span class="t-mark-rev t-since-c99">(C99)</span><br>
 <a href="language/constant_expression.html" title="c/language/constant expression"> Constant expressions</a><br>
 <a href="language/conversion.html" title="c/language/conversion"> Implicit conversions</a> <br>
 <a href="language/expressions.html#Operators" title="c/language/expressions">Operators</a><br>
@@ -202,7 +206,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p><a href="language/history.html" title="c/language/history"> History of C</a><br>
 <a href="language/conformance.html" title="c/language/conformance"> Conformance</a><br>
 <a href="language/asm.html" title="c/language/asm"> Inline assembly</a><br>
-<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/signal&amp;action=edit&amp;redlink=1" class="new" title="c/language/signal（页面不存在）"> Signal handling</a> <br>
+<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/signal&amp;action=edit&amp;redlink=1" class="new" title="c/language/signal (page does not exist)"> Signal handling</a> <br>
 <a href="language/analyzability.html" title="c/language/analyzability"> Analyzability</a><span class="t-mark-rev t-since-c11">(C11)</span><br>
 </p>
 <br></div>
@@ -216,19 +220,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2361/1000000
-Preprocessor generated node count: 5299/1000000
-Post‐expand include size: 29780/2097152 bytes
-Template argument size: 6749/2097152 bytes
+Preprocessor visited node count: 2458/1000000
+Preprocessor generated node count: 5467/1000000
+Post‐expand include size: 30431/2097152 bytes
+Template argument size: 6979/2097152 bytes
 Highest expansion depth: 13/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6037-0!*!0!*!*!*!* and timestamp 20220707034809 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6037-0!*!0!*!*!*!* and timestamp 20230120004136 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language&amp;oldid=140852">https://en.cppreference.com/mwiki/index.php?title=c/language&amp;oldid=140852</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language&amp;oldid=143581">https://en.cppreference.com/mwiki/index.php?title=c/language&amp;oldid=143581</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -241,17 +245,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 6 July 2022, at 20:48.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 641,436 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -266,7 +259,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.039 secs. -->
+</script><!-- Served in 0.257 secs. -->
 	</body>
-<!-- Cached 20220707035545 -->
+<!-- Cached 20230120004136 -->
 </html>

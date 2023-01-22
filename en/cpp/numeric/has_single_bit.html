@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/has_single_bit","wgTitle":"cpp/numeric/has single bit","wgCurRevisionId":138813,"wgArticleId":17808,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/has_single_bit","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/has_single_bit","wgTitle":"cpp/numeric/has single bit","wgCurRevisionId":144081,"wgArticleId":17808,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/has_single_bit","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -206,26 +207,34 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>Checks if <code>x</code> is an integral power of two.
 </p><p>This overload participates in overload resolution only if <code>T</code> is an unsigned integer type (that is, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">short</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span></span></span>, or an extended unsigned integer type).
 </p>
-<h3><span class="mw-headline" id="Parameters"> Parameters </span></h3>
+<h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  x
+<td> x
 </td>
 <td> -
 </td>
-<td>  value of unsigned integer type
+<td> value of unsigned integer type
 </td></tr></table>
-<h3><span class="mw-headline" id="Return_value"> Return value </span></h3>
+<h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if <code>x</code> is an integral power of two; otherwise <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
 <table class="wikitable">
+
 <tr>
-<td> <a href="../feature_test.html#Library_features" title="cpp/feature test">Feature-test</a> macro:
-</td>
-<td> <a href="../utility/feature_test.html" title="cpp/utility/feature test"><tt>__cpp_lib_int_pow2</tt></a>
+<th><a href="../utility/feature_test.html" title="cpp/utility/feature test">Feature-test</a> macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Library_features" title="cpp/feature test"><code>__cpp_lib_int_pow2</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202002L</span></span></span></td>
+<td><span class="t-mark">(C++20)</span></td>
+<td><a href="../numeric.html#Bit_manipulation_.28since_C.2B.2B20.29" title="cpp/numeric">Integral power-of-2 operations</a>
 </td></tr></table>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <table class="eq-fun-cpp-table">
@@ -238,7 +247,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span> <span class="sy1">&lt;</span><a href="../concepts/unsigned_integral.html"><span class="kw2942">std::<span class="me2">unsigned_integral</span></span></a> T<span class="sy1">&gt;</span>
     requires <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">bool</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">char</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
              <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, char8_t<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">char16_t</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
-             <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">char32_t</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">wchar_t</span><span class="sy1">&gt;</span> 
+             <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">char32_t</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">wchar_t</span><span class="sy1">&gt;</span>
 <span class="kw4">constexpr</span> <span class="kw4">bool</span> has_single_bit<span class="br0">(</span>T x<span class="br0">)</span> <span class="kw1">noexcept</span>
 <span class="br0">{</span>
     <span class="kw1">return</span> x <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span> <span class="sy3">&amp;&amp;</span> <span class="br0">(</span>x <span class="sy3">&amp;</span> <span class="br0">(</span>x <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span><span class="sy4">;</span>
@@ -252,13 +261,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span> <span class="sy1">&lt;</span><a href="../concepts/unsigned_integral.html"><span class="kw2942">std::<span class="me2">unsigned_integral</span></span></a> T<span class="sy1">&gt;</span>
     requires <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">bool</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">char</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
              <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, char8_t<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">char16_t</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span>
-             <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">char32_t</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">wchar_t</span><span class="sy1">&gt;</span> 
+             <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">char32_t</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <span class="sy3">!</span><a href="../concepts/same_as.html"><span class="kw2935">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>T, <span class="kw4">wchar_t</span><span class="sy1">&gt;</span>
 <span class="kw4">constexpr</span> <span class="kw4">bool</span> has_single_bit<span class="br0">(</span>T x<span class="br0">)</span> <span class="kw1">noexcept</span>
 <span class="br0">{</span>
-    <span class="kw1">return</span> <a href="popcount.html"><span class="kw3254">std::<span class="me2">popcount</span></span></a><span class="br0">(</span>x<span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">1</span><span class="sy4">;</span> 
+    <span class="kw1">return</span> <a href="popcount.html"><span class="kw3254">std::<span class="me2">popcount</span></span></a><span class="br0">(</span>x<span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">1</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr></table>
-<h3><span class="mw-headline" id="Example"> Example </span></h3>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;bit&gt;</span>
 <span class="co2">#include &lt;bitset&gt;</span>
@@ -267,9 +276,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/boolalpha.html"><span class="kw1768">std::<span class="me2">boolalpha</span></span></a><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> i <span class="sy1">=</span> 0u<span class="sy4">;</span> i <span class="sy1">&lt;</span> 10u<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span> <span class="br0">{</span>
-        <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"has_single_bit( "</span> <span class="sy1">&lt;&lt;</span> <a href="../utility/bitset.html"><span class="kw1032">std::<span class="me2">bitset</span></span></a><span class="sy1">&lt;</span><span class="nu0">4</span><span class="sy1">&gt;</span><span class="br0">(</span>i<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" ) = "</span>
-                  <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">has_single_bit</span><span class="br0">(</span>i<span class="br0">)</span> <span class="co1">// `ispow2` before P1956R1</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> u <span class="sy1">=</span> 0u<span class="sy4">;</span> u <span class="sy3">!</span><span class="sy1">=</span> 10u<span class="sy4">;</span> <span class="sy2">++</span>u<span class="br0">)</span> <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"has_single_bit( "</span> <span class="sy1">&lt;&lt;</span> <a href="../utility/bitset.html"><span class="kw1032">std::<span class="me2">bitset</span></span></a><span class="sy1">&lt;</span><span class="nu0">4</span><span class="sy1">&gt;</span><span class="br0">(</span>u<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" ) = "</span>
+                  <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">has_single_bit</span><span class="br0">(</span>u<span class="br0">)</span> <span class="co1">// `ispow2` before P1956R1</span>
                   <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
@@ -286,7 +295,7 @@ has_single_bit( 0111 ) = false
 has_single_bit( 1000 ) = true
 has_single_bit( 1001 ) = false</pre></div></div> 
 </div>
-<h3><span class="mw-headline" id="See_also"> See also </span></h3>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc">
@@ -307,19 +316,19 @@ has_single_bit( 1001 ) = false</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3937/1000000
-Preprocessor generated node count: 8650/1000000
-Post‐expand include size: 115113/2097152 bytes
-Template argument size: 24159/2097152 bytes
+Preprocessor visited node count: 4002/1000000
+Preprocessor generated node count: 8781/1000000
+Post‐expand include size: 116267/2097152 bytes
+Template argument size: 24403/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17808-0!*!0!!en!*!* and timestamp 20220723215413 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17808-0!*!0!!en!*!* and timestamp 20230120042850 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/has_single_bit&amp;oldid=138813">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/has_single_bit&amp;oldid=138813</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/has_single_bit&amp;oldid=144081">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/has_single_bit&amp;oldid=144081</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -332,17 +341,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/numeric/has_single_bit">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 March 2022, at 17:02.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 24,147 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -357,7 +355,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.888 secs. -->
+</script><!-- Served in 1.272 secs. -->
 	</body>
-<!-- Cached 20220723215413 -->
+<!-- Cached 20230120042850 -->
 </html>

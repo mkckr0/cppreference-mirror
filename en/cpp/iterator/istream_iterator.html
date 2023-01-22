@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -271,7 +272,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink"><tt>std::istream_iterator</tt></strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> Member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="istream_iterator/istream_iterator.html" title="cpp/iterator/istream iterator/istream iterator"><span class="t-lines"><span>istream_iterator::istream_iterator</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="istream_iterator/~istream_iterator.html" title="cpp/iterator/istream iterator/~istream iterator"><span class="t-lines"><span>istream_iterator::~istream_iterator</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="istream_iterator/%7Eistream_iterator.html" title="cpp/iterator/istream iterator/~istream iterator"><span class="t-lines"><span>istream_iterator::~istream_iterator</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="istream_iterator/operator_star_.html" title="cpp/iterator/istream iterator/operator*"><span class="t-lines"><span>istream_iterator::operator*</span><span>istream_iterator::operator-&gt;</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="istream_iterator/operator_arith.html" title="cpp/iterator/istream iterator/operator arith"><span class="t-lines"><span>istream_iterator::operator++</span><span>istream_iterator::operator++(int)</span></span></a></div></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> Non-member functions</td></tr>
@@ -396,7 +397,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  constructs a new istream_iterator <br> <span class="t-mark">(public member function)</span> </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="istream_iterator/~istream_iterator.html" title="cpp/iterator/istream iterator/~istream iterator"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div t-dsc-member-nobold-div"><div><a href="istream_iterator/%7Eistream_iterator.html" title="cpp/iterator/istream iterator/~istream iterator"> <span class="t-lines"><span>(destructor)</span></span></a></div></div>
 </td>
 <td>  destructs an istream_iterator, including the cached value <br> <span class="t-mark">(public member function)</span> </td></tr>
 
@@ -487,15 +488,15 @@ The first even number is 8.</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 8911/1000000
-Preprocessor generated node count: 13883/1000000
-Post‐expand include size: 287662/2097152 bytes
-Template argument size: 58717/2097152 bytes
+Preprocessor visited node count: 8923/1000000
+Preprocessor generated node count: 13924/1000000
+Post‐expand include size: 288227/2097152 bytes
+Template argument size: 58762/2097152 bytes
 Highest expansion depth: 22/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:4909-0!*!0!!en!*!* and timestamp 20220728190806 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:4909-0!*!0!!en!*!* and timestamp 20230120013457 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -512,17 +513,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/iterator/istream_iterator">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 1 July 2021, at 06:10.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 234,433 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -537,7 +527,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.654 secs. -->
+</script><!-- Served in 2.264 secs. -->
 	</body>
-<!-- Cached 20220728190806 -->
+<!-- Cached 20230120013457 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/io/fwprintf","wgTitle":"c/io/fwprintf","wgCurRevisionId":141128,"wgArticleId":6228,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/io/fwprintf","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/io/fwprintf","wgTitle":"c/io/fwprintf","wgCurRevisionId":144499,"wgArticleId":6228,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/io/fwprintf","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -243,7 +243,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c95 t-until-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> fwprintf<span class="br0">(</span> <a href="FILE.html"><span class="kw881">FILE</span></a> <span class="sy2">*</span>stream, <span class="kw4">const</span> <span class="kw4">wchar_t</span><span class="sy2">*</span> format, ... <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> fwprintf<span class="br0">(</span> <a href="FILE.html"><span class="kw881">FILE</span></a> <span class="sy2">*</span>stream, <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>format, ... <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c95">(since C95)</span> <br><span class="t-mark-rev t-until-c99">(until C99)</span> </td>
 </tr>
@@ -262,7 +262,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl t-since-c95 t-until-c99">
 <td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> swprintf<span class="br0">(</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>buffer, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> bufsz,<br>
-              <span class="kw4">const</span> <span class="kw4">wchar_t</span><span class="sy2">*</span> format, ... <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+              <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>format, ... <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c95">(since C95)</span> <br><span class="t-mark-rev t-until-c99">(until C99)</span> </td>
 </tr>
@@ -286,13 +286,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl t-since-c11">
 <td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> swprintf_s<span class="br0">(</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> buffer, rsize_t bufsz,<br>
-                <span class="kw4">const</span> <span class="kw4">wchar_t</span><span class="sy2">*</span> <span class="kw4">restrict</span> format, ... <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> format, ... <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (6) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> snwprintf_s<span class="br0">(</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span> <span class="kw4">restrict</span> s, rsize_t n,<br>
-                 <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span> <span class="kw4">restrict</span> format, ... <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> snwprintf_s<span class="br0">(</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> s, rsize_t n,<br>
+                 <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> format, ... <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (7) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
@@ -302,7 +302,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Writes the results to <span class="t-lc"><a href="std_streams.html" title="c/io/std streams">stdout</a></span>.</div>
 <div class="t-li1"><span class="t-li">2)</span> Writes the results to a file stream <code>stream</code>.</div>
-<div class="t-li1"><span class="t-li">3)</span> If <code>bufsz</code> is greater than zero, writes the results to a wide string <code>buffer</code>. At most <span class="t-c"><span class="mw-geshi c source-c">bufsz<span class="sy2">-</span><span class="nu0">1</span></span></span> wide characters are written followed by null wide character. If <code>bufsz</code> is zero, nothing is written (and <code>buffer</code> may be a null pointer), however the return value (number of wide characters that would be written) is still calculated and returned.</div>
+<div class="t-li1"><span class="t-li">3)</span> If <code>bufsz</code> is greater than zero, writes the results to a wide string <code>buffer</code>. At most <span class="t-c"><span class="mw-geshi c source-c">bufsz<span class="sy2">-</span><span class="nu0">1</span></span></span> wide characters are written followed by null wide character. If <code>bufsz</code> is zero, nothing is written (and <code>buffer</code> may be a null pointer).</div>
 <div class="t-li1"><span class="t-li">4-6)</span> Same as <span class="t-v">(1-3)</span>, except that the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> the conversion specifier <code>%n</code> is present in <code>format</code>
 </li><li> any of the arguments corresponding to <code>%s</code> is a null pointer
@@ -313,7 +313,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <div class="t-li1"><span class="t-li">7)</span> Same as <span class="t-v">(6)</span>, except it will truncate the result to fit within the array pointed to by s.
-<dl><dd>As with all bounds-checked functions, <code>wprintf_s</code> , <code>fwprintf_s</code>, <code>swprintf_s</code>, and <code>snwprintf_s</code> are only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;stdio.h&gt;</code>.</dd></dl></div>
+<dl><dd>As with all bounds-checked functions, <code>wprintf_s</code> , <code>fwprintf_s</code>, <code>swprintf_s</code>, and <code>snwprintf_s</code> are only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../io.html" title="c/io"><tt>&lt;stdio.h&gt;</tt></a>.</dd></dl></div>
 
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -510,8 +510,8 @@ If the <b>l</b> specifier is used, the argument must be a pointer to the initial
 <td style="text-align:left;">
 <dl><dd>converts a <b>signed integer</b> into decimal representation <i>[-]dddd</i>.
 </dd></dl>
-<p><i>Precision</i> specifies the minimum number of digits to appear. The default precision is <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span>.<br> 
-If both the converted value and the precision are <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> the conversion results in no characters.
+<p><i>Precision</i> specifies the minimum number of digits to appear. The default precision is <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span>.<br><br> 
+If both the converted value and the precision are <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> the conversion results in no characters.<br><br>
 </p>
 </td>
 <td rowspan="1"> <div class="t-vertical"><div><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span></span></span></div></div>
@@ -714,7 +714,7 @@ For infinity and not-a-number conversion style see notes.
 <dl><dd>returns the <b>number of characters written</b> so far by this call to the function.
 </dd></dl>
 <p>The result is <i>written</i> to the value pointed to by the argument. 
-The specification may not contain any <i>flag</i>, <i>field width</i>, or <i>precision</i>.
+The specification may not contain any <i>flag</i>, <i>field width</i>, or <i>precision</i>. <br><br><br><br>
 </p>
 </td>
 <td> <div class="t-vertical"><div><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span><span class="sy2">*</span></span></span></div></div>
@@ -774,7 +774,7 @@ The specification may not contain any <i>flag</i>, <i>field width</i>, or <i>pre
 <div class="t-li1"><span class="t-li">6)</span> Number of wide characters (not counting the terminating null) that were written to <code>buffer</code>. Returns a negative value on encoding errors and on overflow. Returns zero on all other errors.</div>
 <div class="t-li1"><span class="t-li">7)</span> Number of wide characters (not counting the terminating null) that would have been written to <code>buffer</code> had <code>bufsz</code> been sufficiently large, or a negative value if an error occurs. (meaning, write was successful and complete only if the return is nonnegative and less than <code>bufsz</code>)</div>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>While narrow strings provide <span class="t-lc"><a href="fprintf.html" title="c/io/fprintf">snprintf</a></span>, which makes it possible to determine the required output buffer size, there is no equivalent for wide strings (until C11's <code>snwprintf_s</code>), and in order to determine the buffer size, the program may need to call <span class="t-lc"><strong class="selflink">swprintf</strong></span>, check the result value, and reallocate a larger buffer, trying again until successful.
+<p>While narrow strings provide <span class="t-lc"><a href="fprintf.html" title="c/io/fprintf">snprintf</a></span>, which makes it possible to determine the required output buffer size, there is no equivalent for wide strings<span class="t-rev-inl t-since-c11"><span> (until <code>snwprintf_s</code>)</span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span>, and in order to determine the buffer size, the program may need to call <code>swprintf</code>, check the result value, and reallocate a larger buffer, trying again until successful.
 </p><p><code>snwprintf_s</code>, unlike <code>swprintf_s</code>, will truncate the result to fit within the array pointed to by <code>buffer</code>, even though truncation is treated as an error by most bounds-checked functions.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
@@ -854,19 +854,19 @@ The specification may not contain any <i>flag</i>, <i>field width</i>, or <i>pre
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 9091/1000000
-Preprocessor generated node count: 14156/1000000
-Post‐expand include size: 234241/2097152 bytes
-Template argument size: 42755/2097152 bytes
+Preprocessor visited node count: 9164/1000000
+Preprocessor generated node count: 15688/1000000
+Post‐expand include size: 234636/2097152 bytes
+Template argument size: 42850/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6228-0!*!0!!en!*!* and timestamp 20220717004915 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6228-0!*!0!!en!*!* and timestamp 20230120012950 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fwprintf&amp;oldid=141128">https://en.cppreference.com/mwiki/index.php?title=c/io/fwprintf&amp;oldid=141128</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fwprintf&amp;oldid=144499">https://en.cppreference.com/mwiki/index.php?title=c/io/fwprintf&amp;oldid=144499</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -879,17 +879,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/io/fwprintf">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 July 2022, at 17:49.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 51,004 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -904,7 +893,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.037 secs. -->
+</script><!-- Served in 2.132 secs. -->
 	</body>
-<!-- Cached 20220717023753 -->
+<!-- Cached 20230120012951 -->
 </html>

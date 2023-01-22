@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/partial_sort","wgTitle":"cpp/algorithm/partial sort","wgCurRevisionId":139354,"wgArticleId":760,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/partial_sort","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/partial_sort","wgTitle":"cpp/algorithm/partial sort","wgCurRevisionId":146489,"wgArticleId":760,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/partial_sort","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -367,7 +368,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> RandomIt <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_1"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> RandomIt <span class="sy1">&gt;</span><br>
 <span class="kw4">void</span> partial_sort<span class="br0">(</span> RandomIt first, RandomIt middle, RandomIt last <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
@@ -381,7 +382,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> RandomIt <span class="sy1">&gt;</span><br>
-<p><span class="kw4">void</span> partial_sort<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, <br>
+<p><span class="kw4">void</span> partial_sort<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
 </p>
                    RandomIt first, RandomIt middle, RandomIt last <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
@@ -394,7 +395,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> RandomIt, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_3"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> RandomIt, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
 <p><span class="kw4">void</span> partial_sort<span class="br0">(</span> RandomIt first, RandomIt middle, RandomIt last,<br>
 </p>
                    Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -426,24 +427,35 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Elements are compared using <code>operator&lt;</code>.</div>
 <div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary comparison function <code>comp</code>.</div>
-<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <code>policy</code>. These overloads do not participate in overload resolution unless <span class="t-rev-inl t-until-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span> <span class="t-rev-inl t-since-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> is true.</div>
+<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <code>policy</code>. These overloads do not participate in overload resolution unless  <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table></div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  random access iterators defining the range
+<td> random access iterators defining the range
 </td></tr>
 <tr class="t-par">
-<td>  middle
+<td> middle
 </td>
 <td> -
 </td>
-<td>  random access iterator defining the one-past-the-end iterator of the range to be sorted
+<td> random access iterator defining the one-past-the-end iterator of the range to be sorted
 </td></tr>
 <tr class="t-par">
 <td>  policy
@@ -453,15 +465,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  the execution policy to use. See <a href="execution_policy_tag_t.html" title="cpp/algorithm/execution policy tag t">execution policy</a> for details.
 </td></tr>
 <tr class="t-par">
-<td>   comp
+<td> comp
 </td>
 <td> -
 </td>
-<td>  comparison function object (i.e. an object that satisfies the requirements of <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>) which returns ​<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the first argument is <i>less</i> than (i.e. is ordered <i>before</i>) the second. <br>
+<td> comparison function object (i.e. an object that satisfies the requirements of <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>) which returns ​<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the first argument is <i>less</i> than (i.e. is ordered <i>before</i>) the second. <br>
 <p>The signature of the comparison function should be equivalent to the following:
-</p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> <span class="kw4">bool</span> cmp<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
-</p><p>While the signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1 <span class="sy3">&amp;</span></span></span> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
-The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">RandomIt</span></span> can be dereferenced and then implicitly converted to both of them.
+</p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span> cmp<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
+</p><p>While the signature does not need to have <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span><span class="sy3">&amp;</span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <code>Type1&amp;</code> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <code>Type1</code> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
+The types <code>Type1</code> and <code>Type2</code> must be such that an object of type <code>RandomIt</code> can be dereferenced and then implicitly converted to both of them.
 ​
 </p>
 </td></tr>
@@ -487,12 +499,12 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 </li><li> If the algorithm fails to allocate memory, <span class="t-lc"><a href="../memory/new/bad_alloc.html" title="cpp/memory/new/bad alloc">std::bad_alloc</a></span> is thrown.
 </li></ul>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<h4><span class="mw-headline" id="Algorithm"> Algorithm </span></h4>
+<h4><span class="mw-headline" id="Algorithm">Algorithm</span></h4>
 <p>The algorithm used is typically <i>heap select</i> to select the smallest elements, and <i>heap sort</i> to sort the selected elements in the heap in ascending order.
 </p><p>To select elements, a heap is used (see <a href="https://en.wikipedia.org/wiki/Heap_(data_structure)#Applications" class="extiw" title="enwiki:Heap (data structure)">heap</a>). For example, for <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">&lt;</span></span></span> as comparison function, <i>max-heap</i> is used to select <code>middle − first</code> smallest elements.
 </p><p><a href="https://en.wikipedia.org/wiki/Heapsort" class="extiw" title="enwiki:Heapsort">Heap sort</a> is used after selection to sort <code>[first, middle)</code> selected elements (see <span class="t-lc"><a href="sort_heap.html" title="cpp/algorithm/sort heap">std::sort_heap</a></span>).
 </p>
-<h4><span class="mw-headline" id="Intended_use"> Intended use </span></h4>
+<h4><span class="mw-headline" id="Intended_use">Intended use</span></h4>
 <p><span class="t-c"><span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">partial_sort</span></span></span> algorithms are intended to be used for <i>small constant numbers</i> of <code>[first, middle)</code> selected elements.
 </p>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
@@ -501,69 +513,71 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <table class="eq-fun-cpp-table">
 
 <tr>
-<th> First version
+<th><a href="partial_sort.html#Version_1">partial_sort (1)</a>
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> RandomIt, <span class="kw1">typename</span> Compare<span class="sy1">&gt;</span>
-<span class="kw4">void</span> partial_sort<span class="br0">(</span>RandomIt first, RandomIt middle, RandomIt last, Compare comp<span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">if</span> <span class="br0">(</span>first <span class="sy1">==</span> middle<span class="br0">)</span>
-        <span class="kw1">return</span><span class="sy4">;</span>
-    <a href="make_heap.html"><span class="kw1639">std::<span class="me2">make_heap</span></span></a><span class="br0">(</span>first, middle, comp<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> it <span class="br0">{</span>middle<span class="br0">}</span><span class="sy4">;</span> it <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>it<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>it, <span class="sy2">*</span>first<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
-            <a href="pop_heap.html"><span class="kw1641">std::<span class="me2">pop_heap</span></span></a><span class="br0">(</span>first, middle, comp<span class="br0">)</span><span class="sy4">;</span>
-            <a href="iter_swap.html"><span class="kw1605">std::<span class="me2">iter_swap</span></span></a><span class="br0">(</span>middle <span class="sy2">-</span> <span class="nu0">1</span>, it<span class="br0">)</span><span class="sy4">;</span>
-            <a href="push_heap.html"><span class="kw1640">std::<span class="me2">push_heap</span></span></a><span class="br0">(</span>first, middle, comp<span class="br0">)</span><span class="sy4">;</span>
-        <span class="br0">}</span>
-    <span class="br0">}</span>
-    <a href="sort_heap.html"><span class="kw1642">std::<span class="me2">sort_heap</span></span></a><span class="br0">(</span>first, middle, comp<span class="br0">)</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> RandomIt<span class="sy1">&gt;</span>
+<span class="co1">// constexpr since C++20</span>
+<span class="kw4">void</span> partial_sort<span class="br0">(</span>RandomIt first, RandomIt middle, RandomIt last<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">typedef</span> <span class="kw1">typename</span> <a href="../iterator/iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>RandomIt<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value_type</span> VT<span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="me2">partial_sort</span><span class="br0">(</span>first, middle, last, <a href="../utility/functional/less.html"><span class="kw1044">std::<span class="me2">less</span></span></a><span class="sy1">&lt;</span>VT<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Second version
+<th><a href="partial_sort.html#Version_3">partial_sort (3)</a>
 </th></tr>
 <tr>
 <td>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">namespace</span> impl <span class="br0">{</span>
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> RandomIt, <span class="kw1">typename</span> Compare <span class="sy1">=</span> <a href="../utility/functional/less.html"><span class="kw1044">std::<span class="me2">less</span></span></a><span class="sy1">&lt;</span><span class="kw1">typename</span> <a href="../iterator/iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>RandomIt<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value_type</span><span class="sy1">&gt;&gt;</span>
-<span class="kw4">void</span> sift_down<span class="br0">(</span>RandomIt begin, RandomIt end, <span class="kw4">const</span> Compare <span class="sy3">&amp;</span>comp <span class="sy1">=</span> <span class="br0">{</span><span class="br0">}</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">// sift down element at 'begin'</span>
-  <span class="kw4">const</span> <span class="kw4">auto</span> length <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span>size_t<span class="sy1">&gt;</span><span class="br0">(</span>end <span class="sy2">-</span> begin<span class="br0">)</span><span class="sy4">;</span>
-  size_t current <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-  size_t next <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
-  <span class="kw1">while</span> <span class="br0">(</span>next <span class="sy1">&lt;</span> length<span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>begin <span class="sy2">+</span> next<span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>begin <span class="sy2">+</span> <span class="br0">(</span>next <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
-      <span class="sy2">--</span>next<span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>comp<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>begin <span class="sy2">+</span> current<span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>begin <span class="sy2">+</span> next<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
-      <span class="kw1">return</span><span class="sy4">;</span>
-    <a href="iter_swap.html"><span class="kw1605">std::<span class="me2">iter_swap</span></span></a><span class="br0">(</span>begin <span class="sy2">+</span> current, begin <span class="sy2">+</span> next<span class="br0">)</span><span class="sy4">;</span>
-    current <span class="sy1">=</span> next<span class="sy4">;</span>
-    next <span class="sy1">=</span> <span class="nu0">2</span> <span class="sy2">*</span> current <span class="sy2">+</span> <span class="nu0">2</span><span class="sy4">;</span>
-  <span class="br0">}</span>
-  <span class="sy2">--</span>next<span class="sy4">;</span>
-  <span class="kw1">if</span> <span class="br0">(</span>next <span class="sy1">&lt;</span> length <span class="sy3">&amp;&amp;</span> comp<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>begin <span class="sy2">+</span> current<span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>begin <span class="sy2">+</span> next<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
-    <a href="iter_swap.html"><span class="kw1605">std::<span class="me2">iter_swap</span></span></a><span class="br0">(</span>begin <span class="sy2">+</span> current, begin <span class="sy2">+</span> next<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> RandomIt, <span class="kw1">typename</span> Compare<span class="sy1">&gt;</span>
+<span class="co1">// constexpr</span>
+<span class="kw4">void</span> sift_down<span class="br0">(</span>RandomIt first, RandomIt last, <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="co1">// sift down element at 'first'</span>
+    <span class="kw4">const</span> <span class="kw4">auto</span> length <span class="sy1">=</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span>size_t<span class="sy1">&gt;</span><span class="br0">(</span>last <span class="sy2">-</span> first<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> current <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+    <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> next <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
+    <span class="kw1">while</span> <span class="br0">(</span>next <span class="sy1">&lt;</span> length<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>first <span class="sy2">+</span> next<span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>first <span class="sy2">+</span> <span class="br0">(</span>next <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+            <span class="sy2">--</span>next<span class="sy4">;</span>
+        <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>comp<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>first <span class="sy2">+</span> current<span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>first <span class="sy2">+</span> next<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+            <span class="kw1">return</span><span class="sy4">;</span>
+        <a href="iter_swap.html"><span class="kw1605">std::<span class="me2">iter_swap</span></span></a><span class="br0">(</span>first <span class="sy2">+</span> current, first <span class="sy2">+</span> next<span class="br0">)</span><span class="sy4">;</span>
+        current <span class="sy1">=</span> next<span class="sy4">;</span>
+        next <span class="sy1">=</span> <span class="nu0">2</span> <span class="sy2">*</span> current <span class="sy2">+</span> <span class="nu0">2</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+    <span class="sy2">--</span>next<span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>next <span class="sy1">&lt;</span> length <span class="sy3">&amp;&amp;</span> comp<span class="br0">(</span><span class="sy2">*</span><span class="br0">(</span>first <span class="sy2">+</span> current<span class="br0">)</span>, <span class="sy2">*</span><span class="br0">(</span>first <span class="sy2">+</span> next<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+        <a href="iter_swap.html"><span class="kw1605">std::<span class="me2">iter_swap</span></span></a><span class="br0">(</span>first <span class="sy2">+</span> current, first <span class="sy2">+</span> next<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> RandomIt, <span class="kw1">typename</span> Compare <span class="sy1">=</span> <a href="../utility/functional/less.html"><span class="kw1044">std::<span class="me2">less</span></span></a><span class="sy1">&lt;</span><span class="kw1">typename</span> <a href="../iterator/iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>RandomIt<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value_type</span><span class="sy1">&gt;&gt;</span>
-<span class="kw4">void</span> heap_select<span class="br0">(</span>RandomIt begin, RandomIt middle, RandomIt end, <span class="kw4">const</span> Compare <span class="sy3">&amp;</span>comp <span class="sy1">=</span> <span class="br0">{</span><span class="br0">}</span><span class="br0">)</span> <span class="br0">{</span>
-  <a href="make_heap.html"><span class="kw1639">std::<span class="me2">make_heap</span></span></a><span class="br0">(</span>begin, middle, comp<span class="br0">)</span><span class="sy4">;</span>
-  <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> i <span class="sy1">=</span> middle<span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> end<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
-    <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>i, <span class="sy2">*</span>begin<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
-      <a href="iter_swap.html"><span class="kw1605">std::<span class="me2">iter_swap</span></span></a><span class="br0">(</span>begin, i<span class="br0">)</span><span class="sy4">;</span>
-      sift_down<span class="br0">(</span>begin, middle, comp<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> RandomIt, <span class="kw1">typename</span> Compare<span class="sy1">&gt;</span>
+<span class="co1">// constexpr</span>
+<span class="kw4">void</span> heap_select<span class="br0">(</span>RandomIt first, RandomIt middle, RandomIt last, <span class="kw4">const</span> Compare<span class="sy3">&amp;</span> comp<span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="make_heap.html"><span class="kw1639">std::<span class="me2">make_heap</span></span></a><span class="br0">(</span>first, middle, comp<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> i <span class="sy1">=</span> middle<span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>i, <span class="sy2">*</span>first<span class="br0">)</span><span class="br0">)</span>
+        <span class="br0">{</span>
+            <a href="iter_swap.html"><span class="kw1605">std::<span class="me2">iter_swap</span></span></a><span class="br0">(</span>first, i<span class="br0">)</span><span class="sy4">;</span>
+            sift_down<span class="br0">(</span>first, middle, comp<span class="br0">)</span><span class="sy4">;</span>
+        <span class="br0">}</span>
     <span class="br0">}</span>
 <span class="br0">}</span>
 <span class="br0">}</span> <span class="co1">// namespace impl</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> RandomIt, <span class="kw1">typename</span> Compare <span class="sy1">=</span> <a href="../utility/functional/less.html"><span class="kw1044">std::<span class="me2">less</span></span></a><span class="sy1">&lt;</span><span class="kw1">typename</span> <a href="../iterator/iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>RandomIt<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value_type</span><span class="sy1">&gt;&gt;</span>
-<span class="kw4">void</span> partial_sort<span class="br0">(</span>RandomIt begin, RandomIt middle, RandomIt end, Compare comp <span class="sy1">=</span> <span class="br0">{</span><span class="br0">}</span><span class="br0">)</span> <span class="br0">{</span>
-  impl<span class="sy4">::</span><span class="me2">heap_select</span><span class="br0">(</span>begin, middle, end, comp<span class="br0">)</span><span class="sy4">;</span>
-  <a href="sort_heap.html"><span class="kw1642">std::<span class="me2">sort_heap</span></span></a><span class="br0">(</span>begin, middle, comp<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> RandomIt, <span class="kw1">typename</span> Compare<span class="sy1">&gt;</span>
+<span class="co1">// constexpr since C++20</span>
+<span class="kw4">void</span> partial_sort<span class="br0">(</span>RandomIt first, RandomIt middle, RandomIt last, Compare comp<span class="br0">)</span>
+<span class="br0">{</span>
+    impl<span class="sy4">::</span><span class="me2">heap_select</span><span class="br0">(</span>first, middle, last, comp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="sort_heap.html"><span class="kw1642">std::<span class="me2">sort_heap</span></span></a><span class="br0">(</span>first, middle, comp<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr></table>
-<p>Note that the first version may be less efficient in practice.
-</p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;algorithm&gt;</span>
@@ -571,23 +585,31 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <span class="co2">#include &lt;functional&gt;</span>
 <span class="co2">#include &lt;iostream&gt;</span>
  
-<span class="kw4">auto</span> print <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">auto</span> <span class="kw4">const</span><span class="sy3">&amp;</span> s, <span class="kw4">int</span> middle<span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> a <span class="sy4">:</span> s<span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> a <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span> <span class="br0">}</span>
+<span class="kw4">auto</span> print <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">auto</span> <span class="kw4">const</span><span class="sy3">&amp;</span> s, <span class="kw4">int</span> middle<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> a <span class="sy4">:</span> s<span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> a <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
     <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>middle <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">while</span> <span class="br0">(</span>middle<span class="sy2">--</span><span class="sy1">&gt;</span><span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"──"</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw1">if</span> <span class="br0">(</span>middle <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">while</span> <span class="br0">(</span>middle<span class="sy2">--</span> <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+            <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"──"</span><span class="sy4">;</span>
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'^'</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>middle <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> i <span class="sy1">=</span> s.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy2">+</span> middle<span class="sy4">;</span> <span class="sy2">--</span>i<span class="sy4">;</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"  "</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">for</span> <span class="br0">(</span><a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'^'</span><span class="sy4">;</span> middle<span class="sy2">++</span> <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="sy4">;</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"──"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
-    <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>  
+    <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span>middle <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> i <span class="sy1">=</span> s.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy2">+</span> middle<span class="sy4">;</span> <span class="sy2">--</span>i<span class="sy4">;</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"  "</span><span class="br0">)</span>
+        <span class="br0">{</span> <span class="br0">}</span>
+ 
+        <span class="kw1">for</span> <span class="br0">(</span><a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'^'</span><span class="sy4">;</span> middle<span class="sy2">++</span> <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="sy4">;</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"──"</span><span class="br0">)</span>
+        <span class="br0">{</span> <span class="br0">}</span>
+    <span class="br0">}</span>
+    <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../container/array.html"><span class="kw1271">std::<span class="me2">array</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="nu0">10</span><span class="sy1">&gt;</span> s<span class="br0">{</span><span class="nu0">5</span>, <span class="nu0">7</span>, <span class="nu0">4</span>, <span class="nu0">2</span>, <span class="nu0">8</span>, <span class="nu0">6</span>, <span class="nu0">1</span>, <span class="nu0">9</span>, <span class="nu0">0</span>, <span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span>
- 
     print<span class="br0">(</span>s, <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
     std<span class="sy4">::</span><span class="me2">partial_sort</span><span class="br0">(</span>s.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, s.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span> <span class="sy2">+</span> <span class="nu0">3</span>, s.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     print<span class="br0">(</span>s, <span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span>
@@ -598,13 +620,13 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">5 7 4 2 8 6 1 9 0 3 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">5 7 4 2 8 6 1 9 0 3
  
-0 1 2 7 8 6 5 9 4 3 
+0 1 2 7 8 6 5 9 4 3
 ──────^
-4 5 6 7 8 9 3 2 1 0 
+4 5 6 7 8 9 3 2 1 0
           ^────────
-4 3 2 1 0 5 6 7 8 9 
+4 3 2 1 0 5 6 7 8 9
         ^──────────</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
@@ -638,19 +660,19 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10697/1000000
-Preprocessor generated node count: 15005/1000000
-Post‐expand include size: 310550/2097152 bytes
-Template argument size: 65167/2097152 bytes
+Preprocessor visited node count: 10803/1000000
+Preprocessor generated node count: 17382/1000000
+Post‐expand include size: 311198/2097152 bytes
+Template argument size: 64868/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:760-0!*!0!!en!*!* and timestamp 20220421042724 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:760-0!*!0!!en!*!* and timestamp 20230120005005 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/partial_sort&amp;oldid=139354">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/partial_sort&amp;oldid=139354</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/partial_sort&amp;oldid=146489">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/partial_sort&amp;oldid=146489</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -663,17 +685,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/partial_sort">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 April 2022, at 21:27.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 173,704 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -688,7 +699,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.037 secs. -->
+</script><!-- Served in 2.574 secs. -->
 	</body>
-<!-- Cached 20220421045528 -->
+<!-- Cached 20230120005005 -->
 </html>

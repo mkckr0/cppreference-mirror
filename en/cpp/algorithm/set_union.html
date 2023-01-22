@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/set_union","wgTitle":"cpp/algorithm/set union","wgCurRevisionId":137519,"wgArticleId":782,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/set_union","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/set_union","wgTitle":"cpp/algorithm/set union","wgCurRevisionId":146006,"wgArticleId":782,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/set_union","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -367,11 +368,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_1"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt <span class="sy1">&gt;</span><br>
 <p>OutputIt set_union<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
-                    InputIt2 first2, InputIt2 last2,<br>
 </p>
-                    OutputIt d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                    InputIt2 first2, InputIt2 last2, OutputIt d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
@@ -386,12 +386,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2, <span class="kw1">class</span> ForwardIt3 <span class="sy1">&gt;</span><br>
-<p>ForwardIt3 set_union<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1,<br>
+<p>          <span class="kw1">class</span> ForwardIt2, <span class="kw1">class</span> ForwardIt3 <span class="sy1">&gt;</span><br>
+ForwardIt3 set_union<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
                       ForwardIt1 first1, ForwardIt1 last1,<br>
-                      ForwardIt2 first2, ForwardIt2 last2,<br>
 </p>
-                      ForwardIt3 d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                      ForwardIt2 first2, ForwardIt2 last2, ForwardIt3 d_first <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
 </tr>
@@ -402,9 +402,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2,<br>
-<p>          <span class="kw1">class</span> OutputIt, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
-OutputIt set_union<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
+<td> <div><span id="Version_3"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<p>OutputIt set_union<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
                     InputIt2 first2, InputIt2 last2,<br>
 </p>
                     OutputIt d_first, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -412,9 +411,8 @@ OutputIt set_union<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2,<br>
-<p>          <span class="kw1">class</span> OutputIt, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
-<span class="kw4">constexpr</span> OutputIt set_union<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<p><span class="kw4">constexpr</span> OutputIt set_union<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
                               InputIt2 first2, InputIt2 last2,<br>
 </p>
                               OutputIt d_first, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -423,9 +421,8 @@ OutputIt set_union<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy,<br>
-<p>          <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2,<br>
-          <span class="kw1">class</span> ForwardIt3, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1,<br>
+<p>          <span class="kw1">class</span> ForwardIt2, <span class="kw1">class</span> ForwardIt3, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
 ForwardIt3 set_union<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
                       ForwardIt1 first1, ForwardIt1 last1,<br>
                       ForwardIt2 first2, ForwardIt2 last2,<br>
@@ -436,37 +433,49 @@ ForwardIt3 set_union<span class="br0">(</span> ExecutionPolicy<span class="sy3">
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Constructs a sorted union beginning at <code>d_first</code> consisting of the set of elements present in one or both sorted ranges <code>[first1, last1)</code> and <code>[first2, last2)</code>. 
-</p><p>If some element is found <code>m</code> times in <code>[first1, last1)</code> and <code>n</code> times in <code>[first2, last2)</code>, then all <code>m</code> elements will be copied from <code>[first1, last1)</code> to <code>d_first</code>, preserving order, and then exactly <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="max.html"><span class="kw1643">std::<span class="me2">max</span></span></a><span class="br0">(</span>n<span class="sy2">-</span>m, <span class="nu0">0</span><span class="br0">)</span></span></span> elements will be copied from <code>[first2, last2)</code> to <code>d_first</code>, also preserving order. 
-</p><p>The resulting range cannot overlap with either of the input ranges.
+<p>Constructs a sorted union beginning at <span class="t-c"><span class="mw-geshi cpp source-cpp">d_first</span></span> consisting of the set of elements present in one or both sorted ranges <code>[first1, last1)</code> and <code>[first2, last2)</code>. 
+</p><p>If <code>[first1, last1)</code> contains <span class="t-c"><span class="mw-geshi cpp source-cpp">m</span></span> elements that are equivalent to each other and <code>[first2, last2)</code> contains <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span> elements that are equivalent to them, then all <span class="t-c"><span class="mw-geshi cpp source-cpp">m</span></span> elements will be copied from <code>[first1, last1)</code> to the output range, preserving order, and then the final <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="max.html"><span class="kw1643">std::<span class="me2">max</span></span></a><span class="br0">(</span>n <span class="sy2">-</span> m, <span class="nu0">0</span><span class="br0">)</span></span></span> elements will be copied from <code>[first2, last2)</code> to the output range, also preserving order. 
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Elements are compared using <code>operator&lt;</code> and the ranges must be sorted with respect to the same.</div>
-<div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary comparison function <code>comp</code> and the ranges must be sorted with respect to the same.</div>
-<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <code>policy</code>. These overloads do not participate in overload resolution unless <span class="t-rev-inl t-until-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span> <span class="t-rev-inl t-since-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> is true.</div>
+<div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary comparison function <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span> and the ranges must be sorted with respect to the same.</div>
+<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <span class="t-c"><span class="mw-geshi cpp source-cpp">policy</span></span>. These overloads do not participate in overload resolution unless  <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table></div>
+<p>If either of the input ranges is not sorted (using <code>operator&lt;</code> or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span>, respectively) or overlaps with the output range, the behavior is undefined.
+</p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  first1, last1
+<td> first1, last1
 </td>
 <td> -
 </td>
-<td>  the first input sorted range
+<td> the first input sorted range
 </td></tr>
 <tr class="t-par">
-<td>  first2, last2
+<td> first2, last2
 </td>
 <td> -
 </td>
-<td>  the second input sorted range
+<td> the second input sorted range
 </td></tr>
 <tr class="t-par">
-<td>  d_first
+<td> d_first
 </td>
 <td> -
 </td>
-<td>  the beginning of the output range
+<td> the beginning of the output range
 </td></tr>
 <tr class="t-par">
 <td>  policy
@@ -476,15 +485,15 @@ ForwardIt3 set_union<span class="br0">(</span> ExecutionPolicy<span class="sy3">
 <td>  the execution policy to use. See <a href="execution_policy_tag_t.html" title="cpp/algorithm/execution policy tag t">execution policy</a> for details.
 </td></tr>
 <tr class="t-par">
-<td>   comp
+<td> comp
 </td>
 <td> -
 </td>
-<td>  comparison function object (i.e. an object that satisfies the requirements of <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>) which returns ​<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the first argument is <i>less</i> than (i.e. is ordered <i>before</i>) the second. <br>
+<td> comparison function object (i.e. an object that satisfies the requirements of <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>) which returns ​<span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the first argument is <i>less</i> than (i.e. is ordered <i>before</i>) the second. <br>
 <p>The signature of the comparison function should be equivalent to the following:
-</p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> <span class="kw4">bool</span> cmp<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
-</p><p>While the signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1 <span class="sy3">&amp;</span></span></span> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
-The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that objects of types <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt2</span></span> can be dereferenced and then implicitly converted to both <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span>.
+</p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"><span class="kw4">bool</span> cmp<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
+</p><p>While the signature does not need to have <span class="mw-geshi cpp source-cpp"><span class="kw4">const</span><span class="sy3">&amp;</span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <code>Type1&amp;</code> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <code>Type1</code> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
+The types <code>Type1</code> and <code>Type2</code> must be such that objects of types <code>InputIt1</code> and <code>InputIt2</code> can be dereferenced and then implicitly converted to both <code>Type1</code> and <code>Type2</code>.
 ​ 
 </p>
 </td></tr>
@@ -504,8 +513,10 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <p>Iterator past the end of the constructed range.
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<p>At most <span class="mjax" style="display:none">\(\scriptsize 2\cdot(N_1+N_2)-1\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">2·(N<span class="t-su t-su-b"><br>1</span>+N<span class="t-su t-su-b"><br>2</span>)-1</span> comparisons, where <span class="mjax" style="display:none">\(\scriptsize N_1\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N<span class="t-su t-su-b"><br>1</span></span> and <span class="mjax" style="display:none">\(\scriptsize N_2\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">N<span class="t-su t-su-b"><br>2</span></span> are <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first1, last1<span class="br0">)</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first2, last2<span class="br0">)</span></span></span>, respectively.
+<p>Given <code>M</code> and <code>N</code> as <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first1, last1<span class="br0">)</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first2, last2<span class="br0">)</span></span></span> respectively:
 </p>
+<div class="t-li1"><span class="t-li">1,2)</span> at most <code>2·(M + N) - 1</code> comparisons using <code>operator&lt;</code></div>
+<div class="t-li1"><span class="t-li">3,4)</span> at most <code>2·(M + N) - 1</code> applications of the predicate <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span></div>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
 <p>The overloads with a template parameter named <code>ExecutionPolicy</code> report errors as follows:
 </p>
@@ -513,27 +524,29 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 </li><li> If the algorithm fails to allocate memory, <span class="t-lc"><a href="../memory/new/bad_alloc.html" title="cpp/memory/new/bad alloc">std::bad_alloc</a></span> is thrown.
 </li></ul>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>This algorithm performs a similar task as <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="merge.html"><span class="kw1631">std::<span class="me2">merge</span></span></a></span></span> does. Both consume two sorted input ranges and produce a sorted output with elements from both inputs. The difference between these two algorithms is with handling values from both input ranges which compare equivalent (see notes on <a href="../named_req/LessThanComparable.html" title="cpp/named req/LessThanComparable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LessThanComparable</span></a>). If any equivalent values appeared <code>n</code> times in the first range and <code>m</code> times in the second, <code>std::merge</code> would output all <span class="t-c"><span class="mw-geshi cpp source-cpp">n<span class="sy2">+</span>m</span></span> occurrences whereas <code>std::set_union</code> would output <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="max.html"><span class="kw1643">std::<span class="me2">max</span></span></a><span class="br0">(</span>n, m<span class="br0">)</span></span></span> ones only. So <code>std::merge</code> outputs exactly <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first1, last1<span class="br0">)</span> <span class="sy2">+</span> <a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first2, last2<span class="br0">)</span></span></span> values and <code>std::set_union</code> may produce fewer.
+<p>This algorithm performs a similar task as <span class="t-lc"><a href="merge.html" title="cpp/algorithm/merge">std::merge</a></span> does. Both consume two sorted input ranges and produce a sorted output with elements from both inputs. The difference between these two algorithms is with handling values from both input ranges which compare equivalent (see notes on <a href="../named_req/LessThanComparable.html" title="cpp/named req/LessThanComparable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LessThanComparable</span></a>). If any equivalent values appeared <span class="t-c"><span class="mw-geshi cpp source-cpp">n</span></span> times in the first range and <span class="t-c"><span class="mw-geshi cpp source-cpp">m</span></span> times in the second, <span class="t-lc"><a href="merge.html" title="cpp/algorithm/merge">std::merge</a></span> would output all <span class="t-c"><span class="mw-geshi cpp source-cpp">n <span class="sy2">+</span> m</span></span> occurrences whereas <code>std::set_union</code> would output <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="max.html"><span class="kw1643">std::<span class="me2">max</span></span></a><span class="br0">(</span>n, m<span class="br0">)</span></span></span> ones only. So <code>std::merge</code> outputs exactly <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first1, last1<span class="br0">)</span> <span class="sy2">+</span> <a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first2, last2<span class="br0">)</span></span></span> values and <code>std::set_union</code> may produce fewer.
 </p>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <table class="eq-fun-cpp-table">
 
 <tr>
-<th> First version
+<th><a href="set_union.html#Version_1">set_union (1)</a>
 </th></tr>
 <tr>
 <td>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt<span class="sy1">&gt;</span>
 OutputIt set_union<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
-                   InputIt2 first2, InputIt2 last2,
-                   OutputIt d_first<span class="br0">)</span>
+                   InputIt2 first2, InputIt2 last2, OutputIt d_first<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>d_first<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>d_first<span class="br0">)</span>
+    <span class="br0">{</span>
         <span class="kw1">if</span> <span class="br0">(</span>first2 <span class="sy1">==</span> last2<span class="br0">)</span>
             <span class="kw1">return</span> <a href="copy.html"><span class="kw1586">std::<span class="me2">copy</span></span></a><span class="br0">(</span>first1, last1, d_first<span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>first2 <span class="sy1">&lt;</span> <span class="sy2">*</span>first1<span class="br0">)</span> <span class="br0">{</span>
+ 
+        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>first2 <span class="sy1">&lt;</span> <span class="sy2">*</span>first1<span class="br0">)</span>
             <span class="sy2">*</span>d_first <span class="sy1">=</span> <span class="sy2">*</span>first2<span class="sy2">++</span><span class="sy4">;</span>
-        <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+        <span class="kw1">else</span>
+        <span class="br0">{</span>
             <span class="sy2">*</span>d_first <span class="sy1">=</span> <span class="sy2">*</span>first1<span class="sy4">;</span>
             <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><span class="br0">(</span><span class="sy2">*</span>first1 <span class="sy1">&lt;</span> <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span>
                 <span class="sy2">++</span>first2<span class="sy4">;</span>
@@ -544,28 +557,27 @@ OutputIt set_union<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Second version
+<th><a href="set_union.html#Version_3">set_union (3)</a>
 </th></tr>
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2,
-         <span class="kw1">class</span> OutputIt, <span class="kw1">class</span> Compare<span class="sy1">&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> OutputIt, <span class="kw1">class</span> Compare<span class="sy1">&gt;</span>
 OutputIt set_union<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
-                   InputIt2 first2, InputIt2 last2,
-                   OutputIt d_first, Compare comp<span class="br0">)</span>
+                   InputIt2 first2, InputIt2 last2, OutputIt d_first, Compare comp<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>d_first<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span>first2 <span class="sy1">==</span> last2<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>d_first<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>first2 <span class="sy1">==</span> last2<span class="br0">)</span>
             <span class="co1">// Finished range 2, include the rest of range 1:</span>
             <span class="kw1">return</span> <a href="copy.html"><span class="kw1586">std::<span class="me2">copy</span></span></a><span class="br0">(</span>first1, last1, d_first<span class="br0">)</span><span class="sy4">;</span>
-        <span class="br0">}</span>
-        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>first2, <span class="sy2">*</span>first1<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>first2, <span class="sy2">*</span>first1<span class="br0">)</span><span class="br0">)</span>
             <span class="sy2">*</span>d_first <span class="sy1">=</span> <span class="sy2">*</span>first2<span class="sy2">++</span><span class="sy4">;</span>
-        <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+        <span class="kw1">else</span>
+        <span class="br0">{</span>
             <span class="sy2">*</span>d_first <span class="sy1">=</span> <span class="sy2">*</span>first1<span class="sy4">;</span>
-            <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>comp<span class="br0">(</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">// Equivalent =&gt; don't need to include *first2.</span>
+            <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>comp<span class="br0">(</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span> <span class="co1">// Equivalent =&gt; don't need to include *first2.</span>
                 <span class="sy2">++</span>first2<span class="sy4">;</span>
-            <span class="br0">}</span>
             <span class="sy2">++</span>first1<span class="sy4">;</span>
         <span class="br0">}</span>
     <span class="br0">}</span>
@@ -574,7 +586,7 @@ OutputIt set_union<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
 <span class="br0">}</span></pre></div></div>
 </td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
-<div class="t-example"><p>Example with vectors :</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div class="t-example"><p>Example with vectors:</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;vector&gt;</span>
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;algorithm&gt;</span>
@@ -591,11 +603,11 @@ OutputIt set_union<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
                        v2.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, v2.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>,                  
                        <a href="../iterator/back_inserter.html"><span class="kw667">std::<span class="me2">back_inserter</span></span></a><span class="br0">(</span>dest1<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
-        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">auto</span> <span class="sy3">&amp;</span>i <span class="sy4">:</span> dest1<span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">auto</span> <span class="sy3">&amp;</span>i <span class="sy4">:</span> dest1<span class="br0">)</span>
             <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-        <span class="br0">}</span>   
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
+ 
     <span class="br0">{</span>
         <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v1 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">5</span>, <span class="nu0">5</span><span class="br0">}</span><span class="sy4">;</span> 
         <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v2 <span class="sy1">=</span> <span class="br0">{</span>      <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">6</span>, <span class="nu0">7</span><span class="br0">}</span><span class="sy4">;</span> 
@@ -605,9 +617,8 @@ OutputIt set_union<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
                        v2.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, v2.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>,                  
                        <a href="../iterator/back_inserter.html"><span class="kw667">std::<span class="me2">back_inserter</span></span></a><span class="br0">(</span>dest1<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
-        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">auto</span> <span class="sy3">&amp;</span>i <span class="sy4">:</span> dest1<span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">const</span> <span class="kw4">auto</span> <span class="sy3">&amp;</span>i <span class="sy4">:</span> dest1<span class="br0">)</span>
             <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-        <span class="br0">}</span>   
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
@@ -616,6 +627,28 @@ OutputIt set_union<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1 2 3 4 5 6 7 
 1 2 3 4 5 5 5 6 7</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue291">LWG 291</a>
+</td>
+<td> C++98
+</td>
+<td> it was unspecified how to handle equivalent elements in the input ranges
+</td>
+<td> specified
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -652,19 +685,19 @@ OutputIt set_union<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 11165/1000000
-Preprocessor generated node count: 15207/1000000
-Post‐expand include size: 318776/2097152 bytes
-Template argument size: 67097/2097152 bytes
+Preprocessor visited node count: 11389/1000000
+Preprocessor generated node count: 17744/1000000
+Post‐expand include size: 318554/2097152 bytes
+Template argument size: 66817/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:782-0!*!0!!en!*!* and timestamp 20220410082036 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:782-0!*!0!!en!*!* and timestamp 20230120010846 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/set_union&amp;oldid=137519">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/set_union&amp;oldid=137519</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/set_union&amp;oldid=146006">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/set_union&amp;oldid=146006</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -677,17 +710,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/set_union">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 25 January 2022, at 15:14.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 155,048 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -702,7 +724,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.086 secs. -->
+</script><!-- Served in 3.490 secs. -->
 	</body>
-<!-- Cached 20220410082038 -->
+<!-- Cached 20230120010846 -->
 </html>

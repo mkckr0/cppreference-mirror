@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/lower_bound","wgTitle":"cpp/algorithm/lower bound","wgCurRevisionId":140859,"wgArticleId":750,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/lower_bound","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/lower_bound","wgTitle":"cpp/algorithm/lower bound","wgCurRevisionId":146432,"wgArticleId":750,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/lower_bound","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -367,14 +368,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
+<td> <div><span id="Version_1"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
 ForwardIt lower_bound<span class="br0">(</span> ForwardIt first, ForwardIt last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
-<span class="kw4">constexpr</span> ForwardIt lower_bound<span class="br0">(</span> ForwardIt first, ForwardIt last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<p><span class="kw4">constexpr</span> ForwardIt lower_bound<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
+</p>
+                                 <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
@@ -386,44 +389,48 @@ ForwardIt lower_bound<span class="br0">(</span> ForwardIt first, ForwardIt last,
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
-ForwardIt lower_bound<span class="br0">(</span> ForwardIt first, ForwardIt last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span id="Version_2"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<p>ForwardIt lower_bound<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
+</p>
+                       <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> T, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
-<span class="kw4">constexpr</span> ForwardIt lower_bound<span class="br0">(</span> ForwardIt first, ForwardIt last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<p><span class="kw4">constexpr</span> ForwardIt lower_bound<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
+</p>
+                                 <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Returns an iterator pointing to the first element in the range <code>[first, last)</code> that does not satisfy <span class="t-c"><span class="mw-geshi cpp source-cpp">element <span class="sy1">&lt;</span> value</span></span> (or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp<span class="br0">(</span>element, value<span class="br0">)</span></span></span>), (i.e. greater or equal to), or <code>last</code> if no such element is found.
+<p>Returns an iterator pointing to the first element in the range <code>[first, last)</code> that does not satisfy <span class="t-c"><span class="mw-geshi cpp source-cpp">element <span class="sy1">&lt;</span> value</span></span> (or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp<span class="br0">(</span>element, value<span class="br0">)</span></span></span>), (i.e. greater or equal to), or <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span> if no such element is found.
 </p><p>The range <code>[first, last)</code> must be partitioned with respect to the expression <span class="t-c"><span class="mw-geshi cpp source-cpp">element <span class="sy1">&lt;</span> value</span></span> (or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp<span class="br0">(</span>element, value<span class="br0">)</span></span></span>), i.e., all elements for which the expression is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> must precede all elements for which the expression is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>. A fully-sorted range meets this criterion.
-</p><p>The first version uses <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">&lt;</span></span></span> to compare the elements, the second version uses the given comparison function <code>comp</code>.
+</p><p>The first version uses <code>operator&lt;</code> to compare the elements, the second version uses the given comparison function <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span>.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  iterators defining the partially-ordered range to examine
+<td> iterators defining the partially-ordered range to examine
 </td></tr>
 <tr class="t-par">
-<td>  value
+<td> value
 </td>
 <td> -
 </td>
-<td>  value to compare the elements to
+<td> value to compare the elements to
 </td></tr>
 <tr class="t-par">
-<td>   comp
+<td>  comp
 </td>
 <td> -
 </td>
@@ -431,7 +438,7 @@ ForwardIt lower_bound<span class="br0">(</span> ForwardIt first, ForwardIt last,
 <p>The signature of the predicate function should be equivalent to the following:
 </p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> <span class="kw4">bool</span> pred<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
 </p><p>While the signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1 <span class="sy3">&amp;</span></span></span> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
-The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">ForwardIt</span></span> can be dereferenced and then implicitly converted to <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span>. The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">T</span></span> can be implicitly converted to <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span>.
+The type <code>Type1</code> must be such that an object of type <code>ForwardIt</code> can be dereferenced and then implicitly converted to <code>Type1</code>. The type <code>Type2</code> must be such that an object of type <code>T</code> can be implicitly converted to <code>Type2</code>.
 ​ 
 </p>
 </td></tr>
@@ -442,13 +449,13 @@ The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></s
 <td colspan="3"> -<div class="spacer"></div><code>ForwardIt</code> must meet the requirements of <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>.
 </td></tr>
 <tr class="t-par-req">
-<td colspan="3"> -<div class="spacer"></div><code>Compare</code> must meet the requirements of <a href="../named_req/BinaryPredicate.html" title="cpp/named req/BinaryPredicate"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">BinaryPredicate</span></a>. it is not required to satisfy <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>
+<td colspan="3"> -<div class="spacer"></div><code>Compare</code> must meet the requirements of <a href="../named_req/BinaryPredicate.html" title="cpp/named req/BinaryPredicate"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">BinaryPredicate</span></a>. It is not required to satisfy <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a>.
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p>Iterator pointing to the first element in the range <code>[first, last)</code> such that <span class="t-c"><span class="mw-geshi cpp source-cpp">element <span class="sy1">&lt;</span> value</span></span> (or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp<span class="br0">(</span>element, value<span class="br0">)</span></span></span>) is false, or <code>last</code> if no such element is found.
+<p>Iterator pointing to the first element in the range <code>[first, last)</code> such that <span class="t-c"><span class="mw-geshi cpp source-cpp">element <span class="sy1">&lt;</span> value</span></span> (or <span class="t-c"><span class="mw-geshi cpp source-cpp">comp<span class="br0">(</span>element, value<span class="br0">)</span></span></span>) is false, or <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span> if no such element is found.
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<p>The number of comparisons performed is logarithmic in the distance between <code>first</code> and <code>last</code> (At most <span class="texhtml" style="white-space: nowrap;">log<span class="t-su t-su-b"><br>2</span>(last - first) + O(1)</span> comparisons). However, for non-<a href="../named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span>s</a>, the number of iterator increments is linear. Notably, <span class="t-lc"><a href="../container/set.html" title="cpp/container/set">std::set</a></span> and <span class="t-lc"><a href="../container/multiset.html" title="cpp/container/multiset">std::multiset</a></span> iterators are not random access, and so their member functions <span class="t-lc"><a href="../container/set/lower_bound.html" title="cpp/container/set/lower bound">std::set::lower_bound</a></span> (resp. <span class="t-lc"><a href="../container/multiset/lower_bound.html" title="cpp/container/multiset/lower bound">std::multiset::lower_bound</a></span>) should be preferred.
+<p>The number of comparisons performed is logarithmic in the distance between <span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span> (At most <span class="texhtml" style="white-space: nowrap;">log<span class="t-su t-su-b"><br>2</span>(last - first) + O(1)</span> comparisons). However, for non-<a href="../named_req/RandomAccessIterator.html" title="cpp/named req/RandomAccessIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyRandomAccessIterator</span>s</a>, the number of iterator increments is linear. Notably, <span class="t-lc"><a href="../container/map.html" title="cpp/container/map">std::map</a></span>, <span class="t-lc"><a href="../container/multimap.html" title="cpp/container/multimap">std::multimap</a></span>, <span class="t-lc"><a href="../container/set.html" title="cpp/container/set">std::set</a></span>, and <span class="t-lc"><a href="../container/multiset.html" title="cpp/container/multiset">std::multiset</a></span> iterators are not random access, and so their member <span class="t-c"><span class="mw-geshi cpp source-cpp">lower_bound</span></span> functions should be preferred.
 </p>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <p>See also the implementations in <a rel="nofollow" class="external text" href="https://github.com/gcc-mirror/gcc/blob/d9375e490072d1aae73a93949aa158fcd2a27018/libstdc%2B%2B-v3/include/bits/stl_algobase.h#L1023">libstdc++</a> and <a rel="nofollow" class="external text" href="https://github.com/llvm-mirror/libcxx/blob/a12cb9d211019d99b5875b6d8034617cbc24c2cc/include/algorithm#L4175">libc++</a>.
@@ -456,7 +463,7 @@ The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></s
 <table class="eq-fun-cpp-table">
 
 <tr>
-<th> First version
+<th><a href="lower_bound.html#Version_1">lower_bound (1)</a>
 </th></tr>
 <tr>
 <td>
@@ -467,22 +474,26 @@ ForwardIt lower_bound<span class="br0">(</span>ForwardIt first, ForwardIt last, 
     <span class="kw1">typename</span> <a href="../iterator/iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>ForwardIt<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> count, step<span class="sy4">;</span>
     count <span class="sy1">=</span> <a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="kw1">while</span> <span class="br0">(</span>count <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">while</span> <span class="br0">(</span>count <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+    <span class="br0">{</span>
         it <span class="sy1">=</span> first<span class="sy4">;</span> 
         step <span class="sy1">=</span> count <span class="sy2">/</span> <span class="nu0">2</span><span class="sy4">;</span> 
         <a href="../iterator/advance.html"><span class="kw674">std::<span class="me2">advance</span></span></a><span class="br0">(</span>it, step<span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>it <span class="sy1">&lt;</span> value<span class="br0">)</span> <span class="br0">{</span>
+ 
+        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>it <span class="sy1">&lt;</span> value<span class="br0">)</span>
+        <span class="br0">{</span>
             first <span class="sy1">=</span> <span class="sy2">++</span>it<span class="sy4">;</span> 
             count <span class="sy2">-</span><span class="sy1">=</span> step <span class="sy2">+</span> <span class="nu0">1</span><span class="sy4">;</span> 
         <span class="br0">}</span>
         <span class="kw1">else</span>
             count <span class="sy1">=</span> step<span class="sy4">;</span>
     <span class="br0">}</span>
+ 
     <span class="kw1">return</span> first<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Second version
+<th><a href="lower_bound.html#Version_2">lower_bound (2)</a>
 </th></tr>
 <tr>
 <td>
@@ -493,17 +504,21 @@ ForwardIt lower_bound<span class="br0">(</span>ForwardIt first, ForwardIt last, 
     <span class="kw1">typename</span> <a href="../iterator/iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>ForwardIt<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span> count, step<span class="sy4">;</span>
     count <span class="sy1">=</span> <a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span><span class="sy4">;</span>
  
-    <span class="kw1">while</span> <span class="br0">(</span>count <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">while</span> <span class="br0">(</span>count <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
+    <span class="br0">{</span>
         it <span class="sy1">=</span> first<span class="sy4">;</span>
         step <span class="sy1">=</span> count <span class="sy2">/</span> <span class="nu0">2</span><span class="sy4">;</span>
         <a href="../iterator/advance.html"><span class="kw674">std::<span class="me2">advance</span></span></a><span class="br0">(</span>it, step<span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>it, value<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>it, value<span class="br0">)</span><span class="br0">)</span>
+        <span class="br0">{</span>
             first <span class="sy1">=</span> <span class="sy2">++</span>it<span class="sy4">;</span>
             count <span class="sy2">-</span><span class="sy1">=</span> step <span class="sy2">+</span> <span class="nu0">1</span><span class="sy4">;</span>
         <span class="br0">}</span>
         <span class="kw1">else</span>
             count <span class="sy1">=</span> step<span class="sy4">;</span>
     <span class="br0">}</span>
+ 
     <span class="kw1">return</span> first<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr></table>
@@ -517,8 +532,10 @@ ForwardIt lower_bound<span class="br0">(</span>ForwardIt first, ForwardIt last, 
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw4">const</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> data <span class="sy1">=</span> <span class="br0">{</span> <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">5</span>, <span class="nu0">6</span> <span class="br0">}</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">8</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw4">const</span> <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> data <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">5</span>, <span class="nu0">6</span><span class="br0">}</span><span class="sy4">;</span>
+ 
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">8</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
+    <span class="br0">{</span>
         <span class="co1">// Search for first element x such that i ≤ x</span>
         <span class="kw4">auto</span> lower <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">lower_bound</span><span class="br0">(</span>data.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, data.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, i<span class="br0">)</span><span class="sy4">;</span>
  
@@ -529,17 +546,20 @@ ForwardIt lower_bound<span class="br0">(</span>ForwardIt first, ForwardIt last, 
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
  
-    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>PriceInfo<span class="sy1">&gt;</span> prices <span class="sy1">=</span> <span class="br0">{</span> <span class="br0">{</span><span class="nu16">100.0</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu16">101.5</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu16">102.5</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu16">102.5</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu16">107.3</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">double</span> to_find<span class="sy4">:</span> <span class="br0">{</span><span class="nu16">102.5</span>, <span class="nu16">110.2</span><span class="br0">}</span><span class="br0">)</span> <span class="br0">{</span>
-      <span class="kw4">auto</span> prc_info <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">lower_bound</span><span class="br0">(</span>prices.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, prices.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, to_find,
-          <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">const</span> PriceInfo<span class="sy3">&amp;</span> info, <span class="kw4">double</span> value<span class="br0">)</span><span class="br0">{</span>
-              <span class="kw1">return</span> info.<span class="me1">price</span> <span class="sy1">&lt;</span> value<span class="sy4">;</span>
-          <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span>PriceInfo<span class="sy1">&gt;</span> prices <span class="sy1">=</span> <span class="br0">{</span><span class="br0">{</span><span class="nu16">100.0</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu16">101.5</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu16">102.5</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu16">102.5</span><span class="br0">}</span>, <span class="br0">{</span><span class="nu16">107.3</span><span class="br0">}</span><span class="br0">}</span><span class="sy4">;</span>
  
-      prc_info <span class="sy3">!</span><span class="sy1">=</span> prices.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>
-          <span class="sy4">?</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> prc_info<span class="sy2">-</span><span class="sy1">&gt;</span>price <span class="sy1">&lt;&lt;</span> <span class="st0">" at index "</span> <span class="sy1">&lt;&lt;</span> prc_info <span class="sy2">-</span> prices.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>
-          <span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> to_find <span class="sy1">&lt;&lt;</span> <span class="st0">" not found"</span><span class="sy4">;</span>
-      <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">double</span> to_find <span class="sy4">:</span> <span class="br0">{</span><span class="nu16">102.5</span>, <span class="nu16">110.2</span><span class="br0">}</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw4">auto</span> prc_info <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">lower_bound</span><span class="br0">(</span>prices.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, prices.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, to_find,
+            <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">const</span> PriceInfo<span class="sy3">&amp;</span> info, <span class="kw4">double</span> value<span class="br0">)</span>
+            <span class="br0">{</span>
+                <span class="kw1">return</span> info.<span class="me1">price</span> <span class="sy1">&lt;</span> value<span class="sy4">;</span>
+            <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+        prc_info <span class="sy3">!</span><span class="sy1">=</span> prices.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>
+            <span class="sy4">?</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> prc_info<span class="sy2">-</span><span class="sy1">&gt;</span>price <span class="sy1">&lt;&lt;</span> <span class="st0">" at index "</span> <span class="sy1">&lt;&lt;</span> prc_info <span class="sy2">-</span> prices.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>
+            <span class="sy4">:</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> to_find <span class="sy1">&lt;&lt;</span> <span class="st0">" not found"</span><span class="sy4">;</span>
+        <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
@@ -573,9 +593,9 @@ ForwardIt lower_bound<span class="br0">(</span>ForwardIt first, ForwardIt last, 
 </td>
 <td> C++98
 </td>
-<td> Compare was required to be a strict weak ordering
+<td> <code>Compare</code> was required to satisfy <a href="../named_req/Compare.html" title="cpp/named req/Compare"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Compare</span></a> and <code>T</code> was required<br>to be <a href="../named_req/LessThanComparable.html" title="cpp/named req/LessThanComparable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LessThanComparable</span></a> (strict weak ordering required)
 </td>
-<td> only a partitioning is needed; heterogeneous comparisons permitted
+<td> only a partitioning is required;<br>heterogeneous comparisons permitted
 </td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
@@ -618,19 +638,19 @@ ForwardIt lower_bound<span class="br0">(</span>ForwardIt first, ForwardIt last, 
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10936/1000000
-Preprocessor generated node count: 15403/1000000
-Post‐expand include size: 319286/2097152 bytes
-Template argument size: 64034/2097152 bytes
+Preprocessor visited node count: 11119/1000000
+Preprocessor generated node count: 16894/1000000
+Post‐expand include size: 319721/2097152 bytes
+Template argument size: 65056/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:750-0!*!0!!en!*!* and timestamp 20220707133800 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:750-0!*!0!!en!*!* and timestamp 20230120005441 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/lower_bound&amp;oldid=140859">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/lower_bound&amp;oldid=140859</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/lower_bound&amp;oldid=146432">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/lower_bound&amp;oldid=146432</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -643,17 +663,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/lower_bound">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 7 July 2022, at 06:38.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 892,533 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -668,7 +677,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.046 secs. -->
+</script><!-- Served in 3.554 secs. -->
 	</body>
-<!-- Cached 20220707134746 -->
+<!-- Cached 20230120005441 -->
 </html>

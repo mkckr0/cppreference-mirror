@@ -13,7 +13,7 @@
 
 <script src="../../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/fenv/FE_exceptions","wgTitle":"cpp/numeric/fenv/FE exceptions","wgCurRevisionId":70180,"wgArticleId":4319,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/fenv/FE_exceptions","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/fenv/FE_exceptions","wgTitle":"cpp/numeric/fenv/FE exceptions","wgCurRevisionId":145489,"wgArticleId":4319,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/fenv/FE_exceptions","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -244,61 +245,61 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>All these macro constants (except <span class="t-lc"><strong class="selflink">FE_ALL_EXCEPT</strong></span>) expand to integer constant expressions that are distinct powers of 2, which uniquely identify all supported floating-point exceptions. Each macro is only defined if it is supported. 
+<p>All these macro constants (except <span class="t-lc"><strong class="selflink">FE_ALL_EXCEPT</strong></span>) expand to integer constant expressions that are distinct powers of 2, which uniquely identify all supported floating-point exceptions. Each macro is defined only if it is supported.
 </p><p>The macro constant <span class="t-lc"><strong class="selflink">FE_ALL_EXCEPT</strong></span>, which expands to the bitwise OR of all other <code>FE_*</code>, is always defined and is zero if floating-point exceptions are not supported by the implementation.
 </p>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Constant
+<td> Constant
 </td>
-<td>  Explanation
+<td> Explanation
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>FE_DIVBYZERO</code>
+<td> <code>FE_DIVBYZERO</code>
 </td>
-<td>  pole error occurred in an earlier floating-point operation
+<td> pole error occurred in an earlier floating-point operation
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>FE_INEXACT</code>
+<td> <code>FE_INEXACT</code>
 </td>
-<td>  inexact result: rounding was necessary to store the result of an earlier floating-point operation
+<td> inexact result: rounding was necessary to store the result of an earlier floating-point operation
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>FE_INVALID</code>
+<td> <code>FE_INVALID</code>
 </td>
-<td>  domain error occurred in an earlier floating-point operation
+<td> domain error occurred in an earlier floating-point operation
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>FE_OVERFLOW</code>
+<td> <code>FE_OVERFLOW</code>
 </td>
-<td>  the result of the earlier floating-point operation was too large to be representable
+<td> the result of the earlier floating-point operation was too large to be representable
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>FE_UNDERFLOW</code>
+<td> <code>FE_UNDERFLOW</code>
 </td>
-<td>  the result of the earlier floating-point operation was subnormal with a loss of precision
+<td> the result of the earlier floating-point operation was subnormal with a loss of precision
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>FE_ALL_EXCEPT</code>
+<td> <code>FE_ALL_EXCEPT</code>
 </td>
-<td>  bitwise OR of all supported floating-point exceptions
+<td> bitwise OR of all supported floating-point exceptions
 </td></tr>
 
 </table>
-<p>The implementation may define additional macro constants in <code>&lt;cfenv&gt;</code> to identify additional floating-point exceptions. All such constants begin with <code>FE_</code> followed by at least one uppercase letter.
+<p>The implementation may define additional macro constants in <a href="../../header/cfenv.html" title="cpp/header/cfenv"><tt>&lt;cfenv&gt;</tt></a> to identify additional floating-point exceptions. All such constants begin with <code>FE_</code> followed by at least one uppercase letter.
 </p><p>See <span class="t-lc"><a href="../math/math_errhandling.html" title="cpp/numeric/math/math errhandling">math_errhandling</a></span> for further details.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
@@ -308,7 +309,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co2">#include &lt;cfenv&gt;</span>
 <span class="co2">#include &lt;cmath&gt;</span>
  
-<span class="co2">#pragma STDC FENV_ACCESS ON</span>
+<span class="co1">// #pragma STDC FENV_ACCESS ON</span>
  
 <span class="kw4">volatile</span> <span class="kw4">double</span> zero <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span> <span class="co1">// volatile not needed where FENV_ACCESS is supported</span>
 <span class="kw4">volatile</span> <span class="kw4">double</span> one <span class="sy1">=</span> <span class="nu16">1.0</span><span class="sy4">;</span>  <span class="co1">// volatile not needed where FENV_ACCESS is supported</span>
@@ -317,27 +318,24 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     <a href="feclearexcept.html"><span class="kw1453">std::<span class="me2">feclearexcept</span></span></a><span class="br0">(</span>FE_ALL_EXCEPT<span class="br0">)</span><span class="sy4">;</span>
     <a href="../../io/cout.html"><span class="kw1756">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span>  <span class="st0">"1.0/0.0 = "</span> <span class="sy1">&lt;&lt;</span> <span class="nu16">1.0</span> <span class="sy2">/</span> zero <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.html"><span class="kw1454">std::<span class="me2">fetestexcept</span></span></a><span class="br0">(</span>FE_DIVBYZERO<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="fetestexcept.html"><span class="kw1454">std::<span class="me2">fetestexcept</span></span></a><span class="br0">(</span>FE_DIVBYZERO<span class="br0">)</span><span class="br0">)</span>
         <a href="../../io/cout.html"><span class="kw1756">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"division by zero reported<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+    <span class="kw1">else</span>
         <a href="../../io/cout.html"><span class="kw1756">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"divsion by zero not reported<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span>
  
     <a href="feclearexcept.html"><span class="kw1453">std::<span class="me2">feclearexcept</span></span></a><span class="br0">(</span>FE_ALL_EXCEPT<span class="br0">)</span><span class="sy4">;</span>
     <a href="../../io/cout.html"><span class="kw1756">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"1.0/10 = "</span> <span class="sy1">&lt;&lt;</span> one<span class="sy2">/</span><span class="nu0">10</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.html"><span class="kw1454">std::<span class="me2">fetestexcept</span></span></a><span class="br0">(</span>FE_INEXACT<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="fetestexcept.html"><span class="kw1454">std::<span class="me2">fetestexcept</span></span></a><span class="br0">(</span>FE_INEXACT<span class="br0">)</span><span class="br0">)</span>
         <a href="../../io/cout.html"><span class="kw1756">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"inexact result reported<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+    <span class="kw1">else</span>
         <a href="../../io/cout.html"><span class="kw1756">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"inexact result not reported<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span>
  
     <a href="feclearexcept.html"><span class="kw1453">std::<span class="me2">feclearexcept</span></span></a><span class="br0">(</span>FE_ALL_EXCEPT<span class="br0">)</span><span class="sy4">;</span>
     <a href="../../io/cout.html"><span class="kw1756">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"sqrt(-1) = "</span> <span class="sy1">&lt;&lt;</span> <a href="../math/sqrt.html"><span class="kw1332">std::<span class="me2">sqrt</span></span></a><span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.html"><span class="kw1454">std::<span class="me2">fetestexcept</span></span></a><span class="br0">(</span>FE_INVALID<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="fetestexcept.html"><span class="kw1454">std::<span class="me2">fetestexcept</span></span></a><span class="br0">(</span>FE_INVALID<span class="br0">)</span><span class="br0">)</span>
         <a href="../../io/cout.html"><span class="kw1756">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"invalid result reported<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+    <span class="kw1">else</span>
         <a href="../../io/cout.html"><span class="kw1756">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"invalid result not reported<span class="es1">\n</span>"</span><span class="sy4">;</span>
-    <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -360,19 +358,19 @@ invalid result reported</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4843/1000000
-Preprocessor generated node count: 7904/1000000
-Post‐expand include size: 154293/2097152 bytes
-Template argument size: 33205/2097152 bytes
+Preprocessor visited node count: 5004/1000000
+Preprocessor generated node count: 9664/1000000
+Post‐expand include size: 156127/2097152 bytes
+Template argument size: 33252/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:4319-0!*!0!!*!*!* and timestamp 20220410152320 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:4319-0!*!0!!*!*!* and timestamp 20230120032719 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/fenv/FE_exceptions&amp;oldid=70180">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/fenv/FE_exceptions&amp;oldid=70180</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/fenv/FE_exceptions&amp;oldid=145489">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/fenv/FE_exceptions&amp;oldid=145489</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -385,17 +383,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/numeric/fenv/FE_exceptions">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 11 May 2014, at 08:57.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 49,076 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -410,7 +397,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.291 secs. -->
+</script><!-- Served in 1.083 secs. -->
 	</body>
-<!-- Cached 20220410152320 -->
+<!-- Cached 20230120032719 -->
 </html>

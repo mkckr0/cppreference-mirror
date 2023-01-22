@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/operator_assignment","wgTitle":"c/language/operator assignment","wgCurRevisionId":138550,"wgArticleId":9562,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/operator_assignment","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/operator_assignment","wgTitle":"c/language/operator assignment","wgCurRevisionId":142209,"wgArticleId":9562,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/operator_assignment","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -155,13 +155,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="c/language/eval order"> evaluation order and sequence points</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="c/language/constant expression">constant expressions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="conversion.html" title="c/language/conversion">implicit conversions</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="generic.html" title="c/language/generic">generic selection</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="generic.html" title="c/language/generic">generic selection</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Constants_and_literals" title="c/language/expressions">constants and literals</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="integer_constant.html" title="c/language/integer constant"> integer constant</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="floating_constant.html" title="c/language/floating constant"> floating constant</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="character_constant.html" title="c/language/character constant"> character constant</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bool_constant.html" title="c/language/bool constant"><span class="t-lines"><span>true/false</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="nullptr.html" title="c/language/nullptr"><span class="t-lines"><span>nullptr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="c/language/string literal"> string literal</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Operators" title="c/language/expressions">operators</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="c/language/operator precedence">operator precedence</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_member_access.html" title="c/language/operator member access">member access and indirection</a> </td></tr>
@@ -359,12 +361,27 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <ul><li> both <span class="t-spar">lhs</span> and <span class="t-spar">rhs</span> have <a href="compatible_type.html#Compatible_types" title="c/language/type">compatible</a> <a href="struct.html" title="c/language/struct">struct</a> or <a href="union.html" title="c/language/union">union</a> type, or..
 </li><li> <span class="t-spar">rhs</span> must be <a href="conversion.html" title="c/language/conversion">implicitly convertible</a> to <span class="t-spar">lhs</span>, which implies
 </li></ul>
-<dl><dd><ul><li> both <span class="t-spar">lhs</span> and <span class="t-spar">rhs</span> have <a href="arithmetic_types.html" title="c/language/arithmetic types">arithmetic types</a>, in which case <span class="t-spar">lhs</span> may be <a href="volatile.html" title="c/language/volatile">volatile</a>-qualified or <a href="atomic.html" title="c/language/atomic">atomic</a>
-</li><li> both <span class="t-spar">lhs</span> and <span class="t-spar">rhs</span> have <a href="pointer.html" title="c/language/pointer">pointer</a> to <a href="compatible_type.html#Compatible_types" title="c/language/type">compatible</a> (ignoring qualifiers) types, or one of the pointers is a pointer to void, and the <a href="conversion.html" title="c/language/conversion">conversion</a> would not add qualifiers to the pointed-to type. <span class="t-spar">lhs</span> may be <a href="volatile.html" title="c/language/volatile">volatile</a> or <a href="restrict.html" title="c/language/restrict">restrict</a>-qualified or <a href="atomic.html" title="c/language/atomic">atomic</a>.
-</li><li> <span class="t-spar">lhs</span> is a pointer (possibly qualified or atomic) and <span class="t-spar">rhs</span> is a null pointer constant such as <span class="t-lc"><a href="../types/NULL.html" title="c/types/NULL">NULL</a></span>
-</li><li> <span class="t-spar">lhs</span> has type <span class="t-lc">_Bool</span> (possibly qualified or atomic) and <span class="t-spar">rhs</span> is a pointer
+<dl><dd><ul><li> both <span class="t-spar">lhs</span> and <span class="t-spar">rhs</span> have <a href="arithmetic_types.html" title="c/language/arithmetic types">arithmetic types</a>, in which case <span class="t-spar">lhs</span> may be <a href="volatile.html" title="c/language/volatile">volatile</a>-qualified<span class="t-rev-inl t-since-c11"><span> or <a href="atomic.html" title="c/language/atomic">atomic</a></span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span>
+</li><li> both <span class="t-spar">lhs</span> and <span class="t-spar">rhs</span> have <a href="pointer.html" title="c/language/pointer">pointer</a> to <a href="compatible_type.html#Compatible_types" title="c/language/type">compatible</a> (ignoring qualifiers) types, or one of the pointers is a pointer to void, and the <a href="conversion.html" title="c/language/conversion">conversion</a> would not add qualifiers to the pointed-to type. <span class="t-spar">lhs</span> may be <a href="volatile.html" title="c/language/volatile">volatile</a><span class="t-rev-inl t-since-c99"><span> or <a href="restrict.html" title="c/language/restrict">restrict</a></span> <span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>-qualified<span class="t-rev-inl t-since-c11"><span> or <a href="atomic.html" title="c/language/atomic">atomic</a></span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span>.
+</li><li> <span class="t-spar">lhs</span> is a (possibly qualified<span class="t-rev-inl t-since-c11"><span> or atomic</span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span>) pointer and <span class="t-spar">rhs</span> is a null pointer constant such as <span class="t-lc"><a href="../types/NULL.html" title="c/types/NULL">NULL</a></span> <span class="t-rev-inl t-since-c23"><span>or a <span class="t-lc"><a href="../types/nullptr_t.html" title="c/types/nullptr t">nullptr_t</a></span> value</span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
 </li></ul>
 </dd></dl>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-c99"><td>
+<dl><dd><ul><li> <span class="t-spar">lhs</span> has type (possibly qualified<span class="t-rev-inl t-since-c11"><span> or atomic</span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span>) <span class="t-c"><span class="mw-geshi c source-c">_Bool</span></span> and <span class="t-spar">rhs</span> is a pointer <span class="t-rev-inl t-since-c23"><span>or a <span class="t-lc"><a href="../types/nullptr_t.html" title="c/types/nullptr t">nullptr_t</a></span> value</span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
+</li></ul>
+</dd></dl>
+</td>
+<td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
+</table>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-c23"><td>
+<dl><dd><ul><li> <span class="t-spar">lhs</span> has type (possibly qualified or atomic) <span class="t-lc"><a href="../types/nullptr_t.html" title="c/types/nullptr t">nullptr_t</a></span> and <span class="t-spar">rhs</span> has type <span class="t-lc"><a href="../types/nullptr_t.html" title="c/types/nullptr t">nullptr_t</a></span>
+</li></ul>
+</dd></dl>
+</td>
+<td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
+</table>
 <h4><span class="mw-headline" id="Notes">Notes</span></h4>
 <p>If <span class="t-spar">rhs</span> and <span class="t-spar">lhs</span> overlap in memory (e.g. they are members of the same union), the behavior is undefined unless the overlap is exact and the types are <a href="compatible_type.html#Compatible_types" title="c/language/type">compatible</a>.
 </p><p>Although arrays are not assignable, an array wrapped in a struct is assignable to another object of the same (or compatible) struct type.
@@ -609,9 +626,9 @@ a.<span class="me1">b</span></span></span>
 <p><span class="t-c"><span class="mw-geshi c source-c">a<span class="br0">(</span>...<span class="br0">)</span><br>
 a, b<br>
 <span class="br0">(</span>type<span class="br0">)</span> a<br>
-<span class="sy4">?</span> <span class="sy4">:</span><br>
-<span class="kw4">sizeof</span><br>
-_Alignof</span></span> <span class="t-mark-rev t-since-c11">(since C11)</span>
+a <span class="sy4">?</span> b <span class="sy4">:</span> c<br>
+<span class="kw4">sizeof</span></span></span><br><br>
+<span class="t-c"><span class="mw-geshi c source-c">_Alignof</span></span><br><span class="t-mark-rev t-since-c11">(since C11)</span>
 </p>
 </td></tr>
 </table>
@@ -622,19 +639,19 @@ _Alignof</span></span> <span class="t-mark-rev t-since-c11">(since C11)</span>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3672/1000000
-Preprocessor generated node count: 8043/1000000
-Post‐expand include size: 57465/2097152 bytes
-Template argument size: 13064/2097152 bytes
-Highest expansion depth: 15/40
+Preprocessor visited node count: 4285/1000000
+Preprocessor generated node count: 8907/1000000
+Post‐expand include size: 68066/2097152 bytes
+Template argument size: 16046/2097152 bytes
+Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9562-0!*!0!!en!*!* and timestamp 20220313113756 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9562-0!*!0!!en!*!* and timestamp 20230120004058 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_assignment&amp;oldid=138550">https://en.cppreference.com/mwiki/index.php?title=c/language/operator_assignment&amp;oldid=138550</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_assignment&amp;oldid=142209">https://en.cppreference.com/mwiki/index.php?title=c/language/operator_assignment&amp;oldid=142209</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -647,17 +664,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/operator_assignment">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 9 March 2022, at 17:25.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 35,672 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -672,7 +678,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.437 secs. -->
+</script><!-- Served in 1.679 secs. -->
 	</body>
-<!-- Cached 20220313113757 -->
+<!-- Cached 20230120004058 -->
 </html>

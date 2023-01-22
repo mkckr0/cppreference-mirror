@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/atomic/kill_dependency","wgTitle":"cpp/atomic/kill dependency","wgCurRevisionId":138627,"wgArticleId":2840,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/atomic/kill_dependency","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/atomic/kill_dependency","wgTitle":"cpp/atomic/kill dependency","wgCurRevisionId":144681,"wgArticleId":2840,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/atomic/kill_dependency","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -239,25 +240,24 @@ T kill_dependency<span class="br0">(</span> T y <span class="br0">)</span> <span
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Informs the compiler that the dependency tree started by an <span class="t-lc"><a href="memory_order.html" title="cpp/atomic/memory order">std::memory_order_consume</a></span> atomic load operation does not extend past the return value of <code>std::kill_dependency</code>; that is, the argument does not carry a dependency into the return value.
-</p><p>This may be used to avoid unnecessary <span class="t-lc"><a href="memory_order.html" title="cpp/atomic/memory order">std::memory_order_acquire</a></span> fences when the dependency chain leaves function scope (and the function does not have the <code>[[<a href="../language/attributes/carries_dependency.html" title="cpp/language/attributes/carries dependency">carries_dependency</a>]]</code> attribute)
+</p><p>This may be used to avoid unnecessary <span class="t-lc"><a href="memory_order.html" title="cpp/atomic/memory order">std::memory_order_acquire</a></span> fences when the dependency chain leaves function scope (and the function does not have the <code>[[<a href="../language/attributes/carries_dependency.html" title="cpp/language/attributes/carries dependency">carries_dependency</a>]]</code> attribute).
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  y
+<td> y
 </td>
 <td> -
 </td>
-<td>  the expression whose return value is to be removed from a dependency tree
+<td> the expression whose return value is to be removed from a dependency tree
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>Returns <code>y</code>, no longer a part of a dependency tree.
 </p>
 <h3><span class="mw-headline" id="Examples">Examples</span></h3>
-<dl><dt>file1.cpp:
-</dt></dl>
+<h5><span class="mw-headline" id="file1.cpp:">file1.cpp:</span></h5>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> foo <span class="br0">{</span> <span class="kw4">int</span><span class="sy2">*</span> a<span class="sy4">;</span> <span class="kw4">int</span><span class="sy2">*</span> b<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
 <a href="atomic.html"><span class="kw2070">std::<span class="me2">atomic</span></span></a><span class="sy1">&lt;</span><span class="kw1">struct</span> foo<span class="sy2">*</span><span class="sy1">&gt;</span> foo_head<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span>
 <span class="kw4">int</span> foo_array<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span>
@@ -272,8 +272,7 @@ T kill_dependency<span class="br0">(</span> T y <span class="br0">)</span> <span
 <span class="kw4">int</span> g<span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span> x, <span class="kw4">int</span><span class="sy2">*</span> y <span class="br0">[</span><span class="br0">[</span>carries_dependency<span class="br0">]</span><span class="br0">]</span><span class="br0">)</span> <span class="br0">{</span>
     <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">kill_dependency</span><span class="br0">(</span>foo_array<span class="br0">[</span><span class="sy2">*</span>x<span class="br0">]</span><span class="br0">[</span><span class="sy2">*</span>y<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
-<dl><dt>file2.cpp:
-</dt></dl>
+<h5><span class="mw-headline" id="file2.cpp:">file2.cpp:</span></h5>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="br0">[</span><span class="br0">[</span>carries_dependency<span class="br0">]</span><span class="br0">]</span> <span class="kw1">struct</span> foo<span class="sy2">*</span> f<span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span><span class="sy4">;</span>
 <span class="kw4">int</span> g<span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span> x, <span class="kw4">int</span><span class="sy2">*</span> y <span class="br0">[</span><span class="br0">[</span>carries_dependency<span class="br0">]</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
  
@@ -298,19 +297,19 @@ T kill_dependency<span class="br0">(</span> T y <span class="br0">)</span> <span
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6835/1000000
-Preprocessor generated node count: 9307/1000000
-Post‐expand include size: 242834/2097152 bytes
-Template argument size: 48429/2097152 bytes
+Preprocessor visited node count: 6831/1000000
+Preprocessor generated node count: 9288/1000000
+Post‐expand include size: 243360/2097152 bytes
+Template argument size: 48456/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2840-0!*!0!!en!*!* and timestamp 20220727012404 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2840-0!*!0!!en!*!* and timestamp 20230120053216 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/atomic/kill_dependency&amp;oldid=138627">https://en.cppreference.com/mwiki/index.php?title=cpp/atomic/kill_dependency&amp;oldid=138627</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/atomic/kill_dependency&amp;oldid=144681">https://en.cppreference.com/mwiki/index.php?title=cpp/atomic/kill_dependency&amp;oldid=144681</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -323,17 +322,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/atomic/kill_dependency">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 12 March 2022, at 10:16.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 49,169 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -348,7 +336,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.910 secs. -->
+</script><!-- Served in 0.932 secs. -->
 	</body>
-<!-- Cached 20220727012404 -->
+<!-- Cached 20230120053216 -->
 </html>

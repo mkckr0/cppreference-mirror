@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -263,8 +264,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Blocks the execution of the current thread until specified <code>sleep_time</code> has been reached. 
-</p><p><code>Clock</code> must meet the <a href="../named_req/Clock.html" title="cpp/named req/Clock"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Clock</span></a> requirements. <span class="t-rev-inl t-since-cxx20"><span>The programs is ill-formed if <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../chrono/is_clock.html"><span class="kw2554">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">is_clock_v</span></span></a><span class="sy1">&lt;</span>Clock<span class="sy1">&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>.
-</p><p>The standard recommends that the clock tied to <code>sleep_time</code> be used, in which case adjustments of the clock may be taken into account. Thus, the duration of the block might, but might not, be less or more than <span class="t-c"><span class="mw-geshi cpp source-cpp">sleep_time <span class="sy2">-</span> Clock<span class="sy4">::</span><span class="me2">now</span><span class="br0">(</span><span class="br0">)</span></span></span> at the time of the call, depending on the direction of the adjustment and whether it is honored by the implementation. The function also may block for longer than until after <code>sleep_time</code> has been reached due to scheduling or resource contention delays.
+</p><p><code>Clock</code> must meet the <a href="../named_req/Clock.html" title="cpp/named req/Clock"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">Clock</span></a> requirements. <span class="t-rev-inl t-since-cxx20"><span>The program is ill-formed if <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../chrono/is_clock.html"><span class="kw2554">std::<span class="me2">chrono</span><span class="sy4">::</span><span class="me2">is_clock_v</span></span></a><span class="sy1">&lt;</span>Clock<span class="sy1">&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>.
+</p><p>The standard recommends that the clock tied to <code>sleep_time</code> be used, in which case adjustments of the clock may be taken into account. Thus, the duration of the block might be more or less than <span class="t-c"><span class="mw-geshi cpp source-cpp">sleep_time <span class="sy2">-</span> Clock<span class="sy4">::</span><span class="me2">now</span><span class="br0">(</span><span class="br0">)</span></span></span> at the time of the call, depending on the direction of the adjustment and whether it is honored by the implementation. The function also may block until after <code>sleep_time</code> has been reached due to process scheduling or resource contention delays.
 </p>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -321,15 +322,15 @@ Waited 2000.17 ms</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7001/1000000
-Preprocessor generated node count: 10012/1000000
-Post‐expand include size: 245655/2097152 bytes
-Template argument size: 49363/2097152 bytes
+Preprocessor visited node count: 7007/1000000
+Preprocessor generated node count: 10025/1000000
+Post‐expand include size: 246162/2097152 bytes
+Template argument size: 49407/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2300-0!*!0!!en!*!* and timestamp 20220726191247 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2300-0!*!0!!en!*!* and timestamp 20230120042339 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -346,17 +347,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/thread/sleep_until">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 26 March 2021, at 17:45.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 142,668 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -371,7 +361,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.122 secs. -->
+</script><!-- Served in 1.129 secs. -->
 	</body>
-<!-- Cached 20220726191247 -->
+<!-- Cached 20230120042340 -->
 </html>

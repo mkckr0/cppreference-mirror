@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/compiler_support","wgTitle":"cpp/compiler support","wgCurRevisionId":140470,"wgArticleId":13465,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/compiler_support","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/compiler_support","wgTitle":"cpp/compiler support","wgCurRevisionId":145573,"wgArticleId":13465,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/compiler_support","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> Compiler support</strong> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -149,25 +150,8 @@ The following tables present compiler support for new C++ features. These includ
 </div>
 <ul><li> <a href="compiler_support.html#cpp20">C++20 core language features</a> (see below)
 </li><li> <a href="compiler_support.html#C.2B.2B20_library_features">C++20 library features</a> (see below)
-</li></ul>
-<div class="t-template-editlink" style="">
-</div>
-<ul><li> <a href="compiler_support/17.html" title="cpp/compiler support/17">C++17 core language features</a> (on a separate page)
-</li><li> <a href="compiler_support/17.html#C.2B.2B17_library_features" title="cpp/compiler support/17">C++17 library features</a> (on a separate page)
-</li></ul>
-<div class="t-template-editlink" style="">
-</div>
-<ul><li> <a href="compiler_support/14.html" title="cpp/compiler support/14">C++14 core language features</a> (on a separate page)
-</li><li> <a href="compiler_support/14.html#C.2B.2B14_library_features" title="cpp/compiler support/14">C++14 library features</a> (on a separate page)
-</li></ul>
-<div class="t-template-editlink" style="">
-</div>
-<ul><li> <a href="compiler_support/11.html" title="cpp/compiler support/11">C++11 core language features</a> (on a separate page)
-</li><li> <a href="compiler_support/11.html#C.2B.2B11_library_features" title="cpp/compiler support/11">C++11 library features</a> (on a separate page)
-</li></ul>
-<div class="t-template-editlink" style="">
-</div>
-<ul><li> <a href="compiler_support.html#References">References</a> (see below)
+</li><li> <a href="compiler_support.html#Older_standards">Older standards</a> (see below)
+</li><li> <a href="compiler_support.html#References">References</a> (see below)
 </li></ul>
 <h4><span class="mw-headline" id="Note"> Note </span></h4>
 <p><small><i>*</i> - hover over a cell with the version number to see notes</small>
@@ -179,7 +163,7 @@ The following tables present compiler support for new C++ features. These includ
 <div class="t-template-editlink" style="">
 </div>
 <h3><span class="mw-headline" id="C.2B.2B23_core_language_features"> C++23 core language features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-compiler-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++23 feature<br> 
@@ -366,7 +350,7 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> DR: Allow Duplicate Attributes
+<td> DR: Allow duplicate <a href="language/attributes.html#Syntax" title="cpp/language/attributes">attributes</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2156R1">P2156R1</a>
 </td>
@@ -515,7 +499,7 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="language/member_functions.html#Explicit_object_parameter" title="cpp/language/member functions">Deducing this</a>
+<td> <a href="language/member_functions.html#Explicit_object_parameter" title="cpp/language/member functions">Explicit object parameter</a> (deducing this)
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0847R7">P0847R7</a>
 </td>
@@ -573,7 +557,7 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Change scope of lambda trailing-return-type
+<td> Change scope of <a href="language/lambda.html#Syntax" title="cpp/language/lambda">lambda</a> trailing-return-type
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2036R3">P2036R3</a>
 </td>
@@ -691,11 +675,11 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Character sets and encodings
+<td> <a href="language/charset.html" title="cpp/language/charset">Character sets and encodings</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2314R4">P2314R4</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
@@ -720,7 +704,7 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Extend init-statement to allow alias-declaration
+<td> Extend init-statement (of <a href="language/for.html#Syntax" title="cpp/language/for"><code>for</code> loop</a>) to allow <a href="language/type_alias.html" title="cpp/language/type alias">alias-declaration</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2360R0">P2360R0</a>
 </td>
@@ -751,7 +735,7 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Multidimensional subscript operator
+<td> Multidimensional <a href="language/operators.html#Array_subscript_operator" title="cpp/language/operators">subscript operator</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2128R6">P2128R6</a>
 </td>
@@ -811,7 +795,7 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> DR: Adjusting the value of feature testing macro <code>__cpp_concepts</code>
+<td> DR: Adjusting the value of feature-test macro <a href="feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_concepts</code></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2493R0">P2493R0</a>
 </td>
@@ -844,7 +828,7 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2437R1">P2437R1</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes<span title="Supported in all versions, but gcc-13 no longer gives a -pedantic warning about it being non-standard.">*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
@@ -873,7 +857,7 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2362R3">P2362R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">14
 </td>
@@ -904,7 +888,7 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -927,11 +911,11 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Delimited escape sequences
+<td> <a href="language/escape.html" title="cpp/language/escape">Delimited escape sequences</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2290R3">P2290R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
@@ -956,11 +940,11 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Named universal character escapes
+<td> <a href="language/escape.html#Named_universal_character_escapes" title="cpp/language/escape">Named universal character escapes</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2071R2">P2071R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
@@ -989,7 +973,7 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2448R2">P2448R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1018,7 +1002,7 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2266R3">P2266R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
@@ -1047,9 +1031,9 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1169R4">P1169R4</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1072,11 +1056,11 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Requirements for optional extended floating-point types
+<td> Requirements for optional <a href="types/floating-point.html" title="cpp/types/floating-point">extended floating-point types</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1467R9">P1467R9</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1084,7 +1068,7 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.4
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1130,11 +1114,11 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Attribute <code>[[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/attributes/assume&amp;action=edit&amp;redlink=1" class="new" title="cpp/language/attributes/assume (page does not exist)">assume</a>]]</code>
+<td> Attribute <code>[[<a href="language/attributes/assume.html" title="cpp/language/attributes/assume">assume</a>]]</code>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1774R8">P1774R8</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1159,15 +1143,15 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Support for UTF-8 as a portable source file encoding
+<td> Support for <a href="language/translation_phases.html#Phase_1" title="cpp/language/translation phases">UTF-8 as a portable source file encoding</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2295R6">P2295R6</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13<span title="UTF-8 source files were already supported in old versions. For pedantic diagnostics of invalid UTF-8 sequences use -finput-charset=UTF-8 -pedantic-errors.">*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15<span title="UTF-8 source files were already supported in old versions, but comments that are invalid as UTF-8 were not diagnosed.">*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015 Update 2">19.0 (Update 2)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1192,7 +1176,7 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2327R1">P2327R1</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
@@ -1217,11 +1201,11 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> DR: Relax requirements on <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> to match existing practices
+<td> DR: <a href="language/types.html#Defect_reports" title="cpp/language/types">Relax requirements on <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span></a> to match existing practices
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2460R2">P2460R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
@@ -1279,6 +1263,122 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2468R2">P2468R2</a>
 </td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> DR: <span class="t-c"><span class="mw-geshi cpp source-cpp">char8_t</span></span> Compatibility and Portability Fix
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2513R4">P2513R4</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">static</span> operator<span class="br0">[</span><span class="br0">]</span></span></span>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2589R0">P2589R0</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> Permitting <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">static</span> <span class="kw4">constexpr</span></span></span> variables in <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span></span></span> functions
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2647R1">P2647R1</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> Extending the lifetime of temporaries in range-based for loop initializer
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2718R0">P2718R0</a>
+</td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
@@ -1304,9 +1404,38 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> DR: <span class="t-c"><span class="mw-geshi cpp source-cpp">char8_t</span></span> Compatibility and Portability Fix
+<td> DR: Meaningful exports
 </td>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2513R3">P2513R3</a>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2615R0">P2615R0</a>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> DR: <span class="t-c"><span class="mw-geshi cpp source-cpp">consteval</span></span> needs to propagate up
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2564R0">P2564R0</a>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1357,12 +1486,12 @@ The following tables present compiler support for new C++ features. These includ
 </th>
 <th> <div class="t-vertical"><div>Cray</div></div>
 </th>
-<th> <div class="t-vertical"><div>Nvidia HPC C++</div></div>
+<th> <div class="t-vertical"><div>Nvidia HPC C++<br>(ex Portland Group/PGI)</div></div>
 </th>
 <th> <div class="t-vertical"><div>Nvidia nvcc</div></div>
 </th></tr></table>
 <h3><span class="mw-headline" id="C.2B.2B23_library_features"> C++23 library features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-standard-library-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++23 feature<br> 
@@ -1630,7 +1759,7 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.3">19.33*</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.3">19.33*</span><span title="no feature-test macro">*</span><br><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1759,7 +1888,7 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Default template arguments for <a href="utility/pair.html" title="cpp/utility/pair"><tt>pair</tt></a>'s forwarding constructor
+<td> Default template arguments for <a href="utility/pair.html" title="cpp/utility/pair"><tt>pair</tt></a>'s forwarding <a href="utility/pair/pair.html" title="cpp/utility/pair/pair">constructor</a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1951R1">P1951R1</a>
 </td>
@@ -1879,9 +2008,9 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2216R3">P2216R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="Paragraph 6 (Binary size)">14 (partial)*</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="Paragraph 6 (Binary size)">14 (partial)* 15</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.2">19.32*</span>
 </td>
@@ -1913,15 +2042,15 @@ The following tables present compiler support for new C++ features. These includ
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> zip: <span class="t-lc">views::zip</span>, <span class="t-lc">views::zip_transform</span>, <span class="t-lc">views::adjacent</span>, and <span class="t-lc">views::adjacent_transform</span>
+<td> zip: <a href="ranges/zip_view.html" title="cpp/ranges/zip view"><tt>views::zip</tt></a>, <a href="ranges/zip_transform_view.html" title="cpp/ranges/zip transform view"><tt>views::zip_transform</tt></a>, <a href="ranges/adjacent_view.html" title="cpp/ranges/adjacent view"><tt>views::adjacent</tt></a>, and <a href="ranges/adjacent_transform_view.html" title="cpp/ranges/adjacent transform view"><tt>views::adjacent_transform</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2321R2">P2321R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="tuple specializations, and views::zip">15 (partial)*</span>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="VS 2022 17.3">19.33*</span> <span title="changes of pair, tuple, and vector&lt;bool&gt;::reference">(partial)*</span>
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="VS 2022 17.3">19.33*</span> <span title="19.33: changes of pair, tuple, and vector&lt;bool&gt;::reference">(partial)*</span><span title="19.35: views::zip">*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2126,9 +2255,9 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2418R2">P2418R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.2">19.32*</span>
 </td>
@@ -2204,7 +2333,7 @@ The following tables present compiler support for new C++ features. These includ
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.3">19.33*</span>
 </td>
@@ -2300,7 +2429,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="make_unique_for_overwrite is missing">16 (partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.3">19.33*</span>
 </td>
@@ -2321,7 +2450,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2340,7 +2469,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2370,11 +2499,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::join_with</span>
+<td> <a href="ranges/join_with_view.html" title="cpp/ranges/join with view"><tt>views::join_with</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2441R2">P2441R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2389,11 +2518,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::chunk</span> and <span class="t-lc">views::slide</span>
+<td> <span class="t-lc">views::chunk</span> and <a href="ranges/slide_view.html" title="cpp/ranges/slide view"><tt>views::slide</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2442R1">P2442R1</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2408,11 +2537,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::chunk_by</span>
+<td> <a href="ranges/chunk_by_view.html" title="cpp/ranges/chunk by view"><tt>views::chunk_by</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2443R1">P2443R1</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2427,7 +2556,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">std::mdspan</span>: a non-owning multidimensional array reference
+<td> <a href="container/mdspan.html" title="cpp/container/mdspan"><tt>std::mdspan</tt></a>: a non-owning multidimensional array reference
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0009R18">P0009R18</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2599R2">P2599R2</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2604R0">P2604R0</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2613R1">P2613R1</a>
 </td>
@@ -2446,7 +2575,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/flat_map&amp;action=edit&amp;redlink=1" class="new" title="cpp/header/flat map (page does not exist)"><tt>&lt;flat_map&gt;</tt></a>
+<td> <a href="header/flat_map.html" title="cpp/header/flat map"><tt>&lt;flat_map&gt;</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0429R9">P0429R9</a>
 </td>
@@ -2465,7 +2594,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="https://en.cppreference.com/mwiki/index.php?title=cpp/header/flat_set&amp;action=edit&amp;redlink=1" class="new" title="cpp/header/flat set (page does not exist)"><tt>&lt;flat_set&gt;</tt></a>
+<td> <a href="header/flat_set.html" title="cpp/header/flat set"><tt>&lt;flat_set&gt;</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1222R4">P1222R4</a>
 </td>
@@ -2492,6 +2621,25 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.6">19.36*</span>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> Freestanding Library: Easy <a href="header/utility.html" title="cpp/header/utility"><tt>&lt;utility&gt;</tt></a>, <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a>, and <a href="header/iterator.html" title="cpp/header/iterator"><tt>&lt;iterator&gt;</tt></a>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P1642R11">P1642R11</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13<span title="Enables extra headers (e.g. &lt;string_view&gt;, etc)">*</span>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
@@ -2503,15 +2651,15 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::stride</span>
+<td> <a href="ranges/stride_view.html" title="cpp/ranges/stride view"><tt>views::stride</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1899R3">P1899R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2522,9 +2670,9 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> Formatted output library
+<td> Formatted output library <a href="header/print.html" title="cpp/header/print"><tt>&lt;print&gt;</tt></a>
 </td>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2093R14">P2093R14</a>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2093R14">P2093R14</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2539R3">P2539R3</a>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2568,7 +2716,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.5">19.35*</span> <span title="19.35: The 'Iterators' section, including basic_const_iterator, make_const_iterator(), and make_const_sentinel().">(partial)*</span><br><span title="VS 2022 17.6">19.36*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2585,7 +2733,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2602,11 +2750,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2291R3">P2291R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2644,7 +2792,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.5">19.35*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2659,7 +2807,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2374R4">P2374R4</a><br><a rel="nofollow" class="external text" href="https://wg21.link/P2540R1">P2540R1</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2701,7 +2849,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2716,11 +2864,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2417R2">P2417R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2737,9 +2885,9 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2750,15 +2898,15 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::as_rvalue</span>
+<td> <a href="ranges/as_rvalue_view.html" title="cpp/ranges/as rvalue view"><tt>views::as_rvalue</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2446R2">P2446R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2777,7 +2925,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="VS 2022 17.5">19.35*</span><br><span title="modules work but you need manually add the modules to your project">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2794,9 +2942,9 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2815,7 +2963,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.6">19.36*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2826,11 +2974,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">views::repeat</span>
+<td> <a href="ranges/repeat_view.html" title="cpp/ranges/repeat view"><tt>views::repeat</tt></a>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2474R2">P2474R2</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2853,7 +3001,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2864,13 +3012,13 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc"><a href="string/basic_string_view.html" title="cpp/string/basic string view">std::basic_string_view</a></span> range constructor should be explicit
+<td> <span class="t-lc"><a href="string/basic_string_view.html" title="cpp/string/basic string view">std::basic_string_view</a></span> range <a href="string/basic_string_view/basic_string_view.html" title="cpp/string/basic string view/basic string view">constructor</a> should be explicit
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2499R0">P2499R0</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.2
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
@@ -2902,25 +3050,6 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <span class="t-lc">std::basic_format_string</span>
-</td>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2508R1">P2508R1</a>
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
-</td></tr>
-<tr>
 <td> Add a conditional noexcept specification to <span class="t-lc"><a href="utility/apply.html" title="cpp/utility/apply">std::apply</a></span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P2517R0">P2517R0</a>
@@ -2929,7 +3058,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2946,7 +3075,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">16 (partial)<span title="Specializations for string and debug_string are not done.">*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2986,7 +3115,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span><span title="Treated as a defect report against C++20.">*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3005,7 +3134,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span><span title="Treated as a defect report against C++20.">*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3024,7 +3153,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.4">19.34*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3039,9 +3168,9 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1169R4">P1169R4</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3058,11 +3187,68 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1467R9">P1467R9</a>
 </td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> DR: <a href="utility/format/basic_format_string.html" title="cpp/utility/format/basic format string"><tt>std::basic_format_string</tt></a>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2508R1">P2508R1</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">15
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.5">19.35*</span>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> Monadic operations for <span class="t-lc">std::expected</span>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2505R5">P2505R5</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> DR: Poison Pills are Too Toxic
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2602R2">P2602R2</a>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2022 17.6">19.36*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3097,7 +3283,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 <div class="t-template-editlink" style="">
 </div>
 <h3><span class="mw-headline" id="C.2B.2B20_core_language_features"> C++20 core language features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-compiler-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++20 feature<br> 
@@ -3159,7 +3345,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="preprocessor/replace.html#Function-like_macros" title="cpp/preprocessor/replace"><code>__VA_OPT__</code></a>
@@ -3190,7 +3376,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/aggregate_initialization.html#Designated_initializers" title="cpp/language/aggregate initialization">Designated initializers</a>
@@ -3221,7 +3407,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/lambda.html#Syntax" title="cpp/language/lambda">template-parameter-list for generic lambdas</a>
@@ -3252,7 +3438,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/bitfield.html#Cpp20_Default_member_initializers_for_bit_fields" title="cpp/language/bit field">Default member initializers for bit-fields</a>
@@ -3283,7 +3469,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Initializer list constructors in class template argument deduction
@@ -3312,7 +3498,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>const&amp;</code>-qualified pointers to members
@@ -3343,7 +3529,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/constraints.html" title="cpp/language/constraints">Concepts</a>
@@ -3362,7 +3548,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.5
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> was supported in 2021.6, removed in 2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3374,7 +3560,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/lambda.html#Lambdas_in_unevaluated_contexts" title="cpp/language/lambda">Lambdas in unevaluated contexts</a>
@@ -3391,7 +3577,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 <p><span title="Xcode 13.3 (13E113)">13.1.6*</span> (partial)
 </p>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.2
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3405,7 +3591,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/operator_comparison.html#Three-way_comparison" title="cpp/language/operator comparison">Three-way comparison operator</a>
@@ -3418,7 +3604,9 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.0">19.20*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
 </td>
@@ -3434,7 +3622,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Simplifying implicit lambda capture
@@ -3463,7 +3651,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/range-for.html#Syntax" title="cpp/language/range-for">init-statements for range-based for</a>
@@ -3482,7 +3670,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.0
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3494,7 +3682,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Default constructible and assignable stateless <a href="language/lambda.html" title="cpp/language/lambda">lambdas</a>
@@ -3525,7 +3713,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>const</code> mismatch with defaulted copy constructor
@@ -3556,7 +3744,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Access checking on specializations
@@ -3587,7 +3775,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> ADL and function templates that are not visible
@@ -3618,7 +3806,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Specify when <code>constexpr</code> function definitions are <a href="language/constant_expression.html#Functions_and_variables_needed_for_constant_evaluation" title="cpp/language/constant expression">needed for constant evaluation</a>
@@ -3649,7 +3837,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Attributes <code>[[<a href="language/attributes/likely.html" title="cpp/language/attributes/likely">likely</a>]]</code> and <code>[[<a href="language/attributes/likely.html" title="cpp/language/attributes/likely">unlikely</a>]]</code>
@@ -3668,7 +3856,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3680,7 +3868,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Make <a href="keywords/typename.html" title="cpp/keywords/typename" class="mw-redirect"><tt>typename</tt></a> more optional
@@ -3689,7 +3877,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -3709,7 +3897,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Pack expansion in lambda init-capture
@@ -3728,7 +3916,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3740,7 +3928,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Attribute <code>[[<a href="language/attributes/no_unique_address.html" title="cpp/language/attributes/no unique address">no_unique_address</a>]]</code>
@@ -3771,7 +3959,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Conditionally Trivial Special Member Functions
@@ -3780,7 +3968,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.8">19.28 (16.8)*</span>
 </td>
@@ -3788,7 +3976,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3800,7 +3988,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Relaxing the <a href="language/structured_binding.html" title="cpp/language/structured binding">structured bindings</a> customization point finding rules
@@ -3831,7 +4019,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Relaxing the <a href="language/range-for.html" title="cpp/language/range-for">range-<code>for</code> loop</a> customization point finding rules
@@ -3862,7 +4050,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Allow structured bindings to accessible members
@@ -3893,7 +4081,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="memory/new/operator_delete.html" title="cpp/memory/new/operator delete">Destroying <code>operator delete</code></a>
@@ -3924,7 +4112,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Class types in <a href="language/template_parameters.html#Non-type_template_parameter" title="cpp/language/template parameters">non-type template parameters</a>
@@ -3955,7 +4143,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Deprecate implicit <a href="language/lambda.html#Lambda_capture" title="cpp/language/lambda">capture</a> of <code>this</code> via <code>[=]</code>
@@ -3986,7 +4174,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/explicit.html" title="cpp/language/explicit"><tt>explicit(bool)</tt></a>
@@ -4017,7 +4205,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Integrating <a href="feature_test.html" title="cpp/feature test">feature-test macros</a>
@@ -4046,7 +4234,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Prohibit aggregates with user-declared constructors
@@ -4077,7 +4265,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>constexpr</code> <a href="language/virtual.html" title="cpp/language/virtual">virtual function</a>
@@ -4108,7 +4296,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Consistency improvements for comparisons
@@ -4139,7 +4327,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/types.html#char8_t" title="cpp/language/types"><code>char8_t</code></a>
@@ -4170,7 +4358,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="types/is_constant_evaluated.html" title="cpp/types/is constant evaluated"><tt>std::is_constant_evaluated()</tt></a>
@@ -4201,7 +4389,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>constexpr</code> <code>try</code>-<code>catch</code> blocks
@@ -4232,7 +4420,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/consteval.html" title="cpp/language/consteval">Immediate functions</a> (<code>consteval</code>)
@@ -4263,7 +4451,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/namespace.html" title="cpp/language/namespace">Nested inline namespaces</a>
@@ -4294,7 +4482,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Yet another approach for <a href="language/template_parameters.html#Type_template_parameter" title="cpp/language/template parameters">constrained</a> <a href="language/auto.html" title="cpp/language/auto">declarations</a>
@@ -4325,7 +4513,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Signed integers are two's complement
@@ -4356,7 +4544,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="signed integers have always been two's complement">yes</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/dynamic_cast.html" title="cpp/language/dynamic cast"><tt>dynamic_cast</tt></a> and polymorphic <a href="language/typeid.html" title="cpp/language/typeid"><tt>typeid</tt></a> in <a href="language/constant_expression.html" title="cpp/language/constant expression">constant expressions</a>
@@ -4387,7 +4575,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Changing the active member of a union inside <code>constexpr</code>
@@ -4418,7 +4606,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/coroutines.html" title="cpp/language/coroutines">Coroutines</a>
@@ -4449,7 +4637,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0 (host code only)
 </td></tr>
 <tr>
 <td> Parenthesized <a href="language/aggregate_initialization.html" title="cpp/language/aggregate initialization">initialization of aggregates</a>
@@ -4458,7 +4646,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.8">19.28 (16.8)*</span>
 </td>
@@ -4478,7 +4666,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Array size deduction in <a href="language/new.html" title="cpp/language/new"><code>new</code>-expressions</a>
@@ -4509,7 +4697,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/modules.html" title="cpp/language/modules">Modules</a>
@@ -4569,7 +4757,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>&lt;=&gt; != ==</code>
@@ -4600,7 +4788,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Explicitly defaulted functions with different exception specifications
@@ -4631,7 +4819,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Lambda capture and storage class specifiers of structured bindings
@@ -4640,7 +4828,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">8 (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8 (partial)<br>16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2017 15.3">19.11*</span>(P1381R1)<br><span title="VS 2019 16.4">19.24*</span>(P1091R3)
 </td>
@@ -4662,7 +4850,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Permit conversions to arrays of unknown bound
@@ -4693,7 +4881,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>constexpr</code> container operations
@@ -4724,7 +4912,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Deprecating some uses of <a href="language/cv.html#Notes" title="cpp/language/cv"><code>volatile</code></a>
@@ -4755,7 +4943,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/constinit.html" title="cpp/language/constinit"><tt>constinit</tt></a>
@@ -4774,7 +4962,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4786,7 +4974,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/operator_other.html#Built-in_comma_operator" title="cpp/language/operator other">Deprecate comma operator in subscripts</a>
@@ -4805,7 +4993,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.5
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4817,7 +5005,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>[[<a href="language/attributes/nodiscard.html" title="cpp/language/attributes/nodiscard">nodiscard</a>]]</code> with message
@@ -4848,7 +5036,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Trivial default initialization in <code>constexpr</code> functions
@@ -4867,7 +5055,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4879,7 +5067,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Unevaluated <code>asm</code>-declaration in <code>constexpr</code> functions
@@ -4898,7 +5086,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -4910,7 +5098,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/enum_class.html#Using-enum-declaration" title="cpp/language/enum"><tt>using enum</tt></a>
@@ -4941,7 +5129,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Synthesizing <a href="language/operator_comparison.html#Three-way_comparison" title="cpp/language/operator comparison">three-way comparison</a> for specified comparison category
@@ -4972,7 +5160,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: <code>[[<a href="language/attributes/nodiscard.html" title="cpp/language/attributes/nodiscard">nodiscard</a>]]</code> for constructors
@@ -5003,7 +5191,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/deduction_guide.html" title="cpp/language/class template argument deduction">Class template argument deduction</a> for alias templates
@@ -5032,7 +5220,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Class template argument deduction for aggregates
@@ -5061,7 +5249,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: <a href="language/return.html" title="cpp/language/return">Implicit move</a> for more local objects and rvalue references
@@ -5092,7 +5280,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Allow defaulting comparisons by value
@@ -5111,7 +5299,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -5123,7 +5311,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Remove <code>std::weak_equality</code> and <code>std::strong_equality</code>
@@ -5142,7 +5330,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -5154,7 +5342,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Inconsistencies with non-type template parameters
@@ -5185,7 +5373,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Pseudo-destructors end object lifetimes
@@ -5216,7 +5404,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Converting from <code>T*</code> to <code>bool</code> should be considered narrowing
@@ -5247,7 +5435,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++20 feature<br> 
@@ -5274,12 +5462,12 @@ Applied to C++11 and later modes.">(partial)*</span>
 </th>
 <th> <div class="t-vertical"><div>Cray</div></div>
 </th>
-<th> <div class="t-vertical"><div>Nvidia HPC C++</div></div>
+<th> <div class="t-vertical"><div>Nvidia HPC C++<br>(ex Portland Group/PGI)</div></div>
 </th>
 <th> <div class="t-vertical"><div>Nvidia nvcc</div></div>
 </th></tr></table>
 <h3><span class="mw-headline" id="C.2B.2B20_library_features"> C++20 library features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-standard-library-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++20 feature<br> 
@@ -5515,7 +5703,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">7 (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">7 (partial)<br>16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2017 15.6">19.13*</span> (partial)<br><span title="VS 2019 16.2">19.22*</span>
 </td>
@@ -5614,7 +5802,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0355R7">P0355R7</a>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">11 (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="missing timezones and UTC time">11 (partial)*</span><br><span>13</span>
 </td>
 <td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">7 (partial)
 </td>
@@ -5717,7 +5905,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0528R3">P0528R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -5819,7 +6007,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0556R3">P0556R3</a> <a rel="nofollow" class="external text" href="https://wg21.link/P1956R1">P1956R1</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9 (P0556R3)<br>10 (P1956R1)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9<br>(P0556R3)<br>10 (P1956R1)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9 (P0556R3)<br>12 (P1956R1)
 </td>
@@ -6095,7 +6283,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">8 <span title="Missing &lt;cuchar&gt; and related parts of &lt;memory_resource&gt;">(partial)*</span><br>
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">8<span title="Missing &lt;cuchar&gt; and related parts of &lt;memory_resource&gt;">*</span><br>(partial)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.2">19.22*</span>
 </td>
@@ -6194,9 +6382,12 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0896R4">P0896R4</a>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">10 <span title="Some algorithms like std::ranges::sort do not support proxy references">(partial)*</span><br>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">13 (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13 (partial)<br>15<span title="Prior to libc++ 16, this feature is considered experimental and is disabled by default.
+ Prior to libc++ 15, support can be enabled with -DLIBCXX_ENABLE_INCOMPLETE_FEATURES=ON when building LLVM.
+ In libc++ 15, this feature can be enabled with the -fexperimental-library compiler flag when using libc++ (see https://libcxx.llvm.org/UsingLibcxx.html#enabling-experimental-c-library-features).
+ In libc++ 16, this feature is enabled by default.">*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -6375,7 +6566,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1209R0">P1209R0</a> <a rel="nofollow" class="external text" href="https://wg21.link/P1115R3">P1115R3</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9 (P1209R0)<br>10 (P1115R3)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9<br>(P1209R0)<br>10 (P1115R3)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8 (P1209R0) <br>11 (P1115R3)
 </td>
@@ -6418,7 +6609,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.9">19.28 (16.9)*</span>
 </td>
@@ -6614,7 +6805,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="numeric.html" title="cpp/numeric">Bit operations</a>: <code>std::</code>
+<td> <a href="numeric.html#Bit_manipulation_.28since_C.2B.2B20.29" title="cpp/numeric">Bit operations</a>: <code>std::</code>
 <p><a href="numeric/rotl.html" title="cpp/numeric/rotl"><tt>rotl()</tt></a>,
 <a href="numeric/rotr.html" title="cpp/numeric/rotr"><tt>rotr()</tt></a>,
 <a href="numeric/countl_zero.html" title="cpp/numeric/countl zero"><tt>countl_zero()</tt></a>,
@@ -6668,9 +6859,11 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0645R10">P0645R10</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="The paper is implemented but still marked as an incomplete feature. Not yet implemented LWG-issues will cause API and ABI breakage. Support is disabled by default and can be enabled with -DLIBCXX_ENABLE_INCOMPLETE_FEATURES=ON when building LLVM">14*</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="The paper is implemented but still marked as an incomplete feature. Not yet implemented LWG-issues will cause API and ABI breakage.
+ Prior to libc++ 15, support is disabled by default and can be enabled with -DLIBCXX_ENABLE_INCOMPLETE_FEATURES=ON when building LLVM.
+ In libc++ 15 and later, this feature can be enabled with the -fexperimental-library compiler flag when using libc++ (see https://libcxx.llvm.org/UsingLibcxx.html#enabling-experimental-c-library-features)">14*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -6832,7 +7025,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">11
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="__builtin_source_location implemented, missing libstdc++ implementation (https://reviews.llvm.org/D120159, https://reviews.llvm.org/D120634)">15 (partial)*</span>
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="__builtin_source_location implemented, missing libstdc++ implementation (https://reviews.llvm.org/D120159, https://reviews.llvm.org/D120634). Also wrong location reported when used as default argument (https://github.com/llvm/llvm-project/issues/56379)">15*</span><br>(partial)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -6851,7 +7044,7 @@ Applied to C++11 and later modes.">(partial)*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="Essential parts implemented, various operator implementations missing.">14 (partial)*</span>
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="Essential parts implemented, various operator implementations missing.">14*</span><br>(partial)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -6947,25 +7140,17 @@ Applied to C++11 and later modes.">(partial)*</span>
 </th>
 <th> <div class="t-vertical"><div>Cray C++<br>Standard Library</div></div>
 </th></tr></table>
-<p><span id="cpp17"></span>
-</p>
-<h2><span class="mw-headline" id="C.2B.2B17_features"> C++17 features </span></h2>
+<h2><span class="mw-headline" id="Older_standards"> Older standards </span></h2>
 <div class="t-template-editlink" style="">
 </div>
 <ul><li> <a href="compiler_support/17.html" title="cpp/compiler support/17">C++17 core language features</a>
 </li><li> <a href="compiler_support/17.html#C.2B.2B17_library_features" title="cpp/compiler support/17">C++17 library features</a>
 </li></ul>
-<p><span id="cpp14"></span>
-</p>
-<h2><span class="mw-headline" id="C.2B.2B14_features"> C++14 features </span></h2>
 <div class="t-template-editlink" style="">
 </div>
 <ul><li> <a href="compiler_support/14.html" title="cpp/compiler support/14">C++14 core language features</a>
 </li><li> <a href="compiler_support/14.html#C.2B.2B14_library_features" title="cpp/compiler support/14">C++14 library features</a>
 </li></ul>
-<p><span id="cpp11"></span>
-</p>
-<h2><span class="mw-headline" id="C.2B.2B11_features"> C++11 features </span></h2>
 <div class="t-template-editlink" style="">
 </div>
 <ul><li> <a href="compiler_support/11.html" title="cpp/compiler support/11">C++11 core language features</a>
@@ -6973,161 +7158,31 @@ Applied to C++11 and later modes.">(partial)*</span>
 </li></ul>
 <p><span id="references"></span>
 </p>
-<h2><span class="mw-headline" id="References"> References </span></h2>
+<h2><span class="mw-headline" id="References">References</span></h2>
 <div class="t-template-editlink" style="">
 </div>
-<p>Individual vendor compatibility checklists (these are more up-to-date than the table above)
-</p>
-<ul><li> GCC (Updated 2021-02)
-<ul><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/projects/cxx-status.html#cxx11">C++11 core language support status</a> (complete as of 4.8.1, except for n2670, which is implemented by no compiler and removed in C++23)
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/projects/cxx-status.html#cxx14">C++14 core language support status</a> (complete as of 5.1)
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/projects/cxx-status.html#cxx17">C++17 core language support status</a> (complete as of 7.1)
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/projects/cxx-status.html#cxx20">C++20 core language support status</a>(complete as of 11.0, except part of modules)
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/projects/cxx-status.html#cxx23">C++23 core language support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2011">C++11 library support status</a> (complete as of 5.1)
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2014">C++14 library support status</a> (complete as of 5.1)
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2017">C++17 library support status</a> (complete as of 12.0)
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2020">C++20 library support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2023">C++23 library support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/projects/cxx-status.html#tses">Technical Specifications support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://gcc.gnu.org/projects/cxx-dr-status.html">Core language defect report status</a>
+<ul><li> <a href="https://en.cppreference.com/w/Template:cpp/compiler_support/references" title="Template:cpp/compiler support/references">Vendor compatibility checklists</a>
 </li></ul>
-</li><li> Clang++ (Updated 2021-07)
-<ul><li> <a rel="nofollow" class="external text" href="https://clang.llvm.org/cxx_status.html#cxx11">C++11 core language support status</a> (complete as of 3.3)
-</li><li> C++11 library support status (complete as of <a rel="nofollow" class="external text" href="https://github.com/llvm-mirror/libcxx/commit/5fec82dc0db3623546038e4a86baa44f749e554f#diff-c330060c0d4b6fb493c2be0ff80a3f7e">2012-07-29</a>)
-</li><li> <a rel="nofollow" class="external text" href="https://clang.llvm.org/cxx_status.html#cxx14">C++14 core language support status</a> (complete as of 3.4)
-</li><li> <a rel="nofollow" class="external text" href="https://libcxx.llvm.org/Status/Cxx14.html">C++14 library support status</a> (complete as of 3.5)
-</li><li> <a rel="nofollow" class="external text" href="https://clang.llvm.org/cxx_status.html#cxx17">C++17 core language support status</a> (complete as of 5.0)
-</li><li> <a rel="nofollow" class="external text" href="https://libcxx.llvm.org/Status/Cxx17.html">C++17 library support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://clang.llvm.org/cxx_status.html#cxx20">C++20 core language support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://libcxx.llvm.org/Status/Cxx20.html">C++20 library support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://clang.llvm.org/cxx_status.html#cxx23">C++23 core language support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://libcxx.llvm.org/Status/Cxx2b.html">C++23 library support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://clang.llvm.org/cxx_status.html#ts">Technical Specifications support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://clang.llvm.org/cxx_dr_status.html">Core language defect report status</a>
-</li></ul>
-</li><li> Apple Clang (Updated 2019-06)
-<ul><li> <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Xcode#Toolchain_versions">Xcode toolchain versions on Wikipedia</a>
-</li><li> <a rel="nofollow" class="external text" href="https://developer.apple.com/documentation/xcode_release_notes">Xcode release notes</a>
-</li></ul>
-</li><li> Microsoft Visual Studio (updated 2022-03)
-<ul><li> <a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance">Microsoft C/C++ language conformance (Visual Studio 2015 and later)</a>
-</li><li> <a rel="nofollow" class="external text" href="https://github.com/microsoft/STL/wiki/Changelog">Upcoming releases Visual Studio 2022 change log</a>
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/cpp17-20-features-and-fixes-in-vs-2019/">C++17/20 Features and Fixes in Visual Studio 2019</a>
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/stl-features-and-fixes-in-vs-2017-15-8/">STL Features and Fixes in VS 2017 15.8</a>
-</li><li> C++17 <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/announcing-msvc-conforms-to-the-c-standard/">Announcing: MSVC Conforms to the C++ Standard</a> (complete as of 15.7)
-</li><li> C++17 <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c17-progress-in-vs-2017-15-5-and-15-6/">Features And STL Fixes In VS 2017 15.5</a>
-</li><li> C++17 <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c17-features-and-stl-fixes-in-vs-2017-15-3/">Features And STL Fixes In VS 2017 15.3</a>
-</li><li> C++11/C++14/C++17 <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c17-features-in-vs-2017-3/">core language and library status in VS2017.3</a>
-</li><li> C++11/C++14/C++17 core language support status
-<ul><li> <a rel="nofollow" class="external text" href="https://msdn.microsoft.com/en-us/library/hh567368.aspx#featurelist">C++11/14/17 core language support status in VS2010, VS2012, VS2013, and VS2015</a>
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c1114-core-language-features-in-vs-2013-and-the-nov-2013-ctp/">VS2013 vs. VS2015 CTP0</a>
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c1114-feature-tables-for-visual-studio-14-ctp1/">VS2013 vs. VS2015 CTP1</a>
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c1114-features-in-visual-studio-14-ctp3/">VS2013 vs. VS2015 CTP3</a> (includes the roadmap table)
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c111417-features-in-vs-2015-preview/">VS2015 ("VS14") preview</a>
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c111417-features-in-vs-2015-rc/">VS2015 ("VS14") release candidate</a> (C++11 remains incomplete, but C++17 support appears)
-</li><li> <a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/cpp/overview/visual-cpp-language-conformance">VS2019</a>
-</li></ul>
-</li><li> <a rel="nofollow" class="external text" href="https://msdn.microsoft.com/en-us/library/hh567368.aspx#stl">C++11 and C++14 library support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c111417-features-in-vs-2015-rtm/">C++11/14/17 Features In VS 2015 RTM</a> including core language and standard library (including technical specifications)
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/vs-2015-update-2s-stl-is-c17-so-far-feature-complete/">C++14/17 features in VS 2015 Update 2 standard library</a> library is feature complete up to current C++17 with few minor issues (some defect reports, some constexprs, etc)
-</li><li> <a rel="nofollow" class="external text" href="https://devblogs.microsoft.com/cppblog/c1417-features-and-stl-fixes-in-vs-15-preview-5/">C++14/17 Features and STL Fixes in VS “15” Preview 5</a> including a detailed C++17 status table
-</li></ul>
-</li><li> Intel C++ (Updated 2022-01)
-<ul><li> <a rel="nofollow" class="external text" href="https://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler">C++11 core language support status</a> (complete as of 15.0)
-</li><li> <a rel="nofollow" class="external text" href="https://software.intel.com/en-us/articles/c14-features-supported-by-intel-c-compiler">C++14 core language support status</a> (functionally complete as of 17.0 - N3664 is an optimization)
-</li><li> <a rel="nofollow" class="external text" href="https://software.intel.com/en-us/articles/c17-features-supported-by-intel-c-compiler">C++17 core language support status</a> (incomplete)
-</li><li> <a rel="nofollow" class="external text" href="https://www.intel.com/content/www/us/en/developer/articles/technical/c20-features-supported-by-intel-cpp-compiler.html">C++20 core language support status</a> (incomplete)
-</li><li> <a rel="nofollow" class="external text" href="https://software.intel.com/en-us/articles/intel-c-compiler-190-for-linux-release-notes-for-intel-parallel-studio-xe-2019#cpp17">C++17 features of Intel 19.0 beta</a>
-</li><li> Intel does not ship an implementation of the C++ standard library, except for
-<ul><li> <a rel="nofollow" class="external text" href="https://software.intel.com/en-us/get-started-with-pstl">Parallel STL</a> (an implementation of the C++17 standard library algorithms with support for execution policies)
-</li></ul>
-</li><li> <a rel="nofollow" class="external text" href="https://charm.cs.illinois.edu/redmine/issues/1560#note-6">Intel's compatibility with versions of libstdc++ from GCC</a>
-</li></ul>
-</li><li> EDG (Updated 2022-03)
-<ul><li> <a rel="nofollow" class="external text" href="https://www.edg.com/features.html">C++11 core language support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://www.edg.com/cpp14_features.html">C++14 core language support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://www.edg.com/cpp17_features.html">C++17 core language support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://www.edg.com/cpp20_features.html">C++20 core language support status</a>
-</li><li> <a rel="nofollow" class="external text" href="https://www.edg.com/cpp23_features.html">C++23 core language support status</a>
-</li><li> EDG does not ship an implementation of the C++ standard library
-</li></ul>
-</li><li> Oracle C++ (updated 2017-07)
-<ul><li> Version number is compiler version, not Oracle Studio version
-</li><li> <a rel="nofollow" class="external text" href="https://docs.oracle.com/cd/E37069_01/html/E37071/gncix.html">C++11 core language support status in 5.13</a>
-<ul><li> <a rel="nofollow" class="external text" href="https://docs.oracle.com/cd/E60778_01/html/E60742/gkeza.html#scrolltoc">Missing C++11 support added in 5.14 (page has a typo, and still says 5.13)</a>
-</li></ul>
-</li><li> <a rel="nofollow" class="external text" href="https://docs.oracle.com/cd/E60778_01/html/E60742/gncix.html#scrolltoc">C++14 features added in 5.14</a>
-<ul><li> Full C++14 support added in 5.15.
-</li></ul>
-</li><li> Oracle ships 4 implementations of the C++ standard library:
-<ul><li> libCstd (RogueWave Standard Library version 2), predates C++98
-</li><li> stlport4 (STLport Standard Library version 4.5.3), predates C++03
-</li><li> stdcxx4 (Apache Standard Library version 4), predates C++11
-</li><li> libstdc++ (GCC runtime library, support for C++11 and C++14 depending on release)
-</li></ul>
-</li></ul>
-</li><li> IBM XL C++ (updated 2018-05)
-<ul><li> IBM XL C++ for Linux
-<ul><li> <a rel="nofollow" class="external text" href="https://www.ibm.com/support/knowledgecenter/en/SSXVZZ_16.1.0/com.ibm.xlcpp161.lelinux.doc/language_ref/standard_features.html">Core language support status</a>: C++11 complete as of 13.1.6, C++14 partial in 16.1.0
-</li><li> IBM does not ship an implementation of C++ standard library for Linux (uses GNU libstdc++)
-</li></ul>
-</li><li> IBM XL C++ for AIX
-<ul><li> <a rel="nofollow" class="external text" href="https://www.ibm.com/support/knowledgecenter/en/SSGH3R_13.1.3/com.ibm.xlcpp1313.aix.doc/language_ref/cpp0x_exts.html">Core language support status</a>: C++11 partial in 13.1.3 and 16.1.0 (xlC frontend), complete in 16.1.0 (xlclang frontend)
-</li><li> IBM ships <a rel="nofollow" class="external text" href="https://www-01.ibm.com/support/knowledgecenter/SSGH3R_13.1.0/com.ibm.xlcpp131.aix.doc/standlib/header_files.html?lang=en">a version of Dinkumware library</a> for AIX with full support for C++ TR1, including &lt;regex&gt;, but no C++11
-</li><li> <a rel="nofollow" class="external text" href="https://www.ibm.com/support/pages/ibm-xl-cc-compilers-features">IBM XL C/C++ compilers features</a>
-</li></ul>
-</li></ul>
-</li><li> HP aCC
-<ul><li> <a rel="nofollow" class="external text" href="https://h20565.www2.hpe.com/hpsc/doc/public/display?sp4ts.oid=4145774&amp;docLocale=en_US&amp;docId=emr_na-c04221956">HP aC++ A.06.28 release notes (including C++11 core language features)</a>
-</li><li> HP ships a version of RogueWave STL 2.0 implementation of the C++98 standard library
-</li></ul>
-</li><li> Digital Mars C++
-<ul><li> <a rel="nofollow" class="external text" href="https://www.digitalmars.com/ctg/CPP0x-Language-Implementation.html">C++11 core language support status</a>
-</li></ul>
-</li><li> Embarcadero C++
-<ul><li> <a rel="nofollow" class="external text" href="https://docwiki.embarcadero.com/RADStudio/Berlin/en/C%2B%2B11_Language_Features_Compliance_Status">Language features compliance status</a> (RAD Studio 10.1 Berlin), including C++11 features supported by legacy and Clang-enhanced compilers (based on Clang 3.3)
-</li><li> <a rel="nofollow" class="external text" href="https://docwiki.embarcadero.com/RADStudio/Rio/en/Modern_C%2B%2B_Language_Features_Compliance_Status">Language features compliance status</a> (RAD Studio 10.3 Rio), including C++11 features supported by legacy compilers and C++11, C++14, and C++17 features supported by the Clang-enhanced compilers (based on Clang 5.0)
-</li></ul>
-</li><li> Cray (updated 2020-02)
-<ul><li> <a rel="nofollow" class="external text" href="https://docs.cray.com/books/S-2179-84/S-2179-84.pdf">Cray C and C++ Reference Manual (8.4)</a> For version 8.4, claims all of C++14 is supported except alignas
-</li><li> <a rel="nofollow" class="external text" href="https://pubs.cray.com/content/S-2179/8.6/cray-c-and-c++-reference-manual-s-2179-86/cray-c-and-c++-dialect-use#concept_kgd_fcr_3s">Cray C and C++ Reference Manual (8.6)</a> For version 8.6, claims all of C++14 is supported
-</li><li> <a rel="nofollow" class="external text" href="https://pubs.cray.com/pdf-attachments/attachment?pubId=00761211-DC&amp;attachmentId=pub_00761211-DC.pdf">Cray C and C++ Reference Manual (9.1)</a> for version 9.1 doesn't claim support beyond C++14
-</li></ul>
-</li><li> Portland Group (PGI) (updated 2019-01)
-<ul><li> <a rel="nofollow" class="external text" href="https://www.pgroup.com/doc/pgirn161.pdf">Release notes for 2016</a> claim C++14 support, except "generalized constexpr and constexpr member functions and implicit const, variable templates, clarifying memory allocation (merged allocation)"
-</li><li> <a rel="nofollow" class="external text" href="https://www.pgroup.com/resources/docs/18.1/pdf/pgirn181-x86.pdf">Release notes for 2018</a>
-</li><li> <a rel="nofollow" class="external text" href="https://www.pgroup.com/resources/docs/19.1/x86/pgi-ref-guide/index.htm">Reference manual of PGI 19.1</a>
-</li><li> PGI does not ship an implementation of C++ standard library
-</li></ul>
-</li><li> Nvidia Cuda nvcc (updated 2021-03-04)
-<ul><li> <a rel="nofollow" class="external text" href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#c-cplusplus-language-support">CUDA C Programming Guide (v11.2.1)</a>
-</li><li> "All C++17 language features are supported in nvcc version 11.0 and later, subject to restrictions described <a rel="nofollow" class="external text" href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#cpp17">here</a>."
-</li><li> NVCC does not ship an implementation of C++ standard library
-</li></ul>
-</li><li> Texas Instruments (updated 2018-05)
-<ul><li> <a rel="nofollow" class="external text" href="https://www.ti.com/lit/ug/slau132r/slau132r.pdf">cl430 version v18.1.0</a> claims C++14 support
-</li></ul>
-</li><li> Analog Devices (updated 2018-05)
-<ul><li> <a rel="nofollow" class="external text" href="https://www.analog.com/media/en/dsp-documentation/software-manuals/cces-SharcCompiler-manual.pdf">CrossCore Embedded Studio 2.8.0 for SHARC</a> claims C++11 support.
-</li></ul>
-</li></ul>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+</table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 59985/1000000
-Preprocessor generated node count: 36111/1000000
-Post‐expand include size: 1464766/2097152 bytes
-Template argument size: 552964/2097152 bytes
+Preprocessor visited node count: 64653/1000000
+Preprocessor generated node count: 40925/1000000
+Post‐expand include size: 1514614/2097152 bytes
+Template argument size: 596276/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13465-0!*!0!!en!2!* and timestamp 20220730103248 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13465-0!*!0!!en!2!* and timestamp 20230120170850 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support&amp;oldid=140470">https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support&amp;oldid=140470</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support&amp;oldid=145573">https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support&amp;oldid=145573</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -7140,17 +7195,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/compiler_support">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 22 June 2022, at 04:43.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,743,813 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -7165,7 +7209,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.882 secs. -->
+</script><!-- Served in 4.425 secs. -->
 	</body>
-<!-- Cached 20220730103248 -->
+<!-- Cached 20230120170850 -->
 </html>

@@ -283,10 +283,11 @@ r2 <span class="sy1">=</span> <a href="atomic_load.html"><span class="kw933">ato
 <a href="atomic_store.html"><span class="kw931">atomic_store_explicit</span></a><span class="br0">(</span>y, <span class="nu0">42</span>, memory_order_relaxed<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// D</span></span></span>
 </p><p>is allowed to produce <code>r1 == r2 == 42</code> because, although A is <i>sequenced-before</i> B within thread 1 and C is <i>sequenced before</i> D within thread 2, nothing prevents D from appearing before A in the modification order of y, and B from appearing before C in the modification order of x. The side-effect of D on y could be visible to the load A in thread 1  while the side effect of B on x could be visible to the load C in thread 2. In particular, this may occur if D is completed before C in thread 2, either due to compiler reordering or at runtime.
 </p><p><br>
-</p><p>Typical use for relaxed memory ordering is incrementing counters, such as the reference counters , since this only requires atomicity, but not ordering or synchronization (note that decrementing the shared_ptr counters requires acquire-release synchronization with the destructor)
+</p><p>Typical use for relaxed memory ordering is incrementing counters, such as the reference counters , since this only requires atomicity, but not ordering or synchronization 
 </p>
 <h4><span class="mw-headline" id="Release-Consume_ordering">Release-Consume ordering</span></h4>
-<p>If an atomic store in thread A is tagged <span class="t-c"><span class="mw-geshi c source-c">memory_order_release</span></span> and an atomic load in thread B from the same variable that read the stored value is tagged <span class="t-c"><span class="mw-geshi c source-c">memory_order_consume</span></span>, all memory writes (non-atomic and relaxed atomic) that <i>happened-before</i> the atomic store from the point of view of thread A, become <i>visible side-effects</i> within those operations in thread B into which the load operation <i>carries dependency</i>, that is, once the atomic load is completed, those operators and functions in thread B that use the value obtained from the load are guaranteed to see what thread A wrote to memory.
+<p>If an atomic store in thread A is tagged <span class="t-c"><span class="mw-geshi c source-c">memory_order_release</span></span>, an atomic load in thread B from the same variable is tagged <span class="t-c"><span class="mw-geshi c source-c">memory_order_consume</span></span>, and the load in thread B reads a value written by the store in thread A, then the store in thread A is <i>dependency-ordered before</i> the load in thread B. 
+</p><p>All memory writes (non-atomic and relaxed atomic) that <i>happened-before</i> the atomic store from the point of view of thread A, become <i>visible side-effects</i> within those operations in thread B into which the load operation <i>carries dependency</i>, that is, once the atomic load is completed, those operators and functions in thread B that use the value obtained from the load are guaranteed to see what thread A wrote to memory.
 </p><p>The synchronization is established only between the threads <i>releasing</i> and <i>consuming</i> the same atomic variable. Other threads can see different order of memory accesses than either or both of the synchronized threads.
 </p><p>On all mainstream CPUs other than DEC Alpha, dependency ordering is automatic, no additional CPU instructions are issued for this synchronization mode, only certain compiler optimizations are affected (e.g. the compiler is prohibited from performing speculative loads on the objects that are involved in the dependency chain). 
 </p><p>Typical use cases for this ordering involve read access to rarely written concurrent data structures (routing tables, configuration, security policies, firewall rules, etc) and publisher-subscriber situations with pointer-mediated publication, that is, when the producer publishes a pointer through which the consumer can access information: there is no need to make everything else the producer wrote to memory visible to the consumer (which may be an expensive operation on weakly-ordered architectures). An example of such scenario is <a href="https://en.wikipedia.org/wiki/Read-copy-update" class="extiw" title="enwiki:Read-copy-update">rcu_dereference</a>.
@@ -297,7 +298,8 @@ r2 <span class="sy1">=</span> <a href="atomic_load.html"><span class="kw933">ato
 <p>If some atomic is store-released and several other threads perform read-modify-write operations on that atomic, a "release sequence" is formed: all threads that perform the read-modify-writes to the same atomic synchronize with the first thread and each other even if they have no <code>memory_order_release</code> semantics. This makes single producer - multiple consumers situations possible without imposing unnecessary synchronization between individual consumer threads.
 </p>
 <h4><span class="mw-headline" id="Release-Acquire_ordering">Release-Acquire ordering</span></h4>
-<p>If an atomic store in thread A is tagged <span class="t-c"><span class="mw-geshi c source-c">memory_order_release</span></span> and an atomic load in thread B from the same variable is tagged <span class="t-c"><span class="mw-geshi c source-c">memory_order_acquire</span></span>, all memory writes (non-atomic and relaxed atomic) that <i>happened-before</i> the atomic store from the point of view of thread A, become <i>visible side-effects</i> in thread B. That is, once the atomic load is completed, thread B is guaranteed to see everything thread A wrote to memory. This promise only holds if B actually returns the value that A stored, or a value from later in the release sequence.
+<p>If an atomic store in thread A is tagged <span class="t-c"><span class="mw-geshi c source-c">memory_order_release</span></span>, an atomic load in thread B from the same variable is tagged <span class="t-c"><span class="mw-geshi c source-c">memory_order_acquire</span></span>, and the load in thread B reads a value written by the store in thread A, then the store in thread A <i>synchronizes-with</i> the load in thread B.
+</p><p>All memory writes (non-atomic and relaxed atomic) that <i>happened-before</i> the atomic store from the point of view of thread A, become <i>visible side-effects</i> in thread B. That is, once the atomic load is completed, thread B is guaranteed to see everything thread A wrote to memory. This promise only holds if B actually returns the value that A stored, or a value from later in the release sequence.
 </p><p>The synchronization is established only between the threads <i>releasing</i> and <i>acquiring</i> the same atomic variable. Other threads can see different order of memory accesses than either or both of the synchronized threads.
 </p><p>On strongly-ordered systems — x86, SPARC TSO, IBM mainframe, etc. — release-acquire ordering is automatic for the majority of operations. No additional CPU instructions are issued for this synchronization mode; only certain compiler optimizations are affected (e.g., the compiler is prohibited from moving non-atomic stores past the atomic store-release or performing non-atomic loads earlier than the atomic load-acquire). On weakly-ordered systems (ARM, Itanium, PowerPC), special CPU load or memory fence instructions are used.
 </p><p>Mutual exclusion locks, such as <a href="../thread.html#Mutual_exclusion" title="c/thread">mutexes</a> or <a href="atomic_flag_test_and_set.html" title="c/atomic/atomic flag test and set">atomic spinlocks</a>, are an example of release-acquire synchronization: when the lock is released by thread A and acquired by thread B, everything that took place in the critical section (before the release) in the context of thread A has to be visible to thread B (after the acquire) which is executing the same critical section.
@@ -377,15 +379,15 @@ r2 <span class="sy1">=</span> <a href="atomic_load.html"><span class="kw933">ato
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5368/1000000
-Preprocessor generated node count: 11775/1000000
-Post‐expand include size: 127951/2097152 bytes
-Template argument size: 21513/2097152 bytes
+Preprocessor visited node count: 5371/1000000
+Preprocessor generated node count: 11793/1000000
+Post‐expand include size: 128111/2097152 bytes
+Template argument size: 21514/2097152 bytes
 Highest expansion depth: 19/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9269-0!*!0!!en!*!* and timestamp 20220609012111 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9269-0!*!0!!en!*!* and timestamp 20230120004655 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -402,17 +404,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/atomic/memory_order">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 12 March 2022, at 23:11.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 93,423 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -427,7 +418,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.710 secs. -->
+</script><!-- Served in 0.700 secs. -->
 	</body>
-<!-- Cached 20220609012111 -->
+<!-- Cached 20230120004656 -->
 </html>

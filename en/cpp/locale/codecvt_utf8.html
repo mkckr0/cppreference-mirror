@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/locale/codecvt_utf8","wgTitle":"cpp/locale/codecvt utf8","wgCurRevisionId":108512,"wgArticleId":2900,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/locale/codecvt_utf8","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/locale/codecvt_utf8","wgTitle":"cpp/locale/codecvt utf8","wgCurRevisionId":146740,"wgArticleId":2900,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/locale/codecvt_utf8","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -251,7 +252,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p><span class="t-lc"><strong class="selflink">std::codecvt_utf8</strong></span> is a <span class="t-lc"><a href="codecvt.html" title="cpp/locale/codecvt">std::codecvt</a></span> facet which encapsulates conversion between a UTF-8 encoded byte string and UCS2 or UTF-32 character string (depending on the type of <code>Elem</code>). This codecvt facet can be used to read and write UTF-8 files, both text and binary. 
+<p><code>std::codecvt_utf8</code> is a <span class="t-lc"><a href="codecvt.html" title="cpp/locale/codecvt">std::codecvt</a></span> facet which encapsulates conversion between a UTF-8 encoded byte string and UCS2 or UTF-32 character string (depending on the type of <code>Elem</code>). This <code>codecvt</code> facet can be used to read and write UTF-8 files, both text and binary. 
 </p>
 <h3><span class="mw-headline" id="Template_Parameters">Template Parameters</span></h3>
 <table class="t-par-begin">
@@ -262,7 +263,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> -
 </td>
-<td>  either <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span></span>, or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span>
+<td>  either <span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span>, or <span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span>
 </td></tr>
 <tr class="t-par">
 <td>  Maxcode
@@ -305,7 +306,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Constructs a new <code>std::codecvt_utf8</code> facet, passes the initial reference counter <code>refs</code> to the base class.
+<p>Constructs a new <code>std::codecvt_utf8</code> facet, passes the initial reference counter <span class="t-c"><span class="mw-geshi cpp source-cpp">refs</span></span> to the base class.
 </p>
 <h3> <span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -388,37 +389,37 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/out.html" title="cpp/locale/codecvt/out"> <span class="t-lines"><span>out</span></span></a></div></div>
 </td>
-<td>   invokes <code>do_out</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   invokes <code>do_out</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/in.html" title="cpp/locale/codecvt/in"> <span class="t-lines"><span>in</span></span></a></div></div>
 </td>
-<td>   invokes <code>do_in</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   invokes <code>do_in</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/unshift.html" title="cpp/locale/codecvt/unshift"> <span class="t-lines"><span>unshift</span></span></a></div></div>
 </td>
-<td>   invokes <code>do_unshift</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   invokes <code>do_unshift</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/encoding.html" title="cpp/locale/codecvt/encoding"> <span class="t-lines"><span>encoding</span></span></a></div></div>
 </td>
-<td>   invokes <code>do_encoding</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   invokes <code>do_encoding</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/always_noconv.html" title="cpp/locale/codecvt/always noconv"> <span class="t-lines"><span>always_noconv</span></span></a></div></div>
 </td>
-<td>   invokes <code>do_always_noconv</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   invokes <code>do_always_noconv</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/length.html" title="cpp/locale/codecvt/length"> <span class="t-lines"><span>length</span></span></a></div></div>
 </td>
-<td>   invokes <code>do_length</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   invokes <code>do_length</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/max_length.html" title="cpp/locale/codecvt/max length"> <span class="t-lines"><span>max_length</span></span></a></div></div>
 </td>
-<td>   invokes <code>do_max_length</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   invokes <code>do_max_length</code>  <br> <span class="t-mark">(public member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 </table>
 <h3> <span class="mw-headline" id="Protected_member_functions">Protected member functions</span></h3>
 <table class="t-dsc-begin">
@@ -426,93 +427,91 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/out.html" title="cpp/locale/codecvt/out"> <span class="t-lines"><span>do_out</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   converts a string from internT to externT, such as when writing to file <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   converts a string from <code>InternT</code> to <code>ExternT</code>, such as when writing to file <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/in.html" title="cpp/locale/codecvt/in"> <span class="t-lines"><span>do_in</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   converts a string from externT to internT, such as when reading from file <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   converts a string from <code>ExternT</code> to <code>InternT</code>, such as when reading from file <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/unshift.html" title="cpp/locale/codecvt/unshift"> <span class="t-lines"><span>do_unshift</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   generates the termination character sequence of externT characters for incomplete conversion <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   generates the termination character sequence of <code>ExternT</code> characters for incomplete conversion <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/encoding.html" title="cpp/locale/codecvt/encoding"> <span class="t-lines"><span>do_encoding</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   returns the number of externT characters necessary to produce one internT character, if constant <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   returns the number of <code>ExternT</code> characters necessary to produce one <code>InternT</code> character, if constant <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/always_noconv.html" title="cpp/locale/codecvt/always noconv"> <span class="t-lines"><span>do_always_noconv</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>  tests if the facet encodes an identity conversion for all valid argument values  <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>  tests if the facet encodes an identity conversion for all valid argument values  <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/length.html" title="cpp/locale/codecvt/length"> <span class="t-lines"><span>do_length</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>  calculates the length of the externT string that would be consumed by conversion into given internT buffer <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>  calculates the length of the <code>ExternT</code> string that would be consumed by conversion into given <code>InternT</code> buffer <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="codecvt/max_length.html" title="cpp/locale/codecvt/max length"> <span class="t-lines"><span>do_max_length</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   returns the maximum number of externT characters that could be converted into a single internT character <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   returns the maximum number of <code>ExternT</code> characters that could be converted into a single <code>InternT</code> character <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 </table>
-<p><br>
-</p>
 </div>
 <div class="t-inherited">
-<h2> <span class="mw-headline" id="Inherited_from_std::codecvt_base">Inherited from  <a href="codecvt_base.html" title="cpp/locale/codecvt base"> <span style="font-size:0.7em; line-height:130%">std::</span>codecvt_base</a> </span></h2>
+<h2> <span class="mw-headline" id="Inherited_from_std::codecvt_base">Inherited from <a href="codecvt_base.html" title="cpp/locale/codecvt base"><span style="font-size:0.7em; line-height:130%">std::</span>codecvt_base</a></span></h2>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member type
+<td> Member type
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">enum</span> result <span class="br0">{</span> ok, partial, error, noconv <span class="br0">}</span><span class="sy4">;</span></span></span>
+<td> <span class="mw-geshi cpp source-cpp"><span class="kw2">enum</span> result <span class="br0">{</span> ok, partial, error, noconv <span class="br0">}</span><span class="sy4">;</span></span>
 </td>
-<td>  Unscoped enumeration type
+<td> Unscoped enumeration type
 </td></tr>
 
 </table>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Enumeration constant
+<td> Enumeration constant
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>ok</code>
+<td> <code>ok</code>
 </td>
-<td>  conversion was completed with no error
+<td> conversion was completed with no error
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>partial</code>
+<td> <code>partial</code>
 </td>
-<td>  not all source characters were converted
+<td> not all source characters were converted
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>error</code>
+<td> <code>error</code>
 </td>
-<td>  encountered an invalid character
+<td> encountered an invalid character
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>noconv</code>
+<td> <code>noconv</code>
 </td>
-<td>  no conversion required, input and output types are the same
+<td> no conversion required, input and output types are the same
 </td></tr>
 
 </table>
@@ -541,11 +540,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
     <span class="co1">// the UTF-8 / UCS2 standard conversion facet</span>
     <a href="wstring_convert.html"><span class="kw1903">std::<span class="me2">wstring_convert</span></span></a><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">codecvt_utf8</span><span class="sy1">&lt;</span><span class="kw4">char16_t</span><span class="sy1">&gt;</span>, <span class="kw4">char16_t</span><span class="sy1">&gt;</span> ucs2conv<span class="sy4">;</span>
-    <span class="kw1">try</span> <span class="br0">{</span>
+    <span class="kw1">try</span>
+    <span class="br0">{</span>
         <a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">u16string</span></span></a> ucs2 <span class="sy1">=</span> ucs2conv.<span class="me1">from_bytes</span><span class="br0">(</span>utf8<span class="br0">)</span><span class="sy4">;</span>
-    <span class="br0">}</span> <span class="kw1">catch</span><span class="br0">(</span><span class="kw4">const</span> <a href="../error/range_error.html"><span class="kw772">std::<span class="me2">range_error</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span> <span class="br0">{</span>
+    <span class="br0">}</span>
+    <span class="kw1">catch</span><span class="br0">(</span><span class="kw4">const</span> <a href="../error/range_error.html"><span class="kw772">std::<span class="me2">range_error</span></span></a><span class="sy3">&amp;</span> e<span class="br0">)</span>
+    <span class="br0">{</span>
         <a href="../string/basic_string.html"><span class="kw1237">std::<span class="me2">u16string</span></span></a> ucs2 <span class="sy1">=</span> ucs2conv.<span class="me1">from_bytes</span><span class="br0">(</span>utf8.<span class="me1">substr</span><span class="br0">(</span><span class="nu0">0</span>, ucs2conv.<span class="me1">converted</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-        <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"UCS2 failed after producing "</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/hex.html"><span class="kw1785">std::<span class="me2">dec</span></span></a> <span class="sy1">&lt;&lt;</span> ucs2.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy1">&lt;&lt;</span><span class="st0">" characters:<span class="es1">\n</span>"</span><span class="sy4">;</span>
+        <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"UCS2 failed after producing "</span>
+                  <span class="sy1">&lt;&lt;</span> <a href="../io/manip/hex.html"><span class="kw1785">std::<span class="me2">dec</span></span></a> <span class="sy1">&lt;&lt;</span> ucs2.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">" characters:<span class="es1">\n</span>"</span><span class="sy4">;</span>
         <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">char16_t</span> c <span class="sy4">:</span> ucs2<span class="br0">)</span>
             <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/hex.html"><span class="kw1786">std::<span class="me2">hex</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/showbase.html"><span class="kw1770">std::<span class="me2">showbase</span></span></a> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
     <span class="br0">}</span>
@@ -651,19 +654,19 @@ UCS2 failed after producing 2 characters:
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 9219/1000000
-Preprocessor generated node count: 10921/1000000
-Post‐expand include size: 254216/2097152 bytes
-Template argument size: 63384/2097152 bytes
+Preprocessor visited node count: 9368/1000000
+Preprocessor generated node count: 11401/1000000
+Post‐expand include size: 256907/2097152 bytes
+Template argument size: 64181/2097152 bytes
 Highest expansion depth: 35/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2900-0!*!0!!en!*!* and timestamp 20220410090515 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:2900-0!*!0!!en!*!* and timestamp 20230122010113 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/locale/codecvt_utf8&amp;oldid=108512">https://en.cppreference.com/mwiki/index.php?title=cpp/locale/codecvt_utf8&amp;oldid=108512</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/locale/codecvt_utf8&amp;oldid=146740">https://en.cppreference.com/mwiki/index.php?title=cpp/locale/codecvt_utf8&amp;oldid=146740</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -676,17 +679,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/codecvt_utf8">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 31 December 2018, at 12:48.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 215,339 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -701,7 +693,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.625 secs. -->
+</script><!-- Served in 1.738 secs. -->
 	</body>
-<!-- Cached 20220410090515 -->
+<!-- Cached 20230122010113 -->
 </html>

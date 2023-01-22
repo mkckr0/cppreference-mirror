@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/_Static_assert","wgTitle":"c/language/ Static assert","wgCurRevisionId":130108,"wgArticleId":13922,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/_Static_assert","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/_Static_assert","wgTitle":"c/language/ Static assert","wgCurRevisionId":146438,"wgArticleId":13922,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/_Static_assert","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -155,7 +155,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td class="t-sdsc-nopad">
 </td>
-<td> <span class="t-mark-rev t-since-c11">(since C11)</span>
+<td> <span class="t-mark-rev t-since-c11">(since C11)</span><span class="t-mark-rev t-deprecated-c23">(deprecated in C23)</span>
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>static_assert</b></code> <code><b>(</b></code> <span class="t-spar">expression</span> <code><b>,</b></code>  <span class="t-spar">message</span> <code><b>)</b></code>
+</td>
+<td class="t-sdsc-nopad">
+</td>
+<td> <span class="t-mark-rev t-since-c23">(since C23)</span>
 </td></tr>
 
 
@@ -165,6 +178,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td></tr>
 <tr class="t-sdsc">
 <td> <code><b>_Static_assert</b></code> <code><b>(</b></code> <span class="t-spar">expression</span> <code><b>)</b></code>
+</td>
+<td class="t-sdsc-nopad">
+</td>
+<td> <span class="t-mark-rev t-since-c23">(since C23)</span><span class="t-mark-rev t-deprecated-c23">(deprecated in C23)</span>
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <code><b>static_assert</b></code> <code><b>(</b></code> <span class="t-spar">expression</span> <code><b>)</b></code>
 </td>
 <td class="t-sdsc-nopad">
 </td>
@@ -193,18 +219,29 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>  any <a href="string_literal.html" title="c/language/string literal">string literal</a>
 </td></tr></table>
+ <table class="t-rev-begin">
+<tr class="t-rev t-until-c23"><td>
 <p>This keyword is also available as convenience macro <a href="../error/static_assert.html" title="c/error/static assert"><tt>static_assert</tt></a>, available in the header <code>&lt;assert.h&gt;</code>.
 </p>
+</td>
+<td><span class="t-mark-rev t-until-c23">(until C23)</span></td></tr>
+<tr class="t-rev t-since-c23"><td>
+<p>Both of <code>static_assert</code> and <code>_Static_assert</code> have the same effects. <code>_Static_assert</code> is a deprecated spelling that is kept for compatibility.
+</p><p>An implementation may also define <code>static_assert</code> and/or <code>_Static_assert</code> as predefined macros, and <code>static_assert</code> is no longer provided by <code>&lt;assert.h&gt;</code>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
+</table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>The constant expression is evaluated at compile time and compared to zero. If it compares equal to zero, a compile-time error occurs and the compiler must display <span class="t-spar">message</span> (if provided) as part of the error message (except that characters not in <a href="translation_phases.html" title="c/language/translation phases">basic source character set</a> aren't required to be displayed).
+<p>The constant expression is evaluated at compile time and compared to zero. If it compares equal to zero, a compile-time error occurs and the compiler <span class="t-rev-inl t-until-c23"><span>must display <span class="t-spar">message</span> as part of the error message (except that characters not in <a href="charset.html" title="c/language/charset">basic character set</a> are not required to be displayed)</span> <span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span>should display <span class="t-spar">message</span> (if provided) as part of the error message</span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>.
 </p><p>Otherwise, if <span class="t-spar">expression</span> does not equal zero, nothing happens; no code is emitted.
 </p>
 <h3><span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/_Static_assert.html" title="c/keyword/ Static assert"><tt>_Static_assert</tt></a>
+<p><a href="../keyword/_Static_assert.html" title="c/keyword/ Static assert"><tt>_Static_assert</tt></a>, <a href="https://en.cppreference.com/mwiki/index.php?title=c/keyword/static_assert&amp;action=edit&amp;redlink=1" class="new" title="c/keyword/static assert (page does not exist)"><tt>static_assert</tt></a>
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;assert.h&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;assert.h&gt; // no longer needed since C23</span>
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="co1">// Test if math works.</span>
@@ -248,19 +285,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1794/1000000
-Preprocessor generated node count: 5775/1000000
-Post‐expand include size: 49631/2097152 bytes
-Template argument size: 8552/2097152 bytes
+Preprocessor visited node count: 2177/1000000
+Preprocessor generated node count: 7542/1000000
+Post‐expand include size: 55275/2097152 bytes
+Template argument size: 12066/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13922-0!*!0!!en!*!* and timestamp 20220313080857 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13922-0!*!0!!en!*!* and timestamp 20230120013359 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/_Static_assert&amp;oldid=130108">https://en.cppreference.com/mwiki/index.php?title=c/language/_Static_assert&amp;oldid=130108</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/_Static_assert&amp;oldid=146438">https://en.cppreference.com/mwiki/index.php?title=c/language/_Static_assert&amp;oldid=146438</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -273,17 +310,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/_Static_assert">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 June 2021, at 08:49.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 72,568 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -298,7 +324,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.254 secs. -->
+</script><!-- Served in 0.334 secs. -->
 	</body>
-<!-- Cached 20220313080857 -->
+<!-- Cached 20230120013359 -->
 </html>

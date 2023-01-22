@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/arithmetic_types","wgTitle":"c/language/arithmetic types","wgCurRevisionId":138916,"wgArticleId":13882,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/arithmetic_types","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/arithmetic_types","wgTitle":"c/language/arithmetic types","wgCurRevisionId":146479,"wgArticleId":13882,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/arithmetic_types","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -152,6 +152,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <a href="../comment.html" title="c/comment"> Comments</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="ascii.html" title="c/language/ascii"> ASCII</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="charset.html" title="c/language/charset"> Character sets</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="translation_phases.html" title="c/language/translation phases"> Translation phases</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="punctuators.html" title="c/language/punctuators">Punctuation</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="identifier.html" title="c/language/identifier">Identifier</a></td></tr>
@@ -183,10 +184,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <h3><span class="mw-headline" id="Character_types">Character types</span></h3>
 <dl><dd><ul><li><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span></span></span> - type for signed character representation.
 </li><li><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span> - type for unsigned character representation. Also used to inspect <a href="object.html" title="c/language/object">object representations</a> (raw memory).
-</li><li><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">char</span></span></span> - type for character representation. Equivalent to either <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span> (which one is implementation-defined and may be controlled by a compiler commandline switch), but <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">char</span></span></span> is a distinct type, different from both <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span>
+</li><li><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">char</span></span></span> - type for character representation. Equivalent to either <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span> (which one is implementation-defined and may be controlled by a compiler commandline switch), but <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">char</span></span></span> is a distinct type, different from both <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span>.
 </li></ul>
 </dd></dl>
-<p>Note that the standard library also defines <a href="typedef.html" title="c/language/typedef">typedef</a> names <a href="../string/wide.html" title="c/string/wide"><tt>wchar_t</tt></a> <span class="t-rev-inl t-since-c11"><span>, <a href="../string/multibyte.html" title="c/string/multibyte"><tt>char16_t</tt></a>, and <a href="../string/multibyte.html" title="c/string/multibyte"><tt>char32_t</tt></a></span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> to represent wide characters.
+<p>Note that the standard library also defines <a href="typedef.html" title="c/language/typedef">typedef</a> names <a href="../string/wide.html" title="c/string/wide"><tt>wchar_t</tt></a> <span class="t-rev-inl t-since-c11"><span>, <a href="../string/multibyte.html" title="c/string/multibyte"><tt>char16_t</tt></a> and <a href="../string/multibyte.html" title="c/string/multibyte"><tt>char32_t</tt></a></span> <span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> to represent wide characters  <span class="t-rev-inl t-since-c23"><span>and <a href="../string/multibyte.html" title="c/string/multibyte"><tt>char8_t</tt></a> for UTF-8 characters</span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>.
 </p>
 <h3><span class="mw-headline" id="Integer_types">Integer types</span></h3>
 <dl><dd><ul><li><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">short</span> <span class="kw4">int</span></span></span> (also accessible as <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">short</span></span></span>, may use the keyword <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span></span></span>)
@@ -359,7 +360,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td></tr></table>
 <p>Besides the minimal bit counts, the C Standard guarantees that
 </p>
-<dl><dd><span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span> <span class="sy1">==</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">)</span> <span class="sy1">&lt;=</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">short</span><span class="br0">)</span> <span class="sy1">&lt;=</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="sy1">&lt;=</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">long</span><span class="br0">)</span> <span class="sy1">&lt;=</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">long</span><span class="br0">)</span></span></span>.
+<dl><dd><span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> == <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">)</span></span></span> ≤ <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">short</span><span class="br0">)</span></span></span> ≤ <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span></span></span> ≤ <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">long</span><span class="br0">)</span></span></span> ≤ <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">long</span><span class="br0">)</span></span></span>.
 </dd></dl>
 <p>Note: this allows the extreme case in which <a href="https://en.wikipedia.org/wiki/Byte" class="extiw" title="enwiki:Byte">bytes</a> are sized 64 bits, all types (including <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">char</span></span></span>) are 64 bits wide, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span></span></span> returns 1 for every type.
 </p><p>Note: integer arithmetic is defined differently for the signed and unsigned integer types. See <a href="operator_arithmetic.html" title="c/language/operator arithmetic">arithmetic operators</a>, in particular  <a href="operator_arithmetic.html#Overflows" title="c/language/operator arithmetic">integer overflows</a>.
@@ -394,7 +395,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </dd></dl>
 </dd></dl>
 <p>Other models are very rare. For example, <b>ILP64</b> (<b>8/8/8</b>: int, long, and pointer are 64-bit) only appeared in some early 64-bit Unix systems (e.g. Unicos on Cray).
-</p><p>Note that exact-width integer types are available in <a href="../types/integer.html" title="c/types/integer">&lt;stdint.h&gt;</a> since C99
+</p><p>Note that exact-width integer types are available in [[c/types/integer|<a href="../types/integer.html" title="c/types/integer"><tt>&lt;stdint.h&gt;</tt></a>]] since C99
 </p>
 <h3><span class="mw-headline" id="Real_floating_types">Real floating types</span></h3>
 <p>C has three <span class="t-rev-inl t-since-c23"><span>or six</span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> types for representing real floating-point values:
@@ -423,7 +424,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <ul><li> <i>infinity</i> (positive and negative), see <a href="../numeric/math/INFINITY.html" title="c/numeric/math/INFINITY"><tt>INFINITY</tt></a>
 </li><li> the <i>negative zero</i>, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu16">0.0</span></span></span>. It compares equal to the positive zero, but is meaningful in some arithmetic operations, e.g. <span class="t-c"><span class="mw-geshi c source-c"><span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">0.0</span> <span class="sy1">==</span> INFINITY</span></span>, but <span class="t-c"><span class="mw-geshi c source-c"><span class="nu16">1.0</span><span class="sy2">/-</span><span class="nu16">0.0</span> <span class="sy1">==</span> <span class="sy2">-</span>INFINITY</span></span>)
-</li><li> <i>not-a-number</i> (NaN), which does not compare equal with anything (including itself). Multiple bit patterns represent NaNs, see <span class="t-lc"><a href="../numeric/math/nan.2.html" title="c/numeric/math/nan">nan</a></span>, <a href="../numeric/math/NAN.html" title="c/numeric/math/NAN"><tt>NAN</tt></a>. Note that C takes no special notice of signaling NaNs (specified by IEEE-754), and treats all NaNs as quiet.
+</li><li> <i>not-a-number</i> (NaN), which does not compare equal with anything (including itself). Multiple bit patterns represent NaNs, see <span class="t-lc"><a href="../numeric/math/nan.html" title="c/numeric/math/nan">nan</a></span>, <a href="../numeric/math/NAN.2.html" title="c/numeric/math/NAN"><tt>NAN</tt></a>. Note that C takes no special notice of signaling NaNs (specified by IEEE-754), and treats all NaNs as quiet.
 </li></ul>
 <p>Real floating-point numbers may be used with <a href="operator_arithmetic.html" title="c/language/operator arithmetic">arithmetic operators</a> + - / * and various mathematical functions from <a href="../numeric/math.html" title="c/numeric/math"><tt>&lt;math.h&gt;</tt></a>. Both built-in operators and library functions may raise floating-point exceptions and set <span class="t-lc"><a href="../error/errno.html" title="c/error/errno">errno</a></span> as described in <a href="../numeric/math/math_errhandling.html" title="c/numeric/math/math errhandling"><tt>math_errhandling</tt></a>
 </p><p>Floating-point expressions may have greater range and precision than indicated by their types, see <span class="t-lc"><a href="../types/limits/FLT_EVAL_METHOD.html" title="c/types/limits/FLT EVAL METHOD">FLT_EVAL_METHOD</a></span>. <a href="operator_assignment.html" title="c/language/operator assignment">Assignment</a>, <a href="return.html" title="c/language/return">return</a>, and <a href="cast.html" title="c/language/cast">cast</a> force the range and precision to the one associated with the declared type. 
@@ -489,19 +490,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co1">// textbook formula would give</span>
 <span class="co1">// (1+i0)(∞+i∞) ⇒ (1×∞ – 0×∞) + i(0×∞+1×∞) ⇒ NaN + I*NaN</span>
 <span class="co1">// but C gives a complex infinity</span>
-   <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%f + i*%f<span class="es1">\n</span>"</span>, <a href="../numeric/complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="../numeric/complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+   <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%f%+f*i<span class="es1">\n</span>"</span>, <a href="../numeric/complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="../numeric/complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
 <span class="co1">// textbook formula would give</span>
 <span class="co1">// cexp(∞+iNaN) ⇒ exp(∞)×(cis(NaN)) ⇒ NaN + I*NaN</span>
 <span class="co1">// but C gives  ±∞+i*nan</span>
    <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> y <span class="sy1">=</span> <a href="../numeric/complex/cexp.html"><span class="kw769">cexp</span></a><span class="br0">(</span>INFINITY <span class="sy2">+</span> I<span class="sy2">*</span>NAN<span class="br0">)</span><span class="sy4">;</span>
-   <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%f + i*%f<span class="es1">\n</span>"</span>, <a href="../numeric/complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span>y<span class="br0">)</span>, <a href="../numeric/complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span>y<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+   <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%f%+f*i<span class="es1">\n</span>"</span>, <a href="../numeric/complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span>y<span class="br0">)</span>, <a href="../numeric/complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span>y<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
  
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">inf + i*inf 
-inf + i*nan</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">inf+inf*i 
+inf+nan*i</pre></div></div> 
 </div>
 <p>C also treats multiple infinities so as to preserve directional information where possible, despite the inherent limitations of the Cartesian representation:
 </p><p>multiplying the imaginary unit by real infinity gives the correctly-signed imaginary infinity: i × ∞ = i∞. Also, i × (∞ – i∞) = ∞ + i∞ indicates the reasonable quadrant
@@ -816,19 +817,19 @@ The three imaginary types are
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6445/1000000
-Preprocessor generated node count: 13198/1000000
-Post‐expand include size: 101811/2097152 bytes
-Template argument size: 42468/2097152 bytes
+Preprocessor visited node count: 6695/1000000
+Preprocessor generated node count: 14699/1000000
+Post‐expand include size: 103603/2097152 bytes
+Template argument size: 42720/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13882-0!*!0!!en!*!* and timestamp 20220605010310 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13882-0!*!0!!en!*!* and timestamp 20230120005957 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/arithmetic_types&amp;oldid=138916">https://en.cppreference.com/mwiki/index.php?title=c/language/arithmetic_types&amp;oldid=138916</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/arithmetic_types&amp;oldid=146479">https://en.cppreference.com/mwiki/index.php?title=c/language/arithmetic_types&amp;oldid=146479</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -841,17 +842,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/arithmetic_types">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 19 March 2022, at 12:36.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 132,582 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -866,7 +856,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.480 secs. -->
+</script><!-- Served in 3.458 secs. -->
 	</body>
-<!-- Cached 20220605010310 -->
+<!-- Cached 20230120005957 -->
 </html>

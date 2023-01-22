@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/overload_resolution","wgTitle":"cpp/language/overload resolution","wgCurRevisionId":141099,"wgArticleId":12784,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with unreviewed CWG DR marker"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/overload_resolution","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/overload_resolution","wgTitle":"cpp/language/overload resolution","wgCurRevisionId":146511,"wgArticleId":12784,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/overload_resolution","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -398,10 +399,10 @@ a.<span class="me1">B</span><span class="sy4">::</span><span class="me2">f</span
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx20"><td>
 <div class="t-li1"><span class="t-li">4)</span> <i>rewritten candidates</i>:
-<dl><dd><ul><li> For the four relational operator expressions <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">&lt;</span>y</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">&lt;=</span>y</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">&gt;</span>y</span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">&gt;=</span>y</span></span>, all member, non-member, and built-in <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">&lt;=&gt;</span></span></span>'s found are added to the set.
-</li><li> For the four relational operator expressions <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">&lt;</span>y</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">&lt;=</span>y</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">&gt;</span>y</span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">&gt;=</span>y</span></span> as well as the three-way comparison expression <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">&lt;=&gt;</span>y</span></span>, a synthesized candidate with the order of the two parameters reversed is added for each member, non-member, and built-in <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">&lt;=&gt;</span></span></span>'s found.
-</li><li> For <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy3">!</span><span class="sy1">=</span>y</span></span>, all member, non-member, and built-in <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">==</span></span></span>'s found are added to the set.
-</li><li> For equality operator expressions <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy1">==</span>y</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">x<span class="sy3">!</span><span class="sy1">=</span>y</span></span>,  a synthesized candidate with the order of the two parameters reversed is added for each member, non-member, and built-in <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">==</span></span></span>'s found.
+<dl><dd><ul><li> For the four relational operator expressions <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&lt;</span> y</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&lt;=</span> y</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&gt;</span> y</span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&gt;=</span> y</span></span>, all member, non-member, and built-in <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">&lt;=&gt;</span></span></span>s found are added to the set.
+</li><li> For the four relational operator expressions <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&lt;</span> y</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&lt;=</span> y</span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&gt;</span> y</span></span>, and <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&gt;=</span> y</span></span> as well as the three-way comparison expression <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">&lt;=&gt;</span> y</span></span>, a synthesized candidate with the order of the two parameters reversed is added for each member, non-member, and built-in <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">&lt;=&gt;</span></span></span>s found.
+</li><li> For <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy3">!</span><span class="sy1">=</span> y</span></span>, all member, non-member, and built-in <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">==</span></span></span>s found are added to the set, unless there is a matching <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy3">!</span><span class="sy1">=</span></span></span>.
+</li><li> For equality operator expressions <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy1">==</span> y</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">x <span class="sy3">!</span><span class="sy1">=</span> y</span></span>,  a synthesized candidate with the order of the two parameters reversed is added for each member, non-member, and built-in <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">==</span></span></span>s found, unless there is a matching <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy3">!</span><span class="sy1">=</span></span></span>.
 </li></ul>
 </dd></dl>
 <p>In all cases, rewritten candidates are not considered in the context of the rewritten expression. For all other operators, the rewritten candidate set is empty.
@@ -505,17 +506,23 @@ A operator<span class="sy2">+</span><span class="br0">(</span><span class="kw4">
 </li><li> <a href="overload_resolution.html#Non-class_initialization_by_conversion">initialization of a non-class type by a conversion function</a>,
 </li><li> <a href="overload_resolution.html#Reference_initialization_by_conversion">initialization by conversion function for direct reference binding</a>,
 </li><li> <a href="overload_resolution.html#Initialization_by_constructor">initialization by constructor</a> during the second (direct-initialization) step of class <a href="copy_initialization.html" title="cpp/language/copy initialization">copy-initialization</a>,
-</li><li>  initialization by list-initialization where the initializer list has exactly one element that is itself an initializer list, and the target is the first parameter of a constructor of class X, and the conversion is to X or reference to (possibly cv-qualified) X
+</li></ul>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<ul><li> initialization by list-initialization where the initializer list has exactly one element that is itself an initializer list, and the target is the first parameter of a constructor of class <code>X</code>, and the conversion is to <code>X</code> or reference to (possibly cv-qualified) <code>X</code>:
 </li></ul>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A <span class="br0">{</span> A<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">struct</span> B <span class="br0">{</span> B<span class="br0">(</span>A<span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
  
-B b<span class="br0">{</span> <span class="br0">{</span><span class="nu0">0</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// list-init of B</span>
+B b<span class="br0">{</span><span class="br0">{</span><span class="nu0">0</span><span class="br0">}</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// list-initialization of B</span>
  
 <span class="co1">// candidates: B(const B&amp;), B(B&amp;&amp;), B(A)</span>
 <span class="co1">// {0} -&gt; B&amp;&amp; not viable: would have to call B(A)</span>
 <span class="co1">// {0} -&gt; const B&amp;: not viable: would have to bind to rvalue, would have to call B(A)</span>
 <span class="co1">// {0} -&gt; A viable. Calls A(int): user-defined conversion to A is not banned</span></pre></div></div>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
+</table>
 <h3><span class="mw-headline" id="Best_viable_function">Best viable function</span></h3>
 <p>For each pair of viable function <code>F1</code> and <code>F2</code>, the implicit conversion sequences from the <code>i</code>-th argument to <code>i</code>-th parameter are ranked to determine which one is better (except the first argument, the <i>implicit object argument</i> for static member functions has no effect on the ranking)
 </p><p><code>F1</code> is determined to be a better function than <code>F2</code> if implicit conversions for all arguments of F1 are <i>not worse</i> than the implicit conversions for all arguments of F2, and
@@ -791,7 +798,7 @@ f<span class="br0">(</span>b<span class="br0">)</span><span class="sy4">;</span>
 </p>
 <ul><li> If the parameter type is some aggregate <code>X</code> and the initializer list consists of exactly one element of same or derived class (possibly cv-qualified), the implicit conversion sequence is the one required to convert the element to the parameter type.
 </li><li> Otherwise, if the parameter type is a reference to character array and the initializer list has a single element that is an appropriately-typed string literal, the implicit conversion sequence is the identity conversion.
-</li><li> Otherwise, if the parameter type is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../utility/initializer_list.html"><span class="kw961">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>X<span class="sy1">&gt;</span></span></span>, and there is an non-narrowing implicit conversion from every element of the initializer list to <code>X</code>, the implicit conversion sequence for the purpose of overload resolution is the worst conversion necessary. If the braced-init-list is empty, the conversion sequence is the identity conversion.
+</li><li> Otherwise, if the parameter type is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../utility/initializer_list.html"><span class="kw961">std::<span class="me2">initializer_list</span></span></a><span class="sy1">&lt;</span>X<span class="sy1">&gt;</span></span></span>, and there is a non-narrowing implicit conversion from every element of the initializer list to <code>X</code>, the implicit conversion sequence for the purpose of overload resolution is the worst conversion necessary. If the braced-init-list is empty, the conversion sequence is the identity conversion.
 </li></ul>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A
 <span class="br0">{</span>
@@ -840,7 +847,7 @@ g<span class="br0">(</span><span class="br0">{</span><span class="st0">'a'</span
 <span class="co1">// f({'a', 'b'}); // f(A) and f(B) both user-defined conversions</span></pre></div></div>
 <ul><li> Otherwise, if the parameter type is an aggregate which can be initialized from the initializer list according by <a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">aggregate initialization</a>, the implicit conversion sequence is a user-defined conversion sequence with the second standard conversion sequence an identity conversion.
 </li></ul>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A <span class="br0">{</span> <span class="kw4">int</span> m1<span class="sy4">;</span> <span class="kw4">double</span> m2<span class="sy4">;</span><span class="br0">}</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A <span class="br0">{</span> <span class="kw4">int</span> m1<span class="sy4">;</span> <span class="kw4">double</span> m2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">void</span> f<span class="br0">(</span>A<span class="br0">)</span><span class="sy4">;</span>
 f<span class="br0">(</span><span class="br0">{</span><span class="st0">'a'</span>, <span class="st0">'b'</span><span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// calls f(A(int, double)), user-defined conversion</span></pre></div></div>
@@ -1030,6 +1037,15 @@ conversion.
 <td> they are not added<br>to the candidate set
 </td></tr>
 <tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2076.html">CWG 2076</a>
+</td>
+<td> C++11
+</td>
+<td> user-defined conversion is applied to the single initializer<br>in a nested initializer list during list-initialization<br>due to the resolution of <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1467.html">CWG issue 1467</a>
+</td>
+<td> not applied
+</td></tr>
+<tr>
 <td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2137.html">CWG 2137</a>
 </td>
 <td> C++11
@@ -1046,8 +1062,24 @@ conversion.
 <td> there was no tiebreaker between<br>inherited and non-inherited constructors
 </td>
 <td> non-inherited constructor wins
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P2468R2">P2468R2</a>
+</td>
+<td> C++20
+</td>
+<td> rewritten candidates based on <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">==</span></span></span> are added<br>for <span class="t-c"><span class="mw-geshi cpp source-cpp">a <span class="sy3">!</span><span class="sy1">=</span> b</span></span> even if a matching <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy3">!</span><span class="sy1">=</span></span></span> exists
+</td>
+<td> not added
 </td></tr></table>
 <h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2023): 
+</li></ul>
+<dl><dd><ul><li> 12.2 Overload resolution [over.match] 
+</li></ul>
+</dd></dl>
+</div>
 <div class="t-ref-std-c++20">
 <ul><li> C++20 standard (ISO/IEC 14882:2020): 
 </li></ul>
@@ -1092,19 +1124,19 @@ conversion.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7748/1000000
-Preprocessor generated node count: 14627/1000000
-Post‐expand include size: 177770/2097152 bytes
-Template argument size: 46957/2097152 bytes
+Preprocessor visited node count: 8008/1000000
+Preprocessor generated node count: 15024/1000000
+Post‐expand include size: 181557/2097152 bytes
+Template argument size: 48859/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12784-0!*!0!!en!*!* and timestamp 20220715091455 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12784-0!*!0!!en!*!* and timestamp 20230120004507 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/overload_resolution&amp;oldid=141099">https://en.cppreference.com/mwiki/index.php?title=cpp/language/overload_resolution&amp;oldid=141099</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/overload_resolution&amp;oldid=146511">https://en.cppreference.com/mwiki/index.php?title=cpp/language/overload_resolution&amp;oldid=146511</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -1117,17 +1149,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/overload_resolution">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 July 2022, at 02:14.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 338,418 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1142,7 +1163,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.039 secs. -->
+</script><!-- Served in 10.228 secs. -->
 	</body>
-<!-- Cached 20220715091849 -->
+<!-- Cached 20230120004507 -->
 </html>

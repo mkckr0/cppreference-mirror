@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language","wgTitle":"cpp/language","wgCurRevisionId":140864,"wgArticleId":686,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language","wgTitle":"cpp/language","wgCurRevisionId":146470,"wgArticleId":686,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -47,7 +47,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> Language</strong> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -269,7 +270,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="preprocessor/include.html" title="cpp/preprocessor/include"><code>#include</code></a> -
 <a href="preprocessor/impl.html" title="cpp/preprocessor/impl"><code>#pragma</code></a><br>
 <a href="preprocessor/line.html" title="cpp/preprocessor/line"><code>#line</code></a> -
-<a href="preprocessor/error.html" title="cpp/preprocessor/error"><code>#error</code></a><br>
+<a href="preprocessor/error.html" title="cpp/preprocessor/error"> <code>#error</code> - <code>#warning</code></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span><br>
 </p>
 </div>
 <p><b><a href="language/expressions.html" title="cpp/language/expressions">Expressions</a></b>
@@ -288,6 +289,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
   <a href="language/operator_other.html" title="cpp/language/operator other">call, comma, ternary</a><br>
   <a href="language/sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a> – <a href="language/alignof.html" title="cpp/language/alignof"><code>alignof</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
   <a href="language/new.html" title="cpp/language/new"><code>new</code></a> – <a href="language/delete.html" title="cpp/language/delete"><code>delete</code></a> – <a href="language/typeid.html" title="cpp/language/typeid"><code>typeid</code></a><br>
+  <a href="language/operator_alternative.html" title="cpp/language/operator alternative">alternative representation</a><br>
 <a href="language/operators.html" title="cpp/language/operators">Operator overloading</a><br>
 <a href="language/default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
 <a href="language/operator_precedence.html" title="cpp/language/operator precedence">Operator precedence</a><br>
@@ -297,7 +299,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="language/cast_operator.html" title="cpp/language/cast operator">user-defined</a><br>
   <a href="language/static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a> – <a href="language/dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a><br>
   <a href="language/const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a> – <a href="language/reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a><br>
-<a href="language/expressions.html#Literals" title="cpp/language/expressions">Literals</a><br>
+<a href="language/expressions.html#Literals" title="cpp/language/expressions">Literals</a> (<a href="language/escape.html" title="cpp/language/escape">Escape sequences</a>)<br>
   <a href="language/bool_literal.html" title="cpp/language/bool literal">boolean</a> –
 <a href="language/integer_literal.html" title="cpp/language/integer literal">integer</a> –
 <a href="language/floating_literal.html" title="cpp/language/floating literal">floating</a><br>
@@ -324,12 +326,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="language/language_linkage.html" title="cpp/language/language linkage">Language linkage</a><br>
 <a href="language/inline.html" title="cpp/language/inline"><code>inline</code> specifier</a><br>
 <a href="language/asm.html" title="cpp/language/asm">Inline assembly</a><br>
-<a href="language/cv.html" title="cpp/language/cv"><code>const</code>/<code>volatile</code></a> – <a href="language/constexpr.html" title="cpp/language/constexpr"><code>constexpr</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
-<a href="language/consteval.html" title="cpp/language/consteval"><code>consteval</code></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> – <a href="language/constinit.html" title="cpp/language/constinit"><code>constinit</code></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
-<a href="language/decltype.html" title="cpp/language/decltype"><code>decltype</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> – <a href="language/auto.html" title="cpp/language/auto"><code>auto</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> <br>
+<a href="language/cv.html" title="cpp/language/cv"><code>const</code>/<code>volatile</code></a><br>
+<a href="language/constexpr.html" title="cpp/language/constexpr"><code>constexpr</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
+<a href="language/consteval.html" title="cpp/language/consteval"><code>consteval</code></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
+<a href="language/constinit.html" title="cpp/language/constinit"><code>constinit</code></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
+<a href="language/decltype.html" title="cpp/language/decltype"><code>decltype</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
+<a href="language/auto.html" title="cpp/language/auto"><code>auto</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
 <a href="language/typedef.html" title="cpp/language/typedef"><code>typedef</code></a> – <a href="language/type_alias.html" title="cpp/language/type alias">Type alias</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
 <a href="language/elaborated_type_specifier.html" title="cpp/language/elaborated type specifier">Elaborated type specifiers</a><br>
-<a href="language/attributes.html" title="cpp/language/attributes">Attributes</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> – <a href="language/alignas.html" title="cpp/language/alignas"><code>alignas</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
+<a href="language/attributes.html" title="cpp/language/attributes">Attributes</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
+<a href="language/alignas.html" title="cpp/language/alignas"><code>alignas</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
 <a href="language/static_assert.html" title="cpp/language/static assert"><code>static_assert</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
 </p>
 </div>
@@ -388,7 +394,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="language/union.html" title="cpp/language/union">Union types</a><br>
 <a href="language/injected-class-name.html" title="cpp/language/injected-class-name">injected-class-name</a><br>
 <a href="language/data_members.html" title="cpp/language/data members">Data members</a> –
-<a href="language/bitfield.html" title="cpp/language/bit field">Bit fields</a><br>
+<a href="language/bitfield.html" title="cpp/language/bit field">Bit-fields</a><br>
 <a href="language/member_functions.html" title="cpp/language/member functions">Member functions</a> –
 <a href="language/this.html" title="cpp/language/this">The <code>this</code> pointer</a> <br>
 <a href="language/static.html" title="cpp/language/static">Static members</a> –
@@ -408,7 +414,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="language/as_operator.html" title="cpp/language/copy assignment">Copy assignment</a> <br>
 <a href="language/move_constructor.html" title="cpp/language/move constructor">Move constructor</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
 <a href="language/move_operator.html" title="cpp/language/move assignment">Move assignment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
-<a href="language/converting_constructor.html" title="cpp/language/converting constructor">Converting constructor</a> –
+<a href="language/converting_constructor.html" title="cpp/language/converting constructor">Converting constructor</a><br>
 <a href="language/explicit.html" title="cpp/language/explicit"><code>explicit</code> specifier</a><br>
 </p>
 </div>
@@ -468,19 +474,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5693/1000000
-Preprocessor generated node count: 10752/1000000
-Post‐expand include size: 129777/2097152 bytes
-Template argument size: 20770/2097152 bytes
+Preprocessor visited node count: 5743/1000000
+Preprocessor generated node count: 10867/1000000
+Post‐expand include size: 130638/2097152 bytes
+Template argument size: 20972/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:686-0!*!0!*!*!*!* and timestamp 20220708015850 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:686-0!*!0!*!*!*!* and timestamp 20230120003939 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language&amp;oldid=140864">https://en.cppreference.com/mwiki/index.php?title=cpp/language&amp;oldid=140864</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language&amp;oldid=146470">https://en.cppreference.com/mwiki/index.php?title=cpp/language&amp;oldid=146470</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -493,17 +499,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 7 July 2022, at 18:58.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 2,198,858 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -518,7 +513,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.036 secs. -->
+</script><!-- Served in 0.584 secs. -->
 	</body>
-<!-- Cached 20220708020707 -->
+<!-- Cached 20230120003940 -->
 </html>

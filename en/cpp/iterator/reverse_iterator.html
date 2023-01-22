@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/iterator/reverse_iterator","wgTitle":"cpp/iterator/reverse iterator","wgCurRevisionId":138250,"wgArticleId":4936,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/iterator/reverse_iterator","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/iterator/reverse_iterator","wgTitle":"cpp/iterator/reverse iterator","wgCurRevisionId":144770,"wgArticleId":4936,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/iterator/reverse_iterator","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -299,8 +300,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p><code>std::reverse_iterator</code> is an iterator adaptor that reverses the direction of a given iterator, which must be at least a <a href="../named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyBidirectionalIterator</span></a><span class="t-rev-inl t-since-cxx20"><span> or model <a href="bidirectional_iterator.html" title="cpp/iterator/bidirectional iterator"><code>bidirectional_iterator</code></a></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>. In other words, when provided with a bidirectional iterator, <code>std::reverse_iterator</code> produces a new iterator that moves from the end to the beginning of the sequence defined by the underlying bidirectional iterator.
-</p><p>For a reverse iterator <code>r</code> constructed from an iterator <code>i</code>, the relationship <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span><span class="sy2">*</span>r <span class="sy1">==</span> <span class="sy3">&amp;</span><span class="sy2">*</span><span class="br0">(</span>i<span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span></span></span> is always true (as long as <code>r</code> is dereferenceable); thus a reverse iterator constructed from a one-past-the-end iterator dereferences to the last element in a sequence. 
+<p><code>std::reverse_iterator</code> is an iterator adaptor that reverses the direction of a given iterator, which must be at least a <a href="../named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyBidirectionalIterator</span></a><span class="t-rev-inl t-since-cxx20"><span>or model <a href="bidirectional_iterator.html" title="cpp/iterator/bidirectional iterator"><code>bidirectional_iterator</code></a></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>. In other words, when provided with a bidirectional iterator, <code>std::reverse_iterator</code> produces a new iterator that moves from the end to the beginning of the sequence defined by the underlying bidirectional iterator.
+</p><p>For a reverse iterator <code>r</code> constructed from an iterator <code>i</code>, the relationship <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span><span class="sy2">*</span>r <span class="sy1">==</span> <span class="sy3">&amp;</span><span class="sy2">*</span><span class="br0">(</span>i<span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span></span></span> is always true (as long as <code>r</code> is dereferenceable); thus a reverse iterator constructed from a one-past-the-end iterator dereferences to the last element in a sequence.
 </p><p>This is the iterator returned by member functions <code>rbegin()</code> and <code>rend()</code> of the standard library containers.
 </p>
 <div class="t-image">
@@ -313,51 +314,51 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member type
+<td> Member type
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>iterator_type</code>
+<td> <code>iterator_type</code>
 </td>
-<td>  <code>Iter</code>
+<td> <code>Iter</code>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>iterator_category</code>
+<td> <code>iterator_category</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator_category</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator_category</span></span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>value_type</code>
+<td> <code>value_type</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value_type</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value_type</span></span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>difference_type</code>
+<td> <code>difference_type</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span></span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>pointer</code>
+<td> <code>pointer</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">pointer</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">pointer</span></span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>reference</code>
+<td> <code>reference</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">reference</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">reference</span></span></span>
 </td></tr>
 
 </table>
@@ -367,58 +368,58 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member type
+<td> Member type
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>iterator_type</code>
+<td> <code>iterator_type</code>
 </td>
-<td>  <code>Iter</code>
+<td> <code>Iter</code>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>iterator_concept</code>
+<td> <code>iterator_concept</code>
 </td>
-<td>  If <code>Iter</code> models <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="random_access_iterator.html"><span class="kw2870">std::<span class="me2">random_access_iterator</span></span></a></span></span>, this is <span class="t-lc"><a href="iterator_tags.html" title="cpp/iterator/iterator tags">std::random_access_iterator_tag</a></span>. Otherwise, this is <span class="t-lc"><a href="iterator_tags.html" title="cpp/iterator/iterator tags">std::bidirectional_iterator_tag</a></span>
+<td> If <code>Iter</code> models <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="random_access_iterator.html"><span class="kw2870">std::<span class="me2">random_access_iterator</span></span></a></span></span>, this is <span class="t-lc"><a href="iterator_tags.html" title="cpp/iterator/iterator tags">std::random_access_iterator_tag</a></span>. Otherwise, this is <span class="t-lc"><a href="iterator_tags.html" title="cpp/iterator/iterator tags">std::bidirectional_iterator_tag</a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>iterator_category</code>
+<td> <code>iterator_category</code>
 </td>
-<td>  If <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator_category</span></span></span> models <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../concepts/derived_from.html"><span class="kw2936">std::<span class="me2">derived_from</span></span></a><span class="sy1">&lt;</span><a href="iterator_tags.html"><span class="kw658">std::<span class="me2">random_access_iterator_tag</span></span></a><span class="sy1">&gt;</span></span></span>, this is <span class="t-lc"><a href="iterator_tags.html" title="cpp/iterator/iterator tags">std::random_access_iterator_tag</a></span>. Otherwise, this is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator_category</span></span></span>
+<td> If <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator_category</span></span></span> models <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../concepts/derived_from.html"><span class="kw2936">std::<span class="me2">derived_from</span></span></a><span class="sy1">&lt;</span><a href="iterator_tags.html"><span class="kw658">std::<span class="me2">random_access_iterator_tag</span></span></a><span class="sy1">&gt;</span></span></span>, this is <span class="t-lc"><a href="iterator_tags.html" title="cpp/iterator/iterator tags">std::random_access_iterator_tag</a></span>. Otherwise, this is <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator_category</span></span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>value_type</code>
+<td> <code>value_type</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iter_t.html"><span class="kw2874">std::<span class="me2">iter_value_t</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iter_t.html"><span class="kw2874">std::<span class="me2">iter_value_t</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span></span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>difference_type</code>
+<td> <code>difference_type</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iter_t.html"><span class="kw2877">std::<span class="me2">iter_difference_t</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iter_t.html"><span class="kw2877">std::<span class="me2">iter_difference_t</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span></span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>pointer</code>
+<td> <code>pointer</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">pointer</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iterator_traits.html"><span class="kw653">std::<span class="me2">iterator_traits</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">pointer</span></span></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>reference</code>
+<td> <code>reference</code>
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iter_t.html"><span class="kw2875">std::<span class="me2">iter_reference_t</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="iter_t.html"><span class="kw2875">std::<span class="me2">iter_reference_t</span></span></a><span class="sy1">&lt;</span>Iter<span class="sy1">&gt;</span></span></span>
 </td></tr>
 
 </table>
@@ -475,16 +476,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member name
+<td> Member name
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>current</code> <span class="t-mark">(protected)</span>
+<td> <code>current</code> <span class="t-mark">(protected)</span>
 </td>
-<td>  the underlying iterator of which <a href="reverse_iterator/base.html" title="cpp/iterator/reverse iterator/base"><code>base()</code></a> returns a copy
+<td> the underlying iterator of which <a href="reverse_iterator/base.html" title="cpp/iterator/reverse iterator/base"><code>base()</code></a> returns a copy
 </td></tr>
 
 </table>
@@ -528,7 +529,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> Iterator1, <span class="kw1">class</span> Iterator2 <span class="sy1">&gt;</span><br>
 <p>    requires <span class="br0">(</span><span class="sy3">!</span><a href="sized_sentinel_for.html"><span class="kw2865">std::<span class="me2">sized_sentinel_for</span></span></a><span class="sy1">&lt;</span>Iterator1, Iterator2<span class="sy1">&gt;</span><span class="br0">)</span><br>
 <span class="kw1">inline</span> <span class="kw4">constexpr</span> <span class="kw4">bool</span> disable_sized_sentinel_for<span class="sy1">&lt;</span><br>
-    std<span class="sy4">::</span><span class="me2">reverse_iterator</span><span class="sy1">&lt;</span>Iterator1<span class="sy1">&gt;</span>, <br>
+    std<span class="sy4">::</span><span class="me2">reverse_iterator</span><span class="sy1">&lt;</span>Iterator1<span class="sy1">&gt;</span>,<br>
 </p>
     std<span class="sy4">::</span><span class="me2">reverse_iterator</span><span class="sy1">&lt;</span>Iterator2<span class="sy1">&gt;&gt;</span> <span class="sy1">=</span> <span class="kw2">true</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
@@ -539,67 +540,79 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>This partial specialization of <code>std::disable_sized_sentinel_for</code> prevents specializations of <code>reverse_iterator</code> from satisfying <a href="sized_sentinel_for.html" title="cpp/iterator/sized sentinel for"><code>sized_sentinel_for</code></a> if their underlying iterators do not satisfy the concept.
 </p>
 <h3><span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
-<p>Below is a partial implementation focusing on the way the inner iterator is saved, calling prev only when the content is fetched via operator*.
+<p>Below is a partial implementation focusing on the way the inner iterator is stored, calling <span class="t-lc"><a href="prev.html" title="cpp/iterator/prev">std::prev</a></span> only when the content is fetched via <code>operator*</code>.
 </p>
 <table class="eq-fun-cpp-table">
 
 
 <tr>
 <td>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> Itr<span class="sy1">&gt;</span>
-<span class="kw1">class</span> reverse_iterator <span class="br0">{</span>
-    Itr itr<span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> It<span class="sy1">&gt;</span>
+<span class="kw1">class</span> reverse_iterator
+<span class="br0">{</span>
+<span class="kw1">protected</span><span class="sy4">:</span>
+    It current <span class="sy1">=</span> It<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+ 
 <span class="kw1">public</span><span class="sy4">:</span>
-    <span class="kw4">constexpr</span> <span class="kw1">explicit</span> reverse_iterator<span class="br0">(</span>Itr itr<span class="br0">)</span><span class="sy4">:</span> itr<span class="br0">(</span>itr<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
-    <span class="kw4">constexpr</span> <span class="kw4">auto</span><span class="sy3">&amp;</span> operator<span class="sy2">*</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">return</span> <span class="sy2">*</span><a href="prev.html"><span class="kw676">std::<span class="me2">prev</span></span></a><span class="br0">(</span>itr<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// &lt;== returns the content of prev</span>
+    reverse_iterator<span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span> reverse_iterator<span class="br0">(</span>It itr<span class="br0">)</span> <span class="sy4">:</span> current<span class="br0">(</span>itr<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
+    <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> U<span class="sy1">&gt;</span>
+        requires <span class="br0">(</span><span class="sy3">!</span><a href="../types/is_same.html"><span class="kw591">std::<span class="me2">is_same_v</span></span></a><span class="sy1">&lt;</span>U, It<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> <a href="../concepts/convertible_to.html"><span class="kw2937">std::<span class="me2">convertible_to</span></span></a><span class="sy1">&lt;</span><span class="kw4">const</span> U<span class="sy3">&amp;</span>, It<span class="sy1">&gt;</span><span class="br0">)</span>
+    <span class="kw4">constexpr</span> <span class="kw1">explicit</span> reverse_iterator<span class="br0">(</span><span class="kw4">const</span> U<span class="sy3">&amp;</span> other<span class="br0">)</span> <span class="sy4">:</span> current<span class="br0">(</span>other.<span class="me1">base</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> decltype<span class="br0">(</span><span class="kw4">auto</span><span class="br0">)</span> operator<span class="sy2">*</span><span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span>
+    <span class="br0">{</span>
+        <span class="kw1">return</span> <span class="sy2">*</span><a href="prev.html"><span class="kw676">std::<span class="me2">prev</span></span></a><span class="br0">(</span>current<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// &lt;== returns the content of prev</span>
     <span class="br0">}</span>
-    <span class="kw4">constexpr</span> <span class="kw4">auto</span><span class="sy3">&amp;</span> operator<span class="sy2">++</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="sy2">--</span>itr<span class="sy4">;</span>
-        <span class="kw1">return</span> <span class="sy2">*</span>this<span class="sy4">;</span>
-    <span class="br0">}</span>
-    <span class="kw4">constexpr</span> <span class="kw1">friend</span> <span class="kw4">bool</span> operator<span class="sy3">!</span><span class="sy1">=</span><span class="br0">(</span>reverse_iterator<span class="sy1">&lt;</span>Itr<span class="sy1">&gt;</span> a, reverse_iterator<span class="sy1">&lt;</span>Itr<span class="sy1">&gt;</span> b<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">return</span> a.<span class="me1">itr</span> <span class="sy3">!</span><span class="sy1">=</span> b.<span class="me1">itr</span><span class="sy4">;</span>
-    <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> reverse_iterator<span class="sy3">&amp;</span> operator<span class="sy2">++</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="sy2">--</span>current<span class="sy4">;</span> <span class="kw1">return</span> <span class="sy2">*</span>this<span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> reverse_iterator operator<span class="sy2">++</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw4">auto</span> tmp <span class="sy1">=</span> <span class="sy2">*</span>this<span class="sy4">;</span> <span class="sy2">++</span><span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="sy4">;</span> <span class="kw1">return</span> tmp<span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> reverse_iterator<span class="sy3">&amp;</span> operator<span class="sy2">--</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="sy2">++</span>current<span class="sy4">;</span> <span class="kw1">return</span> <span class="sy2">*</span>this<span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">constexpr</span> reverse_iterator operator<span class="sy2">--</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw4">auto</span> tmp <span class="sy1">=</span> <span class="sy2">*</span>this<span class="sy4">;</span> <span class="sy2">--</span><span class="br0">(</span><span class="sy2">*</span>this<span class="br0">)</span><span class="sy4">;</span> <span class="kw1">return</span> tmp<span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="kw4">constexpr</span> It base<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> current<span class="sy4">;</span> <span class="br0">}</span>
+ 
+    <span class="co1">// Other member functions, friend functions, and member typedefs are not shown here.</span>
 <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 </td></tr></table>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p><code>std::reverse_iterator</code> does not work with iterators whose dereference returns a reference to a member of <code>*this</code> (so-called "stashing iterators").
+<p><code>std::reverse_iterator</code> does not work with iterators whose dereference returns a reference to a member of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span> (so-called "stashing iterators"). An example of a stashing iterator is <a rel="nofollow" class="external text" href="https://github.com/microsoft/STL/blob/ac129e595f762f11551663f1c7fa5f51444a8c6c/stl/inc/filesystem#L1387-L1585">MSVC STL's</a> <a href="../filesystem/path.html#Member_types_and_constants" title="cpp/filesystem/path"><tt>std::filesystem::path::iterator</tt></a>.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cstddef&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;iterator&gt;</span>
  
-<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T, size_t SIZE<span class="sy1">&gt;</span>
-<span class="kw1">class</span> Stack <span class="br0">{</span>
+<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">typename</span> T, <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> SIZE<span class="sy1">&gt;</span>
+<span class="kw1">class</span> Stack
+<span class="br0">{</span>
     T arr<span class="br0">[</span>SIZE<span class="br0">]</span><span class="sy4">;</span>
-    size_t pos <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+    <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> pos <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
 <span class="kw1">public</span><span class="sy4">:</span>
-    T pop<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+    T pop<span class="br0">(</span><span class="br0">)</span>
+    <span class="br0">{</span>
         <span class="kw1">return</span> arr<span class="br0">[</span><span class="sy2">--</span>pos<span class="br0">]</span><span class="sy4">;</span>
     <span class="br0">}</span>
-    Stack<span class="sy3">&amp;</span> push<span class="br0">(</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> t<span class="br0">)</span> <span class="br0">{</span>
+    Stack<span class="sy3">&amp;</span> push<span class="br0">(</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> t<span class="br0">)</span>
+    <span class="br0">{</span>
         arr<span class="br0">[</span>pos<span class="sy2">++</span><span class="br0">]</span> <span class="sy1">=</span> t<span class="sy4">;</span>
         <span class="kw1">return</span> <span class="sy2">*</span>this<span class="sy4">;</span>
     <span class="br0">}</span>
     <span class="co1">// we wish that looping on Stack would be in LIFO order</span>
     <span class="co1">// thus we use std::reverse_iterator as an adaptor to existing iterators</span>
     <span class="co1">// (which are in this case the simple pointers: [arr, arr+pos)</span>
-    <span class="kw4">auto</span> begin<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">reverse_iterator</span><span class="br0">(</span>arr <span class="sy2">+</span> pos<span class="br0">)</span><span class="sy4">;</span>
-    <span class="br0">}</span>
-    <span class="kw4">auto</span> end<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">reverse_iterator</span><span class="br0">(</span>arr<span class="br0">)</span><span class="sy4">;</span>
-    <span class="br0">}</span>
+    <span class="kw4">auto</span> begin<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">reverse_iterator</span><span class="br0">(</span>arr <span class="sy2">+</span> pos<span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
+    <span class="kw4">auto</span> end<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">reverse_iterator</span><span class="br0">(</span>arr<span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span>
 <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     Stack<span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="nu0">8</span><span class="sy1">&gt;</span> s<span class="sy4">;</span>
     s.<span class="me1">push</span><span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span>.<span class="me1">push</span><span class="br0">(</span><span class="nu0">15</span><span class="br0">)</span>.<span class="me1">push</span><span class="br0">(</span><span class="nu0">25</span><span class="br0">)</span>.<span class="me1">push</span><span class="br0">(</span><span class="nu0">35</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> val<span class="sy4">:</span> s<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> val<span class="sy4">:</span> s<span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> val <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-    <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -621,19 +634,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 11116/1000000
-Preprocessor generated node count: 17248/1000000
-Post‐expand include size: 352820/2097152 bytes
-Template argument size: 81530/2097152 bytes
+Preprocessor visited node count: 11183/1000000
+Preprocessor generated node count: 17329/1000000
+Post‐expand include size: 353691/2097152 bytes
+Template argument size: 83140/2097152 bytes
 Highest expansion depth: 22/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:4936-0!*!0!!en!2!* and timestamp 20220729053235 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:4936-0!*!0!!en!2!* and timestamp 20230120013026 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/reverse_iterator&amp;oldid=138250">https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/reverse_iterator&amp;oldid=138250</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/reverse_iterator&amp;oldid=144770">https://en.cppreference.com/mwiki/index.php?title=cpp/iterator/reverse_iterator&amp;oldid=144770</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -646,17 +659,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/iterator/reverse_iterator">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 17 February 2022, at 23:10.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 355,597 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -671,7 +673,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.126 secs. -->
+</script><!-- Served in 2.871 secs. -->
 	</body>
-<!-- Cached 20220729053235 -->
+<!-- Cached 20230120013026 -->
 </html>

@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -303,11 +304,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="language/basic_concepts.html" title="cpp/language/basic concepts"> Basic Concepts</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="keywords.html" title="cpp/keyword"> Language keywords</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="language/charset.html" title="cpp/language/charset"> Character sets and encodings</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="language/translation_phases.html" title="cpp/language/translation phases"> Phases of translation</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> Comments</strong> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="language/main_function.html" title="cpp/language/main function"> The main() function</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="language/ascii.html" title="cpp/language/ascii"> ASCII</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/punctuators.html" title="cpp/language/punctuators"> Punctuation</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/name.html" title="cpp/language/identifiers"> Names and identifiers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/type-id.html" title="cpp/language/type"> Types</a> </td></tr>
@@ -323,6 +321,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="language/as_if.html" title="cpp/language/as if"> The as-if rule</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/ub.html" title="cpp/language/ub"> Undefined behavior</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/memory_model.html" title="cpp/language/memory model"> Memory model</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="language/charset.html" title="cpp/language/charset"> Character sets and encodings</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="language/translation_phases.html" title="cpp/language/translation phases"> Phases of translation</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="language/main_function.html" title="cpp/language/main function"> The <code>main</code> function</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/modules.html" title="cpp/language/modules"> Modules</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
@@ -424,15 +425,15 @@ multiple lines */</span>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2241/1000000
-Preprocessor generated node count: 5669/1000000
-Post‐expand include size: 123535/2097152 bytes
-Template argument size: 13445/2097152 bytes
+Preprocessor visited node count: 2251/1000000
+Preprocessor generated node count: 5691/1000000
+Post‐expand include size: 124121/2097152 bytes
+Template argument size: 13500/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5016-0!*!0!!en!*!* and timestamp 20220605011248 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5016-0!*!0!!en!*!* and timestamp 20230120020508 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -449,17 +450,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/comment">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 23 June 2021, at 05:05.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 153,941 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -474,7 +464,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.802 secs. -->
+</script><!-- Served in 0.679 secs. -->
 	</body>
-<!-- Cached 20220605011248 -->
+<!-- Cached 20230120020508 -->
 </html>

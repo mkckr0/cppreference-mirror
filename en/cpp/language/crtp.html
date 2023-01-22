@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/crtp","wgTitle":"cpp/language/crtp","wgCurRevisionId":136882,"wgArticleId":19427,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/crtp","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/crtp","wgTitle":"cpp/language/crtp","wgCurRevisionId":143154,"wgArticleId":19427,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/crtp","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -309,23 +310,42 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw1">class</span> X <span class="sy4">:</span> <span class="kw1">public</span> Y<span class="sy1">&lt;</span>X<span class="sy1">&gt;</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <div class="t-example"><p>CRTP may be used to implement "compile-time polymorphism", when a base class exposes an interface, and derived classes implement such interface.</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cstdio&gt;</span>
+ 
+<span class="co2">#ifndef __cpp_explicit_this_parameter // Traditional syntax</span>
  
 <span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> Derived<span class="sy1">&gt;</span>
 <span class="kw1">struct</span> Base <span class="br0">{</span> <span class="kw4">void</span> name<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="br0">(</span><span class="kw1">static_cast</span><span class="sy1">&lt;</span>Derived<span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span>this<span class="br0">)</span><span class="br0">)</span><span class="sy2">-</span><span class="sy1">&gt;</span>impl<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> D1 <span class="sy4">:</span> <span class="kw1">public</span> Base<span class="sy1">&lt;</span>D1<span class="sy1">&gt;</span> <span class="br0">{</span> <span class="kw4">void</span> impl<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/c/puts.html"><span class="kw1834">std::<span class="me2">puts</span></span></a><span class="br0">(</span><span class="st0">"D1::impl()"</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> D2 <span class="sy4">:</span> <span class="kw1">public</span> Base<span class="sy1">&lt;</span>D2<span class="sy1">&gt;</span> <span class="br0">{</span> <span class="kw4">void</span> impl<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/c/puts.html"><span class="kw1834">std::<span class="me2">puts</span></span></a><span class="br0">(</span><span class="st0">"D2::impl()"</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
  
-<span class="kw1">struct</span> D1 <span class="sy4">:</span> <span class="kw1">public</span> Base<span class="sy1">&lt;</span>D1<span class="sy1">&gt;</span> <span class="br0">{</span> <span class="kw4">void</span> impl<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"D1::impl()<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> D2 <span class="sy4">:</span> <span class="kw1">public</span> Base<span class="sy1">&lt;</span>D2<span class="sy1">&gt;</span> <span class="br0">{</span> <span class="kw4">void</span> impl<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"D2::impl()<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
- 
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="kw4">void</span> test<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     Base<span class="sy1">&lt;</span>D1<span class="sy1">&gt;</span> b1<span class="sy4">;</span> b1.<span class="me1">name</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     Base<span class="sy1">&lt;</span>D2<span class="sy1">&gt;</span> b2<span class="sy4">;</span> b2.<span class="me1">name</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
- 
     D1 d1<span class="sy4">;</span> d1.<span class="me1">name</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     D2 d2<span class="sy4">;</span> d2.<span class="me1">name</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+<span class="co2">#else // C++23 alternative syntax; https://godbolt.org/z/KbG8bq3oP</span>
+ 
+<span class="kw1">struct</span> Base <span class="br0">{</span> <span class="kw4">void</span> name<span class="br0">(</span>this <span class="kw4">auto</span><span class="sy3">&amp;</span> self<span class="br0">)</span> <span class="br0">{</span> self.<span class="me1">impl</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> D1 <span class="sy4">:</span> <span class="kw1">public</span> Base <span class="br0">{</span> <span class="kw4">void</span> impl<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/c/puts.html"><span class="kw1834">std::<span class="me2">puts</span></span></a><span class="br0">(</span><span class="st0">"D1::impl()"</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> D2 <span class="sy4">:</span> <span class="kw1">public</span> Base <span class="br0">{</span> <span class="kw4">void</span> impl<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <a href="../io/c/puts.html"><span class="kw1834">std::<span class="me2">puts</span></span></a><span class="br0">(</span><span class="st0">"D2::impl()"</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw4">void</span> test<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    D1 d1<span class="sy4">;</span> d1.<span class="me1">name</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    D2 d2<span class="sy4">;</span> d2.<span class="me1">name</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+<span class="co2">#endif</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    test<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
-<p>Output:
+<p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">D1::impl()
 D2::impl()
@@ -348,19 +368,19 @@ D2::impl()</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2113/1000000
-Preprocessor generated node count: 5496/1000000
-Post‐expand include size: 119276/2097152 bytes
-Template argument size: 14134/2097152 bytes
+Preprocessor visited node count: 2121/1000000
+Preprocessor generated node count: 5521/1000000
+Post‐expand include size: 119845/2097152 bytes
+Template argument size: 15425/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19427-0!*!0!*!*!*!* and timestamp 20220729062459 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19427-0!*!0!*!*!*!* and timestamp 20221202045743 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/crtp&amp;oldid=136882">https://en.cppreference.com/mwiki/index.php?title=cpp/language/crtp&amp;oldid=136882</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/crtp&amp;oldid=143154">https://en.cppreference.com/mwiki/index.php?title=cpp/language/crtp&amp;oldid=143154</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -373,17 +393,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/crtp">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 4 January 2022, at 02:44.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 15,673 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -398,7 +407,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.501 secs. -->
+</script><!-- Served in 0.473 secs. -->
 	</body>
-<!-- Cached 20220729062459 -->
+<!-- Cached 20221202045743 -->
 </html>

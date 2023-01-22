@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/structured_binding","wgTitle":"cpp/language/structured binding","wgCurRevisionId":141182,"wgArticleId":16350,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/structured_binding","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/structured_binding","wgTitle":"cpp/language/structured binding","wgCurRevisionId":145752,"wgArticleId":16350,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/structured_binding","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -365,7 +366,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">cv-auto ref-qualifier</span><span class="t-mark">(optional)</span> <code><b>[</b></code> <span class="t-spar">identifier-list</span> <code><b>] = </b></code><span class="t-spar">expression</span> <code><b>;</b></code>
+<td> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">cv-auto ref-qualifier</span><span class="t-mark">(optional)</span> <code><b>[</b></code> <span class="t-spar">identifier-list</span> <code><b>] =</b></code> <span class="t-spar">expression</span> <code><b>;</b></code>
 </td>
 <td> (1)
 </td>
@@ -496,7 +497,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>Each identifier in <span class="t-spar">identifier-list</span> becomes the name of an lvalue that refers to the next member of <code><b><i>e</i></b></code> in declaration order (bit fields are supported); the type of the lvalue is that of <span class="t-c"><span class="mw-geshi cpp source-cpp">e.<span class="me1">m_i</span></span></span>, where <code>m_i</code> refers to the i-th member.
 </p><p>The <i>referenced type</i> of the i-th identifier is the type of <span class="t-c"><span class="mw-geshi cpp source-cpp">e.<span class="me1">m_i</span></span></span> if it is not a reference type, or the declared type of <code>m_i</code> otherwise.
 </p>
-<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
  
 <span class="kw1">struct</span> S
@@ -516,14 +516,20 @@ S f<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</spa
 <span class="co1">//  y = -2.;  // Error: y is const-qualified</span>
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> x <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy1">&lt;&lt;</span> y <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>  <span class="co1">// -2 2.3</span>
 <span class="br0">}</span></pre></div></div>
-<p>Output:
-</p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1 2.3
--2 2.3</pre></div></div> 
-</div>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx20"><td>
+<p>Structured bindings cannot be <a href="constraints.html" title="cpp/language/constraints">constrained</a>:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
+concept C <span class="sy1">=</span> <span class="kw2">true</span><span class="sy4">;</span>
+ 
+C <span class="kw4">auto</span> <span class="br0">[</span>x, y<span class="br0">]</span> <span class="sy1">=</span> <a href="../utility/pair.html"><span class="kw1099">std::<span class="me2">pair</span></span></a><span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// error: constrained</span></pre></div></div>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table>
 <p>The lookup for member <code>get</code> ignores accessibility as usual and also ignores the exact type of the non-type template parameter. A private <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy2">*</span><span class="sy1">&gt;</span> <span class="kw4">void</span> get<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></span></span> member will cause the member interpretation to be used, even though it is ill-formed.
-</p><p>The portion of the declaration preceding <code><b>[</b></code> applies to the hidden variable <code><b><i>e</i></b></code>, not to the introduced identifiers.
+</p><p>The portion of the declaration preceding <code><b>[</b></code> applies to the hidden variable <code><b><i>e</i></b></code>, not to the introduced identifiers:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">int</span> a <span class="sy1">=</span> <span class="nu0">1</span>, b <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
 <span class="kw4">const</span> <span class="kw4">auto</span><span class="sy3">&amp;</span> <span class="br0">[</span>x, y<span class="br0">]</span> <span class="sy1">=</span> <a href="../utility/tuple/tie.html"><span class="kw1116">std::<span class="me2">tie</span></span></a><span class="br0">(</span>a, b<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// x and y are of type int&amp;</span>
@@ -558,12 +564,8 @@ S f<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</spa
                          <span class="co1">// decltype(w) is int&amp;</span></pre></div></div>
  <table class="t-rev-begin">
 <tr class="t-rev t-until-cxx20"><td>
-<p>Structured bindings cannot be captured by <a href="lambda.html" title="cpp/language/lambda">lambda expressions</a>.
+<p>Structured bindings cannot be captured by <a href="lambda.html" title="cpp/language/lambda">lambda expressions</a>:
 </p>
-</td>
-<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
-</table>
-<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cassert&gt;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
@@ -573,7 +575,23 @@ S f<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</spa
     <span class="kw4">auto</span> l <span class="sy1">=</span> <span class="br0">[</span>b, d<span class="br0">]</span> <span class="br0">{</span> <span class="kw1">return</span> b <span class="sy2">*</span> d<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// valid since C++20</span>
     <a href="../error/assert.html"><span class="kw775">assert</span></a><span class="br0">(</span>l<span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">42</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
-</div>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+</table>
+<table class="wikitable">
+
+<tr>
+<th>Feature-test macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_structured_bindings</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201606L</span></span></span></td>
+<td><span class="t-mark">(C++17)</span></td>
+<td>Structured bindings
+</td></tr></table>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;set&gt;</span>
@@ -653,24 +671,6 @@ The value "Hello" already exists in the set.
 <td> the declaration is ill-formed in this case
 </td></tr>
 <tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/P0961R1">P0961R1</a>
-</td>
-<td> C++17
-</td>
-<td> in the tuple-like case, member <code>get</code> is used<br>if lookup finds a <code>get</code> of whatever kind
-</td>
-<td> only if lookup finds a function template<br>with a non-type parameter
-</td></tr>
-<tr>
-<td> <a rel="nofollow" class="external text" href="https://wg21.link/P0969R0">P0969R0</a>
-</td>
-<td> C++17
-</td>
-<td> in the binding-to-members case,<br>the members are required to be public
-</td>
-<td> only required to be accessible<br>in the context of the declaration
-</td></tr>
-<tr>
 <td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2312.html">CWG 2312</a>
 </td>
 <td> C++17
@@ -687,14 +687,49 @@ The value "Hello" already exists in the set.
 <td> the "tuple-like" binding protocol is used<br>whenever <code>tuple_size&lt;E&gt;</code> is a complete type
 </td>
 <td> used only when <code>tuple_size&lt;E&gt;</code><br>has a member <code>value</code>
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2635.html">CWG 2635</a>
+</td>
+<td> C++20
+</td>
+<td> structured bindings could be constrained
+</td>
+<td> prohibited
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P0961R1">P0961R1</a>
+</td>
+<td> C++17
+</td>
+<td> in the tuple-like case, member <code>get</code> is<br>used if lookup finds a <code>get</code> of any kind
+</td>
+<td> only if lookup finds a function<br>template with a non-type parameter
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P0969R0">P0969R0</a>
+</td>
+<td> C++17
+</td>
+<td> in the binding-to-members case, the<br>members are required to be public
+</td>
+<td> only required to be accessible<br>in the context of the declaration
 </td></tr></table>
 <h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2023): 
+</li></ul>
+<dl><dd><ul><li> 9.6 Structured binding declarations [dcl.struct.bind] (p: 228-229)
+</li></ul>
+</dd></dl>
+</div>
 <div class="t-ref-std-c++20">
 <ul><li> C++20 standard (ISO/IEC 14882:2020): 
 </li></ul>
 <dl><dd><ul><li> 9.6 Structured binding declarations [dcl.struct.bind] (p: 219-220)
 </li></ul>
 </dd></dl>
+</div>
 <div class="t-ref-std-c++17">
 <ul><li> C++17 standard (ISO/IEC 14882:2017): 
 </li></ul>
@@ -709,23 +744,23 @@ The value "Hello" already exists in the set.
 <td>  <div class="t-dsc-member-div"><div><a href="../utility/tuple/tie.html" title="cpp/utility/tuple/tie"> <span class="t-lines"><span>tie</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
 <td>   creates a <span class="t-lc"><a href="../utility/tuple.html" title="cpp/utility/tuple">tuple</a></span> of lvalue references or unpacks a tuple into individual objects  <br> <span class="t-mark">(function template)</span> </td></tr>
-</table></div>
+</table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5175/1000000
-Preprocessor generated node count: 11530/1000000
-Post‐expand include size: 179515/2097152 bytes
-Template argument size: 31696/2097152 bytes
+Preprocessor visited node count: 5364/1000000
+Preprocessor generated node count: 12136/1000000
+Post‐expand include size: 181386/2097152 bytes
+Template argument size: 31289/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:16350-0!*!0!!en!*!* and timestamp 20220719170634 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:16350-0!*!0!!en!*!* and timestamp 20230120003948 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/structured_binding&amp;oldid=141182">https://en.cppreference.com/mwiki/index.php?title=cpp/language/structured_binding&amp;oldid=141182</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/structured_binding&amp;oldid=145752">https://en.cppreference.com/mwiki/index.php?title=cpp/language/structured_binding&amp;oldid=145752</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -738,17 +773,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/structured_binding">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 19 July 2022, at 10:06.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 548,214 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -763,7 +787,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.037 secs. -->
+</script><!-- Served in 4.002 secs. -->
 	</body>
-<!-- Cached 20220719170731 -->
+<!-- Cached 20230120003948 -->
 </html>

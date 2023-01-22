@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/lexicographical_compare","wgTitle":"cpp/algorithm/lexicographical compare","wgCurRevisionId":138743,"wgArticleId":749,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/lexicographical_compare","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/lexicographical_compare","wgTitle":"cpp/algorithm/lexicographical compare","wgCurRevisionId":145396,"wgArticleId":749,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/lexicographical_compare","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -385,7 +386,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2 <span class="sy1">&gt;</span><br>
-<p><span class="kw4">bool</span> lexicographical_compare<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt1 first1, ForwardIt1 last1,<br>
+<p><span class="kw4">bool</span> lexicographical_compare<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
+                              ForwardIt1 first1, ForwardIt1 last1,<br>
 </p>
                               ForwardIt2 first2, ForwardIt2 last2 <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
@@ -400,9 +402,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dcl t-until-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
 <p><span class="kw4">bool</span> lexicographical_compare<span class="br0">(</span> InputIt1 first1, InputIt1 last1,<br>
-                              InputIt2 first2, InputIt2 last2,<br>
 </p>
-                              Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                              InputIt2 first2, InputIt2 last2, Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
@@ -417,8 +418,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
-<p><span class="kw4">bool</span> lexicographical_compare<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt1 first1, ForwardIt1 last1,<br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy,<br>
+<p>          <span class="kw1">class</span> ForwardIt1, <span class="kw1">class</span> ForwardIt2, <span class="kw1">class</span> Compare <span class="sy1">&gt;</span><br>
+<span class="kw4">bool</span> lexicographical_compare<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy,<br>
+                              ForwardIt1 first1, ForwardIt1 last1,<br>
                               ForwardIt2 first2, ForwardIt2 last2,<br>
 </p>
                               Compare comp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -427,11 +430,22 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Checks if the first range <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>first1, last1<span class="br0">)</span></span></span> is lexicographically <i>less</i> than the second range <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span>first2, last2<span class="br0">)</span></span></span>. 
+<p>Checks if the first range <code>[first1, last1)</code> is lexicographically <i>less</i> than the second range <code>[first2, last2)</code>. 
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Elements are compared using <code>operator&lt;</code>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary comparison function <code>comp</code>.</div>
-<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <code>policy</code>. These overloads do not participate in overload resolution unless <span class="t-rev-inl t-until-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span> <span class="t-rev-inl t-since-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> is true.</div>
+<div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary comparison function <span class="t-c"><span class="mw-geshi cpp source-cpp">comp</span></span>.</div>
+<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <span class="t-c"><span class="mw-geshi cpp source-cpp">policy</span></span>. These overloads do not participate in overload resolution unless  <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table></div>
 <p>Lexicographical comparison is an operation with the following properties:
 </p>
 <ul><li> Two ranges are compared element by element.
@@ -446,18 +460,18 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  first1, last1
+<td> first1, last1
 </td>
 <td> -
 </td>
-<td>  the first range of elements to examine
+<td> the first range of elements to examine
 </td></tr>
 <tr class="t-par">
-<td>  first2, last2
+<td> first2, last2
 </td>
 <td> -
 </td>
-<td>  the second range of elements to examine
+<td> the second range of elements to examine
 </td></tr>
 <tr class="t-par">
 <td>  policy
@@ -467,7 +481,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  the execution policy to use. See <a href="execution_policy_tag_t.html" title="cpp/algorithm/execution policy tag t">execution policy</a> for details.
 </td></tr>
 <tr class="t-par">
-<td>   comp
+<td>  comp
 </td>
 <td> -
 </td>
@@ -475,7 +489,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>The signature of the comparison function should be equivalent to the following:
 </p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> <span class="kw4">bool</span> cmp<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
 </p><p>While the signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1 <span class="sy3">&amp;</span></span></span> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
-The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that objects of types <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">InputIt2</span></span> can be dereferenced and then implicitly converted to both <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span>.
+The types <code>Type1</code> and <code>Type2</code> must be such that objects of types <code>InputIt1</code> and <code>InputIt2</code> can be dereferenced and then implicitly converted to both <code>Type1</code> and <code>Type2</code>.
 ​
 </p>
 </td></tr>
@@ -489,7 +503,7 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <td colspan="3"> -<div class="spacer"></div><code>ForwardIt1, ForwardIt2</code> must meet the requirements of <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>.
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the first range is lexicographically <i>less</i> than the second.
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> if the first range is lexicographically <i>less</i> than the second, otherwise <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>.
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
 <p>At most <span class="texhtml" style="white-space: nowrap;">2·min(N1, N2)</span> applications of the comparison operation, where <span class="t-c"><span class="mw-geshi cpp source-cpp">N1 <span class="sy1">=</span> <a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first1, last1<span class="br0">)</span></span></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp">N2 <span class="sy1">=</span> <a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first2, last2<span class="br0">)</span></span></span>.
@@ -512,10 +526,14 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <span class="kw4">bool</span> lexicographical_compare<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
                              InputIt2 first2, InputIt2 last2<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span> <span class="sy4">;</span> <span class="br0">(</span>first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> <span class="br0">(</span>first2 <span class="sy3">!</span><span class="sy1">=</span> last2<span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>first1, <span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="sy2">++</span>first2 <span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>first1 <span class="sy1">&lt;</span> <span class="sy2">*</span>first2<span class="br0">)</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span>
-        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>first2 <span class="sy1">&lt;</span> <span class="sy2">*</span>first1<span class="br0">)</span> <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> <span class="br0">(</span>first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> <span class="br0">(</span>first2 <span class="sy3">!</span><span class="sy1">=</span> last2<span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>first1, <span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="sy2">++</span>first2<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>first1 <span class="sy1">&lt;</span> <span class="sy2">*</span>first2<span class="br0">)</span>
+            <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span>
+        <span class="kw1">if</span> <span class="br0">(</span><span class="sy2">*</span>first2 <span class="sy1">&lt;</span> <span class="sy2">*</span>first1<span class="br0">)</span>
+            <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span>
     <span class="br0">}</span>
+ 
     <span class="kw1">return</span> <span class="br0">(</span>first1 <span class="sy1">==</span> last1<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> <span class="br0">(</span>first2 <span class="sy3">!</span><span class="sy1">=</span> last2<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr>
@@ -526,13 +544,16 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <td>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> InputIt1, <span class="kw1">class</span> InputIt2, <span class="kw1">class</span> Compare<span class="sy1">&gt;</span>
 <span class="kw4">bool</span> lexicographical_compare<span class="br0">(</span>InputIt1 first1, InputIt1 last1,
-                             InputIt2 first2, InputIt2 last2,
-                             Compare comp<span class="br0">)</span>
+                             InputIt2 first2, InputIt2 last2, Compare comp<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">for</span> <span class="br0">(</span> <span class="sy4">;</span> <span class="br0">(</span>first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> <span class="br0">(</span>first2 <span class="sy3">!</span><span class="sy1">=</span> last2<span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>first1, <span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="sy2">++</span>first2 <span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span> <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span>
-        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>first2, <span class="sy2">*</span>first1<span class="br0">)</span><span class="br0">)</span> <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="sy4">;</span> <span class="br0">(</span>first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> <span class="br0">(</span>first2 <span class="sy3">!</span><span class="sy1">=</span> last2<span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>first1, <span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="sy2">++</span>first2<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">)</span><span class="br0">)</span>
+            <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span>
+        <span class="kw1">if</span> <span class="br0">(</span>comp<span class="br0">(</span><span class="sy2">*</span>first2, <span class="sy2">*</span>first1<span class="br0">)</span><span class="br0">)</span>
+            <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span>
     <span class="br0">}</span>
+ 
     <span class="kw1">return</span> <span class="br0">(</span>first1 <span class="sy1">==</span> last1<span class="br0">)</span> <span class="sy3">&amp;&amp;</span> <span class="br0">(</span>first2 <span class="sy3">!</span><span class="sy1">=</span> last2<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr></table>
@@ -545,24 +566,31 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> v1 <span class="br0">{</span><span class="st0">'a'</span>, <span class="st0">'b'</span>, <span class="st0">'c'</span>, <span class="st0">'d'</span><span class="br0">}</span><span class="sy4">;</span>
-    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> v2 <span class="br0">{</span><span class="st0">'a'</span>, <span class="st0">'b'</span>, <span class="st0">'c'</span>, <span class="st0">'d'</span><span class="br0">}</span><span class="sy4">;</span>
+    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> v1<span class="br0">{</span><span class="st0">'a'</span>, <span class="st0">'b'</span>, <span class="st0">'c'</span>, <span class="st0">'d'</span><span class="br0">}</span><span class="sy4">;</span>
+    <a href="../container/vector.html"><span class="kw1272">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> v2<span class="br0">{</span><span class="st0">'a'</span>, <span class="st0">'b'</span>, <span class="st0">'c'</span>, <span class="st0">'d'</span><span class="br0">}</span><span class="sy4">;</span>
  
     <a href="../numeric/random/mersenne_twister_engine.html"><span class="kw1492">std::<span class="me2">mt19937</span></span></a> g<span class="br0">{</span><a href="../numeric/random/random_device.html"><span class="kw1489">std::<span class="me2">random_device</span></span></a><span class="br0">{</span><span class="br0">}</span><span class="br0">(</span><span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span>
     <span class="kw1">while</span> <span class="br0">(</span><span class="sy3">!</span>std<span class="sy4">::</span><span class="me2">lexicographical_compare</span><span class="br0">(</span>v1.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, v1.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>,
-                                         v2.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, v2.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> c <span class="sy4">:</span> v1<span class="br0">)</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+                                         v2.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, v2.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> c <span class="sy4">:</span> v1<span class="br0">)</span>
+            <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"&gt;= "</span><span class="sy4">;</span>
-        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> c <span class="sy4">:</span> v2<span class="br0">)</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+ 
+        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> c <span class="sy4">:</span> v2<span class="br0">)</span>
+            <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
         <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
  
         <a href="random_shuffle.html"><span class="kw1611">std::<span class="me2">shuffle</span></span></a><span class="br0">(</span>v1.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, v1.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, g<span class="br0">)</span><span class="sy4">;</span>
         <a href="random_shuffle.html"><span class="kw1611">std::<span class="me2">shuffle</span></span></a><span class="br0">(</span>v2.<span class="me1">begin</span><span class="br0">(</span><span class="br0">)</span>, v2.<span class="me1">end</span><span class="br0">(</span><span class="br0">)</span>, g<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
  
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> c <span class="sy4">:</span> v1<span class="br0">)</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-    <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"&lt; "</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> c <span class="sy4">:</span> v2<span class="br0">)</span> <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> c <span class="sy4">:</span> v1<span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"&lt;  "</span><span class="sy4">;</span>
+ 
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> c <span class="sy4">:</span> v2<span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
     <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -570,8 +598,30 @@ The types <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">a b c d &gt;= a b c d 
 d a b c &gt;= c b d a 
 b d a c &gt;= a d c b 
-a c d b &lt; c d a b</pre></div></div> 
+a c d b &lt;  c d a b</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue142">LWG 142</a>
+</td>
+<td> C++98
+</td>
+<td> at most <span class="texhtml" style="white-space: nowrap;">min(N1, N2)</span> comparisons were allowed, but that<br>is not possible (equality is determined by 2 comparisons)
+</td>
+<td> doubled the limit
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -581,6 +631,11 @@ a c d b &lt; c d a b</pre></div></div>
 <td>   determines if two sets of elements are the same  <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="lexicographical_compare_three_way.html" title="cpp/algorithm/lexicographical compare three way"> <span class="t-lines"><span>lexicographical_compare_three_way</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div>
+</td>
+<td>   compares two ranges using three-way comparison  <br> <span class="t-mark">(function template)</span> </td></tr>
+
+<tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="ranges/lexicographical_compare.html" title="cpp/algorithm/ranges/lexicographical compare"> <span class="t-lines"><span>ranges::lexicographical_compare</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div>
 </td>
 <td>   returns true if one range is lexicographically less than another  <br> <span class="t-mark">(niebloid)</span> </td></tr>
@@ -588,19 +643,19 @@ a c d b &lt; c d a b</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10414/1000000
-Preprocessor generated node count: 14394/1000000
-Post‐expand include size: 299301/2097152 bytes
-Template argument size: 60028/2097152 bytes
+Preprocessor visited node count: 10596/1000000
+Preprocessor generated node count: 16473/1000000
+Post‐expand include size: 305170/2097152 bytes
+Template argument size: 62099/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:749-0!*!0!!en!*!* and timestamp 20220410085150 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:749-0!*!0!!en!*!* and timestamp 20230120011835 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/lexicographical_compare&amp;oldid=138743">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/lexicographical_compare&amp;oldid=138743</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/lexicographical_compare&amp;oldid=145396">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/lexicographical_compare&amp;oldid=145396</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -613,17 +668,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/lexicographical_compare">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 13 March 2022, at 04:18.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 168,660 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -638,7 +682,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 3.138 secs. -->
+</script><!-- Served in 2.885 secs. -->
 	</body>
-<!-- Cached 20220410085150 -->
+<!-- Cached 20230120011835 -->
 </html>

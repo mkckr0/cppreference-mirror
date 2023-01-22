@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/function_declaration","wgTitle":"c/language/function declaration","wgCurRevisionId":130589,"wgArticleId":13985,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/function_declaration","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/language/function_declaration","wgTitle":"c/language/function declaration","wgCurRevisionId":145865,"wgArticleId":13985,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/language/function_declaration","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -223,7 +223,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">int</span> a, b<span class="sy4">;</span> <span class="br0">{</span> <span class="kw1">return</span> a<span class="sy1">&gt;</span>b<span class="sy4">?</span>a<span class="sy4">:</span>b<span class="sy4">;</span> <span class="br0">}</span> <span class="co1">// definition expects ints; the second call is undefined</span>
 <span class="kw4">int</span> n <span class="sy1">=</span> max<span class="br0">(</span><span class="kw2">true</span>, <span class="br0">(</span><span class="kw4">char</span><span class="br0">)</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// calls max with two int args (after promotions)</span>
 <span class="kw4">int</span> n <span class="sy1">=</span> max<span class="br0">(</span><span class="nu17">12.01f</span>, <span class="nu16">3.14</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// calls max with two double args (after promotions)</span></pre></div></div></div>
-<div class="t-li1"><span class="t-li">3)</span> Non-prototype function declaration. This declaration does not introduce a prototype <span class="t-rev-inl t-since-c23"><span>except as part of a function definition, where it is equivalent to the <span class="t-spar">parameter-list</span> <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span></span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">3)</span> <span class="t-rev-inl t-until-c23"><span>Non-prototype function declaration. This declaration does not introduce a prototype</span> <span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span>. <span class="t-rev-inl t-since-c23"><span>A new style function declaration equivalent to the <span class="t-spar">parameter-list</span> <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span></span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>.</div>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
 <p>The return type of the function, determined by the type specifier in <span class="t-spar">specifiers-and-qualifiers</span> and possibly modified by the <span class="t-spar">declarator</span> as usual in <a href="declarations.html" title="c/language/declarations">declarations</a>, must be a non-array object type or the type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span>. If the function declaration is not a definition, the return type can be <a href="compatible_type.html#Incomplete_types" title="c/language/type">incomplete</a>. The return type cannot be cvr-qualified: any qualified return type is adjusted to its unqualified version for the purpose of constructing the function type.
 </p>
@@ -244,7 +244,7 @@ array_t a, h<span class="br0">(</span><span class="br0">)</span><span class="sy4
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// external linkage, file scope</span>
+    <span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// external linkage, block scope</span>
     f<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// definition needs to be available somewhere in the program</span>
 <span class="br0">}</span></pre></div></div>
 <p>The parameters in a declaration<span class="t-rev-inl t-until-c23"><span> that is not part of a <a href="function_definition.html" title="c/language/function definition">function definition</a></span> <span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span> do not need to be named:
@@ -274,7 +274,7 @@ array_t a, h<span class="br0">(</span><span class="br0">)</span><span class="sy4
 </li></ul>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">char</span> g<span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// declares int f(char (*g)(double))</span>
 <span class="kw4">int</span> h<span class="br0">(</span><span class="kw4">int</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// declares int h(int (*)(void))</span></pre></div></div>
-<ul><li> the parameter list may terminate with <code><b>, ...</b></code>, see <a href="variadic.html" title="c/language/variadic">variadic functions</a> for details.
+<ul><li> the parameter list may terminate with <code><b>, ...</b></code> <span class="t-rev-inl t-since-c23"><span>or be <code><b>...</b></code></span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, see <a href="variadic.html" title="c/language/variadic">variadic functions</a> for details.
 </li></ul>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span>, ...<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
 <ul><li> parameters cannot have type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span> (but can have type pointer to void). The special parameter list that consists entirely of the keyword <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span> is used to declare functions that take no parameters.
@@ -294,7 +294,9 @@ array_t a, h<span class="br0">(</span><span class="br0">)</span><span class="sy4
 <p>See <a href="operator_other.html#Function_call" title="c/language/operator other">function call operator</a> for other details on the mechanics of a function call and <a href="return.html" title="c/language/return">return</a> for returning from functions.
 </p>
 <h3><span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Unlike in C++ <span class="t-rev-inl t-since-c23"><span>and <a href="function_definition.html" title="c/language/function definition">function definitions</a></span> <span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, the declarators <span class="t-c"><span class="mw-geshi c source-c">f<span class="br0">(</span><span class="br0">)</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c">f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span></span></span> have different meaning: the declarator <span class="t-c"><span class="mw-geshi c source-c">f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span></span></span> is a new-style (prototype) declarator that declares a function that takes no parameters. The declarator <span class="t-c"><span class="mw-geshi c source-c">f<span class="br0">(</span><span class="br0">)</span></span></span> is a declarator that declares a function that takes <i>unspecified</i> number of parameters (unless used in a function definition)
+ <table class="t-rev-begin">
+<tr class="t-rev t-until-c23"><td>
+<p>Unlike in C++, the declarators <span class="t-c"><span class="mw-geshi c source-c">f<span class="br0">(</span><span class="br0">)</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c">f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span></span></span> have different meaning: the declarator <span class="t-c"><span class="mw-geshi c source-c">f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span></span></span> is a new-style (prototype) declarator that declares a function that takes no parameters. The declarator <span class="t-c"><span class="mw-geshi c source-c">f<span class="br0">(</span><span class="br0">)</span></span></span> is a declarator that declares a function that takes <i>unspecified</i> number of parameters (unless used in a function definition)
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// declaration: takes no parameters</span>
 <span class="kw4">int</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// declaration: takes unknown parameters</span>
@@ -306,6 +308,9 @@ array_t a, h<span class="br0">(</span><span class="br0">)</span><span class="sy4
  
 <span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="br0">}</span> <span class="co1">// actual definition</span>
 <span class="kw4">int</span> g<span class="br0">(</span>a,b,c,d<span class="br0">)</span> <span class="kw4">int</span> a,b,c,d<span class="sy4">;</span> <span class="br0">{</span> <span class="kw1">return</span> <span class="nu0">2</span><span class="sy4">;</span> <span class="br0">}</span> <span class="co1">// actual definition</span></pre></div></div>
+</td>
+<td><span class="t-mark-rev t-until-c23">(until C23)</span></td></tr>
+</table>
 <p>Unlike in a <a href="function_definition.html" title="c/language/function definition">function definition</a>, the parameter list may be inherited from a typedef
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">typedef</span> <span class="kw4">int</span> p<span class="br0">(</span><span class="kw4">int</span> q, <span class="kw4">int</span> r<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// p is a function type int(int, int)</span>
@@ -377,19 +382,19 @@ p f<span class="sy4">;</span> <span class="co1">// declares int f(int, int)</spa
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2573/1000000
-Preprocessor generated node count: 7197/1000000
-Post‐expand include size: 45283/2097152 bytes
-Template argument size: 11739/2097152 bytes
+Preprocessor visited node count: 2635/1000000
+Preprocessor generated node count: 7297/1000000
+Post‐expand include size: 47179/2097152 bytes
+Template argument size: 12991/2097152 bytes
 Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13985-0!*!0!!en!*!* and timestamp 20220507042829 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13985-0!*!0!!en!*!* and timestamp 20230120003832 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/function_declaration&amp;oldid=130589">https://en.cppreference.com/mwiki/index.php?title=c/language/function_declaration&amp;oldid=130589</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/function_declaration&amp;oldid=145865">https://en.cppreference.com/mwiki/index.php?title=c/language/function_declaration&amp;oldid=145865</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -402,17 +407,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/function_declaration">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 23 June 2021, at 04:58.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 77,606 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -427,7 +421,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.766 secs. -->
+</script><!-- Served in 0.911 secs. -->
 	</body>
-<!-- Cached 20220507042830 -->
+<!-- Cached 20230120003832 -->
 </html>

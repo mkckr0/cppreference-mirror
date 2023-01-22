@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/types/limits","wgTitle":"c/types/limits","wgCurRevisionId":137030,"wgArticleId":6397,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/types/limits","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/types/limits","wgTitle":"c/types/limits","wgCurRevisionId":142439,"wgArticleId":6397,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/types/limits","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -139,6 +139,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../types.html" title="c/types"> Type support</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="size_t.html" title="c/types/size t"><span class="t-lines"><span>size_t</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ptrdiff_t.html" title="c/types/ptrdiff t"><span class="t-lines"><span>ptrdiff_t</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="nullptr_t.html" title="c/types/nullptr t"><span class="t-lines"><span>nullptr_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="NULL.html" title="c/types/NULL"><span class="t-lines"><span>NULL</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max_align_t.html" title="c/types/max align t"><span class="t-lines"><span>max_align_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="offsetof.html" title="c/types/offsetof"><span class="t-lines"><span>offsetof</span></span></a></div></div></td></tr>
@@ -402,7 +403,7 @@ WCHAR_MAX      = +2147483647
 WINT_MIN       = 0
 WINT_MAX       = 4294967295</pre></div></div> 
 </div>
-<h3><span class="mw-headline" id="Limits_of_floating_point_types">Limits of floating point types</span></h3>
+<h3><span class="mw-headline" id="Limits_of_floating-point_types">Limits of floating-point types</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-header">
@@ -426,7 +427,7 @@ WINT_MAX       = 4294967295</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>FLT_DECIMAL_DIG</span><span>DBL_DECIMAL_DIG</span><span>LDBL_DECIMAL_DIG</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   conversion from <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>/<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span>/<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> to decimal with at least <code>FLT_DECIMAL_DIG</code>/<code>DBL_DECIMAL_DIG</code>/<code>LDBL_DECIMAL_DIG</code> digits and back is the identity conversion: this is the decimal precision required to serialize/deserialize a floating point value. Defined to at least 6, 10, and 10 respectively, or 9 for IEEE float and 17 for IEEE double. (see also the C++ analog  <a href="../../cpp/types/numeric_limits/max_digits10.html" title="cpp/types/numeric limits/max digits10">max_digits10</a>)  <br> <span class="t-mark">(macro constant)</span>
+<td>   conversion from <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>/<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span>/<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> to decimal with at least <code>FLT_DECIMAL_DIG</code>/<code>DBL_DECIMAL_DIG</code>/<code>LDBL_DECIMAL_DIG</code> digits and back is the identity conversion: this is the decimal precision required to serialize/deserialize a floating-point value. Defined to at least <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">6</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">10</span></span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">10</span></span></span> respectively, or <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">9</span></span></span> for IEEE float and <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">17</span></span></span> for IEEE double (see also the C++ analog: <a href="../../cpp/types/numeric_limits/max_digits10.html" title="cpp/types/numeric limits/max digits10"><code>max_digits10</code></a>)  <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
@@ -461,7 +462,7 @@ WINT_MAX       = 4294967295</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>FLT_DIG</span><span>DBL_DIG</span><span>LDBL_DIG</span></span></div></div>
 </td>
-<td>   number of decimal digits that are guaranteed to be preserved in text -&gt; <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>/<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span>/<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> -&gt; text roundtrip without change due to rounding or overflow (see the C++ analog  <a href="../../cpp/types/numeric_limits/digits10.html" title="cpp/types/numeric limits/digits10">digits10</a> for detail)  <br> <span class="t-mark">(macro constant)</span>
+<td>   number of decimal digits that are guaranteed to be preserved in text → <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>/<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span>/<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> → text roundtrip without change due to rounding or overflow (see the C++ analog  <a href="../../cpp/types/numeric_limits/digits10.html" title="cpp/types/numeric limits/digits10"><code>digits10</code></a> for detail)  <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
@@ -482,7 +483,7 @@ WINT_MAX       = 4294967295</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>FLT_MIN_10_EXP</span><span>DBL_MIN_10_EXP</span><span>LDBL_MIN_10_EXP</span></span></div></div>
 </td>
-<td>   minimum negative integer such that <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">10</span></span></span> raised by power one less than that integer is a normalized <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> respectively  <br> <span class="t-mark">(macro constant)</span>
+<td>   minimum negative integer such that 10 raised by power one less than that integer is a normalized <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> respectively  <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
@@ -496,7 +497,7 @@ WINT_MAX       = 4294967295</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>FLT_MAX_10_EXP</span><span>DBL_MAX_10_EXP</span><span>LDBL_MAX_10_EXP</span></span></div></div>
 </td>
-<td>   maximum positive integer such that <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">10</span></span></span> raised by power one less than that integer is a representable finite <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> respectively  <br> <span class="t-mark">(macro constant)</span>
+<td>   maximum positive integer such that 10 raised by power one less than that integer is a representable finite <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> respectively  <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
@@ -510,14 +511,14 @@ WINT_MAX       = 4294967295</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="limits/FLT_EVAL_METHOD.html" title="c/types/limits/FLT EVAL METHOD"> <span class="t-lines"><span>FLT_EVAL_METHOD</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   use of extended precision for intermediate results: 0 not used, 1 <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span> is used instead of <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>, 2: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> is used  <br> <span class="t-mark">(macro constant)</span>
+<td>   use of extended precision for intermediate results: <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> – not used, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> – <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span> is used instead of <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">2</span></span></span> – <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span> is used  <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>FLT_HAS_SUBNORM</span><span>DBL_HAS_SUBNORM</span><span>LDBL_HAS_SUBNORM</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   whether the type supports subnormal (<a href="https://en.wikipedia.org/wiki/Denormal_number" class="extiw" title="enwiki:Denormal number">denormal</a>) numbers: -1 indeterminable, 0 absent, 1 present  <br> <span class="t-mark">(macro constant)</span>
+<td>   whether the type supports subnormal (<a href="https://en.wikipedia.org/wiki/Denormal_number" class="extiw" title="enwiki:Denormal number">denormal</a>) numbers: <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">1</span></span></span> – indeterminable, <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> – absent, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> – present  <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 </table>
@@ -608,19 +609,19 @@ FLT_HAS_SUBNORM = 1</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7143/1000000
-Preprocessor generated node count: 9993/1000000
-Post‐expand include size: 195821/2097152 bytes
-Template argument size: 68579/2097152 bytes
+Preprocessor visited node count: 7425/1000000
+Preprocessor generated node count: 10240/1000000
+Post‐expand include size: 201219/2097152 bytes
+Template argument size: 71081/2097152 bytes
 Highest expansion depth: 18/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6397-0!*!0!!en!*!* and timestamp 20220313075133 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6397-0!*!0!!en!*!* and timestamp 20230120010718 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/limits&amp;oldid=137030">https://en.cppreference.com/mwiki/index.php?title=c/types/limits&amp;oldid=137030</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/limits&amp;oldid=142439">https://en.cppreference.com/mwiki/index.php?title=c/types/limits&amp;oldid=142439</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -633,17 +634,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/types/limits">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 9 January 2022, at 20:59.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 458,573 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -658,7 +648,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.042 secs. -->
+</script><!-- Served in 2.175 secs. -->
 	</body>
-<!-- Cached 20220313075133 -->
+<!-- Cached 20230120010718 -->
 </html>

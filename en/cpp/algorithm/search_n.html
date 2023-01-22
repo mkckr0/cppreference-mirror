@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/search_n","wgTitle":"cpp/algorithm/search n","wgCurRevisionId":128161,"wgArticleId":778,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/search_n","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/algorithm/search_n","wgTitle":"cpp/algorithm/search n","wgCurRevisionId":145978,"wgArticleId":778,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/algorithm/search_n","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -367,18 +368,18 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> Size, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
-<p>ForwardIt search_n<span class="br0">(</span> ForwardIt first, ForwardIt last, Size count,<br>
+<td> <div><span id="Version_1"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> Size, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
+<p>ForwardIt search_n<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
 </p>
-                    <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                    Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> Size, <span class="kw1">class</span> T <span class="sy1">&gt;</span><br>
-<p><span class="kw4">constexpr</span> ForwardIt search_n<span class="br0">(</span> ForwardIt first, ForwardIt last, Size count,<br>
+<p><span class="kw4">constexpr</span> ForwardIt search_n<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
 </p>
-                              <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                              Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
@@ -398,25 +399,25 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td></td>
 </tr>
 <tr class="t-dcl t-until-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> Size, <span class="kw1">class</span> T, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
-<p>ForwardIt search_n<span class="br0">(</span> ForwardIt first, ForwardIt last, Size count,<br>
+<td> <div><span id="Version_3"></span><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> Size, <span class="kw1">class</span> T, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
+<p>ForwardIt search_n<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
 </p>
-                    <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                    Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-cxx20">(until C++20)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> Size, <span class="kw1">class</span> T, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
-<p><span class="kw4">constexpr</span> ForwardIt search_n<span class="br0">(</span> ForwardIt first, ForwardIt last, Size count,<br>
+<p><span class="kw4">constexpr</span> ForwardIt search_n<span class="br0">(</span> ForwardIt first, ForwardIt last,<br>
 </p>
-                              <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+                              Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> Size, <span class="kw1">class</span> T,<br>
-<p>          <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> ExecutionPolicy, <span class="kw1">class</span> ForwardIt,<br>
+<p>          <span class="kw1">class</span> Size, <span class="kw1">class</span> T, <span class="kw1">class</span> BinaryPredicate <span class="sy1">&gt;</span><br>
 ForwardIt search_n<span class="br0">(</span> ExecutionPolicy<span class="sy3">&amp;&amp;</span> policy, ForwardIt first, ForwardIt last,<br>
 </p>
                     Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, BinaryPredicate p <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -425,35 +426,46 @@ ForwardIt search_n<span class="br0">(</span> ExecutionPolicy<span class="sy3">&a
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Searches the range <code>[first, last)</code> for the first sequence of count identical elements, each equal to the given value. 
+<p>Searches the range <code>[first, last)</code> for the first sequence of <span class="t-c"><span class="mw-geshi cpp source-cpp">count</span></span> identical elements, each equal to the given <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span>.
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Elements are compared using <code>operator==</code>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary predicate <code>p</code>.</div>
-<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <code>policy</code>. These overloads do not participate in overload resolution unless <span class="t-rev-inl t-until-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span> <span class="t-rev-inl t-since-cxx20"><span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> </span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> is true.</div>
+<div class="t-li1"><span class="t-li">3)</span> Elements are compared using the given binary predicate <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span>.</div>
+<div class="t-li1"><span class="t-li">2,4)</span> Same as <span class="t-v">(1,3)</span>, but executed according to <span class="t-c"><span class="mw-geshi cpp source-cpp">policy</span></span>. These overloads do not participate in overload resolution unless  <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/decay.html"><span class="kw631">std::<span class="me2">decay_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-until-cxx20">(until C++20)</span></td></tr>
+<tr class="t-rev t-since-cxx20"><td>
+<p><span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="is_execution_policy.html"><span class="kw1568">std::<span class="me2">is_execution_policy_v</span></span></a><span class="sy1">&lt;</span><a href="../types/remove_cvref.html"><span class="kw2646">std::<span class="me2">remove_cvref_t</span></span></a><span class="sy1">&lt;</span>ExecutionPolicy<span class="sy1">&gt;&gt;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table></div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  first, last
+<td> first, last
 </td>
 <td> -
 </td>
-<td>  the range of elements to examine
+<td> the range of elements to examine
 </td></tr>
 <tr class="t-par">
-<td>  count
+<td> count
 </td>
 <td> -
 </td>
-<td>  the length of the sequence to search for
+<td> the length of the sequence to search for
 </td></tr>
 <tr class="t-par">
-<td>  value
+<td> value
 </td>
 <td> -
 </td>
-<td>  the value of the elements to search for
+<td> the value of the elements to search for
 </td></tr>
 <tr class="t-par">
 <td>  policy
@@ -463,7 +475,7 @@ ForwardIt search_n<span class="br0">(</span> ExecutionPolicy<span class="sy3">&a
 <td>  the execution policy to use. See <a href="execution_policy_tag_t.html" title="cpp/algorithm/execution policy tag t">execution policy</a> for details.
 </td></tr>
 <tr class="t-par">
-<td>    p
+<td>   p
 </td>
 <td> -
 </td>
@@ -471,7 +483,7 @@ ForwardIt search_n<span class="br0">(</span> ExecutionPolicy<span class="sy3">&a
 <p>The signature of the predicate function should be equivalent to the following:
 </p><p><span class="t-cc"><span class="mw-geshi cpp source-cpp"> <span class="kw4">bool</span> pred<span class="br0">(</span><span class="kw4">const</span> Type1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> Type2 <span class="sy3">&amp;</span>b<span class="br0">)</span><span class="sy4">;</span></span></span>
 </p><p>While the signature does not need to have <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> <span class="sy3">&amp;</span></span></span>, the function must not modify the objects passed to it and must be able to accept all values of type (possibly const) <code>Type1</code> and <code>Type2</code> regardless of <a href="../language/value_category.html" title="cpp/language/value category">value category</a> (thus, <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1 <span class="sy3">&amp;</span></span></span> is not allowed<span class="t-rev-inl t-since-cxx11"><span>, nor is <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> unless for <code>Type1</code> a move is equivalent to a copy</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>).<br>
-The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">ForwardIt</span></span> can be dereferenced and then implicitly converted to <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></span>. The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span> must be such that an object of type <span class="t-c"><span class="mw-geshi cpp source-cpp">T</span></span> can be implicitly converted to <span class="t-c"><span class="mw-geshi cpp source-cpp">Type2</span></span>.
+The type <code>Type1</code> must be such that an object of type <code>ForwardIt</code> can be dereferenced and then implicitly converted to <code>Type1</code>. The type <code>Type2</code> must be such that an object of type <code>T</code> can be implicitly converted to <code>Type2</code>.
 ​
 </p>
 </td></tr>
@@ -480,14 +492,23 @@ The type <span class="t-c"><span class="mw-geshi cpp source-cpp">Type1</span></s
 </td></tr>
 <tr class="t-par-req">
 <td colspan="3"> -<div class="spacer"></div><code>ForwardIt</code> must meet the requirements of <a href="../named_req/ForwardIterator.html" title="cpp/named req/ForwardIterator"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">LegacyForwardIterator</span></a>.
+</td></tr>
+<tr class="t-par-req">
+<td colspan="3"> -<div class="spacer"></div><code>Size</code> must be <a href="../language/implicit_cast.html" title="cpp/language/implicit cast" class="mw-redirect">convertible</a> to <a href="../language/type-id.html" title="cpp/language/type">integral type</a>.
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
-<p>Iterator to the beginning of the found sequence in the range <code>[first, last)</code>. If no such sequence is found, <code>last</code> is returned.<br>
-If <code>count</code> is zero or negative, <code>first</code> is returned.
+<p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">count</span></span> is positive, returns an iterator to the beginning of the first sequence found in the range <code>[first, last)</code>. Each iterator <span class="t-c"><span class="mw-geshi cpp source-cpp">it</span></span> in the sequence should satisfy the following condition:
+</p>
+<div class="t-li1"><span class="t-li">1,2)</span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>it <span class="sy1">==</span> value</span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span></div>
+<div class="t-li1"><span class="t-li">3,4)</span> <span class="t-c"><span class="mw-geshi cpp source-cpp">p<span class="br0">(</span><span class="sy2">*</span>it, value<span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="kw2">false</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span></div>
+<p>If no such sequence is found, <span class="t-c"><span class="mw-geshi cpp source-cpp">last</span></span> is returned.
+</p><p>If <span class="t-c"><span class="mw-geshi cpp source-cpp">count</span></span> is zero or negative, <span class="t-c"><span class="mw-geshi cpp source-cpp">first</span></span> is returned.
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<p>At most <code>last - first</code> applications of the predicate.
+<p>Given <code>N</code> as <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../iterator/distance.html"><span class="kw675">std::<span class="me2">distance</span></span></a><span class="br0">(</span>first, last<span class="br0">)</span></span></span>:
 </p>
+<div class="t-li1"><span class="t-li">1,2)</span> at most <code>N</code> comparisons with value using <code>operator==</code></div>
+<div class="t-li1"><span class="t-li">3,4)</span> at most <code>N</code> applications of the predicate <span class="t-c"><span class="mw-geshi cpp source-cpp">p</span></span></div>
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
 <p>The overloads with a template parameter named <code>ExecutionPolicy</code> report errors as follows:
 </p>
@@ -498,80 +519,69 @@ If <code>count</code> is zero or negative, <code>first</code> is returned.
 <table class="eq-fun-cpp-table">
 
 <tr>
-<th> First version
+<th><a href="search_n.html#Version_1">search_n (1)</a>
 </th></tr>
 <tr>
 <td>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> Size, <span class="kw1">class</span> T<span class="sy1">&gt;</span>
-ForwardIt search_n<span class="br0">(</span>ForwardIt first, ForwardIt last,
-                    Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value<span class="br0">)</span>
+ForwardIt search_n<span class="br0">(</span>ForwardIt first, ForwardIt last, Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">if</span> <span class="br0">(</span>count <span class="sy1">&lt;=</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span>count <span class="sy1">&lt;=</span> <span class="nu0">0</span><span class="br0">)</span>
         <span class="kw1">return</span> first<span class="sy4">;</span>
-    <span class="br0">}</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><span class="br0">(</span><span class="sy2">*</span>first <span class="sy1">==</span> value<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+    <span class="kw1">for</span><span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><span class="br0">(</span><span class="sy2">*</span>first <span class="sy1">==</span> value<span class="br0">)</span><span class="br0">)</span>
             <span class="kw1">continue</span><span class="sy4">;</span>
-        <span class="br0">}</span>
  
         ForwardIt candidate <span class="sy1">=</span> first<span class="sy4">;</span>
-        Size cur_count <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
  
-        <span class="kw1">while</span> <span class="br0">(</span><span class="kw2">true</span><span class="br0">)</span> <span class="br0">{</span>
-            <span class="sy2">++</span>cur_count<span class="sy4">;</span>
-            <span class="kw1">if</span> <span class="br0">(</span>cur_count <span class="sy1">&gt;=</span> count<span class="br0">)</span> <span class="br0">{</span>
-                <span class="co1">// success</span>
-                <span class="kw1">return</span> candidate<span class="sy4">;</span>
-            <span class="br0">}</span>
+        <span class="kw1">for</span> <span class="br0">(</span>Size cur_count <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="sy2">++</span>cur_count<span class="br0">)</span>
+        <span class="br0">{</span>
+            <span class="kw1">if</span> <span class="br0">(</span>cur_count <span class="sy1">&gt;=</span> count<span class="br0">)</span>
+                <span class="kw1">return</span> candidate<span class="sy4">;</span> <span class="co1">// success</span>
+ 
             <span class="sy2">++</span>first<span class="sy4">;</span>
-            <span class="kw1">if</span> <span class="br0">(</span>first <span class="sy1">==</span> last<span class="br0">)</span> <span class="br0">{</span>
-                <span class="co1">// exhausted the list</span>
-                <span class="kw1">return</span> last<span class="sy4">;</span>
-            <span class="br0">}</span>
-            <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><span class="br0">(</span><span class="sy2">*</span>first <span class="sy1">==</span> value<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
-                <span class="co1">// too few in a row</span>
-                <span class="kw1">break</span><span class="sy4">;</span>
-            <span class="br0">}</span>
+            <span class="kw1">if</span> <span class="br0">(</span>first <span class="sy1">==</span> last<span class="br0">)</span>
+                <span class="kw1">return</span> last<span class="sy4">;</span> <span class="co1">// exhausted the list</span>
+ 
+            <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><span class="br0">(</span><span class="sy2">*</span>first <span class="sy1">==</span> value<span class="br0">)</span><span class="br0">)</span>
+                <span class="kw1">break</span><span class="sy4">;</span> <span class="co1">// too few in a row</span>
         <span class="br0">}</span>
     <span class="br0">}</span>
     <span class="kw1">return</span> last<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </td></tr>
 <tr>
-<th> Second version
+<th><a href="search_n.html#Version_3">search_n (3)</a>
 </th></tr>
 <tr>
 <td>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> ForwardIt, <span class="kw1">class</span> Size, <span class="kw1">class</span> T, <span class="kw1">class</span> BinaryPredicate<span class="sy1">&gt;</span>
-ForwardIt search_n<span class="br0">(</span>ForwardIt first, ForwardIt last,
-                    Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value, BinaryPredicate p<span class="br0">)</span>
+ForwardIt search_n<span class="br0">(</span>ForwardIt first, ForwardIt last, Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value,
+                   BinaryPredicate p<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">if</span> <span class="br0">(</span>count <span class="sy1">&lt;=</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span>count <span class="sy1">&lt;=</span> <span class="nu0">0</span><span class="br0">)</span>
         <span class="kw1">return</span> first<span class="sy4">;</span>
-    <span class="br0">}</span>
-    <span class="kw1">for</span><span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span> <span class="br0">{</span>
-        <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>p<span class="br0">(</span><span class="sy2">*</span>first, value<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+ 
+    <span class="kw1">for</span><span class="br0">(</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>p<span class="br0">(</span><span class="sy2">*</span>first, value<span class="br0">)</span><span class="br0">)</span>
             <span class="kw1">continue</span><span class="sy4">;</span>
-        <span class="br0">}</span>
  
         ForwardIt candidate <span class="sy1">=</span> first<span class="sy4">;</span>
-        Size cur_count <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
  
-        <span class="kw1">while</span> <span class="br0">(</span><span class="kw2">true</span><span class="br0">)</span> <span class="br0">{</span>
-            <span class="sy2">++</span>cur_count<span class="sy4">;</span>
-            <span class="kw1">if</span> <span class="br0">(</span>cur_count <span class="sy1">&gt;=</span> count<span class="br0">)</span> <span class="br0">{</span>
-                <span class="co1">// success</span>
-                <span class="kw1">return</span> candidate<span class="sy4">;</span>
-            <span class="br0">}</span>
+        <span class="kw1">for</span> <span class="br0">(</span>Size cur_count <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="kw2">true</span><span class="sy4">;</span> <span class="sy2">++</span>cur_count<span class="br0">)</span>
+        <span class="br0">{</span>
+            <span class="kw1">if</span> <span class="br0">(</span>cur_count <span class="sy1">&gt;=</span> count<span class="br0">)</span>
+                <span class="kw1">return</span> candidate<span class="sy4">;</span> <span class="co1">// success</span>
+ 
             <span class="sy2">++</span>first<span class="sy4">;</span>
-            <span class="kw1">if</span> <span class="br0">(</span>first <span class="sy1">==</span> last<span class="br0">)</span> <span class="br0">{</span>
-                <span class="co1">// exhausted the list</span>
-                <span class="kw1">return</span> last<span class="sy4">;</span>
-            <span class="br0">}</span>
-            <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>p<span class="br0">(</span><span class="sy2">*</span>first, value<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
-                <span class="co1">// too few in a row</span>
-                <span class="kw1">break</span><span class="sy4">;</span>
-            <span class="br0">}</span>
+            <span class="kw1">if</span> <span class="br0">(</span>first <span class="sy1">==</span> last<span class="br0">)</span>
+                <span class="kw1">return</span> last<span class="sy4">;</span> <span class="co1">// exhausted the list</span>
+ 
+            <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>p<span class="br0">(</span><span class="sy2">*</span>first, value<span class="br0">)</span><span class="br0">)</span>
+                <span class="kw1">break</span><span class="sy4">;</span> <span class="co1">// too few in a row</span>
         <span class="br0">}</span>
     <span class="br0">}</span>
     <span class="kw1">return</span> last<span class="sy4">;</span>
@@ -583,27 +593,50 @@ ForwardIt search_n<span class="br0">(</span>ForwardIt first, ForwardIt last,
 <span class="co2">#include &lt;algorithm&gt;</span>
 <span class="co2">#include &lt;iterator&gt;</span>
  
-<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">class</span> Container, <span class="kw1">class</span> Size, <span class="kw1">class</span> T<span class="sy1">&gt;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> Container, <span class="kw1">class</span> Size, <span class="kw1">class</span> T<span class="sy1">&gt;</span>
+<span class="br0">[</span><span class="br0">[</span>nodiscard<span class="br0">]</span><span class="br0">]</span>
 <span class="kw4">bool</span> consecutive_values<span class="br0">(</span><span class="kw4">const</span> Container<span class="sy3">&amp;</span> c, Size count, <span class="kw4">const</span> T<span class="sy3">&amp;</span> v<span class="br0">)</span>
 <span class="br0">{</span>
-  <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">search_n</span><span class="br0">(</span><a href="../iterator/begin.html"><span class="kw678">std::<span class="me2">begin</span></span></a><span class="br0">(</span>c<span class="br0">)</span>,<a href="../iterator/end.html"><span class="kw682">std::<span class="me2">end</span></span></a><span class="br0">(</span>c<span class="br0">)</span>,count,v<span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <a href="../iterator/end.html"><span class="kw682">std::<span class="me2">end</span></span></a><span class="br0">(</span>c<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">search_n</span><span class="br0">(</span><a href="../iterator/begin.html"><span class="kw678">std::<span class="me2">begin</span></span></a><span class="br0">(</span>c<span class="br0">)</span>, <a href="../iterator/end.html"><span class="kw682">std::<span class="me2">end</span></span></a><span class="br0">(</span>c<span class="br0">)</span>, count, v<span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <a href="../iterator/end.html"><span class="kw682">std::<span class="me2">end</span></span></a><span class="br0">(</span>c<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-   <span class="kw4">const</span> <span class="kw4">char</span> sequence<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"1001010100010101001010101"</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">char</span> sequence<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"1001010100010101001010101"</span><span class="sy4">;</span>
  
-   <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/boolalpha.html"><span class="kw1767">std::<span class="me2">boolalpha</span></span></a><span class="sy4">;</span>
-   <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Has 4 consecutive zeros: "</span>
-             <span class="sy1">&lt;&lt;</span> consecutive_values<span class="br0">(</span>sequence,<span class="nu0">4</span>,<span class="st0">'0'</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-   <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"Has 3 consecutive zeros: "</span>
-             <span class="sy1">&lt;&lt;</span> consecutive_values<span class="br0">(</span>sequence,<span class="nu0">3</span>,<span class="st0">'0'</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1761">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/boolalpha.html"><span class="kw1767">std::<span class="me2">boolalpha</span></span></a>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">"Has 4 consecutive zeros: "</span>
+              <span class="sy1">&lt;&lt;</span> consecutive_values<span class="br0">(</span>sequence, <span class="nu0">4</span>, <span class="st0">'0'</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
+              <span class="sy1">&lt;&lt;</span> <span class="st0">"Has 3 consecutive zeros: "</span>
+              <span class="sy1">&lt;&lt;</span> consecutive_values<span class="br0">(</span>sequence, <span class="nu0">3</span>, <span class="st0">'0'</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Has 4 consecutive zeros: false
 Has 3 consecutive zeros: true</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue283">LWG 283</a>
+</td>
+<td> C++98
+</td>
+<td> <code>T</code> was required to be <a href="../named_req/EqualityComparable.html" title="cpp/named req/EqualityComparable"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">EqualityComparable</span></a>, but<br>the value type of <code>InputIt</code> is not always <code>T</code>
+</td>
+<td> removed the requirement
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -630,19 +663,19 @@ Has 3 consecutive zeros: true</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10419/1000000
-Preprocessor generated node count: 14534/1000000
-Post‐expand include size: 305382/2097152 bytes
-Template argument size: 62010/2097152 bytes
+Preprocessor visited node count: 10962/1000000
+Preprocessor generated node count: 17552/1000000
+Post‐expand include size: 308475/2097152 bytes
+Template argument size: 62660/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:778-0!*!0!!en!*!* and timestamp 20220410085606 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:778-0!*!0!!en!*!* and timestamp 20230120044614 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/search_n&amp;oldid=128161">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/search_n&amp;oldid=128161</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/search_n&amp;oldid=145978">https://en.cppreference.com/mwiki/index.php?title=cpp/algorithm/search_n&amp;oldid=145978</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -655,17 +688,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/algorithm/search_n">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 April 2021, at 10:51.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 55,279 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -680,7 +702,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.596 secs. -->
+</script><!-- Served in 3.386 secs. -->
 	</body>
-<!-- Cached 20220410085606 -->
+<!-- Cached 20230120044614 -->
 </html>

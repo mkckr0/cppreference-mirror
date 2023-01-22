@@ -155,13 +155,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="c/language/eval order"> evaluation order and sequence points</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="c/language/constant expression">constant expressions</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="conversion.html" title="c/language/conversion">implicit conversions</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <strong class="selflink">generic selection</strong></td></tr>
+<tr class="t-nv"><td colspan="5"> <strong class="selflink">generic selection</strong> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Constants_and_literals" title="c/language/expressions">constants and literals</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="integer_constant.html" title="c/language/integer constant"> integer constant</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="floating_constant.html" title="c/language/floating constant"> floating constant</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="character_constant.html" title="c/language/character constant"> character constant</a> </td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="bool_constant.html" title="c/language/bool constant"><span class="t-lines"><span>true/false</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="nullptr.html" title="c/language/nullptr"><span class="t-lines"><span>nullptr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="c/language/string literal"> string literal</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="compound_literal.html" title="c/language/compound literal"> compound literal</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="expressions.html#Operators" title="c/language/expressions">operators</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="c/language/operator precedence">operator precedence</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="operator_member_access.html" title="c/language/operator member access">member access and indirection</a> </td></tr>
@@ -344,15 +346,15 @@ cbrtf(3.375) = 1.500000</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1830/1000000
-Preprocessor generated node count: 6052/1000000
-Post‐expand include size: 46805/2097152 bytes
-Template argument size: 8634/2097152 bytes
-Highest expansion depth: 15/40
+Preprocessor visited node count: 2015/1000000
+Preprocessor generated node count: 6177/1000000
+Post‐expand include size: 52206/2097152 bytes
+Template argument size: 9633/2097152 bytes
+Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13925-0!*!0!!en!*!* and timestamp 20220507022946 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13925-0!*!0!!en!*!* and timestamp 20230120005018 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -369,17 +371,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/language/generic">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 1 March 2022, at 09:35.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 124,693 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -394,7 +385,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.392 secs. -->
+</script><!-- Served in 0.418 secs. -->
 	</body>
-<!-- Cached 20220507022946 -->
+<!-- Cached 20230120005018 -->
 </html>

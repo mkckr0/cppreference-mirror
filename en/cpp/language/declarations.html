@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/declarations","wgTitle":"cpp/language/declarations","wgCurRevisionId":139002,"wgArticleId":9896,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/declarations","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/declarations","wgTitle":"cpp/language/declarations","wgCurRevisionId":146612,"wgArticleId":9896,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/declarations","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -332,7 +333,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div></td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
-<p><i>Declarations</i> introduce (or re-introduce) names into the C++ program. Each kind of entity is declared differently. <a href="definition.html" title="cpp/language/definition">Definitions</a> are declarations that are sufficient to use the entity identified by the name. 
+<p><i>Declarations</i> are how names are introduced (or re-introduced) into the C++ program. Not all declarations actually declare anything, and each kind of entity is declared differently. <a href="definition.html" title="cpp/language/definition">Definitions</a> are declarations that are sufficient to use the entity identified by the name. 
 </p><p>A declaration is one of the following:
 </p>
 <ul><li> <a href="function.html#Function_definition" title="cpp/language/function">Function definition</a>
@@ -518,7 +519,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
 </table>
-<ul><li> <a href="storage_duration.html" title="cpp/language/storage duration">storage class specifier</a> (<span class="t-rev-inl t-until-cxx17"><span><a href="../keyword/register.html" title="cpp/keyword/register"><tt>register</tt></a>, </span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span> <a href="../keywords/static.html" title="cpp/keyword/static"><tt>static</tt></a>, <span class="t-rev-inl t-since-cxx11"><span><a href="../keyword/thread_local.html" title="cpp/keyword/thread local"><tt>thread_local</tt></a>, </span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> <a href="../keyword/extern.html" title="cpp/keyword/extern"><tt>extern</tt></a>, <a href="../keyword/mutable.html" title="cpp/keyword/mutable"><tt>mutable</tt></a>). Only one storage class specifier is allowed, except that <code>thread_local</code> may appear together with <code>extern</code> or <code>static</code>.
+<ul><li> <a href="storage_duration.html" title="cpp/language/storage duration">storage class specifier</a> (<span class="t-rev-inl t-until-cxx17"><span><a href="../keyword/register.html" title="cpp/keyword/register"><tt>register</tt></a>, </span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span> <a href="../keywords/static.html" title="cpp/keyword/static"><tt>static</tt></a>, <span class="t-rev-inl t-since-cxx11"><span><a href="../keyword/thread_local.html" title="cpp/keyword/thread local"><tt>thread_local</tt></a>, </span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> <a href="../keyword/extern.html" title="cpp/keyword/extern"><tt>extern</tt></a>, <a href="../keyword/mutable.html" title="cpp/keyword/mutable"><tt>mutable</tt></a>). Only one storage class specifier is allowed<span class="t-rev-inl t-since-cxx11"><span>, except that <code>thread_local</code> may appear together with <code>extern</code> or <code>static</code></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>.
 </li><li> <b>Type specifiers</b> (<span class="t-spar">type-specifier-seq</span>), a sequence of specifiers that names a type. The type of every entity introduced by the declaration is this type, optionally modified by the declarator (see below). This sequence of specifiers is also used by <a href="type-id.html#Type_naming" title="cpp/language/type">type-id</a>. Only the following specifiers are part of <span class="t-spar">type-specifier-seq</span>, in any order:
 </li></ul>
 <dl><dd><ul><li> <a href="class.html" title="cpp/language/class">class specifier</a>
@@ -640,7 +641,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a href="constraints.html#Requires_clauses" title="cpp/language/constraints">a requires-clause</a>, which adds a <a href="constraints.html" title="cpp/language/constraints">constraint</a> to a <a href="function.html" title="cpp/language/function">function declaration</a>
 </td></tr></table>
-<p>Each <span class="t-spar">init-declarator</span> in a init-declarator sequence <span class="t-c"><span class="mw-geshi cpp source-cpp">S D1, D2, D3<span class="sy4">;</span></span></span> is processed as if it were a standalone declaration with the same specifiers: <span class="t-c"><span class="mw-geshi cpp source-cpp">S D1<span class="sy4">;</span> S D2<span class="sy4">;</span> S D3<span class="sy4">;</span></span></span>.
+<p>Each <span class="t-spar">init-declarator</span> in an init-declarator sequence <span class="t-c"><span class="mw-geshi cpp source-cpp">S D1, D2, D3<span class="sy4">;</span></span></span> is processed as if it were a standalone declaration with the same specifiers: <span class="t-c"><span class="mw-geshi cpp source-cpp">S D1<span class="sy4">;</span> S D2<span class="sy4">;</span> S D3<span class="sy4">;</span></span></span>.
 </p><p>Each declarator introduces exactly one object, reference, function, or (for typedef declarations) type alias, whose type is provided by <span class="t-spar">decl-specifier-seq</span> and optionally modified by operators such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy3">&amp;</span></span></span> (reference to) or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">[</span><span class="br0">]</span></span></span> (array of) or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span><span class="br0">)</span></span></span> (function returning) in the declarator. These operators can be applied recursively, as shown below.
 </p><p>A <span class="t-spar">declarator</span> is one of the following:
 </p>
@@ -774,7 +775,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">6)</span> <a href="reference.html" title="cpp/language/reference">Lvalue reference declarator</a>: the declaration <span class="t-c"><span class="mw-geshi cpp source-cpp">S <span class="sy3">&amp;</span> D<span class="sy4">;</span></span></span> declares <code>D</code> as an lvalue reference to the type determined by <span class="t-spar">decl-specifier-seq</span> <code>S</code>.</div>
 <div class="t-li1"><span class="t-li">7)</span> <a href="reference.html" title="cpp/language/reference">Rvalue reference declarator</a>: the declaration <span class="t-c"><span class="mw-geshi cpp source-cpp">S <span class="sy3">&amp;&amp;</span> D<span class="sy4">;</span></span></span> declares <code>D</code> as an rvalue reference to the type determined by <span class="t-spar">decl-specifier-seq</span> <code>S</code>.</div>
 <div class="t-li1"><span class="t-li">8)</span> <a href="array.html" title="cpp/language/array">Array declarator</a>. <span class="t-spar">noptr-declarator</span> any valid declarator, but if it begins with *, &amp;, or &amp;&amp;, it has to be surrounded by parentheses.</div>
-<div class="t-li1"><span class="t-li">9)</span> <a href="function.html" title="cpp/language/function">Function declarator</a>. <span class="t-spar">noptr-declarator</span> any valid declarator, but if it begins with *, &amp;, or &amp;&amp;, it has to be surrounded by parentheses. <span class="t-rev-inl t-since-cxx11"><span>Note that the outermost function declarator may end with the optional trailing return type.</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span></div>
+<div class="t-li1"><span class="t-li">9)</span> <a href="function.html" title="cpp/language/function">Function declarator</a>. <span class="t-spar">noptr-declarator</span> any valid declarator, but if it begins with *, &amp;, or &amp;&amp;, it has to be surrounded by parentheses. <span class="t-rev-inl t-since-cxx11"><span>It may end with the optional trailing return type.</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span></div>
  <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
 <p>In all cases, <span class="t-spar">attr</span> is an optional sequence of <a href="attributes.html" title="cpp/language/attributes">attributes</a>. When appearing immediately after the identifier, it applies to the object being declared.
@@ -789,9 +790,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>When a <span class="t-spar">block-declaration</span> appears <a href="statements.html#Compound_statements" title="cpp/language/statements">inside a block</a>, and an identifier introduced by a declaration was previously declared in an outer block, the <a href="scope.html" title="cpp/language/scope">outer declaration is hidden</a> for the remainder of the block. 
 </p><p>If a declaration introduces a variable with automatic storage duration, it is initialized when its declaration statement is executed. All automatic variables declared in a block are destroyed on exit from the block (regardless how the block is exited: via <a href="exceptions.html" title="cpp/language/exceptions">exception</a>, <a href="goto.html" title="cpp/language/goto">goto</a>, or by reaching its end), in order opposite to their order of initialization.
 </p>
-<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>Note: this example demonstrates how some complex declarations are parsed in terms of the language grammar. Other popular mnemonics are: <a rel="nofollow" class="external text" href="http://c-faq.com/decl/spiral.anderson.html">the spiral rule</a>, reading <a rel="nofollow" class="external text" href="https://stackoverflow.com/a/34560439/273767">inside-out</a>, and <a rel="nofollow" class="external text" href="https://stackoverflow.com/a/34552915/273767">declaration mirrors use</a>. There is also an automated parser at <a rel="nofollow" class="external free" href="http://cdecl.org">http://cdecl.org</a></p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;string&gt;</span>
+<span class="co2">#include &lt;type_traits&gt;</span>
  
 <span class="kw1">class</span> C <span class="br0">{</span>
     <a href="../string/basic_string.html"><span class="kw1233">std::<span class="me2">string</span></span></a> member<span class="sy4">;</span> <span class="co1">// decl-specifier-seq is "std::string"</span>
@@ -826,7 +828,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co1">// 5. the nested declarator is "foo", which is an identifier.</span>
 <span class="co1">// The declaration declares the object foo of type "pointer to function taking double </span>
 <span class="co1">//     and returning pointer to array of 3 int"</span>
-<span class="co1">// The initializer "= nullptr" provides the initial value of this pointer.</span></pre></div></div>
+<span class="co1">// The initializer "= nullptr" provides the initial value of this pointer.</span>
+ 
+<span class="kw4">auto</span> <span class="br0">(</span><span class="sy2">*</span>bar<span class="br0">)</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> nullptr<span class="sy4">;</span> <span class="co1">// C++11 alternative syntax</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    static_assert<span class="br0">(</span><a href="../types/is_same.html"><span class="kw590">std::<span class="me2">is_same</span></span></a><span class="sy1">&lt;</span>decltype<span class="br0">(</span>foo<span class="br0">)</span>, decltype<span class="br0">(</span>bar<span class="br0">)</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span>, <span class="st0">""</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 </div>
 <h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
@@ -877,19 +886,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 8413/1000000
-Preprocessor generated node count: 17851/1000000
-Post‐expand include size: 204110/2097152 bytes
-Template argument size: 44201/2097152 bytes
+Preprocessor visited node count: 8451/1000000
+Preprocessor generated node count: 17928/1000000
+Post‐expand include size: 205007/2097152 bytes
+Template argument size: 44893/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9896-0!*!0!!en!*!* and timestamp 20220507022344 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:9896-0!*!0!!en!*!* and timestamp 20230120005209 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/declarations&amp;oldid=139002">https://en.cppreference.com/mwiki/index.php?title=cpp/language/declarations&amp;oldid=139002</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/declarations&amp;oldid=146612">https://en.cppreference.com/mwiki/index.php?title=cpp/language/declarations&amp;oldid=146612</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -902,17 +911,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/declarations">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 21 March 2022, at 23:52.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 377,038 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -927,7 +925,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.790 secs. -->
+</script><!-- Served in 1.937 secs. -->
 	</body>
-<!-- Cached 20220507022344 -->
+<!-- Cached 20230120005209 -->
 </html>

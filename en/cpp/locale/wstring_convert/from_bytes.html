@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -234,7 +235,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../wstring_convert.html" title="cpp/locale/wstring convert"><tt>std::wstring_convert</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h2"><td colspan="5"> Member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="wstring_convert.html" title="cpp/locale/wstring convert/wstring convert"><span class="t-lines"><span>wstring_convert::wstring_convert</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="~wstring_convert.html" title="cpp/locale/wstring convert/~wstring convert"><span class="t-lines"><span>wstring_convert::~wstring_convert</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="%7Ewstring_convert.html" title="cpp/locale/wstring convert/~wstring convert"><span class="t-lines"><span>wstring_convert::~wstring_convert</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>wstring_convert::from_bytes</span></span></strong></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="to_bytes.html" title="cpp/locale/wstring convert/to bytes"><span class="t-lines"><span>wstring_convert::to_bytes</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="converted.html" title="cpp/locale/wstring convert/converted"><span class="t-lines"><span>wstring_convert::converted</span></span></a></div></div></td></tr>
@@ -336,20 +337,20 @@ UTF32 conversion produced 4 code units:
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../codecvt/in.html" title="cpp/locale/codecvt/in"> <span class="t-lines"><span>do_in</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[virtual]</span></span></span></div></div>
 </td>
-<td>   converts a string from externT to internT, such as when reading from file <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,State&gt;</code>)</span> </td></tr>
+<td>   converts a string from <code>ExternT</code> to <code>InternT</code>, such as when reading from file <br> <span class="t-mark">(virtual protected member function of <code>std::codecvt&lt;InternT,ExternT,StateT&gt;</code>)</span> </td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5466/1000000
-Preprocessor generated node count: 9870/1000000
-Post‐expand include size: 137173/2097152 bytes
-Template argument size: 24209/2097152 bytes
+Preprocessor visited node count: 5480/1000000
+Preprocessor generated node count: 9901/1000000
+Post‐expand include size: 137924/2097152 bytes
+Template argument size: 24356/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5182-0!*!0!!en!*!* and timestamp 20220410153522 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5182-0!*!0!!en!*!* and timestamp 20230120003953 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -366,17 +367,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/locale/wstring_convert/from_bytes">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 1 June 2019, at 23:55.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 54,612 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -391,7 +381,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.982 secs. -->
+</script><!-- Served in 1.413 secs. -->
 	</body>
-<!-- Cached 20220410153522 -->
+<!-- Cached 20230120003953 -->
 </html>

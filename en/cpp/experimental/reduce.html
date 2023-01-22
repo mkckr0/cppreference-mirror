@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -349,7 +350,7 @@ parallel::reduce result 5000003.50000 took 5.06423 ms</pre></div></div>
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../algorithm/accumulate.html" title="cpp/algorithm/accumulate"> <span class="t-lines"><span>accumulate</span></span></a></div></div>
 </td>
-<td>   sums up a range of elements  <br> <span class="t-mark">(function template)</span> </td></tr>
+<td>  sums up or folds a range of elements <br> <span class="t-mark">(function template)</span> </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../algorithm/transform.html" title="cpp/algorithm/transform"> <span class="t-lines"><span>transform</span></span></a></div></div>
@@ -364,15 +365,15 @@ parallel::reduce result 5000003.50000 took 5.06423 ms</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3327/1000000
-Preprocessor generated node count: 8932/1000000
-Post‐expand include size: 88285/2097152 bytes
-Template argument size: 20488/2097152 bytes
+Preprocessor visited node count: 3333/1000000
+Preprocessor generated node count: 8945/1000000
+Post‐expand include size: 88842/2097152 bytes
+Template argument size: 20542/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:14461-0!*!0!!en!*!* and timestamp 20220410155410 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:14461-0!*!0!!en!*!* and timestamp 20221215210026 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -389,17 +390,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/experimental/reduce">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 15 June 2018, at 16:09.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 22,972 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -414,7 +404,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.185 secs. -->
+</script><!-- Served in 1.084 secs. -->
 	</body>
-<!-- Cached 20220410155410 -->
+<!-- Cached 20221215210026 -->
 </html>

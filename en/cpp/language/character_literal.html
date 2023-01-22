@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/character_literal","wgTitle":"cpp/language/character literal","wgCurRevisionId":140171,"wgArticleId":5083,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/character_literal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/character_literal","wgTitle":"cpp/language/character literal","wgCurRevisionId":143819,"wgArticleId":5083,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/character_literal","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -303,52 +304,52 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="expressions.html" title="cpp/language/expressions"> Expressions</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> General </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="value_category.html" title="cpp/language/value category"> value categories</a> (lvalue, rvalue, xvalue)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="cpp/language/eval order"> order of evaluation</a> (sequence points)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="cpp/language/constant expression"> constant expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions"> unevaluated expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Primary_expressions" title="cpp/language/expressions"> primary expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="lambda.html" title="cpp/language/lambda">lambda-expression</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Literals </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="integer_literal.html" title="cpp/language/integer literal">integer literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="floating_literal.html" title="cpp/language/floating literal">floating-point literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="bool_literal.html" title="cpp/language/bool literal">boolean literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <strong class="selflink">character literals</strong> including <a href="escape.html" title="cpp/language/escape">escape sequences</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="cpp/language/string literal">string literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="nullptr.html" title="cpp/language/nullptr">null pointer literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="user_literal.html" title="cpp/language/user literal">user-defined literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Operators </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_assignment.html" title="cpp/language/operator assignment"> Assignment operators</a>: 
+<tr class="t-nv-h2"><td colspan="5">General </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a> (lvalue, rvalue, xvalue)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a> (sequence points)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constant_expression.html" title="cpp/language/constant expression">Constant expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">Potentially-evaluated expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Primary_expressions" title="cpp/language/expressions">Primary expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda-expression</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Literals </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="integer_literal.html" title="cpp/language/integer literal">Integer literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="floating_literal.html" title="cpp/language/floating literal">Floating-point literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink">Character literals</strong> including <a href="escape.html" title="cpp/language/escape">escape sequences</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="string_literal.html" title="cpp/language/string literal">String literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="nullptr.html" title="cpp/language/nullptr">Null pointer literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Operators </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_assignment.html" title="cpp/language/operator assignment">Assignment operators</a>:
 <code>a=b</code>, <code>a+=b</code>, <code>a-=b</code>, <code>a*=b</code>, <code>a/=b</code>, <code>a%=b</code>, <code>a&amp;=b</code>, <code>a|=b</code>, <code>a^=b</code>, <code>a&lt;&lt;=b</code>, <code>a&gt;&gt;=b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_incdec.html" title="cpp/language/operator incdec"> Increment and decrement</a>: <code>++a</code>, <code>--a</code>, <code>a++</code>, <code>a--</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic"> Arithmetic operators</a>:
-<code>+a</code>, <code>-a</code>, <code>a+b</code>, <code>a-b</code>, <code>a*b</code>, <code>a/b</code>, <code>a%b</code>, <code>~a</code>, <code>a&amp;b</code>, <code>a|b</code>, <code>a^b</code>, <code>a&lt;&lt;b</code>, <code>a&gt;&gt;b</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_logical.html" title="cpp/language/operator logical"> Logical operators</a>: <code>a||b</code>, <code>a&amp;&amp;b</code>, <code>!a</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_comparison.html" title="cpp/language/operator comparison"> Comparison operators</a>: <code>a==b</code>, <code>a!=b</code>, <code>a&lt;b</code>, <code>a&gt;b</code>, <code>a&lt;=b</code>, <code>a&gt;=b</code>, <code>a&lt;=&gt;b</code><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_member_access.html" title="cpp/language/operator member access"> Member access operators</a>: <code>a[b]</code>, <code>*a</code>, <code>&amp;a</code>, <code>a-&gt;b</code>, <code>a.b</code>, <code>a-&gt;*b</code>, <code>a.*b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_other.html" title="cpp/language/operator other"> Other operators</a>: <code>a(...)</code>, <code>a,b</code>, <code>a?b:c</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="new.html" title="cpp/language/new">new-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="delete.html" title="cpp/language/delete">delete-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="throw.html" title="cpp/language/throw">throw-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="fold.html" title="cpp/language/fold">Fold expression</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Conversions </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a> <code>(T)a</code>, <code>T(a)</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_incdec.html" title="cpp/language/operator incdec">Increment and decrement</a>: <code>++a</code>, <code>--a</code>, <code>a++</code>, <code>a--</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">Arithmetic operators</a>:
+<code>+a</code>, <code>-a</code>, <code>a+b</code>, <code>a-b</code>, <code>a*b</code>, <code>a/b</code>, <code>a%b</code>, <code>~a</code>, <code>a&amp;b</code>, <code>a|b</code>, <code>a^b</code>, <code>a&lt;&lt;b</code>, <code>a&gt;&gt;b</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_logical.html" title="cpp/language/operator logical">Logical operators</a>: <code>a||b</code>, <code>a&amp;&amp;b</code>, <code>!a</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_comparison.html" title="cpp/language/operator comparison">Comparison operators</a>: <code>a==b</code>, <code>a!=b</code>, <code>a&lt;b</code>, <code>a&gt;b</code>, <code>a&lt;=b</code>, <code>a&gt;=b</code>, <code>a&lt;=&gt;b</code><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_member_access.html" title="cpp/language/operator member access">Member access operators</a>: <code>a[b]</code>, <code>*a</code>, <code>&amp;a</code>, <code>a-&gt;b</code>, <code>a.b</code>, <code>a-&gt;*b</code>, <code>a.*b</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_other.html" title="cpp/language/operator other">Other operators</a>: <code>a(...)</code>, <code>a,b</code>, <code>a?b:c</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new">new-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete">delete-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="throw.html" title="cpp/language/throw">throw-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fold.html" title="cpp/language/fold">Fold expression</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Conversions </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a> <code>(T)a</code>, <code>T(a)</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <h3><span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -440,7 +441,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> (7)
 </td>
-<td class="t-sdsc-nopad">
+<td> <span class="t-mark-rev t-until-cxx23">(until C++23)</span>
 </td></tr>
 
 
@@ -452,7 +453,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  <span class="t-spar">c-char</span>
+<td> <span class="t-spar">c-char</span>
 </td>
 <td> -
 </td>
@@ -463,32 +464,45 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li></ul>
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">basic-c-char</span>
+<td> <span class="t-spar">basic-c-char</span>
 </td>
 <td> -
 </td>
-<td>  A character from the <span class="t-rev-inl t-until-cxx23"><span><a href="translation_phases.html#Phase_5" title="cpp/language/translation phases">source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>, except the single-quote <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'</span></span></span>, backslash <span class="t-c"><span class="mw-geshi cpp source-cpp">\</span></span>, or new-line character
+<td> A character from the <span class="t-rev-inl t-until-cxx23"><span><a href="charset.html#Basic_source_character_set" title="cpp/language/charset">basic source character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="charset.html#Translation_character_set" title="cpp/language/charset">translation character set</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>, except the single-quote <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'</span></span></span>, backslash <span class="t-c"><span class="mw-geshi cpp source-cpp">\</span></span>, or new-line character
 </td></tr>
 <tr class="t-par">
-<td>  <span class="t-spar">c-char-sequence</span>
+<td> <span class="t-spar">c-char-sequence</span>
 </td>
 <td> -
 </td>
-<td>  two or more <span class="t-spar">c-char</span>s
+<td> two or more <span class="t-spar">c-char</span>s
 </td></tr></table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
 <div class="t-li1"><span class="t-li">1)</span> Ordinary character literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'a'</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'<span class="es1">\n</span>'</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'<span class="es5">\13</span>'</span></span></span>. Such literal has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span> and the value equal to <span class="t-rev-inl t-until-cxx23"><span>the representation of <span class="t-spar">c-char</span> in the <a href="charset.html#Execution_character_set_.28Old_definition.29" title="cpp/language/charset">execution character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span>the corresponding code point from <a href="charset.html#Code_unit_and_literal_encoding" title="cpp/language/charset">ordinary literal encoding</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>.</div>
-<div class="t-li1"><span class="t-li">2)</span> UTF-8 character literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">u8<span class="st0">'a'</span></span></span>. Such literal has type <span class="t-rev-inl t-until-cxx20"><span><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span></span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span><span class="t-rev-inl t-since-cxx20"><span><span class="t-c"><span class="mw-geshi cpp source-cpp">char8_t</span></span></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> and the value equal to ISO 10646 code point value of <span class="t-spar">c-char</span>, provided that the code point value is representable with a single UTF-8 code unit (that is, <span class="t-spar">c-char</span> is in the range 0x0-0x7F, inclusive).</div>
-<div class="t-li1"><span class="t-li">3)</span> UTF-16 character literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">u<span class="st0">'猫'</span></span></span>, but not <span class="t-c"><span class="mw-geshi cpp source-cpp">u<span class="st0">'🍌'</span></span></span> (<span class="t-c"><span class="mw-geshi cpp source-cpp">u<span class="st0">'<span class="es4">\U0001f34c</span>'</span></span></span>). Such literal has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span></span> and the value equal to ISO 10646 code point value of <span class="t-spar">c-char</span>, provided that the code point value is representable with a single UTF-16 code unit (that is, <span class="t-spar">c-char</span> is in the range 0x0-0xFFFF, inclusive).</div>
-<div class="t-li1"><span class="t-li">4)</span> UTF-32 character literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">U<span class="st0">'猫'</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">U<span class="st0">'🍌'</span></span></span>. Such literal has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span></span> and the value equal to ISO 10646 code point value of <span class="t-spar">c-char</span>.</div>
+<div class="t-li1"><span class="t-li">2)</span> UTF-8 character literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">u8<span class="st0">'a'</span></span></span>. Such literal has type <span class="t-rev-inl t-until-cxx20"><span><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></span></span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span><span class="t-rev-inl t-since-cxx20"><span><span class="t-c"><span class="mw-geshi cpp source-cpp">char8_t</span></span></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span> and the value equal to <a rel="nofollow" class="external text" href="https://www.iso.org/standard/76835.html">ISO/IEC 10646</a> code point value of <span class="t-spar">c-char</span>, provided that the code point value is representable with a single UTF-8 code unit (that is, <span class="t-spar">c-char</span> is in the range 0x0-0x7F, inclusive).</div>
+<div class="t-li1"><span class="t-li">3)</span> UTF-16 character literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">u<span class="st0">'猫'</span></span></span>, but not <span class="t-c"><span class="mw-geshi cpp source-cpp">u<span class="st0">'🍌'</span></span></span> (<span class="t-c"><span class="mw-geshi cpp source-cpp">u<span class="st0">'<span class="es4">\U0001f34c</span>'</span></span></span>). Such literal has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span></span> and the value equal to <a rel="nofollow" class="external text" href="https://www.iso.org/standard/76835.html">ISO/IEC 10646</a> code point value of <span class="t-spar">c-char</span>, provided that the code point value is representable with a single UTF-16 code unit (that is, <span class="t-spar">c-char</span> is in the range 0x0-0xFFFF, inclusive).</div>
+<div class="t-li1"><span class="t-li">4)</span> UTF-32 character literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">U<span class="st0">'猫'</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">U<span class="st0">'🍌'</span></span></span>. Such literal has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span></span> and the value equal to <a rel="nofollow" class="external text" href="https://www.iso.org/standard/76835.html">ISO/IEC 10646</a> code point value of <span class="t-spar">c-char</span>.</div>
 <div class="t-li1"><span class="t-li">5)</span> Wide character literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">L<span class="st0">'β'</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp">L<span class="st0">'猫'</span></span></span>. Such literal has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> and the value equal to <span class="t-rev-inl t-until-cxx23"><span>the value of <span class="t-spar">c-char</span> in the execution wide character set</span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span>the corresponding code point from wide literal encoding</span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>.</div>
 <div class="t-li1"><span class="t-li">6)</span> Ordinary multicharacter literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'AB'</span></span></span>, is conditionally-supported, has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> and implementation-defined value.</div>
 <div class="t-li1"><span class="t-li">7)</span> Wide multicharacter literal, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">L<span class="st0">'AB'</span></span></span>, is conditionally-supported, has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> and implementation-defined value.</div>
-<h4><span class="mw-headline" id="Non-encodable_characters">Non-encodable characters</span></h4>
-<p>In <span class="t-v">(1)</span>, if <span class="t-spar">c-char</span> is not a numeric character sequence and is not representable as a single byte in the execution character set, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'猫'</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'🍌'</span></span></span>, the character literal is conditionally supported, has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> and implementation-defined value.
-</p><p>In <span class="t-v">(2-4)</span>, if <span class="t-spar">c-char</span> is not a numeric character sequence and cannot be represented as a single code unit in the associated character encoding, the character literal is ill-formed.
-</p><p>In <span class="t-v">(5)</span>, if <span class="t-spar">c-char</span> is not a numeric character sequence and is not representable as a single code unit in the execution wide character set (e.g. a non-BMP value on Windows where <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> is 16-bit), the character literal is conditionally supported, has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> and implementation-defined value.
+<h4><span class="mw-headline" id="Non-encodable_character_literals">Non-encodable character literals</span></h4>
+<p>In <span class="t-v">(1-5)</span>, given that <span class="t-spar">c-char</span> is not a numeric escape sequence (see below):
 </p>
+<ul><li> In <span class="t-v">(1)</span>, if <span class="t-spar">c-char</span> is not representable <span class="t-rev-inl t-until-cxx23"><span>in the <a href="charset.html#Execution_character_set" title="cpp/language/charset">execution character set</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span>as a single code unit in the <a href="charset.html#Code_unit_and_literal_encoding" title="cpp/language/charset">ordinary literal encoding</a> or cannot be encoded as a single code unit</span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'猫'</span></span></span> or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">'🍌'</span></span></span>, the character literal is conditionally-supported, has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span></span> and implementation-defined value.
+</li><li> In <span class="t-v">(2-4)</span>, if <span class="t-spar">c-char</span> is not is not representable with a single UTF-8 <span class="t-v">(2)</span>/UTF-16 <span class="t-v">(3)</span>/UTF-32 <span class="t-v">(4)</span> code unit, the character literal is ill-formed.
+</li></ul>
+ <table class="t-rev-begin">
+<tr class="t-rev t-until-cxx23"><td>
+<ul><li> In <span class="t-v">(5)</span>, if <span class="t-spar">c-char</span> is not representable in the <a href="charset.html#Execution_character_set" title="cpp/language/charset">execution wide-character set</a> (e.g. a non-BMP value on Windows where <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> is 16-bit), the character literal is conditionally-supported, the character literal has type <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> and implementation-defined value.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-until-cxx23">(until C++23)</span></td></tr>
+<tr class="t-rev t-since-cxx23"><td>
+<ul><li> In <span class="t-v">(5)</span>, if <span class="t-spar">c-char</span> is not representable as a single code unit in the <a href="charset.html#Code_unit_and_literal_encoding" title="cpp/language/charset">wide literal encoding</a> or cannot be encoded as a single code unit (e.g. a non-BMP value on Windows where <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span></span> is 16-bit), the character literal is ill-formed.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
+</table>
 <h4><span class="mw-headline" id="Numeric_escape_sequences">Numeric escape sequences</span></h4>
 <p>Numeric (octal and hexadecimal) escape sequences can be used for specifying the value of the character.
 </p>
@@ -534,14 +548,17 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;string_view&gt;</span>
  
-<span class="kw1">template</span> <span class="sy1">&lt;</span><span class="kw1">typename</span> CharT<span class="sy1">&gt;</span>
-<span class="kw4">void</span> dump<span class="br0">(</span><a href="../string/basic_string_view.html"><span class="kw1251">std::<span class="me2">string_view</span></span></a> s, <span class="kw4">const</span> CharT c<span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw4">const</span> uint8_t<span class="sy2">*</span> data <span class="br0">{</span><span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">const</span> uint8_t<span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>c<span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> CharT<span class="sy1">&gt;</span>
+<span class="kw4">void</span> dump<span class="br0">(</span><a href="../string/basic_string_view.html"><span class="kw1251">std::<span class="me2">string_view</span></span></a> s, <span class="kw4">const</span> CharT c<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">const</span> uint8_t<span class="sy2">*</span> data<span class="br0">{</span><span class="kw1">reinterpret_cast</span><span class="sy1">&lt;</span><span class="kw4">const</span> uint8_t<span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span><span class="sy3">&amp;</span>c<span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span>
+ 
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> s <span class="sy1">&lt;&lt;</span> <span class="st0">" <span class="es1">\t</span>"</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/hex.html"><span class="kw1786">std::<span class="me2">hex</span></span></a>
               <span class="sy1">&lt;&lt;</span> <a href="../io/manip/uppercase.html"><span class="kw1778">std::<span class="me2">uppercase</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/setfill.html"><span class="kw1799">std::<span class="me2">setfill</span></span></a><span class="br0">(</span><span class="st0">'0'</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> i <span class="br0">{</span>0U<span class="br0">}</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> sizeof<span class="br0">(</span>CharT<span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span><span class="br0">{</span>
+ 
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> i<span class="br0">{</span>0U<span class="br0">}</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> sizeof<span class="br0">(</span>CharT<span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
         <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/setw.html"><span class="kw1801">std::<span class="me2">setw</span></span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">unsigned</span><span class="sy1">&gt;</span><span class="br0">(</span>data<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
-    <span class="br0">}</span>
+ 
     <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
 <span class="br0">}</span>
  
@@ -554,25 +571,25 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw4">char</span> c2 <span class="sy1">=</span> <span class="st0">'<span class="es2">\x2a</span>'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'*'"</span>, c2<span class="br0">)</span><span class="sy4">;</span>
  
     print<span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span> <span class="st0">"Ordinary multi-character literals:"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw4">int</span> mc1 <span class="sy1">=</span> <span class="st0">'ab'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'ab'"</span>, mc1<span class="br0">)</span><span class="sy4">;</span>  	<span class="co1">// implementation-defined</span>
-    <span class="kw4">int</span> mc2 <span class="sy1">=</span> <span class="st0">'abc'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'abc'"</span>, mc2<span class="br0">)</span><span class="sy4">;</span>	<span class="co1">// implementation-defined</span>
+    <span class="kw4">int</span> mc1 <span class="sy1">=</span> <span class="st0">'ab'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'ab'"</span>, mc1<span class="br0">)</span><span class="sy4">;</span>       <span class="co1">// implementation-defined</span>
+    <span class="kw4">int</span> mc2 <span class="sy1">=</span> <span class="st0">'abc'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'abc'"</span>, mc2<span class="br0">)</span><span class="sy4">;</span>     <span class="co1">// implementation-defined</span>
  
     print<span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span> <span class="st0">"Non-encodable character literals:"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw4">int</span> ne1 <span class="sy1">=</span> <span class="st0">'¢'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'¢'"</span>, ne1<span class="br0">)</span><span class="sy4">;</span>    	<span class="co1">// implementation-defined</span>
-    <span class="kw4">int</span> ne2 <span class="sy1">=</span> <span class="st0">'猫'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'猫'"</span>, ne2<span class="br0">)</span><span class="sy4">;</span>   	<span class="co1">// implementation-defined</span>
-    <span class="kw4">int</span> ne3 <span class="sy1">=</span> <span class="st0">'🍌'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'🍌'"</span>, ne3<span class="br0">)</span><span class="sy4">;</span>   	<span class="co1">// implementation-defined</span>
+    <span class="kw4">int</span> ne1 <span class="sy1">=</span> <span class="st0">'¢'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'¢'"</span>, ne1<span class="br0">)</span><span class="sy4">;</span>         <span class="co1">// implementation-defined</span>
+    <span class="kw4">int</span> ne2 <span class="sy1">=</span> <span class="st0">'猫'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'猫'"</span>, ne2<span class="br0">)</span><span class="sy4">;</span>       <span class="co1">// implementation-defined</span>
+    <span class="kw4">int</span> ne3 <span class="sy1">=</span> <span class="st0">'🍌'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"'🍌'"</span>, ne3<span class="br0">)</span><span class="sy4">;</span>       <span class="co1">// implementation-defined</span>
  
     print<span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span> <span class="st0">"UTF-8 character literals:"</span><span class="br0">)</span><span class="sy4">;</span>
     char8_t C1 <span class="sy1">=</span> u8<span class="st0">'a'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"u8'a'"</span>, C1<span class="br0">)</span><span class="sy4">;</span>
-<span class="co1">//  char8_t C2 = u8'¢'; dump("u8'¢'", C2);	// error: ¢ maps to two UTF-8 code units</span>
-<span class="co1">//  char8_t C3 = u8'猫'; dump("u8'猫'", C3);	// error: 猫 maps to three UTF-8 code units</span>
-<span class="co1">//  char8_t C4 = u8'🍌'; dump("u8'🍌'", C4);	// error: 🍌 maps to four UTF-8 code units</span>
+<span class="co1">//  char8_t C2 = u8'¢'; dump("u8'¢'", C2);   // error: ¢ maps to two UTF-8 code units</span>
+<span class="co1">//  char8_t C3 = u8'猫'; dump("u8'猫'", C3); // error: 猫 maps to three UTF-8 code units</span>
+<span class="co1">//  char8_t C4 = u8'🍌'; dump("u8'🍌'", C4); // error: 🍌 maps to four UTF-8 code units</span>
  
     print<span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span> <span class="st0">"UTF-16 character literals:"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">char16_t</span> uc1 <span class="sy1">=</span> u<span class="st0">'a'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"u'a'"</span>, uc1<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">char16_t</span> uc2 <span class="sy1">=</span> u<span class="st0">'¢'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"u'¢'"</span>, uc2<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">char16_t</span> uc3 <span class="sy1">=</span> u<span class="st0">'猫'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"u'猫'"</span>, uc3<span class="br0">)</span><span class="sy4">;</span>
-<span class="co1">//  char16_t uc4 = u'🍌'; dump("u'🍌'", uc4); 	// error: 🍌 maps to two UTF-16 code units</span>
+<span class="co1">//  char16_t uc4 = u'🍌'; dump("u'🍌'", uc4); // error: 🍌 maps to two UTF-16 code units</span>
  
     print<span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span> <span class="st0">"UTF-32 character literals:"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">char32_t</span> Uc1 <span class="sy1">=</span> U<span class="st0">'a'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"U'a'"</span>, Uc1<span class="br0">)</span><span class="sy4">;</span>
@@ -584,7 +601,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw4">wchar_t</span> wc1 <span class="sy1">=</span> L<span class="st0">'a'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"L'a'"</span>, wc1<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">wchar_t</span> wc2 <span class="sy1">=</span> L<span class="st0">'¢'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"L'¢'"</span>, wc2<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">wchar_t</span> wc3 <span class="sy1">=</span> L<span class="st0">'猫'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"L'猫'"</span>, wc3<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw4">wchar_t</span> wc4 <span class="sy1">=</span> L<span class="st0">'🍌'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"L'🍌'"</span>, wc4<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">wchar_t</span> wc4 <span class="sy1">=</span> L<span class="st0">'🍌'</span><span class="sy4">;</span> dump<span class="br0">(</span><span class="st0">"L'🍌'"</span>, wc4<span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// unsupported on Windows since C++23</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -648,7 +665,7 @@ L'🍌' 	4C F3 01 00</pre></div></div>
 </td>
 <td> C++98
 </td>
-<td> multicharacter literal were required to be supported
+<td> multicharacter literal was required to be supported
 </td>
 <td> made conditionally-supported
 </td></tr>
@@ -657,7 +674,7 @@ L'🍌' 	4C F3 01 00</pre></div></div>
 </td>
 <td> C++98
 </td>
-<td> meaning of numeric escape sequence in a character literal is unclear
+<td> the meaning of numeric escape sequence<br>in a character literal was unclear
 </td>
 <td> specified
 </td></tr></table>
@@ -673,19 +690,19 @@ L'🍌' 	4C F3 01 00</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4971/1000000
-Preprocessor generated node count: 11340/1000000
-Post‐expand include size: 173141/2097152 bytes
-Template argument size: 33276/2097152 bytes
+Preprocessor visited node count: 5250/1000000
+Preprocessor generated node count: 11780/1000000
+Post‐expand include size: 176857/2097152 bytes
+Template argument size: 35305/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5083-0!*!0!!en!*!* and timestamp 20220624070045 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5083-0!*!0!!en!*!* and timestamp 20230120010707 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/character_literal&amp;oldid=140171">https://en.cppreference.com/mwiki/index.php?title=cpp/language/character_literal&amp;oldid=140171</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/character_literal&amp;oldid=143819">https://en.cppreference.com/mwiki/index.php?title=cpp/language/character_literal&amp;oldid=143819</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -698,17 +715,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/character_literal">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 10 June 2022, at 08:16.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 161,374 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -723,7 +729,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 4.128 secs. -->
+</script><!-- Served in 4.486 secs. -->
 	</body>
-<!-- Cached 20220624070045 -->
+<!-- Cached 20230120010707 -->
 </html>

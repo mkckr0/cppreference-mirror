@@ -47,7 +47,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="cpp/compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="cpp/freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="cpp/language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cpp/header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="cpp/standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="cpp/headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="cpp/named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="cpp/feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="cpp/utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -100,7 +101,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="cpp/language/exceptions.html" title="cpp/language/exceptions"> Exceptions</a><br>
 </p>
 </div>
-<p><b><a href="cpp/header.html" title="cpp/header"> Headers</a></b>
+<p><b><a href="cpp/standard_library.html" title="cpp/standard library">Standard library</a> (<a href="cpp/headers.html" title="cpp/header">headers</a>)</b>
 </p><p><b><a href="cpp/named_req.html" title="cpp/named req"> Named requirements</a></b>
 </p><p><b><a href="cpp/feature_test.html" title="cpp/feature test">Feature test macros</a></b> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </p><p><b><a href="cpp/utility.html#Language_support" title="cpp/utility"> Language support library</a></b>
@@ -145,8 +146,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="cpp/utility.html#Swap_and_type_operations" title="cpp/utility"> Utility functions</a><br>
 <a href="cpp/utility/pair.html" title="cpp/utility/pair"><tt>pair</tt></a>  −  
 <a href="cpp/utility/tuple.html" title="cpp/utility/tuple"><tt>tuple</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
-<a href="cpp/utility/optional.html" title="cpp/utility/optional"><tt>optional</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span>  −  <a href="cpp/utility/any.html" title="cpp/utility/any"><tt>any</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br>
-<a href="cpp/utility/variant.html" title="cpp/utility/variant"><tt>variant</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br>
+<a href="cpp/utility/optional.html" title="cpp/utility/optional"><tt>optional</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span>  −  <a href="cpp/utility/expected.html" title="cpp/utility/expected"><tt>expected</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span><br>
+<a href="cpp/utility/variant.html" title="cpp/utility/variant"><tt>variant</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span>  −  <a href="cpp/utility/any.html" title="cpp/utility/any"><tt>any</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br>
 <a href="cpp/utility.html#Elementary_string_conversions" title="cpp/utility"> String conversions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br>
 <a href="cpp/utility/format.html" title="cpp/utility/format"> Formatting</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
 <a href="cpp/numeric.html#Bit_manipulation_.28since_C.2B.2B20.29" title="cpp/numeric"> Bit manipulation</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
@@ -171,7 +172,7 @@ Null-terminated strings:<br>
 <a href="cpp/container/unordered_map.html" title="cpp/container/unordered map"><tt>unordered_map</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br><a href="cpp/container/unordered_multimap.html" title="cpp/container/unordered multimap"><tt>unordered_multimap</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
 <a href="cpp/container/unordered_set.html" title="cpp/container/unordered set"><tt>unordered_set</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br><a href="cpp/container/unordered_multiset.html" title="cpp/container/unordered multiset"><tt>unordered_multiset</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
 <a href="cpp/container/stack.html" title="cpp/container/stack"><tt>stack</tt></a>  −  <a href="cpp/container/queue.html" title="cpp/container/queue"><tt>queue</tt></a>  −  <a href="cpp/container/priority_queue.html" title="cpp/container/priority queue"><tt>priority_queue</tt></a><br>
-<a href="cpp/container/span.html" title="cpp/container/span"><tt>span</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+<a href="cpp/container/span.html" title="cpp/container/span"><tt>span</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span>  −  <a href="cpp/container/mdspan.html" title="cpp/container/mdspan"><tt>mdspan</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
 </p>
 </div></td>
 <td>
@@ -217,9 +218,9 @@ Null-terminated strings:<br>
 <div class="mainpagediv">
 <p><a href="cpp/atomic/atomic.html" title="cpp/atomic/atomic"><tt>atomic</tt></a>  −  <a href="cpp/atomic/atomic_flag.html" title="cpp/atomic/atomic flag"><tt>atomic_flag</tt></a><br>
 <a href="cpp/atomic/atomic_ref.html" title="cpp/atomic/atomic ref"><tt>atomic_ref</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
-<a href="cpp/thread/thread.html" title="cpp/thread/thread"><tt>thread‏‎</tt></a> − <a href="cpp/thread/jthread.html" title="cpp/thread/jthread"><tt>jthread‏‎</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
+<a href="cpp/thread/thread.html" title="cpp/thread/thread"><tt>thread</tt></a> − <a href="cpp/thread/jthread.html" title="cpp/thread/jthread"><tt>jthread</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
 <a href="cpp/thread/mutex.html" title="cpp/thread/mutex"><tt>mutex</tt></a><br>
-<a href="cpp/thread/condition_variable.html" title="cpp/thread/condition variable"><tt>condition_variable‏‎</tt></a><br>
+<a href="cpp/thread/condition_variable.html" title="cpp/thread/condition variable"><tt>condition_variable</tt></a><br>
 <a href="cpp/thread/future.html" title="cpp/thread/future"><tt>future</tt></a>  −  <a href="cpp/thread/promise.html" title="cpp/thread/promise"><tt>promise</tt></a>
 </p>
 </div>
@@ -262,15 +263,15 @@ Null-terminated strings:<br>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2117/1000000
-Preprocessor generated node count: 2811/1000000
-Post‐expand include size: 41801/2097152 bytes
-Template argument size: 8506/2097152 bytes
+Preprocessor visited node count: 2181/1000000
+Preprocessor generated node count: 2854/1000000
+Post‐expand include size: 42814/2097152 bytes
+Template argument size: 8661/2097152 bytes
 Highest expansion depth: 13/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:720-0!*!0!*!*!*!* and timestamp 20220410081924 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:720-0!*!0!*!*!*!* and timestamp 20230120003922 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -287,17 +288,6 @@ Expensive parser function count: 0/100
         
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 December 2017, at 23:24.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 5,033,994 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -312,7 +302,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.236 secs. -->
+</script><!-- Served in 0.036 secs. -->
 	</body>
-<!-- Cached 20220410081924 -->
+<!-- Cached 20230120004014 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/io/fprintf","wgTitle":"c/io/fprintf","wgCurRevisionId":136685,"wgArticleId":6224,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/io/fprintf","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/io/fprintf","wgTitle":"c/io/fprintf","wgCurRevisionId":143451,"wgArticleId":6224,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/io/fprintf","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -314,7 +314,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> encoding errors occur in any of string and character conversion specifiers
 </li><li> (for <code>sprintf_s</code> only), the string to be stored in <code>buffer</code> (including the trailing null) would be exceed <code>bufsz</code>
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>printf_s</code> , <code>fprintf_s</code>, <code>sprintf_s</code>, and <code>snprintf_s</code> are only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;stdio.h&gt;</code>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>printf_s</code> , <code>fprintf_s</code>, <code>sprintf_s</code>, and <code>snprintf_s</code> are only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../io.html" title="c/io"><tt>&lt;stdio.h&gt;</tt></a>.</dd></dl></div>
 
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -511,8 +511,8 @@ If the <b>l</b> specifier is used, the argument must be a pointer to the initial
 <td style="text-align:left;">
 <dl><dd>converts a <b>signed integer</b> into decimal representation <i>[-]dddd</i>.
 </dd></dl>
-<p><i>Precision</i> specifies the minimum number of digits to appear. The default precision is <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span>.<br> 
-If both the converted value and the precision are <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> the conversion results in no characters.
+<p><i>Precision</i> specifies the minimum number of digits to appear. The default precision is <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span>.<br><br> 
+If both the converted value and the precision are <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> the conversion results in no characters.<br><br>
 </p>
 </td>
 <td rowspan="1"> <div class="t-vertical"><div><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span></span></span></div></div>
@@ -715,7 +715,7 @@ For infinity and not-a-number conversion style see notes.
 <dl><dd>returns the <b>number of characters written</b> so far by this call to the function.
 </dd></dl>
 <p>The result is <i>written</i> to the value pointed to by the argument. 
-The specification may not contain any <i>flag</i>, <i>field width</i>, or <i>precision</i>.
+The specification may not contain any <i>flag</i>, <i>field width</i>, or <i>precision</i>. <br><br><br><br>
 </p>
 </td>
 <td> <div class="t-vertical"><div><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span><span class="sy2">*</span></span></span></div></div>
@@ -782,7 +782,7 @@ The specification may not contain any <i>flag</i>, <i>field width</i>, or <i>pre
 <p><a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/fprintf.html">POSIX specifies</a> that <span class="t-lc"><a href="../error/errno.html" title="c/error/errno">errno</a></span> is set on error. It also specifies additional conversion specifications, most notably support for argument reordering (<span class="t-c"><span class="mw-geshi c source-c">n$</span></span> immediately after <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span></span></span> indicates <code>n</code>'th argument).
 </p><p>Calling <code>snprintf</code> with zero <code>bufsz</code> and null pointer for <code>buffer</code> is useful to determine the necessary buffer size to contain the output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>fmt <span class="sy1">=</span> <span class="st0">"sqrt(2) = %f"</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">const</span> <span class="kw4">char</span> fmt<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"sqrt(2) = %f"</span><span class="sy4">;</span>
 <span class="kw4">int</span> sz <span class="sy1">=</span> snprintf<span class="br0">(</span><a href="../types/NULL.html"><span class="kw103">NULL</span></a>, <span class="nu0">0</span>, fmt, <a href="../numeric/math/sqrt.html"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="kw4">char</span> buf<span class="br0">[</span>sz <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// note +1 for terminating null byte</span>
 snprintf<span class="br0">(</span>buf, <span class="kw4">sizeof</span> buf, fmt, <a href="../numeric/math/sqrt.html"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
@@ -791,47 +791,63 @@ snprintf<span class="br0">(</span>buf, <span class="kw4">sizeof</span> buf, fmt,
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;stdint.h&gt;</span>
+<span class="co2">#include &lt;inttypes.h&gt;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s <span class="sy1">=</span> <span class="st0">"Hello"</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"Strings - padding:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>.%10s.<span class="es1">\n</span><span class="es1">\t</span>.%-10s.<span class="es1">\n</span><span class="es1">\t</span>.%*s.<span class="es1">\n</span>"</span>, s, s, <span class="nu0">10</span>, s<span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"Strings - truncating:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>%.4s<span class="es1">\n</span><span class="es1">\t</span>%.*s<span class="es1">\n</span>"</span>, s, <span class="nu0">3</span>, s<span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"Strings:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// same as puts("Strings");</span>
+    printf<span class="br0">(</span><span class="st0">" padding:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>[%10s]<span class="es1">\n</span>"</span>, s<span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>[%-10s]<span class="es1">\n</span>"</span>, s<span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>[%*s]<span class="es1">\n</span>"</span>, <span class="nu0">10</span>, s<span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">" truncating:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>%.4s<span class="es1">\n</span>"</span>, s<span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>%.*s<span class="es1">\n</span>"</span>, <span class="nu0">3</span>, s<span class="br0">)</span><span class="sy4">;</span>
  
-    printf<span class="br0">(</span><span class="st0">"Characters:<span class="es1">\t</span>%c %%<span class="es1">\n</span>"</span>, <span class="nu0">65</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"Characters:<span class="es1">\t</span>%c %%<span class="es1">\n</span>"</span>, <span class="st0">'A'</span><span class="br0">)</span><span class="sy4">;</span>
  
-    printf<span class="br0">(</span><span class="st0">"Integers<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"Decimal:<span class="es1">\t</span>%i %d %.6i %i %.0i %+i %i<span class="es1">\n</span>"</span>, <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">0</span>, <span class="nu0">0</span>, <span class="nu0">4</span>, <span class="sy2">-</span><span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"Hexadecimal:<span class="es1">\t</span>%x %x %X %#x<span class="es1">\n</span>"</span>, <span class="nu0">5</span>, <span class="nu0">10</span>, <span class="nu0">10</span>, <span class="nu0">6</span><span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"Octal:<span class="es1">\t</span><span class="es1">\t</span>%o %#o %#o<span class="es1">\n</span>"</span>, <span class="nu0">10</span>, <span class="nu0">10</span>, <span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"Integers:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>Decimal:<span class="es1">\t</span>%i %d %.6i %i %.0i %+i %i<span class="es1">\n</span>"</span>,
+                         <span class="nu0">1</span>, <span class="nu0">2</span>,   <span class="nu0">3</span>, <span class="nu0">0</span>,   <span class="nu0">0</span>,  <span class="nu0">4</span>,<span class="sy2">-</span><span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>Hexadecimal:<span class="es1">\t</span>%x %x %X %#x<span class="es1">\n</span>"</span>, <span class="nu0">5</span>, <span class="nu0">10</span>, <span class="nu0">10</span>, <span class="nu0">6</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>Octal:<span class="es1">\t</span><span class="es1">\t</span>%o %#o %#o<span class="es1">\n</span>"</span>, <span class="nu0">10</span>, <span class="nu0">10</span>, <span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span>
  
-    printf<span class="br0">(</span><span class="st0">"Floating point<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"Rounding:<span class="es1">\t</span>%f %.0f %.32f<span class="es1">\n</span>"</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span>, <span class="nu16">1.3</span><span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"Padding:<span class="es1">\t</span>%05.2f %.2f %5.2f<span class="es1">\n</span>"</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span><span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"Scientific:<span class="es1">\t</span>%E %e<span class="es1">\n</span>"</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span><span class="br0">)</span><span class="sy4">;</span>
-    printf<span class="br0">(</span><span class="st0">"Hexadecimal:<span class="es1">\t</span>%a %A<span class="es1">\n</span>"</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"Floating point:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>Rounding:<span class="es1">\t</span>%f %.0f %.32f<span class="es1">\n</span>"</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span>, <span class="nu16">1.3</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>Padding:<span class="es1">\t</span>%05.2f %.2f %5.2f<span class="es1">\n</span>"</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>Scientific:<span class="es1">\t</span>%E %e<span class="es1">\n</span>"</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>Hexadecimal:<span class="es1">\t</span>%a %A<span class="es1">\n</span>"</span>, <span class="nu16">1.5</span>, <span class="nu16">1.5</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>Special values:<span class="es1">\t</span>0/0=%g 1/0=%g<span class="es1">\n</span>"</span>, <span class="nu16">0.0</span><span class="sy2">/</span><span class="nu16">0.0</span>, <span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="sy4">;</span>
+ 
+    printf<span class="br0">(</span><span class="st0">"Fixed-width types:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    printf<span class="br0">(</span><span class="st0">"<span class="es1">\t</span>Largest 32-bit value is %"</span> <a href="../types/integer.html"><span class="kw206">PRIu32</span></a> <span class="st0">" or %#"</span> <a href="../types/integer.html"><span class="kw234">PRIx32</span></a> <span class="st0">"<span class="es1">\n</span>"</span>,
+                                     <a href="../types/integer.html"><span class="kw164">UINT32_MAX</span></a>,     <a href="../types/integer.html"><span class="kw164">UINT32_MAX</span></a> <span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
-<p>Output:
+<p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Strings - padding:
-    .     Hello.
-    .Hello     .
-    .     Hello.
-Strings - truncating:
-    Hell
-    Hel
-Characters:     A %
-Integers
-Decimal:        1 2 000003 0  +4 -4
-Hexadecimal:    5 a A 0x6
-Octal:          12 012 04
-Floating point
-Rounding:       1.500000 2 1.30000000000000004440892098500626
-Padding:        01.50 1.50  1.50
-Scientific:     1.500000E+00 1.500000e+00
-Hexadecimal:    0x1.8p+0 0X1.8P+0</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Strings:
+ padding:
+	[     Hello]
+	[Hello     ]
+	[     Hello]
+ truncating:
+	Hell
+	Hel
+Characters:	A %
+Integers:
+	Decimal:	1 2 000003 0  +4 -4
+	Hexadecimal:	5 a A 0x6
+	Octal:		12 012 04
+Floating point:
+	Rounding:	1.500000 2 1.30000000000000004440892098500626
+	Padding:	01.50 1.50  1.50
+	Scientific:	1.500000E+00 1.500000e+00
+	Hexadecimal:	0x1.8p+0 0X1.8P+0
+	Special values:	0/0=-nan 1/0=inf
+Fixed-width types:
+	Largest 32-bit value is 4294967295 or 0xffffffff</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-17">
@@ -946,19 +962,19 @@ Hexadecimal:    0x1.8p+0 0X1.8P+0</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 9707/1000000
-Preprocessor generated node count: 15126/1000000
-Post‐expand include size: 242836/2097152 bytes
-Template argument size: 47161/2097152 bytes
+Preprocessor visited node count: 9758/1000000
+Preprocessor generated node count: 16441/1000000
+Post‐expand include size: 243044/2097152 bytes
+Template argument size: 48602/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6224-0!*!0!!en!*!* and timestamp 20220704155040 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6224-0!*!0!!en!*!* and timestamp 20230120004152 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fprintf&amp;oldid=136685">https://en.cppreference.com/mwiki/index.php?title=c/io/fprintf&amp;oldid=136685</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fprintf&amp;oldid=143451">https://en.cppreference.com/mwiki/index.php?title=c/io/fprintf&amp;oldid=143451</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -971,17 +987,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/io/fprintf">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 27 December 2021, at 09:13.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 825,747 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -996,7 +1001,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.912 secs. -->
+</script><!-- Served in 2.458 secs. -->
 	</body>
-<!-- Cached 20220704155040 -->
+<!-- Cached 20230120004152 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/20","wgTitle":"cpp/20","wgCurRevisionId":133785,"wgArticleId":18869,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo without reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/20","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/20","wgTitle":"cpp/20","wgCurRevisionId":146702,"wgArticleId":18869,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo without reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/20","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -146,6 +147,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> <a href="language/consteval.html" title="cpp/language/consteval"><tt>consteval</tt></a>, <a href="language/constinit.html" title="cpp/language/constinit"><tt>constinit</tt></a>
 </li><li> further relaxed constexpr
 </li><li> signed integers are 2's complement
+</li><li> <a href="language/operator_arithmetic.html" title="cpp/language/operator arithmetic">bitwise shift operators</a> unified behavior
 </li><li> <a href="language/aggregate_initialization.html" title="cpp/language/aggregate initialization">aggregate initialization</a> using parentheses
 </li><li> <a href="language/coroutines.html" title="cpp/language/coroutines">Coroutines</a>
 </li><li> <a href="language/modules.html" title="cpp/language/modules">Modules</a>
@@ -155,24 +157,24 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li></ul>
 <h2><span class="mw-headline" id="New_library_features"> New library features </span></h2>
 <h3><span class="mw-headline" id="New_headers"> New headers </span></h3>
-<ul><li> <a href="header/concepts.html" title="cpp/header/concepts"><tt>&lt;concepts&gt;</tt></a>
-</li><li> <a href="header/coroutine.html" title="cpp/header/coroutine"><tt>&lt;coroutine&gt;</tt></a>
+<ul><li> <a href="header/bit.html" title="cpp/header/bit"><tt>&lt;bit&gt;</tt></a>
 </li><li> <a href="header/compare.html" title="cpp/header/compare"><tt>&lt;compare&gt;</tt></a>
-</li><li> <a href="header/version.html" title="cpp/header/version"><tt>&lt;version&gt;</tt></a>
-</li><li> <a href="header/source_location.html" title="cpp/header/source location"><tt>&lt;source_location&gt;</tt></a>
+</li><li> <a href="header/concepts.html" title="cpp/header/concepts"><tt>&lt;concepts&gt;</tt></a>
+</li><li> <a href="header/coroutine.html" title="cpp/header/coroutine"><tt>&lt;coroutine&gt;</tt></a>
 </li><li> <a href="header/format.html" title="cpp/header/format"><tt>&lt;format&gt;</tt></a>
-</li><li> <a href="header/span.html" title="cpp/header/span"><tt>&lt;span&gt;</tt></a>
-</li><li> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a>
-</li><li> <a href="header/bit.html" title="cpp/header/bit"><tt>&lt;bit&gt;</tt></a>
 </li><li> <a href="header/numbers.html" title="cpp/header/numbers"><tt>&lt;numbers&gt;</tt></a>
+</li><li> <a href="header/ranges.html" title="cpp/header/ranges"><tt>&lt;ranges&gt;</tt></a>
+</li><li> <a href="header/source_location.html" title="cpp/header/source location"><tt>&lt;source_location&gt;</tt></a>
+</li><li> <a href="header/span.html" title="cpp/header/span"><tt>&lt;span&gt;</tt></a>
 </li><li> <a href="header/syncstream.html" title="cpp/header/syncstream"><tt>&lt;syncstream&gt;</tt></a>
+</li><li> <a href="header/version.html" title="cpp/header/version"><tt>&lt;version&gt;</tt></a>
 </li></ul>
 <p>in <a href="thread.html" title="cpp/thread">Thread support library</a>:
 </p>
-<ul><li> <a href="header/stop_token.html" title="cpp/header/stop token"><tt>&lt;stop_token&gt;</tt></a>
-</li><li> <a href="header/semaphore.html" title="cpp/header/semaphore"><tt>&lt;semaphore&gt;</tt></a>
+<ul><li> <a href="header/barrier.html" title="cpp/header/barrier"><tt>&lt;barrier&gt;</tt></a>
 </li><li> <a href="header/latch.html" title="cpp/header/latch"><tt>&lt;latch&gt;</tt></a>
-</li><li> <a href="header/barrier.html" title="cpp/header/barrier"><tt>&lt;barrier&gt;</tt></a>
+</li><li> <a href="header/semaphore.html" title="cpp/header/semaphore"><tt>&lt;semaphore&gt;</tt></a>
+</li><li> <a href="header/stop_token.html" title="cpp/header/stop token"><tt>&lt;stop_token&gt;</tt></a>
 </li></ul>
 <h3><span class="mw-headline" id="Library_features"> Library features </span></h3>
 <ul><li> <a href="utility/feature_test.html" title="cpp/utility/feature test">Library feature-test macros</a>
@@ -725,10 +727,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li></ul>
 </div></td></tr></table></div>
 <h2><span class="mw-headline" id="Compiler_support"> Compiler support</span></h2>
-<p>Main Article: <a href="compiler_support.html#C.2B.2B20_features" title="cpp/compiler support">C++ compiler support</a>
+<p>Main Article: <a href="compiler_support.html#C.2B.2B20_features" title="cpp/compiler support">C++20 compiler support</a>
 </p>
 <h3><span class="mw-headline" id="C.2B.2B20_core_language_features"> C++20 core language features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-compiler-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++20 feature<br> 
@@ -790,7 +792,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="preprocessor/replace.html#Function-like_macros" title="cpp/preprocessor/replace"><code>__VA_OPT__</code></a>
@@ -821,7 +823,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/aggregate_initialization.html#Designated_initializers" title="cpp/language/aggregate initialization">Designated initializers</a>
@@ -852,7 +854,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/lambda.html#Syntax" title="cpp/language/lambda">template-parameter-list for generic lambdas</a>
@@ -883,7 +885,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/bitfield.html#Cpp20_Default_member_initializers_for_bit_fields" title="cpp/language/bit field">Default member initializers for bit-fields</a>
@@ -914,7 +916,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Initializer list constructors in class template argument deduction
@@ -943,7 +945,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>const&amp;</code>-qualified pointers to members
@@ -974,7 +976,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/constraints.html" title="cpp/language/constraints">Concepts</a>
@@ -993,7 +995,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.5
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> was supported in 2021.6, removed in 2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1005,7 +1007,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/lambda.html#Lambdas_in_unevaluated_contexts" title="cpp/language/lambda">Lambdas in unevaluated contexts</a>
@@ -1022,7 +1024,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p><span title="Xcode 13.3 (13E113)">13.1.6*</span> (partial)
 </p>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.2
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1036,7 +1038,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/operator_comparison.html#Three-way_comparison" title="cpp/language/operator comparison">Three-way comparison operator</a>
@@ -1049,7 +1051,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.0">19.20*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
+<p><span title="Xcode 12.0 (12A7209), 12.0.1 (12A7300), 12.1 (12A7403), 12.2 (12B45b), 12.3 (12C33), 12.4 (12D4e)">12.0.0*</span>
+</p>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
 </td>
@@ -1065,7 +1069,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Simplifying implicit lambda capture
@@ -1094,7 +1098,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/range-for.html#Syntax" title="cpp/language/range-for">init-statements for range-based for</a>
@@ -1113,7 +1117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.0
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1125,7 +1129,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Default constructible and assignable stateless <a href="language/lambda.html" title="cpp/language/lambda">lambdas</a>
@@ -1156,7 +1160,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>const</code> mismatch with defaulted copy constructor
@@ -1187,7 +1191,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Access checking on specializations
@@ -1218,7 +1222,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> ADL and function templates that are not visible
@@ -1249,7 +1253,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Specify when <code>constexpr</code> function definitions are <a href="language/constant_expression.html#Functions_and_variables_needed_for_constant_evaluation" title="cpp/language/constant expression">needed for constant evaluation</a>
@@ -1280,7 +1284,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Attributes <code>[[<a href="language/attributes/likely.html" title="cpp/language/attributes/likely">likely</a>]]</code> and <code>[[<a href="language/attributes/likely.html" title="cpp/language/attributes/likely">unlikely</a>]]</code>
@@ -1299,7 +1303,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1311,7 +1315,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Make <a href="keywords/typename.html" title="cpp/keywords/typename" class="mw-redirect"><tt>typename</tt></a> more optional
@@ -1320,7 +1324,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -1340,7 +1344,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Pack expansion in lambda init-capture
@@ -1359,7 +1363,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1371,7 +1375,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Attribute <code>[[<a href="language/attributes/no_unique_address.html" title="cpp/language/attributes/no unique address">no_unique_address</a>]]</code>
@@ -1402,7 +1406,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Conditionally Trivial Special Member Functions
@@ -1411,7 +1415,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.8">19.28 (16.8)*</span>
 </td>
@@ -1419,7 +1423,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1431,7 +1435,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Relaxing the <a href="language/structured_binding.html" title="cpp/language/structured binding">structured bindings</a> customization point finding rules
@@ -1462,7 +1466,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Relaxing the <a href="language/range-for.html" title="cpp/language/range-for">range-<code>for</code> loop</a> customization point finding rules
@@ -1493,7 +1497,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Allow structured bindings to accessible members
@@ -1524,7 +1528,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="memory/new/operator_delete.html" title="cpp/memory/new/operator delete">Destroying <code>operator delete</code></a>
@@ -1555,7 +1559,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Class types in <a href="language/template_parameters.html#Non-type_template_parameter" title="cpp/language/template parameters">non-type template parameters</a>
@@ -1586,7 +1590,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Deprecate implicit <a href="language/lambda.html#Lambda_capture" title="cpp/language/lambda">capture</a> of <code>this</code> via <code>[=]</code>
@@ -1617,7 +1621,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/explicit.html" title="cpp/language/explicit"><tt>explicit(bool)</tt></a>
@@ -1648,7 +1652,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Integrating <a href="feature_test.html" title="cpp/feature test">feature-test macros</a>
@@ -1677,7 +1681,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Prohibit aggregates with user-declared constructors
@@ -1708,7 +1712,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>constexpr</code> <a href="language/virtual.html" title="cpp/language/virtual">virtual function</a>
@@ -1739,7 +1743,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Consistency improvements for comparisons
@@ -1770,7 +1774,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/types.html#char8_t" title="cpp/language/types"><code>char8_t</code></a>
@@ -1801,7 +1805,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="types/is_constant_evaluated.html" title="cpp/types/is constant evaluated"><tt>std::is_constant_evaluated()</tt></a>
@@ -1832,7 +1836,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>constexpr</code> <code>try</code>-<code>catch</code> blocks
@@ -1863,7 +1867,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/consteval.html" title="cpp/language/consteval">Immediate functions</a> (<code>consteval</code>)
@@ -1894,7 +1898,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/namespace.html" title="cpp/language/namespace">Nested inline namespaces</a>
@@ -1925,7 +1929,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Yet another approach for <a href="language/template_parameters.html#Type_template_parameter" title="cpp/language/template parameters">constrained</a> <a href="language/auto.html" title="cpp/language/auto">declarations</a>
@@ -1956,7 +1960,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Signed integers are two's complement
@@ -1987,7 +1991,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="signed integers have always been two's complement">yes</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/dynamic_cast.html" title="cpp/language/dynamic cast"><tt>dynamic_cast</tt></a> and polymorphic <a href="language/typeid.html" title="cpp/language/typeid"><tt>typeid</tt></a> in <a href="language/constant_expression.html" title="cpp/language/constant expression">constant expressions</a>
@@ -2018,7 +2022,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Changing the active member of a union inside <code>constexpr</code>
@@ -2049,7 +2053,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/coroutines.html" title="cpp/language/coroutines">Coroutines</a>
@@ -2080,7 +2084,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0 (host code only)
 </td></tr>
 <tr>
 <td> Parenthesized <a href="language/aggregate_initialization.html" title="cpp/language/aggregate initialization">initialization of aggregates</a>
@@ -2089,7 +2093,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.8">19.28 (16.8)*</span>
 </td>
@@ -2109,7 +2113,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Array size deduction in <a href="language/new.html" title="cpp/language/new"><code>new</code>-expressions</a>
@@ -2140,7 +2144,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/modules.html" title="cpp/language/modules">Modules</a>
@@ -2200,7 +2204,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>&lt;=&gt; != ==</code>
@@ -2231,7 +2235,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Explicitly defaulted functions with different exception specifications
@@ -2262,7 +2266,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Lambda capture and storage class specifiers of structured bindings
@@ -2271,7 +2275,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">8 (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8 (partial)<br>16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2017 15.3">19.11*</span>(P1381R1)<br><span title="VS 2019 16.4">19.24*</span>(P1091R3)
 </td>
@@ -2293,7 +2297,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.7
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Permit conversions to arrays of unknown bound
@@ -2324,7 +2328,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>constexpr</code> container operations
@@ -2355,7 +2359,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Deprecating some uses of <a href="language/cv.html#Notes" title="cpp/language/cv"><code>volatile</code></a>
@@ -2386,7 +2390,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/constinit.html" title="cpp/language/constinit"><tt>constinit</tt></a>
@@ -2405,7 +2409,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2417,7 +2421,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/operator_other.html#Built-in_comma_operator" title="cpp/language/operator other">Deprecate comma operator in subscripts</a>
@@ -2436,7 +2440,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.5
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2448,7 +2452,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <code>[[<a href="language/attributes/nodiscard.html" title="cpp/language/attributes/nodiscard">nodiscard</a>]]</code> with message
@@ -2479,7 +2483,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Trivial default initialization in <code>constexpr</code> functions
@@ -2498,7 +2502,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2510,7 +2514,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Unevaluated <code>asm</code>-declaration in <code>constexpr</code> functions
@@ -2529,7 +2533,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2541,7 +2545,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/enum_class.html#Using-enum-declaration" title="cpp/language/enum"><tt>using enum</tt></a>
@@ -2572,7 +2576,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Synthesizing <a href="language/operator_comparison.html#Three-way_comparison" title="cpp/language/operator comparison">three-way comparison</a> for specified comparison category
@@ -2603,7 +2607,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: <code>[[<a href="language/attributes/nodiscard.html" title="cpp/language/attributes/nodiscard">nodiscard</a>]]</code> for constructors
@@ -2634,7 +2638,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> <a href="language/deduction_guide.html" title="cpp/language/class template argument deduction">Class template argument deduction</a> for alias templates
@@ -2663,7 +2667,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Class template argument deduction for aggregates
@@ -2692,7 +2696,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: <a href="language/return.html" title="cpp/language/return">Implicit move</a> for more local objects and rvalue references
@@ -2723,7 +2727,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Allow defaulting comparisons by value
@@ -2742,7 +2746,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2754,7 +2758,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Remove <code>std::weak_equality</code> and <code>std::strong_equality</code>
@@ -2773,7 +2777,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">6.1
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2021.7
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2785,7 +2789,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">20.11
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> Inconsistencies with non-type template parameters
@@ -2816,7 +2820,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Pseudo-destructors end object lifetimes
@@ -2847,7 +2851,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr>
 <td> DR: Converting from <code>T*</code> to <code>bool</code> should be considered narrowing
@@ -2878,7 +2882,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12.0
 </td></tr>
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++20 feature<br> 
@@ -2905,12 +2909,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </th>
 <th> <div class="t-vertical"><div>Cray</div></div>
 </th>
-<th> <div class="t-vertical"><div>Nvidia HPC C++</div></div>
+<th> <div class="t-vertical"><div>Nvidia HPC C++<br>(ex Portland Group/PGI)</div></div>
 </th>
 <th> <div class="t-vertical"><div>Nvidia nvcc</div></div>
 </th></tr></table>
 <h3><span class="mw-headline" id="C.2B.2B20_library_features"> C++20 library features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-standard-library-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++20 feature<br> 
@@ -3146,7 +3150,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">7 (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">7 (partial)<br>16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2017 15.6">19.13*</span> (partial)<br><span title="VS 2019 16.2">19.22*</span>
 </td>
@@ -3245,7 +3249,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0355R7">P0355R7</a>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">11 (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="missing timezones and UTC time">11 (partial)*</span><br><span>13</span>
 </td>
 <td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">7 (partial)
 </td>
@@ -3348,7 +3352,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0528R3">P0528R3</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -3450,7 +3454,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0556R3">P0556R3</a> <a rel="nofollow" class="external text" href="https://wg21.link/P1956R1">P1956R1</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9 (P0556R3)<br>10 (P1956R1)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9<br>(P0556R3)<br>10 (P1956R1)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9 (P0556R3)<br>12 (P1956R1)
 </td>
@@ -3726,7 +3730,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">8 <span title="Missing &lt;cuchar&gt; and related parts of &lt;memory_resource&gt;">(partial)*</span><br>
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">8<span title="Missing &lt;cuchar&gt; and related parts of &lt;memory_resource&gt;">*</span><br>(partial)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.2">19.22*</span>
 </td>
@@ -3825,9 +3829,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0896R4">P0896R4</a>
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">10 <span title="Some algorithms like std::ranges::sort do not support proxy references">(partial)*</span><br>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe">13 (partial)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13 (partial)<br>15<span title="Prior to libc++ 16, this feature is considered experimental and is disabled by default.
+ Prior to libc++ 15, support can be enabled with -DLIBCXX_ENABLE_INCOMPLETE_FEATURES=ON when building LLVM.
+ In libc++ 15, this feature can be enabled with the -fexperimental-library compiler flag when using libc++ (see https://libcxx.llvm.org/UsingLibcxx.html#enabling-experimental-c-library-features).
+ In libc++ 16, this feature is enabled by default.">*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -4006,7 +4013,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P1209R0">P1209R0</a> <a rel="nofollow" class="external text" href="https://wg21.link/P1115R3">P1115R3</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9 (P1209R0)<br>10 (P1115R3)
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9<br>(P1209R0)<br>10 (P1115R3)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8 (P1209R0) <br>11 (P1115R3)
 </td>
@@ -4049,7 +4056,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.9">19.28 (16.9)*</span>
 </td>
@@ -4245,7 +4252,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td> <a href="numeric.html" title="cpp/numeric">Bit operations</a>: <code>std::</code>
+<td> <a href="numeric.html#Bit_manipulation_.28since_C.2B.2B20.29" title="cpp/numeric">Bit operations</a>: <code>std::</code>
 <p><a href="numeric/rotl.html" title="cpp/numeric/rotl"><tt>rotl()</tt></a>,
 <a href="numeric/rotr.html" title="cpp/numeric/rotr"><tt>rotr()</tt></a>,
 <a href="numeric/countl_zero.html" title="cpp/numeric/countl zero"><tt>countl_zero()</tt></a>,
@@ -4299,9 +4306,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> <a rel="nofollow" class="external text" href="https://wg21.link/P0645R10">P0645R10</a>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">13
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="The paper is implemented but still marked as an incomplete feature. Not yet implemented LWG-issues will cause API and ABI breakage. Support is disabled by default and can be enabled with -DLIBCXX_ENABLE_INCOMPLETE_FEATURES=ON when building LLVM">14*</span>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="The paper is implemented but still marked as an incomplete feature. Not yet implemented LWG-issues will cause API and ABI breakage.
+ Prior to libc++ 15, support is disabled by default and can be enabled with -DLIBCXX_ENABLE_INCOMPLETE_FEATURES=ON when building LLVM.
+ In libc++ 15 and later, this feature can be enabled with the -fexperimental-library compiler flag when using libc++ (see https://libcxx.llvm.org/UsingLibcxx.html#enabling-experimental-c-library-features)">14*</span>
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -4463,7 +4472,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">11
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="__builtin_source_location implemented, missing libstdc++ implementation (https://reviews.llvm.org/D120159, https://reviews.llvm.org/D120634)">15 (partial)*</span>
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="__builtin_source_location implemented, missing libstdc++ implementation (https://reviews.llvm.org/D120159, https://reviews.llvm.org/D120634). Also wrong location reported when used as default argument (https://github.com/llvm/llvm-project/issues/56379)">15*</span><br>(partial)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -4482,7 +4491,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10
 </td>
-<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="Essential parts implemented, various operator implementations missing.">14 (partial)*</span>
+<td style="background: #ffff90; color: black; vertical-align: middle; text-align: center;" class="table-maybe"><span title="Essential parts implemented, various operator implementations missing.">14*</span><br>(partial)
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2019 16.10">19.29 (16.10)*</span>
 </td>
@@ -4580,24 +4589,29 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </th></tr></table>
 <p><i>*</i> - hover over a cell with the version number to see notes
 </p>
-<ul><li> <a rel="nofollow" class="external text" href="https://github.com/makelinux/examples/blob/HEAD/cpp/20.cpp">Working C++20 examples</a></li></ul></div>
+<h3><span class="mw-headline" id="External_links">External links</span></h3>
+<table style="border-top:solid 1px;border-bottom:none;border-left:none;border-right:none;">
 
+<tr style="vertical-align:top;">
+<td> </td>
+<td><a rel="nofollow" class="external text" href="https://github.com/makelinux/examples/blob/HEAD/cpp/20.cpp">Working C++20 examples</a>
+</td></tr></table></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 42134/1000000
-Preprocessor generated node count: 30795/1000000
-Post‐expand include size: 899134/2097152 bytes
-Template argument size: 362144/2097152 bytes
+Preprocessor visited node count: 43712/1000000
+Preprocessor generated node count: 33460/1000000
+Post‐expand include size: 906257/2097152 bytes
+Template argument size: 375476/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18869-0!*!0!!en!*!* and timestamp 20220729150227 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18869-0!*!0!!en!*!* and timestamp 20230121173057 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/20&amp;oldid=133785">https://en.cppreference.com/mwiki/index.php?title=cpp/20&amp;oldid=133785</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/20&amp;oldid=146702">https://en.cppreference.com/mwiki/index.php?title=cpp/20&amp;oldid=146702</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -4610,17 +4624,6 @@ Expensive parser function count: 0/100
         
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/20">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 September 2021, at 02:23.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 461,996 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -4635,7 +4638,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.833 secs. -->
+</script><!-- Served in 2.774 secs. -->
 	</body>
-<!-- Cached 20220729150227 -->
+<!-- Cached 20230121173057 -->
 </html>

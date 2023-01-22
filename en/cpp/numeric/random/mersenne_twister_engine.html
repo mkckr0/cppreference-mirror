@@ -13,7 +13,7 @@
 
 <script src="../../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/random/mersenne_twister_engine","wgTitle":"cpp/numeric/random/mersenne twister engine","wgCurRevisionId":136289,"wgArticleId":3698,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/random/mersenne_twister_engine","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/numeric/random/mersenne_twister_engine","wgTitle":"cpp/numeric/random/mersenne twister engine","wgCurRevisionId":145465,"wgArticleId":3698,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/numeric/random/mersenne_twister_engine","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -231,7 +232,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl t-since-cxx11">
 <td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><br>
-<p>    <span class="kw1">class</span> UIntType, <br>
+<p>    <span class="kw1">class</span> UIntType,<br>
     <a href="../../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> w, <a href="../../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> n, <a href="../../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> m, <a href="../../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> r,<br>
     UIntType a, <a href="../../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> u, UIntType d, <a href="../../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> s,<br>
     UIntType b, <a href="../../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> t,<br>
@@ -253,9 +254,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td></tr>
 
 <tr class="t-dsc-hitem">
-<td>  Type
+<td> Type
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
@@ -295,127 +296,127 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  The result type generated by the generator. The effect is undefined if this is not one of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">short</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span></span></span>, or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span></span></span>.
 </td></tr>
 <tr class="t-par">
-<td>  w
+<td> w
 </td>
 <td> -
 </td>
-<td>  the power of two that determines the range of values generated by the engine
+<td> the power of two that determines the range of values generated by the engine
 </td></tr>
 <tr class="t-par">
-<td>  n
+<td> n
 </td>
 <td> -
 </td>
-<td>  the degree of recurrence
+<td> the degree of recurrence
 </td></tr>
 <tr class="t-par">
-<td>  m
+<td> m
 </td>
 <td> -
 </td>
-<td>  the middle word, an offset used in the recurrence relation defining the series x, 1 ≤ m &lt; n
+<td> the middle word, an offset used in the recurrence relation defining the series <code>x</code>, <code>1 ≤ m &lt; n</code>
 </td></tr>
 <tr class="t-par">
-<td>  r
+<td> r
 </td>
 <td> -
 </td>
-<td>  the number of bits of the lower bit-mask, 0 ≤ r ≤ w - 1, also known as the twist value
+<td> the number of bits of the lower bit-mask, <code>0 ≤ r ≤ w-1</code>, also known as the twist value
 </td></tr>
 <tr class="t-par">
-<td>  a
+<td> a
 </td>
 <td> -
 </td>
-<td>  the conditional xor-mask, i.e. the coefficients of the rational normal form twist matrix
+<td> the conditional xor-mask, i.e. the coefficients of the rational normal form twist matrix
 </td></tr>
 <tr class="t-par">
-<td>  u
+<td> u
 </td>
 <td> -
 </td>
-<td>  1st component of the bit-scrambling (tempering) matrix
+<td> 1<sup>st</sup> component of the bit-scrambling (tempering) matrix
 </td></tr>
 <tr class="t-par">
-<td>  d
+<td> d
 </td>
 <td> -
 </td>
-<td>  2nd component of the bit-scrambling (tempering) matrix
+<td> 2<sup>nd</sup> component of the bit-scrambling (tempering) matrix
 </td></tr>
 <tr class="t-par">
-<td>  s
+<td> s
 </td>
 <td> -
 </td>
-<td>  3rd component of the bit-scrambling (tempering) matrix
+<td> 3<sup>rd</sup> component of the bit-scrambling (tempering) matrix
 </td></tr>
 <tr class="t-par">
-<td>  b
+<td> b
 </td>
 <td> -
 </td>
-<td>  4th component of the bit-scrambling (tempering) matrix
+<td> 4<sup>th</sup> component of the bit-scrambling (tempering) matrix
 </td></tr>
 <tr class="t-par">
-<td>  t
+<td> t
 </td>
 <td> -
 </td>
-<td>  5th component of the bit-scrambling (tempering) matrix
+<td> 5<sup>th</sup> component of the bit-scrambling (tempering) matrix
 </td></tr>
 <tr class="t-par">
-<td>  c
+<td> c
 </td>
 <td> -
 </td>
-<td>  6th component of the bit-scrambling (tempering) matrix
+<td> 6<sup>th</sup> component of the bit-scrambling (tempering) matrix
 </td></tr>
 <tr class="t-par">
-<td>  l
+<td> l
 </td>
 <td> -
 </td>
-<td>  7th component of the bit-scrambling (tempering) matrix
+<td> 7<sup>th</sup> component of the bit-scrambling (tempering) matrix
 </td></tr>
 <tr class="t-par">
-<td>  f
+<td> f
 </td>
 <td> -
 </td>
-<td>  the initialization multiplier
+<td> the initialization multiplier
 </td></tr></table>
 <p><br>
 The following relations shall hold:
 </p>
-<div class="t-li1"><span class="t-li"></span> <span class="t-cc"><span class="mw-geshi cpp source-cpp"><span class="nu0">0</span> <span class="sy1">&lt;</span> m <span class="sy1">&lt;=</span> n,<br>
-<p><span class="nu0">2</span> <span class="sy1">&lt;</span> w,<br>
-r <span class="sy1">&lt;=</span> w,<br>
-u <span class="sy1">&lt;=</span> w,<br>
-s <span class="sy1">&lt;=</span> w,<br>
-t <span class="sy1">&lt;=</span> w,<br>
-l <span class="sy1">&lt;=</span> w,<br>
-w <span class="sy1">&lt;=</span> <a href="../../types/numeric_limits.html"><span class="kw350">std::<span class="me2">numeric_limits</span></span></a><span class="sy1">&lt;</span>UIntType<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">digits</span>,<br>
-a <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</span>w<span class="sy2">-</span><span class="nu0">1</span>,<br>
-b <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</span>w<span class="sy2">-</span><span class="nu0">1</span>,<br>
-c <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</span>w<span class="sy2">-</span><span class="nu0">1</span>,<br>
-d <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</span>w<span class="sy2">-</span><span class="nu0">1</span>, and<br>
-</p>
-f <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</span>w<span class="sy2">-</span><span class="nu0">1</span> <span class="br0">(</span>a<span class="sy3">^</span>b denotes a to the power of b<span class="br0">)</span></span></span></div>
+<ul><li> <code>0 &lt; m ≤ n</code>
+</li><li> <code>2 &lt; w</code>
+</li><li> <code>r ≤ w</code>
+</li><li> <code>u ≤ w</code>
+</li><li> <code>s ≤ w</code>
+</li><li> <code>t ≤ w</code>
+</li><li> <code>l ≤ w</code>
+</li><li> <code>w ≤ </code> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../types/numeric_limits.html"><span class="kw350">std::<span class="me2">numeric_limits</span></span></a><span class="sy1">&lt;</span>UIntType<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">digits</span></span></span>
+</li><li> <code>a ≤ 2</code><sup>w</sup><code>-1</code>
+</li><li> <code>b ≤ 2</code><sup>w</sup><code>-1</code>
+</li><li> <code>c ≤ 2</code><sup>w</sup><code>-1</code>
+</li><li> <code>d ≤ 2</code><sup>w</sup><code>-1</code>
+</li><li> <code>f ≤ 2</code><sup>w</sup><code>-1</code>
+</li></ul>
 <h3><span class="mw-headline" id="Member_types">Member types</span></h3>
 <table class="t-dsc-begin">
 
 <tr class="t-dsc-hitem">
-<td>  Member type
+<td> Member type
 </td>
-<td>  Definition
+<td> Definition
 </td></tr>
 
 
 <tr class="t-dsc">
-<td>  <code>result_type</code><span class="t-mark-rev t-since-cxx11">(C++11)</span>
+<td> <code>result_type</code><span class="t-mark-rev t-since-cxx11">(C++11)</span>
 </td>
-<td>  The integral type, <code>UIntType</code>, generated by the engine.  Results are undefined if this is not an unsigned integral type.
+<td> The integral type, <code>UIntType</code>, generated by the engine.  Results are undefined if this is not an unsigned integral type.
 </td></tr>
 
 </table>
@@ -423,7 +424,7 @@ f <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</
 <table class="t-dsc-begin">
 
 <tr>
-<td colspan="2"> <h5> <span class="mw-headline" id="Construction_and_Seeding">  Construction and Seeding </span></h5>
+<td colspan="2"> <h5> <span class="mw-headline" id="Construction_and_Seeding"> Construction and Seeding </span></h5>
 </td></tr>
 
 <tr class="t-dsc">
@@ -438,7 +439,7 @@ f <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</
 
 
 <tr>
-<td colspan="2"> <h5> <span class="mw-headline" id="Generation">  Generation </span></h5>
+<td colspan="2"> <h5> <span class="mw-headline" id="Generation"> Generation </span></h5>
 </td></tr>
 
 <tr class="t-dsc">
@@ -453,7 +454,7 @@ f <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</
 
 
 <tr>
-<td colspan="2"> <h5> <span class="mw-headline" id="Characteristics">  Characteristics </span></h5>
+<td colspan="2"> <h5> <span class="mw-headline" id="Characteristics"> Characteristics </span></h5>
 </td></tr>
 
 <tr class="t-dsc">
@@ -485,98 +486,98 @@ f <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr size_t</span> word_size</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>w</code>, determines the range of values generated by the engine.  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>w</code>, determines the range of values generated by the engine.  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr size_t</span> state_size</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>n</code>. The engine state is <code>n</code> values of <code>UIntType</code>  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>n</code>. The engine state is <code>n</code> values of <code>UIntType</code> <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr size_t</span> shift_size</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>m</code>  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>m</code> <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr size_t</span> mask_bits</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>r</code>, also known as the twist value.  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>r</code>, also known as the twist value.  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr UIntType</span> xor_mask</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>a</code>, the conditional xor-mask.  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>a</code>, the conditional xor-mask.  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr size_t</span> tempering_u</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>u</code>, first component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>u</code>, first component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr UIntType</span> tempering_d</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>d</code>, second component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>d</code>, second component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr size_t</span> tempering_s</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>s</code>, third component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>s</code>, third component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr UIntType</span> tempering_b</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>b</code>, fourth component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>b</code>, fourth component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr size_t</span> tempering_t</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>t</code>, fifth component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>t</code>, fifth component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr UIntType</span> tempering_c</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>c</code>, sixth component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>c</code>, sixth component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr size_t</span> tempering_l</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>l</code>, seventh component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>l</code>, seventh component of the bit-scrambling (tempering) matrix  <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr UIntType</span> initialization_multiplier</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the template parameter <code>f</code>   <br> <span class="t-mark">(public static member constant)</span>
+<td>  the template parameter <code>f</code> <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><span class="t-dsc-small">constexpr UIntType</span> default_seed</span></span></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span> <span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   the constant value <span class="t-c"><span class="mw-geshi cpp source-cpp">5489u</span></span>  <br> <span class="t-mark">(public static member constant)</span>
+<td>  the constant value <span class="t-c"><span class="mw-geshi cpp source-cpp">5489u</span></span> <br> <span class="t-mark">(public static member constant)</span>
 </td></tr>
 
 </table>
@@ -593,22 +594,23 @@ f <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</
 <th> The value to produce
 </th></tr>
 <tr>
-<td> <code>10000</code>
+<td><code>10000</code>
 </td>
-<td> <code>std::mt19937</code>
+<td><code>std::mt19937</code>
 </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">4123659995</span></span></span>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">4123659995</span></span></span>
 </td></tr>
 <tr>
-<td> <code>10000</code>
+<td><code>10000</code>
 </td>
-<td> <code>std::mt19937_64</code>
+<td><code>std::mt19937_64</code>
 </td>
-<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">9981545732273789042</span></span></span>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">9981545732273789042</span></span></span>
 </td></tr></table>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;random&gt;</span>
-<span class="co2">#include &lt;cassert&gt;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cassert&gt;</span>
+<span class="co2">#include &lt;random&gt;</span>
+ 
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
     std<span class="sy4">::</span><span class="me2">mt19937</span> gen32<span class="sy4">;</span>
@@ -616,26 +618,26 @@ f <span class="sy1">&lt;=</span> <span class="nu0">2</span><span class="sy3">^</
  
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">auto</span> n<span class="br0">{</span><span class="nu0">1</span><span class="br0">}</span><span class="sy4">;</span> n <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">10</span><span class="st0">'000; gen32(), gen64(), ++n);
  
-    assert(gen32() == 4'</span><span class="nu0">123</span><span class="st0">'659'</span><span class="nu0">995</span> and
-           gen64<span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">9</span><span class="st0">'981'</span><span class="nu0">545</span><span class="st0">'732'</span><span class="nu0">273</span><span class="st0">'789'</span>042ULL<span class="br0">)</span><span class="sy4">;</span>
+    assert(gen32() == 4'</span><span class="nu0">123</span><span class="st0">'659'</span><span class="nu0">995</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw775">assert</span></a><span class="br0">(</span>gen64<span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">9</span><span class="st0">'981'</span><span class="nu0">545</span><span class="st0">'732'</span><span class="nu0">273</span><span class="st0">'789'</span>042ull<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 10283/1000000
-Preprocessor generated node count: 14890/1000000
-Post‐expand include size: 330305/2097152 bytes
-Template argument size: 79316/2097152 bytes
+Preprocessor visited node count: 10463/1000000
+Preprocessor generated node count: 15446/1000000
+Post‐expand include size: 331446/2097152 bytes
+Template argument size: 79140/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3698-0!*!0!!en!*!* and timestamp 20220410083745 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:3698-0!*!0!!en!*!* and timestamp 20230120005715 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/random/mersenne_twister_engine&amp;oldid=136289">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/random/mersenne_twister_engine&amp;oldid=136289</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/random/mersenne_twister_engine&amp;oldid=145465">https://en.cppreference.com/mwiki/index.php?title=cpp/numeric/random/mersenne_twister_engine&amp;oldid=145465</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -648,17 +650,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 12 December 2021, at 18:28.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 392,504 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -673,7 +664,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.035 secs. -->
+</script><!-- Served in 1.789 secs. -->
 	</body>
-<!-- Cached 20220410083746 -->
+<!-- Cached 20230120005716 -->
 </html>

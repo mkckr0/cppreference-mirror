@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/comment","wgTitle":"c/comment","wgCurRevisionId":137503,"wgArticleId":13869,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/comment","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/comment","wgTitle":"c/comment","wgCurRevisionId":146308,"wgArticleId":13869,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"c/comment","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -152,6 +152,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> Comments</strong></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/ascii.html" title="c/language/ascii"> ASCII</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="language/charset.html" title="c/language/charset"> Character sets</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/translation_phases.html" title="c/language/translation phases"> Translation phases</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/punctuators.html" title="c/language/punctuators">Punctuation</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language/identifier.html" title="c/language/identifier">Identifier</a></td></tr>
@@ -206,7 +207,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>All comments are removed from the program at <a href="language/translation_phases.html" title="c/language/translation phases">translation phase 3</a> by replacing each comment with a single whitespace character.
 </p>
 <h3><span class="mw-headline" id="C-style">C-style</span></h3>
-<p>C-style comments are usually used to comment large blocks of text or small fragments of code; however, they can be used to comment single lines. To insert text as a C-style comment, simply surround the text with <code>/*</code> and <code>*/</code>. C-style comments tell the compiler to ignore all content between <code>/*</code> and <code>*/</code>. Although it is not part of the C standard, <code>/**</code> and <code>*/</code> are often used to indicate documentation blocks; this is legal because the second asterisk is simply treated as part of the comment.
+<p>C-style comments are usually used to comment large blocks of text or small fragments of code; however, they can be used to comment single lines. To insert text as a C-style comment, simply surround the text with <code>/*</code> and <code>*/</code>. C-style comments tell the compiler to ignore all content between <code>/*</code> and <code>*/</code>. Although it is not part of the C standard, <code>/**</code> and <code>**/</code> are often used to indicate documentation blocks; this is legal because the second asterisk is simply treated as part of the comment.
 </p><p>Except within a <a href="language/character_constant.html" title="c/language/character constant">character constant</a>, a <a href="language/string_literal.html" title="c/language/string literal">string literal</a>, or a comment, the characters <code>/*</code> introduce a comment. The contents of such a comment are examined only to identify multibyte characters and to find the characters <code>*/</code> that terminate the comment. C-style comments cannot be nested.
 </p>
  <table class="t-rev-begin">
@@ -333,19 +334,19 @@ Hello, again</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1110/1000000
-Preprocessor generated node count: 4142/1000000
-Post‐expand include size: 33864/2097152 bytes
-Template argument size: 6969/2097152 bytes
+Preprocessor visited node count: 1116/1000000
+Preprocessor generated node count: 4155/1000000
+Post‐expand include size: 34374/2097152 bytes
+Template argument size: 7011/2097152 bytes
 Highest expansion depth: 13/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13869-0!*!0!!en!*!* and timestamp 20220605011903 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13869-0!*!0!!en!*!* and timestamp 20230120004127 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/comment&amp;oldid=137503">https://en.cppreference.com/mwiki/index.php?title=c/comment&amp;oldid=137503</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/comment&amp;oldid=146308">https://en.cppreference.com/mwiki/index.php?title=c/comment&amp;oldid=146308</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -358,17 +359,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/comment">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 24 January 2022, at 15:40.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 85,640 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -383,7 +373,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.413 secs. -->
+</script><!-- Served in 0.419 secs. -->
 	</body>
-<!-- Cached 20220605011903 -->
+<!-- Cached 20230120004127 -->
 </html>

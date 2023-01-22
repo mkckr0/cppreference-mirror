@@ -114,7 +114,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="index.html" title="c/symbol index"> Symbol index</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="language/history.html" title="c/language/history"> Versions</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
 <tr class="t-nv"><td colspan="5"> C89 </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="https://en.cppreference.com/mwiki/index.php?title=c/95&amp;action=edit&amp;redlink=1" class="new" title="c/95 (page does not exist)"> C95</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="95.html" title="c/95"> C95</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink"> C99</strong> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="11.html" title="c/11"> C11</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="17.html" title="c/17"> C17</a> </td></tr>
@@ -189,12 +189,12 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li></ul>
 <h2><span class="mw-headline" id="New_library_features">New library features</span></h2>
 <h3><span class="mw-headline" id="New_headers">New headers</span></h3>
-<ul><li> <code>&lt;complex.h&gt;</code>
-</li><li> <code>&lt;fenv.h&gt;</code>
-</li><li> <code>&lt;inttypes.h&gt;</code>
-</li><li> <code>&lt;stdbool.h&gt;</code>
-</li><li> <code>&lt;stdint.h&gt;</code>
-</li><li> <code>&lt;tgmath.h&gt;</code>
+<ul><li> <a href="numeric/complex.html" title="c/numeric/complex"><tt>&lt;complex.h&gt;</tt></a>
+</li><li> <a href="numeric/fenv.html" title="c/numeric/fenv"><tt>&lt;fenv.h&gt;</tt></a>
+</li><li> <a href="types/integer.html" title="c/types/integer"><tt>&lt;inttypes.h&gt;</tt></a>
+</li><li> <a href="types.html" title="c/types"><tt>&lt;stdbool.h&gt;</tt></a>
+</li><li> <a href="types/integer.html" title="c/types/integer"><tt>&lt;stdint.h&gt;</tt></a>
+</li><li> <a href="numeric/tgmath.html" title="c/numeric/tgmath"><tt>&lt;tgmath.h&gt;</tt></a>
 </li></ul>
 <h3><span class="mw-headline" id="Library_features">Library features</span></h3>
 <ul><li> <a href="types/integer.html" title="c/types/integer">Aliases for integer types</a> 
@@ -256,7 +256,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <h2><span class="mw-headline" id="Compiler_support">Compiler support</span></h2>
 <h3><span class="mw-headline" id="C99_core_language_features"> C99 core language features </span></h3>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: needs to list C compilers, verification </td></tr></table>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-compiler-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C99 feature<br> 
@@ -1039,22 +1039,22 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </th>
 <th> <div class="t-vertical"><div>Cray</div></div>
 </th>
-<th> <div class="t-vertical"><div>Nvidia HPC C++</div></div>
+<th> <div class="t-vertical"><div>Nvidia HPC C++<br>(ex Portland Group/PGI)</div></div>
 </th>
 <th> <div class="t-vertical"><div>Nvidia nvcc</div></div>
 </th></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 6029/1000000
-Preprocessor generated node count: 9907/1000000
-Post‐expand include size: 182082/2097152 bytes
-Template argument size: 52243/2097152 bytes
+Preprocessor visited node count: 6277/1000000
+Preprocessor generated node count: 11096/1000000
+Post‐expand include size: 183557/2097152 bytes
+Template argument size: 52819/2097152 bytes
 Highest expansion depth: 18/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:20722-0!*!0!!en!*!* and timestamp 20220707212957 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:20722-0!*!0!!en!*!* and timestamp 20230120004040 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -1071,17 +1071,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/c/99">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 7 July 2022, at 14:29.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 13,833 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1096,7 +1085,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.036 secs. -->
+</script><!-- Served in 1.079 secs. -->
 	</body>
-<!-- Cached 20220707213401 -->
+<!-- Cached 20230120004041 -->
 </html>

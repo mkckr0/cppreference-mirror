@@ -13,7 +13,7 @@
 
 <script src="../../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/string/basic_string_view/rfind","wgTitle":"cpp/string/basic string view/rfind","wgCurRevisionId":133839,"wgArticleId":15058,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/string/basic_string_view/rfind","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/string/basic_string_view/rfind","wgTitle":"cpp/string/basic string view/rfind","wgCurRevisionId":145064,"wgArticleId":15058,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/string/basic_string_view/rfind","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -186,7 +187,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
 </tr>
 <tr class="t-dcl t-since-cxx17">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span> size_type rfind<span class="br0">(</span> CharT c, size_type pos <span class="sy1">=</span> npos <span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span> size_type rfind<span class="br0">(</span> CharT ch, size_type pos <span class="sy1">=</span> npos <span class="br0">)</span> <span class="kw4">const</span> <span class="kw1">noexcept</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-cxx17">(since C++17)</span> </td>
 </tr>
@@ -202,10 +203,10 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Finds the last substring equal to the given character sequence.
+<p>Finds the last substring equal to the given character sequence. Search begins at <code>pos</code>, i.e. the found substring must not begin in a position following <code>pos</code>. If <span class="t-lc"><a href="npos.html" title="cpp/string/basic string view/npos">npos</a></span> or any value not smaller than <span class="t-lc"><a href="size.html" title="cpp/string/basic string view/size">size()</a></span>-1 is passed as <code>pos</code>, whole string will be searched.
 </p>
 <div class="t-li1"><span class="t-li">1)</span> Finds the last occurrence of <code>v</code> in this view, starting at position <code>pos</code>.</div>
-<div class="t-li1"><span class="t-li">2)</span> Equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">rfind<span class="br0">(</span>basic_string_view<span class="br0">(</span><a href="../../memory/addressof.html"><span class="kw758">std::<span class="me2">addressof</span></span></a><span class="br0">(</span>c<span class="br0">)</span>, <span class="nu0">1</span><span class="br0">)</span>, pos<span class="br0">)</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">2)</span> Equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">rfind<span class="br0">(</span>basic_string_view<span class="br0">(</span><a href="../../memory/addressof.html"><span class="kw758">std::<span class="me2">addressof</span></span></a><span class="br0">(</span>ch<span class="br0">)</span>, <span class="nu0">1</span><span class="br0">)</span>, pos<span class="br0">)</span></span></span>.</div>
 <div class="t-li1"><span class="t-li">3)</span> Equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">rfind<span class="br0">(</span>basic_string_view<span class="br0">(</span>s, count<span class="br0">)</span>, pos<span class="br0">)</span></span></span>.</div>
 <div class="t-li1"><span class="t-li">4)</span> Equivalent to <span class="t-c"><span class="mw-geshi cpp source-cpp">rfind<span class="br0">(</span>basic_string_view<span class="br0">(</span>s<span class="br0">)</span>, pos<span class="br0">)</span></span></span>.</div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -213,47 +214,45 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 
 <tr class="t-par">
-<td>  v
+<td> v
 </td>
 <td> -
 </td>
-<td>  view to search for
+<td> view to search for
 </td></tr>
 <tr class="t-par">
-<td>  pos
+<td> pos
 </td>
 <td> -
 </td>
-<td>  position at which to start the search
+<td> position at which to start the search
 </td></tr>
 <tr class="t-par">
-<td>  count
+<td> count
 </td>
 <td> -
 </td>
-<td>  length of substring to search for
+<td> length of substring to search for
 </td></tr>
 <tr class="t-par">
-<td>  s
+<td> s
 </td>
 <td> -
 </td>
-<td>  pointer to a character string to search for
+<td> pointer to a character string to search for
 </td></tr>
 <tr class="t-par">
-<td>  ch
+<td> ch
 </td>
 <td> -
 </td>
-<td>  character to search for
+<td> character to search for
 </td></tr></table>
-<p><br>
-</p>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>Position of the first character of the found substring or <span class="t-lc"><a href="npos.html" title="cpp/string/basic string view/npos">npos</a></span> if no such substring is found.
 </p>
 <h3><span class="mw-headline" id="Complexity">Complexity</span></h3>
-<p>O(<code>size()</code> * <code>v.size()</code>) at worst.
+<p>O(<span class="t-lc"><a href="size.html" title="cpp/string/basic string view/size">size()</a></span> * v.<span class="t-lc"><a href="size.html" title="cpp/string/basic string view/size">size()</a></span>) at worst.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -312,19 +311,19 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 5077/1000000
-Preprocessor generated node count: 9422/1000000
-Post‐expand include size: 142823/2097152 bytes
-Template argument size: 30151/2097152 bytes
+Preprocessor visited node count: 5142/1000000
+Preprocessor generated node count: 9527/1000000
+Post‐expand include size: 143971/2097152 bytes
+Template argument size: 30170/2097152 bytes
 Highest expansion depth: 32/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15058-0!*!0!!en!*!* and timestamp 20220410101146 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15058-0!*!0!!en!*!* and timestamp 20230120055006 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/basic_string_view/rfind&amp;oldid=133839">https://en.cppreference.com/mwiki/index.php?title=cpp/string/basic_string_view/rfind&amp;oldid=133839</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/basic_string_view/rfind&amp;oldid=145064">https://en.cppreference.com/mwiki/index.php?title=cpp/string/basic_string_view/rfind&amp;oldid=145064</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -337,17 +336,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/string/basic_string_view/rfind">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 21 September 2021, at 08:08.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 19,860 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -362,7 +350,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.124 secs. -->
+</script><!-- Served in 1.192 secs. -->
 	</body>
-<!-- Cached 20220410101146 -->
+<!-- Cached 20230120055006 -->
 </html>

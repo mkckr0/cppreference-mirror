@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/constraints","wgTitle":"cpp/language/constraints","wgCurRevisionId":141072,"wgArticleId":17699,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/constraints","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/constraints","wgTitle":"cpp/language/constraints","wgCurRevisionId":145472,"wgArticleId":17699,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo with reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/constraints","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -299,10 +300,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <dl><dd><i>This page describes the core language feature adopted for C++20. For named type requirements used in the specification of the standard library, see <a href="../named_req.html" title="cpp/named req">named requirements</a>. For the Concepts TS version of this feature, see <a href="../experimental/constraints.html" title="cpp/experimental/constraints">here</a>.</i>
 </dd></dl>
-<dl><dd><i> <b>Temporary notice</b>: the <span class="t-lc">requires</span> expression section has been moved to <a href="requires.html" title="cpp/language/requires">its own page</a></i>
-</dd></dl>
 <p><a href="class_template.html" title="cpp/language/class template">Class templates</a>, <a href="function_template.html" title="cpp/language/function template">function templates</a>, and non-template functions (typically members of class templates) may be associated with a <i>constraint</i>, which specifies the requirements on template arguments, which can be used to select the most appropriate function overloads and template specializations.
-</p><p>Named sets of such requirements are called <i>concepts</i>. Each concept is a predicate, evaluated at compile time, and becomes a part of the interface of a template where it is used as a constraint:
+</p><p>Named sets of such <a href="requires.html" title="cpp/language/requires">requirements</a> are called <i>concepts</i>. Each concept is a predicate, evaluated at compile time, and becomes a part of the interface of a template where it is used as a constraint:
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;string&gt;</span>
@@ -359,7 +358,7 @@ concept Hashable <span class="sy1">=</span> requires<span class="br0">(</span>T 
 <p>The intent of concepts is to model semantic categories (Number, Range, RegularFunction) rather than syntactic restrictions (HasPlus, Array). According to <a rel="nofollow" class="external text" href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#t20-avoid-concepts-without-meaningful-semantics">ISO C++ core guideline T.20</a>, "The ability to specify meaningful semantics is a defining characteristic of a true concept, as opposed to a syntactic constraint."
 </p>
 <h3><span class="mw-headline" id="Concepts">Concepts</span></h3>
-<p>A concept is a named set of requirements. The definition of a concept must appear at namespace scope.
+<p>A concept is a named set of <a href="requires.html" title="cpp/language/requires">requirements</a>. The definition of a concept must appear at namespace scope.
 </p><p>The definition of a concept has the form
 </p>
 <table class="t-sdsc-begin">
@@ -368,8 +367,8 @@ concept Hashable <span class="sy1">=</span> requires<span class="br0">(</span>T 
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <code><b>template</b></code> <code><b>&lt;</b></code> <span class="t-spar">template-parameter-list</span> <code><b>&gt;</b></code>
-<p><code><b>concept</b></code> <span class="t-spar">concept-name</span> <code><b>=</b></code> <span class="t-spar">constraint-expression</span><code><b>;</b></code>
+<td class="t-sdsc-nopad"> <code><b>template &lt;</b></code> <span class="t-spar">template-parameter-list</span> <code><b>&gt;</b></code>
+<p><code><b>concept</b></code> <span class="t-spar">concept-name attr</span><span class="t-mark">(optional)</span> <code><b>=</b></code> <span class="t-spar">constraint-expression</span><code><b>;</b></code>
 </p>
 </td>
 <td class="t-sdsc-nopad">
@@ -381,6 +380,16 @@ concept Hashable <span class="sy1">=</span> requires<span class="br0">(</span>T 
 
 <tr>
 <td colspan="10" class="t-sdsc-sep">
+</td></tr></table>
+<table class="t-par-begin">
+
+
+<tr class="t-par">
+<td> <span class="t-spar">attr</span>
+</td>
+<td> -
+</td>
+<td> sequence of any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
 </td></tr></table>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co1">// concept</span>
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T, <span class="kw1">class</span> U<span class="sy1">&gt;</span>
@@ -402,7 +411,7 @@ concept Error2 <span class="sy1">=</span> <span class="kw2">true</span><span cla
 </p>
 <ul><li> <a href="template_parameters.html#Type_template_parameter" title="cpp/language/template parameters">type template parameter declaration</a>,
 </li><li> <a href="auto.html" title="cpp/language/auto">placeholder type specifier</a>,
-</li><li> <a href="constraints.html#Compound_Requirements">compound requirement</a>.
+</li><li> <a href="requires.html#Compound_Requirements" title="cpp/language/requires">compound requirement</a>.
 </li></ul>
 <p>In a <span class="t-spar">type-constraint</span>, a concept takes one less template argument than its parameter list demands, because the contextually deduced type is implicitly used as the first argument of the concept.
 </p>
@@ -421,9 +430,9 @@ concept Derived <span class="sy1">=</span> <a href="../types/is_base_of.html"><s
 <p>The constraint associated with a declaration are determined by <a href="constraints.html#Constraint_normalization">normalizing</a> a logical AND expression whose operands are in the following order:
 </p>
 <ol><li> the constraint expression introduced for each constrained <a href="template_parameters.html#Type_template_parameter" title="cpp/language/template parameters">type template parameter</a> or non-type template parameter declared with a constrained <a href="auto.html" title="cpp/language/auto">placeholder type</a>, in order of appearance;
-</li><li> the constraint expression in the <i>requires</i> clause after the template parameter list;
+</li><li> the constraint expression in the <a href="constraints.html#Requires_clauses" title="cpp/language/constraints">requires clause</a> after the template parameter list;
 </li><li> the constraint expression introduced for each parameter with constrained <a href="auto.html" title="cpp/language/auto">placeholder type</a> in a <a href="function_template.html#Abbreviated_function_template" title="cpp/language/function template">abbreviated function template declaration</a>;
-</li><li> the constraint expression in the trailing <i>requires</i> clause.
+</li><li> the constraint expression in the trailing <a href="constraints.html#Requires_clauses" title="cpp/language/constraints">requires clause</a>.
 </li></ol>
 <p>This order determines the order in which constraints are instantiated when checking for satisfaction.
 </p><p>A constrained declaration may only be redeclared using the same syntactic form. No diagnostic is required:
@@ -569,14 +578,14 @@ concept C <span class="sy1">=</span> B<span class="sy1">&lt;</span>V<span class=
 <p>User-defined overloads of <code>&amp;&amp;</code> or <code>||</code> have no effect on constraint normalization.
 </p>
 <h3><span class="mw-headline" id="Requires_clauses"> Requires clauses </span></h3>
-<p>The keyword <span class="t-c"><span class="mw-geshi cpp source-cpp">requires</span></span> is used to introduce a <i>requires-clause</i>, which specifies constraints on template arguments or on a function declaration.
+<p>The keyword <a href="../keyword/requires.html" title="cpp/keyword/requires"><tt><span class="t-c"><span class="mw-geshi cpp source-cpp">requires</span></span></tt></a> is used to introduce a <i>requires-clause</i>, which specifies constraints on template arguments or on a function declaration.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> f<span class="br0">(</span>T<span class="sy3">&amp;&amp;</span><span class="br0">)</span> requires Eq<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">;</span> <span class="co1">// can appear as the last element of a function declarator</span>
  
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">typename</span> T<span class="sy1">&gt;</span> requires Addable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="co1">// or right after a template parameter list</span>
 T add<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> a <span class="sy2">+</span> b<span class="sy4">;</span> <span class="br0">}</span></pre></div></div>
-<p>In this case, the keyword <i>requires</i> must be followed by some constant expression (so it's possible to write <span class="t-c"><span class="mw-geshi cpp source-cpp">requires <span class="kw2">true</span></span></span>), but the intent is that a named concept (as in the example above) or a conjunction/disjunction of named concepts or a <i>requires-expression</i> is used.
+<p>In this case, the keyword <i>requires</i> must be followed by some constant expression (so it's possible to write <span class="t-c"><span class="mw-geshi cpp source-cpp">requires <span class="kw2">true</span></span></span>), but the intent is that a named concept (as in the example above) or a conjunction/disjunction of named concepts or a <a href="requires.html" title="cpp/language/requires">requires expression</a> is used.
 </p><p>The expression must have one of the following forms:
 </p>
 <ul><li> a <a href="expressions.html#Primary_expressions" title="cpp/language/expressions">primary expression</a>, e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">Swappable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../types/is_integral.html"><span class="kw462">std::<span class="me2">is_integral</span></span></a><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">value</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span><a href="../types/is_object.html"><span class="kw493">std::<span class="me2">is_object_v</span></span></a><span class="sy1">&lt;</span>Args<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span> ...<span class="br0">)</span></span></span>, or any parenthesized expression
@@ -598,7 +607,7 @@ T add<span class="br0">(</span>T a, T b<span class="br0">)</span> <span class="b
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> h<span class="br0">(</span>T<span class="br0">)</span> requires <span class="br0">(</span>is_purrable<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span></pre></div></div>
 <h3><span class="mw-headline" id="Partial_ordering_of_constraints">Partial ordering of constraints</span></h3>
-<p>Before any further analysis, constraints are <a href="constraints.html#Constraint_normalization">normalized</a> by substituting the body of every named concept and every requires expression until what is left is a sequence of conjunctions and disjunctions on atomic constraints.
+<p>Before any further analysis, constraints are <a href="constraints.html#Constraint_normalization">normalized</a> by substituting the body of every named concept and every <a href="requires.html" title="cpp/language/requires">requires expression</a> until what is left is a sequence of conjunctions and disjunctions on atomic constraints.
 </p><p>A constraint <code>P</code> is said to <i>subsume</i> constraint <code>Q</code> if it can be proven that <code>P</code> <a href="https://en.wikipedia.org/wiki/Logical_consequence" class="extiw" title="enwiki:Logical consequence">implies</a> <code>Q</code> up to the identity of atomic constraints in P and Q. (Types and expressions are not analyzed for equivalence: <code>N &gt; 0</code> does not subsume <code>N &gt;= 0</code>).
 </p><p>Specifically, first <code>P</code> is converted to disjunctive normal form and <code>Q</code> is converted to conjunctive normal form. <code>P</code> subsumes <code>Q</code> if and only if:
 </p>
@@ -651,11 +660,53 @@ concept RevIterator2 <span class="sy1">=</span> requires<span class="br0">(</spa
 <span class="kw1">template</span><span class="sy1">&lt;</span>RevIterator2 T<span class="sy1">&gt;</span>
 <span class="kw4">void</span> h<span class="br0">(</span>T<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// #6</span>
  
-h<span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">//ambiguous</span></pre></div></div>
+h<span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span><span class="br0">)</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// ambiguous</span></pre></div></div>
+<h3><span class="mw-headline" id="Notes">Notes</span></h3>
+<table class="wikitable">
+
+<tr>
+<th>Feature-test macro</th>
+<th>Value</th>
+<th><span title="Standard in which the feature is introduced">Std</span></th>
+<th>Comment
+</th></tr>
+<tr>
+<td rowspan="2"><a href="../feature_test.html#Language_features" title="cpp/feature test"><code>__cpp_concepts</code></a></td>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">201907L</span></span></span></td>
+<td><span class="t-mark">(C++20)</span></td>
+<td><a href="constraints.html#Top">Constraints</a>
+</td></tr>
+<tr>
+<td><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">202002L</span></span></span></td>
+<td><span class="t-mark">(C++20)</span></td>
+<td>Conditionally trivial <a href="member_functions.html#Special_member_functions" title="cpp/language/member functions">special member functions</a>
+</td></tr></table>
 <h3><span class="mw-headline" id="Keywords">Keywords</span></h3>
 <p><a href="../keyword/concept.html" title="cpp/keyword/concept"><tt>concept</tt></a>,
 <a href="../keyword/requires.html" title="cpp/keyword/requires"><tt>requires</tt></a>
 </p>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2428.html">CWG 2428</a>
+</td>
+<td> C++20
+</td>
+<td> could not apply attributes to concepts
+</td>
+<td> allowed
+</td></tr></table>
 <h3><span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
@@ -667,19 +718,19 @@ h<span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3733/1000000
-Preprocessor generated node count: 10823/1000000
-Post‐expand include size: 135535/2097152 bytes
-Template argument size: 23152/2097152 bytes
+Preprocessor visited node count: 4200/1000000
+Preprocessor generated node count: 12036/1000000
+Post‐expand include size: 139735/2097152 bytes
+Template argument size: 24662/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17699-0!*!0!!en!*!* and timestamp 20220714094645 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:17699-0!*!0!!en!*!* and timestamp 20230120003937 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/constraints&amp;oldid=141072">https://en.cppreference.com/mwiki/index.php?title=cpp/language/constraints&amp;oldid=141072</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/constraints&amp;oldid=145472">https://en.cppreference.com/mwiki/index.php?title=cpp/language/constraints&amp;oldid=145472</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -692,17 +743,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/constraints">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 14 July 2022, at 02:46.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 647,468 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -717,7 +757,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.066 secs. -->
+</script><!-- Served in 4.744 secs. -->
 	</body>
-<!-- Cached 20220714094856 -->
+<!-- Cached 20230120003937 -->
 </html>

@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/explicit_cast","wgTitle":"cpp/language/explicit cast","wgCurRevisionId":141187,"wgArticleId":695,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/explicit_cast","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/explicit_cast","wgTitle":"cpp/language/explicit cast","wgCurRevisionId":146188,"wgArticleId":695,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/explicit_cast","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -303,52 +304,52 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="expressions.html" title="cpp/language/expressions"> Expressions</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> General </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="value_category.html" title="cpp/language/value category"> value categories</a> (lvalue, rvalue, xvalue)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="cpp/language/eval order"> order of evaluation</a> (sequence points)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="cpp/language/constant expression"> constant expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions"> unevaluated expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Primary_expressions" title="cpp/language/expressions"> primary expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="lambda.html" title="cpp/language/lambda">lambda-expression</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Literals </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="integer_literal.html" title="cpp/language/integer literal">integer literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="floating_literal.html" title="cpp/language/floating literal">floating-point literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="bool_literal.html" title="cpp/language/bool literal">boolean literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="character_literal.html" title="cpp/language/character literal">character literals</a> including <a href="escape.html" title="cpp/language/escape">escape sequences</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="cpp/language/string literal">string literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="nullptr.html" title="cpp/language/nullptr">null pointer literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="user_literal.html" title="cpp/language/user literal">user-defined literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Operators </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_assignment.html" title="cpp/language/operator assignment"> Assignment operators</a>: 
+<tr class="t-nv-h2"><td colspan="5">General </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a> (lvalue, rvalue, xvalue)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a> (sequence points)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constant_expression.html" title="cpp/language/constant expression">Constant expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">Potentially-evaluated expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Primary_expressions" title="cpp/language/expressions">Primary expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda-expression</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Literals </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="integer_literal.html" title="cpp/language/integer literal">Integer literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="floating_literal.html" title="cpp/language/floating literal">Floating-point literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">Character literals</a> including <a href="escape.html" title="cpp/language/escape">escape sequences</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="string_literal.html" title="cpp/language/string literal">String literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="nullptr.html" title="cpp/language/nullptr">Null pointer literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Operators </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_assignment.html" title="cpp/language/operator assignment">Assignment operators</a>:
 <code>a=b</code>, <code>a+=b</code>, <code>a-=b</code>, <code>a*=b</code>, <code>a/=b</code>, <code>a%=b</code>, <code>a&amp;=b</code>, <code>a|=b</code>, <code>a^=b</code>, <code>a&lt;&lt;=b</code>, <code>a&gt;&gt;=b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_incdec.html" title="cpp/language/operator incdec"> Increment and decrement</a>: <code>++a</code>, <code>--a</code>, <code>a++</code>, <code>a--</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic"> Arithmetic operators</a>:
-<code>+a</code>, <code>-a</code>, <code>a+b</code>, <code>a-b</code>, <code>a*b</code>, <code>a/b</code>, <code>a%b</code>, <code>~a</code>, <code>a&amp;b</code>, <code>a|b</code>, <code>a^b</code>, <code>a&lt;&lt;b</code>, <code>a&gt;&gt;b</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_logical.html" title="cpp/language/operator logical"> Logical operators</a>: <code>a||b</code>, <code>a&amp;&amp;b</code>, <code>!a</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_comparison.html" title="cpp/language/operator comparison"> Comparison operators</a>: <code>a==b</code>, <code>a!=b</code>, <code>a&lt;b</code>, <code>a&gt;b</code>, <code>a&lt;=b</code>, <code>a&gt;=b</code>, <code>a&lt;=&gt;b</code><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_member_access.html" title="cpp/language/operator member access"> Member access operators</a>: <code>a[b]</code>, <code>*a</code>, <code>&amp;a</code>, <code>a-&gt;b</code>, <code>a.b</code>, <code>a-&gt;*b</code>, <code>a.*b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_other.html" title="cpp/language/operator other"> Other operators</a>: <code>a(...)</code>, <code>a,b</code>, <code>a?b:c</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="new.html" title="cpp/language/new">new-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="delete.html" title="cpp/language/delete">delete-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="throw.html" title="cpp/language/throw">throw-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="fold.html" title="cpp/language/fold">Fold expression</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Conversions </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <strong class="selflink">Explicit conversions</strong> <code>(T)a</code>, <code>T(a)</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_incdec.html" title="cpp/language/operator incdec">Increment and decrement</a>: <code>++a</code>, <code>--a</code>, <code>a++</code>, <code>a--</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">Arithmetic operators</a>:
+<code>+a</code>, <code>-a</code>, <code>a+b</code>, <code>a-b</code>, <code>a*b</code>, <code>a/b</code>, <code>a%b</code>, <code>~a</code>, <code>a&amp;b</code>, <code>a|b</code>, <code>a^b</code>, <code>a&lt;&lt;b</code>, <code>a&gt;&gt;b</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_logical.html" title="cpp/language/operator logical">Logical operators</a>: <code>a||b</code>, <code>a&amp;&amp;b</code>, <code>!a</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_comparison.html" title="cpp/language/operator comparison">Comparison operators</a>: <code>a==b</code>, <code>a!=b</code>, <code>a&lt;b</code>, <code>a&gt;b</code>, <code>a&lt;=b</code>, <code>a&gt;=b</code>, <code>a&lt;=&gt;b</code><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_member_access.html" title="cpp/language/operator member access">Member access operators</a>: <code>a[b]</code>, <code>*a</code>, <code>&amp;a</code>, <code>a-&gt;b</code>, <code>a.b</code>, <code>a-&gt;*b</code>, <code>a.*b</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_other.html" title="cpp/language/operator other">Other operators</a>: <code>a(...)</code>, <code>a,b</code>, <code>a?b:c</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new">new-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete">delete-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="throw.html" title="cpp/language/throw">throw-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof.html" title="cpp/language/sizeof"><code>sizeof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fold.html" title="cpp/language/fold">Fold expression</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Conversions </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink">Explicit conversions</strong> <code>(T)a</code>, <code>T(a)</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>Converts between types using a combination of explicit and implicit conversions.
@@ -425,7 +426,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <code><b>auto</b></code> <code><b>(</b></code> <span class="t-spar">expression</span> <code><b>)</b></code>
+<td> <code><b>auto (</b></code> <span class="t-spar">expression</span> <code><b>)</b></code>
 </td>
 <td> (6)
 </td>
@@ -438,7 +439,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <code><b>auto</b></code> <code><b>{</b></code> <span class="t-spar">expression</span> <code><b>}</b></code>
+<td> <code><b>auto {</b></code> <span class="t-spar">expression</span> <code><b>}</b></code>
 </td>
 <td> (7)
 </td>
@@ -464,7 +465,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <div class="t-li1"><span class="t-li">2)</span> The <i>functional-style cast expression</i> consists of a simple type specifier or a typedef specifier (in other words, a single-word type name, that is, cases such as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span><span class="br0">(</span></span><span class="t-spar">expression</span><code>)</code></span> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span><span class="sy2">*</span><span class="br0">(</span></span><span class="t-spar">expression</span><code>)</code></span> are not valid), followed by a comma-separated list of expressions in parentheses.
 <ul><li> If there is exactly one expression in parentheses, this cast expression is exactly equivalent to the corresponding C-style cast expression.
 </li><li> If there are more than one expression <span class="t-rev-inl t-since-cxx11"><span>or <a href="list_initialization.html" title="cpp/language/list initialization">braced-init-list</a></span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> in parentheses, <span class="t-spar">new-type</span> must be a class with a suitably declared <a href="initializer_list.html" title="cpp/language/constructor">constructor</a>. This expression is a prvalue of type <span class="t-spar">new-type</span>  <span class="t-rev-inl t-until-cxx17"><span>designating a temporary</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>whose result object is</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> <a href="direct_initialization.html" title="cpp/language/direct initialization">direct-initialized</a> with <span class="t-spar">expression-list</span>.
-</li><li> If there's no expression in parentheses: if <span class="t-spar">new-type</span> names a non-array complete object type, this expression is an prvalue of type <span class="t-spar">new-type</span>, <span class="t-rev-inl t-until-cxx17"><span>designating a temporary</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>whose result object is (possibly with added cv-qualifiers)</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> of that type. If <span class="t-spar">new-type</span> is an object type, the object is <a href="value_initialization.html" title="cpp/language/value initialization">value-initialized</a>. If <span class="t-spar">new-type</span> is (possibly <a href="cv.html" title="cpp/language/cv">cv-qualified</a>) <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span>, the expression is a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> prvalue <span class="t-rev-inl t-since-cxx17"><span>without a result object</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>.</li></ul></div>
+</li><li> If there's no expression in parentheses: if <span class="t-spar">new-type</span> names a non-array complete object type, this expression is a prvalue of type <span class="t-spar">new-type</span>, <span class="t-rev-inl t-until-cxx17"><span>designating a temporary</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>whose result object is (possibly with added cv-qualifiers)</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> of that type. If <span class="t-spar">new-type</span> is an object type, the object is <a href="value_initialization.html" title="cpp/language/value initialization">value-initialized</a>. If <span class="t-spar">new-type</span> is (possibly <a href="cv.html" title="cpp/language/cv">cv-qualified</a>) <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span>, the expression is a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> prvalue <span class="t-rev-inl t-since-cxx17"><span>without a result object</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>.</li></ul></div>
 
 <div class="t-li1"><span class="t-li">3)</span> A single-word type name followed by a <i>braced-init-list</i> is a prvalue of the specified type <span class="t-rev-inl t-until-cxx17"><span>designating a temporary</span> <span><span class="t-mark-rev t-until-cxx17">(until C++17)</span></span></span><span class="t-rev-inl t-since-cxx17"><span>whose result object is</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span> <a href="list_initialization.html" title="cpp/language/list initialization">direct-list-initialized</a> with the specified <i>braced-init-list</i>. If <span class="t-spar">new-type</span> is (possibly <a href="cv.html" title="cpp/language/cv">cv-qualified</a>) <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span>, the expression is a <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> prvalue <span class="t-rev-inl t-since-cxx17"><span>without a result object</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>. <span class="t-rev-inl t-until-cxx20"><span>
 This is the only cast expression that can create an <a href="array.html#Array_rvalues" title="cpp/language/array">array prvalue</a>.</span> <span><span class="t-mark-rev t-until-cxx20">(until C++20)</span></span></span></div>
@@ -472,23 +473,19 @@ This is the only cast expression that can create an <a href="array.html#Array_rv
 <div class="t-li1"><span class="t-li">6,7)</span> The <a href="auto.html" title="cpp/language/auto"><code>auto</code></a> specifier is replaced with the deduced type of the invented variable <code>x</code> declared with <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">auto</span> x<span class="br0">(</span></span><span class="t-spar">expression</span><code>);</code></span> (which is never interpreted as a function declaration) or <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">auto</span> x<span class="br0">{</span></span><span class="t-spar">expression</span><code>};</code></span> respectively. The result is always a prvalue of an object type.</div>
 <p>As with all cast expressions, the result is:
 </p>
- <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx11"><td>
-<ul><li> an lvalue if <span class="t-spar">new-type</span> is a reference type;
-</li><li> an rvalue otherwise.
+<ul><li> an lvalue if <span class="t-spar">new-type</span> is an lvalue reference type<span class="t-rev-inl t-since-cxx11"><span> or an rvalue reference to function type</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>;
 </li></ul>
-</td>
-<td><span class="t-mark-rev t-until-cxx11">(until C++11)</span></td></tr>
+ <table class="t-rev-begin">
 <tr class="t-rev t-since-cxx11"><td>
-<ul><li> an lvalue if <span class="t-spar">new-type</span> is an lvalue reference type or an rvalue reference to function type;
-</li><li> an xvalue if <span class="t-spar">new-type</span> is an rvalue reference to object type; 
-</li><li> a prvalue otherwise.
+<ul><li> an xvalue if <span class="t-spar">new-type</span> is an rvalue reference to object type;
 </li></ul>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
 </table>
+<ul><li> a prvalue otherwise.
+</li></ul>
 <h3><span class="mw-headline" id="Ambiguity_Resolution">Ambiguity Resolution</span></h3>
-<p>In the case of an ambiguity between a expression statement with a function-style cast expression as its leftmost subexpression and a declaration statement, the ambiguity is resolved by treating it as a declaration. This disambiguation is purely syntactic: it does not consider the meaning of names occurring in the statement other than whether they are type names:
+<p>In the case of an ambiguity between an expression statement with a function-style cast expression as its leftmost subexpression and a declaration statement, the ambiguity is resolved by treating it as a declaration. This disambiguation is purely syntactic: it does not consider the meaning of names occurring in the statement other than whether they are type names:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> M <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">struct</span> L <span class="br0">{</span> L<span class="br0">(</span>M<span class="sy3">&amp;</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
@@ -500,7 +497,8 @@ M n<span class="sy4">;</span>
     L<span class="br0">(</span>n<span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// ill-formed declaration</span>
     L<span class="br0">(</span>l<span class="br0">)</span><span class="br0">(</span>m<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// still a declaration</span>
 <span class="br0">}</span></pre></div></div>
-<p>The ambiguity above can also occur in the context of a declaration. In that context, the choice is between a function declaration with a redundant set of parentheses around a parameter name and an object declaration with a function-style cast as the initializer. The resolution is also to consider any construct that could possibly be a declaration a declaration:
+<p><span id="dr2620"></span>
+The ambiguity above can also occur in the context of a declaration. In that context, the choice is between an object declaration with a function-style cast as the initializer and a declaration involving a function declarator with a redundant set of parentheses around a parameter name. The resolution is also to consider any construct, such as the potential parameter declaration, that could possibly be a declaration to be a declaration:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> S
 <span class="br0">{</span>
@@ -510,7 +508,8 @@ M n<span class="sy4">;</span>
 <span class="kw4">void</span> foo<span class="br0">(</span><span class="kw4">double</span> a<span class="br0">)</span>
 <span class="br0">{</span>
     S w<span class="br0">(</span><span class="kw4">int</span><span class="br0">(</span>a<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// function declaration: has a parameter `a` of type int</span>
-    S x<span class="br0">(</span><span class="kw4">int</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// function declaration: has an unnamed parameter of type int</span>
+    S x<span class="br0">(</span><span class="kw4">int</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// function declaration: has an unnamed parameter of type int(*)() </span>
+                 <span class="co1">// that is adjusted from int()</span>
  
     <span class="co1">// Ways to avoid ambiguity:</span>
     S y<span class="br0">(</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">(</span>a<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// object declaration: extra pair of parentheses</span>
@@ -586,7 +585,39 @@ C2<span class="sy2">*</span> foo<span class="br0">(</span>C1<span class="sy2">*<
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">x:2 y:2
 x:2 y:1</pre></div></div> 
 </div>
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2620.html">CWG 2620</a>
+</td>
+<td> C++98
+</td>
+<td> the resolution of <a href="explicit_cast.html#dr2620">this ambiguity</a> might be misinterpreted
+</td>
+<td> improved the wording
+</td></tr></table>
 <h3><span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-c++23">
+<ul><li> C++23 standard (ISO/IEC 14882:2023): 
+</li></ul>
+<dl><dd><ul><li> 7.6.1.4 Explicit type conversion (functional notation) [expr.type.conv] 
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.6.3 Explicit type conversion (cast notation) [expr.cast] 
+</li></ul>
+</dd></dl>
+</div>
 <div class="t-ref-std-c++20">
 <ul><li> C++20 standard (ISO/IEC 14882:2020): 
 </li></ul>
@@ -679,19 +710,19 @@ x:2 y:1</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4975/1000000
-Preprocessor generated node count: 11227/1000000
-Post‐expand include size: 175153/2097152 bytes
-Template argument size: 26574/2097152 bytes
+Preprocessor visited node count: 5083/1000000
+Preprocessor generated node count: 11944/1000000
+Post‐expand include size: 175941/2097152 bytes
+Template argument size: 26646/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:695-0!*!0!!en!*!* and timestamp 20220719175814 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:695-0!*!0!!en!*!* and timestamp 20230120004819 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/explicit_cast&amp;oldid=141187">https://en.cppreference.com/mwiki/index.php?title=cpp/language/explicit_cast&amp;oldid=141187</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/explicit_cast&amp;oldid=146188">https://en.cppreference.com/mwiki/index.php?title=cpp/language/explicit_cast&amp;oldid=146188</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -704,17 +735,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/explicit_cast">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 19 July 2022, at 10:58.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 447,891 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -729,7 +749,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.039 secs. -->
+</script><!-- Served in 2.450 secs. -->
 	</body>
-<!-- Cached 20220719180657 -->
+<!-- Cached 20230120004821 -->
 </html>

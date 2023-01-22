@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/sizeof","wgTitle":"cpp/language/sizeof","wgCurRevisionId":140001,"wgArticleId":711,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/sizeof","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/sizeof","wgTitle":"cpp/language/sizeof","wgCurRevisionId":145355,"wgArticleId":711,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/sizeof","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -303,52 +304,52 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="expressions.html" title="cpp/language/expressions"> Expressions</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"> General </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="value_category.html" title="cpp/language/value category"> value categories</a> (lvalue, rvalue, xvalue)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="eval_order.html" title="cpp/language/eval order"> order of evaluation</a> (sequence points)</td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="constant_expression.html" title="cpp/language/constant expression"> constant expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions"> unevaluated expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="expressions.html#Primary_expressions" title="cpp/language/expressions"> primary expressions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="lambda.html" title="cpp/language/lambda">lambda-expression</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Literals </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="integer_literal.html" title="cpp/language/integer literal">integer literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="floating_literal.html" title="cpp/language/floating literal">floating-point literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="bool_literal.html" title="cpp/language/bool literal">boolean literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="character_literal.html" title="cpp/language/character literal">character literals</a> including <a href="escape.html" title="cpp/language/escape">escape sequences</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="string_literal.html" title="cpp/language/string literal">string literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="nullptr.html" title="cpp/language/nullptr">null pointer literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="user_literal.html" title="cpp/language/user literal">user-defined literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Operators </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_assignment.html" title="cpp/language/operator assignment"> Assignment operators</a>: 
+<tr class="t-nv-h2"><td colspan="5">General </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a> (lvalue, rvalue, xvalue)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a> (sequence points)</td></tr>
+<tr class="t-nv"><td colspan="5"><a href="constant_expression.html" title="cpp/language/constant expression">Constant expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">Potentially-evaluated expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="expressions.html#Primary_expressions" title="cpp/language/expressions">Primary expressions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda-expression</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Literals </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="integer_literal.html" title="cpp/language/integer literal">Integer literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="floating_literal.html" title="cpp/language/floating literal">Floating-point literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">Character literals</a> including <a href="escape.html" title="cpp/language/escape">escape sequences</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="string_literal.html" title="cpp/language/string literal">String literals</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="nullptr.html" title="cpp/language/nullptr">Null pointer literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined literal</a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Operators </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_assignment.html" title="cpp/language/operator assignment">Assignment operators</a>:
 <code>a=b</code>, <code>a+=b</code>, <code>a-=b</code>, <code>a*=b</code>, <code>a/=b</code>, <code>a%=b</code>, <code>a&amp;=b</code>, <code>a|=b</code>, <code>a^=b</code>, <code>a&lt;&lt;=b</code>, <code>a&gt;&gt;=b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_incdec.html" title="cpp/language/operator incdec"> Increment and decrement</a>: <code>++a</code>, <code>--a</code>, <code>a++</code>, <code>a--</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_arithmetic.html" title="cpp/language/operator arithmetic"> Arithmetic operators</a>:
-<code>+a</code>, <code>-a</code>, <code>a+b</code>, <code>a-b</code>, <code>a*b</code>, <code>a/b</code>, <code>a%b</code>, <code>~a</code>, <code>a&amp;b</code>, <code>a|b</code>, <code>a^b</code>, <code>a&lt;&lt;b</code>, <code>a&gt;&gt;b</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_logical.html" title="cpp/language/operator logical"> Logical operators</a>: <code>a||b</code>, <code>a&amp;&amp;b</code>, <code>!a</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_comparison.html" title="cpp/language/operator comparison"> Comparison operators</a>: <code>a==b</code>, <code>a!=b</code>, <code>a&lt;b</code>, <code>a&gt;b</code>, <code>a&lt;=b</code>, <code>a&gt;=b</code>, <code>a&lt;=&gt;b</code><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_member_access.html" title="cpp/language/operator member access"> Member access operators</a>: <code>a[b]</code>, <code>*a</code>, <code>&amp;a</code>, <code>a-&gt;b</code>, <code>a.b</code>, <code>a-&gt;*b</code>, <code>a.*b</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_other.html" title="cpp/language/operator other"> Other operators</a>: <code>a(...)</code>, <code>a,b</code>, <code>a?b:c</code> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="new.html" title="cpp/language/new">new-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="delete.html" title="cpp/language/delete">delete-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="throw.html" title="cpp/language/throw">throw-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <strong class="selflink"><code>sizeof</code></strong></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="fold.html" title="cpp/language/fold">Fold expression</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"> Conversions </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a> <code>(T)a</code>, <code>T(a)</code></td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_incdec.html" title="cpp/language/operator incdec">Increment and decrement</a>: <code>++a</code>, <code>--a</code>, <code>a++</code>, <code>a--</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_arithmetic.html" title="cpp/language/operator arithmetic">Arithmetic operators</a>:
+<code>+a</code>, <code>-a</code>, <code>a+b</code>, <code>a-b</code>, <code>a*b</code>, <code>a/b</code>, <code>a%b</code>, <code>~a</code>, <code>a&amp;b</code>, <code>a|b</code>, <code>a^b</code>, <code>a&lt;&lt;b</code>, <code>a&gt;&gt;b</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_logical.html" title="cpp/language/operator logical">Logical operators</a>: <code>a||b</code>, <code>a&amp;&amp;b</code>, <code>!a</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_comparison.html" title="cpp/language/operator comparison">Comparison operators</a>: <code>a==b</code>, <code>a!=b</code>, <code>a&lt;b</code>, <code>a&gt;b</code>, <code>a&lt;=b</code>, <code>a&gt;=b</code>, <code>a&lt;=&gt;b</code><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_member_access.html" title="cpp/language/operator member access">Member access operators</a>: <code>a[b]</code>, <code>*a</code>, <code>&amp;a</code>, <code>a-&gt;b</code>, <code>a.b</code>, <code>a-&gt;*b</code>, <code>a.*b</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_other.html" title="cpp/language/operator other">Other operators</a>: <code>a(...)</code>, <code>a,b</code>, <code>a?b:c</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new">new-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete">delete-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="throw.html" title="cpp/language/throw">throw-expression</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="alignof.html" title="cpp/language/alignof"><code>alignof</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><strong class="selflink"><code>sizeof</code></strong></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="sizeof....html" title="cpp/language/sizeof..."><code>sizeof...</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept</code></a><span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="fold.html" title="cpp/language/fold">Fold expression</a><span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations of operators</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Precedence and associativity</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operator overloading</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="default_comparisons.html" title="cpp/language/default comparisons">Default comparisons</a><span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
+<tr class="t-nv-h2"><td colspan="5">Conversions </td></tr>
+<tr class="t-nv"><td colspan="5"><a href="implicit_cast.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><code>const_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><code>static_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><code>reinterpret_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a> <code>(T)a</code>, <code>T(a)</code></td></tr>
+<tr class="t-nv"><td colspan="5"><a href="cast_operator.html" title="cpp/language/cast operator">User-defined conversion</a></td></tr>
 </table></div>
 </div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <p>Queries size of the object or type.
@@ -386,8 +387,25 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
-<p>Both versions are constant expressions of type <span class="t-lc"><a href="../types/size_t.html" title="cpp/types/size t">std::size_t</a></span>. 
+<p>Both versions are constant expressions of type <span class="t-lc"><a href="../types/size_t.html" title="cpp/types/size t">std::size_t</a></span>.
 </p>
+<table class="t-par-begin">
+
+
+<tr class="t-par">
+<td> <span class="t-spar">type</span>
+</td>
+<td> -
+</td>
+<td> a <span class="t-spar">type-id</span> (see <a href="type-id.html#Type_naming" title="cpp/language/type">type naming</a>)
+</td></tr>
+<tr class="t-par">
+<td> <span class="t-spar">expression</span>
+</td>
+<td> -
+</td>
+<td> an expression whose <a href="operator_precedence.html" title="cpp/language/operator precedence">operator precedence</a> is not lower than <code>sizeof</code> (e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">sizeof a <span class="sy2">+</span> b</span></span> is parsed as <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span>sizeof a<span class="br0">)</span> <span class="sy2">+</span> b</span></span> instead of <span class="t-c"><span class="mw-geshi cpp source-cpp">sizeof <span class="br0">(</span>a <span class="sy2">+</span> b<span class="br0">)</span></span></span>)
+</td></tr></table>
 <h3><span class="mw-headline" id="Explanation">Explanation</span></h3>
 <div class="t-li1"><span class="t-li">1)</span> Yields the size in bytes of the <a href="objects.html" title="cpp/language/object">object representation</a> of <span class="t-spar">type</span>.</div>
 <div class="t-li1"><span class="t-li">2)</span> Yields the size in bytes of the object representation of the type of <span class="t-spar">expression</span>, if that expression is evaluated.</div>
@@ -417,24 +435,25 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p><p>When applied to a reference type, the result is the size of the referenced type.
 </p><p>When applied to a class type, the result is the number of bytes occupied by a complete object of that class, including any additional padding required to place such object in an array. The number of bytes occupied by a <a href="objects.html#Subobjects" title="cpp/language/object">potentially-overlapping subobject</a> may be less than the size of that object.
 </p><p>The result of <code>sizeof</code> is always nonzero, even if applied to an empty class type.
-</p><p>When applied to an expression, <code>sizeof</code> does <a href="expressions.html#Unevaluated_expressions" title="cpp/language/expressions">not evaluate the expression</a>, and even if the expression designates a polymorphic object, the result is the size of the static type of the expression. Lvalue-to-rvalue, array-to-pointer, or function-to-pointer conversions are not performed. <span class="t-rev-inl t-since-cxx17"><span><a href="implicit_cast.html#Temporary_materialization" title="cpp/language/implicit conversion">Temporary materialization</a>, however, is (formally) performed for prvalue arguments: the program is ill-formed if the argument is not destructible.</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>
+</p><p>When applied to an expression, <code>sizeof</code> does <a href="expressions.html#Potentially-evaluated_expressions" title="cpp/language/expressions">not evaluate the expression</a> <span class="t-rev-inl t-since-cxx11"><span>(i.e. the expression is an unevaluated operand)</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>, and even if the expression designates a polymorphic object, the result is the size of the static type of the expression. Lvalue-to-rvalue, array-to-pointer, or function-to-pointer conversions are not performed. <span class="t-rev-inl t-since-cxx17"><span><a href="implicit_cast.html#Temporary_materialization" title="cpp/language/implicit conversion">Temporary materialization</a>, however, is (formally) performed for prvalue arguments: the program is ill-formed if the argument is not destructible.</span> <span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>
 </p>
 <h3><span class="mw-headline" id="Keywords">Keywords</span></h3>
 <p><a href="../keyword/sizeof.html" title="cpp/keyword/sizeof"><tt>sizeof</tt></a>
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
-<div class="t-example"><p>The example output corresponds to a system with 64-bit pointers and 32-bit int.</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
+<div class="t-example"><p>The example output corresponds to a system with 64-bit pointers and 32-bit int (a.k.a. <a href="types.html#Data_models" title="cpp/language/types"><b>LP64</b> or <b>LLP64</b></a>).</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cstdlib&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
  
-<span class="kw1">struct</span> Empty <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> Base <span class="br0">{</span> <span class="kw4">int</span> a<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> Empty          <span class="br0">{</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> Base           <span class="br0">{</span> <span class="kw4">int</span> a<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">struct</span> Derived <span class="sy4">:</span> Base <span class="br0">{</span> <span class="kw4">int</span> b<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> Bit <span class="br0">{</span> <span class="kw4">unsigned</span> bit<span class="sy4">:</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> CharChar      <span class="br0">{</span> <span class="kw4">char</span> c<span class="sy4">;</span> <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> CharCharInt   <span class="br0">{</span> <span class="kw4">char</span> c<span class="sy4">;</span> <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="kw4">int</span> i<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> IntCharChar   <span class="br0">{</span> <span class="kw4">int</span> i<span class="sy4">;</span>  <span class="kw4">char</span> c<span class="sy4">;</span>  <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> CharIntChar   <span class="br0">{</span> <span class="kw4">char</span> c<span class="sy4">;</span> <span class="kw4">int</span> i<span class="sy4">;</span>   <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> CharShortChar <span class="br0">{</span> <span class="kw4">char</span> c<span class="sy4">;</span> <span class="kw4">short</span> s<span class="sy4">;</span> <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> Bit            <span class="br0">{</span> <span class="kw4">unsigned</span> bit<span class="sy4">:</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> CharChar       <span class="br0">{</span> <span class="kw4">char</span> c<span class="sy4">;</span> <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> CharCharInt    <span class="br0">{</span> <span class="kw4">char</span> c<span class="sy4">;</span> <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="kw4">int</span> i<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> IntCharChar    <span class="br0">{</span> <span class="kw4">int</span> i<span class="sy4">;</span>  <span class="kw4">char</span> c<span class="sy4">;</span>  <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> CharIntChar    <span class="br0">{</span> <span class="kw4">char</span> c<span class="sy4">;</span> <span class="kw4">int</span> i<span class="sy4">;</span>   <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> CharShortChar  <span class="br0">{</span> <span class="kw4">char</span> c<span class="sy4">;</span> <span class="kw4">short</span> s<span class="sy4">;</span> <span class="kw4">char</span> c2<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
@@ -444,49 +463,56 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="br0">[</span><span class="br0">[</span>maybe_unused<span class="br0">]</span><span class="br0">]</span> Bit bit<span class="sy4">;</span>
     <span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span>
  
-    <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> 
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"1) sizeof empty class:              "</span> <span class="sy1">&lt;&lt;</span> sizeof e         <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"2) sizeof pointer:                  "</span> <span class="sy1">&lt;&lt;</span> sizeof <span class="sy3">&amp;</span>e        <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-<span class="co1">//    &lt;&lt; "3) sizeof function:                 " &lt;&lt; sizeof(void())   &lt;&lt; '\n' // error</span>
-<span class="co1">//    &lt;&lt; "4) sizeof incomplete type:          " &lt;&lt; sizeof(int[])    &lt;&lt; '\n' // error</span>
-<span class="co1">//    &lt;&lt; "5) sizeof bit field:                " &lt;&lt; sizeof bit.bit   &lt;&lt; '\n' // error</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"6) sizeof(Bit) class:               "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span>Bit<span class="br0">)</span>      <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"7) sizeof(int[10]) array of 10 int: "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span><span class="kw4">int</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="br0">)</span>  <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"8) sizeof a        array of 10 int: "</span> <span class="sy1">&lt;&lt;</span> sizeof a         <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"9) length of array of 10 int:       "</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span><span class="br0">(</span>sizeof a<span class="br0">)</span> <span class="sy2">/</span> <span class="br0">(</span>sizeof <span class="sy2">*</span>a<span class="br0">)</span><span class="br0">)</span>   <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"A) length of array of 10 int (2):   "</span> <span class="sy1">&lt;&lt;</span> <span class="br0">(</span><span class="br0">(</span>sizeof a<span class="br0">)</span> <span class="sy2">/</span> <span class="br0">(</span>sizeof a<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"B) sizeof the Derived class:        "</span> <span class="sy1">&lt;&lt;</span> sizeof d         <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"C) sizeof the Derived through Base: "</span> <span class="sy1">&lt;&lt;</span> sizeof b         <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"D) sizeof(unsigned)                 "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span><span class="kw4">unsigned</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"E) sizeof(int)                      "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>      <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"F) sizeof(short)                    "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span><span class="kw4">short</span><span class="br0">)</span>    <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"G) sizeof(char)                     "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span><span class="kw4">char</span><span class="br0">)</span>     <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"H) sizeof(CharChar)                 "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span>CharChar<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"I) sizeof(CharCharInt)              "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span>CharCharInt<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"J) sizeof(IntCharChar)              "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span>IntCharChar<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"K) sizeof(CharIntChar)              "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span>CharIntChar<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span>
-      <span class="sy1">&lt;&lt;</span> <span class="st0">"L) sizeof(CharShortChar)            "</span> <span class="sy1">&lt;&lt;</span> sizeof<span class="br0">(</span>CharShortChar<span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <span class="kw4">auto</span> f <span class="sy1">=</span> <span class="br0">[</span><span class="sy3">&amp;</span><span class="br0">]</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> sizeof<span class="br0">(</span><span class="kw4">int</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="br0">)</span> <span class="sy1">==</span> sizeof a <span class="sy4">?</span> <span class="kw1">throw</span> <span class="nu0">1</span> <span class="sy4">:</span> e<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="co1">//  f(); // the return type is Empty, but always throws 1</span>
+ 
+    <span class="kw4">auto</span> println <span class="sy1">=</span> <span class="br0">[</span><span class="br0">]</span><span class="br0">(</span><span class="kw4">auto</span> rem, <a href="../types/size_t.html"><span class="kw106">std::<span class="me2">size_t</span></span></a> size<span class="br0">)</span> <span class="br0">{</span> <a href="../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> rem <span class="sy1">&lt;&lt;</span> size <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+ 
+    println<span class="br0">(</span> <span class="st0">"1) sizeof empty class:              "</span>, sizeof e                     <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"2) sizeof pointer:                  "</span>, sizeof <span class="sy3">&amp;</span>e                    <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"3) sizeof(Bit) class:               "</span>, sizeof<span class="br0">(</span>Bit<span class="br0">)</span>                  <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"4) sizeof(int[10]) array of 10 int: "</span>, sizeof<span class="br0">(</span><span class="kw4">int</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="br0">)</span>              <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"5) sizeof a        array of 10 int: "</span>, sizeof a                     <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"6) length of array of 10 int:       "</span>, <span class="br0">(</span><span class="br0">(</span>sizeof a<span class="br0">)</span> <span class="sy2">/</span> <span class="br0">(</span>sizeof <span class="sy2">*</span>a<span class="br0">)</span><span class="br0">)</span>   <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"7) length of array of 10 int (2):   "</span>, <span class="br0">(</span><span class="br0">(</span>sizeof a<span class="br0">)</span> <span class="sy2">/</span> <span class="br0">(</span>sizeof a<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"8) sizeof the Derived class:        "</span>, sizeof d                     <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"9) sizeof the Derived through Base: "</span>, sizeof b                     <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"A) sizeof(unsigned):                "</span>, sizeof<span class="br0">(</span><span class="kw4">unsigned</span><span class="br0">)</span>             <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"B) sizeof(int):                     "</span>, sizeof<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>                  <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"C) sizeof(short):                   "</span>, sizeof<span class="br0">(</span><span class="kw4">short</span><span class="br0">)</span>                <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"D) sizeof(char):                    "</span>, sizeof<span class="br0">(</span><span class="kw4">char</span><span class="br0">)</span>                 <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"E) sizeof(CharChar):                "</span>, sizeof<span class="br0">(</span>CharChar<span class="br0">)</span>             <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"F) sizeof(CharCharInt):             "</span>, sizeof<span class="br0">(</span>CharCharInt<span class="br0">)</span>          <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"G) sizeof(IntCharChar):             "</span>, sizeof<span class="br0">(</span>IntCharChar<span class="br0">)</span>          <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"H) sizeof(CharIntChar):             "</span>, sizeof<span class="br0">(</span>CharIntChar<span class="br0">)</span>          <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"I) sizeof(CharShortChar):           "</span>, sizeof<span class="br0">(</span>CharShortChar<span class="br0">)</span>        <span class="br0">)</span><span class="sy4">;</span>
+    println<span class="br0">(</span> <span class="st0">"J) sizeof f():                      "</span>, sizeof f<span class="br0">(</span><span class="br0">)</span>                   <span class="br0">)</span><span class="sy4">;</span>
+ 
+<span class="co1">//  println( "sizeof function:        ", sizeof(void()) ); // error</span>
+<span class="co1">//  println( "sizeof incomplete type: ", sizeof(int[])  ); // error</span>
+<span class="co1">//  println( "sizeof bit field:       ", sizeof bit.bit ); // error</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1) sizeof empty class:              1
 2) sizeof pointer:                  8
-6) sizeof(Bit) class:               4
-7) sizeof(int[10]) array of 10 int: 40
-8) sizeof a        array of 10 int: 40
-9) length of array of 10 int:       10
-A) length of array of 10 int (2):   10
-B) sizeof the Derived class:        8
-C) sizeof the Derived through Base: 4
-D) sizeof(unsigned)                 4
-E) sizeof(int)                      4
-F) sizeof(short)                    2
-G) sizeof(char)                     1
-H) sizeof(CharChar)                 2
-I) sizeof(CharCharInt)              8
-J) sizeof(IntCharChar)              8
-K) sizeof(CharIntChar)              12
-L) sizeof(CharShortChar)            6</pre></div></div> 
+3) sizeof(Bit) class:               4
+4) sizeof(int[10]) array of 10 int: 40
+5) sizeof a        array of 10 int: 40
+6) length of array of 10 int:       10
+7) length of array of 10 int (2):   10
+8) sizeof the Derived class:        8
+9) sizeof the Derived through Base: 4
+A) sizeof(unsigned):                4
+B) sizeof(int):                     4
+C) sizeof(short):                   2
+D) sizeof(char):                    1
+E) sizeof(CharChar):                2
+F) sizeof(CharCharInt):             8
+G) sizeof(IntCharChar):             8
+H) sizeof(CharIntChar):             12
+I) sizeof(CharShortChar):           6
+J) sizeof f():                      1</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
@@ -501,6 +527,15 @@ L) sizeof(CharShortChar)            6</pre></div></div>
 </th>
 <th> Correct behavior
 </th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1122.html">CWG 1122</a>
+</td>
+<td> C++98
+</td>
+<td> result type of <span class="t-c"><span class="mw-geshi cpp source-cpp">sizeof</span></span> (<span class="t-lc"><a href="../types/size_t.html" title="cpp/types/size t">std::size_t</a></span>) was circularly defined
+</td>
+<td> it is defined in the same way as in C
+</td></tr>
 <tr>
 <td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1553.html">CWG 1553</a>
 </td>
@@ -523,23 +558,28 @@ L) sizeof(CharShortChar)            6</pre></div></div>
 </td>
 <td>  queries the number of elements in a <a href="parameter_pack.html" title="cpp/language/parameter pack">parameter pack</a></td></tr>
 
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../types/numeric_limits.html" title="cpp/types/numeric limits"> <span class="t-lines"><span>numeric_limits</span></span></a></div></div>
+</td>
+<td>   provides an interface to query properties of all fundamental numeric types. <br> <span class="t-mark">(class template)</span> </td></tr>
+
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3298/1000000
-Preprocessor generated node count: 8481/1000000
-Post‐expand include size: 157517/2097152 bytes
-Template argument size: 25647/2097152 bytes
-Highest expansion depth: 15/40
+Preprocessor visited node count: 3692/1000000
+Preprocessor generated node count: 9394/1000000
+Post‐expand include size: 164654/2097152 bytes
+Template argument size: 29130/2097152 bytes
+Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:711-0!*!0!!en!*!* and timestamp 20220602063739 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:711-0!*!0!!en!*!* and timestamp 20230120004148 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/sizeof&amp;oldid=140001">https://en.cppreference.com/mwiki/index.php?title=cpp/language/sizeof&amp;oldid=140001</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/sizeof&amp;oldid=145355">https://en.cppreference.com/mwiki/index.php?title=cpp/language/sizeof&amp;oldid=145355</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -552,17 +592,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/sizeof">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 1 June 2022, at 23:37.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 1,574,054 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -577,7 +606,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.039 secs. -->
+</script><!-- Served in 1.923 secs. -->
 	</body>
-<!-- Cached 20220602064123 -->
+<!-- Cached 20230120004148 -->
 </html>

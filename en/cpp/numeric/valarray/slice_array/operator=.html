@@ -127,7 +127,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../../../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../../../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../../../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../../../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -195,7 +196,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../valarray.html" title="cpp/numeric/valarray/valarray"><span class="t-lines"><span>valarray::valarray</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../~valarray.html" title="cpp/numeric/valarray/~valarray"><span class="t-lines"><span>valarray::~valarray</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../%7Evalarray.html" title="cpp/numeric/valarray/~valarray"><span class="t-lines"><span>valarray::~valarray</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../operator%3D.html" title="cpp/numeric/valarray/operator="><span class="t-lines"><span>valarray::operator=</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../operator_at.html" title="cpp/numeric/valarray/operator at"><span class="t-lines"><span>valarray::operator[]  </span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../swap.html" title="cpp/numeric/valarray/swap"><span class="t-lines"><span>valarray::swap</span></span></a></div></div></td></tr>
@@ -250,7 +251,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../slice_array.html" title="cpp/numeric/valarray/slice array"><tt>std::slice_array</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
 <tr class="t-nv-h1"><td colspan="5"> Member functions</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="slice_array.html" title="cpp/numeric/valarray/slice array/slice array"><span class="t-lines"><span>slice_array::slice_array</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="~slice_array.html" title="cpp/numeric/valarray/slice array/~slice array"><span class="t-lines"><span>slice_array::~slice_array</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="%7Eslice_array.html" title="cpp/numeric/valarray/slice array/~slice array"><span class="t-lines"><span>slice_array::~slice_array</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>slice_array::operator=</span></span></strong></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_arith.html" title="cpp/numeric/valarray/slice array/operator arith"><span class="t-lines"><span>slice_array::operator+=</span><span>slice_array::operator-=</span><span>slice_array::operator*=</span><span>slice_array::operator/=</span><span>slice_array::operator%=</span><span>slice_array::operator&amp;=</span><span>slice_array::operator|=</span><span>slice_array::operator^=</span><span>slice_array::operator&lt;&lt;=</span><span>slice_array::operator&gt;&gt;=</span></span></a></div></div></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
@@ -265,49 +266,58 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> (2) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
+</tbody>
+<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
+<td></td>
+<td rowspan="142">(3)</td>
+<td></td>
+</tr>
+<tr class="t-dcl t-until-cxx11">
+<td> <div><span class="mw-geshi cpp source-cpp">slice_array<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span> <span class="kw4">const</span> slice_array<span class="sy3">&amp;</span> other_arr <span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-until-cxx11">(until C++11)</span> </td>
+</tr>
 <tr class="t-dcl t-since-cxx11">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> slice_array<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span> <span class="kw4">const</span> slice_array<span class="sy3">&amp;</span> sl_arr<span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span></span></div></td>
-<td> (3) </td>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">const</span> slice_array<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">(</span> <span class="kw4">const</span> slice_array<span class="sy3">&amp;</span> other_arr <span class="br0">)</span> <span class="kw4">const</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> </td>
 </tr>
+</tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Assigns values to all referred elements.
 </p>
-<div class="t-li1"><span class="t-li">1)</span> Assigns <code>value</code> to all of the elements.</div>
-<div class="t-li1"><span class="t-li">2)</span> Assigns the elements of <code>val_arr</code> to the referred to elements of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.</div>
-<div class="t-li1"><span class="t-li">3)</span> Assigns the selected elements from <code>sl_arr</code> to the referred to elements of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.</div>
+<div class="t-li1"><span class="t-li">1)</span> Assigns <span class="t-c"><span class="mw-geshi cpp source-cpp">value</span></span> to all of the elements.</div>
+<div class="t-li1"><span class="t-li">2)</span> Assigns the elements of <span class="t-c"><span class="mw-geshi cpp source-cpp">val_arr</span></span> to the referred to elements of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.</div>
+<div class="t-li1"><span class="t-li">3)</span> Assigns the selected elements from <span class="t-c"><span class="mw-geshi cpp source-cpp">other_arr</span></span> to the referred to elements of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>.</div>
 <h3><span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
 <tr class="t-par">
-<td>  value
+<td> value
 </td>
 <td> -
 </td>
-<td>  a value to assign to all of the referred elements
+<td> a value to assign to all of the referred elements
 </td></tr>
 <tr class="t-par">
-<td>  val_arr
+<td> val_arr
 </td>
 <td> -
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../valarray.html"><span class="kw1476">std::<span class="me2">valarray</span></span></a></span></span> to assign
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../../valarray.html"><span class="kw1476">std::<span class="me2">valarray</span></span></a></span></span> to assign
 </td></tr>
 <tr class="t-par">
-<td>  sl_arr
+<td> other_arr
 </td>
 <td> -
 </td>
-<td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../slice_array.html"><span class="kw1479">std::<span class="me2">slice_array</span></span></a></span></span> to assign
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../slice_array.html"><span class="kw1479">std::<span class="me2">slice_array</span></span></a></span></span> to assign
 </td></tr></table>
 <h3><span class="mw-headline" id="Return_value">Return value</span></h3>
 <div class="t-li1"><span class="t-li">1-2)</span> (none)</div>
 <div class="t-li1"><span class="t-li">3)</span> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span></div>
-<h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
-<p>May throw implementation-defined exceptions. 
-</p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
@@ -316,7 +326,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="kw4">void</span> print<span class="br0">(</span><span class="kw4">char</span> <span class="kw4">const</span><span class="sy2">*</span> remark, <a href="../../valarray.html"><span class="kw1476">std::<span class="me2">valarray</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> <span class="kw4">const</span><span class="sy3">&amp;</span> v <span class="sy1">=</span> <span class="br0">{</span><span class="br0">}</span><span class="br0">)</span>
 <span class="br0">{</span>
     <a href="../../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> remark<span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>v.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span>v.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span>
+    <span class="br0">{</span>
         <a href="../../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">":"</span><span class="sy4">;</span>
         <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> e <span class="sy4">:</span> v<span class="br0">)</span> <a href="../../../io/cout.html"><span class="kw1762">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span> <span class="sy1">&lt;&lt;</span> e<span class="sy4">;</span>
     <span class="br0">}</span>
@@ -325,7 +336,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
  
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../valarray.html"><span class="kw1476">std::<span class="me2">valarray</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v1<span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span>,<span class="nu0">4</span>,<span class="nu0">5</span>,<span class="nu0">6</span>,<span class="nu0">7</span>,<span class="nu0">8</span><span class="br0">}</span><span class="sy4">;</span>
+    <a href="../../valarray.html"><span class="kw1476">std::<span class="me2">valarray</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v1<span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">6</span>, <span class="nu0">7</span>, <span class="nu0">8</span><span class="br0">}</span><span class="sy4">;</span>
     <a href="../slice_array.html"><span class="kw1479">std::<span class="me2">slice_array</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> s1 <span class="sy1">=</span> v1<span class="br0">[</span><a href="../slice.html"><span class="kw1477">std::<span class="me2">slice</span></span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">4</span>, <span class="nu0">2</span><span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span>
     print<span class="br0">(</span><span class="st0">"v1"</span>, v1<span class="br0">)</span><span class="sy4">;</span>
     print<span class="br0">(</span><span class="st0">"s1"</span>, s1<span class="br0">)</span><span class="sy4">;</span>
@@ -337,7 +348,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     print<span class="br0">(</span><span class="st0">"v1"</span>, v1<span class="br0">)</span><span class="sy4">;</span>
  
     print<span class="br0">(</span><span class="st0">"<span class="es1">\n</span>(2) operator=( const std::valarray&lt;T&gt;&amp; )"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../valarray.html"><span class="kw1476">std::<span class="me2">valarray</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v2<span class="br0">{</span><span class="nu0">10</span>,<span class="nu0">11</span>,<span class="nu0">12</span>,<span class="nu0">13</span>,<span class="nu0">14</span>,<span class="nu0">15</span><span class="br0">}</span><span class="sy4">;</span>
+    <a href="../../valarray.html"><span class="kw1476">std::<span class="me2">valarray</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v2<span class="br0">{</span><span class="nu0">10</span>, <span class="nu0">11</span>, <span class="nu0">12</span>, <span class="nu0">13</span>, <span class="nu0">14</span>, <span class="nu0">15</span><span class="br0">}</span><span class="sy4">;</span>
     print<span class="br0">(</span><span class="st0">"v2"</span>, v2<span class="br0">)</span><span class="sy4">;</span>
     print<span class="br0">(</span><span class="st0">"s1 = v2"</span><span class="br0">)</span><span class="sy4">;</span>
     s1 <span class="sy1">=</span> v2<span class="sy4">;</span> <span class="co1">// (2)</span>
@@ -345,7 +356,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     print<span class="br0">(</span><span class="st0">"v1"</span>, v1<span class="br0">)</span><span class="sy4">;</span>
  
     print<span class="br0">(</span><span class="st0">"<span class="es1">\n</span>(3) operator=( const slice_array&amp; )"</span><span class="br0">)</span><span class="sy4">;</span>
-    v1 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span>,<span class="nu0">4</span>,<span class="nu0">5</span>,<span class="nu0">6</span>,<span class="nu0">7</span>,<span class="nu0">8</span><span class="br0">}</span><span class="sy4">;</span>
+    v1 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">6</span>, <span class="nu0">7</span>, <span class="nu0">8</span><span class="br0">}</span><span class="sy4">;</span>
     <a href="../slice_array.html"><span class="kw1479">std::<span class="me2">slice_array</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> s2 <span class="sy1">=</span> v1<span class="br0">[</span><a href="../slice.html"><span class="kw1477">std::<span class="me2">slice</span></span></a><span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">4</span>, <span class="nu0">1</span><span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span>
     <a href="../slice_array.html"><span class="kw1479">std::<span class="me2">slice_array</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> s3 <span class="sy1">=</span> v2<span class="br0">[</span><a href="../slice.html"><span class="kw1477">std::<span class="me2">slice</span></span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">4</span>, <span class="nu0">1</span><span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span>
     print<span class="br0">(</span><span class="st0">"v1"</span>, v1<span class="br0">)</span><span class="sy4">;</span>
@@ -381,19 +392,50 @@ s3: 11 12 13 14
 s2 = s3
 s2: 11 12 13 14
 v1: 11 12 13 14 5 6 7 8</pre></div></div> 
-</div>
+</div> 
+<h3><span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
+<p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
+</p>
+<table class="dsctable" style="font-size:0.8em">
+<tr>
+<th> DR
+</th>
+<th> Applied to
+</th>
+<th> Behavior as published
+</th>
+<th> Correct behavior
+</th></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue123">LWG 123</a>
+</td>
+<td> C++98
+</td>
+<td> overload (2) was non-const
+</td>
+<td> made const
+</td></tr>
+<tr>
+<td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue253">LWG 253</a>
+</td>
+<td> C++98
+</td>
+<td> the copy assignment operator was private
+</td>
+<td> made public
+</td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 7005/1000000
-Preprocessor generated node count: 9246/1000000
-Post‐expand include size: 260489/2097152 bytes
-Template argument size: 38300/2097152 bytes
+Preprocessor visited node count: 7322/1000000
+Preprocessor generated node count: 10021/1000000
+Post‐expand include size: 265959/2097152 bytes
+Template argument size: 38857/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12730-0!*!0!!en!*!* and timestamp 20220410224651 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:12730-0!*!0!!en!*!* and timestamp 20230120092943 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -410,17 +452,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/numeric/valarray/slice_array/operator=">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 8 July 2020, at 08:16.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 7,757 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -435,7 +466,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.415 secs. -->
+</script><!-- Served in 1.955 secs. -->
 	</body>
-<!-- Cached 20220410224651 -->
+<!-- Cached 20230120092943 -->
 </html>

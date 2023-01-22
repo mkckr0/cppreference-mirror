@@ -76,7 +76,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="cpp/language/exceptions.html" title="cpp/language/exceptions"> Exceptions</a><br>
 </p>
 </div>
-<p><b><a href="cpp/header.html" title="cpp/header"> Headers</a></b>
+<p><b><a href="cpp/standard_library.html" title="cpp/standard library">Standard library</a> (<a href="cpp/headers.html" title="cpp/header">headers</a>)</b>
 </p><p><b><a href="cpp/named_req.html" title="cpp/named req"> Named requirements</a></b>
 </p><p><b><a href="cpp/feature_test.html" title="cpp/feature test">Feature test macros</a></b> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
 </p><p><b><a href="cpp/utility.html#Language_support" title="cpp/utility"> Language support library</a></b>
@@ -121,8 +121,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <a href="cpp/utility.html#Swap_and_type_operations" title="cpp/utility"> Utility functions</a><br>
 <a href="cpp/utility/pair.html" title="cpp/utility/pair"><tt>pair</tt></a>  −  
 <a href="cpp/utility/tuple.html" title="cpp/utility/tuple"><tt>tuple</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
-<a href="cpp/utility/optional.html" title="cpp/utility/optional"><tt>optional</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span>  −  <a href="cpp/utility/any.html" title="cpp/utility/any"><tt>any</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br>
-<a href="cpp/utility/variant.html" title="cpp/utility/variant"><tt>variant</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br>
+<a href="cpp/utility/optional.html" title="cpp/utility/optional"><tt>optional</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span>  −  <a href="cpp/utility/expected.html" title="cpp/utility/expected"><tt>expected</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span><br>
+<a href="cpp/utility/variant.html" title="cpp/utility/variant"><tt>variant</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span>  −  <a href="cpp/utility/any.html" title="cpp/utility/any"><tt>any</tt></a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br>
 <a href="cpp/utility.html#Elementary_string_conversions" title="cpp/utility"> String conversions</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span><br>
 <a href="cpp/utility/format.html" title="cpp/utility/format"> Formatting</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
 <a href="cpp/numeric.html#Bit_manipulation_.28since_C.2B.2B20.29" title="cpp/numeric"> Bit manipulation</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
@@ -147,7 +147,7 @@ Null-terminated strings:<br>
 <a href="cpp/container/unordered_map.html" title="cpp/container/unordered map"><tt>unordered_map</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br><a href="cpp/container/unordered_multimap.html" title="cpp/container/unordered multimap"><tt>unordered_multimap</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
 <a href="cpp/container/unordered_set.html" title="cpp/container/unordered set"><tt>unordered_set</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br><a href="cpp/container/unordered_multiset.html" title="cpp/container/unordered multiset"><tt>unordered_multiset</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><br>
 <a href="cpp/container/stack.html" title="cpp/container/stack"><tt>stack</tt></a>  −  <a href="cpp/container/queue.html" title="cpp/container/queue"><tt>queue</tt></a>  −  <a href="cpp/container/priority_queue.html" title="cpp/container/priority queue"><tt>priority_queue</tt></a><br>
-<a href="cpp/container/span.html" title="cpp/container/span"><tt>span</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span>
+<a href="cpp/container/span.html" title="cpp/container/span"><tt>span</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span>  −  <a href="cpp/container/mdspan.html" title="cpp/container/mdspan"><tt>mdspan</tt></a> <span class="t-mark-rev t-since-cxx23">(C++23)</span>
 </p>
 </div></td>
 <td>
@@ -193,9 +193,9 @@ Null-terminated strings:<br>
 <div class="mainpagediv">
 <p><a href="cpp/atomic/atomic.html" title="cpp/atomic/atomic"><tt>atomic</tt></a>  −  <a href="cpp/atomic/atomic_flag.html" title="cpp/atomic/atomic flag"><tt>atomic_flag</tt></a><br>
 <a href="cpp/atomic/atomic_ref.html" title="cpp/atomic/atomic ref"><tt>atomic_ref</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
-<a href="cpp/thread/thread.html" title="cpp/thread/thread"><tt>thread‏‎</tt></a> − <a href="cpp/thread/jthread.html" title="cpp/thread/jthread"><tt>jthread‏‎</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
+<a href="cpp/thread/thread.html" title="cpp/thread/thread"><tt>thread</tt></a> − <a href="cpp/thread/jthread.html" title="cpp/thread/jthread"><tt>jthread</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span><br>
 <a href="cpp/thread/mutex.html" title="cpp/thread/mutex"><tt>mutex</tt></a><br>
-<a href="cpp/thread/condition_variable.html" title="cpp/thread/condition variable"><tt>condition_variable‏‎</tt></a><br>
+<a href="cpp/thread/condition_variable.html" title="cpp/thread/condition variable"><tt>condition_variable</tt></a><br>
 <a href="cpp/thread/future.html" title="cpp/thread/future"><tt>future</tt></a>  −  <a href="cpp/thread/promise.html" title="cpp/thread/promise"><tt>promise</tt></a>
 </p>
 </div>
@@ -241,7 +241,7 @@ Null-terminated strings:<br>
 <tr class="row rowtop">
 <td colspan="3">
 <p><a href="c.html" title="c"><span style="font-size: 2em;">C reference</span></a><br>
-<span style="font-size: 0.8em;">C89, <a href="https://en.cppreference.com/mwiki/index.php?title=c/95&amp;action=edit&amp;redlink=1" class="new" title="c/95 (page does not exist)">C95</a>, <a href="c/99.html" title="c/99">C99</a>, <a href="c/11.html" title="c/11">C11</a>, <a href="c/17.html" title="c/17">C17</a>, <a href="c/23.html" title="c/23">C23</a></span>
+<span style="font-size: 0.8em;">C89, <a href="c/95.html" title="c/95">C95</a>, <a href="c/99.html" title="c/99">C99</a>, <a href="c/11.html" title="c/11">C11</a>, <a href="c/17.html" title="c/17">C17</a>, <a href="c/23.html" title="c/23">C23</a></span>
 </p>
 </td></tr>
 <tr class="row">
@@ -323,15 +323,15 @@ Null-terminated strings:<br>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2049/1000000
-Preprocessor generated node count: 2237/1000000
-Post‐expand include size: 28820/2097152 bytes
-Template argument size: 7341/2097152 bytes
+Preprocessor visited node count: 2060/1000000
+Preprocessor generated node count: 1971/1000000
+Post‐expand include size: 28401/2097152 bytes
+Template argument size: 7269/2097152 bytes
 Highest expansion depth: 8/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1-0!*!0!*!*!2!* and timestamp 20220722000638 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:1-0!*!0!*!*!*!* and timestamp 20230120151320 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -348,17 +348,6 @@ Expensive parser function count: 0/100
         
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 11 August 2020, at 10:57.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 39,160,693 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -373,7 +362,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.320 secs. -->
+</script><!-- Served in 0.257 secs. -->
 	</body>
-<!-- Cached 20220722000638 -->
+<!-- Cached 20230120151320 -->
 </html>

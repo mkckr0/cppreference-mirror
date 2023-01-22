@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/17","wgTitle":"cpp/17","wgCurRevisionId":138594,"wgArticleId":18870,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo without reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/17","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/17","wgTitle":"cpp/17","wgCurRevisionId":146701,"wgArticleId":18870,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo without reason"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/17","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -99,7 +99,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -141,46 +142,57 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> From <a href="experimental/special_math.html" title="cpp/experimental/special functions">Mathematical special functions IS</a>: <a href="numeric/special_functions.html" title="cpp/numeric/special functions">mathematical special functions</a>.
 </li><li> From C11: <span class="t-lc"><a href="memory/c/aligned_alloc.html" title="cpp/memory/c/aligned alloc">std::aligned_alloc</a></span>, <span class="t-lc"><a href="chrono/c/timespec_get.html" title="cpp/chrono/c/timespec get">std::timespec_get</a></span>.
 </li></ul>
-<h2><span class="mw-headline" id="Obsolete"> Obsolete </span></h2>
-<h3><span class="mw-headline" id="Removed">Removed</span></h3>
-<p><span class="t-lc"><a href="memory/auto_ptr.html" title="cpp/memory/auto ptr">std::auto_ptr</a></span>,
-<a href="utility/functional.html#Old_binders_and_adaptors" title="cpp/utility/functional">deprecated function objects</a>,
-<span class="t-lc"><a href="algorithm/random_shuffle.html" title="cpp/algorithm/random shuffle">std::random_shuffle</a></span>,
-<span class="t-lc"><a href="error/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span>,
-the <a href="io/ios_base.html#Deprecated_member_types" title="cpp/io/ios base">obsolete iostreams aliases</a>,
-<a href="language/operator_alternative.html#Trigraphs_.28removed_in_C.2B.2B17.29" title="cpp/language/operator alternative">trigraphs</a>,
-the <a href="keyword/register.html" title="cpp/keyword/register"><tt>register</tt></a> keyword,
-<a href="language/operator_incdec.html" title="cpp/language/operator incdec"><code>bool</code> increment</a>,
-<a href="language/except_spec.html" title="cpp/language/except spec">dynamic exception specification</a>
-</p>
-<h3><span class="mw-headline" id="Deprecated">Deprecated</span></h3>
-<p><span class="t-lc"><a href="iterator/iterator.html" title="cpp/iterator/iterator">std::iterator</a></span>, 
-<span class="t-lc"><a href="memory/raw_storage_iterator.html" title="cpp/memory/raw storage iterator">std::raw_storage_iterator</a></span>, 
-<span class="t-lc"><a href="memory/get_temporary_buffer.html" title="cpp/memory/get temporary buffer">std::get_temporary_buffer</a></span>, 
-<span class="t-lc"><a href="types/is_literal_type.html" title="cpp/types/is literal type">std::is_literal_type</a></span>, 
-<span class="t-lc"><a href="types/result_of.html" title="cpp/types/result of">std::result_of</a></span>, 
-all of <a href="header/codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&gt;</tt></a>
-</p>
+<h2><span class="mw-headline" id="Obsolete">Obsolete</span></h2>
+<h5><span class="mw-headline" id="Removed:">Removed:</span></h5>
+<ul><li> <span class="t-lc"><a href="memory/auto_ptr.html" title="cpp/memory/auto ptr">std::auto_ptr</a></span>,
+</li><li> <a href="utility/functional.html#Old_binders_and_adaptors" title="cpp/utility/functional">deprecated function objects</a>,
+</li><li> <span class="t-lc"><a href="algorithm/random_shuffle.html" title="cpp/algorithm/random shuffle">std::random_shuffle</a></span>,
+</li><li> <span class="t-lc"><a href="error/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span>,
+</li><li> the <a href="io/ios_base.html#Deprecated_member_types" title="cpp/io/ios base">obsolete <code>iostream</code>s aliases</a>,
+</li><li> <a href="language/operator_alternative.html#Trigraphs_.28removed_in_C.2B.2B17.29" title="cpp/language/operator alternative">trigraphs</a>,
+</li><li> the <a href="keyword/register.html" title="cpp/keyword/register"><tt>register</tt></a> keyword,
+</li><li> <a href="language/operator_incdec.html" title="cpp/language/operator incdec"><code>bool</code> increment</a>,
+</li><li> <a href="language/except_spec.html" title="cpp/language/except spec">dynamic exception specification</a>
+</li></ul>
+<h5><span class="mw-headline" id="Deprecated:">Deprecated:</span></h5>
+<ul><li> <span class="t-lc"><a href="iterator/iterator.html" title="cpp/iterator/iterator">std::iterator</a></span>, 
+</li><li> <span class="t-lc"><a href="memory/raw_storage_iterator.html" title="cpp/memory/raw storage iterator">std::raw_storage_iterator</a></span>, 
+</li><li> <span class="t-lc"><a href="memory/get_temporary_buffer.html" title="cpp/memory/get temporary buffer">std::get_temporary_buffer</a></span>, 
+</li><li> <span class="t-lc"><a href="types/is_literal_type.html" title="cpp/types/is literal type">std::is_literal_type</a></span>, 
+</li><li> <span class="t-lc"><a href="types/result_of.html" title="cpp/types/result of">std::result_of</a></span>, 
+</li><li> all of <a href="header/codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&gt;</tt></a>
+</li></ul>
 <h2><span class="mw-headline" id="New_language_features">New language features</span></h2>
-<ul><li> <a href="language/fold.html" title="cpp/language/fold">fold-expressions</a>
-</li><li> <a href="language/deduction_guide.html" title="cpp/language/class template argument deduction">class template argument deduction</a>
-</li><li> non-type <a href="language/template_parameters.html" title="cpp/language/template parameters">template parameters</a> declared with <code>auto</code>
-</li><li> compile-time <a href="language/if.html" title="cpp/language/if"><tt>if constexpr</tt></a>
-</li><li> <a href="language/inline.html" title="cpp/language/inline">inline variables</a>
-</li><li> <a href="language/structured_binding.html" title="cpp/language/structured binding">structured bindings</a>
-</li><li> initializers for <a href="language/if.html" title="cpp/language/if"><tt>if</tt></a> and <a href="language/switch.html" title="cpp/language/switch"><tt>switch</tt></a>
-</li><li> <a href="language/character_literal.html" title="cpp/language/character literal"><code>u8</code> character literal</a>
-</li><li> simplified <a href="language/namespace.html" title="cpp/language/namespace">nested namespaces</a>
-</li><li> <a href="language/namespace.html" title="cpp/language/namespace"><code>using</code>-declaration</a> declaring multiple names
+<ul><li> <a href="language/character_literal.html" title="cpp/language/character literal"><code>u8</code> character literal</a>
 </li><li> made <a href="language/noexcept_spec.html" title="cpp/language/noexcept spec"><tt>noexcept</tt></a> part of type system
 </li><li> new <a href="language/eval_order.html" title="cpp/language/eval order">order of evaluation</a> rules
-</li></ul>
-<ul><li> guaranteed <a href="language/copy_elision.html" title="cpp/language/copy elision">copy elision</a>
-</li><li> <a href="language/implicit_cast.html#Temporary_materialization" title="cpp/language/implicit conversion">temporary materialization</a>
 </li><li> <a href="language/lambda.html#Lambda_capture" title="cpp/language/lambda">lambda capture of <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span></a>
-</li><li> <a href="language/lambda.html" title="cpp/language/lambda">constexpr lambda</a>
-</li><li> <a href="language/attributes.html" title="cpp/language/attributes">attribute namespaces</a> don't have to repeat
-</li><li> new <a href="language/attributes.html" title="cpp/language/attributes">attributes</a>:
+</li></ul>
+<ul><li> <b><a href="keyword/constexpr.html" title="cpp/keyword/constexpr"><tt>constexpr</tt></a></b>
+<dl><dd> compile-time <a href="language/if.html" title="cpp/language/if"><tt>if constexpr</tt></a>
+</dd><dd> <a href="language/lambda.html" title="cpp/language/lambda">constexpr lambda</a>
+</dd></dl>
+</li></ul>
+<ul><li> <b>Variables</b>
+<dl><dd> <a href="language/inline.html" title="cpp/language/inline">inline variables</a>
+</dd><dd> <a href="language/structured_binding.html" title="cpp/language/structured binding">structured bindings</a>
+</dd><dd> initializers for <a href="language/if.html" title="cpp/language/if"><tt>if</tt></a> and <a href="language/switch.html" title="cpp/language/switch"><tt>switch</tt></a>
+</dd><dd> guaranteed <a href="language/copy_elision.html" title="cpp/language/copy elision">copy elision</a>
+</dd><dd> <a href="language/implicit_cast.html#Temporary_materialization" title="cpp/language/implicit conversion">temporary materialization</a>
+</dd></dl>
+</li></ul>
+<ul><li> <b>Templates</b>
+<dl><dd> <a href="language/fold.html" title="cpp/language/fold">fold-expressions</a> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="br0">(</span> ... <span class="br0">)</span></span></span>
+</dd><dd> <a href="language/deduction_guide.html" title="cpp/language/class template argument deduction">class template argument deduction</a> <span class="t-c"><span class="mw-geshi cpp source-cpp">tuple t<span class="br0">(</span><span class="nu0">4</span>, <span class="nu0">3</span>, <span class="nu16">2.5</span><span class="br0">)</span></span></span>
+</dd><dd> non-type <a href="language/template_parameters.html" title="cpp/language/template parameters">template parameters</a> declared with <code>auto</code>
+</dd></dl>
+</li></ul>
+<ul><li> <b><a href="language/namespace.html" title="cpp/language/namespace">Namespaces</a></b>
+<dl><dd> simplified nested namespaces
+</dd><dd> <code>using</code>-declaration declaring multiple names
+</dd><dd> <a href="language/attributes.html" title="cpp/language/attributes">attribute namespaces</a> don't have to repeat
+</dd></dl>
+</li><li> <b>new <a href="language/attributes.html" title="cpp/language/attributes">attributes</a></b>:
 <ul><li> <code>[[<a href="language/attributes/fallthrough.html" title="cpp/language/attributes/fallthrough">fallthrough</a>]]</code>
 </li><li> <code>[[<a href="language/attributes/maybe_unused.html" title="cpp/language/attributes/maybe unused">maybe_unused</a>]]</code>
 </li><li> <code>[[<a href="language/attributes/nodiscard.html" title="cpp/language/attributes/nodiscard">nodiscard</a>]]</code>
@@ -934,10 +946,10 @@ all of <a href="header/codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&
 </div>
 </td></tr></table></div>
 <h2><span class="mw-headline" id="Compiler_support">Compiler support</span></h2>
-<p>Main Article: <a href="compiler_support.html#C.2B.2B17_features" title="cpp/compiler support">C++ compiler support</a>
+<p>Main Article: <a href="compiler_support.html#C.2B.2B17_features" title="cpp/compiler support">C++17 compiler support</a>
 </p>
 <h3><span class="mw-headline" id="C.2B.2B17_core_language_features"> C++17 core language features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-compiler-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++17 feature<br> 
@@ -2128,12 +2140,12 @@ all of <a href="header/codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&
 </th>
 <th> <div class="t-vertical"><div>Cray</div></div>
 </th>
-<th> <div class="t-vertical"><div>Nvidia HPC C++</div></div>
+<th> <div class="t-vertical"><div>Nvidia HPC C++<br>(ex Portland Group/PGI)</div></div>
 </th>
 <th> <div class="t-vertical"><div>Nvidia nvcc</div></div>
 </th></tr></table>
 <h3><span class="mw-headline" id="C.2B.2B17_library_features"> C++17 library features </span></h3>
-<table class="wikitable tbody-scroll mw-collapsible" style="font-size:0.8em; width:100%">
+<table class="wikitable tbody-scroll mw-collapsible t-standard-library-support-top" style="font-size:0.8em; width:100%">
 
 <tr style="height:15em">
 <th style="vertical-align:bottom;"> C++17 feature<br> 
@@ -2513,7 +2525,7 @@ all of <a href="header/codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2017 15.6">19.13*</span>
 </td>
@@ -2585,6 +2597,27 @@ all of <a href="header/codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">
 <p><span title="Xcode 10.0 beta (10L176w), 10.0 (10A255), 10.1 (10B61)">10.0.0*</span>
 </p>
+</td>
+<td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
+</td></tr>
+<tr>
+<td> return type of <a href="container.html#Function_table" title="cpp/container"><tt>emplace</tt></a>* functions of some <a href="container.html" title="cpp/container">containers</a> changed from <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span></span></span> to <code>reference</code>
+</td>
+<td> <a rel="nofollow" class="external text" href="https://wg21.link/P0084R2">P0084R2</a>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">7.1
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">4.0
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2017 15.3">19.11*</span>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes
 </td>
 <td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
 </td>
@@ -2818,7 +2851,7 @@ all of <a href="header/codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&
 </td>
 <td> <a rel="nofollow" class="external text" href="https://cplusplus.github.io/LWG/issue3657">LWG3657</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">12
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">11.4
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -2862,24 +2895,29 @@ all of <a href="header/codecvt.html" title="cpp/header/codecvt"><tt>&lt;codecvt&
 </li></ul>
 <p><i>*</i> - hover over a cell with the version number to see notes
 </p>
-<ul><li> <a rel="nofollow" class="external text" href="https://github.com/makelinux/examples/blob/HEAD/cpp/17.cpp">Working c++17 examples</a>
-</li></ul>
+<h3><span class="mw-headline" id="External_links">External links</span></h3>
+<table style="border-top:solid 1px;border-bottom:none;border-left:none;border-right:none;">
+
+<tr style="vertical-align:top;">
+<td> </td>
+<td><a rel="nofollow" class="external text" href="https://github.com/makelinux/examples/blob/HEAD/cpp/17.cpp">Working C++17 examples</a>
+</td></tr></table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 20952/1000000
-Preprocessor generated node count: 22714/1000000
-Post‐expand include size: 481415/2097152 bytes
-Template argument size: 185476/2097152 bytes
+Preprocessor visited node count: 21914/1000000
+Preprocessor generated node count: 24380/1000000
+Post‐expand include size: 488402/2097152 bytes
+Template argument size: 188173/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18870-0!*!0!!en!*!* and timestamp 20220719175910 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:18870-0!*!0!!en!*!* and timestamp 20230121173653 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/17&amp;oldid=138594">https://en.cppreference.com/mwiki/index.php?title=cpp/17&amp;oldid=138594</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/17&amp;oldid=146701">https://en.cppreference.com/mwiki/index.php?title=cpp/17&amp;oldid=146701</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -2892,17 +2930,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/17">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 11 March 2022, at 13:23.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 257,719 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -2917,7 +2944,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 1.631 secs. -->
+</script><!-- Served in 1.873 secs. -->
 	</body>
-<!-- Cached 20220719175910 -->
+<!-- Cached 20230121173653 -->
 </html>

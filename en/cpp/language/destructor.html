@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/destructor","wgTitle":"cpp/language/destructor","wgCurRevisionId":140545,"wgArticleId":6540,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/destructor","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/destructor","wgTitle":"cpp/language/destructor","wgCurRevisionId":143902,"wgArticleId":6540,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/destructor","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -123,7 +123,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../compiler_support.html" title="cpp/compiler support"> Compiler support</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> Freestanding and hosted</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language"> Language</a> </td></tr>
-<tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header"> Standard library headers</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../standard_library.html" title="cpp/standard library"> Standard library</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="../headers.html" title="cpp/header"> Standard library headers</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../named_req.html" title="cpp/named req"> Named requirements </a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../feature_test.html" title="cpp/feature test"> Feature test macros </a> <span class="t-mark-rev t-since-cxx20">(C++20)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../utility.html#Language_support" title="cpp/utility"> Language support library</a> </td></tr>
@@ -368,7 +369,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <code><b>virtual</b></code> <code><b>~</b></code> <span class="t-spar">class-name</span> <code><b>();</b></code>
+<td> <code><b>virtual ~</b></code> <span class="t-spar">class-name</span> <code><b>();</b></code>
 </td>
 <td> (2)
 </td>
@@ -407,7 +408,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">decl-specifier-seq</span><span class="t-mark">(optional)</span> <span class="t-spar">id-expression</span> <code><b>(</b></code> <code><b>void</b></code><span class="t-mark">(optional)</span> <code><b>)</b></code> <span class="t-spar">except</span><span class="t-mark">(optional)</span> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">requires-clause</span><span class="t-mark">(optional)</span><code><b>;</b></code>
+<td> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">decl-specifier-seq</span><span class="t-mark">(optional)</span> <span class="t-spar">id-expression</span> <code><b>(</b></code> <code><b>void</b></code><span class="t-mark">(optional)</span> <code><b>)</b></code><br><span class="t-spar">except</span><span class="t-mark">(optional)</span> <span class="t-spar">attr</span><span class="t-mark">(optional)</span> <span class="t-spar">requires-clause</span><span class="t-mark">(optional)</span><code><b>;</b></code>
 </td>
 <td> (5)
 </td>
@@ -432,7 +433,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> -
 </td>
-<td> <code>friend</code>, <code>inline</code>, <code>virtual</code><span class="t-rev-inl t-since-cxx20"><span>, <code>constexpr</code>, <code>consteval</code></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>
+<td> <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">friend</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">inline</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">virtual</span></span></span><span class="t-rev-inl t-since-cxx20"><span>, <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span></span></span>, <span class="t-c"><span class="mw-geshi cpp source-cpp">consteval</span></span></span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">id-expression</span>
@@ -446,7 +447,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> -
 </td>
-<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> optional sequence of any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
+<td> <span class="t-mark-rev t-since-cxx11">(since C++11)</span> sequence of any number of <a href="attributes.html" title="cpp/language/attributes">attributes</a>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">except</span>
@@ -536,8 +537,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <p>A trivial destructor is a destructor that performs no action. Objects with trivial destructors don't require a delete-expression and may be disposed of by simply deallocating their storage. All data types compatible with the C language (POD types) are trivially destructible.
 </p>
 <h3><span class="mw-headline" id="Implicitly-defined_destructor">Implicitly-defined destructor</span></h3>
-<p>If an implicitly-declared destructor is not deleted, it is implicitly defined (that is, a function body is generated and compiled) by the compiler when it is <a href="definition.html#ODR-use" title="cpp/language/definition">odr-used</a>. This implicitly-defined destructor has an empty body. <span class="t-rev-inl t-since-cxx20"><span>If this satisfies the requirements of a <a href="constexpr.html" title="cpp/language/constexpr">constexpr destructor</a>, the generated destructor is <code>constexpr</code>.</span> <span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>
+<p>If an implicitly-declared destructor is not deleted, it is implicitly defined (that is, a function body is generated and compiled) by the compiler when it is <a href="definition.html#ODR-use" title="cpp/language/definition">odr-used</a>. This implicitly-defined destructor has an empty body.
 </p>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx20"><td>
+<p>If this satisfies the requirements of a <span class="t-rev-inl t-until-cxx23"><span><a href="constexpr.html#constexpr_destructor" title="cpp/language/constexpr">constexpr destructor</a></span> <span><span class="t-mark-rev t-until-cxx23">(until C++23)</span></span></span><span class="t-rev-inl t-since-cxx23"><span><a href="constexpr.html#constexpr_function" title="cpp/language/constexpr">constexpr function</a></span> <span><span class="t-mark-rev t-since-cxx23">(since C++23)</span></span></span>, the generated destructor is <code>constexpr</code>.
+</p>
+</td>
+<td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
+</table>
 <h3><span class="mw-headline" id="Destruction_sequence">Destruction sequence</span></h3>
 <p>For both user-defined or implicitly-defined destructors, after executing the body of the destructor and destroying any automatic objects allocated within the body, the compiler calls the destructors for all non-static non-variant data members of the class, in reverse order of declaration, then it calls the destructors of all direct non-virtual base classes in <a href="initializer_list.html#Initialization_order" title="cpp/language/initializer list" class="mw-redirect">reverse order of construction</a> (which in turn call the destructors of their members and their base classes, etc), and then, if this object is of most-derived class, it calls the destructors of all virtual bases.
 </p><p>Even when the destructor is called directly (e.g. <span class="t-c"><span class="mw-geshi cpp source-cpp">obj.~Foo<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span></span></span>), the return statement in <span class="t-c"><span class="mw-geshi cpp source-cpp">~Foo<span class="br0">(</span><span class="br0">)</span></span></span> does not return control to the caller immediately: it calls all those member and base destructors first.
@@ -574,7 +582,7 @@ Derived obj<span class="sy4">;</span>         <span class="co1">// OK</span></pr
 <h3><span class="mw-headline" id="Exceptions">Exceptions</span></h3>
 <p>As any other function, a destructor may terminate by throwing an <a href="exceptions.html" title="cpp/language/exceptions">exception</a> <span class="t-rev-inl t-since-cxx11"><span>(this usually requires it to be explicitly declared <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span><span class="kw2">false</span><span class="br0">)</span></span></span>)</span> <span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span>, however if this destructor happens to be called during <a href="throw.html#Stack_unwinding" title="cpp/language/throw">stack unwinding</a>, <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> is called instead.
 </p><p>Although <span class="t-lc"><a href="../error/exception/uncaught_exception.html" title="cpp/error/uncaught exception">std::uncaught_exception</a></span> may sometimes be used to detect stack unwinding in progress, it is generally considered bad practice to allow any destructor to terminate by throwing an exception. This functionality is nevertheless used by some libraries, such as  <a rel="nofollow" class="external text" href="https://github.com/SOCI/soci">SOCI</a> and <a rel="nofollow" class="external text" href="http://galeracluster.com/downloads/">Galera 3</a>, which rely on the ability of the destructors of nameless temporaries to throw exceptions at the end of the full expression that constructs the temporary.
-</p><p><a href="../experimental/scope_success.html" title="cpp/experimental/scope success"><tt>std::experimental::scope_success</tt></a> in Library fundamental TS v3 may have <a href="../experimental/scope_success/~scope_success.html" title="cpp/experimental/scope success/~scope success">a potentially-throwing destructor</a>, which throws an exception when the scope is exited normally and the exit function throws an exception.
+</p><p><a href="../experimental/scope_success.html" title="cpp/experimental/scope success"><tt>std::experimental::scope_success</tt></a> in Library fundamental TS v3 may have <a href="../experimental/scope_success/%7Escope_success.html" title="cpp/experimental/scope success/~scope success">a potentially-throwing destructor</a>, which throws an exception when the scope is exited normally and the exit function throws an exception.
 </p>
 <h3><span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -677,19 +685,19 @@ dtor a0</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4546/1000000
-Preprocessor generated node count: 9932/1000000
-Post‐expand include size: 157331/2097152 bytes
-Template argument size: 26407/2097152 bytes
+Preprocessor visited node count: 4770/1000000
+Preprocessor generated node count: 10115/1000000
+Post‐expand include size: 160746/2097152 bytes
+Template argument size: 27991/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6540-0!*!0!!en!*!* and timestamp 20220624091430 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6540-0!*!0!!en!*!* and timestamp 20230120003926 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/destructor&amp;oldid=140545">https://en.cppreference.com/mwiki/index.php?title=cpp/language/destructor&amp;oldid=140545</a>"                    </div>
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/destructor&amp;oldid=143902">https://en.cppreference.com/mwiki/index.php?title=cpp/language/destructor&amp;oldid=143902</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -702,17 +710,6 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul><li><a href="https://en.cppreference.com/w/cpp/language/destructor">Online version</a></li><li>Offline version retrieved 2022-07-30 14:05.</li></ul></div>
-                        <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 24 June 2022, at 02:14.</li>
-                                    <li id="footer-info-viewcount">This page has been accessed 778,929 times.</li>
-                            </ul>
-                    </div>
-        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -727,7 +724,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.040 secs. -->
+</script><!-- Served in 2.291 secs. -->
 	</body>
-<!-- Cached 20220624091446 -->
+<!-- Cached 20230120003926 -->
 </html>
